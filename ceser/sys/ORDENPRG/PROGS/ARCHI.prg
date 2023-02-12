@@ -1,0 +1,24 @@
+*** 
+*** ReFox X  #UK933629  MANRIQUE ORELLANA  MANSOFT SYSTEMS [FP25]
+***
+CLEAR
+DEFINE POPUP files FROM 05, 15 TO  ;
+       15, 45 PROMPT FILE LIKE  ;
+       J:\SISTEMAS\BASES\*.DBF  ;
+       FOOTER 'Bases de Datos'
+ON SELECTION POPUP files DO actua WITH;
+PROMPT()
+ACTIVATE POPUP files
+DEFINE POPUP REGIS 	FROM 05,50	TO  ;
+       15,70  FOOTER "Estructura"   ;
+       PROMPT STRUCTURE OPC
+*
+PROCEDURE actua
+PARAMETER opc
+CLOSE DATABASES
+USE &OPC
+ACTIVATE POPUP regis
+*
+*** 
+*** ReFox - retrace your steps ... 
+***

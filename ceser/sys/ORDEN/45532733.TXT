@@ -1,0 +1,47 @@
+ CESER PIURA SRL                                                                                                     P gina :         1
+        CESER                                     INGRESO DE ORDENES POR TECNICO - PROVEEDOR                         Fecha  :07/01/2016
+   AV.SAN TEODORO                                 ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                         Hora   :  10:51:16
+                                                DEL        : 06/01/2016   AL        : 06/01/2016
+                                                DEL TECNICO:        261   AL TECNICO:  204622680
+                                                DEL TALLER : 002          AL TALLER : 066 
+                                                DEL EMISOR : 050          AL EMISOR : 900 
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ N§   S/S    FECHA DE    MODELO           CLIENTE        TELEFONO ³   O/R    FECHA DE      ESTADO ACTUAL       FECHA DE  OBSERVACIONES³
+³               S/S                                                ³           EMISION                           ESTADO                ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ TECNICO :     1000 ALMACEN RECEPCION             
+
+   1     7682 06/01/2016 RMCTPF1AP1  CARDOZA PULACHE ARTU 96845348 ³    7682 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+   2     7641 31/12/2015 WA13RAQ3    VASQUEZ DE MARTINEZ    345993 ³    7641 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+     TECNICO :      1000     2
+
+
+ TECNICO :     2008 CHUQUIHUANCA NI¥O JHON        
+
+   1    15313 04/01/2016 GN-         RAMOS RUJEL MANUEL   98183837 ³   15313 06/01/2016 DIAGNOSTICO EN         06/01/2016 REVISION      
+   2    15321 04/01/2016 LAVADORA    FARFAN RIOS JORGE LU   370930 ³   15321 06/01/2016 PENDIENTE POR REPUESTO 06/01/2016 COTIZAR       
+   3     7671 06/01/2016 WA1AV5WFP/X CANOVA RISCO SEBASTI 94291505 ³    7671 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+   4    15335 06/01/2016 REFRIGERADO MEZONES CORDOVA ELBA   342924 ³   15335 06/01/2016 DIAGNOSTICO EN         06/01/2016               
+   5    15336 06/01/2016 WA16W9MFP/X QUEZADA SALCEDO MANU   207439 ³   15336 06/01/2016 ATENDIDO SIN REPARAR   07/01/2016 REVISION      
+   6     7624 29/12/2015 WF-T1103TP  OLIVERA ENRIQUEZ CAR 99516863 ³    7624 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+     TECNICO :      2008     6
+
+
+ TECNICO :    15180 RAMIREZ CALDERON ANGEL        
+
+   1     7663 05/01/2016 REC-CLLNE10 ROSALES CRIOLLO LOUR 96966564 ³    7663 06/01/2016 PENDIENTE POR REPUESTO 06/01/2016 MOTOR         
+   2     7673 06/01/2016 PLA3E450A1G GARCIA RUIZ CARLOS   94187933 ³    7673 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+   3     7675 06/01/2016 HT-H4500R/P AHUMADA POLO REYNELD 96955095 ³    7675 06/01/2016 ASIGNACION DE O/R      07/01/2016               
+     TECNICO :     15180     3
+
+
+ TECNICO :    60070 SANDOVAL SANDOVAL ALEXANDER   
+
+   1     7659 04/01/2016 SM-T113NU   NIZAMA IMAN MAXIMILI   370253 ³    7659 06/01/2016 ALMACEN DE REPARADOS   06/01/2016 FALLA> SE     
+   2     7670 06/01/2016 L210        CALLE RUIZ HECTOR      323937 ³    7670 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+   3     7672 06/01/2016 L555        RIVERA JIMENEZ RINA    324532 ³    7672 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+   4     7674 06/01/2016 L1300       HERMOZA FLORES GUILL   345620 ³    7674 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+     TECNICO :     60070     4
+
+
+

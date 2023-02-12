@@ -1,0 +1,92 @@
+************************************
+* EEFF_F3
+* crea reporte F-3 * Opcion en Desarrollo
+************************************
+PARAMETERS cRep,nMes,nAno
+*cRep = 'F-3'
+*nMes = 12
+*nAno = 97
+cRREE = 'RREE'
+CLOS DATA
+USE Cuentas IN 1 ORDER TAG cuentas1
+USE \BENE97\DATA\Saldona IN 2 ORDER TAG Saldona4
+USE EstFin  IN 3 ORDER TAG EstFin1
+USE RepFin  IN 4 ORDER TAG RepFin4
+USE Parmae  IN 5 ORDER TAG Parmae1
+SELE Saldona
+SET RELATION TO Cuenta INTO Cuentas
+SELE RepFin
+IF SEEK(PADR(cRep,5,' ')+STR(nAno,2)+PADL(nMes,2,'0'))
+	IF YesNo('El '+cRep+'ya ha Sido Generado. ¨Desea Generar Otra Vez?' )
+		DELE FOR CodRep=cRep AND Periodo=STR(nAno,2) AND NumMes=PADL(nMes,2,'0')
+	 ELSE
+		CLOS DATA
+		RETURN
+	ENDIF
+ENDIF
+SELE EstFin
+SET FILTER TO CodRep=cRep
+GO TOP
+SCAN
+	nTotDeb=0
+	nTotHab=0
+	IF Cuenta # cRREE
+		SELE Saldona
+		SEEK EstFin.Cuenta+STR(nAno,2)+STR(nMes,2)
+		IF FOUND()
+			IF EstFin.DebHab='D'
+				nTotDeb = nTotDeb+(DsaldoAju-HSaldoAju)
+			 ELSE
+				nTotHab = nTotHab+(HsalDoAju-DSaldoAju)
+			ENDIF
+		ENDIF
+	 ELSE
+		nSaldEjer = SaldEjer()
+	ENDIF
+	SELE RepFin
+	SEEK EstFin.CodRep+STR(nAno,2)+PADL(nMes,2,'0')+EstFin.Cuenta+EstFin.Fila+EstFin.Columna
+	IF FOUND()
+		IF f_lock(1)
+			REPLACE Fecha	WITH DATE()
+			REPLACE Hora	WITH TIME()
+			REPLACE TotDeb WITH IIF(Cuenta#cRREE,TotDeb+nTotDeb,0)
+			REPLACE TotHab WITH IIF(Cuenta#cRREE,TotHab+nTotHab,nSaldEjer)
+		ENDIF
+	 ELSE
+		IF f_appd()
+			REPLACE Fecha	WITH DATE()
+			REPLACE Hora	WITH TIME()
+			REPLACE Periodo WITH PADL(nAno,2,'0')
+			REPLACE NumMes	WITH PADL(nMes,2,'0')
+			REPLACE CodRep	WITH cRep
+			REPLACE Cuenta	WITH EstFin.Cuenta
+			REPLACE Fila	WITH EstFin.Fila
+			REPLACE Columna	WITH EstFin.Columna
+			REPLACE TotDeb WITH IIF(Cuenta#cRREE,TotDeb+nTotDeb,0)
+			REPLACE TotHab WITH IIF(Cuenta#cRREE,TotHab+nTotHab,nSaldEjer)
+		ENDIF
+	ENDIF
+ENDSCAN
+
+RETURN
+
+FUNCTION SaldEjer
+*----------------
+*Calcula el Saldo del Ejercicio 
+*Para quitarlo del Saldo Acumulado
+**********************************
+PRIVATE cFiltro,cAlias,nRet
+cAlias = ALIAS()
+nRet=0
+SELE Saldona
+cFiltro=FILTER()
+nRec = RECNO()
+SET FILTER TO Mes=nMes AND Ano=nAno AND RIGHT(Cuenta,8)='00000000'
+GO TOP
+SCAN FOR (Cuentas.Tipo='1' OR Cuentas.Tipo='2')
+	nRet = nRet+(DsaldoAju-HSaldoAju)
+ENDSCAN
+SET FILTER TO &cFiltro
+GO nRec
+SELE (cAlias)
+RETURN nRet

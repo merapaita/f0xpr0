@@ -1,0 +1,11 @@
+@ECHO OFF
+CLS
+SET WORKER=OFF
+
+act.exe "abas.exe"
+
+ABAS.EXE
+
+DEL *.IDX
+DEL *.TMP
+@ECHO ON

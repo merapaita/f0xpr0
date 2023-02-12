@@ -1,0 +1,1447 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:24
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   090                                
+
+      1    10181 27/11/2012    10181 CRUZ NIZAMA SONIA JAKELIN SAMSUNG    WA1DXARFP       .SS.              1000 011  27/11/2012
+      2    10183 27/11/2012    10183 PEREZ RUFINO INES         SAMSUNG    WA1DXARFP       SSS..             1000 011  27/11/2012
+      3    10186 27/11/2012    10186 TIENDAS EFE S.A           SAMSUNG    PL43D450A2XPE   Z3N33CQBB011     27141 011  27/11/2012
+
+                                                                       TOTAL NOVIEMBRE                     =>     3
+
+      4    10206 05/12/2012    10206 MONTES CHAPILLIQUEN RUBEN SAMSUNG    WA1DXARFP       SSS.              1000 011  05/12/2012
+      5    10236 17/12/2012    10236 TASSARA PEDRO             DAIWA      REFRIGERADORA   SS.               1000 011  17/12/2012
+      6    10237 17/12/2012    10237  RAMIREZ SANCHEZ CLEOFE   SAMSUNG    WA1DXARFP       URASS.            1000 011  17/12/2012
+      7    10245 18/12/2012    10245  PIZINES PAOLA            SAMSUNG    WA85U7          SSS.              1000 011  18/12/2012
+      8    10253 20/12/2012    10253 IGLESIA EVANGELICA BAUTIS SAMSUNG    LS19A300NS/PE   V8C9H9NBA029     27141 011  20/12/2012
+      9    10257 21/12/2012    10257 ANGULA YESSICA            SAMSUNG    WA1DXARFP       SSS               1000 011  21/12/2012
+     10    10258 21/12/2012    10258 CURO ARACELY              SAMSUNG    RT45WNSW1/XPE   SSS.              1000 011  21/12/2012
+
+                                                                       TOTAL DICIEMBRE                     =>     7
+
+     11    10347 28/01/2013    10347 PLAZA VEA SULLANA         SAMSUNG    WA95Q3SFP/XPE   Y4ED5AUC9005      1000 011  28/01/2013
+
+                                                                       TOTAL ENERO                         =>     1
+
+     12    10528 03/04/2013    10528  RUIDIAS VILLEGAS RAUL (C SAMSUNG    WA1DXARFP       ..                1000 011  03/04/2013
+     13    10529 03/04/2013    10529 GUERRERO GUERRERO ESTERFE SAMSUNG    WA-85V3WFQ      ...               1000 011  03/04/2013
+     14    10530 03/04/2013    10530 PONTE DE MONCADA VILMA    SAMSUNG    WA1DXARFP       ...               1000 011  03/04/2013
+     15    10531 03/04/2013    10531 CARLOS ROJAS SINDULIA     SAMSUNG    WA1DXARFP        ...              1000 011  03/04/2013
+     16    10540 05/04/2013    10540 ANCAJIMA OROZCO MINNIE    SAMSUNG    RT2ASRTS1/XPE   LL                1000 011  05/04/2013
+     17    10555 09/04/2013    10555 PARCIA TIRADO ESTHER      SAMSUNG    RT2BSKPN1/XPE   ..                1000 011  09/04/2013
+     18    10558 10/04/2013    10558 SERNAQUE CORONADO MARGARI SAMSUNG    WA-11U3WFP      ..                1000 011  10/04/2013
+     19    10562 12/04/2013    10562 BARRON GUADALUPE          L.G        42PQ30R-MA.AWFA LL                1000 011  12/04/2013
+     20    10565 15/04/2013    10565 VICENTE LUNA              SAMSUNG    WA1DXARFP        ..               1000 011  15/04/2013
+     21    10566 15/04/2013    10566 ZAPATA AREJUELA MARIA     SAMSUNG    WA14N9MFP/XPE   ...               1000 011  15/04/2013
+     22    10567 15/04/2013    10567 MAZA RIVERA ALEJANDRA     SAMSUNG    WA1DXARFP       . ...             1000 011  15/04/2013
+     23    10568 16/04/2013    10568 MOSCOL LEON MARCOS        SAMSUNG    WA1DXARFP       LL                1000 011  16/04/2013
+     24    10570 17/04/2013    10570 VALLE GUERRERO VILMA      SAMSUNG    WA1DXARFP       . ..              1000 011  17/04/2013
+     25    10571 17/04/2013    10571 PAULINI FLOREANO JANELLY  SAMSUNG    WA1DXARFP       KK                1000 011  17/04/2013
+     26    10574 18/04/2013    10574 AMBULAY MI╔AN IRIS        SAMSUNG    WA1DXARFP       ....              1000 011  18/04/2013
+     27    10578 19/04/2013    10578 RAMOS VALDIVIEZO JUAN     SAMSUNG    RS26DDAPN1/EC   ..                1000 011  19/04/2013
+     28    10579 19/04/2013    10579 RIVERA SALAS CARMEN       SAMSUNG    WA-11U3WFP       ..               1000 011  19/04/2013
+     29    10583 20/04/2013    10583 HILARIO RAMOS NURY        SAMSUNG    WA-11U3WFP      LL                1000 011  20/04/2013
+     30    10587 23/04/2013    10587 DELFINO HUGO              SAMSUNG    RT45WNPP        ..                2008 100  02/11/2015
+     31    10597 25/04/2013    10597 NELSON BORRERO            SAMSUNG    WA1DXARFP       ; ..              1000 011  25/04/2013
+
+                                                                       TOTAL ABRIL                         =>    20
+
+     32    10617 02/05/2013    10617 HEREDIA GONZALES MAGALY   SAMSUNG    RS21HKLMR1/SAM  KK                1000 011  02/05/2013
+     33    10631 08/05/2013    10631 MARIANA LAVALLE / OTTO WE SAMSUNG    WA1DXARFP       LLL               1000 011  08/05/2013
+     34    10633 09/05/2013    10633 CHAU DE CASTRO MARIA MAGD L.G        WF-T7502TPP     JKK               1000 011  09/05/2013
+     35    10634 09/05/2013    10634 SALAZAR SAN MARTIN MARIA  SAMSUNG    WA1DXARFP       HH                1000 011  09/05/2013
+     36    10635 09/05/2013    10635      JIBES ECHEVARRIA LUI SAMSUNG    WA-11U3WFP      DD                1000 011  09/05/2013 CESER PIURA SRL                                                                                              P═gina :          2
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:26
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     37    10638 11/05/2013    10638 NUNURA HERNANDEZ IRA ISAB SAMSUNG    WA1DXARFP       DDD               1000 011  11/05/2013
+     38    10645 13/05/2013    10645 CHAPILLIQUEN GOLLOZA MANU SAMSUNG    WA1DXARFP       DD                1000 011  13/05/2013
+     39    10646 13/05/2013    10646 MONDRAGON CHUMACERO MARIA SAMSUNG    RT2ASRTS1/XPE   FF                1000 011  13/05/2013
+     40    10648 14/05/2013    10648 PAZO ALVAREZ DANI         SAMSUNG    UN32D4000NGXPE  Z41W3CUB9020      1000 011  14/05/2013
+     41    10651 15/05/2013    10651 ELERA FERNANDEZ MARITZA   SAMSUNG    WA1DXARFP       KKK               1000 011  15/05/2013
+     42    10652 15/05/2013    10652 TORRES RAMIREZ VERONICA   SAMSUNG    WA1DXARFP       FF                1000 011  15/05/2013
+     43    10660 17/05/2013    10660 RAMIREZ KATHY             SAMSUNG    WA1DXARFP       JJ                1000 011  17/05/2013
+     44    10662 18/05/2013    10662 FERNANDEZ VIERA JESSICA   SAMSUNG    WA1DXARFP       GG                1000 011  18/05/2013
+     45    10669 20/05/2013    10669 AVILA FARFAN MAGDALENA    SAMSUNG    WA1DXARFP        DD               1000 011  20/05/2013
+     46    10672 22/05/2013    10672 JESSICA ASALDE CAMPOS     SAMSUNG    RT45WNPP        DD                1000 011  22/05/2013
+     47    10673 22/05/2013    10673 REOLY CORDOVA SALDARRIAGA SAMSUNG    WA1DXARFP        FF               1000 011  22/05/2013
+     48    10677 24/05/2013    10677 FLORIAN AVALO DORIS       SAMSUNG    RT2ASRTS1/XPE   LLL               1000 011  24/05/2013
+     49    10678 24/05/2013    10678 MENDOZA SOSA JOEL RUIZ    SAMSUNG    WA-85V3WFQ      HH                1000 011  24/05/2013
+
+                                                                       TOTAL MAYO                          =>    18
+
+     50    10699 04/06/2013    10699 PALACIOS TALLEDO ISABEL   SAMSUNG    WA1DXARFP        SSS              1000 011  04/06/2013
+     51    10708 08/06/2013    10708 FLORES DE RIOFRIO CECILIA SAMSUNG    WA1DXARFP       ZS                1000 011  08/06/2013
+     52    10709 08/06/2013    10709 TONG CHU MARIO JUNIOR     L.G        WF-T7502TPP     ZZ                1000 011  08/06/2013
+     53    10716 10/06/2013    10716 COHELLO GLORIA            SAMSUNG    WA1DXARFP       ZA                1000 011  10/06/2013
+     54    10721 12/06/2013    10721 GUERRERO VALIENTE GLORIA  SAMSUNG    WA1DXARFP       / ..              1000 011  12/06/2013
+     55    10722 12/06/2013    10722 CASTRO CLAUDIA            SAMSUNG    WA1DXARFP       //..              1000 011  12/06/2013
+     56    10738 18/06/2013    10738 VILELA SAUCEDO CLARA      SAMSUNG    RT45WNPP        FF                1000 011  18/06/2013
+     57    10739 18/06/2013    10739 CASTRO LEIGH MAXIMO       SAMSUNG    RT2ASRTS1/XPE   D                 1000 011  18/06/2013
+     58    10752 25/06/2013    10752 NAVARRO CHUNGA ALVARO     SAMSUNG    RT25SASS        ZZ                1000 011  25/06/2013
+
+                                                                       TOTAL JUNIO                         =>     9
+
+     59    10765 02/07/2013    10765 NERY VIGNOLO DE SENTENARO SAMSUNG    WA-85V3WFQ       S                1000 011  02/07/2013
+     60    10772 04/07/2013    10772 BARRIENTOS PATRICIA       L.G        WF-T1053TP      SSS               1000 011  04/07/2013
+     61    10791 10/07/2013    10791 SR. PORTOCARRERO HOSPEDAJ SAMSUNG    WA-11U3WFP      /                 1000 011  10/07/2013
+     62    10792 10/07/2013    10792 JUAREZ MEDINA JESSICA     SAMSUNG    WA-85V3WFQ      ....              1000 011  10/07/2013
+     63    10799 13/07/2013    10799 CRUZ RISCO JOSE WILFREDO  SAMSUNG    WA-11U3WFP      ...               1000 011  13/07/2013
+     64    10800 13/07/2013    10800 PRIALET RAMOS BRAYAN      SAMSUNG    WA-85V3WFQ       ...              1000 011  13/07/2013
+     65    10801 13/07/2013    10801 FLORES GAMARRA DE MACHADO SAMSUNG    WA-1AV91FP      ....              1000 011  13/07/2013
+     66    10803 15/07/2013    10803 LOURDES DE LA FUENTE      SAMSUNG    RT2ASRTS1/XPE    ...              1000 011  15/07/2013
+     67    10804 16/07/2013    10804 RODRIGUEZ JARAMILLO LUIS  SAMSUNG    LN32D400E1RXPE  ...               1000 011  16/07/2013
+     68    10808 16/07/2013    10808 VICENTE SAAVEDRA MAXIMO   SAMSUNG    WA1DXARFP         ..              1000 011  16/07/2013
+     69    10826 25/07/2013    10826  AYALA MARIA              SAMSUNG    WA-85V3WFQ      . ...             1000 011  25/07/2013
+     70    10830 30/07/2013    10830 TRELLES VELASQUEZ KAROL   SAMSUNG    RSA1JTSL1/XPE    ..               1000 011  30/07/2013
+     71    10831 30/07/2013    10831 ECA DE TUME MARIA CRISTIN SAMSUNG    RSA1JTPE1/SAM   ..                1000 011  30/07/2013
+     72    10832 30/07/2013    10832 VINCES ALEMAN LEONOR IREN SAMSUNG    RF263BEAESL/PE  ..                1000 011  30/07/2013
+
+                                                                       TOTAL JULIO                         =>    14
+
+     73    10867 12/08/2013    10867 CORTEZ AMAYA MILAGROS     L.G        WF-T7502TPP     ...               1000 011  12/08/2013
+
+                                                                       TOTAL AGOSTO                        =>     1
+
+     74    10931 05/09/2013    10931 CANOLA GAMBINI WILLIAM    SAMSUNG    WA12F5L2UWW/PE  .....             1000 011  05/09/2013
+     75    10941 10/09/2013    10941 QUINDE HERNANDEZ EVELYN   SAMSUNG    WA12F5L2UWW/PE  ..                1000 011  10/09/2013
+     76    10943 10/09/2013    10943 CASTRO GALLO MARIO        SAMSUNG    RT50WNPN5/XPE   ...               1000 011  10/09/2013 CESER PIURA SRL                                                                                              P═gina :          3
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:28
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     77    10944 10/09/2013    10944 ANDRADE FARFAN VICTOR     SAMSUNG    RT29FAJHDWW/PE  .....             1000 011  10/09/2013
+
+                                                                       TOTAL SETIEMBRE                     =>     4
+
+     78    11019 10/10/2013    11019 AGURTO CACERES WILLIAM    SAMSUNG    CT20F3          S/S               1000 011  10/10/2013
+     79    11070 29/10/2013    11070 MIRANDA IBARRA PABLO DARI SAMSUNG    REFRIGERADORA   S/S               1000 011  29/10/2013
+
+                                                                       TOTAL OCTUBRE                       =>     2
+
+     80    11186 23/12/2013    11186 OCAMPO DE AREVALO ANITA   SAMSUNG    WD0024W8N/XPE   /.//             45123 018  17/02/2014
+
+                                                                       TOTAL DICIEMBRE                     =>     1
+
+     81     1741 18/02/2014     1741 ESPINOZA VARGAS MARCO ANT SAMSUNG    S19CFNKF&ZM     B5DBHCLZ4042     23108 010  24/02/2014
+
+                                                                       TOTAL FEBRERO                       =>     1
+
+     82     1867 03/03/2014     1867 UGARTE ROSADO MARCO ANTON L.G        32LS4600-SA     210KKUR1W950      1000 021  03/03/2014
+     83     1869 03/03/2014     1869 CORDOVA ROMAN DILMA ELIZA L.G        42LM6200-SA     303KCY026538     30977 021  05/03/2014
+     84     1873 03/03/2014     1873 CORDOVA MEJIA LIDIA       SONY       MHC-GPX88        4417799         30977 010  24/03/2014
+     85     1886 04/03/2014     1886 ZAPATA GOMEZ CARLOS       SONY       HCD-GTR555      4498738          30977 010  07/03/2014
+     86    11498 07/03/2014    11498 MADRID PALACIOS JOSE SALO L.G        WF-T7502TPP         S/S           1000 011  07/03/2014
+     87    11536 13/03/2014    11536 CASTRP VELAZQUES MANUEL   SAMSUNG    WD0024W8N/XPE   S/S               2008 018  21/03/2014
+     88     2026 14/03/2014     2026 DEYRA TORRES CARMELA      SAMSUNG    DVD-P170/STR    96696CHP8008     23108 004  21/03/2014
+     89    11565 18/03/2014    11565 ROJAS TERRONES JUDITH     SAMSUNG    REFRIGERADORA           S/S       1000 011  18/03/2014
+
+                                                                       TOTAL MARZO                         =>     8
+
+     90     2271 06/04/2014     2271 MORAN VALLADOLID FELIX    L.G        RP-21FC60       402RM20817       30977 010  16/04/2014
+     91     2410 21/04/2014     2410 MARIA UGENIA MURGEITO     L.G        26LD330-MB      101RMDZS1378     30977 010  22/04/2014
+     92     2411 21/04/2014     2411 MARIA UGENIA MURGEITO     L.G        32LD340-MB      101RMQK98772     30977 010  05/07/2014
+     93     2444 23/04/2014     2444 MACALUPU PRECIADO ERIQUE  L.G        42PT250B-SA     106KCCV9W699     30977 005  24/04/2014
+     94     2446 23/04/2014     2446 ROJAS MIRANDO JOSE ORLAND SONY       CECH-3011A      CD861483370       1909 010  24/04/2014
+     95     2448 23/04/2014     2448 SALCEDO ROSALES OMAR      SONY       KLV-32L500A     8234287          30977 009  29/04/2014
+     96     2451 23/04/2014     2451 LAFRAGETTA PABLO          SONY       DSC-W55         8524785           1909 010  24/04/2014
+     97     2464 24/04/2014     2464 ESPINOZA SULLON JOSE LUIS SONY       CECH-2501A      CG824303929       1909 010  28/04/2014
+     98     2468 24/04/2014     2468 MENDEZ MONTALVO MARCOS    SAMSUNG    UN32D5500RGXPE  Z3KM3CUB9003     23108 004  25/04/2014
+     99     2471 24/04/2014     2471 FERNADEZ VILLALOBOS ROBER SAMSUNG    LN32A330J1XSR   ALY23CDQ6039     23108 004  25/04/2014
+    100     2477 24/04/2014     2477 SUCHERO QUISPE JUAN ANTON SONY       SCHP-90010      SP933830101       1909 005  25/04/2014
+    101    11865 25/04/2014    11865 TIMOTEO VELIZ MAGALY DEL  ELECTROLUX EKGF24FEKG      943010166         2008 018  07/05/2014
+    102     2472 26/04/2014     2472 VALLADOLID VACA JESUS MAR SAMSUNG    ST93            A139C90B8000      1909 010  26/04/2014
+    103     2453 29/04/2014     2453 CHIROQUE PRECIADO JUANA   L.G        LH-D623OA       402HZ00070       30977 005  06/05/2014
+    104     2519 29/04/2014     2519                           SONY       KDL-40EX525     3001170          23108 021  02/05/2014
+    105     2530 29/04/2014     2530                           SAMSUNG    UN40D5500RGXPE  Z3KK3CEB3010     23108 004  02/05/2014
+    106     2532 29/04/2014     2532                           SONY       HCD-GT222       9202320          30977 005  30/04/2014
+    107     2485 30/04/2014     2485 RAMOS VILCHES FRANCO.     SONY       HCD-GT555       9212722          30977 005  30/04/2014
+    108     2511 30/04/2014     2511 CRESPO LITANO SEGUNDINO   SAMSUNG    UN40D5003BGXPE  242F3CUB9001      1000 001  30/04/2014
+    109    11892 30/04/2014    11892                           MABE       I420            S                 2008 013  13/05/2014
+
+                                                                       TOTAL ABRIL                         =>    20
+
+    110     2577 05/05/2014     2577 GUINDE  GALVES DORIS      SONY       HCD-GPZ7        9152355          23108 010  26/06/2014 CESER PIURA SRL                                                                                              P═gina :          4
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:29
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    111     2578 05/05/2014     2578                           EPSON      C412B           Q73K021382       20350 002  09/05/2014
+    112     2581 05/05/2014     2581                           BENQ       GH600           ID92C0183600      1909 010  12/05/2014
+    113     2586 05/05/2014     2586 MANRIQUE YARLEQUE MARIA C L.G        32LS3450-SA                      23108 021  08/05/2014
+    114    11912 05/05/2014    11912                           SAMSUNG    RT45WNSW1/XPE   S/A               1000 011  05/05/2014
+    115     2600 06/05/2014     2600                           L.G        CD-964A         S/S              23108 004  08/05/2014
+    116    11927 06/05/2014    11927                           SAMSUNG    WA1DXARFP       S                 2008 004  13/05/2014
+    117    11904 07/05/2014    11904                           OTROS      999             S/S               1000 011  07/05/2014
+    118     2620 08/05/2014     2620                           OTROS      MIC C709        1400CT090069      1000 001  08/05/2014
+    119     2623 08/05/2014     2623                           SAMSUNG    MS402MADXBB/PE  J6TA7WACC000     23108 010  24/09/2014
+    120     2624 08/05/2014     2624                           SAMSUNG    MS402MADXBB/PE  J6TA7WCC0001     23108 009  24/09/2014
+    121     2627 08/05/2014     2627 MANRIQUE YARLEQUE MARIA C CASIO      EX-ZS20         24006943F         1909 010  09/05/2014
+    122    11857 09/05/2014    11857 HUAMAN DELGADO FREDY      CONTINENTA CE61262         S/N               1000 011  09/05/2014
+    123     2644 10/05/2014     2644                           SONY       DSC-W320        5305806           1909 005  12/05/2014
+    124    11992 10/05/2014    11992                           SAMSUNG    PL50P3H         S/S               1000 011  10/05/2014
+    125    11995 12/05/2014    11995                           SONY       KDL-40BX455     S/S              23108 018  16/05/2014
+    126     2662 13/05/2014     2662 SANCHEZ VALDIEZO JUAN CAR OTROS      DMC-F2          WHOCAO11918       1909 005  16/05/2014
+    127     2663 13/05/2014     2663 RAMIREZ CAMPOS CRISTOFER  SONY       HCD-GTR77       9514985          23108 010  20/06/2014
+    128     2681 14/05/2014     2681                           EPSON      C412B           Q73K008859       20350 002  19/05/2014
+    129     2683 14/05/2014     2683                           L.G        M8520-AU        206HZST18395     30977 010  21/05/2014
+    130    11936 14/05/2014    11936                           SAMSUNG    RT34DKTS1/XPE   S                 1000 011  14/05/2014
+    131     2693 15/05/2014     2693                           OLYMPUS    VH-210          UQVO41467         1909 010  16/05/2014
+    132     2698 15/05/2014     2698 ENTERCOMP S.A.C.          ADVANCE    AN-1442         GD1302340600     60070 002  21/05/2014
+    133     2716 16/05/2014     2716 ALIAGA CRUZ PILAR         EPSON      C412B           Q73K004611       20350 010  21/05/2014
+    134     2717 16/05/2014     2717                           SAMSUNG    AMW8113B        J4MD7MAZ4000      1000 001  16/05/2014
+    135     2720 16/05/2014     2720 ORTEGA VILLAR JORGE AGUST EPSON      C462J           S42K003820       20350 010  21/05/2014
+    136    12050 16/05/2014    12050 FIESTAS VALLADARES PERCY  SAMSUNG    WA10F5L2UWW/PE  JLPD5BAF1009     45123 018  21/05/2014
+    137    12051 16/05/2014    12051 RIPLEY S.A                SAMSUNG    WA12F5L2UWW/PE  JLPESBAF1001      1000 011  16/05/2014
+    138     2735 17/05/2014     2735                           SONY       HCD-DZ77T       3102909          30977 005  21/05/2014
+    139     2758 20/05/2014     2758 OBANDO CARRIETA ANA       SONY       VPCYB20AL       27545543-300     60070 002  26/05/2014
+    140     2768 21/05/2014     2768 NOLE JIRON ELVER          CANON      PC1588           S/S              1909 005  23/05/2014
+    141     2780 21/05/2014     2780 BURGOS PEREZ REINALDO EPI SONY       VPL-ES5         7027702823       30977 005  27/05/2014
+    142    12091 21/05/2014    12091 CAMPOS PEREZ MANUEL ANTON SAMSUNG    LN40A330J1XSR    S/S              1000 011  21/05/2014
+    143     2790 22/05/2014     2790 CARRILLO DESAR WILMER     L.G        WF-T7502TPP                       1000 011  22/05/2014
+    144     2785 23/05/2014     2785 CORDOVA CHOCAN MARQUIAS   SONY       HCD-GTR88       9507679          30977 005  27/05/2014
+    145     2787 23/05/2014     2787 RETO REQUE;A CARLOS ALBER SONY       KDL-32EX405     8005545          30977 005  27/05/2014
+    146     2821 27/05/2014     2821 VASQUEZ CALLE DIEGO       AOC        LW98            F8184JA00970      1000 001  27/05/2014
+    147     2822 27/05/2014     2822 VASQUEZ CALLE DIEGO       L.G        14FU7RB-L2      8085YAW2A856      1000 001  27/05/2014
+    148     2827 27/05/2014     2827 CU;A SARANGO JORGE        SONY       KDL-32EX555     5508441           1000 001  27/05/2014
+    149     2836 28/05/2014     2836 GARAY CASTA;EDA GELMER AN SONY       KDL-32L4000     4876984           1000 001  28/05/2014
+    150    12140 28/05/2014    12140 ZAPATA PE;AFIEL JOSE WALT DAIWA      REFRIGERADORA    S                1000 011  28/05/2014
+    151     2846 29/05/2014     2846 GIRON ASUNCION ANA ROSARI EPSON      C462J           S42K011107       20350 002  04/06/2014
+    152     2850 30/05/2014     2850 CORTEZ PERES TOMAS        L.G        50PT250R-MB     109KCWC0A793     30977 005  03/06/2014
+    153     2852 30/05/2014     2852 ENCALADA ARBIJOS JESUS    SONY       SVE11115ELP     275449633002     60070 010  03/07/2014
+    154     2855 31/05/2014     2855 RAMIREZ DE AGUILA GRABIEL SONY       CFD-S03CP        S               23108 009  04/06/2014
+    155     2859 31/05/2014     2859 RODRIGUEZ PEREDA LUIS ALB SAMSUNG    LN32A330J1XSR   ALY23CDQ6055     23108 004  10/06/2014
+    156     2860 31/05/2014     2860 AGUIRRE RUESTA ALEXANDER  AOC        LC32W033        ABGACYA00264     23108 021  04/06/2014
+
+                                                                       TOTAL MAYO                          =>    47
+
+    157     2866 02/06/2014     2866 CALLE CALLE SEGUNDO ARNUL EPSON      C462H           Q8DK003036       20350 010  05/06/2014
+    158     2877 02/06/2014     2877 CARRASCO JIRON JORGE      SAMSUNG    WA1AV9          17625DBZ4006      1000 001  02/06/2014
+    159     2884 02/06/2014     2884 LAVAN CHINGEL DELFINA     SONY       HCD-GPX33       4403573          30977 009  10/06/2014 CESER PIURA SRL                                                                                              P═gina :          5
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:31
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    160    12180 02/06/2014    12180 MEJIA LANCHIPA KETTY GIAN SAMSUNG    RT45WNSW1/XPE    S                2008 018  22/11/2014
+    161    12188 03/06/2014    12188 PALACIOS LOURDES          SAMSUNG    WA904URCVWR/PE  MMFD              1000 011  03/06/2014
+    162     2904 04/06/2014     2904 ALAMO GOMEZ ELENITA       SAMSUNG    CT-3339V        802032FG2010     23108 010  10/06/2014
+    163     2905 04/06/2014     2905 CASTILLO SARANGO ELVIS    L.G        RCD406-AOP      105HZLD00760     30977 009  25/06/2014
+    164     2912 04/06/2014     2912 MANRIQUE DE CASTILLO BERT L.G        MB-1144DS       601TAHQ00241     30977 005  05/06/2014
+    165     2914 05/06/2014     2914 YARLEQUE OLAYA DAVID OLIV L.G        E4600-UI        S                60070 002  10/06/2014
+    166     2919 05/06/2014     2919 ANTON CORDOVA DANIELA.    SAMSUNG    SAMSUNG WB30F   AZBNCN6D6000     23108 010  19/06/2014
+    167     2930 06/06/2014     2930 NEGRON HERRERA YOICI LORE SONY       DSC-WX100       S/S               1000 001  06/06/2014
+    168     2931 06/06/2014     2931 COLEGIO MILITAR PEDRO RUI SAMSUNG    UN32EH4003GXPE  Z5YC3CECA000     23108 010  10/06/2014
+    169    12213 06/06/2014    12213 CALLE AGUILAR CESAR       SAMSUNG    UN46ES6100GXPE  S                23108 018  07/06/2014
+    170     2941 09/06/2014     2941 LOPEZ MENDOZA JULIO CESAR SAMSUNG    PL50P3H         S                 1000 011  09/06/2014
+    171     2944 09/06/2014     2944 RODRIGUEZ VINCES SANTOS   L.G        VC6818NHTY      102TAJD00108     30977 009  13/06/2014
+    172     2946 09/06/2014     2946 JUAREZ ROSAS YENNER       PANASONIC  TC-L32C4Y       EXAA11034205     30977 005  12/06/2014
+    173     2947 09/06/2014     2947 VILLA LIZANO EUCLIDES     PIONER     AVH-P4350DVD    8493812343        1000 001  09/06/2014
+    174     2956 10/06/2014     2956 YAMUNAQUE MORENO KEVIN AN L.G        32LB9RTE-MB     810MXSK08518     30977 009  12/06/2014
+    175     2960 10/06/2014     2960 ENERGYI SERVISES DEL PERU SAMSUNG    LN40D503F7G     Z4463CTB8008     23108 021  11/06/2014
+    176     2961 10/06/2014     2961 CHIROQUE RUIZ MANUEL ANTO SAMSUNG    MX-E851/PE      ZVT812EC6000     23108 010  18/06/2014
+    177    12239 10/06/2014    12239 VALDIBIA MAURA OLGA       SAMSUNG    WA904URCVWR/PE  S                 1000 011  10/06/2014
+    178     2973 11/06/2014     2973 MAYORSA S.A               FUJIFILM   JX420           S                 1909 010  12/06/2014
+    179    12242 11/06/2014    12242 GARCIA RODRIGUEZ OLGA     SAMSUNG    WA1DXARFP        S                1000 011  11/06/2014
+    180     2982 12/06/2014     2982 ARRASUE PARREDES ALEX     PHILIPS    42PFL5332/45    YA1A08020058      1000 001  12/06/2014
+    181    12252 12/06/2014    12252 SALAZAR TAFLU ELMER       SAMSUNG    WA751BATFW&YIA  S                 1000 011  12/06/2014
+    182     2990 13/06/2014     2990 CHAMBA NEYRA LUIS         SONY       DSC-W610        5509787           1909 005  13/06/2014
+    183     3090 23/06/2014     3090 VALLADARES GARCIA CARLOS  CANON      FS300           112102105728      1909 010  25/06/2014
+    184     3091 23/06/2014     3091 VASAN TEJADA MARI         PHILIPS    DVP530/78       KX1A04363567     23108 009  30/06/2014
+    185     3092 23/06/2014     3092 VASAN TEJADA MARI         PHILIPS    13S407-00AA     16294293         23108 004  07/07/2014
+    186     3107 24/06/2014     3107 NEYRA DE TEMOCHE FRANCISC SONY       DSC-T300        S                 1909 010  26/06/2014
+    187     3109 24/06/2014     3109 CORDOVA CORDOVA JULIO CES CONTINENTA CE23252         S                23108 010  02/07/2014
+    188    12327 24/06/2014    12327 PACHERES CAMACHO FRANCISC L.G        WF-T7502TPP     S                 1000 011  24/06/2014
+    189     3111 25/06/2014     3111 CALDERON SAAVEDRA GRETA   SONY       DSC-H200        5007691           1909 010  28/06/2014
+    190    12329 25/06/2014    12329 PALACIOS SOJO VANESSA MIL ELECTROLUX EKGF20SEJG      296349            2008 018  16/07/2014
+    191     3117 26/06/2014     3117 NAVARRO ABAD FELIZARIO    SONY       CCD-TRV328      3852285           1909 010  01/07/2014
+    192     3119 26/06/2014     3119 ALCEDO CAMPODONICO EVELYN ALTRON     CPU                               1000 001  26/06/2014
+    193     3120 26/06/2014     3120 VALLADARES CHAVEZ CAMILO  SONY       DSC-W710        5597437           1000 001  26/06/2014
+    194     3122 26/06/2014     3122 PINEDA OLAYA VICTOR SANTI SONY       HCD-GTR77       9515661          30977 009  30/09/2014
+    195     3125 26/06/2014     3125 ZAPATA YAMUNAQUE GUSTABO  OTROS      MS-1433         S/S              60070 009  04/07/2014
+    196    12342 26/06/2014    12342 SCOLEGIO OVIDIO DECLOLY-A OTROS      LAVADORA        S                 1000 011  26/06/2014
+    197     3129 27/06/2014     3129 ALAMA BRICE;O YIMY        EPSON      C462H           Q8DK009135       20350 010  03/07/2014
+    198     3130 27/06/2014     3130 MACALUPU SERNAQUE JUSTO G SONY       KDL-40S5100     8804002          30977 009  02/07/2014
+    199     3135 28/06/2014     3135 LOPEZ ALVA MICHAEL        PANASONIC  NN-SF550W       5181180210       23108 009  07/07/2014
+    200     3141 30/06/2014     3141 ESPINOZA GOMEZ JULIO ARNA SONY       VPL-EX50        7102411903S      30977 009  01/01/2004
+
+                                                                       TOTAL JUNIO                         =>    44
+
+    201     3150 01/07/2014     3150 IRAGER                    EPSON      C412B             Q73K004408      1000 001  01/07/2014
+    202     3156 01/07/2014     3156 CHUMACERO CALLE FELIPE    JANOME     JA1008          306058878         1000 001  01/07/2014
+    203     3160 01/07/2014     3160 SOPLAPUCO PINGO  JOSE MER SONY       DCR-SX45        1966874           1909 010  14/07/2014
+    204     3172 02/07/2014     3172 SEMINARIO LAZO MARIA DEL  COMPAQ     C750LA          001948996762     60070 002  09/07/2014
+    205     3177 02/07/2014     3177 MONTALVAN DAVILA ANA MARI SONY       CFD-S35CP       S/S              30977 009  10/07/2014
+    206    12385 03/07/2014    12385 MARCIMEX                  ELECTROLUX EWI14D2CGMG     240061465-00      1000 011  03/07/2014
+    207     3197 05/07/2014     3197 LLONTOE SALCEDO FABIOLA   SAMSUNG    NP300E5C-A03VE  HWHN91LCA003     20350 002  10/07/2014
+    208     3205 07/07/2014     3205 PANTA PASACHE EDUARDO JES SAMSUNG    AA59-00780A     13092009/BP6     23108 021  19/07/2014 CESER PIURA SRL                                                                                              P═gina :          6
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:33
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    209     3211 07/07/2014     3211 TORRES ALDAVE EDISON      L.G        MB-0944B        610TAZF00341     30977 010  17/07/2014
+    210    12398 07/07/2014    12398 VEGA VELASCO JORGE (PLAZA ELECTROLUX ERT402YBKS      30100264          1000 011  07/07/2014
+    211     3215 08/07/2014     3215 ZURSA S.R.L               SONY       DSC-S2900       5450951           1909 010  10/07/2014
+    212     3218 08/07/2014     3218 AGUIRRE CASTRO BRUCCE     SONY       NW-E053         7075163           1909 010  10/07/2014
+    213     3219 08/07/2014     3219 AGUIRRE CASTRO BRUCCE     OTROS      AB-09           S/A               1909 005  10/07/2014
+    214     3221 08/07/2014     3221 GONZALES JUAREZ DIEGO ALO SAMSUNG    AA59-00780A     13091109/BP6     23108 021  22/07/2014
+    215    12425 08/07/2014    12425 PRELLE RATTO FRANZ        OTROS      999              S/S              1000 011  08/07/2014
+    216     3224 09/07/2014     3224 MARCIMEX                  L.G        32LS3400-SA     303KCKJOE229     30977 005  11/07/2014
+    217     3227 09/07/2014     3227 AGUIRRE OTERO WILFREDO    SONY       SCPH-90001      HU7454801         1909 010  10/07/2014
+    218     3236 10/07/2014     3236 BUSTAMANTE BREINCH ALEJAN SONY       DSC-WX100       8483593           1909 005  16/07/2014
+    219     3240 10/07/2014     3240 GUTIERRES SULLON YESICA   SAMSUNG    MG1344BA        71CW400287H      23108 010  19/07/2014
+    220     3249 10/07/2014     3249 CARRASCO CASTRO MARTIN    LENOVO     CB02122471      CB70575751       60070 002  17/07/2014
+    221     3251 11/07/2014     3251 AREVALO AGUIRRE ANNA.     EPSON      C462H           S27K053122       20350 010  17/07/2014
+    222     3253 11/07/2014     3253 FLORES DELGADO OSCAR      SONY       CECH-3011A      CD857653084       1000 001  11/07/2014
+    223     3254 11/07/2014     3254 ASALDE FELIPE MARIA LUISA SAMSUNG    SAMSUNG ST66    A4NMCNOC8000     23108 010  25/07/2014
+    224    12421 11/07/2014    12421 GUTIERRES SULLON YESICA   SAMSUNG    WA1DXARFP       S/A               1000 011  11/07/2014
+    225    12449 11/07/2014    12449 AUGUSTO QUIMPER GISSEL    L.G        WF-T7502TPP      S                1000 011  11/07/2014
+    226    12452 11/07/2014    12452 NAVARRO AVAD MIRTA        SAMSUNG    REFRIGERADORA   S                 1000 011  11/07/2014
+    227     3261 14/07/2014     3261 JADAN CULQUICONDOR JORGE. SONY       HCD-GTZ3        9507698          30977 010  30/09/2014
+    228     3248 15/07/2014     3248 FANO MANSILLA JORGE LUIS. EPSON      C462H           S27K051899       20350 002  17/07/2014
+    229     3288 15/07/2014     3288 OPERATIVA DE AHORRO Y CRE SAMSUNG    SAMSUNG ES90    A24KC9AC9AC4     23108 004  25/07/2014
+    230    12463 15/07/2014    12463 SANDOVAL SEMINARIO VICTOR L.G        WF-T7554TP      004PNQE05842      2008 018  07/08/2014
+    231    12466 15/07/2014    12466 MEZONES CHELTON RICHARD J SAMSUNG    RT38FEAKDSL/PE  JL024BAF5003      2008 018  17/07/2014
+    232     3292 16/07/2014     3292 SALAZAR LLONTOP MEDARDO M SONY       KV-27S36        8048477          30977 010  31/07/2014
+    233     3312 17/07/2014     3312 OJEDA RIOFRIO LUIS FELIPE SAMSUNG    AME8103W        17957DAS2007     23108 010  03/08/2014
+    234     3325 18/07/2014     3325 ESPINOZA VARGAS MARCO ANT SAMSUNG    LS19CFNKF/ZM    B5DBHCLZ4042     23108 021  23/07/2014
+    235    12494 18/07/2014    12494 MONDRAGON DIAZ MARINA     L.G        DWC-LD11W       S                 1000 011  18/07/2014
+    236    12502 18/07/2014    12502 GARY VAZQUEZ CAMPOS.      SAMSUNG    WA1DXARFP        S/A              1000 011  18/07/2014
+    237     3327 19/07/2014     3327 CASTA;EDA CASERES DIANA L SONY       NWZ-W273        5147588           1909 010  21/07/2014
+    238     3332 21/07/2014     3332 FARFAN ESPINOZA JUAN FELI L.G        47LE5500-SA     103RMMD5D515     30977 005  31/07/2014
+    239     3333 21/07/2014     3333 AGUILERA UYOA ERRASMO     SAMSUNG    UN40D5500RGXPE  Z3KK3CUB8000     23108 004  23/07/2014
+    240     3337 21/07/2014     3337 RAMOS TELLO MANUEL        L.G        WF-T7502TPP      /SS              1000 001  21/07/2014
+    241    12509 21/07/2014    12509 I╔O╔AN MORA LUISA (MARCIM ELECTROLUX EWIF142CELS     240056506-00      2008 004  24/07/2014
+    242     3343 22/07/2014     3343 FAYA INFANTES ANA MARIA   SONY       PCG-61211U      275279423002     60070 002  01/08/2014
+    243     3348 22/07/2014     3348 SAMANIEGO AGUIRRE LINCOLN SONY       BDP-S490        1020078          30977 005  25/07/2014
+    244     3351 22/07/2014     3351 SILVA RAMOS MARIA SARITA  SAMSUNG    UN32D4003BGXPE  Z41W3CUB9018     23108 021  23/07/2014
+    245     3352 22/07/2014     3352 CRIOLLO TAMAYO ELIZABETH  SAMSUNG    LN32B350F1XSR   BAER3CP54019     23108 010  04/08/2014
+    246     3355 22/07/2014     3355 ROJAS NEYRA JESUS.        SAMSUNG    SP54T8HLX/STR   39EZ3CEY1000      1000 001  22/07/2014
+    247    12523 22/07/2014    12523 NEGRINI CORNEJO JENIFER   L.G        WF-T7502TPP       S/S             1000 011  22/07/2014
+    248     3361 23/07/2014     3361 CORDOVA VILLALTA SANTIAGO SAMSUNG    LN32R71BAX/STR  AHQF3CHQ1000     23108 021  05/08/2014
+    249     3363 23/07/2014     3363 MACHUCA HERRERA PAULINA   SAMSUNG    RMCTPF2AP1      DA100790          1000 001  23/07/2014
+    250     3412 30/07/2014     3412 MENA SARATE ANGGY         L.G        50PA4500-SF     203KCKJ0F965     30977 010  04/08/2014
+    251    12558 30/07/2014    12558 SEVALLOS DE ALBURQUE MARI ELECTROLUX LAVADORA         S/S              1000 011  30/07/2014
+    252     3433 31/07/2014     3433 SILUPU SUAREZ HERMOGENES  PANASONIC  CT-F2125LN       MC53210196      30977 010  11/09/2014
+
+                                                                       TOTAL JULIO                         =>    52
+
+    253     3441 01/08/2014     3441 ULLOQUE CARRILLO VICTOR M ADVANCE    AN-6612         GD0901958300     60070 002  11/08/2014
+    254     3448 01/08/2014     3448 SANCHEZ REYES JORGE LUIS  L.G        MCD102-A0       701HZXW30353     30977 009  21/08/2014
+    255     3449 01/08/2014     3449 ABAD EDUARDO.             SAMSUNG    SC-MX25E/SAM    ZAPL6VKQA000     23108 010  19/08/2014
+    256     3451 01/08/2014     3451 RAMIREZ DE AGUILA GRABIEL SAMSUNG    MS-0944B        509TAWM03073     30977 005  04/08/2014
+    257    12585 01/08/2014    12585 PRIETO JIMENEZ ALCIDES.   L.G        WF-T7502TPP     SS                2014 028  04/08/2014 CESER PIURA SRL                                                                                              P═gina :          7
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:35
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    258     3455 02/08/2014     3455 FLORES VILLALTA NANCY     SAMSUNG    SAMSUNG ST2014F 8H1HCNMF4000     23108 004  06/08/2014
+    259     3457 04/08/2014     3457 RAMIREZ PE;A EUDOCIA      PHILIPS    PET741/37       GS3C09430369     30977 005  04/08/2014
+    260     3476 05/08/2014     3476 DELA MIRANDA OSCAR        SONY       CECHZC2M        083207320790      1909 005  07/08/2014
+    261     3478 05/08/2014     3478 PE;A SEMINARIO TERESA     EPSON      C462H           Q8DK001192       20350 002  08/08/2014
+    262    12600 05/08/2014    12600 ESPINOZA CASTILLO TANIA R SAMSUNG    WA1DXARFP       --                1000 011  05/08/2014
+    263     3506 07/08/2014     3506 ANCAJIMA CHUQUICUSMA DIGN SAMSUNG    PN43H4000AGXPE  01V53CAF3014     23108 010  08/08/2014
+    264     3508 07/08/2014     3508 SULLON CHAVEZ OSCAR DAVIS SAMSUNG    SAMSUNG WB30F   AZBNCNMD5000     23108 004  07/08/2014
+    265    12616 07/08/2014    12616 GUINOCHIO GALVES MILAGROS L.G        GN-             S/A               1000 011  07/08/2014
+    266    12623 07/08/2014    12623 ROJAS MORAN ADA           SAMSUNG    WA14N9MFP/XPE   S                 1000 011  07/08/2014
+    267     3520 08/08/2014     3520 ROSAS MOGROVEJO ALEXIS EN CONTINENTA CETV47835       03101644         23108 004  13/08/2014
+    268     3533 11/08/2014     3533 VASQUEZ SARANGO MARIO MAR ADVANCE    AN-8422         GD1I02118501     60070 009  15/08/2014
+    269     3558 11/08/2014     3558 IRAGER                    EPSON      C412B                            20350 002  15/08/2014
+    270     3538 12/08/2014     3538 GARCIA GARCIA OSCAR       SONY       HCD-ZUX999      9504128          30977 010  15/09/2014
+    271    12646 12/08/2014    12646 SANCHEZ RAMIREZ SEGUNDO O L.G        50PJ35OR-MA     101RMKUAM277      1000 011  12/08/2014
+    272     3566 13/08/2014     3566 GARCIA DIAZ MARGARITA     SAMSUNG    MG5920T         30700266         30977 010  25/08/2014
+    273     3572 14/08/2014     3572 MORALES MARTINEZ MANUEL   SONY       DCR-HC28        700985            1909 005  17/08/2014
+    274    12681 16/08/2014    12681 TRUNIFOR S.A.C            DAIWA      DWF-370TS       XW139E410001      1000 011  16/08/2014
+    275     3597 18/08/2014     3597 VARCO BAUTISTA JEAN CARLO SAMSUNG    LS20B300NS/PE   ZUP7H4LC4019     23108 010  21/08/2014
+    276     3601 18/08/2014     3601 GARCIA DE LOS RIOS DAVID. SONY       RM-626          S                30977 005  25/09/2014
+    277     3604 18/08/2014     3604 GARRIDO MERINO MARTIN     SAMSUNG    UN32EH5000GXPE  Z45K3CEC5016     23108 021  21/08/2014
+    278    12686 18/08/2014    12686 ESPINOZA VIUDA DE LICARHU SAMSUNG    WA1DXARFP          S              1000 011  18/08/2014
+    279    12687 18/08/2014    12687 GARCIA GARCIA MANUEL.     SAMSUNG    REFRIGERADORA    S                1000 011  18/08/2014
+    280    12690 18/08/2014    12690 YOVERA PALACIOS JORGE LUI SAMSUNG    WA1DXARFP       S.S.S.S           1000 011  18/08/2014
+    281     3613 19/08/2014     3613 PEREZ PEREZ MARIA CLEOFE  SAMSUNG    UN32EH4003GXPE  Z5YC3CND8005     23108 021  17/08/2014
+    282     3615 19/08/2014     3615 ALVARADO RAMIREZ DOLY     L.G        42LS3400-SA     207SRZS1V461     30977 005  21/08/2014
+    283     3616 19/08/2014     3616 GUTARRA GERMAN            SAMSUNG    UN39FH5030GXPE  H09G3CTD8001     23108 021  19/08/2014
+    284    12697 19/08/2014    12697 BENITES PURIZACA RAUL     SAMSUNG    WA1DXARFP       JKFDM             2014 004  22/08/2014
+    285     3621 20/08/2014     3621 CASTILLO SAMANIEGO YESICA SONY       HBD-TZ130       3126470          23108 004  20/08/2014
+    286     3624 20/08/2014     3624 BENITES ATIAJA RONALD     PANASONIC  TC-32LX85L      MX81410611        1000 001  20/08/2014
+    287     3632 20/08/2014     3632 HURTADO REYES ALEX        SONY       CECH-3011A      CD860393939       1909 010  22/08/2014
+    288    12705 20/08/2014    12705 CHUQUIHUANCA PINTADO MARI L.G        T1204DPE        209TWFN08811      1000 011  20/08/2014
+    289     3638 21/08/2014     3638 YANAYACO CHINCHAY ITEL    SONY       HCD-RG290       69306             1000 001  21/08/2014
+    290     3640 21/08/2014     3640 SONDOR CHUQUICUSMA ASUNCI SONY       KDL-40R455A     6055912          30977 009  21/08/2014
+    291     3649 21/08/2014     3649 MATOS PONCE HANGELR       SONY       HCD-GT555       9199035          23108 009  15/09/2014
+    292     3652 21/08/2014     3652 NU;EZ CARBAJAL DENIS MANU L.G        32LK330-SB      105KKUR9B646      1000 001  21/08/2014
+    293     3660 21/08/2014     3660 MEJIA ATARAMA KARIN       SONY       CECH-2501A      CH065647448       1000 001  21/08/2014
+    294    12716 21/08/2014    12716 DAVILA EDQUEN JUDITH      SAMSUNG    REFRIGERADORA      S              1000 011  21/08/2014
+    295     3669 22/08/2014     3669 DOMINGUEZ LIZAMA ANTONI   SONY       HCD-ESX8         4105390         30977 010  25/08/2014
+    296     3679 23/08/2014     3679 FLORES DIEZ LUIS ENRIQUE  PANASONIC  DMC-FH2         WT1BB002509       1909 005  26/08/2014
+    297     3682 23/08/2014     3682 GOMEZ IBARURO ROBERTO MAR SONY       KU-27EXR25      7120778          30977 005  06/09/2014
+    298    12725 23/08/2014    12725 VIGO RABANAL MANUELA.     L.G        WF-T7502TPP          S/S          1000 011  23/08/2014
+    299     3712 26/08/2014     3712 CHAMBA GONZA JAYDI        SONY       DSC-W610        52933479          1909 010  25/08/2014
+
+                                                                       TOTAL AGOSTO                        =>    47
+
+    300    12495 09/09/2014    12495 ROBERT MALE ARRESE        L.G        SJ122CD         S                 1000 011  09/09/2014
+    301    12835 09/09/2014    12835 YOVERA SILUPU MARCIA (SAG SONY       DSC-W560        8290490           1909 018  24/09/2014
+    302     3831 10/09/2014     3831 MALPATIDA SOLA PERCY      SONY       PCG-7171P       282176473000     60070 002  13/09/2014
+    303    12849 11/09/2014    12849 AGUILA PALACIOS MIGUEL    SAMSUNG    CT20F3          SS.SSS.           1000 011  11/09/2014
+    304    12850 11/09/2014    12850 CUNCHALLA PALOMINO NELIDA CONTINENTA CE60862         SS.SSS..          1000 011  11/09/2014
+    305     3887 12/09/2014     3887 FERRER CHAVEZ MARIELA     SONY       KLV-32L500A     4509770          30977 010  29/09/2014
+    306    12857 12/09/2014    12857 RONDOY CUNYA CESAR AUGUST SAMSUNG    WA10F5L2UWW/PE  SS.SSS.S          1000 011  12/09/2014 CESER PIURA SRL                                                                                              P═gina :          8
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:37
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    307    12858 12/09/2014    12858 MENDOZA HUAMAN REYDELINDA ELECTROLUX LAVADORA        SSS.SSS.SS        1000 011  12/09/2014
+    308     3911 15/09/2014     3911 CORTES SEMINARIO MANUEL   OTROS      3389B           SS..SS..SS.      23108 021  19/09/2014
+    309     3912 15/09/2014     3912 CORTES SEMINARIO MANUEL   PHILIPS    STEREO          SSS.SSS..SS.     23108 010  19/09/2014
+    310     3915 15/09/2014     3915 REYES MONDRAGON ELI       L.G        21SB1RD-L7.AWFV 1095YPL4H216     30977 005  18/09/2014
+    311     3907 18/09/2014     3907 ANCAJIMA SOSA MARIA DEL S SONY       DSC-W810        5587315           1000 001  18/09/2014
+    312     4004 23/09/2014     4004 GALINDO HUAMAN VICTOR MAN SAMSUNG    AA59-00780A     A3052400/VA.     23108 010  26/09/2014
+    313    12924 23/09/2014    12924 SUCARI NEGRON ALEXIS      SAMSUNG    WA1DXARFP       SS.SS..SD         1000 011  23/09/2014
+    314    12622 24/09/2014    12622 MERA LEON MILAGROS.       SAMSUNG    REFRIGERADORA   S/A               1000 011  24/09/2014
+    315     4030 26/09/2014     4030 PULACHE TALLEDO HUGO GERA TOSHIBA    1430            SS.SS.           23108 010  29/09/2014
+    316     4032 26/09/2014     4032 ARRUNATEGUI PURIZAGA MANU HP         G4-1066LA       5CD1400CMH       60070 010  06/10/2014
+    317     4034 26/09/2014     4034 RAMIREZ RUEDA VILMA       SONY       KLV-37L500A     8205093          30977 010  27/09/2014
+    318     4035 26/09/2014     4035 GUERRERO GUERRERO CECILIA OLYMPUS    VG-170          UPS046458         1000 001  26/09/2014
+    319     4049 27/09/2014     4049 ANTON ADANAQUE CARLOS HER JANOME     134D            130106783         1000 001  27/09/2014
+    320     4052 29/09/2014     4052 NIZAMA ANTON CARMEN       L.G        42CS460-SA.     2052RRB4H262     30977 010  06/10/2014
+    321     4053 29/09/2014     4053 MARTINEZ MARTINEZ JUAN FR EPSON      C462H            Q8DK010682       1000 001  29/09/2014
+    322     4054 29/09/2014     4054 ARICA GOMEZ AIDE          SAMSUNG    AA59-00511A     S.SS             23108 004  27/09/2014
+
+                                                                       TOTAL SETIEMBRE                     =>    23
+
+    323     4111 06/10/2014     4111 CARDOZA BORRERO CLAUDIA   SAMSUNG    MG1044WA        75ET800274B      23108 021  07/10/2014
+    324    12990 06/10/2014    12990 MMARENO SILUPU MARIELITA  SONY       DVP-SR370       1162355          27141 011  06/10/2014
+    325    13003 09/10/2014    13003 NORABUENA ORTIZ ROCIO     SAMSUNG    WA1DXARFP       SS.SS             2008 018  22/11/2014
+    326     4184 13/10/2014     4184 IBA;EZ CHERRE ALDO FRANK  EPSON      C462J           S42K063597       20350 021  17/10/2014
+    327     4214 16/10/2014     4214 CARRASCO VICENTE SANTOS M SAMSUNG    UN40D5500RGXPE  Z3KK3CBB6007     23108 004  17/10/2014
+    328     4245 20/10/2014     4245 LADINES LEON JESUS ALBERT SAMSUNG    CL17M6MQFX/STR  37653CAX7001     30977 009  21/10/2014
+    329     3853 24/10/2014     3853 VASQUEZ SARANGO MARIO MAR ADVANCE    AN-8422         GD1102118501      1000 001  24/10/2014
+    330     4325 27/10/2014     4325 MONTALVAN MENDOZA MARIA   SAMSUNG    UN46EH5300GXPE  S.SS.S            1000 001  27/10/2014
+    331     4356 31/10/2014     4356 ESPINOZA MORE LUIS ENRIQU SONY       RM-ADU138       SS.SS.           30977 005  31/10/2014
+
+                                                                       TOTAL OCTUBRE                       =>     9
+
+    332    12441 11/11/2014    12441 RODRIGUEZ CASTELLANO IVON SAMSUNG    WA1DXARFP       S/A/S             1000 011  11/11/2014
+    333     4444 12/11/2014     4444 JIMENEZ CHINININ MELESIO  SONY       DSC-W530        2773923           1909 010  12/11/2014
+    334     4461 13/11/2014     4461 RIVAS SANDOVAL ALFREDO    SAMSUNG    UN32FH4005GXPE  01WZ3CSF7078     23108 021  13/11/2014
+
+                                                                       TOTAL NOVIEMBRE                     =>     3
+
+    335     4638 04/12/2014     4638 NIMA CORDOVA JUAN CERVAND SAMSUNG    UN32FH4005GXPE  01WZ3CSF4040     23108 021  04/12/2014
+    336     4639 09/12/2014     4639 SUNSHINE EXPORT SAC.      SAMSUNG    RA19VASW1/SAM   24604DAPA003      1000 001  09/12/2014
+    337     4693 12/12/2014     4693 RIVERA CHUQUIHUANGA FRANC SAMSUNG    UN32FH4005GXPE  01WZ3CSF5088     23108 021  12/12/2014
+    338     4726 16/12/2014     4726 GOMEZ SEMINARIO FRANCISCA L.G        42PT250B-SA.AWF 106KCNL4D007     30977 010  24/12/2014
+    339     4740 18/12/2014     4740 FLORES JUAREZ LEONEL      SAMSUNG    UN22D5003BRXPE  Z42D3CPCB000     23108 021  18/12/2014
+
+                                                                       TOTAL DICIEMBRE                     =>     5
+
+    340     4977 15/01/2015     4977 GARCIA ESTRADA VERONICA   SONY       DSC-WX7         2742919           1909 010  19/01/2015
+
+                                                                       TOTAL ENERO                         =>     1
+
+    341    13633 05/02/2015    13633 VENEGAS VIVAS DE PE;A FAR SONY       KDL-32R425B     7136996          27141 011  05/02/2015
+    342     5176 07/02/2015     5176 LEON ECHEANDIA ANA LUISA  SAMSUNG    MG1040WA        75AR400184H      30977 010  02/03/2015
+    343    13650 09/02/2015    13650 CALDERON SANCHEZ SEBASTIA SAMSUNG    WA10F5L2UWW/PE  MHJF              2014 028  10/02/2015 CESER PIURA SRL                                                                                              P═gina :          9
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:38
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    344    13657 09/02/2015    13657 CASTILLO CORDOVA LUIS     SAMSUNG    WA10F5L2UWW/PE  NUD               2014 028  18/02/2015
+    345     5281 19/02/2015     5281 PE;A MULATIO ESMERALDA DE MIPAD      CE15012-16      1212000036        1909 010  20/02/2015
+    346     5282 19/02/2015     5282 OLAYA ROSAS ISABEL DEL RO RECCO      06-520W37-B000X JX9010SC-130     30977 010  05/03/2015
+    347     5334 26/02/2015     5334 FARFAN DE ARRUNATEGUI ROS SAMSUNG    LN40D503F7GXPE  Z44G3CDBA018     30977 005  26/02/2015
+    348    13774 27/02/2015    13774 NOEL SALDARRIAGA VANESSA  L.G        WT-T1014TP      HG                2008 004  10/03/2015
+
+                                                                       TOTAL FEBRERO                       =>     8
+
+    349     5556 23/03/2015     5556 FREYRE PARIATON GLADYS YO SAMSUNG    UN50H5303AGXPE  02X13CXF9000     15180 005  23/03/2015
+    350     5589 26/03/2015     5589 VIVAS LANDA ALFONSO PATRO SONY       VPL-DX120       7045689-332      30977 009  08/04/2015
+
+                                                                       TOTAL MARZO                         =>     2
+
+    351     5755 14/04/2015     5755 HIPERMERCADOS TOTTUS      SAMSUNG    UN40H6400AGXPE  025J3CUFA003     15180 005  15/04/2015
+    352    14074 15/04/2015    14074 CAMPOVERDE VICENTE LUZ MA SAMSUNG    REFRIGERADORA   .S/S              1000 011  15/04/2015
+    353    14076 16/04/2015    14076 ALVARADO LUNA YESSENIA EL L.G        GC-J237AGNN     210TRLV19464      2008 018  17/04/2015
+    354    14085 16/04/2015    14085 TIENDAS EFE S.A           SONY       MHC-V5          4117303          27141 011  16/04/2015
+    355    14086 16/04/2015    14086 DEZA HIDALGO JULISSA BEAT SONY       CDX-G1050U      1502369          27141 011  16/04/2015
+    356    14095 17/04/2015    14095 AGUILA PALACIOS MIGUEL    SAMSUNG    LN32D400E1XPE   .S/S              1000 011  17/04/2015
+    357     5813 18/04/2015     5813 NAMUCHE IPANAQUE MARIA SI SAMSUNG    MX-H830/PE      OAAN122F7000     27141 001  18/04/2015
+    358     5834 22/04/2015     5834 ROSAS ESTRADA SONIA       SAMSUNG    AGE614W/XPE     J5VL7MDB1003     15180 010  27/04/2015
+    359     5859 24/04/2015     5859 FARFAN LAVERRY JUANA ROSA SAMSUNG    UN32F5500AGXPE                   15180 010  04/05/2015
+    360     5908 30/04/2015     5908 LOZADA JUAREZ JOSE ANTONI EPSON      C462H           S27K093896       20350 002  12/05/2015
+
+                                                                       TOTAL ABRIL                         =>    10
+
+    361     6125 30/05/2015     6125 HERRERA JUAREZ NESTOR EDU SAMSUNG    SM-T110         R52G10QXHVX      60070 002  01/06/2015
+
+                                                                       TOTAL MAYO                          =>     1
+
+    362    14359 09/06/2015    14359 BAYONA PASOS JUAN CARLOS  L.G        21SA1RL-L4.AWFY SCCCC             1000 011  09/06/2015
+    363     6252 13/06/2015     6252 CORCUERA GARCIA PAUL      L.G        MS0744Y         102TAGH00407     30977 010  16/06/2015
+    364     6345 26/06/2015     6345 FARIAS ARICHARA MAXIMO RA SAMSUNG    UN32FH4005GXPE  A1WZ3CNG1002     15180 005  26/06/2015
+
+                                                                       TOTAL JUNIO                         =>     3
+
+    365    14464 03/07/2015    14464 GARCIA VANESSA            SAMSUNG    S24ENPSWHL/SAM  06504DAY3002      2008 018  06/07/2015
+    366     6513 20/07/2015     6513 AGUIRRE NOBLECILLA LUIS A SONY       MHC-GTX888      9507743          30977 010  21/07/2015
+    367     6514 20/07/2015     6514 CASTILLO HUIMAN MARIELLA  SAMSUNG    LN40D503F7GXPE  Z44G3CTB6005     30977 005  21/07/2015
+    368     6515 20/07/2015     6515 GARCIA DE LOS RIOS DAVID  L.G        V-781M          309DI00997       30977 100  25/07/2015
+    369     6516 20/07/2015     6516 GARCIA DE LOS RIOS DAVID  SAMSUNG    BD-C6900/STR    ZB3G6V1ZA000     30977 100  25/07/2015
+    370     6517 20/07/2015     6517 QUIJANO ESPINOZA JAIME    AOC        E32C21NSCQE7NNX FBCCAYA00091     30977 100  12/08/2015
+    371     6518 20/07/2015     6518 QUEVEDO VALLADARES FELIX  SONY       KDL-32R405A     6054881           2014 001  20/07/2015
+
+                                                                       TOTAL JULIO                         =>     7
+
+    372     6606 03/08/2015     6606 PE;A BARRETO DORIS        SONY       DSC-WX60        49291637          1909 005  07/08/2015
+    373     6682 12/08/2015     6682 ROJAS AGUILAR CARLOS      EPSON      C462H            S27K009494       1000 001  12/08/2015
+
+                                                                       TOTAL AGOSTO                        =>     2
+
+    374     6885 09/09/2015     6885 GUTIERRES ATARAMA ANA MAR SONY       HCD-GTX777      4421224          30977 100  23/09/2015 CESER PIURA SRL                                                                                              P═gina :         10
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:40
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    375     6994 28/09/2015     6994 CASTRO CARAMANTIN FATIMA  SAMSUNG    UN40H5103AGXPE  03A33CTFA035     15180 005  28/09/2015
+
+                                                                       TOTAL SETIEMBRE                     =>     2
+
+    376    14922 14/10/2015    14922 VALDIVIEZO REATEGUI JENNY SAMSUNG    WA10F5L2UWW/PE  HKJK              2014 028  15/10/2015
+    377     7198 29/10/2015     7198 FERIA FLORES CLAUIDA      SAMSUNG    SM-T2105        RF2F201WB8K      27141 001  29/10/2015
+    378     7200 29/10/2015     7200 YOVERA MARTINEZ MILTON    SAMSUNG    UN39FH5005GXPE  01X03CUF4081     15180 005  29/10/2015
+
+                                                                       TOTAL OCTUBRE                       =>     3
+
+                                                                       TOTAL                               =>   378
+   100  SONY SUCURSAL DEL PERU        
+
+    379     2409 21/04/2014     2409 POZO VALLADOLID BERTHA    SONY       HCD-EC99        9163447          30977 005  24/04/2014
+
+                                                                       TOTAL ABRIL                         =>     1
+
+                                                                       TOTAL SONY SUCURSAL DEL PERU        =>     1
+   050  SUCURSAL PIURA                
+
+    380    10015 18/09/2012    10015 MARCHENA MIRANDA MIREYA   SAMSUNG    WD0024W8N/XPE   ---               1000 011  18/09/2012
+    381       13 20/09/2012       13 TIMANA RUIZ GLADYS        SAMSUNG    SAMSUNG E69     8540C30B5209     23108 004  28/09/2012
+    382       14 21/09/2012       14 FIESTAS PAIVA JUAN HILBER SAMSUNG    LN37C530F1RXSR  Z2473CVZ5000     23108 010  24/01/2013
+    383       17 25/09/2012       17 BURMESTER IRAZOLA JAN     SAMSUNG    SAMSUNG PL150   A49CC90Z3001     23108 004  26/09/2012
+    384       19 26/09/2012       19 NAVARRO MORAN ELMER       SAMSUNG    AME1113TW/XPE   J6CQ7WDC3000     23108 004  26/09/2012
+    385    10030 26/09/2012    10030 ALIAGA ABANTO MARIA       SAMSUNG    WA95Q3WFP/XPE   ----              1000 011  26/09/2012
+    386       20 27/09/2012       20 RODAS MONTENEGRO AMADOR   SAMSUNG    UN32EH4000GXPE  Z50Z3CFC3028      1000 001  27/09/2012
+    387       21 27/09/2012       21 YARLEQUE CHAVEZ REYNERIO  SAMSUNG    LS19A300NS/PE   V8C9H9NBA064     23108 010  28/09/2012
+    388    10035 27/09/2012    10035 CALERO CAMPA╔A EDILSEN    SAMSUNG    WA16W9MFP/XPE   ---               1000 011  27/09/2012
+    389    10037 28/09/2012    10037 NEIRA ELERA FLOR          SAMSUNG    WA1AV5WFP/XPE   ....              1000 011  28/09/2012
+
+                                                                       TOTAL SETIEMBRE                     =>    10
+
+    390       24 01/10/2012       24 FARIAS ARTAZA CARLOS HENR SAMSUNG    CT-501E/SAM     3CCJ300631H       1000 001  01/10/2012
+    391       25 02/10/2012       25 AGUERO CALERO MELISSA     SAMSUNG    LN19R71BX/STR   AH213CRP3000      1000 001  02/10/2012
+    392       27 02/10/2012       27 CHIROQUE TIMANA KARINA    SAMSUNG    MAX-A54U/SMT    9DUS1TAQ9036      1000 001  02/10/2012
+    393       28 02/10/2012       28 ESPINOZA OTOYA SIXTO      SAMSUNG    CL21M40MQGXSTR  AG9E3CBP8026      1000 001  02/10/2012
+    394       33 03/10/2012       33 LEIGH HOUGHTON CARLOS     SAMSUNG    SAMSUNG S760    A01AC90QA088      1000 001  03/10/2012
+    395       40 09/10/2012       40 GAMBOA MENDOZA MARCO ANTO SAMSUNG    LN22A450C1XSR   AL6B3CGS2007      1000 001  09/10/2012
+    396       42 09/10/2012       42 LUJAN VERA DAVID          SAMSUNG    AME8103W        179E7DEZ2002      1000 001  09/10/2012
+    397    10055 10/10/2012    10055 ORTIZ DE SANDOVAL MARIA T SAMSUNG    CT2188BW6X/STR  ....              1000 011  10/10/2012
+    398    10056 10/10/2012    10056 CRUZ QUEZADA BRAYAN       SAMSUNG    RT45WNSW5/XPE   ....              1000 011  10/10/2012
+    399    10057 10/10/2012    10057 AYALA CHU ELVA            SAMSUNG    WD0024W8N/XPE   -----             1000 011  10/10/2012
+    400    10064 11/10/2012    10064 PORRAS DE RAMIREZ FELISIA SAMSUNG    WA16W9MFP/XPE   ..---             1000 011  11/10/2012
+    401       52 15/10/2012       52 SILVA PINEDO REGNER       SAMSUNG    ME1045WC        03797DDY4000      1000 001  15/10/2012
+    402       53 16/10/2012       53 AGURTO CORONADO MERCEDES  SAMSUNG    SAMSUNG PL210   9672C90B9000      1000 001  16/10/2012
+    403       64 19/10/2012       64 PE╔A BERRU MARTIN         SAMSUNG    UN32EH5000GXPE                    1000 001  19/10/2012
+    404    10088 19/10/2012    10088 SALAZAR MORE NOELIA       SAMSUNG    WA15W8MFP/XPE   ---               1000 011  19/10/2012
+    405    10089 19/10/2012    10089 OBIEDO TIMANA PIER        SAMSUNG    RA21PDHB1/XPE   ---               1000 011  19/10/2012
+    406       69 23/10/2012       69 PLYTUS RAYMOND PETER      SAMSUNG    LN32A330J1XSR   ALY23CDQ5010      1000 001  23/10/2012
+    407       73 24/10/2012       73 ANTON ALCANTARA PERCY DAN SAMSUNG    PL43D450A2XPE   Z3N33CQB7006      1000 001  24/10/2012
+    408    10108 25/10/2012    10108 MERINO FABIAN             SAMSUNG    WA14N9SFP/XPE   -.-,              1000 011  25/10/2012 CESER PIURA SRL                                                                                              P═gina :         11
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:41
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    409       81 29/10/2012       81 SARANGO GUTIERREZ ELMER   SAMSUNG    LS17PEASF/PES   PE17H9NP7045      1000 001  29/10/2012
+    410       82 30/10/2012       82 BAYONA BAYONA WILIAN CAMI SAMSUNG    SAMSUNG ES60    A2T2C90SC023      1000 001  30/10/2012
+    411       83 30/10/2012       83 NONURA QUINDE MARLON      SAMSUNG    LN22B350F2XSR   B5123CGS6003      1000 001  30/10/2012
+
+                                                                       TOTAL OCTUBRE                       =>    22
+
+    412    10123 03/11/2012    10123 MOSCOL MARCO              SAMSUNG    WD0024W8N/XPE   -..               2008 011  03/11/2012
+    413       85 05/11/2012       85 CARRERA CHUMACERO OSCAR   SAMSUNG    MB7696W         75AN100183K       1000 001  05/11/2012
+    414       86 05/11/2012       86 RODRIGUEZ CASTILLO LEONIL SAMSUNG    SMX-F34BN       ZAU16V1S7012      1000 001  05/11/2012
+    415    10124 05/11/2012    10124 CASTRO YUDI               SAMSUNG    WA14N9MFP/XPE   -..-              1000 011  05/11/2012
+    416    10125 05/11/2012    10125 HERRERA LOZADA MARITZA    SAMSUNG    WA85Q3WFP/XPE   -..-              1000 011  05/11/2012
+    417       89 06/11/2012       89 RUIZ CALLE LUIS ALBERTO   SAMSUNG    AME8103STP/XPE  J5VN7MDB1006      1000 001  06/11/2012
+    418    10133 06/11/2012    10133 MENDIVEZ ARMESTAR EDWIN   SAMSUNG    WD0024W8N/XPE   -...              1000 011  06/11/2012
+    419    10136 08/11/2012    10136 VALLE BUONA GIOVANA       SAMSUNG    WD0024W8N/XPE   ---..             1000 011  08/11/2012
+    420    10137 08/11/2012    10137 NEIRA ABAD ESPERANZA      SAMSUNG    WA95Q3WFP/XPE   -..-              1000 011  08/11/2012
+    421       93 09/11/2012       93 VILLASECA CALLE FRANKLIN  CASIO      EX-ZS10         20076440F         1000 001  09/11/2012
+    422    10142 10/11/2012    10142 FERNANDEZ CAROLA          L.G        WF-T1164TP/LGP  .--               1000 011  10/11/2012
+    423    10143 10/11/2012    10143 CARDENAS HUARAJ ANTONIO M SAMSUNG    RT2ASRTS1/XPE   -..               1000 011  10/11/2012
+    424       95 12/11/2012       95 HOTELES COSTA DEL SOL     L.G        42LC4R-MD.AWFYL 712MXZJ1C037      1000 001  12/11/2012
+    425    10147 13/11/2012    10147 TENORIO QUISPE AUREA      SAMSUNG    WD0024W8N/XPE   ...---            1000 011  13/11/2012
+    426    10150 14/11/2012    10150 COLEGIO DE INGENIEROS DEL SONY       KDL-32EX715     .--              20057 018  28/11/2012
+    427      102 15/11/2012      102 GARCIA RODRIGUES LIZETT   SONY       DSC-W310        5210807          23108 004  21/11/2012
+    428      107 17/11/2012      107 ALFARO LUNA VICTORIA      SAMSUNG    AGE614W/XPE     J5VL7MDB5002     23108 004  21/11/2012
+    429    10160 19/11/2012    10160 SEMINARIO RAMIREZ NECTALI SAMSUNG    WA1CX7RFP/YIA   ----              1000 011  19/11/2012
+    430    10162 20/11/2012    10162 MORALES DE SANDOVAL MERCE SAMSUNG    WA1AV5WFP/XPE   ..-               1000 011  20/11/2012
+    431    10165 21/11/2012    10165 RAMIREZ ALVARADO MARCELA  SAMSUNG    WA1DXARFP       SS.               1000 011  21/11/2012
+    432    10166 21/11/2012    10166 CALLE VIGIL YANINA        SAMSUNG    WA1DXARFP       SS..              1000 011  21/11/2012
+    433      122 23/11/2012      122 GODOS GARCIA JORGE LUIS   SAMSUNG    AGE614ST/SAM    J5TL7MDZ9004     23108 004  26/11/2012
+    434    10175 23/11/2012    10175 FLORES SILVA BRENDA       SAMSUNG    WA95Q3WFP/XPE   ---               1000 011  23/11/2012
+    435    10179 24/11/2012    10179 VARGAS MEDINA AMELI ROSAL SAMSUNG    RT2ASRTS1/XPE   ----              1000 011  24/11/2012
+    436      123 26/11/2012      123 ZEGARRA RISCO NELLY RAQUE SAMSUNG    UN32EH4000GXPE  Z50Z3CFC5017      1000 001  26/11/2012
+    437      124 26/11/2012      124 FERNANDES NAMUCHE MARIO   SAMSUNG    SAMSUNG ES65    7077C90ZB001     23108 004  30/11/2012
+    438      125 26/11/2012      125 CORNEJO CORNADO PAOLA     SAMSUNG    SAMSUNG L730    S/S               1000 001  26/11/2012
+    439      132 27/11/2012      132 MORALES AMAYA FERNANDO    SAMSUNG    SAMSUNG PL120   9686C90B4000     23108 010  17/12/2012
+    440    10188 28/11/2012    10188 CASTILLO VIUDA DE CAMPOS  SAMSUNG    MG-5920T        SS..              1000 011  28/11/2012
+    441    10190 28/11/2012    10190 ARELLANO LOPEZ DIANA ALIC SAMSUNG    WA-85V3WFQ      SS..              1000 011  28/11/2012
+    442      135 29/11/2012      135 CASTILLO NUNURA OLINDA    SONY       DCR-HC21        1713334          23108 004  03/12/2012
+    443      140 30/11/2012      140 VILLEGAS PINDAY ALONSO    SAMSUNG    LN40C530F1RXSR  PGN34ASB0090      1000 001  30/11/2012
+
+                                                                       TOTAL NOVIEMBRE                     =>    32
+
+    444    10198 01/12/2012    10198 CALDERON PATRICIA         SAMSUNG    WD0024W8N/XPE   --.               2008 011  01/12/2012
+    445    10205 04/12/2012    10205  LEON VALENCIA CARLOS     SAMSUNG    WA1DXARFP       .SSS..            2008 011  04/12/2012
+    446      144 05/12/2012      144 CASTILLO ORDO╔ES JOSE ELA SAMSUNG    LN40C530F1RXSR  Z23E3CFZA000     23108 004  07/12/2012
+    447      145 05/12/2012      145 VASQUEZ DIAZ EDILBERTO    SAMSUNG    MB8697G         71QR400121N      23108 021  17/12/2012
+    448      148 06/12/2012      148 CORNEJO CORNADO PAOLA     SAMSUNG    SAMSUNG L201    CJ61C30S1246     23108 010  11/12/2012
+    449      149 06/12/2012      149 ZE╔A FLORES WALTER        SAMSUNG    SAMSUNG NV24HD  S/S              23108 004  12/12/2012
+    450      150 07/12/2012      150 ATOCHE TALLEDO ANGELICA   SAMSUNG    SAMSUNG PL50    A1SFC90S7013     23108 010  17/12/2012
+    451    10214 10/12/2012    10214 CARRASCO DE GOME LILIS    SAMSUNG    WA95Q3WFP/XPE   --..              1000 011  10/12/2012
+    452    10215 10/12/2012    10215 CASTRO ARAMBULO LOURDES   SAMSUNG    WA1AV5WFP/XPE   ..--.             2008 011  10/12/2012
+    453    10216 10/12/2012    10216 MONTERO REYES ALEJANDRO   SAMSUNG    RT2ASRTS1/XPE   -...              2008 011  10/12/2012
+    454      157 11/12/2012      157  MANRIQUE MACAGGI FANY    SAMSUNG    AME8103WXPE     J5V07MTBA000      1000 001  11/12/2012 CESER PIURA SRL                                                                                              P═gina :         12
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:43
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    455    10222 11/12/2012    10222 LEON CRUZ GLADIS          SAMSUNG    WA1AG9DFP/XPE   .--.              1000 011  11/12/2012
+    456    10225 12/12/2012    10225 CORREA VILELA TESSY       SAMSUNG    WA1AV5WFP/XPE   .--..             1000 011  12/12/2012
+    457    10226 12/12/2012    10226 PALACIOS MURILLO LUZ IREN L.G        WF-T1164TP/LGP  -..-              1000 011  12/12/2012
+    458      163 14/12/2012      163 JUARES ARRUNATEGUI FIDENC PANASONIC  DMC-S1          WH1CA006188      23108 010  31/12/2012
+    459    10235 17/12/2012    10235 MAGAN LARITZA             SAMSUNG    WA85Q3WFP/XPE   .-..              1000 011  17/12/2012
+    460    10241 18/12/2012    10241 CORDOVA ERLINDA           L.G        WF-T7502TPP     SS.               1000 011  18/12/2012
+    461    10243 18/12/2012    10243 ZEGARRA CRUZ GRIMALDO     SAMSUNG    WA1DXARFP       ASS.              1000 011  18/12/2012
+    462      171 21/12/2012      171 REYES MORANTE SOFIA       SAMSUNG    MG1344WA        00067DAW8002     23108 004  22/12/2012
+    463      172 21/12/2012      172 PURIZACA IPANAQUE ALEX RU SAMSUNG    LN32C530F1RXSR  Z2DQ3CHZ7001     23108 010  24/12/2012
+    464      173 21/12/2012      173 PINGO CHUNGA JAVIER       SAMSUNG    SCL907          SSS              23108 021  31/12/2012
+    465    10259 21/12/2012    10259 VELASQUEZ CASTA╔EDA RAFAE SAMSUNG    RSA1JTSL1/XPE   -..               1000 011  21/12/2012
+    466      177 24/12/2012      177 GUEVARA CALDERON JOSE     SAMSUNG    MG1345SC        02097DBY4001     23108 004  27/12/2012
+    467      181 27/12/2012      181 ALVARADO CASTILLO OSCAR M SAMSUNG    CL21M40MQGXSTR  AG9E3CCP2006      1000 001  27/12/2012
+    468      184 27/12/2012      184 VELASCO ORTIZ JUAN HECTOR SAMSUNG    MB6774W         71SJ400046F       1000 001  27/12/2012
+    469      189 29/12/2012      189 MOROCHO PE╔A ANDRES       SAMSUNG    SAMSUNG SCD23   S/S              23108 021  03/01/2013
+    470      192 29/12/2012      192 HERRADA GUERRERO VICTOR   SAMSUNG    LN32D403E2XPE   Z3Z63CFBA019     23108 010  03/01/2013
+
+                                                                       TOTAL DICIEMBRE                     =>    27
+
+    471    10274 03/01/2013    10274 CARMONA CARLOS            SAMSUNG    WA95Q3WFP/XPE   -.-               1000 011  03/01/2013
+    472    10276 03/01/2013    10276 RUIZ GALAN SANDRA         SAMSUNG    WA1AV5WFP/XPE   -..-              1000 011  03/01/2013
+    473      198 04/01/2013      198 MERINO CASTILLO HENRRY WI SAMSUNG    CL21M6MQ6X/XAP  38923CAY3035      1000 001  04/01/2013
+    474    10280 04/01/2013    10280 JIMENEZ CECILIA           SAMSUNG    WA1AV5WFP/XPE   -.-               1000 011  04/01/2013
+    475    10281 04/01/2013    10281 BALTAZAR RUFATO JOSE      SAMSUNG    WA95Q3WFP/XPE   .-,.              1000 011  04/01/2013
+    476    10282 04/01/2013    10282 MAURICIO CRUZ LINDA       SAMSUNG    WA1AV5WFP/XPE   ,,.-.--           1000 011  04/01/2013
+    477    10286 05/01/2013    10286 GUERRERO GALDOS CECILIA   SAMSUNG    RT2ASRTS1/XPE   -.--              1000 011  05/01/2013
+    478      204 07/01/2013      204 ODEBRECHT LATINVEST OPERA SAMSUNG    PL42A450P1XSR   AL6S3CEQ5005     23108 021  09/01/2013
+    479    10291 08/01/2013    10291 FLORES DE BENITES ROSA    SAMSUNG    WA1AV5WFP/XPE   ---.--            1000 011  08/01/2013
+    480    10292 08/01/2013    10292 SAAVEDRA TIMANA FREISI    SAMSUNG    WA1AV5WFP/XPE   -.--.--.,         1000 011  08/01/2013
+    481      208 09/01/2013      208 NU╔ES TRONCOS MARIA DEL R SAMSUNG    WA1AV5WFP/XPE   I9115DBB3004      1000 001  09/01/2013
+    482    10295 09/01/2013    10295 CARRETE ROCIO             SAMSUNG    WA95Q3WFP/XPE   -.--.-            1000 011  09/01/2013
+    483    10296 09/01/2013    10296 LEIGH LOURDES             SAMSUNG    WA1AV5WFP/XPE   -.-.--            1000 011  09/01/2013
+    484      209 10/01/2013      209 FLORES FLORES JOSE        SONY       HBD-TZ130       3123937          23108 010  11/01/2013
+    485      221 14/01/2013      221 ANDRADE VEGAS LORENA      SAMSUNG    CL21Z57MQ3XSTR  AJXF34APA014      1000 001  14/01/2013
+    486    10313 15/01/2013    10313 INGA ARELLANO ROSA        SAMSUNG    WA1AV5WFP/XPE   ----.,.-          1000 011  15/01/2013
+    487    10314 15/01/2013    10314 RUIZ PALOMINO ROGELIO     SAMSUNG    WA15W8MFP/XPE   --.-..-           1000 011  15/01/2013
+    488    10316 16/01/2013    10316 FARIAS ADRIA              SAMSUNG    WA95Q3WFP/XPE   --.--.--.-        1000 011  16/01/2013
+    489      228 17/01/2013      228 CASTRO MAYA KATIUSKA      SAMSUNG    LN40C530F1RXSR  Z23E3CFZA011     23108 010  19/01/2013
+    490    10324 19/01/2013    10324 JIMENEZ CINTHIA           SAMSUNG    RT2ASRTS1/XPE   -.---             1000 011  19/01/2013
+    491      237 22/01/2013      237 SAAVEDRA RAMIREZ ANTONIO  SAMSUNG    PL43D450A2XPE   Z3N33CQB8004     23108 004  26/01/2013
+    492    10331 22/01/2013    10331 LOZADA HERNANDEZ MIRIAM   SAMSUNG    RT45WNPN5/XPE   ...               1000 011  22/01/2013
+    493      238 23/01/2013      238 JIMENES HUAMAN JOSEFA     SAMSUNG    MG1045SD        02877DBP6001     23108 004  25/01/2013
+    494    10338 23/01/2013    10338 VERNAL PISSANO YANETH     SAMSUNG    WA1AV5WFP/XPE   ...               1000 011  23/01/2013
+    495      242 25/01/2013      242 MEJIA MORENO ANGELICA     SAMSUNG    AGE614W         08627DAL5000     23108 004  25/01/2013
+    496      243 25/01/2013      243 SANDOVAL ATOCHE ANNA      SAMSUNG    SAMSUNG DV300F  A2GMCN0C6000     23108 004  26/01/2013
+    497      245 28/01/2013      245 GARCIA DE LOS RIOS DAVID  SAMSUNG    AME8103W        17957DCSB001     23108 010  02/02/2013
+    498    10349 28/01/2013    10349 NAQUICHE YARLEQUE ILEANA  SAMSUNG    RT2ASRTS1/XPE   ..-.-             1000 011  28/01/2013
+    499      250 30/01/2013      250 CARDOZA SURITA JUAN       SAMSUNG    LS19A300NS/PE   V8C9H9ND5065      1000 001  30/01/2013
+    500    10352 30/01/2013    10352 CRUZ DE DURAND ILEANA     SAMSUNG    WA1AG9IFP/XPE   .-.-              1000 011  30/01/2013
+    501      269 31/01/2013      269 MANSILLA YANAYACO JORGE   SAMSUNG    DVD-P280/STR    048U69SQ5033     23108 010  08/02/2013
+    502      270 31/01/2013      270 YARLEQUE CHAVEZ REYNERIO  SAMSUNG    LS19A300NS/PE                    23108 010  02/02/2013
+ CESER PIURA SRL                                                                                              P═gina :         13
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:45
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+
+                                                                       TOTAL ENERO                         =>    32
+
+    503      274 01/02/2013      274 BENITES PEREZ LILIANA     SAMSUNG    SAMSUNG ES80    7822C30BB046     23108 010  06/02/2013
+    504    10365 02/02/2013    10365 SILVA ZEGARRA CORDURA FOR SAMSUNG    PL42C450B1XSR   .-.-              1000 011  02/02/2013
+    505    10366 02/02/2013    10366 PURIZACA ALBURQUEQUE MAGD SAMSUNG    WA95Q3WFP/XPE   -.---             1000 011  02/02/2013
+    506    10367 02/02/2013    10367 PRIETO SULLON CARMEN      SAMSUNG    WA85Q3WFP/XPE   ..--              1000 011  02/02/2013
+    507    10368 02/02/2013    10368 CORTES DE AGURTO ELIZA    SAMSUNG    RT2ASRTS1/XPE   -.-               1000 011  02/02/2013
+    508      277 04/02/2013      277 RUSSO CERUTI MONICA       SAMSUNG    AGE0103MB/XPE   J65P7MDBB000     23108 004  08/02/2013
+    509      278 04/02/2013      278 SALAS ROSAS ARTURO GUSTAB SAMSUNG    CL21M6MQ6X/STR  39013CAX4008     23108 021  19/02/2013
+    510      281 04/02/2013      281 BURNEO PADILLA CARMEN     SAMSUNG    MB6544W         71DFB00132        1000 001  04/02/2013
+    511      282 05/02/2013      282 ZARATE ALEX               SAMSUNG    LS19PEWSFL/PES  PE19H9LQ5080     23108 010  08/02/2013
+    512      286 06/02/2013      286 ROSSI SAENZ RICARDO       SAMSUNG    LN32R71BAX/STR  AHQF3CHP9002     23108 004  13/02/2013
+    513      293 07/02/2013      293 SALINAS CORDERO JESUS     SAMSUNG    CL21M40MQGXSTR  AG9E3CCP2026     23108 004  08/02/2013
+    514    10380 07/02/2013    10380 REMIREZ DE MOSCOL AIDE    SAMSUNG    WA1CX7RFP/YIA   -.-               1000 011  07/02/2013
+    515    10381 07/02/2013    10381 SOYES JAIME  LUIS ROBERT  SAMSUNG    WA1AV5WFP/XPE   .---.--           1000 011  07/02/2013
+    516    10382 07/02/2013    10382 CALDERON BELTTRIN CARLOS  SAMSUNG    WF8114LPV/XPE   ....              1000 011  07/02/2013
+    517      294 08/02/2013      294 PALMA HUERTAS CARLOS      SAMSUNG    LN32D400E1XPE   Z3EN3CGBC000     23108 009  13/02/2013
+    518      295 08/02/2013      295 PERICHE ALDANA MAGALY     SAMSUNG    ME1044WD        04957DDXA025     23108 021  12/02/2013
+    519      296 08/02/2013      296 RIVAS PLATA QUINTANA HARO SAMSUNG    LN32A330J1XSR   ALY23CTQ9024     23108 009  11/02/2013
+    520      297 09/02/2013      297 PE╔A NI╔O HUGO VALENTIN   SAMSUNG    AMW8113B/XPE    J5VJ7MLZA002     23108 009  13/02/2013
+    521      298 09/02/2013      298 FACUNDO FARCEQUE PAULA IS SAMSUNG    CL21S8W7X/STR   3CCT405305V      23108 004  11/02/2013
+    522      303 11/02/2013      303 RENTERIA MEZONES MIGUEL   SONY       KL-YRS100       S/S               1000 001  11/02/2013
+    523    10390 11/02/2013    10390 DIAZ DE MACHADO ESPERANZA SAMSUNG    WA1DXARFP       ----              1000 011  11/02/2013
+    524    10391 11/02/2013    10391 CORDOVA RUIZ JESUS        SAMSUNG    RT45WNPN5/XPE   -..-              1000 011  11/02/2013
+    525      305 12/02/2013      305 AVILA RUIZ CARLOS SEGUNDO L.G        MS0744Y         101TAQP05148     23108 010  08/03/2013
+    526    10399 12/02/2013    10399 ALVARADO OCA╔A FLOR       SAMSUNG    WA-1AV91FP      ..--              2008 011  12/02/2013
+    527    10414 16/02/2013    10414 VALIENTE DE SALDARRIAGA V SAMSUNG    WA1DXARFP       .-.-              1000 011  16/02/2013
+    528    10415 16/02/2013    10415 MORALES RUEDA RICHARD     SAMSUNG    SR-21NME        .-.-              1000 011  16/02/2013
+    529    10420 20/02/2013    10420 AGUILAR MENDOZA CARLOS    SAMSUNG    RT45WNPP        .-.-              1000 011  20/02/2013
+    530      323 21/02/2013      323 QUISPE RODRIGUEZ FERNANDO SAMSUNG    SAMSUNG ES28    6795C90ZA000      1000 001  21/02/2013
+    531      324 21/02/2013      324 RAMOS RIOFRIO JESUS       SAMSUNG    UN32EH4003GXPE  Z5YC3CFC9033      1000 001  21/02/2013
+    532    10431 25/02/2013    10431 RAMOS VERA RUBEN          SAMSUNG    RT45WNPN5/XPE   .-.-              1000 011  25/02/2013
+    533    10432 25/02/2013    10432 DIAZ DE VEGA JUANA        SAMSUNG    WA1DXARFP        .-.-             1000 011  25/02/2013
+    534    10433 25/02/2013    10433 DIAZ DE ALAMAOP GLADYS    SAMSUNG    WA85U7          .-.               1000 011  25/02/2013
+    535    10434 25/02/2013    10434 BOREDO LETAMOSO SANDY     SAMSUNG    WA-11U3WFP      .-.               1000 011  25/02/2013
+    536    10435 25/02/2013    10435 ALIAGA ZEGARRA MARIA DINA L.G        WF-T7553TP      .-.-              1000 011  25/02/2013
+    537    10436 25/02/2013    10436 VILLEGAS YARLEQUE LUZ     SAMSUNG    WA-11U3WFP      .-.-              1000 011  25/02/2013
+    538      336 27/02/2013      336 REBOLLEDO OROSCO EDUARDO  SAMSUNG    WA107CC1FW/YIA  07555BW60125      1000 001  27/02/2013
+
+                                                                       TOTAL FEBRERO                       =>    36
+
+    539      345 01/03/2013      345 SALAZAR VELARDE ADELA KAR SAMSUNG    MB8696W         71QN400011M       1000 001  01/03/2013
+    540    10448 02/03/2013    10448 GOMEZ GUSTAVO             ELECTROLUX EIFLW55IRR      -..-              1000 011  02/03/2013
+    541    10449 02/03/2013    10449 CELI CORDOVA FRANCISCO    SAMSUNG    WA-85V3WFQ      -.-               1000 011  02/03/2013
+    542      350 05/03/2013      350 ARRIVAS MARTIN            SAMSUNG    MW6630T         72NF200215       23108 004  08/03/2013
+    543    10454 05/03/2013    10454 SALAS ANDRADE NANCY       SAMSUNG    WA85U7          ---               1000 011  05/03/2013
+    544      354 06/03/2013      354 ANCAJIMA ALAMO ROSA       SAMSUNG    SAMSUNG S760    S/S              23108 009  12/03/2013
+    545      355 06/03/2013      355 GOMEZ FEDES TORIBIA       SAMSUNG    AMW8113B/XPE    J5VJ7MLZA002      1000 001  06/03/2013
+    546    10461 06/03/2013    10461 CHUMACERO DE LIZANA MARCE SAMSUNG    WA-85V3WFQ      --.-              2012 011  06/03/2013
+    547    10462 06/03/2013    10462 PALLETE MOGOLLON WILIAN   SAMSUNG    RT25SASS        -.--              1000 011  06/03/2013
+    548      358 07/03/2013      358 CASTRO JUAREZ NILDA       SONY       HCD-GNX70       9508733          23108 010  08/03/2013 CESER PIURA SRL                                                                                              P═gina :         14
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:47
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    549      359 07/03/2013      359 CASTRO JUAREZ NILDA       PANASONIC  DVD-S35         VA31C010097      23108 010  08/03/2013
+    550      362 08/03/2013      362 BRISE╔O CAMPOTONICO ANGEL SAMSUNG    PL42C91HPX/STR  AHFA3CEP8005     23108 004  14/03/2013
+    551      363 08/03/2013      363 ORDINOLA CORNEJO LEANDRO  SAMSUNG    LN32R71BAX/STR  AHQF3CPQ2003     23108 004  12/03/2013
+    552      364 09/03/2013      364 CASTILLO ZAVALETA LUCIANO L.G        DV288K          701SHZY25009      1000 001  09/03/2013
+    553    10471 11/03/2013    10471 AGUSTO VIGNOLO JORGE      SAMSUNG    RT45WNPN5/XPE   -.-               1000 011  11/03/2013
+    554      368 12/03/2013      368 CRISANTO SAAVEDRA MERCEDE SAMSUNG    MVR-3100        333831RC2000     23108 021  26/03/2013
+    555    10474 12/03/2013    10474 FERIA KELLY               SAMSUNG    WA85U7          .,.---            1000 011  12/03/2013
+    556      373 15/03/2013      373 VALLADOLID ZETA CARMEN EM SAMSUNG    MX-D870/PE      ZT121TAB4003     23108 010  02/04/2013
+    557      374 15/03/2013      374 DELGADO ROLLING YAQUELINE SAMSUNG    LN32B350F1XSR   BAER3CES9019      1000 001  15/03/2013
+    558      375 18/03/2013      375 PALACIOS BENITES JANET    SAMSUNG    AME612ST        08707DBP1001      1000 001  18/03/2013
+    559    10491 19/03/2013    10491 LIDIAPOMA                 SAMSUNG    WA1DXARFP       -.-               1000 011  19/03/2013
+    560      384 20/03/2013      384 PERUPEZ S.A.C             SAMSUNG    SDC17809/XPE    Y0HE54CB7000      1000 001  20/03/2013
+    561    10492 20/03/2013    10492 OJEDA RENTERIA EDELMIRA   SAMSUNG    RT2ASRTS1/XPE   .,.-.--           1000 011  20/03/2013
+    562    10496 20/03/2013    10496 URBINA MARICELA           PANASONIC  TC-20RM12LP     ---               1000 011  20/03/2013
+    563    10502 22/03/2013    10502 CRUZ JAIME MARIA          SAMSUNG    WA-85V3WFQ      ,.О+-.-           2008 011  22/03/2013
+    564    10505 23/03/2013    10505 PAUCAR ALCIRA             SAMSUNG    WA-85V3WFQ      .,.               1000 011  23/03/2013
+    565    10506 25/03/2013    10506 JUAREZ ROMAN BENJAMIN     SAMSUNG    WA-11U3WFP      ..--              1000 011  25/03/2013
+    566      395 27/03/2013      395 QUEVEDO BOULANGGER HARIM  SAMSUNG    UN40D5500RGXPE  Z3KK3CEB3004      1000 001  27/03/2013
+    567      396 27/03/2013      396 OTAYZA HURTADO JHONY      L.G        W1943SS-PFI.AWF 005UXRF4B894     23108 010  01/04/2013
+    568    10512 27/03/2013    10512 PIZA LUIS                 SAMSUNG    PL50C490B3XPE   Z2NG3CQZ8002      1000 011  27/03/2013
+    569      400 30/03/2013      400 MANRIQUE GARCIA MIGUEL    SAMSUNG    LN32D400E1XPE   Z3EN13CSB400     23108 009  15/04/2013
+
+                                                                       TOTAL MARZO                         =>    31
+
+    570      408 03/04/2013      408 JUAREZ CHINGEL MARITZA    SAMSUNG    MAX-DX56T/SMT   9BXL1TDPC000      1000 001  03/04/2013
+    571      410 04/04/2013      410 EYZAGUIRRE GONZALES ARNAL SAMSUNG    AME8103W        17957DAS2012     23108 004  11/04/2013
+    572    10538 04/04/2013    10538 LEON GARCIA ROSA          L.G        WF-             ..                1000 011  04/04/2013
+    573      413 06/04/2013      413 CRUZ CHERO GERMAN         SAMSUNG    LS19A300NS/PE   V8C9H9NB3008     23108 010  09/04/2013
+    574      414 06/04/2013      414 GUERRERO CORREA CARMEN MA SAMSUNG    SAMSUNG PL120   A13RC90B9000     23108 004  10/04/2013
+    575      416 08/04/2013      416 ABAD SERNAQUE MARLENY     FUJIFILM   JV200           S/S               1000 001  08/04/2013
+    576      417 08/04/2013      417 GUERRERO NEIRA WILIAN MAR SAMSUNG    LS20A300NS/PE   V8CGH9NB5000     23108 009  11/04/2013
+    577      418 09/04/2013      418 ZETA JOSE                 SAMSUNG    NP300E4A-S03VE  HRQM91AC5001     20350 010  13/04/2013
+    578      423 10/04/2013      423 MERCADO FLORES GERMAN BRU SAMSUNG    WD8024CJZ/YIA   Y08654AZ1000      1000 001  10/04/2013
+    579      424 11/04/2013      424 CHAPARRO SORIA MARCOS     SAMSUNG    LS17CMNSFUPE    CM17H9FQ9166     23108 009  12/04/2013
+    580      435 17/04/2013      435 DIAZ HUAPACHE JULIAN      SAMSUNG    SAMSUNG WB850F  A3ZGCN0C9000     23108 010  23/04/2013
+    581      438 18/04/2013      438 AGUILAR CALDERON VICTOR   SAMSUNG    VC7416SN2G/SAM  81AX600132B       1000 001  18/04/2013
+    582      439 18/04/2013      439 AGUILAR CALDERON VICTOR   THOMAS     TH8010          000645           23108 009  19/04/2013
+    583      440 19/04/2013      440 GUTIERRE PIZARRO GABY     SAMSUNG    SAMSUNG MV800   A1D7CN0C3000     23108 009  23/04/2013
+    584      442 20/04/2013      442 POCOMUCHA MONDALGO ABEL H SAMSUNG    MG1045WD        03127DBXB000     23108 004  23/04/2013
+    585      443 20/04/2013      443 ARIZAGA CHU CRISTIAN ALEX SAMSUNG    LN32A330J1XSR   ALY23CTQ9009     23108 004  23/04/2013
+    586      446 22/04/2013      446 OLIVERA CARRANZA MAYRA    SAMSUNG    NP-RV511-A05VE  HMAZ93FB9002     20350 002  23/04/2013
+    587      448 24/04/2013      448 RAMIREZ YOVERA JOSELITO   SAMSUNG    LN32D403E2XPE   Z3Z63CEB6001      1000 001  24/04/2013
+    588      453 25/04/2013      453 AGUILAR CALDERON VICTOR   ELECTROLUX E606            017756           23108 010  29/04/2013
+    589      454 25/04/2013      454 RODRIGUEZ MARTINEZ IRMA A SAMSUNG    MAX-DC650       1TBL700047Z      23108 021  30/04/2013
+    590      456 26/04/2013      456 ALBUJAR CHANTA CRISTHIAN  SAMSUNG    MX-C730/STR     9FLM1TAZ3000     23108 004  02/05/2013
+    591      457 26/04/2013      457 CASTILLO RAMIREZ FREDDY   SAMSUNG    LS17PENSF/PES   PE17H9NQ1059     23108 004  30/04/2013
+    592      458 26/04/2013      458 JIMENEZ GUTIERREZ MARIA   SAMSUNG    MM-G25T/STR     9FCX1TBS9001     23108 021  02/05/2013
+    593      462 27/04/2013      462 REYES MONTERO CARLOS      SAMSUNG    AMW784W/SAM     J4E47MRQ2025     23108 004  02/05/2013
+    594      467 27/04/2013      467 CORTES ABAD LUIS ALBERTO  SAMSUNG    NP300E5C-S02ES  HT2A91MC4001     20350 002  29/04/2013
+    595      470 29/04/2013      470 TOCTO TRONCOS MAGALY      SAMSUNG    SAMSUNG ST66                     23108 010  28/05/2013
+    596      474 30/04/2013      474 ALBERCA LOJAS MARIA       SAMSUNG    AME8103W        179E7DEZ3001     23108 004  04/05/2013
+    597      475 30/04/2013      475 ALBERCA LOJAS CESAR AGUST SAMSUNG    AMW784W/SAM     J4E47MDQA019     23108 004  02/05/2013 CESER PIURA SRL                                                                                              P═gina :         15
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:49
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+
+                                                                       TOTAL ABRIL                         =>    28
+
+    598      476 02/05/2013      476 MORAN ALAMA DELMI         SAMSUNG    HT-Z120T/STR    9F0N1HFS9028     23108 004  06/05/2013
+    599    10610 02/05/2013    10610 ELIAS DE TAVARA GRISELDA  L.G        WF-T1164TP/LGP  /.//              1000 011  02/05/2013
+    600      479 03/05/2013      479 ORTIZ ALVAREZ JOSE SEBAST SAMSUNG    SAMSUNG ES28    6799C90Z9003      1000 001  03/05/2013
+    601      480 03/05/2013      480 HOTELES COSTA DEL SOL     SAMSUNG    PL50P3H         V34731HX1000     23108 004  09/05/2013
+    602      481 03/05/2013      481 VILCHEZ MEDINA OCTAVIO    SAMSUNG    SAMSUNG L100    S/S              23108 004  07/05/2013
+    603      484 06/05/2013      484 SALAS RAMIREZ FRANCISQUIN SAMSUNG    LN32B350F1XSR   BAER3CES5010     23108 004  09/05/2013
+    604      487 09/05/2013      487 SEMINARIO RODRIGUEZ MIGUE SAMSUNG    MAX-L45         S/S              23108 004  13/05/2013
+    605      488 10/05/2013      488 VALDIVIA SERNAQUE MARIO   SONY       HCD-GT555       9163873          23108 004  13/05/2013
+    606      489 10/05/2013      489 CASTILLO MORI CESAR HUMBE SAMSUNG    AGE610B         14427DBQ3002     23108 004  16/05/2013
+    607      493 11/05/2013      493 VEGA ROBLEDO MARY ROXANA  SONY       DSC-W110        8363331          23108 010  18/10/2013
+    608      496 13/05/2013      496 BERMUDES RODRIGUEZ DANITZ SAMSUNG    UN32EH6030GXPE                   23108 004  17/05/2013
+    609      501 14/05/2013      501 OJEDA JIMENEZ ALEX JOEL   L.G        32LD650-SA.AWF  006RMBW3H773     23108 010  02/07/2013
+    610      505 15/05/2013      505 QUINDE RASURI JOSE VICENT L.G        WF-T750TP       507PNPD05917      1000 001  15/05/2013
+    611      508 15/05/2013      508 PLYTUS RAYMOND PETER      SONY       DSC-S950        5046147           1000 001  15/05/2013
+    612      513 17/05/2013      513 FLORES ORDINALA JOSE ALEJ SAMSUNG    NP355E4C-A01VE  HW0298FC9A7Y     20350 010  21/05/2013
+    613      514 17/05/2013      514 PEREZ BALLADAREZ ELIDA    SAMSUNG    UN32EH4000GXPE  Z50Z3CGC8021     23108 004  21/05/2013
+    614      517 20/05/2013      517 CHARA APARICIO GUIDO      SAMSUNG    MX-C730/STR     9FLM1TAZ4002     23108 010  21/05/2013
+    615      518 20/05/2013      518 ALVARADO REYES IRMA       SAMSUNG    SAMSUNG PL150   6757C90B2000      1000 001  20/05/2013
+    616      519 20/05/2013      519 SANCHEZ MALDPNADO JORGE   CANON      PC1226          S/S               1000 001  20/05/2013
+    617      522 21/05/2013      522 HOTELES COSTA DEL SOL     SAMSUNG    AME0103M/SAM    JL57MDZ80008      1000 001  21/05/2013
+    618      525 23/05/2013      525 LUNA GARCIA ANDRES        SAMSUNG    SAMSUNG PL120   8377C90B5049      1000 001  23/05/2013
+    619      526 23/05/2013      526 AGUILAR PASACHE JULIO MIG SAMSUNG    LN22B350F2XSR   B5123CGSA060      1000 001  23/05/2013
+    620      535 27/05/2013      535 PRADO AQUINO HECTOR       SAMSUNG    SAMSUNG ST93    A137C90B9000      1000 001  27/05/2013
+    621      538 28/05/2013      538 MENDOZA SOSA JOE LUIS     SAMSUNG    WA11U3WFP/YIA   16355DAP9000      1000 001  28/05/2013
+    622      542 29/05/2013      542 PAICO SERNAQUE ANGELA     SAMSUNG    AME8103W        17957DAS2013     23108 004  05/06/2013
+    623      546 29/05/2013      546 GUTIERREZ CASTILLO RICARD SAMSUNG    SAMSUNG ES80    9471C30B6128     23108 004  03/06/2013
+
+                                                                       TOTAL MAYO                          =>    26
+
+    624      560 05/06/2013      560 FALLA SANCHEZ DEYSI DEL C SONY       DSC-W210        8285498          23108 004  19/06/2013
+    625      563 06/06/2013      563 TAMARIZ NUNJAR HILDELGARD CANON      PC1267          S/S               1000 001  06/06/2013
+    626      566 08/06/2013      566 JARA  CHUMACERO JOUBERT E SAMSUNG    LN32R51BX/STR   ABHU3CLL4001     23108 021  26/06/2013
+    627      570 10/06/2013      570 YAULI TELLO SANDRO ABEL   SAMSUNG    LS19PEWSFL/PES  PE19H9LQ7037     23108 010  04/07/2013
+    628    10710 10/06/2013    10710 VILCHEZ VALENZUELA JORGE  SAMSUNG    WA95Q3WFP/XPE   .///              1000 011  10/06/2013
+    629    10711 10/06/2013    10711 ANTOMI PAOLA              SAMSUNG    WA16W9MFP/XPE   .,..              1000 011  10/06/2013
+    630    10727 14/06/2013    10727 CORONADO ROSA             SAMSUNG    UN32D5500RGXPE  ././              1000 011  14/06/2013
+    631      608 18/06/2013      608 AGURTO LOPEZ ROSA         SAMSUNG    MG1044WA        75AT200590T       1000 001  18/06/2013
+    632      616 20/06/2013      616 CASTILLO CASAVERDE CINTHI SAMSUNG    LS19PEWSFL/PES  PE19H9LQ5086      1000 001  20/06/2013
+    633      621 20/06/2013      621 ADRIANZEN FACUNDO CINTHIA SAMSUNG    SAMSUNG MV800   A1D7C90BB001     23108 004  25/06/2013
+    634      622 22/06/2013      622 LI YARLEQUE JULIO PEDRO   SAMSUNG    UN32C4000PXSR   Z21S3CTZA006      1000 001  22/06/2013
+    635      627 24/06/2013      627 VICENTE JIMENEZ ENIT ESTH HP         S300            B11107015185      1000 001  24/06/2013
+    636      628 24/06/2013      628 CARRERA GUARDIA MELINA AZ SAMSUNG    LN40A330J1XSR   AM1F3CSQ9012     23108 010  04/07/2013
+    637      636 26/06/2013      636 CASTILLO NUNURA OLINDA    SONY       DCR-SR42        950359           23108 009  02/07/2013
+    638      637 26/06/2013      637 FIESTAS PAIVA JUAN HILBER CANON      PC1256          S/S               1000 001  26/06/2013
+    639      639 27/06/2013      639 ZURITA CHUQUIHUANCA UBERC SAMSUNG    UN32EH4000GXPE                   23108 021  02/07/2013
+    640      630 28/06/2013      630 CASTILLO LOPEZ MARTIN     SAMSUNG    SAMSUNG ST77    A2BCCN0C2000     23108 010  24/07/2013
+    641      643 28/06/2013      643 MARTINEZ PADROS CARLOS    SAMSUNG    PL42C91HPX/STR  AHFA3CMQ2001     23108 021  27/05/2014
+ CESER PIURA SRL                                                                                              P═gina :         16
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:51
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+
+                                                                       TOTAL JUNIO                         =>    18
+
+    642      651 02/07/2013      651 GUEVARA GONZALES JORGE LU SAMSUNG    AME610ST/XPE    J5VM7MDBB002     23108 004  05/07/2013
+    643      655 02/07/2013      655 MU╔OZ LLERENA JORGE LUIS  SAMSUNG    HT-D330K/PE                       1000 001  02/07/2013
+    644      657 03/07/2013      657 FIGUEROA ARAMBULO ALICIA  SAMSUNG    WA1CX7RFP/YIA   A1315BWC3015      1000 001  03/07/2013
+    645      660 03/07/2013      660 ORDINOLA MENA JUAN ANOTNI SAMSUNG    UN32D5800VGXPE  Z3VY3CSB9005      1000 001  03/07/2013
+    646      668 05/07/2013      668 ZURITA CABRERA MERCEDES   SAMSUNG    CT-5029V        3CBF501784        1000 001  05/07/2013
+    647    10776 06/07/2013    10776 CARMONA CHAVEZ JORGE      SAMSUNG    WA-11U3WFP      SS                1000 011  06/07/2013
+    648      673 08/07/2013      673 RAMIREZ YAMUNAQUE MARCO A SAMSUNG    NP300E5C-A04VE  HZ2B91LCA003      1000 001  08/07/2013
+    649      679 08/07/2013      679 CARMEN CALLE JULIO        L.G        32LK330-SB.AWFY 110KKDW15570      1000 001  08/07/2013
+    650      684 09/07/2013      684 RUBIO CECILIA             SAMSUNG    SAMSUNG PL170   9990C90B4000      1000 001  09/07/2013
+    651      685 10/07/2013      685 ANTON BAYON ALEJANDRO     SAMSUNG    LN40D503F7GXPE  Z44G3CTB8001      1000 001  10/07/2013
+    652      688 11/07/2013      688 RUIDIAS DE VILCHEZ JESUS  SAMSUNG    CL21B501HLMXSR                    1000 001  11/07/2013
+    653      689 11/07/2013      689 LUJAN VERA DAVID          SAMSUNG    AME8103W                         23108 004  15/07/2013
+    654      691 11/07/2013      691 YBARRA FARIAS SANTIAGO    SAMSUNG    SAMSUNG L73     37405457          1000 001  11/07/2013
+    655      694 12/07/2013      694 ALZAMORA CARMEN DAGOBERTO SAMSUNG    AGE614W         08627DCL3002     23108 010  17/07/2013
+    656      701 13/07/2013      701 GASTELLO SILVA OLGA       SAMSUNG    MG1340BA        75AR5000647      23108 004  18/07/2013
+    657    10796 13/07/2013    10796 ACUNA CORREA OLGA         SAMSUNG    WA-85V3WFQ      /.//              2008 011  13/07/2013
+    658      704 15/07/2013      704 CASTRO CARRION ROSA       L.G        CD-3230A        S/S               1000 001  15/07/2013
+    659      706 15/07/2013      706 INFANTE GARRIDO JULIO ALE SAMSUNG    CT-5066VBC      3CCJ100667W       1000 001  15/07/2013
+    660      712 17/07/2013      712 ARCPERU SAC               EPSON      C412B           Q73K015431        1000 001  17/07/2013
+    661      715 19/07/2013      715 GUEVARA CALDERON JOSE     SAMSUNG    MG1345SC                         23108 021  21/08/2013
+    662      719 20/07/2013      719 ALDANA ALARON FIORELLA PA EPSON      C462H           Q8DK00235         1000 001  20/07/2013
+    663      723 23/07/2013      723 BONILLA LUZON LORENA AIME HALION     HL22R3          DC1300E0200D     23108 009  25/07/2013
+    664    10818 23/07/2013    10818 ZAPATA TORRES JORGE       SAMSUNG    UN32EH4000GXPE  .//               1000 011  23/07/2013
+    665      735 25/07/2013      735 GONZALES ECHE ALONSO DANI EPSON      C412B           Q73K001716       20350 010  01/08/2013
+    666      740 26/07/2013      740 REYES CASTILLO DELIA      SAMSUNG    ME1044WD        04957DCY9005      1000 001  26/07/2013
+    667      746 27/07/2013      746 MONCADA NAVARRO DEAN MAHE SAMSUNG    NP270E4E-K01VE  JDP191ND5002      1000 001  27/07/2013
+    668      757 31/07/2013      757 CASTRO RANGEL ROBERTO     SAMSUNG    AME8103STP/XPE  J5VN7MDZC007     23108 009  02/08/2013
+
+                                                                       TOTAL JULIO                         =>    27
+
+    669      765 01/08/2013      765 FARFAN RIBAS JOSE ROQUE   SAMSUNG    AME8103STP      195D7DEZ1002     23108 010  04/09/2013
+    670      769 02/08/2013      769 LARA GARCIA JAVIER ANTONY SAMSUNG    HT-Z120T/STR    9F0N1HFS8001     23108 004  08/08/2013
+    671    10851 06/08/2013    10851 DELGADO ROLLING YAQUELINE SAMSUNG    RT2ASRTS1/XPE   /./               1000 011  06/08/2013
+    672      792 07/08/2013      792 CORNEJO CUBA ALEX         SAMSUNG    NP270E5E-K01VE  JE8191CD6001      1000 001  07/08/2013
+    673    10855 07/08/2013    10855 MEDINA LACHIRA PABLO      SAMSUNG    PL42C430A1XSR   ../               1000 011  07/08/2013
+    674    10856 07/08/2013    10856 CORNEJO CUBA ALEX         SAMSUNG    WD0024W8N/XPE   /./               1000 011  07/08/2013
+    675      796 09/08/2013      796 MORENO BOCANEGRA FRANK    EPSON      C412B           Q73K001394        1000 001  09/08/2013
+    676      799 09/08/2013      799 KOCLEM MOYA ARMANDO       SAMSUNG    LN32T71BX/STR   AGEK3CRP1000      1000 001  09/08/2013
+    677      802 10/08/2013      802 CRUZ RISCO JOSE WILFREDO  SAMSUNG    WA1AV5WFP/XPE   I9115DBC6017     45123 010  24/08/2013
+    678      807 12/08/2013      807 MORE RONDOY ARTURO        SAMSUNG    WA1CX7RFP/YIA   A1315MWZ1001     45123 010  20/08/2013
+    679      834 16/08/2013      834 ESCALANTE OBIEDO EDMUNDO  EPSON      C412B           Q73K009912        1000 001  16/08/2013
+    680      836 16/08/2013      836  VARGAS SANDOVAL MANUEL   SAMSUNG    CL21M16MN       39AM3CDY9014     23108 004  27/08/2013
+    681    10886 17/08/2013    10886 FOCA MONICA               SAMSUNG    PL42C430A1XSR   /./               1000 011  17/08/2013
+    682      865 23/08/2013      865 AVENDANO CHAVEZ ALFONSO P EMERSON    EMLCD32085      S/S               1000 001  23/08/2013
+    683      872 24/08/2013      872  VILCHEZ VILCHEZ WALTER   SONY       DVP-NS57P       2088218          23108 009  28/08/2013
+    684      874 26/08/2013      874 GARCIA RAYGADA MARIA      SAMSUNG    WA16W9MFP/XPE                    45123 010  03/09/2013
+    685      876 26/08/2013      876 LIZANA ANDRIANZEN DORIS   VIEW SONIC VS11826         QQ2081842132     23108 010  28/08/2013
+    686    10904 26/08/2013    10904 LLACSHUANGA JIMENEZ ANGEL SAMSUNG    WA1DXARFP       .....             1000 011  26/08/2013
+    687    10905 26/08/2013    10905 PANTA JUAREZ SANTOS       SAMSUNG    UN19D4003BXPE   .....             1000 011  26/08/2013 CESER PIURA SRL                                                                                              P═gina :         17
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:53
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    688      879 27/08/2013      879 CORTEZ RIVERA EDULFINA    PANASONIC  TC-20KL04P      BT4JA000618      23108 010  03/09/2013
+    689      868 28/08/2013      868 JIMENEZ CRUZ SILVIA ELIZA SAMSUNG    DVD-P380K/STR   03DC69SQ6042     23108 010  28/08/2013
+    690      890 28/08/2013      890 GUERRERO RAMIREZ ELIZABET CONTINENTA CELCD42035      02120187          1000 001  28/08/2013
+    691    10910 29/08/2013    10910 JESUS SEMINARIO GUTIERREZ DAIWA      DAIWA2198SA     ........          1000 011  29/08/2013
+    692    10911 29/08/2013    10911 YOVERA PALACIOS OSCAR     SAMSUNG    SDC17809/XPE    ......            1000 011  29/08/2013
+    693    10913 31/08/2013    10913 QUITO HERRERA JUAN CARLOS CONTINENTA CERH49142       S/S               1000 011  31/08/2013
+
+                                                                       TOTAL AGOSTO                        =>    25
+
+    694      906 02/09/2013      906 CHAVEZ ROSAS VICTOR       SAMSUNG    PL51E450A1GXPE  Z4V93CQCA016     23108 021  05/09/2013
+    695      918 03/09/2013      918 AMAYA CHAPILLIQUE LUIS AL SONY       HCD-GT555       4100922          23108 010  17/09/2013
+    696      920 04/09/2013      920 JAUREGUI GUEVARA CARLOS   EPSON      H430A           PSPK1822713       1000 001  04/09/2013
+    697    10925 04/09/2013    10925 LEON ALVARADO CARLOS      SAMSUNG    CT-3329         ....              1000 011  04/09/2013
+    698      904 05/09/2013      904 ACOSTA VIDAL EDUARDO      EPSON      GT-S80          S/S              20350 021  10/09/2013
+    699    10930 05/09/2013    10930 FOCA MONICA               SAMSUNG    WA1AV5WFP/XPE   /.././            1000 011  05/09/2013
+    700      932 07/09/2013      932 REANO SAAVEDRA ROBERTO    SAMSUNG    AMW83E-WB       J4MF7MCS2013     23108 010  09/09/2013
+    701    10935 09/09/2013    10935 VARGAS ALBAN ROSA VICTORI COLDEX     COCINA          S/S               1000 011  09/09/2013
+    702      930 10/09/2013      930 RIVERA OLIVA MARIA        SAMSUNG    SAMSUNG PL120   A13RCN0C3000     23108 021  10/09/2013
+    703      951 12/09/2013      951 ANTEZANA CANAL EVA        SAMSUNG    LN32A330J1XSR   ALY23CDQ6005     23108 010  16/09/2013
+    704    10951 12/09/2013    10951 PALMA MARIA SOLEDAD       SAMSUNG    WA1AV5WFP/XPE   .//./             1000 011  12/09/2013
+    705    10955 12/09/2013    10955 RIVAS NAIRA KENY          SAMSUNG    WA1DXARFP       S/S               1000 011  12/09/2013
+    706      958 13/09/2013      958 SILUPU SUAREZ HERMOGENES  PANASONIC  CT-F2125LN      MC53210196       23108 004  17/09/2013
+    707      963 14/09/2013      963 SORALUZ UBILLUS JUAN MIGU SAMSUNG    SP2503SWX/PE    YF6MHVFZA000      1000 001  14/09/2013
+    708    10958 14/09/2013    10958 TOMATIS RODRIGUEZ PEDRO   SAMSUNG    WA16W9MFP/XPE   ,././/            1000 011  14/09/2013
+    709      966 16/09/2013      966 CASTILLO CHUMACERO MERCED SAMSUNG    NP535U3C-A01VE  HU5D91GC6001      1000 001  16/09/2013
+    710      976 17/09/2013      976 FEIJOO OLPEFE MARIA ISABE SAMSUNG    WA1DXARFP        S/S              1000 001  17/09/2013
+    711      982 17/09/2013      982 IRAZABAL MADRID DANITZA R SAMSUNG    SAMSUNG ES90    A45YC9ACA035     23108 021  23/09/2013
+    712    10965 17/09/2013    10965 SANDOVAL ARRUNATEGUI MARI SAMSUNG    WA1DXARFP         S/S             1000 011  17/09/2013
+    713    10966 17/09/2013    10966 CUEVA CASTANEDA JORGE     SAMSUNG    WA1DXARFP          S/S            1000 011  17/09/2013
+    714      985 18/09/2013      985 OTERO PORTILLA OMAR WILDE SAMSUNG    AA59-00780A     A3011100/V1.     23108 010  20/09/2013
+    715      994 20/09/2013      994 VALDEZ CHAVEZ DARWIN      SAMSUNG    UN40D5500RGXPE  Z4KK3EAB3000     23108 021  20/09/2013
+    716      998 20/09/2013      998 CASTILLO MACEDA SOFIA     L.G        MB-1442DS       803TAWM00409     23108 004  23/09/2013
+    717    10975 20/09/2013    10975 LIZARZABURU TANIA         SAMSUNG    WA95Q3WFP/XPE   /./               1000 011  20/09/2013
+    718    10976 20/09/2013    10976 CHIROQUE NAVARRO MERCEDES SAMSUNG    WA1DXARFP       .........         1000 011  20/09/2013
+    719     1001 21/09/2013     1001 NINAHUAMAN NINAHUAMAN CRI SAMSUNG    LN32C450E1XSR   Z21P3CHZA001      1000 001  21/09/2013
+    720     1002 21/09/2013     1002 APONTE CAMPUSANO KATHIA   SAMSUNG    SAMSUNG MV800   A1DSCN0C1000     23108 004  24/10/2013
+    721     1004 21/09/2013     1004 ALDANA ALARON FIORELLA PA PHILIPS    DVP3820/55      KX1A11234195     23108 010  03/10/2013
+    722     1006 23/09/2013     1006 CHIROQUE SANCHEZ SOCORRO  SAMSUNG    LN32C480H1XSR   Z2733CGZ6000     23108 010  30/09/2013
+    723    10981 23/09/2013    10981 CARRASCO NEYRA KATYA      SAMSUNG    WA1DXARFP       .......           1000 011  23/09/2013
+    724    10983 24/09/2013    10983 LOPEZ ARDILA ANGELICA     SAMSUNG    WA1DXARFP       ...S/S            1000 011  24/09/2013
+    725     1020 26/09/2013     1020 LOPEZ DE CALLE MARIA      SAMSUNG    UN40D5800VGXPE  Z3VA3CBB6000      1000 001  26/09/2013
+    726    10990 26/09/2013    10990 RODRIGUEZ PAIVA MANUEL JE BOSCH      REGRIGERADORA   ...               1000 011  26/09/2013
+    727     1028 28/09/2013     1028 MIYASHIRO TAMANAJA GUSTAV AOC        L32W931         R59A7JA00793     23108 010  07/10/2013
+    728     1030 28/09/2013     1030 LOPEZ PERALTA KELLER ALBE SAMSUNG    AGE614W/SAM     J5SQ7MDZ9004      1000 001  28/09/2013
+    729     1031 28/09/2013     1031 PALOMINO RAMIREZ JOSE     L.G        32LD340-MB      101RMH98145      23108 010  10/10/2013
+    730    10991 28/09/2013    10991 CORDOVA CORDOVA SONIA     L.G        WF-T1054TP      /.//              1000 011  28/09/2013
+    731    10993 30/09/2013    10993 CULQUICONDOR ARREATEGUI R SAMSUNG    WA1AV9          /.//              1000 011  30/09/2013
+
+                                                                       TOTAL SETIEMBRE                     =>    38
+
+    732     1049 02/10/2013     1049 CORDOVA CORDOVA SONIA     SAMSUNG    SAMSUNG PL120   A13RCN0C4000      1000 001  02/10/2013
+    733     1050 02/10/2013     1050 FARFAN VALDIVIEZO ROLY    SAMSUNG    MX-C630/STR     9FLL1TAZ4001     23108 004  16/10/2013 CESER PIURA SRL                                                                                              P═gina :         18
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:54
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    734     1051 02/10/2013     1051 CASTILLO SANCARRANCO KENN SAMSUNG    LN22B350F2XSR   B5123CGSA043     23108 010  07/10/2013
+    735    11002 02/10/2013    11002 COSTANTINI OLIVIERI ANTON SAMSUNG    WA1DXARFP       S/S/              1000 011  02/10/2013
+    736     1055 03/10/2013     1055 CORREA FLORES LISSETH     SAMSUNG    PL42A450P1XSR   AL6S3CHQ9001     23108 009  07/10/2013
+    737     1066 09/10/2013     1066 QUINDE LOPEZ TATIANA      SAMSUNG    SAMSUNG PL50    S/S              23108 021  09/10/2013
+    738     1068 09/10/2013     1068 ANGULO TRELLES JESSICA    AOC        LE32W234D       L60C84A02397      1000 001  09/10/2013
+    739     1070 09/10/2013     1070 RODRIGUEZ QUIROGA DANY    SAMSUNG    NP-NC110        S/S              20350 002  19/10/2013
+    740     1074 10/10/2013     1074 ROSILLO PURIZACA PABLO    OLYMPUS    SZ-11           JGA205820        23108 010  14/10/2013
+    741     1086 11/10/2013     1086 QUEVEDO AGUILAR MARIANELA SAMSUNG    SAMSUNG WB850F  A3ZGCN0C5000     23108 009  15/10/2013
+    742     1110 16/10/2013     1110 HURTADO JARA OMAR         SAMSUNG    AME8103ST       17967DBQ8014     23108 010  17/10/2013
+    743    11034 16/10/2013    11034 TEMOCHE LARIZBEASCOA SHIR SAMSUNG    WA1DXARFP            ..           1000 011  16/10/2013
+    744     1115 17/10/2013     1115 MOLSALVE AMURUZ OSCAR     SAMSUNG    SAMSUNG DV150F  A6DGCNID6000      1000 001  17/10/2013
+    745     1118 18/10/2013     1118 RIVERA LAVALLE GUILLERMO  SAMSUNG    SAMSUNG ES75    6766C90B4000     23108 010  19/10/2013
+    746    11038 18/10/2013    11038 GARCIA CALLE OLGA         COLDEX     CH10 - CONS     ///               1000 011  18/10/2013
+    747    11039 18/10/2013    11039 CISNEROS TENOCIO JENNY    COLDEX     RC31            //                1000 011  18/10/2013
+    748     1121 19/10/2013     1121 SIANCAS CRISANTO JHONNY   SAMSUNG    SAMSUNG ST77    A29MCN0C2000     23108 010  23/10/2013
+    749    11042 19/10/2013    11042 CULQUICONDOR DE FONG EMIL SAMSUNG    WA1DXARFP           S/S           1000 011  19/10/2013
+    750     1129 21/10/2013     1129 RODRIGUEZ DE RAFFO ANA IS SAMSUNG    SAMSUNG ST60    S/S              23108 021  24/10/2013
+    751     1130 21/10/2013     1130 ROJAS GUTIERREZ EUSEBIO   EPSON      C412B           Q73K008732       20350 010  23/10/2013
+    752     1125 23/10/2013     1125 RIVAS TAVARA VICTOR EDUAR SAMSUNG    SAMSUNG ES70    7082C90Z9000     23108 009  23/10/2013
+    753     1146 23/10/2013     1146 ELIAS PINJO WILMER        SAMSUNG    ME1044WD        04957DCP8012     23108 010  06/11/2013
+    754     1152 23/10/2013     1152 FLORES DE RETO SOILA ALZI SAMSUNG    AMW784S/SAM     J4JZ7MRQB011     23108 010  30/10/2013
+    755    11052 23/10/2013    11052 PAZ GUTIERREZ MARIA       SAMSUNG    REFRIGERADORA   ..                1000 011  23/10/2013
+    756    11053 23/10/2013    11053 QUINTANA PALACIOS MANUEL  SAMSUNG    WA1DXARFP          ..             1000 011  23/10/2013
+    757     1154 24/10/2013     1154 YOVERA CARLIN MARCO ANTON SAMSUNG    UN32EH4003GXPE  Z5YC3CFC9025     23108 010  20/01/2014
+    758     1164 26/10/2013     1164 TIENDAS EFE S.A           SAMSUNG    UN55F6400AGXPE  Z7DD3CXD7000     23108 021  28/10/2013
+    759     1165 26/10/2013     1165 TIENDAS EFE S.A           ORIZON     TV32SOCEHD      0313003225       23108 010  28/10/2013
+    760     1174 29/10/2013     1174 AGUILERA CHINCHAY WILMER  SAMSUNG    DVD-P343        6VDXC00645P      23108 009  06/11/2013
+    761     1176 29/10/2013     1176 SANTANDER REBAZA IVAN     EPSON      C412B           Q73K021580       20350 010  31/10/2013
+    762     1177 30/10/2013     1177 ROQUE LEON JIMMY WILLSON  CANON      PC1472          252065011191     23108 004  06/11/2013
+
+                                                                       TOTAL OCTUBRE                       =>    31
+
+    763     1189 04/11/2013     1189 AGUILA VERILLO ANGELICA   SAMSUNG    MW1030WE        7MAA100702D      23108 010  06/11/2013
+    764     1196 05/11/2013     1196 MARTINEZ SEMINARIO GILBER L.G        26LD330-MB      009RMNEAM959     23108 010  07/11/2013
+    765     1201 06/11/2013     1201 CASTANEDA HONORIO FRANCIS SAMSUNG    UN40C5000QRXSR  Z20U3CEB2007     23108 004  07/11/2013
+    766    11091 08/11/2013    11091 ROMERO CUMPA LOURDES      SAMSUNG    WA1DXARFP            S/S          1000 011  08/11/2013
+    767     1210 09/11/2013     1210 PANTA SALAZAR DE MEDINA G EPSON      C462H           S27K012622       20350 002  28/11/2013
+    768     1220 12/11/2013     1220 VILLARREAL GUTIERREZ KARO EPSON      C412B             Q73K005960      1000 001  12/11/2013
+    769     1223 13/11/2013     1223 URBINA YARLEQUE ARNALDO   SAMSUNG    NP530U4B-S01VE  HPV991GC4001      1000 001  13/11/2013
+    770     1225 14/11/2013     1225 SUAREZ VALENCIA OSCAR     EPSON      C412B           Q73K007321       20350 010  09/01/2014
+    771     1228 15/11/2013     1228 OREJUELA SEMINARIO MARCO  SAMSUNG    ME1044WA        7MAX401737E       1000 001  15/11/2013
+    772    11109 19/11/2013    11109 CHANANPA ACOSTA MARTHA    SAMSUNG    RT2ASRTS1/XPE   .//.//            1000 011  19/11/2013
+    773     1246 20/11/2013     1246 MOGOLLON RISCO MARIA LILI OTROS      1022            306102068        45123 010  05/12/2013
+    774     1251 20/11/2013     1251 PENA PEREZ RODOLFO RAFAEL SAMSUNG    PL42C91HPX/STR  AHFA3CEP6000     23108 010  05/12/2013
+    775     1255 21/11/2013     1255 YARLEQUE AYALA ANGEL      SAMSUNG    MAX-A54U/SMT    9DUS1TDQ9001     23108 010  17/03/2014
+    776    11114 21/11/2013    11114 OJEDA MEZA LIDIA          SAMSUNG    WD0024W8N/XPE   ///./             1000 011  21/11/2013
+    777    11118 22/11/2013    11118 CARRASCO GONZALES ALEYDA  SAMSUNG    REFRIGERADORA    S/S              1000 011  22/11/2013
+    778     1281 25/11/2013     1281 SIEMPRE SABROSO SAC       SAMSUNG    AGE614W         J5SQ7MDZ9004      1000 001  25/11/2013
+    779     1286 26/11/2013     1286 GALLO MANRIQUE JORGE      SONY       DSC-W690        8368073          23108 010  05/12/2013
+    780     1305 29/11/2013     1305 REVOLLEDO JURADO DANIEL E EPSON      C412B           Q73K021333       20350 009  03/12/2013
+    781     1307 30/11/2013     1307 ORTEGA VILLAR JORGE AGUST SAMSUNG    C462J           S42K003820       20350 009  03/12/2013
+    782     1308 30/11/2013     1308 CARCAMO TIRADO DANIEL     SAMSUNG    UN32F5500AGXPE                   23108 004  04/12/2013 CESER PIURA SRL                                                                                              P═gina :         19
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:56
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+
+                                                                       TOTAL NOVIEMBRE                     =>    20
+
+    783     1310 02/12/2013     1310 RENTERIA SANCHEZ VICTOR   OTROS      FUENTE DE CHOCO /.//             23108 021  11/12/2013
+    784     1312 03/12/2013     1312 ALBAN SALAZAR BRUNO       SAMSUNG    UN40F6400AGXPE                    1000 001  03/12/2013
+    785    11145 03/12/2013    11145 FARFAN BARRIENTOS ANGELIC MABE       RML320NJPNS0    .//./             1000 011  03/12/2013
+    786     1336 05/12/2013     1336 BICENO CELI LUIS          KENWOOD    RXD-553         00710570          1000 001  05/12/2013
+    787     1340 06/12/2013     1340 QUEVEDO AGUILAR RUBEN     SONY       HCD-EC99        9166322          23108 004  13/12/2013
+    788     1341 06/12/2013     1341 QUEVEDO AGUILAR RUBEN     SONY       HCD-GTR33       4424557          23108 010  17/01/2014
+    789    11152 06/12/2013    11152 URTADO PERALES GLORIA     SAMSUNG    WA1DXARFP              S/S        1000 011  06/12/2013
+    790     1343 07/12/2013     1343 MIYASHIRO TAMANAJA GUSTAV KODAK      P850            KCYEV604H171      1000 001  07/12/2013
+    791     1348 09/12/2013     1348 CHONSEN SAAVEDRA ALBERTO  SAMSUNG    UN40D5800VGXPE  Z3VA3CUB6000      1000 001  09/12/2013
+    792     1351 09/12/2013     1351 SALAZAR JULCA MARTA       SONY       HCD-ZX100D      9501225           1000 001  09/12/2013
+    793    11157 10/12/2013    11157 CARDENAZ DE RAMIREZ AUREA SAMSUNG    RT2ASRTS1/XPE   .//               1000 011  10/12/2013
+    794     1361 11/12/2013     1361 ZAPATA MONTERO JULIO CESA OLYMPUS    FE-4020         U6UB95532        23108 021  18/12/2013
+    795    11161 12/12/2013    11161 VASQUEZ CAMPOS GARY       SAMSUNG    WA1DXARFP             S/S         1000 011  12/12/2013
+    796     1380 13/12/2013     1380 TIENDAS EFE S.A           SAMSUNG    UN32F4000AGXPE  Z70Y3CED2031     23108 010  17/12/2013
+    797    11174 16/12/2013    11174 CUEVA SISNIEGAS ISABEL    SAMSUNG    WA1DXARFP               S/S       1000 011  16/12/2013
+    798    11177 17/12/2013    11177 MOGOLLON SIGALLO MARINA   SAMSUNG    WA1DXARFP                S/S      1000 011  17/12/2013
+    799     1395 18/12/2013     1395 MENDOZA BOLLEDO HILVER JA SAMSUNG    CT2188BW6X/STR  31EN300543M       1000 001  18/12/2013
+    800     1396 18/12/2013     1396 MARTINEZ GUERRERO DAVID J AOC        LE32W034        L31B94C00095     23108 021  03/01/2014
+    801     1411 21/12/2013     1411 CARRION SEBASTIANI OSCAR  SAMSUNG    LS17PEASF/PES   PE17H9NPA186     23108 004  23/12/2013
+    802     1414 21/12/2013     1414 CASTILLO CHIROQUE JESSICA OTROS      CONTROL         S/S]              1000 001  21/12/2013
+    803    11185 21/12/2013    11185 BENAVIDES SARA            SAMSUNG    RT2ASRTS1/XPE   /.//              1000 011  21/12/2013
+    804     1417 23/12/2013     1417 VEGA SILVA DIANA FRANCHES OTROS      DMC-F3          SD0SC009328      23108 004  07/01/2014
+    805     1421 26/12/2013     1421      VANDA CORDOVA MARTIN L.G        BD560           005INQU12740      1000 001  26/12/2013
+    806     1423 26/12/2013     1423 CORDOVA ALCARASO AURORA   AOC        L32W761         E1581JA10947      1000 001  26/12/2013
+    807     1427 27/12/2013     1427 CORDOVA CORDOVA SONIA     SAMSUNG    SAMSUNG PL120                    23108 004  07/01/2014
+    808    11196 27/12/2013    11196 CARTAGENA CASTRO BRAULIO  SAMSUNG    WA1AV5WFP/XPE   .//.//           45123 011  30/12/2013
+    809     1434 28/12/2013     1434 PINTADO PAZ ERIN YELSIN   SAMSUNG    NP300V4A-S05VE                   20350 010  03/01/2014
+    810     1435 28/12/2013     1435 CANO FLORES JHON FRAN     SAMSUNG    SAMSUNG WB30F   A7BNCN0D3000     23108 009  03/01/2014
+    811     1442 30/12/2013     1442 CORREA SILVA ROSA         OTROS      1016            840016040        45123 009  06/01/2014
+
+                                                                       TOTAL DICIEMBRE                     =>    29
+
+    812     1453 02/01/2014     1453 REQUENA SUYON CARLOS ENRR SAMSUNG    LN32R71BAX/STR  AHQF3CHP8002     23108 010  10/01/2014
+    813     1463 03/01/2014     1463 ZAPATA GALLO HILTON       SAMSUNG    SAMSUNG WB30F   A6TCN6D40002     23108 004  07/01/2014
+    814    11214 03/01/2014    11214 BERGARA RAMOS CARLA ANAY  SAMSUNG    REFRIGERADORA         S/S         1000 011  03/01/2014
+    815     1465 04/01/2014     1465 HURTADO LEVY ALEJANDRO    EPSON      C412B           Q73K019767       20350 010  07/01/2014
+    816     1468 06/01/2014     1468 DURAND COVENAS GUSTABO    BELSON     BSV-2740        G20542001700     23108 021  10/01/2014
+    817     1469 06/01/2014     1469 PAREDES BAYONA NELIDA     SAMSUNG    NP905S3G-K02VE  JGYH91PD8000     20350 002  09/01/2014
+    818    11227 07/01/2014    11227 RUFINO RIOFRIO JACKELINE  SAMSUNG    RT2ASRTS1/XPE   ,.//              1000 011  07/01/2014
+    819    11230 07/01/2014    11230 LY RUBIO GERARDINA        SAMSUNG    UN46ES6500GXPE  Z5GE3CAC9000      1000 011  07/01/2014
+    820     1486 08/01/2014     1486 RUIZ RODRIGUEZ DANIEL     OTROS      R700B           S/S              20350 002  10/01/2014
+    821     1487 08/01/2014     1487 BUSTAMANTE ESPINOZA MARTI SAMSUNG    NP550P5C-S03VE  HWQS91MCB001     20350 010  10/01/2014
+    822     1489 08/01/2014     1489 DEZA CHUMACERO LUIZ FERNA AOC        L32W931         R59A3JA00027      1000 001  08/01/2014
+    823     1490 08/01/2014     1490 SERNAQUE VERA CARMELA PAS IONIC      MLCD151         00001178         23108 021  11/01/2014
+    824    11231 08/01/2014    11231 HERNANDEZ CHAMORRO LUIS U SAMSUNG    WA-1AV91FP      S/S               1000 011  08/01/2014
+    825     1492 09/01/2014     1492 RETO SOSA JOSE EVARISTO   SAMSUNG    LN32C350D1XSR   Z27U3CYZ7010     23108 010  14/01/2014
+    826    11235 09/01/2014    11235 PEREDO TINEDO SILVIA      SAMSUNG    WA1DXARFP                         1000 011  09/01/2014
+    827     1512 11/01/2014     1512 ADANAQUE FLORES EDUARDO   EPSON      C412B            Q73K001716      20350 010  14/01/2014
+    828     1514 11/01/2014     1514 VARBINO CALLE OCTABIO     CONTINENTA CETV31735       09100720          1000 001  11/01/2014 CESER PIURA SRL                                                                                              P═gina :         20
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:58
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    829     1523 14/01/2014     1523 ANTON VILELA VILMA        SAMSUNG    WA1DXPSFP/YIA   A1445MWZ8001      1000 001  14/01/2014
+    830     1525 14/01/2014     1525 SANDOVAL TIMANA MARIELA   PANASONIC  DMC-FH2         WF1DB001843      23108 010  20/01/2014
+    831     1535 14/01/2014     1535 ALARCON CHIRA ELIXABET ZA SAMSUNG    UN40EH5000GXPE  Z4YL3CFC3008     23108 021  22/01/2014
+    832    11247 14/01/2014    11247 CHINININ VALCAZAR JOSE    SAMSUNG    WA1DXARFP                         1000 011  14/01/2014
+    833     1549 15/01/2014     1549 CARDOZA ANASTACIO JOVANY  EPSON      C462H           S27K072779       20350 010  24/01/2014
+    834     1560 16/01/2014     1560 PACHERRES VELASCO SOCORRO CANON      PC1588          282062052196      1000 001  16/01/2014
+    835     1561 16/01/2014     1561 PACHERRES VELASCO SOCORRO OLYMPUS    VG-140          UF8001788         1000 001  16/01/2014
+    836     1563 16/01/2014     1563 VILCAZAN MORE JULIANA     EPSON      C412B            Q73K004408      20350 010  17/01/2014
+    837    11252 16/01/2014    11252 MENDOZA CHAVEZ MARIA MAGD SAMSUNG    WA1DXARFP       ...........       1000 011  16/01/2014
+    838    11258 17/01/2014    11258 RETO GIRON LORENA         SAMSUNG    WA85U7          ..                1000 011  17/01/2014
+    839    11267 21/01/2014    11267 CAO RIVERA ALICIA BEATRIZ SAMSUNG    WA85U7          ....              1000 011  21/01/2014
+    840    11270 21/01/2014    11270 REYES JARAMILLO JUANA     OTROS      999             ...               1000 011  21/01/2014
+    841     1589 22/01/2014     1589 BAZO DE RAMOS ALINA       RECCO      RDV-602         3909/1110/35      1000 001  22/01/2014
+    842    11274 22/01/2014    11274 ARTEAGA TORRES RAUL       COLDEX     RC28            ..                1000 011  22/01/2014
+    843     1604 23/01/2014     1604 ZAPATA OLAYA DE SALAZAR A SAMSUNG    NP-RV510-A03VE  ZWNR93CZA001     20350 010  27/01/2014
+    844     1605 23/01/2014     1605 TIMANA RONDOY WALTER      SAMSUNG    SAMSUNG SH100   9967C90BA000     23108 010  30/01/2014
+    845     1609 24/01/2014     1609 PEZO SALAZAR OMAR         SAMSUNG    UN32D5500RGXPE  Z3KM3CSB7000     23108 004  29/01/2014
+    846     1613 25/01/2014     1613 ROSILLO MUNOZ CESAR AUGUS SAMSUNG    MX-D750/PE      ZSYZ1TAB4005     23108 004  30/01/2014
+    847     1617 27/01/2014     1617 CARDOZA RUIZ MARITZA      SAMSUNG    LS20CMZKFVA/PE  CM20H9LS8236     23108 010  03/02/2014
+    848     1625 28/01/2014     1625 DEDIOS SIMBALA PABLO ALEX AOC        LE19A1333       FWCD4JA00082     23108 021  30/01/2014
+    849     1626 28/01/2014     1626 BENITES REYES MARY CARMEN OTROS      AV-D8102T       AVD810211070     23108 010  03/02/2014
+    850    11297 28/01/2014    11297 ALBURQUEQUE ELAPOUBLE LOU SAMSUNG    WA12F5L2UWW/PE  ,.//              1000 011  28/01/2014
+    851     1498 29/01/2014     1498 MARCIMEX                  SAMSUNG    RT22FAJADS/PE   S/S               1000 001  29/01/2014
+    852     1635 29/01/2014     1635 CASTRO CASTILLO CLAUDIA   EPSON      C412B            Q73K004873      20350 010  05/02/2014
+    853     1639 29/01/2014     1639 VALER FERNANDEZ MARVIN    SAMSUNG    PL42C430A1XSR   Z20H3CQZA011     23108 021  12/02/2014
+    854     1641 29/01/2014     1641 AROYO CUNYARACHE SEGUNDO  L.G        50PT250R-MB.AWF 105KCVU22575     23108 021  03/02/2014
+    855    11298 29/01/2014    11298 SEMINARIO CORONADO CHARLY SAMSUNG    WD0024W8N/XPE   .//               1000 011  29/01/2014
+    856     1643 30/01/2014     1643 ESTRADA ROMERO MARIA DALI SAMSUNG    UN32EH4000GXPE                    1000 001  30/01/2014
+
+                                                                       TOTAL ENERO                         =>    45
+
+    857     1646 01/02/2014     1646 BARRETO SAAVEDRA JUDIT    SAMSUNG    WA1CX7RFP/YIA   A1315MWB3013      1000 001  01/02/2014
+    858     1647 01/02/2014     1647 RIVAS AGUILAR VANESSA     SAMSUNG    SAMSUNG ES90    A24KC9AC402B     23108 004  03/02/2014
+    859     1654 04/02/2014     1654 RAMOS ALBINES GUADALUPE   SAMSUNG    UN32EH4003GXPE  Z5YC3CGD9031      1000 001  04/02/2014
+    860     1656 04/02/2014     1656 TIMANA RAMOS MARGARITA    EMERSON    EMTV21725       S/S               1000 001  04/02/2014
+    861    11311 04/02/2014    11311 ESTRADA FEBRES CARLOS ALB SAMSUNG    WA-11U3WFP      S/S               1000 011  04/02/2014
+    862    11319 06/02/2014    11319 CASTILLO SOBRINO GUSTAVO  SAMSUNG    CT20F3           S/S              1000 011  06/02/2014
+    863    11330 10/02/2014    11330 OJEDA RIVERA JOSEFA LUISA SAMSUNG    REFRIGERADORA     S/S             1000 011  10/02/2014
+    864    11331 11/02/2014    11331 MARTINES VILCHEZ JAVIER   SAMSUNG    WA-85V3WFQ      S/S               1000 011  11/02/2014
+    865     1698 12/02/2014     1698 ELOCK SAM LAYLIN          OLYMPUS    VR-320          07540             1000 001  12/02/2014
+    866    11336 12/02/2014    11336 RODRIGUES OTERO DE ESPINO SAMSUNG    WA1AV9          ...               1000 011  12/02/2014
+    867     1708 13/02/2014     1708 NEYRA SANTOS ANGELICA     L.G        42PM4700-SA     209KCHEAD097     30977 005  06/03/2014
+    868     1710 13/02/2014     1710 TREJO CRUZ ELVIA OLGA     PANASONIC  TC-L32X35L      PEAB11217681     23108 021  19/02/2014
+    869     1712 13/02/2014     1712 JIRON HUERTAS CARLOS      EPSON      C412B           Q73K017976       20350 010  19/02/2014
+    870    11341 13/02/2014    11341 RETO SIANCAS KARINA       SAMSUNG    WA1DXARFP       ............      1000 011  13/02/2014
+    871     1716 14/02/2014     1716 AUZA POZO OSWALDO.        SONY       DSC-S750        5132213           1000 001  14/02/2014
+    872    11344 14/02/2014    11344 MORALES GUEVARA MARIA ISA SAMSUNG    RT25SASS        S/S               1000 011  14/02/2014
+    873    11345 14/02/2014    11345 ROJAS DIAZ MARCELO        L.G        WF-T7502TPP     ..                1000 011  14/02/2014
+    874    11348 14/02/2014    11348 CRUZ MENDOZA ASUNCION     SAMSUNG    WA1AV9          ..                1000 011  14/02/2014
+    875     1723 15/02/2014     1723 PALOMINO ZAPATA MARIA     L.G        32LB9RTE-MB     809MXMT16699     23108 004  17/02/2014
+    876     1724 15/02/2014     1724 GONZALES CHANG PEDRO      AOC        MW0931          S/S              20350 010  19/02/2014
+    877     1726 15/02/2014     1726 RUIZ HUERTAS ALEXANDER.   SONY       DCR-HC52        724799            1000 001  15/02/2014 CESER PIURA SRL                                                                                              P═gina :         21
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:33:59
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    878     1709 17/02/2014     1709 ABAD ALVAREZ YANET        SAMSUNG    CONTROL REMOTO  S/S              23108 001  17/02/2014
+    879     1727 17/02/2014     1727 VASQUEZ RODRIGUEZ MARITZA SAMSUNG    UN32D4000NGXPE  Z3E73CTBA017     23108 021  24/02/2014
+    880     1730 17/02/2014     1730 ALBAN VARGAS ALEXANDER    SAMSUNG    LN40C530F1RXSR  Z23E3CUZ5011     23108 010  27/02/2014
+    881     1738 17/02/2014     1738 GARCIA ROJAS RITTER       SONY       DSC-S750        1514              1000 001  17/02/2014
+    882     1739 17/02/2014     1739 JOSE RONALD QUISPE SUAREZ OTROS      CE15711-54      S/S              20350 002  18/02/2014
+    883     1740 17/02/2014     1740 GARCIA ALDANA JUAR CARLOS L.G        42LS5700-SB     203KCAS75624     23108 010  19/02/2014
+    884     1742 18/02/2014     1742 MELCHOR CHIROQUE JOSE     CONTINENTA CELED93135      09110807          1000 001  18/02/2014
+    885    11355 18/02/2014    11355 ALCAS CASTRO HERALDINA    SAMSUNG    WA-85V3WFQ      ..                1000 011  18/02/2014
+    886    11356 18/02/2014    11356 GUERRERO DOMINGUEZ YOLAND L.G        GN-             ,M,               1000 011  18/02/2014
+    887    11357 18/02/2014    11357 REYES LAREA RODOLFO EDUAR SAMSUNG    WA12F5L2UWW/PE  ,.                1000 011  18/02/2014
+    888    11360 18/02/2014    11360 AYALA PASACHE JENI        SAMSUNG    PL51D550C1GXPE  ;LKK              1000 011  18/02/2014
+    889    11365 18/02/2014    11365 CARRILLO QUISPE ARNALDO   SONY       KDL-40BX400     20                1000 011  18/02/2014
+    890     1748 19/02/2014     1748 BAUTISTA COVENAS JOVANI   ORIZON     21USL           110517011570     23108 010  05/03/2014
+    891     1750 19/02/2014     1750 GARCIA COLOMA RENZO       AOC        L24H898         E248V1NKAJAE     23108 021  24/02/2014
+    892     1756 19/02/2014     1756 ZAPATA IPANAQUE NATALIA   SAMSUNG    SAMSUNG WB30F                    23108 009  24/02/2014
+    893     1757 19/02/2014     1757 LEON ARELLANO ROXANA      SONY       FST-ZX6         9503587          23108 021  27/02/2014
+    894     1758 19/02/2014     1758 CORONADO ZAPATA LUIS ENRI SAMSUNG    UN32EH4500GXPE  Z5L43CECB001     23108 010  24/02/2014
+    895     1764 19/02/2014     1764 RUESTA ORDINOLA MARITA    SAMSUNG    NP300E5C-A04VE  HZ2B911D1001     20350 002  26/02/2014
+    896    11371 19/02/2014    11371 SAMANIEGO ESCUDERO DE PAR L.G        WF-T7502TPP        S/S            1000 011  19/02/2014
+    897     1767 20/02/2014     1767 RIO VERDE S.A.C           SAMSUNG    LN40D503F7GXPE  Z44G3CCB9028     23108 004  24/02/2014
+    898     1771 20/02/2014     1771 BENITES MANSILLAS DAVID   SONY       KV-29AL66C      8002488          30977 021  04/03/2014
+    899     1774 20/02/2014     1774 CALDERON DE CASTILLO JESU L.G        GN-              ,.              45123 006  01/03/2014
+    900     1777 20/02/2014     1777 VALENCIA SALAZAR JOSE ANT SONY       DSC-W120        8414475           2405 009  25/02/2014
+    901     1778 20/02/2014     1778 ACARO NIZAMA ODAR MARCO   SONY       DCR-DVD103      S/S               2405 021  25/02/2014
+    902     1780 20/02/2014     1780 CARDENAS ARIAS BETY LUZ   L.G        MS-1144DS       801TANS01183     23108 004  25/02/2014
+    903     1782 20/02/2014     1782 DIAS RUIDIAS PATRICIA     SAMSUNG    MX-D850/PE      ZSGA1TAB6000     23108 010  09/05/2014
+    904     1783 20/02/2014     1783 CRUZ YARLEQUE JULIO CESAR SONY       DCR-SR20        1975426           2405 009  21/02/2014
+    905    11372 20/02/2014    11372 SIALER ZAMORA LUISA       L.G        WF-T1251TP      ..               45123 018  01/03/2014
+    906     1787 21/02/2014     1787 CALLE VEGAS NOELIA DENIS  L.G        MCV902/AOU      706HZDU17031     30977 010  05/03/2014
+    907     1792 21/02/2014     1792 CLAVIJOS VILCHEZ MARIA DE SONY       DSC-W610        8542462           2405 010  06/03/2014
+    908     1794 21/02/2014     1794 VEGA ALCAZAR EDGAR        PANASONIC  DMC-FH2         WK1EB001926       2405 010  13/03/2014
+    909     1799 22/02/2014     1799 ADRIANZEN SUYON MARCOS MA L.G        L1753T/SFS.AWFV 706NDJX6S804      1000 001  22/02/2014
+    910     1802 22/02/2014     1802 IPANAQUE VALVERDE PILAR   SONY       DSC-S930        5078294           1909 010  12/03/2014
+    911     1803 22/02/2014     1803 IPANAQUE VALVERDE PILAR   ALTRON     TABLET          S/S              20350 010  26/02/2014
+    912    11387 22/02/2014    11387 GAMARRA CAPELLETTI GIOVAN L.G        50PQ10R-MB.AWFR /..,M,.           1000 011  22/02/2014
+    913    11389 24/02/2014    11389 PALACIOS NAVARRO AMERICA  SAMSUNG    WA-85V3WFQ      .....            45123 018  04/03/2014
+    914     1810 25/02/2014     1810 CONSORCIO CASTILLA        EPSON      C462J           S42K013570       20350 010  04/03/2014
+    915     1814 25/02/2014     1814 DE LOS SANTOS LAVADO CARL SONY       MHC-GTR88       9519757          30977 010  26/03/2014
+    916     1819 25/02/2014     1819 CHUNGA PASICHE SHIRLEY MI OLYMPUS    FE-4020         U6UB84343        23108 021  06/03/2014
+    917     1821 25/02/2014     1821 CASTILLO ROSALES GLORIA   AIWA       NSX/R70         SB2PM22L0121     30977 010  04/03/2014
+    918     1822 25/02/2014     1822 VARILLAS CRUZ ZOILA DEL P PROLINK    MD-0651         12065136127      60070 010  26/03/2014
+    919     1823 25/02/2014     1823 PAZ MOSCOL WILSON         L.G        W1943S-BN.AWFIQ 804UXJX5M132     23108 021  26/02/2014
+    920     1829 26/02/2014     1829 VIERA GARCIA KLEBER ALEXA SAMSUNG    UN40EH5000GXPE  Z4YL3CF30176      1000 001  26/02/2014
+    921     1838 26/02/2014     1838 RIOJAS CHAVEZ JOSE GERMAN SONY       CDX-GT710UV     1613666          30977 009  08/03/2014
+    922     1839 26/02/2014     1839 ZARATE CASTILLO RICARDO   SAMSUNG    CL21M21MQUXSTR  399J3CAXC009     23108 021  06/03/2014
+    923    11412 26/02/2014    11412 VILLALTA SANCARRANCO VANE SAMSUNG    GT-P5113ZW      RF2D60ZFS8F      74523 018  26/02/2014
+    924    11413 26/02/2014    11413 LABAN ZURITA MAURA        SAMSUNG    WA1DXARFP       KJKG             45123 018  01/03/2014
+    925     1840 27/02/2014     1840 ARENS PORRAS FEDERICO     PHILIPS    32TA2800/55     BZ5A08161500     30977 010  04/03/2014
+    926     1844 27/02/2014     1844 SANDOVAL PRADO JAMAHOL    SONY       DSC-W620        0304537           2405 010  12/03/2014
+    927     1849 27/02/2014     1849 RIOS RODRIGUEZ FELIX FRAN SONY       DSC-W710        5221233           1909 009  12/03/2014
+    928     1853 28/02/2014     1853 TUME PANTA MIGUEL         L.G        50PA4500-SF.AWF 203KCLH10048     30977 010  15/03/2014
+    929     1856 28/02/2014     1856 EGUERAY FRANCO PERCY      SONY       SVF14213CLB     545770700002     60070 021  08/03/2014 CESER PIURA SRL                                                                                              P═gina :         22
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:34:01
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    930    11435 28/02/2014    11435 ROJAS QUINTERO FANY       L.G        WF-             NBC              45123 018  03/03/2014
+    931    11436 28/02/2014    11436 SEMINARIO DE MANRIQUE DIL SAMSUNG    WA1DXARFP       000              45123 018  03/03/2014
+
+                                                                       TOTAL FEBRERO                       =>    75
+
+    932     1858 01/03/2014     1858 AGUSTO VIGNOLO JORGE      SONY       MHC-GTX77       9507604          30977 010  04/03/2014
+    933     1862 01/03/2014     1862 BEJARANO PE;A ALEXANDER   SAMSUNG    MB6544W         71CF600440       30977 100  17/08/2015
+    934     1865 01/03/2014     1865 PRESCOTT COSTA DINA       L.G        BD670-N.BPERLLK 109INQU03979     30977 010  03/03/2014
+    935    11431 01/03/2014    11431 DOMINGUEZ GARCIA KAREN    SAMSUNG    WA456DRHDSU/PE  ,,L,MF            1000 011  01/03/2014
+    936     1881 04/03/2014     1881 RUIZ HERNANDEZ EDGARDO    SONY       DCR-HC26        1705201           1909 010  12/03/2014
+    937     1883 04/03/2014     1883 COVENAS MORILLO EDGAR     SONY       SCPH-90010      HQ4624555         2405 010  05/03/2014
+    938     1884 04/03/2014     1884 MERA TAPIA CESAR AUGUSTO  CONTINENTA CELED95805      03110262         30977 005  06/03/2014
+    939     1888 04/03/2014     1888 RODRIGUEZ GUTIERREZ GONZA SAMSUNG    MX-D630/PE      ZSEW1TAB5005     30977 010  07/03/2014
+    940     1894 04/03/2014     1894 HERNANDEZ CHUMACERO ALFRE SAMSUNG    UN40D5500RGXPE  Z3KK3CTB7000     23108 021  05/03/2014
+    941     1901 05/03/2014     1901 SANCHEZ VILCHEZ NATALI    CANON      IMPRESORA MULTI 36420            20350 010  06/03/2014
+    942     1902 05/03/2014     1902 CALLE DE FARFAN OLGA HORT L.G        42LS3400-SA     207SRQL1V532     30977 010  24/03/2014
+    943     1904 05/03/2014     1904 CARRASCO SAAVEDRA JERSON  SAMSUNG    PL42A450P1XSR   AL6S3CEQ4000     23108 021  07/03/2014
+    944     1907 05/03/2014     1907 ALI PINTO HECTOR / GIULIA SAMSUNG    WA1DXARFP       DFS/S            45123 018  08/03/2014
+    945     1908 05/03/2014     1908 GARCIA RODO LUIS          SONY       VS10847-1M      PVA062900389     23108 021  06/03/2014
+    946    11473 05/03/2014    11473 SAAVEDRA COLAN CLAUDIA    L.G        GN-             JKHF             45123 018  12/03/2014
+    947    11475 05/03/2014    11475 VICENTE SAAVEDRA MAXIMO   L.G        WF-             K,KND            45123 013  06/03/2014
+    948     1913 06/03/2014     1913 LOPEZ GARCIA LUZ AURORA   SONY       MHC-GTR55       9500448          30977 010  10/03/2014
+    949     1914 06/03/2014     1914 MORALES DE ORTEGA MARCIA  SAMSUNG    LN32C450E1XSR   Z21P3CHZA006     23108 021  07/03/2014
+    950     1917 06/03/2014     1917 QUIROGA ALBIRENA EMANUEL  SONY       VPCYB20AL       185300114037     60070 010  21/03/2014
+    951     1923 06/03/2014     1923 CHUMACERO MERINO JAVIER   SAMSUNG    SP2503SWX/ZA    YEJAHVFZ8003     20350 010  07/03/2014
+    952     1925 06/03/2014     1925 CHUMACERO MERINO JAVIER   SONY       DSC-H10         5400380           1909 010  20/03/2014
+    953    11482 06/03/2014    11482 ARAGON MAGUI;A URSULA     SAMSUNG    WA1DXARFP       KHJD             45123 004  07/03/2014
+    954     1927 07/03/2014     1927 GOMEZ ROMERO ROSIO KARINA CANON      PC1585          412064006625      1909 010  12/03/2014
+    955     1929 07/03/2014     1929 OYOLA BALAREZO JAIME      AOC        MW0711          M06C805SD020     20350 021  13/03/2014
+    956     1930 07/03/2014     1930 DEDIOS RUMICHE CARLOS ENR SAMSUNG    UN40D5500RGXPE  Z3KK3CVBA003     23108 004  10/03/2014
+    957     1931 07/03/2014     1931 CHRISTOPH OSCAR REINALDO  SAMSUNG    LN32D403E2XPE   Z3Z63CEBA030     23108 004  08/03/2014
+    958     1932 07/03/2014     1932 CHRISTOPH OSCAR REINALDO  SAMSUNG    LN22B350F2XSR   B5123CGS9019     23108 004  08/03/2014
+    959     1933 07/03/2014     1933 ARCE TABUANA JESSICA      L.G        42PJ350R-MA     008RMNE9A703     30977 010  15/03/2014
+    960     1934 07/03/2014     1934 RESTAURANTES DON CARLOS E AOC        LC32W131        L24B41A00125     30977 005  10/03/2014
+    961     1938 08/03/2014     1938 QUEVEDO ALBURQUEQUE VERON OLYMPUS    VG-120          UE4002467         1909 010  12/03/2014
+    962     1944 08/03/2014     1944 ABAD LOPEZ INDALIRA       CASIO      EX-ZS10         20022320F         1909 010  12/03/2014
+    963    11501 08/03/2014    11501 MECA FARFAN NEIDA         SAMSUNG    WA1DXARFP       MJKF              1000 011  08/03/2014
+    964     1949 10/03/2014     1949 PULACHE TALLEDO HUGO GERA PHILIPS    21PT6446/44     DN1A07270686     30977 010  15/03/2014
+    965     1952 10/03/2014     1952 AGUSTO VIGNOLO JORGE      SONY       MHC-GTX77        9507604         23108 010  19/03/2014
+    966     1954 10/03/2014     1954 CHUNGA PURIZACA HARRINSON SAMSUNG    NP300E4A-S03VE  HRQM91AC5002     20350 002  12/03/2014
+    967     1955 10/03/2014     1955 MIO LIMA DIANA            SONY       KDL-32EX305     8069515          30977 010  10/03/2014
+    968     1959 10/03/2014     1959 CARRANZA CAMACHO ROQUE    SONY       CFD-S07CP       1001007          30977 010  26/03/2014
+    969     1960 10/03/2014     1960 GUTIERREZ CARRE;O ROSA AL SAMSUNG    UN32C4000PXSR   Z21S3CUB3039     23108 010  13/03/2014
+    970     1961 10/03/2014     1961 YOVERA PALACIOS JORGE LUI SAMSUNG    CONTROL REMOTO  AK59-00149A      23108 010  14/03/2014
+    971     1964 10/03/2014     1964 PAICO SERNAQUE RODOLFO    SONY       RK-KVD2800B     S/S              30977 005  24/03/2014
+    972     1965 10/03/2014     1965 PUELLES PE;A DIANA        L.G        DV642-SN.APERLL 107TCBD15617     30977 010  11/03/2014
+    973     1971 11/03/2014     1971 GARCIA PEDRERA SANDRA     CANON      PC1437          S/S               1909 010  12/03/2014
+    974     1973 11/03/2014     1973 CHIRA LOPEZ GLORIA        SAMSUNG    AA59-00588A     S/S              23108 021  13/03/2014
+    975     1982 11/03/2014     1982 UNIMAC S.A.               SONY       DSC-W710         6007079          1909 010  28/03/2014
+    976     1984 11/03/2014     1984 NINO GUARNIZO JUAN MANUEL SONY       KV-21FS120      C427803          30977 005  13/03/2014
+    977    11514 11/03/2014    11514 LOZANO POCCO KATHERINE    L.G        GN-             KJKDS            45123 011  15/03/2014
+    978     1990 12/03/2014     1990 ADA DE MONSON             L.G        WF-T1103TP      S/S              45123 009  20/03/2014 CESER PIURA SRL                                                                                              P═gina :         23
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:34:03
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+    979     1991 12/03/2014     1991 DIOSES LIZAMA AMDO        L.G        KV-21RP         S/S              23108 004  13/03/2014
+    980     1993 12/03/2014     1993 SANCHEZ BAELLA JUAN ALEJA SONY       SCPH-90010      5663033           1909 010  17/03/2014
+    981     1999 12/03/2014     1999 VICENTE LLOCLLA MERCY     SONY       DSC-W630        8303989           1909 010  13/03/2014
+    982     2010 13/03/2014     2010 HUAMAN MORENO VALERIO     SONY       KDL-40R455A     6065796          30977 009  05/06/2014
+    983     2019 13/03/2014     2019 DIAZ CRISANTO DORA ESTHER SONY       SVE14125CLW     275457393018      1000 001  13/03/2014
+    984    11533 13/03/2014    11533 CHECKLEY SORIA JUAN CARLO SAMSUNG    REFRIGERADORA   JJKFG             1000 011  13/03/2014
+    985    11534 13/03/2014    11534 QUEVEDO AGUILAR MARIANELA L.G        GC-             NLJHHDFJK         1000 011  13/03/2014
+    986    11539 13/03/2014    11539 CHUMACERO GARCIA CARMEN   L.G        42LH30FR        MLNDS            23108 004  25/03/2014
+    987     2025 14/03/2014     2025 TEYLOR GARCIA ROBER       L.G        KP-20U54G       907KT00587       30977 010  02/05/2014
+    988     2027 14/03/2014     2027 ADRIANZEN FACUNDO CINTHIA SONY       DSC-WX60        4925236           1909 010  25/03/2014
+    989     2028 14/03/2014     2028 ADRIANZEN FACUNDO CINTHIA CANON      PC1267           S/S              1909 010  25/03/2014
+    990     2029 14/03/2014     2029 CHRISTOPH OSCAR REINALDO  SAMSUNG    LN22C450E1XSR   Z21W3CLZ3004     23108 021  27/05/2014
+    991     2038 15/03/2014     2038 OLAYA ESCOBAR MARIA ELIZA AOC        MW0731          S/S              20350 021  18/03/2014
+    992     2039 15/03/2014     2039 CHUMACERO MERINO JAVIER   SAMSUNG    SP2503SWX/ZA    YEJAHVFZ8003     20350 010  19/03/2014
+    993     2043 15/03/2014     2043 SAUCEDO ORDINOLA LUCILA   SAMSUNG    WA1DXARFP       LKMJKD           45123 002  31/03/2014
+    994     2044 15/03/2014     2044 PINTO IDROGO FABIOLA      SONY       HCD-GT444       9181785          30977 010  26/03/2014
+    995     2045 15/03/2014     2045 VERASTEGUI LAZO PERCY     L.G        42LW5700-SA.AWF 108KCRN3414Z      1000 001  15/03/2014
+    996     2046 15/03/2014     2046 VERASTEGUI LAZO PERCY     SONY       CECH-2511A      5752997           1909 010  21/03/2014
+    997     2048 15/03/2014     2048 MARTINEZ VILLEGAS LUIS MA MIPAD      CE15791-54      S/S              20350 021  18/03/2014
+    998     2059 17/03/2014     2059 LOPEZ CHUMACERO JULIO CES EPSON      C412B           Q73K018978        1000 001  17/03/2014
+    999     2060 17/03/2014     2060 DE PAREDES KLAY           MABE       RML320NJPNS0    S/S               1000 001  17/03/2014
+  1,000     2062 18/03/2014     2062 ALAMA ANCAJIMA EPIFANEA   L.G        42PJ350-MA.AWFL 007RMJFCR892     30977 005  24/03/2014
+  1,001     2066 18/03/2014     2066 SANDOVAL MIRANDA NAIR     AOC        LE32W234D       L60D54A00768     30977 005  20/03/2014
+  1,002     2070 18/03/2014     2070 MARCIMEX                  SONY       KDL-32W605A     6003312           1000 001  18/03/2014
+  1,003     2071 18/03/2014     2071 IE MAUEL OCTAVIANO HIDALG EPSON      H383A           PQQF150460L      20350 002  25/03/2014
+  1,004     2072 18/03/2014     2072 BRAITHWAITE PASAPERA FHIL AOC        E32B61NS11AENZ  L31B94COD232     30977 010  02/05/2014
+  1,005     2073 18/03/2014     2073 QUEVEDO AGUILAR RUBEN     SONY       HCD-EC99         9166322         30977 010  24/03/2014
+  1,006     2074 18/03/2014     2074 QUEVEDO AGUILAR RUBEN     SONY       HCD-GTR33        4424557         30977 010  21/04/2014
+  1,007    11561 18/03/2014    11561 YOVERA PALACIOS JORGE LUI SAMSUNG    WA1DXARFP       DFDMJKF           2008 018  19/03/2014
+  1,008    11567 18/03/2014    11567 PERICHE TEMOCHE SEGUNDO   L.G        WF-T7502TPP            S/S        1000 011  18/03/2014
+  1,009     2084 19/03/2014     2084 NAMUCHE JUAREZ JUANA      SONY       DSC-W730        4600481           1909 010  22/04/2014
+  1,010    11601 19/03/2014    11601 BALLONA TIMANA JOSE ANTON L.G        WF-T7553TP      S/S               1000 011  19/03/2014
+  1,011     2086 20/03/2014     2086 SOLANO CALLE ANDRES       SAMSUNG    UN32D5500RGXPE  Z3KM3CUB9002     23108 010  14/04/2014
+  1,012     2096 20/03/2014     2096 NIEVES ALDANA NELIDA      L.G        WF-T7553TP       S/S              1000 001  20/03/2014
+  1,013    11603 20/03/2014    11603 AGUILAR LUYO RENZON GIOVA SAMSUNG    WA1DXARFP       HFJD              1000 011  20/03/2014
+  1,014     2110 21/03/2014     2110 RUIZ MARTINEZ MAURO       SONY       CDX-GT300MP     1595331          30977 005  26/03/2014
+  1,015     2114 21/03/2014     2114 JUAREZ PE;A HILDER        SAMSUNG    RMCTPF2AP1      A3052400/V1.     23108 010  24/03/2014
+  1,016     2118 22/03/2014     2118 CHUNGA PALACIOS HERNESTO  SAMSUNG    LN40A330J1XSR   AM1F3CSS2000     23108 010  24/03/2014
+  1,017     2080 24/03/2014     2080 MADRID VELASCO JULIANA    L.G        MB-1144DS       510TAQP00332     30977 010  02/04/2014
+  1,018     2123 24/03/2014     2123 GARCIA RONDOY EDY DAVID   SAMSUNG    PL51F4500AGXPE  Z7C23CQD6024     23108 021  28/03/2014
+  1,019     2124 24/03/2014     2124 CALERO ROMERO CRIS MARIAN PANASONIC  DMC-FS3         S/S               1909 010  25/03/2014
+  1,020     2125 24/03/2014     2125 NIZAMA ROMERO DAVID       SONY       MHC-GTR55       9516006          30977 010  15/04/2014
+  1,021     2126 24/03/2014     2126 SANCHEZ VELASQUEZ JENNY   SAMSUNG    SAMSUNG ST77    A29MCN0C2001     23108 021  25/03/2014
+  1,022     2129 24/03/2014     2129 HINSBE SANDOVAL MIGUEL AN SONY       MHC-GT55        9172875          30977 005  01/04/2014
+  1,023     2130 24/03/2014     2130 RIOS LOPEZ GABRIEL        EPSON      STYLUS TX235W   4HY056789        20350 002  26/03/2014
+  1,024     2136 24/03/2014     2136 PACHERRES YOVERAS AGUSTIN SONY       MHC-GPX55        4431618         30977 005  27/03/2014
+  1,025    11628 24/03/2014    11628 BARRIENTOS DE SERNA FLOR  SAMSUNG    WA-1AV91FP        S/S             1000 011  24/03/2014
+  1,026    11636 25/03/2014    11636 BAYONA CHAVEZ ROSARIO     MABE       I420            MK                1000 011  25/03/2014
+  1,027     2148 26/03/2014     2148 SOLANO URBINA MARTHA      SONY       HCD-GTR88       9507677          30977 010  15/05/2014
+  1,028     2157 26/03/2014     2157 PINTO IDROGO FABIOLA      L.G        RP-21FE60       505RMVB16624     30977 005  28/03/2014
+  1,029    11647 26/03/2014    11647 MARCHAN PESANTES MARIA    INDURAMA   RI-530          NJKDF            45123 018  24/04/2014
+  1,030     2160 27/03/2014     2160 OLIVOS LABAYE RICARDO     L.G        L1753TS         801NDVW0K279      1000 021  06/04/2014 CESER PIURA SRL                                                                                              P═gina :         24
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:34:05
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+  1,031     2163 27/03/2014     2163 VILLALOBOS SAGREDO FREDY  IMACO      AC1214          28396             1000 001  27/03/2014
+  1,032     2167 27/03/2014     2167 CRUZADO DE TAYPE BETTY    SAMSUNG    AGE0103MB                        23108 010  10/04/2014
+  1,033     2144 28/03/2014     2144 CUENCA CHUMACERO SANTOS G L.G        DV492H-SN.APERL 007TCVU13084     30977 005  28/03/2014
+  1,034     2169 28/03/2014     2169 ESCUDERO AVELLANEDA STEPH SONY       VPCYB20AL       3007966          60070 010  07/04/2014
+  1,035     2170 28/03/2014     2170 DOMADOR HUMBO MARIA       HP         D40-XV102LA     CNU03723G7        1000 001  28/03/2014
+  1,036     2178 28/03/2014     2178 URBINA YARLEQUE ANDREA    OTROS      E3400-WIFI      S/SS             20350 010  01/04/2014
+  1,037     2186 29/03/2014     2186 SAVALA GANOZA LEORGIO     PANASONIC  SA-VK750        GX61A02019       30977 010  12/04/2014
+  1,038    11673 31/03/2014    11673 BRICENO BURNEO SISSY      L.G        WF-T1054TP      S/S               1000 011  31/03/2014
+  1,039    11674 31/03/2014    11674 LOPEZ JIMENEZ FELIX       SAMSUNG    WA1DXARFP                         1000 011  14/04/2014
+  1,040    11679 31/03/2014    11679 SALAZAR MORALES ROSSIO    SAMSUNG    WA1AV9           S/S              1000 011  31/03/2014
+
+                                                                       TOTAL MARZO                         =>   109
+
+  1,041     2205 01/04/2014     2205 ROSAS MOROCHO MARCO       PANASONIC  SA-AK331        DH5HG001116      30977 005  07/04/2014
+  1,042     2207 01/04/2014     2207 LEON GARCIA JUANA         PHILIPS    TELEVISOR       S/S              30977 021  22/04/2014
+  1,043     2213 01/04/2014     2213 PE;A DOMINGUEZ ANDY       SONY       MHC-GTZ5        9514285          30977 010  22/04/2014
+  1,044     2214 01/04/2014     2214 RAMON RODRIGUEZ JAIME     SAMSUNG    MG1045WD        03127DCS5010     23108 010  24/04/2014
+  1,045     2215 01/04/2014     2215 SAAVEDRA AREVALO MIRIAN   ACER       MS2372          NXM81ET01133     60070 002  08/04/2014
+  1,046     2216 01/04/2014     2216 MERINO MERINO JHONY       SONY       CUH-1001A       MB076559471       1909 010  02/04/2014
+  1,047     2217 01/04/2014     2217 CATACORA GARCIA RONY      SONY       DCR-SR21        1961538           1909 010  14/04/2014
+  1,048     2218 01/04/2014     2218 LAPOUBLE MENA RITA        ELECTROLUX Z1172           12800096         30977 010  23/04/2014
+  1,049     2230 02/04/2014     2230 PERICHE ALDANA MAGALY     LENOVO     60027           S                60070 002  11/04/2014
+  1,050     2231 02/04/2014     2231 PERICHE ALDANA MAGALY     SONY       KDL-32EX305     8058803          30977 005  03/04/2014
+  1,051     2232 02/04/2014     2232 MANRIQUE YARLEQUE MARIA C L.G        32LS3450-SA     211KCHE06529     23108 010  08/04/2014
+  1,052     2242 03/04/2014     2242 MAURICIO TORRES PEDRO     SAMSUNG    LN32A330J1XSR   ALY23CTQ9004     23108 010  29/04/2014
+  1,053     2243 03/04/2014     2243 MENDOZA CORDOVA JANET     SONY       MHC-GNX700      9511511          30977 010  26/04/2014
+  1,054     2246 03/04/2014     2246 ALCEDO CAMPODONICO EVELYN ALTRON     CPU             130611-03015     60070 010  14/04/2014
+  1,055     2248 03/04/2014     2248 CHUQUILLANQUI CHINGUEL VI ELECTROLUX E200            017135            1000 001  03/04/2014
+  1,056     2257 04/04/2014     2257 MENDOZA BOLLEDO HILVER JA L.G        WF-T1054TP        S/S             1000 001  04/04/2014
+  1,057     2260 05/04/2014     2260 VIGNOLO CABRERA TATANIA   SONY       SVE14125CLW     275457393007     60070 010  12/04/2014
+  1,058     2267 06/04/2014     2267 ATO CASTILLO FRANKLIN EDU L.G        26LG30R-MA.AWFG 809MXYG1E290     30977 005  25/04/2014
+  1,059     2273 07/04/2014     2273 AMAYO ARAIZA ISAURO       SAMSUNG    AA59-00784A     S/S              23108 010  14/04/2014
+  1,060     2276 07/04/2014     2276 BALLENA DIAZ CESAR        SAMSUNG    LN32B350F1XSR   BAER3CES8011      1000 001  07/04/2014
+  1,061     2278 07/04/2014     2278 ZAVALA FARFAN JORGE       AIWA       NSX-SZ500       S01EH0CG0058     30977 005  09/04/2014
+  1,062     2284 07/04/2014     2284 VARILLAS CRUZ ZOILA DEL P PHILIPS    AZ1837/55       NS1A11372101     23108 100  25/09/2015
+  1,063     2289 08/04/2014     2289 CASTRO CORONEL ELIO       SONY       DSC-W350        5275359           1909 010  05/06/2014
+  1,064     2290 08/04/2014     2290 BERECHE GARCIA ANGELICA   EPSON      C462J           S42K018280       20350 010  15/04/2014
+  1,065     2296 08/04/2014     2296 NOEL SALDARRIAGA VANESSA  SAMSUNG    MG1485STD       04967DBY2004     23108 010  21/04/2014
+  1,066     2314 10/04/2014     2314 GONZALES GALLO JOSE MANUE OTROS      LAVADORA         S/S             45123 010  24/04/2014
+  1,067     2317 10/04/2014     2317 AYON GARCEZ BLANCA        SONY       KDL-32M3000     4817656          30977 010  16/04/2014
+  1,068     2318 10/04/2014     2318 MENDOZA COBE;AS JOSUE MAR SONY       KV-21FS120      C424146          30977 010  29/04/2014
+  1,069     2319 10/04/2014     2319 NORIEGA NUNJAR MIGUEL     SONY       SS-GT555M       ....             30977 009  30/04/2014
+  1,070     2320 10/04/2014     2320 RUESTA CORO LUIGI         L.G        42LM6200-SA     302KKMHA9579     30977 010  11/04/2014
+  1,071     2321 10/04/2014     2321 OJEDAS SEMINARIO LUIS     SONY       DCR-HC38        1711235           1909 010  12/04/2014
+  1,072    11785 10/04/2014    11785 CASTRO AREVALO RAUL ELIO  SONY       KDL-32BX300     S/S               1000 011  10/04/2014
+  1,073     2316 11/04/2014     2316 JIMENEZ RUESTA YAIR FERNA SAMSUNG    UN40D5500RGXPE  Z3KK3CSC3009     30977 001  11/04/2014
+  1,074     2330 11/04/2014     2330 OLAYA CALLETANO RAQUEL EL ADVANCE    VS5055          GD1202284502     60070 002  21/04/2014
+  1,075     2331 11/04/2014     2331 LORA JARAMILLA DE CASTRO  SAMSUNG    LN32C400E4XPE   Z2MV3CHZ7009     23108 010  23/04/2014
+  1,076     2339 12/04/2014     2339 ALZAMORA APONTE JORGE     SONY       KDL-32S3000     4519562          30977 005  14/04/2014
+  1,077     2341 12/04/2014     2341 CASTILLO ROJAS DENISSE    L.G        WF-T1251TP      S/S              45123 010  24/04/2014
+  1,078     2342 12/04/2014     2342 AMAYA HERNANDEZ CARLOS AL SAMSUNG    AA59-00780A      S/S             23108 004  23/04/2014
+  1,079    11789 12/04/2014    11789 TABOADA RAMOS JANET DEL S SAMSUNG    WA1DXARFP       ,KLJFG            1000 011  12/04/2014 CESER PIURA SRL                                                                                              P═gina :         25
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   02/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   17:34:07
+                                                     DESDE:01/11/2010  HASTA:01/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+  1,080     2345 14/04/2014     2345 AGUIRRE GUTIERREZ PEDRO   SAMSUNG    MX-C630/STR     9FLL1TAZ7002     23108 004  25/04/2014
+  1,081     2346 14/04/2014     2346 CAMPOS HUAMAN JOSE NOEL   L.G        WF-T1363TP      010TWYO00122      1000 001  14/04/2014
+  1,082     2348 14/04/2014     2348 SEMINARIO DE RIOGRIO ANGH KODAK      KKL-M532        KCTNU1132335      1909 010  15/04/2014
+  1,083     2349 14/04/2014     2349 MENDIETA LEYDA MAURO      SONY       CCD-F470        S/S               1909 010  15/04/2014
+  1,084     2368 14/04/2014     2368 PALACIOS MATA JOSE LUIS   OTROS      BOSE            035704970620      1000 001  14/04/2014
+  1,085     2375 14/04/2014     2375 SANDOVAL  CAMPOS MARTIN   OTROS      JES1384PSF      1061711C0025      1000 001  14/04/2014
+  1,086     2380 15/04/2014     2380 TENE ESCALANTES FRANKLIN  AOC        LC32W134        L47C43A00258     23108 021  25/04/2014
+  1,087     2384 15/04/2014     2384 MARCHAN LUZON CARLOS      EPSON      C462H           S27K088511       20350 010  28/04/2014
+  1,088     2388 16/04/2014     2388 BURNESTER MONTOLYA IVAN   EPSON      C462J           S42K024686       20350 010  10/05/2014
+  1,089     2395 16/04/2014     2395 VILLEGAZ CHUNGA JAVIER MA SONY       DSC-W310        5683096           1909 005  21/04/2014
+  1,090     2403 16/04/2014     2403 AGUILAR AGUILAR NELBIA    L.G        MS-1145MY/01    201TAMA0N267     23108 010  29/04/2014
+  1,091    11823 17/04/2014    11823 SALVADOR CARBONEL FERNAND L.G        WF-             S/S               1000 011  17/04/2014
+  1,092     2414 21/04/2014     2414 GUSTAMANTE ROJAS YANNINA  SONY       HCD-GTR77       9504404           1000 001  21/04/2014
+  1,093     2416 21/04/2014     2416 FARFAN VILLACORTA HILDA   LENOVO     60001           S/S              60070 002  24/04/2014
+  1,094     2422 21/04/2014     2422 GARCIA MORALES EDINSON JE CONTINENTA CELED92835      0812000028       23108 021  27/05/2014
+  1,095    11831 21/04/2014    11831 ARELLANO BOCANGEL MIRCO   SAMSUNG    WA751BATFW&YIA  NHGH              1000 011  21/04/2014
+  1,096     2437 22/04/2014     2437 ADRIANZEN MARQUES CARMEN  PANASONIC  SA-AK980        LJ9HA004666      30977 005  24/04/2014
+  1,097     2438 22/04/2014     2438 SEMINARIO SEMINARIO FRANC OLYMPUS    D33235          BOB525076         1909 010  23/04/2014
+  1,098     2439 22/04/2014     2439 NU;ES SAAVEDRAPLINIO      L.G        HT306SU         105HZRR14958     23108 010  30/04/2014
+  1,099     2441 22/04/2014     2441 PARRAGAN RUIZ ROSA        CANON      PC1355          S/S               1909 010  23/04/2014
+  1,100    11842 23/04/2014    11842 MANRIQUE CARMEN ELSA      L.G        WF-T7502TPP      ...              1000 011  23/04/2014
+  1,101    11845 23/04/2014    11845 SOLANO CALLE MIGUEL ANGEL SONY       KV-29V36C       S/S               1000 011  23/04/2014
+  1,102    11846 23/04/2014    11846 CASTILLO FLORES PEDRO ALE SAMSUNG    WD0024W8N/XPE    S/S              1000 011  23/04/2014
+  1,103     2481 25/04/2014     2481 AMAYA PAIVA ROBERT WILLIA L.G        WF

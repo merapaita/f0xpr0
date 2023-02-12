@@ -1,0 +1,218 @@
+***********************************
+* CorKar.Prg
+* Corrige Kardex de Servisepf
+* Autor : MERA
+************************************
+
+USE KarSSF   IN 1  ORDER TAG KarSSF2	ALIAS KarSSF
+USE itecob   IN 2  ORDER TAG itecob1	ALIAS itecob
+USE Servicio IN 3  ORDER TAG Servicio1	ALIAS Servicio
+USE maepro   IN 4  ORDER TAG maepro1	ALIAS promo
+USE maecob   IN 5  ORDER TAG maecob1	ALIAS cobra
+
+SELE Servicio
+vIdx = SYS(3)+'.Idx'
+INDEX ON CodCon+NumSer TO (vIdx)
+
+SELE KarSSF
+SET RELATION TO IIF(Tipo='C',codcon+correl,'X') INTO itecob		ADDITIVE
+SET RELATION TO IIF(Tipo='S',codcon+correl,'X') INTO Servicio	ADDITIVE
+
+DEFINE WINDOW CorKar FROM 1,0 TO 10,79 COLOR SCHEME 10 TITLE "®F2¯Busca   ®F3¯Corrige   ®F7¯Busca Error   ®F8¯Elimina  ®F10¯Sale"
+
+DEFINE WINDOW wind_1 FROM 11,00 TO 15,79  DOUBLE ;
+	TITLE "Cobranzas" COLOR SCHEME 10
+
+DEFINE WINDOW wind_2 FROM 16,00 TO 20,79 DOUBLE ;
+	TITLE 'Servicios ' ;
+	COLOR SCHEME 10
+
+ON KEY LABEL ESCAPE DO Nada
+ON KEY LABEL F2  DO Bus_Con
+ON KEY LABEL F3  DO CorrMov
+ON KEY LABEL F7  DO BusErr
+ON KEY LABEL F8  DO EliDet
+ON KEY LABEL F10 KEYBOARD CHR(23)
+
+SELECT IteCob
+
+BROWSE 	NOEDIT NOAPPEND NODELETE NOMENU NOCLEAR NOOPTIMIZE NOREFRESH NOWAIT;
+		WINDOW wind_1 ;
+		FIELDS;
+		CodCon	: H= 'Contr.',;
+		NumCob	: H= 'Corr.',;
+		reccob	: H= 'Recibo',;
+		Feccob	: H= 'Cuota',;
+		FecPag	: H= 'Pag¢',;
+		CanCob  : H= 'Cuota':P='999.99',;
+		CtaCap  : H= 'C.C.':P='999.99',;
+		GtoAdm  : H= 'G.A.':P='999.99',;
+		OBSERV	: H= 'Observaci¢n':40
+
+SELE Servicio
+BROWSE 	NOEDIT NOAPPEND NODELETE NOMENU NOCLEAR NOOPTIMIZE NOREFRESH NOWAIT;
+		WINDOW wind_2 ;
+		FIELDS ;
+		CodCon	: H= 'Contr.',;
+		NumSer	: H= 'Num.Ser',;
+		FecSer	: H= 'FecSer',;
+		MtoSer	: H= 'Mto.',;
+		NumAfi	: H= 'Num Af.',;
+		ApeAfi  : H= 'Apell.',;
+		NomAfi	: H= 'Nombre'
+
+SELE KarSSF
+
+BROWSE NOEDIT NOAPPEND WINDOW CorKar ;
+		FIELDS  CodCon	: H= 'Contr.',;
+				Correl	: H= 'Corr',;
+				reccob	: H= 'Recibo',;
+				Feccob	: H= 'Cuota',;
+				Fecha	: H= 'Pag¢',;
+				TIPO    : H= 'C/S',;
+				CanCob	: H= 'Cuota',;
+				SdoCob	: H= 'Sd.Cob',;
+				CtaCap	: H= 'C. C.',;
+				SdoCC	: H= 'Sd. CC',;
+				GtoAdm  : H= 'G. A.',;
+				SdoGA	: H= 'SD. GA',;
+				MtoSer	: H= 'Servicio'
+
+CLOS DATA
+
+ON KEY LABEL ESCAPE
+ON KEY LABEL F2
+ON KEY LABEL F3
+ON KEY LABEL F7
+ON KEY LABEL F8
+ON KEY LABEL F10
+RETURN
+
+FUNCTION CorrMov
+*---------------
+DEFINE WINDOW CC FROM 03,03 TO 19,78 COLOR SCHEME 10 TITLE " Corrige Movimiento "
+ACTIVATE WINDOW CC
+
+DO CASE
+	CASE Tipo = "C"	&& Cobranza
+		
+		m.CodCon = KarSSF.CodCon
+		m.NumCob = KarSSF.Correl
+		m.RecCob = KarSSF.RecCob
+		m.FecCob = KarSSF.FecCob
+		m.FecPag = KarSSF.Fecha
+		m.TipCob = SPACE(1)
+		m.CodPro = SPACE(4)
+		m.CodCob = SPACE(4)
+		m.CanCob = KarSSF.CanCob
+		m.CtaCap = KarSSF.CtaCap
+		m.GtoAdm = KarSSF.GtoAdm
+		m.Observ = SPACE(80)
+		
+		@ 1,2 SAY "      Contrato:" GET m.CodCon	WHEN .F.
+		@ 2,2 SAY "      Cobranza:" GET m.NumCob	WHEN .F.
+		@ 3,2 SAY "        Recibo:" GET m.RecCob	WHEN .F.
+		@ 4,2 SAY "Fecha Cobranza:" GET m.FecCob	WHEN .F.
+		@ 5,2 SAY "    Fecha Pago:" GET m.FecPag	WHEN .F.
+		@ 6,2 SAY "  Cob. / Prom.:" GET m.TipCob	PICTURE "@M C,P"
+		@ 7,2 SAY "      Promotor:" GET m.CodPro	WHEN m.TipCob = 'P'	VALID Val_fun('promo','codigo',"codigo+' '+apelli",m.codpro,1 ) AND vcodigo()
+		@ 8,2 SAY "      Cobrador:" GET m.CodCob	WHEN m.TipCob = "C" VALID Val_fun('cobra','codigo',"codigo+' '+apelli",m.codcob,1 ) AND vcodigo()
+		@ 9,2 SAY "      Cantidad:" GET m.CanCob	WHEN .F.
+		@10,2 SAY " Cuota Capital:" GET m.CtaCap	WHEN .F.
+		@11,2 SAY "    Gasto Adm.:" GET m.GtoAdm	WHEN .F.
+		@12,2 SAY " Observaciones:" GET m.Observ	PICTURE '@S20!'
+		
+		READ CYCLE
+		IF LASTKEY()#27 AND YesNo("Confirme el Ingreso")
+			SELECT IteCob
+			IF f_Appd()
+				GATHER MEMVAR
+			ENDIF
+			SELE KarSSF
+		ENDIF
+		
+	CASE Tipo = "S"	&& Servicio
+	
+		m.CodCon  = KarSSF.CodCon
+		m.NumSer  = KarSSF.Correl
+		m.FecSer  = KarSSF.Fecha
+		m.NumAfi  = SPACE(1)
+		m.ApeAfi  = SPACE(30)
+		m.NomAfi  = SPACE(30)
+		m.EdadAfi = 0
+		m.Parent  = SPACE(2)
+		m.MtoSer  = KarSSF.MtoSer
+		
+		@ 1,2 SAY "       Contrato:" GET m.CodCon	WHEN .F.
+		@ 2,2 SAY "       Servicio:" GET m.NumSer	WHEN .F.
+		@ 3,2 SAY "          Fecha:" GET m.FecSer	WHEN .F.
+		@ 4,2 SAY "    N§ Afiliado:" GET m.NumAfi	VALID Val_Afi(m.NumAfi) PICTURE "@!" 
+		@ 5,2 SAY "Apell. Afiliado:" GET m.ApeAli	PICTURE "@!"
+		@ 6,2 SAY "  Nom. Afiliado:" GET m.NomAfi	PICTURE "@!"
+		@ 7,2 SAY "  Edad Afiliado:" GET m.EdadAfi
+		@ 8,2 SAY "     Parentesco:" GET m.Parent	VALID Val_para(m.parent,'PARENT',' ',22)
+		@ 9,2 SAY " Monto Servicio:" GET m.MtoSer	WHEN .F.	
+		
+		READ CYCLE
+		IF LASTKEY()#27 AND YesNo("Confirme el Ingreso")
+			SELECT Servicio
+			IF f_Appd()
+				GATHER MEMVAR
+			ENDIF
+			SELE KarSSF
+		ENDIF
+ENDCASE
+
+RELEASE WINDOW CC
+RETURN
+
+PROCEDURE Bus_Con
+*----------------
+DEFINE WINDOW w_Bus FROM 9,10 TO 12,69  DOUBLE ;
+	TITLE "Busca" COLOR SCHEME 10
+ACTIVATE WIND w_Bus
+
+cCod = SPACE(6)
+cRec = IIF(EOF(),-1,RECNO())
+SELE KarSSF
+@ 1,0 SAY "Ingrese C¢digo : " GET cCod
+READ
+
+IF !SEEK(cCod)
+	WAIT WIND "CODIGO NO ENCONTRADO....."
+	IF cRec = -1
+		GO BOOT
+	ELSE
+		GO vRec
+	ENDIF
+ENDIF
+
+RELEASE WINDOW w_Bus
+
+RETURN
+
+PROCEDURE BusErr
+*---------------
+DO WHILE .T.
+	SKIP
+	IF EOF('IteCob') AND EOF('Servicio')
+		DO StandBy WITH "Falta un Item en Cobranzas o Servicios"
+		RETURN .T.
+	ENDIF
+	
+	IF !(IteCob.CtaCap=KarSSF.CtaCap AND IteCob.GtoAdm=KarSSF.GtoAdm)
+		DO StandBy WITH "Error en Cuota Capital o Gto Administrativo"
+		RETURN .T.
+	ENDIF
+ENDDO
+
+PROCEDURE EliDet
+*---------------
+IF YesNo("Desea Eliminar este Item")
+	IF ve_passw("SSF")
+		DELE NEXT 1
+		SKIP
+	ENDIF
+ENDIF
+
+RETURN

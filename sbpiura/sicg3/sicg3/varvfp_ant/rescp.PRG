@@ -1,0 +1,22 @@
+***********************************
+* Resumen de Comprobantess de Pago
+* ResCP.Prg
+***********************************
+
+PARAMETERS cAnyo
+
+SET PATH TO "H:\sicgdata\DATA" + STR(cAnyo,4)
+
+SELECT compag.periodo,compag.nummes, compag.numcp, feccp,compag.nummeshc,compag.numhc, hojcon.tipdoc, hojcon.numref,compag.codfte,import,compag.codctc,compag.tipprv,compag.codprv,promae.nompro,compag.codemp,emp.descri,compag.codotr,otr.descri,nompre,compag.destino, cheque.numchq, cheque.nomgir,cheque.valchq;
+	FROM compag;
+	left JOIN HojCon ON compag.nummeshc+compag.numhc=hojcon.nummes+hojcon.numhc;
+	left JOIN Promae ON compag.codprv=promae.codprv AND compag.tipprv='P';
+	left JOIN auxil otr ON compag.codotr=otr.codigo and otr.tipo='09' AND compag.tipprv='O';
+	left JOIN auxil emp ON compag.codemp=emp.codigo and emp.tipo='03' AND compag.tipprv='E';
+	left join cheque on compag.nummes+compag.numcp= cheque.nummes+cheque.numcp
+
+RETURN
+
+cFile = "rescp" + STR(cAnyo,4)
+
+COPY TO (cFile) TYPE XL5

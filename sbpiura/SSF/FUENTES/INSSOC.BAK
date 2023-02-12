@@ -1,0 +1,904 @@
+*------------------------------------------------------------------
+* InsSoc.Prg
+* Registra Socios
+*--------------------------------------------------------------------------
+*- Abriendo Archivos
+PUBLIC parent
+parent = ' '
+SET UDFPARMS TO VALUE
+
+CLOS DATA
+USE parmae   IN 1  ORDER TAG parmae1  ALIAS parma
+USE maesoc   IN 2  ORDER TAG maesoc1  ALIAS socio
+USE itesoc   IN 3  ORDER TAG itesoc1  ALIAS itesoc
+USE maepro   IN 4  ORDER TAG maepro1  ALIAS promo
+USE itecob   IN 5  ORDER TAG itecob1  ALIAS itecob
+*-
+*- Mensajes de aviso al usuario
+vmens01 = 'Registro de Socios'
+vmens02 = ' Socios : REVISION '
+vmens04 = 'Dicho Socio no fue encontrado'
+vmens05 = 'No existe Socio anterior'
+vmens06 = 'No existe Socio siguiente'
+vmens07 = '¨ Desea Anular ‚ste Socio ?'
+vmens08 = 'No hay registros para procesar'
+vmens09 = 'Este Socio ha sido anulado'
+SELECT socio
+GO BOTTOM
+ON KEY LABEL F7 DO VISTA_DET
+ON KEY LABEL F2 DO VISOBS
+*- Variables de trabajo (registro a trabajar)
+*- Inicia proceso
+DO inicia                    && Define ventanas, men£s, t¡tulos
+HIDE POPUP ALL
+DO pantalla                  && Muestra pantalla inicial
+DO vista
+
+*- Activa men£ mientras vEn_accion es .T.
+STORE .T. TO ven_accion
+DO WHILE ven_accion
+	ACTIVATE SCREEN
+	ACTIVATE MENU mmenu
+ENDDO
+
+DO fin_opcion
+
+RETURN
+
+
+PROCEDURE inicia             && Crea ventanas, men£s y t¡tulos
+*---------------
+ACTIVATE SCREEN
+vtempo = ' Revisa  Busca  Anterior  Siguiente  Corrige  Ingresa  Elimina  Listar  Termina '
+DO logos WITH rotulo1,vtempo
+
+DEFINE WINDOW wind_0 FROM 00,00 TO 23,79  DOUBLE ;
+	TITLE vmens01 COLOR SCHEME 10
+
+DEFINE WINDOW wind_1 FROM 00,00 TO 12,79  DOUBLE ;
+	TITLE vmens02 FOOTER '[F7] Detalle:Item   [F2] Observaci¢n  [F12] Cambiar Estado' COLOR SCHEME 10
+
+DEFINE WINDOW wind_2 FROM 12,00 TO 23,79 DOUBLE ;
+	TITLE 'Detalle: Socios        ®F7¯ Detalle : Item ' ;
+	COLOR SCHEME 10
+
+DEFINE WINDOW wind_2a FROM 01,00 TO 23,79 DOUBLE ;
+	TITLE 'Detalle: Socios         ®F10¯ Salir ' ;
+	COLOR SCHEME 10
+
+DEFINE WINDOW wind_3 FROM 09,55 TO 23,78 PANEL ;
+	TITLE '° Totales °'
+
+DEFINE MENU mmenu COLOR SCHEME 3
+DEFINE PAD revis   OF mmenu PROMPT '\<Revisa'     AT 24,00
+DEFINE PAD busca   OF mmenu PROMPT '\<Busca'      AT 24,08
+DEFINE PAD anter   OF mmenu PROMPT '\<Anterior'   AT 24,15
+DEFINE PAD proxi   OF mmenu PROMPT '\<Siguiente'  AT 24,25
+DEFINE PAD corri   OF mmenu PROMPT '\<Corrige'    AT 24,36
+DEFINE PAD ingre   OF mmenu PROMPT '\<Ingresa'    AT 24,45
+DEFINE PAD elimi   OF mmenu PROMPT '\<Anula'      AT 24,54
+DEFINE PAD lista   OF mmenu PROMPT '\<Listar '    AT 24,63
+DEFINE PAD termi   OF mmenu PROMPT '\<Termina'    AT 24,71
+ON SELECTION PAD revis  OF mmenu DO revis
+ON SELECTION PAD busca  OF mmenu DO busca
+ON SELECTION PAD anter  OF mmenu DO anter
+ON SELECTION PAD proxi  OF mmenu DO proxi
+ON SELECTION PAD corri  OF mmenu DO corri
+ON SELECTION PAD ingre  OF mmenu DO ingre
+ON SELECTION PAD elimi  OF mmenu DO Anula
+ON SELECTION PAD lista  OF mmenu DO lista
+ON SELECTION PAD termi  OF mmenu DO termi
+RETURN
+
+
+PROCEDURE pantalla           && Pinta m scara de datos
+*-----------------
+ACTIVATE WINDOW wind_1
+CLEAR
+
+ @  1, 2 SAY "  N§ del Contrato :"
+ @  2, 2 SAY "          N§ L.E. :"
+ @  2,40 SAY "      Instituci¢n :"
+ @  3, 2 SAY "        Apellidos :"
+ @  4, 2 SAY "          Nombres :"
+ @  5, 2 SAY "        Direcci¢n :"
+ @  6, 2 SAY "         Tel‚fono :"
+ @  7, 2 SAY "             Edad :"
+ @  8, 2 SAY "  Codigo Promotor :"
+ @  9, 2 SAY "Fecha Inscripci¢n :"
+ @  9,40 SAY "      Inscripci¢n :"
+ @ 10, 2 SAY "         Comisi¢n :"
+ @ 10,40 SAY "    Cuota Mensual :"
+RETURN
+
+PROCEDURE vista              && Coloca valores de BD en variables y pinta datos
+*--------------
+SELECT socio
+IF EOF()
+	DO pantalla
+	RETURN
+ENDIF
+ON KEY LABEL F12 DO Mod_Est
+ACTIVATE WINDOW wind_1
+SCATTER MEMVAR
+ @  0, 60 SAY SPACE(18)
+ @  0, 60 SAY Verest(m.estado) COLOR SCHEME 5
+ @  1, 22 SAY m.codcon
+ @  2, 22 SAY m.libele
+ @  2, 60 SAY val_para(m.codins,'INSTIT','V',60,18)
+ @  3, 22 SAY m.apelli
+ @  4, 22 SAY m.Nombre
+ @  5, 22 SAY m.Direcc
+ @  6, 22 SAY m.Telefo
+ @  7, 22 SAY m.Edad 
+ @  8, 22 SAY Val_fun('promo','codigo',"codigo+' '+apelli",m.codpro,3,8,22)
+ @  9, 22 SAY m.fecins
+ @  9, 60 SAY m.canins	PICTURE '99,999.99'
+ @ 10, 22 SAY m.cancom	PICTURE '99,999.99'
+ @ 10, 60 SAY m.cuotas	PICTURE '99,999.99'
+DO vista_hijo
+
+PROCEDURE vista_hijo
+*-------------------
+SELECT iteSOC
+SEEK m.CODCON
+IF FOUND()
+	BROWSE ;
+		NOEDIT NOAPPEND NODELETE NOMENU NOCLEAR NOOPTIMIZE NOREFRESH KEY m.codcon TIMEOUT 0.0001 ;
+		WINDOW wind_2 ;
+		FIELDS;
+		nomafi	: H= 'Nombre':20,;
+		apeafi	: H= 'Apellido':20,;	
+		edad	: H= 'Edad',;	
+		FecNac	: H= 'F.Nac.',;
+		xx = Val_para(parent,'PARENT','D'):H='Parentesco':10,;
+		qq = VerEst(estado) : H= 'Estado':10,;
+		Fecins	: H= 'Fec. Ins.',;	
+		Fecder	: H= 'Fec. Der.',;
+		yy=Val_para(tipder,'TIPDER','D'):H='Derecho':30
+
+
+Else
+	ACTIVATE WINDOWS wind_2
+	clear
+	@ 4,30 say 'No hay Afiliados'
+endif
+*HIDE WINDOW wind_2
+SELE socio
+RETURN
+
+PROCEDURE vista_det
+*------------------
+SELECT iteSOC
+SEEK SOCIO.CODCON
+vtempo = '[ESC] Terminar'
+ON KEY LABEL F7
+on key label f12
+HIDE POPUP ALL
+IF FOUND()
+	BROWSE ;
+		NOEDIT NOAPPEND NODELETE NOMENU NOCLEAR NOOPTIMIZE NOREFRESH KEY SOCIO.codcon;
+		WINDOW wind_2a TITLE vtempo ;
+		FIELDS;
+		nomafi	: H= 'Nombre':20,;
+		apeafi	: H= 'Apellido':20,;	
+		edad	: H= 'Edad',;	
+		FecNac	: H= 'F.Nac.',;
+		xx=Val_para(parent,'PARENT','D'):H='Parentesco':10,;
+		Fecins	: H= 'Fec. Ins.',;	
+		Fecder	: H= 'Fec. Der.',;
+		yy=Val_para(tipder,'TIPDER','D'):H='Derecho':30
+Else
+	ACTIVATE WINDOWS wind_2a
+	clear
+	@ 4,30 say 'No hay Afiliados'
+endif
+ON KEY LABEL F7 DO VISTA_DET
+on key label f12 DO Mod_Est
+SHOW MENU mmenu
+SELE socio
+DO VISTA
+RETURN
+
+
+PROCEDURE revis              && Revisi¢n de BD en browse
+*--------------
+SELE socio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+vtemp = RECNO()
+HIDE MENU mmenu
+ACTIVATE SCREEN
+vtempo = '°°°°°°°°°°°Presione ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+DO logos WITH rotulo1,vtempo
+SET RELATION TO codcon INTO itesoc
+SET SKIP TO itesoc
+vtemp = RECNO()
+HIDE MENU mmenu
+ACTIVATE SCREEN
+ON KEY LABEL f10 KEYBOARD CHR(23)
+BROWSE WINDOW wind_0 NOEDIT NOAPPEND NODELETE NOMENU FIELDS ;
+	socio.codcon    :H='Per',;
+	socio.apelli    :H='Apellido',;
+	socio.nombre    :H='Nombre',;	
+	ITESOC.APEAFI	:H= 'Apellido Afiliado',;	
+	ITESOC.nomafi	:H= 'Nombre   Afiliado',;	
+	ITESOC.parent   :H= 'parentesco',;	
+	ITESOC.tipder   :H= 'Derecho'
+
+vtempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+DO logos WITH rotulo1,vtempo
+IF LASTKEY()=27
+	GOTO vtemp
+ENDIF
+SHOW MENU mmenu
+ON KEY LABEL f10
+SET RELA TO
+SELE socio
+DO vista
+RETURN
+
+PROCEDURE busca              && Realiza b£squeda directa
+*--------------
+SELE socio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+vtemp = RECNO()
+HIDE MENU mmenu
+ACTIVATE SCREEN
+vtempo = '°°°®F09¯C¢digo °°°®F10¯Selecciona°°°®F11¯Apellido°°° ®F12¯L.E. °°®Esc¯Cancela °°°'
+DO logos WITH rotulo1,vtempo
+*SET RELATION TO codcon INTO itesoc
+*SET SKIP TO itesoc
+HIDE MENU mmenu
+ACTIVATE SCREEN
+ON KEY LABEL F10 KEYBOARD CHR(23)
+ON KEY LABEL F9  DO Buscodsoc
+ON KEY LABEL F11 DO Busnomsoc
+ON KEY LABEL F12 DO Buslesoc
+BROWSE WINDOW wind_0 NOEDIT NOAPPEND NODELETE NOMENU FIELDS ;
+	socio.codcon    :H='N§ Contrato',;
+	socio.apelli    :H='Apellido',;
+	socio.nombre    :H='Nombre',;
+	socio.libele    :H='L.E.'
+vtempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+DO logos WITH rotulo1,vtempo
+SELE socio
+SET ORDER TO maesoc1
+IF LASTKEY()=27
+	GOTO vtemp
+ENDIF
+SHOW MENU mmenu
+ON KEY LABEL F9
+ON KEY LABEL f10
+ON KEY LABEL F11 
+ON KEY LABEL F12 
+DO vista
+RETURN
+
+PROCEDURE anter
+*--------------
+SELE socio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+IF !BOF()
+	SKIP -1
+ENDIF
+IF BOF()
+	GO TOP
+	DO standby WITH vmens05
+ELSE
+	DO vista
+ENDIF
+RETURN
+
+
+PROCEDURE proxi
+*--------------
+SELE socio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+IF !EOF()
+	SKIP
+ENDIF
+IF EOF()
+	DO standby WITH vmens06
+	GO BOTTOM
+ELSE
+	DO vista
+ENDIF
+RETURN
+
+
+PROCEDURE corri
+*--------------
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+IF estado = '99'
+	* Anulada
+	DO standby WITH vmens09
+	RETURN
+ENDIF
+SELECT socio
+SCATTER MEMVAR
+DO pantalla
+
+ @  1, 22 SAY m.codcon
+ @  2, 22 GET m.libele	PICTURE '99999999'	
+ @  2, 60 GET m.codins  PICTURE '999'		VALID val_para(m.codins,'INSTIT',' ',60,18)
+ @  3, 22 GET m.apelli	PICTURE '@!'		
+ @  4, 22 GET m.Nombre	PICTURE '@!'		
+ @  5, 22 GET m.Direcc 	PICTURE '@S50!'
+ @  6, 22 get m.Telefo
+ @  7, 22 get m.Edad 	PICTURE '99'		valid BETWEEN(val(m.edad),18,59)
+ @  8, 22 get m.CodPro  PICTURE '9999'		VALID Val_fun('promo','codigo',"codigo+' '+apelli",m.codpro,1,8,22)
+ @  9, 22 get m.fecins
+ @  9, 60 GET m.canins	PICTURE '99,999.99'
+ @ 10, 22 GET m.cancom	PICTURE '99,999.99'
+ @ 10, 60 get m.cuotas	PICTURE '99,999.99'
+READ VALID val_read()
+IF LASTKEY() # 27
+	ok=trabaja_hijo()
+	IF ok AND LASTKEY()#27
+		SELECT SOCIO
+		GATHER MEMVAR
+		= Observa()
+	ENDIF
+ELSE
+	DO standby WITH 'Proceso cancelado'
+ENDIF
+
+UNLOCK ALL
+SELECT SOCIO
+DO vista
+RETURN
+
+
+PROCEDURE ingre              && Crea nuevo registro en BD
+*--------------
+SELECT SOCIO
+op=ORDER()
+vtemp = RECNO()
+SCATTER MEMVAR BLANK
+DO pantalla
+SELE Parma
+SEEK 'CORRELCODCON'
+IF FOUND()
+	m.codcon = PADL(nument+1,6,'0')
+ELSE
+	m.codcon = '000001'
+ENDIF
+
+SELECT SOCIO
+IF SEEK(m.codcon)
+	DO Standby WITH "El numero " + m.CodCon + " ya existe. Revise Mantenimiento de Correlativos"
+	go vtemp
+	DO vista
+	RETURN
+ENDIF
+ m.fecins = DATE()
+ m.estado = '00'
+
+ @  1, 22 SAY m.codcon
+ @  2, 22 GET m.libele	PICTURE '99999999'	VALID Val_Libreta(m.libele)
+ @  2, 60 GET m.codins  PICTURE '999'		VALID val_para(@m.codins,'INSTIT',' ',60,18)
+ @  3, 22 GET m.apelli	PICTURE '@!'		
+ @  4, 22 GET m.Nombre	PICTURE '@!'		VALID Val_Nomsoc(m.apelli+m.nombre)
+ @  5, 22 GET m.Direcc 	PICTURE '@S50!'
+ @  6, 22 GET m.Telefo
+ @  7, 22 GET m.Edad 	PICTURE '99'		valid  BETWEEN(val(m.edad),18,59)
+ @  8, 22 GET m.CodPro	PICTURE '9999'		VALID Val_fun('promo','codigo',"codigo+' '+apelli",@m.codpro,1,8,22)
+ @  9, 22 GET m.fecins
+ @  9, 60 GET m.canins	PICTURE '99,999.99'
+ @ 10, 22 GET m.cancom	PICTURE '99,999.99'
+ @ 10, 60 GET m.cuotas	PICTURE '99,999.99'
+
+READ VALID val_read()
+
+IF LASTKEY()=27
+	go vtemp
+	DO vista
+	RETURN
+ Else
+	DO WHILE .T.
+		ok=trabaja_hijo()
+		IF LASTKEY() # 27 AND OK
+			IF yesno('¨ Confirme el ingreso ?')
+				ok=.T.
+				EXIT
+			ENDIF
+		ELSE
+			IF yesno('¨ Cancela el ingreso ?')
+				DO standby WITH ' Cancelado el Ingreso ..'
+				ok = .F.
+				EXIT
+			ELSE
+				LOOP
+			ENDIF
+		ENDIF
+	ENDDO
+	IF ok AND LASTKEY()#27
+		SELECT socio
+		IF f_appd()
+			GATHER MEMVAR
+			= Observa()
+			SELE Parma
+			SEEK 'CORRELCODCON'
+			IF FOUND()
+				replace nument with nument+1
+			ENDIF
+			SELECT socio
+		ENDIF
+	ELSE
+		SELE itesoc
+		SEEK m.codcon
+		SCAN WHILE codcon=m.codcon
+			IF RLOCK()
+				DELETE NEXT 1
+			ENDIF
+		ENDSCAN
+		GO VTEMP
+	ENDIF
+ENDIF
+UNLOCK ALL
+SELECT socio
+do pantalla
+DO vista
+RETURN
+
+PROCEDURE trabaja_hijo
+*---------------------
+vsun=.T.
+PUBLIC ak
+ACTIVATE SCREEN
+HIDE MENU mmenu
+vtempo = '°°°°°°°°F5->Agregar°°°°°°°°°°°°°°F8->Eliminar°°°°°°°°°°°°°°F10->Terminar°°°°°°°°'
+DO logos WITH rotulo1,vtempo
+ON KEY LABEL f5  DO agreg_item
+ON KEY LABEL f8  DO elimi_item
+ON KEY LABEL f10 KEYBOARD CHR(23)
+SELECT itesoc
+SEEK m.codcon
+IF !FOUND()
+	DO agreg_item
+ENDIF
+
+BROWSE ;
+	NOAPPEND NODELETE NOMENU NOCLEAR NOOPTIMIZE NOREFRESH KEY m.codcon ;
+	WINDOW wind_2 ;
+	FIELDS;
+	nomafi	: H= 'Nombre':f:20,;
+	apeafi	: H= 'Apellido':f:20,;	
+	FecNac	: H= 'F.Nac.',;
+	edad	: H= 'Edad':f,;	
+	parent  : H= 'Parentesco':v=Val_para(parent,'PARENT','parent'):f,;
+	xx=IIF(!EMPTY(PARENT),Val_para(parent,'PARENT','D'),' '):H='Descripci¢n':10,;
+	Fecins	: H= 'Fec. Ins.':V=ValFec():f,;
+	Fecder	: H= 'Fec. Der.':f,;
+	tipder	: H= 'Derecho':v=Val_para(tipder,'TIPDER','tipder'):f,;
+	yy=IIF(!EMPTY(TIPDER),Val_para(tipder,'TIPDER','D'),' '):H='Descripci¢n':30
+
+SELE IteSoc
+SEEK m.codcon
+SCAN WHILE CodCon = m.CodCon
+	IF EMPTY(NomAfi) OR EMPTY(ApeAfi) OR EMPTY(Parent) OR EMPTY(TipDer)
+		DO StandBy WITH "No se han ingresado datos de Beneficiarios"
+		DELETE NEXT 1
+	ENDIF
+ENDSCAN
+
+SELECT itesoc
+SEEK m.codcon
+vcodigo1 = codcon
+vcodigo2 = codcon
+vcontado = 0
+do while vcodigo1 = vcodigo2 and !eof()
+	IF Estado = '00'
+		vcontado = vcontado + 1
+	ENDIF
+	skip
+	vcodigo2 = codcon
+enddo
+if vcontado<4 or vcontado>5
+	DO standby WITH 'Corregir....Beneficiarios es <3 ¢ >4...'
+endif
+IF LASTKEY()=27
+	vsun=.F.
+ENDIF
+ON KEY LABEL f5
+ON KEY LABEL f8
+ON KEY LABEL f10
+
+ACTIVATE SCREEN
+SHOW MENU mmenu
+vtempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+DO logos WITH rotulo1,vtempo
+SELECT socio
+RETURN vsun
+
+PROCEDURE Anula
+*--------------
+SELECT socio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+lAnula = .F.
+DO CASE
+	CASE estado = '10'
+		DO standby WITH "Este Contrato ya gozo de Derecho. No puede ser anulado"
+	CASE estado = '90'
+		DO standby WITH "Este Contrato ya fue Recindido. No puede ser anulado"
+	CASE estado = '99'
+		DO standby WITH "Este Contrato ya fue anulado. No puede ser anulado"
+	OTHERWISE
+		lAnula  = .T.
+ENDCASE
+
+IF lAnula
+	IF yesno('¨ Desea Anular ‚ste Socio?')
+		IF ve_passw("Micky")
+			IF f_lock(1)
+				REPLACE ESTADO WITH "99"
+				UNLOCK ALL
+			ENDIF
+		ENDIF
+	ENDIF
+ENDIF
+DO vista
+RETURN
+
+PROCEDURE agreg_item
+*-----------------
+PRIVATE lNvo
+SELECT itesoc
+lNvo = .F.
+IF !SEEK(m.CodCon)
+	lNvo = .T.
+	m.NumAfi = '1'
+*	m.Codcon = Socio.codcon
+	m.NomAfi = m.NomBre
+	m.ApeAfi = m.Apelli
+	m.Edad   = m.Edad
+	m.Parent = '00'
+*	m.FecIns = m.FecIns
+*	m.Fecder = ValFec1()
+	m.TipDer = '01'
+	m.Estado = '00'
+
+ ELSE
+	SCAN WHILE CodCon = m.codCon
+		IF EMPTY(NomAfi) OR EMPTY(ApeAfi) OR EMPTY(Parent) OR EMPTY(TipDer)
+			DO StandBy WITH "No se han ingresado datos del Beneficiarios"
+			RETURN
+		ENDIF
+		m.NumAfi = NumAfi
+	ENDSCAN
+	m.NumAfi = STR(VAL(m.NumAfi)+1,1)
+ENDIF
+IF lNvo
+	IF f_appd()
+		GATHER MEMVAR
+		RETURN .T.
+	ENDIF
+ ELSE	
+	IF f_appd()
+		REPLACE codcon WITH m.codcon ,;
+			fecins 	WITH m.fecins,;
+			NumAfi  WITH m.NumAfi,;
+			Estado  WITH "00"
+		RETURN .T.
+	ENDIF
+ENDIF
+RETURN .F.
+
+
+PROCEDURE elimi_item
+*-------------------
+SELECT itesoc
+lEli = .F.
+IF Estado = '10'
+	DO standby WITH 'El Registro tiene servicio. No Puede ser eliminado.'
+ELSE
+	lEli = .T.
+ENDIF
+
+IF lEli
+	IF RLOCK()
+		DELETE NEXT 1
+	ELSE
+		DO standby WITH 'No puede eliminar este Item.'
+	ENDIF
+	UNLOCK
+ENDIF
+
+RETURN
+
+PROCEDURE lista
+*--------------
+vAli = Alias()
+vord = Order()
+vrec = Recno()
+SELECT Socio
+SET RELATION TO CODCON INTO IteSoc
+SET SKIP TO IteSoc
+STORE 1  TO vToCli,vTipIns,vTipPro,vLista,vTofue,vTomes
+STORE date() to vfecini,vfecfin
+vCodcon = SPACE(6)
+vCodins = SPACE(3)
+vEst =  1
+xOrd = 1
+DEFINE WINDOW LIS FROM 2,15 TO 22,65 FLOAT DOUBLE TITLE 'Inscripci¢n de Socios' COLOR SCHEME 5
+ACTIVATE WINDOW LIS
+
+@ 01,01 SAY "       Todos : " GET vTOCLI  FUNCTION '*RNH \<Si;\<No' SIZE 1,10,6   VALID VALTOD(VTOCLI,1,22)
+
+@ 03,01 SAY "      C¢digo : " 
+@ 03,17 GET vCodcon   PICTURE '!!!!!!' VALID Val_socio() when vTOCLI=2
+
+@ 05,01 SAY " Instituci¢n : " GET vcodins  PICTURE '999' valid IIF(!EMPTY(vcodins),val_para(vcodins,'INSTIT',' ',17,18),.T.)   COLOR SCHEME 7 WHEN vtocli=1
+
+@ 07,01 SAY "      Estado : "
+@ 06,17 GET vEst  FUNCTION '^ Registrados;Goz¢ Derechos;Rescindido;Anulados'  WHEN vtocli=1
+
+@ 10,01 SAY "       Orden : "
+@ 09,17 GET xOrd  FUNCTION '^ Por Contrato;Por Apellidos;Por Direcciones'  WHEN vtocli=1
+
+@ 12,01 SAY "Fecha Inscr. : " GET vToFue  FUNCTION '*RNH \<No;\<Si' SIZE 1,10,6  VALID VALTOD(VTOfue,5,15) when vTOCLI=1
+
+@ 14,01 SAY "      Fechas : "
+@ 14,17 GET vfecini  PICTURE '@D'   COLOR SCHEME 7 WHEN vtofue=2 AND vTOCLI=1
+@ 14,28 GET vfecfin  PICTURE '@D'   COLOR SCHEME 7 VALID (vfecfin >= vfecini)  WHEN vtofue=2 AND vTOCLI=1
+
+@ 16,10 GET OKCANCEL FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+
+READ CYCLE
+
+RELEASE WINDOW LIS
+
+IF OKCANCEL = 1
+	IF vtocli=2
+		SET FILTER TO codcon=vcodcon and iif(vtofue=2,BETWEEN(socio.fecins,vfecini,vfecfin),.t.) and socio.estado<>'99'
+		do reporte with 2,"LisSoc",'Listado de Socios',2
+	Else
+		SELECT SOCIO
+		SET FILTER TO iif(vtofue=2,BETWEEN(socio.fecins,vfecini,vfecfin),.t.) and IIF(!EMPTY(vcodins),SOCIO.codins=allt(vcodins),.T.) and IIF(vEst=1,socio.estado='00',IIF(vEst=2,socio.estado='10',IIF(vEst=3,socio.estado='90',socio.estado='99')))
+		cOrd = ORDER()
+		DO CASE
+			CASE xOrd = 1
+				SET ORDER TO MaeSoc1
+			CASE xOrd = 2
+				SET ORDER TO MaeSoc2
+			CASE xOrd = 3
+				vIdx = SYS(3) + '.Idx'
+				index on direcc+nombre+Apelli to (vIdx)
+		ENDCASE
+*		SET ORDER TO MaeSoc2
+		do reporte with 2,"LisSoc1",'Listado de Socios',2
+		SET ORDER TO &cOrd
+		IF xOrd = 3
+			SET INDEX TO
+			ERASE (vIdx)
+		ENDIF
+	ENDIF
+ENDIF
+*   CASE vEst='00'
+*   CASE vEst='10'
+*   CASE vEst='99'
+
+SELECT Socio
+SET FILTER TO
+SET RELATION TO
+SELECT (vAli)
+SET ORDER TO (vord)
+GO vrec
+DO VISTA
+RETURN
+
+PROCEDURE termi
+*--------------
+ven_accion = .F.
+DEACTIVATE MENU
+RETURN
+
+PROCEDURE fin_opcion
+*-------------------
+CLOSE DATA
+ON KEY LABEL F7
+ON KEY LABEL F2
+ON KEY LABEL F12
+RELEASE WINDOW wind_0
+RELEASE WINDOW wind_1
+RELEASE WINDOW wind_2
+RELEASE WINDOW wind_2A
+RELEASE WINDOW wind_3
+RELEASE MENU   mmenu
+RESTORE SCREEN FROM principal
+RETURN
+
+FUNCTION VisObs
+*--------------
+vAlias = ALIAS()
+IF !WEXIST("Observa")
+   DEFINE WINDOW Observa FROM 03,22 TO 20,57 FLOAT NOCLOSE SHADOW DOUBLE TITLE '± Observaciones ±' FOOTER ' ° ®Esc¯ Sale ° ' COLOR SCHEME 1
+ENDIF
+
+IF WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa SAME
+ELSE
+   ACTIVATE WINDOW Observa NOSHOW
+ENDIF
+
+MODIFY MEMO OBSERV NOEDIT WINDOW OBSERVA
+
+IF !WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa
+ENDIF
+RELEASE WINDOW Observa
+RETURN .T.
+
+FUNCTION Observa
+*---------------
+vAlias = ALIAS()
+SET MEMOWIDTH TO 34
+ON KEY LABEL F10 KEYBOARD CHR(23)
+IF !WEXIST("Observa")
+   DEFINE WINDOW Observa FROM 03,22 TO 20,57 FLOAT NOCLOSE SHADOW DOUBLE TITLE '± Observaciones ±' FOOTER ' ° ®F10¯ Graba ° ' COLOR SCHEME 1
+ENDIF
+dFec=ValFec1()
+IF WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa SAME
+ELSE
+   ACTIVATE WINDOW Observa NOSHOW
+ENDIF
+REPLACE OBSERV WITH "TENDRA DERECHO AL SERVICIO FUNERARIO A PARTIR DEL "+DTOC(dFec)
+MODIFY MEMO OBSERV WINDOW OBSERVA
+
+IF !WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa
+ENDIF
+
+RELEASE WINDOW Observa
+IF LASTKEY()=27
+   DO STANDBY WITH 'Proceso cancelado. No graba la Observaci¢n '
+ENDIF
+SELECT (vAlias)
+RETURN .T.
+
+PROCEDURE VAL_HC             && Revisi¢n de BD en browse
+*---------------
+ ON KEY LABEL F9
+ SELECT socio
+ IF EOF()
+    DO standby WITH Vmens08
+    RETURN
+ ENDIF
+ SEEK vCli
+ IF !FOUND()
+    Vtemp = RECNO()
+    HIDE MENU mMenu
+    ACTIVATE SCREEN
+    vTempo = '°°°°°°°°°°°Presione ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+    ON KEY LABEL F10 KEYBOARD CHR(23)
+    BROWSE WINDOW Wind_0 NOEDIT NOAPPEND NODELETE NOMENU FIELDS ;
+	codcon    :H='Codigo',;
+	apelli    :H='Apellido',;
+	nombre    :H='Nombre'
+    vTempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+    IF LASTKEY()=27
+       GO BOTT
+    ENDIF
+ ENDIF
+ vcli = codCON
+ ON KEY LABEL F10
+ ON KEY LABEL F9 DO VISTA_DET
+ SELECT itesoc
+RETURN
+
+
+FUNCTION ValFec
+*--------------
+PRIVATE vFecIns,vFecDer
+vFecIns = FecIns
+nDia = DAY(FecIns)
+nMes = MONT(FecIns)
+nAno = YEAR(FecIns)
+
+nMes=nMes+IIF(VAL(CodCon)>2000,6,4)
+
+IF nMes>12
+	nAno=nAno+1
+	nMes=nMes-12
+ENDIF
+
+IF nDia=31 AND !(nMes=1 OR nMes=3 OR nMes=5 OR nMes=7 OR nMes=8 OR nMes=10 OR nMes=12)
+	nDia=30
+ENDIF
+
+IF nDia=30 AND !(nMes=4 OR nMes=6 OR nMes=9 OR nMes=11)
+	nDia=29
+ENDIF
+
+IF nDia=29 AND MOD(nAno,4)#0
+	nDia=28
+ENDIF
+
+REPLACE FecDer WITH CTOD(PADL(nDia,2,'0')+"/"+PADL(nMes,2,'0')+"/"+PADL(nAno,4,'0'))
+
+RETURN .T.
+
+FUNCTION ValFec1
+*--------------
+PRIVATE vFecIns,vFecDer
+vFecIns = FecIns
+nDia = DAY(FecIns)
+nMes = MONT(FecIns)
+nAno = YEAR(FecIns)
+
+nMes=nMes+IIF(VAL(CodCon)>2000,6,4)
+
+IF nMes>12
+	nAno=nAno+1
+	nMes=nMes-12
+ENDIF
+
+IF nDia=31 AND !(nMes=1 OR nMes=3 OR nMes=5 OR nMes=7 OR nMes=8 OR nMes=10 OR nMes=12)
+	nDia=30
+ENDIF
+
+IF nDia=30 AND !(nMes=4 OR nMes=6 OR nMes=9 OR nMes=11)
+	nDia=29
+ENDIF
+
+IF nDia=29 AND MOD(nAno,4)#0
+	nDia=28
+ENDIF
+RETURN CTOD(PADL(nDia,2,'0')+"/"+PADL(nMes,2,'0')+"/"+PADL(nAno,4,'0'))
+
+PROCEDURE Mod_Est
+*----------------
+IF ve_passw("Micky")
+	DO CASE
+		CASE Estado = '00'
+			REPLACE Estado WITH '10'
+		CASE Estado = '10'
+			REPLACE Estado WITH "90"
+		CASE Estado = '90'
+			REPLACE Estado WITH "99"
+		CASE Estado = '99'
+			REPLACE Estado WITH "00"
+	ENDCASE
+ENDIF
+
+DO Vista
+
+RETURN
+
+FUNCTION vEstado
+*---------------
+PRIVATE mRet
+
+DO CASE 
+	CASE vEst = 1
+		mRet = "Registrados"
+	CASE vEst = 2
+		mRet = "Goz¢ Derechos"
+	CASE vEst = 3
+		mRet = "Rescindido"
+	CASE vEst = 4
+		mRet = "Anulados"
+ENDCASE
+
+mRet = "Con estado :" + mRet
+
+RETURN mRet

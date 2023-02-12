@@ -1,0 +1,744 @@
+clear
+SET CONSO OFF
+@05,10 to 20,70 double
+@08,20 say "Archivo :"
+@10,20 say "Indice  :"
+@12,15 to 14,60
+
+
+
+USE GE_TAB0 EXCLU
+@ 08,30 say DBF()
+pack
+dele tag all
+Index on  TAB_CODPRE+TAB_CODTAB     tag   CODIGO     
+Index on  TAB_DESTAB                tag   DESCRI     
+Index on  TAB_CODTAB                tag   CODTAB     
+Index on  TAB_CODPRE+TAB_DESTAB     tag   DESCR      
+Index on  DTOS(TAB_FECHA)+TAB_HORA  tag   FECHA      
+USE
+
+
+use GC_ALM00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  ALM_CODPRO+ALM_CODALM    tag   CODIGO     
+Index  on  ALM_CODPRO               tag   CODPRO     
+Index  on  ALM_CODALM               tag   CODALM     
+Index  on  ALM_CODALM+ALM_UBICAC    tag   UBICAC     
+Index  on  DTOS(ALM_FECHA)+ALM_HORA tag   FECHA    
+use
+
+use GC_CLI00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on CLI_TPPER+CLI_CODIGO      tag   CODIGO     
+Index  on CLI_RAZSOC                tag   NOMBRE     
+Index  on DTOS(CLI_FECCRE)          tag   CLI_FECCRE 
+Index  on DTOS(CLI_FECHA)+CLI_HORA  tag   FECHA      
+use           
+
+rge_monbas = "SOL "
+use GC_CMV00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DTOC(CMV_FECHAC)+CMV_INDICA                        tag   CODIGO     
+Index  on  DTOC(CMV_FECHAC)+CMV_INDICA+CMV_MONREF             tag   CODIGO_1   
+Index  on  DTOC(CMV_FECHAC)+CMV_INDICA+RGE_MONBAS+CMV_MONREF  tag   CODIGO_2   
+Index  on  DTOS(CMV_FECHAC)+CMV_INDICA+RGE_MONBAS+CMV_MONREF  tag   CMV_FEINMO 
+Index  on  DTOS(CMV_FECHA)+CMV_HORA                           tag   FECHA      
+use
+
+use GC_DCO00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on DCO_NRODOC+DCO_CODPRO            tag   CODIGO     
+Index  on DCO_NRODOC                       tag   NRODOC     
+Index  on DCO_CODPRO                       tag   CODPRO     
+Index  on DCO_NRODOC+DCO_CODPRP            tag   CODIGP     
+Index  on DCO_NUMFAC+DCO_NRODOC+DCO_CODPRO tag   DCO_NUMFAC 
+Index  on DTOS(DCO_FECLLE)+DCO_NRODOC      tag   DCO_FECLLE 
+Index  on DCO_CODPRP+DCO_NRODOC            tag   DCO_CODPRP 
+Index  on DCO_CODPRO+DCO_NRODOC            tag   DCO_CODPRO 
+Index  on DTOS(DCO_FECHA)+DCO_HORA         tag   FECHA      
+use
+
+use GC_DIN00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DIN_CODPRO               tag   CODIGO     
+Index  on  DTOS(DIN_FECHA)+DIN_HORA tag   FECHA      
+use
+
+
+use GC_DIP00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DIP_TIPDOC+DIP_NRODOC+DIP_PROPAR+DIP_UNIMED+DIP_DOCREF tag   CODIGO     
+Index  on  DTOS(DIP_FECHA)+DIP_HORA                               tag   FECHA      
+use
+
+
+use GC_DLP00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  DLP_CODLIS+DLP_CODPRO+DLP_UNIMED tag   CODIGO     
+Index  on  DTOS(DLP_FECHA)+DLP_HORA         tag   FECHA      
+use
+
+
+use GC_DPV00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DPV_TIPDOC+DPV_NRODOC+DPV_CODPRO tag   CODIGO     
+Index  on  DPV_CODPRO+DTOS(DPV_FECDOC)      tag   DPV_CODPRO 
+Index  on  DTOS(DPV_FECHA)+DPV_HORA         tag   FECHA      
+use
+
+
+use GC_DRE00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DRE_TIPREP+DRE_NROREP+DRE_CODMOV+DRE_TIPDOC+DRE_NRODOC tag   CODIGO
+Index  on  DTOS(DRE_FECHA)+DRE_HORA                               tag   FECHA      
+use
+
+use GC_DTR00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  DTR_NUMDOC+DTR_CODPRO    tag   CODIGO     
+Index  on  DTOS(DTR_FECHA)+DTR_HORA tag   FECHA      
+use
+
+
+use GC_DVE00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  DVE_TIPDOC+DVE_NRODOC+DVE_PROPAR tag   CODIGO     
+Index  on  DVE_PROPAR+STR(DVE_CANTID,9,2)   tag   CANTID     
+Index  on  DTOS(DVE_FECHA)+DVE_HORA         tag   FECHA      
+use
+
+use GC_DVT00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DVT_NUMDOC+DVT_CODPRO+DVT_UNIMED tag   CODIGO     
+Index  on  DTOS(DVT_FECHA)+DVT_HORA         tag   FECHA      
+
+
+use GC_EST00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  EST_INDEST+EST_TIPDOC+EST_NRODOC+EST_CODPRO tag   CODIGO     
+Index  on  EST_TIPDOC+EST_NRODOC                       tag   EST_TIPNRO 
+Index  on  DTOS(EST_FECHA)+EST_HORA                    tag   FECHA      
+use
+
+
+use GC_GAS00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  GAS_TIPDOC+GAS_NRODOC+GAS_CODGAS tag   CODIGO
+Index  on  DTOS(GAS_FECHA)+GAS_HORA         tag   FECHA 
+use
+
+use GC_HCO00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  HCO_NRODOC                  tag   CODIGO     
+Index  on  HCO_NUMFAC+HCO_NRODOC       tag   HCO_NUMFAC 
+Index  on  HCO_CODENT+HCO_NUMFAC       tag   HCO_CODENT 
+Index  on  DTOS(HCO_FECDOC)+HCO_NUMFAC tag   HCO_FECDOC 
+Index  on  HCO_CODENT+HCO_NRODOC       tag   HCO_CODEN  
+Index  on  DTOS(HCO_FECHA)+HCO_HORA    tag   FECHA      
+use
+
+
+use GC_HIP00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  HIP_TIPDOC+HIP_NRODOC                             tag   CODIGO     
+Index  on  HIP_CODMOV+DTOS(HIP_FECDOC)+HIP_TIPDOC+HIP_NRODOC tag   HIP_COFETI 
+Index  on  HIP_TIPENT+HIP_CODENT+DTOS(HIP_FECDOC)            tag   HIP_TICOFE 
+Index  on  DTOS(HIP_FECHA)+HIP_HORA                          tag   FECHA      
+use
+
+use GC_HLP00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  HLP_CODLIS                tag   CODIGO     
+Index  on  DTOS(HLP_FECHA)+HLP_HORA  tag   FECHA     
+use
+
+
+use GC_HPRES exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  ANO+ZONA+SUCU+INDORI+CODEMI+LINEA tag   CODIGO 
+Index  on  DTOS(FECHA)+HORA                  tag   FECHA 
+use
+
+
+use GC_HPV00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  HPV_TIPDOC+HPV_NRODOC        tag   CODIGO     
+Index  on  DTOS(HPV_FECDOC)+HPV_HORDOC  tag   HPV_FECDOC 
+Index  on  HPV_CODENT                   tag   HPV_CODENT 
+Index  on  DTOS(HPV_FECHA)+HPV_HORA     tag   FECHA      
+use
+
+
+use GC_HRE00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  HRE_TIPREP+HRE_NROREP            tag   CODIGO     
+Index  on  HRE_CODALM+HRE_TIPREP+HRE_NROREP tag   HRE_CODTIP 
+Index  on  DTOS(HRE_FECHA)+HRE_HORA         tag   FECHA      
+use
+
+
+use GC_HTR00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  HTR_NUMDOC               tag   CODIGO     
+Index  on  DTOS(HTR_FECHA)+HTR_HORA tag   FECHA      
+use
+
+
+use GC_HVE00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  HVE_TIPDOC+HVE_NRODOC                  tag   CODIGO     
+Index  on  HVE_TIPDOC                             tag   ABONO    For HVE_TIPDOC="ABON"
+Index  on  HVE_NRDORE                             tag   NRDORE     
+Index  on  DTOS(HVE_FECDOC)                       tag   HVE_FECDOC 
+Index  on  HVE_TIPENT+HVE_CODENT+DTOS(HVE_FECDOC) tag   HVE_TICOFE 
+Index  on  DTOS(HVE_FECHA)+HVE_HORA               tag   FECHA      
+INDE   ON  DTOS(HVE_FECDOC)+HVE_TIPDOC+SUBSTR(HVE_NRODOC,4) TAG VENTAS
+use
+
+
+use GC_HVEST exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  ANO+ZONA+SUCU+INDORI+CODEMI+LINEA tag   CODIGO     
+Index  on  DTOS(FECHA)+HORA                  tag   FECHA      
+use 
+
+
+use GC_HVT00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  HVT_NUMDOC               tag   CODIGO     
+Index  on  DTOS(HVT_FECHA)+HVT_HORA tag   FECHA      
+use
+
+
+use GC_IMP00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  IMP_TIPPRO+IMP_CODENT+IMP_RANGO tag   IMP_TIPPRO 
+Index  on  DTOS(IMP_FECHA)+IMP_HORA        tag   FECHA      
+use
+
+
+use GC_INV00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  ALM_CODALM+ALM_CODPRO    tag   CODIGO     
+Index  on  ALM_CODALM+ALM_UBICAC    tag   UBICA      
+Index  on  DTOS(ALM_FECHA)+ALM_HORA tag   FECHA      
+use
+
+
+use GC_KAR00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  KAR_CODPRO                                                                tag   CODIGO     
+Index  on  KAR_TIPDOC+KAR_NRODOC+KAR_CODPRO                                          tag   DOCPRO     
+Index  on  KAR_CODPRO+DTOS(KAR_FECDOC)                                               tag   KAR_PROFEC  Descending
+Index  on  KAR_ALMDES+DTOS(KAR_FECDOC)+KAR_TIPDOC+KAR_NRODOC                         tag   KAR_ALMFEC 
+Index  on  KAR_CODPRO+KAR_TIDORE                                                     tag   KAR_CODPRO 
+Index  on  KAR_CODPRO+DTOS(KAR_FECING)+KAR_HORING+KAR_TIPDOC+KAR_NRODOC              tag   KAR_PROING  Descending
+Index  on  KAR_CODPRO+DTOS(KAR_FECING)+KAR_HORING+KAR_TIPDOC+KAR_NRODOC              tag   KAR_PROIN2 
+Index  on  KAR_TIPDOC+KAR_NRODOC                                                     tag   KAR_TINRLI 
+Index  on  DTOS(KAR_FECDOC)                                                          tag   FECDOC     
+Index  on  DTOS(KAR_FECING)+KAR_HORING+KAR_CODMOV                                    tag   KAR_FECING 
+Index  on  DTOS(KAR_FECHA)+KAR_HORA                                                  tag   FECHA      
+use
+
+
+use GC_MODUL exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  DTOS(MOD_FECHA)+MOD_HORA tag  FECHA     
+use
+
+
+
+use GC_MOV00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  MOV_ANO+MOV_CODPRO+MOV_ALMDES tag   CODIGO1    
+Index  on  MOV_ANO+MOV_CODPRO+MOV_ALMREC tag   CODIGO     
+Index  on  DTOS(MOV_FECHA)+MOV_HORA      tag   FECHA      
+use
+
+
+use GC_NFA00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NFA_CODPRO                       tag   CODPRO     
+Index  on  NFA_NUMFAC+NFA_NRODOC+NFA_CODPRO tag   NFA_NUMFAC 
+Index  on  NFA_NUMFAC+NFA_NRODOC+NFA_CODPRP tag   NFA_FACPRP 
+Index  on  NFA_NRODOC+NFA_CODPRP+NFA_INDEST tag   NFA_DOCPRP 
+Index  on  DTOS(NFA_FECHA)+NFA_HORA         tag   FECHA      
+use
+
+
+use GC_NVE00 exclu
+@ 08,30 say DBF()
+pack 
+dele tag all
+Index  on  NVE_CODPRO                                                     tag   CODIGO     
+Index  on  NVE_CMES1+NVE_CMES2+NVE_CMES3+NVE_CMES4+NVE_CMES5+NVE_CMES6    tag   NVE_C6MES  Descending
+Index  on  DTOS(NVE_FECHA)+NVE_HORA                                       tag   FECHA      
+use
+
+use GC_ORD00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  ORD_NRODOC+ORD_CODPRO                       tag   ORD_NRODOC 
+Index  on  ORD_DOCREF+ORD_CODPRO                       tag   ORD_DOCREF 
+Index  on  ORD_CODPRO+ORD_NRODOC                       tag   ORD_CODPRO 
+Index  on  ORD_NRODOC+ORD_CODPRP                       tag   ORD_DOCPRP 
+Index  on  ORD_NUMFAC+ORD_NRODOC+ORD_CODPRP            tag   ORD_NUMFAC 
+Index  on  ORD_CODPRP+ORD_NRODOC+ORD_DOCREF            tag   ORD_PRDORE 
+Index  on  ORD_DOCREF+ORD_NRODOC+ORD_CODPRP            tag   ORD_REFPRP 
+Index  on  ORD_CODALM+ORD_INORIG+ORD_DOCREF+ORD_CODPRO tag   ORD_CODINO 
+Index  on  ORD_CODALM+ORD_INORIG+ORD_DOCREF+ORD_CODPRP tag   ORD_CODIPR 
+Index  on  DTOS(ORD_FECHA)+ORD_HORA                    tag   FECHA      
+use
+
+
+use GC_PAL00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  PAL_CODPRO+PAL_COPRAL    tag   CODIGO
+Index  on  DTOS(PAL_FECHA)+PAL_HORA tag   FECHA 
+use
+
+
+use GC_PAR00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DTOS(PAR_FECHA)+PAR_HORA tag   FECHA 
+use
+
+
+use GC_PRO00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  PRO_CODPRO                       tag   CODIGO     
+Index  on  PRO_DESCRI                       tag   DESCRI     
+Index  on  PRO_MODELO                       tag   MODELO     
+Index  on  PRO_CODPVE                       tag   CODPVE     
+Index  on  PRO_MONEDA                       tag   MONEDA     
+Index  on  PRO_CODPRO+PRO_UNIMED            tag   MEDIDA     
+Index  on  PRO_NUMPAR                       tag   NUMPAR     
+Index  on  PRO_SUBCAT                       tag   SUBCAT     
+Index  on  PRO_PARARA                       tag   PARARA     
+Index  on  PRO_CODPVE+PRO_CODPRO            tag   PRO_CODPVE 
+Index  on  PRO_PROCED+PRO_CODPVE+PRO_CODPRO tag   PRO_PROCED 
+Index  on  PRO_MARCA                        tag   MARCA      
+Index  on  PRO_NIVCIT+PRO_CODPVE            tag   PRO_NIVPRO 
+Index  on  DTOS(PRO_FECHA)+PRO_HORA         tag   FECHA      
+use
+
+
+use GC_TPE00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  TPE_INDREG                                        tag   TPE_INDREG 
+Index  on  TPE_INDORI                                        tag   TPE_INDORI 
+Index  on  TPE_CODPRO                                        tag   TPE_CODPRO 
+Index  on  TPE_FECLLE                                        tag   TPE_FECLLE 
+Index  on  TPE_INDREG+TPE_INDORI+TPE_CODPRO+DTOC(TPE_FECLLE) tag   TPE_KEY    
+Index  on  DTOS(TPE_FECHA)+TPE_HORA                          tag   FECHA      
+use
+
+
+
+use GC_UNI00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  UNI_CODPRO+UNI_UNIALT     tag   CODIGO 
+Index  on  DTOS(UNI_FECHA)+UNI_HORA  tag   FECHA  
+use
+
+
+use GC_VND00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  VND_TPPER+VND_CODE        tag   CODIGO 
+Index  on  VND_NOMBRE                tag   NOMBRE 
+Index  on  DTOS(VND_FECHA)+VND_HORA  tag   FECHA  
+use
+
+
+*****************************************************************************
+
+
+use ST_ASIEM exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  CODEMP+ANIO      tag   ASI_COD    
+Index  on  DTOS(DATE)+TIME  tag   FECHA      
+use
+
+
+use ST_ESTAD exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  ANOREP           tag   CODIGO     
+Index  on  NUMORD           tag   EST_NUMORD 
+Index  on  DTOS(DATE)+TIME  tag   FECHA      
+use
+
+
+use ST_ICLPR exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  INDENT+CODENT    tag   CODIGO     
+Index  on  INDENT+NOMENT    tag   CLI_NOMENT 
+Index  on  NOMENT           tag   NOMENT     
+Index  on  CODENT           tag   CODENT     
+Index  on  DTOS(DATE)+TIME  tag   FECHA      
+use
+
+
+use ST_IDFAC exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  TIPDOC+NRODOC       tag   CODIGO  
+Index  on  DTOS(FECHAD)+CODEMI tag   FECEMI  
+Index  on  DTOS(DATE)+TIME     tag   FECHA   
+use
+
+
+use ST_IDPED exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on NUMORD               tag   DRE_NUMORD 
+Index  on NUMDOC+NUMORD+CODPRO tag   CODIGO     
+Index  on DTOS(DATE)+TIME      tag   FECHA      
+use
+
+
+use ST_IDPRE exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMDOC+NUMORD+CODPRO tag   CODIGO
+Index  on  DTOS(DATE)+TIME      tag   FECHA 
+use
+
+
+use ST_IMODE exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  CODMAR+CODMOD        tag   CODIGO     
+Index  on  NOMMOD               tag   MOD_NOMMOD 
+Index  on  LINEA+CODMAR+CODMOD  tag   LINEA      
+Index  on  CODCLA+CODMAR+CODMOD tag   CLASE      
+Index  on  DTOS(DATE)+TIME      tag   FECHA      
+use
+
+
+use ST_INV00 exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMSOL          tag   NUMSOL 
+Index  on  NUMDOC          tag   NUMORD 
+Index  on  AUXEST          tag   ESTADO 
+Index  on  CODTALL         tag   TALLER 
+Index  on  CODMAR          tag   MARCA  
+Index  on  CODEMI          tag   EMISOR 
+Index  on  NUMSER          tag   NUMSER 
+Index  on  DTOS(DATE)+TIME tag   FECHA  
+use
+   
+
+use ST_IOREP exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMDOC                                    tag   CODIGO     
+Index  on  CODENT+DTOC2(FECEMI)                      tag   ORD_CODENT 
+Index  on  DTOC2(FECEMI)                             tag   ORD_FCHEMI 
+Index  on  CODMAR+CODMOD+DTOC2(FECEMI)               tag   ORD_CODMAR 
+Index  on  NUMSOL                                    tag   ORD_NUMSOL 
+Index  on  NUMSER                                    tag   ORD_NUMSER 
+Index  on  CODTEC+DTOS(FECEMI)+NUMDOC                tag   ORD_TECN   
+Index  on  DTOS(FECEMI)+NUMDOC                       tag   ORD_FECDOC 
+Index  on  AUXEST+CODEMI+DTOS(FECEST)+NUMDOC         tag   ORD_ESEM   
+Index  on  CODFABO+NUMFABO+NUMDOC                    tag   ORD_NUMFAB 
+Index  on  INDORI+INDEST+CODTALL+DTOS(FECEMI)+NUMDOC tag   ORD_INESTA 
+Index  on  CODTEC+AUXEST                             tag   ORD_TECEST 
+Index  on  DTOS(FECFIN)+INDORI                       tag   ORD_FECIND 
+Index  on  CODMAR+CODMOD+NUMSER                      tag   ORD_MAMOSE 
+Index  on  DTOS(FECENT)+INDORI                       tag   ORD_ENTIND 
+Index  on  DTOS(FECFABO)                             tag   ORD_FECFAC 
+Index  on  CODENT                                    tag   CODENT     
+Index  on  CODMAR+NUMSER                             tag   ORD_MARSER
+Index  on  DTOS(DATE)+TIME                           tag   FECHA      
+use
+
+
+use ST_IPARG exclu
+@ 08,30 say DBF()
+pack
+use
+
+
+use ST_IPREP exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMDOC              tag   CODIGO     
+Index  on  NUMORD              tag   REP_NUMORD 
+Index  on  DTOS(FECEMI)+NUMDOC tag   REP_FECNUM 
+Index  on  DTOS(DATE)+TIME     tag   FECHA      
+use
+
+
+use ST_IREDO exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  INDODO+NUMODO               tag   CODIGO     
+Index  on  INDDDO+NUMDDO               tag   REL_INDICA 
+Index  on  INDODO+NUMODO+INDDDO+NUMDDO tag   IRE_INDNUM 
+Index  on  DTOS(DATE)+TIME             tag   FECHA      
+use
+
+
+use ST_ISCIC exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMSOL              tag   NUMSOL     
+Index  on  NUMORD              tag   NUMORD     
+Index  on  NUMSOL+DTOS(FECINI) tag   FECSOL     
+Index  on  DTOS(FECCOM)+USER   tag   FECUSE     
+Index  on  DTOS(FECINI)+USER   tag   FECINI     
+Index  on  DTOS(DATE)+TIME     tag   FECHA      
+use
+
+
+use ST_ISERI exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  CODENT+CODMAR+DTOC(FECING) tag   CODIGO     
+Index  on  CODMAR+MODELO+NUMSER       tag   SER_CODMAR 
+Index  on  DTOS(DATE)+TIME            tag   FECHA      
+index  on  codmar+numser              tag ser_marser
+use
+
+use ST_ISINT exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  CODCLA+CODSIN   tag   CODIGO     
+Index  on  CODCLA+DESSIN   tag   MSI_CODCLA 
+Index  on  DTOS(DATE)+TIME tag   FECHA      
+use
+
+
+use ST_ISORE exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DTOS(DATE)+TIME tag   FECHA      
+use
+
+
+use ST_ISPRE exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMDOC                      tag   CODIGO     
+Index  on  CODENT+DTOC2(FECEMI)        tag   PRE_CODENT 
+Index  on  DTOC2(FECEMI)               tag   PRE_FECEMI 
+Index  on  CODMAR+CODMOD+DTOC2(FECEMI) tag   PRE_CODMAR 
+Index  on  NUMSOL                      tag   ST_NUMSOL  
+Index  on  NUMSER                      tag   ST_NUMSER  
+Index  on  INDEST+NUMDOC               tag   PRE_INFENU 
+Index  on  NUMORD                      tag   PRE_NUMORD 
+Index  on  DTOS(DATE)+TIME             tag   FECHA      
+use
+
+
+use ST_ISREP exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMDOC                      tag   CODIGO     
+Index  on  CODENT+DTOC2(FECEMI)        tag   SOL_CODENT 
+Index  on  DTOC2(FECEMI)               tag   SOL_FCHEMI 
+Index  on  CODMAR+CODMOD+DTOC2(FECEMI) tag   SOL_MARMOD 
+Index  on  CODSTK+NUMSTK               tag   SOL_CODSTK 
+Index  on  NUMSER                      tag   SOL_SERIE  
+Index  on  CODEMI+INDORI               tag   SOL_EMISOR 
+Index  on  CODENT                      tag   CODENT     
+Index  on  CODEMI+CODMOD+DTOC(FECEMI)  tag   EMIMOD     
+Index  on  CODMAR+CODMOD+NUMSER        tag   SOL_MAMOSE 
+Index  on  CODMAR+NUMSER               tag   SOL_MARSER
+Index  on  DTOS(DATE)+TIME             tag   FECHA      
+use
+
+
+use ST_ISSRE exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMDOC+CODSIN   tag   CODIGO     
+Index  on  CODSIN          tag   DSI_CODSIN 
+Index  on  DTOS(DATE)+TIME tag   FECHA      
+use
+
+
+use ST_ITECN exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  CODENT          tag   CODIGO     
+Index  on  NOMENT          tag   TEC_NOMTEC 
+Index  on  CODTEC          tag   TEC_CODTEC 
+Index  on  DTOS(DATE)+TIME tag   FECHA      
+use
+
+use ST_MOBRA exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  MO_CODMAR+MO_CODART tag   CODIGO 
+Index  on  DTOS(DATE)+TIME     tag   FECHA  
+use
+
+
+use ST_MOVCA exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMORD+CODCAU   tag   CODIGO 
+Index  on  DTOS(DATE)+TIME tag   FECHA  
+Index  on  NUMSOL          tag   NUMSOL 
+use
+
+use ST_MOVSO exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMORD+CODSOL   tag   CODIGO 
+Index  on  DTOS(DATE)+TIME tag   FECHA  
+Index  on  NUMSOL          tag   NUMSOL 
+use
+
+
+use ST_MVORD exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  DTOC(DIA)+HORA+ORDEN         tag   CODIGO     
+Index  on  ORDEN                        tag   EOR_NROORD 
+Index  on  ORDEN+ESTADO                 tag   ESTADO     
+Index  on  ESTADO+DTOS(DIA)+ORDEN       tag   MVO_TECNIC 
+Index  on  DTOS(DATE)+TIME              tag   FECHA      
+Index  on  ORDEN+ESTADO+DTOS(DIA)+HORA  tag   ORDIA      
+use
+
+
+use ST_SICLI exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  NUMDOC+CODSIN   tag   CODIGO     
+Index  on  CODSIN          tag   CODSIN     
+Index  on  DTOS(DATE)+TIME tag   FECHA      
+use
+
+
+use ST_SINT exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  CODSIN           tag   CODIGO     
+Index  on  DESSIN+CODSIN    tag   DESSIN     
+Index  on  LINEA+CODSIN     tag   SIN_LINCOD 
+Index  on  DTOS(DATE)+TIME  tag   FECHA      
+use
+
+
+use ST_USERS exclu
+@ 08,30 say DBF()
+pack
+dele tag all
+Index  on  CODEMP+ESTADO    tag   CODIGO  
+Index  on  NUMSOL           tag   NUMSOL  
+Index  on  DTOS(FECHA)+HORA tag   FECHA   
+use
+
+*様様様様様様様様様様*
+ procedure dtoc2
+*様様様様様様様様様様*
+parameter wk_par
+wk_aux = str(year(wk_par),4)+str(month(wk_par),2)+str(day(wk_par),2)
+return wk_aux
+

@@ -1,0 +1,95 @@
+
+ El volumen de la unidad F es DATA       
+
+Directorio de F:\SYS\BASES
+
+GC_ALM00 DBF     1,680,008  27/03/29 10:17a
+GC_CMV00 DBF        81,354  27/03/29 10:17a
+GC_DCO00 DBF           674  27/03/29 10:17a
+GC_DIN00 DBF       985,874  27/03/29 10:17a
+GC_DIP00 DBF     1,164,460  27/03/29 10:17a
+GC_DLP00 DBF     1,374,742  27/03/29 10:17a
+GC_DPV00 DBF       111,874  27/03/29 10:17a
+GC_DRE00 DBF         9,042  27/03/29 10:17a
+GC_DTR00 DBF           354  27/03/29 10:17a
+GC_DVE00 DBF     1,517,139  27/03/29 10:17a
+GC_DVT00 DBF           354  27/03/29 10:17a
+GC_ETI00 DBF            66  16/01/98 12:14p
+GC_GAS00 DBF           258  27/03/29 10:17a
+GC_ORD00 DBF           577  27/03/29 10:18a
+GC_PAL00 DBF           226  27/03/29 10:18a
+GC_TPE00 DBF           290  27/03/29 10:19a
+GC_UNI00 DBF           258  27/03/29 10:19a
+GC_VND00 DBF         6,474  27/03/29 10:19a
+Presione cualquier tecla para continuar . . .
+
+(continuando F:\SYS\BASES)
+GE_TAB0  DBF       112,192  27/03/29 10:19a
+GT_CARSA DBF           354  16/01/98 12:25p
+PASSWORD DBF         3,136  12/05/98  9:01p
+ST_ASIEM DBF         8,912  27/03/29 10:19a
+ST_CAMBI DBF         2,667  27/03/29 10:19a
+GC_HLP00 DBF           369  27/03/29 10:17a
+GC_HPRES DBF         1,921  27/03/29 10:17a
+GC_HRE00 DBF           446  27/03/29 10:17a
+GC_HTR00 DBF           513  27/03/29 10:17a
+GC_PRO00 DBF     8,093,243  27/03/29 10:19a
+GC_HVEST DBF         1,921  27/03/29 10:17a
+GC_INV00 DBF           417  27/03/29 10:17a
+GC_MODUL DBF         1,433  27/03/29 10:18a
+GC_MOV00 DBF         1,185  27/03/29 10:18a
+GC_NFA00 DBF           385  27/03/29 10:18a
+ST_ESTFA DBF           226  16/01/98 12:28p
+ST_IDPRE DBF       445,435  24/03/29  9:20a
+ST_IDPED DBF     1,008,088  24/03/29  1:58p
+ST_IFALL DBF           258  16/01/98 12:28p
+ST_MVORD DBF     2,820,962  27/03/29 10:32a
+GC_CLI00 DBF       334,856  27/03/29 10:17a
+ST_ISREP DBF     3,454,464  26/03/29  6:10p
+Presione cualquier tecla para continuar . . .
+
+(continuando F:\SYS\BASES)
+ST_IPREP DBF       455,686  27/03/29  5:42a
+ST_ISERI DBF       151,208  26/03/29  6:10p
+ST_IREDO DBF       538,512  26/03/29  4:17p
+ST_ISRE  DBF     3,454,290  26/03/29  5:48p
+ST_ISINT DBF           226  23/01/29  8:40p
+ST_ISORE DBF           194  16/01/98 12:31p
+ST_SICLI DBF       806,091  26/03/29  6:10p
+ST_USERS DBF       606,274  27/03/29 10:26a
+GC_CMV0  DBF        81,298  26/03/29  6:31p
+GC_NVE00 DBF       484,908  27/03/29 10:18a
+ST_ISSRE DBF           194  23/01/29  8:41p
+ST_ESTAD DBF     1,001,331  27/03/29 10:26a
+ST_ITECN DBF         4,866  01/03/29 11:23a
+ST_MOVCA DBF     1,657,306  27/03/29 10:25a
+ST_MOBRA DBF        16,040  07/02/29 10:21p
+ST_MOVSO DBF     1,354,636  27/03/29 10:25a
+CAMPOFOX DBF         1,390  23/02/98 12:52p
+ST_SINT  DBF        75,197  23/01/29  8:42p
+ST_ISCIC DBF    13,096,633  23/01/29  8:40p
+GC_UCO00 DBF       178,882  24/03/29  1:28p
+FOXUSER  DBF         1,516  27/03/29 10:38a
+GC_HCO00 DBF           737  27/03/29 10:17a
+Presione cualquier tecla para continuar . . .
+
+(continuando F:\SYS\BASES)
+GC_HIP00 DBF       534,699  27/03/29 10:17a
+GC_HPV00 DBF        82,080  27/03/29 10:17a
+GC_HVE00 DBF     3,038,973  27/03/29 10:17a
+GC_HVT00 DBF           865  27/03/29 10:17a
+GC_IMP00 DBF           385  27/03/29 10:17a
+GC_KAR00 DBF     5,089,698  27/03/29 10:18a
+GC_PAR00 DBF           935  27/03/29 10:18a
+GC_EST00 DBF       241,485  27/03/29 10:17a
+ST_ICLPR DBF     2,156,143  27/03/29 10:19a
+ST_IMODE DBF       565,881  26/03/29 11:33a
+ST_INV00 DBF           737  23/01/29  8:36p
+ST_IOREP DBF     6,514,370  27/03/29 10:32a
+ST_IPARG DBF         1,176  24/03/29  1:58p
+ST_ISPRE DBF       315,553  27/03/29  5:51a
+        76 archivos     65,737,802 bytes
+
+N£mero total de archivos en la lista:
+        76 archivos     65,737,802 bytes
+         0 directorios     226,820,096 bytes libres

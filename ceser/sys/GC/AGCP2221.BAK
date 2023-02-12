@@ -1,0 +1,2167 @@
+*-------------------------------
+* agcp2221.prg
+* Recepcion de productos
+*-------------------------------
+ON KEY
+CLOSE DATABASES
+SET CENTURY ON
+CLEAR
+DEFINE WINDOW gas FROM 19, 26 TO 21, 54 IN screen NONE
+DEFINE WINDOW t0 FROM 02, 64 TO  02, 73 IN screen NONE
+DEFINE WINDOW a0 FROM 04, 01 TO  12, 78 IN screen
+DEFINE POPUP detalle FROM 13, 01 TO 18, 78 PROMPT FIELDS  ;
+       codigo + '³' + descri + '³' + docref + '³ ' +  ;
+       TRANSFORM(cantidad, '@ 999,999') + '³' +  ;
+       TRANSFORM(tempre, '@ 999,999.99') + '³' +  ;
+       TRANSFORM(total, '@ 9999,999.99') IN screen COLOR SCHEME 9
+ON SELECTION POPUP detalle deac popup;
+detalle
+ACTIVATE WINDOW tablas
+flag = .F.
+DO p_prestab WITH 'PROCESO','RECEPCION DE PRODUCTOS','SELECCION', flag
+w_program = PROGRAM()
+@ 02, 63 SAY PROGRAM()
+SELECT 1
+USE SHARED gc_hip00 ORDER codigo
+SELECT 2
+USE SHARED gc_dip00 ORDER codigo
+SELECT 3
+USE SHARED ge_tab0 ALIAS ge_tab0 ORDER codigo
+w_sele1 = SELECT()
+SELECT 4
+USE SHARED gc_gas00 ALIAS gc_gas00 ORDER codigo
+SELECT 5
+USE SHARED gc_alm00 ORDER codigo
+SELECT 6
+USE SHARED gc_pro00 ORDER codigo
+w_selpro = SELECT()
+SELECT 7
+USE SHARED gc_nfa00 ORDER nfa_numfac
+SELECT 8
+USE SHARED gc_cli00 ORDER codigo
+SELECT 9
+USE SHARED gc_vnd00 ORDER codigo
+SELECT 10
+USE SHARED gc_hco00 ORDER hco_numfac
+STORE 0 TO w_swf, tcp
+STORE SPACE(04) TO w_var, w_busca
+STORE 0 TO totimpor, tcn, w_tipcav, c
+DIMENSION g1( 20)
+DIMENSION g2( 20)
+SET CURSOR ON
+SELECT 20
+USE SHARED gc_cmv00 ORDER cmv_feinmo
+SEEK DTOS(DATE()) + '1' + rge_monbas + 'DOL '
+*IF  .NOT. FOUND()
+*     DO p_mensaje WITH '**No Existe Tipo de Cambio para esta Fecha**'
+*     w_swf = 1
+*ELSE
+     w_tipcav = 3.25
+*     w_tipcav = cmv_tipcav
+*ENDIF
+SELECT ge_tab0
+SEEK 'IGV ' + 'IGV '
+IF FOUND()
+     w_facigv = ROUND(tab_factor / 100, 2)
+ELSE
+     DO p_mensaje WITH '** No Esta Definido el '+ sys_codimp
+     w_swf = 1
+ENDIF
+DO WHILE w_swf<>1
+     DO pinta1
+     DO pinta2
+     STORE 0 TO tmp_1, w_sw3,  ;
+           w_totcan, w_tottem,  ;
+           w_totpre, w_almant,  ;
+           w_lin, w_gas, w_totgas,  ;
+           w_stkant, w_bus2,  ;
+           w_bus1, w_count, p, m,  ;
+           w_opcion
+     STORE 0 TO w_impor, timpor,  ;
+           w_tfob, tflete,  ;
+           tseguro, tfob, tcif,  ;
+           tadva, tgastos, fflete,  ;
+           fseguro, fadv, fgastos,  ;
+           fadva, w_proant,  ;
+           w_proanb, tcn, w_exi
+     STORE 1 TO w_swfin
+     STORE SPACE(01) TO w_tiprov,  ;
+           w_razsoc
+     STORE SPACE(30) TO w_desref,  ;
+           w_desmov, w_desalm,  ;
+           w_desmon, w_desent,  ;
+           w_desdoc
+     STORE SPACE(14) TO w_codexi
+     SCATTER BLANK TO cod
+     ACTIVATE WINDOW t0
+     @ 00, 0 SAY 'SELECCION'
+     SET CURSOR ON
+     SELECT gc_hip00
+     DIMENSION a1( FCOUNT())
+     SCATTER BLANK TO a1
+     DO proceso
+ENDDO
+DEACTIVATE WINDOW tablas, titpass,  ;
+           a0, titposs
+RELEASE WINDOW t0, a0, a1, c0, a2
+RELEASE POPUP detalle
+RELEASE WINDOW winmensaje
+ON KEY
+CLOSE DATABASES
+DO p_footer WITH '100000000001011000001', 1
+ACTIVATE SCREEN
+RETURN
+*
+PROCEDURE proceso
+*----------------
+ACTIVATE WINDOW a0
+a1( 11) = 'SOL '
+a1( 06) = rge_codalm
+a1( 13) = SPACE(4)
+a1( 14) = SPACE(10)
+@ 00, 13 GET a1( 01) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 00, 46 GET a1( 02) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 01, 13 GET a1( 03) PICTURE '99/99/9999' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 01, 46 GET a1( 04) PICTURE '99/99/9999' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 02, 13 GET a1( 05) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 03, 13 GET a1( 06) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 04, 13 GET a1( 09) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 04, 46 GET a1( 10) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 05, 13 GET a1( 11) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 05, 46 GET a1( 12) PICTURE '99/99/9999' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 06, 17 GET a1( 13) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+@ 06, 49 GET a1( 14) PICTURE '@!' VALID despues(VARREAD()) WHEN antes(VARREAD()) COLOR W/N,N/W 
+READ CYCLE
+IF LASTKEY() = 27 .AND. w_var = 'a1(01)'
+     CLEAR READ
+     w_swf = 1
+ENDIF
+RETURN
+*
+PROCEDURE antes
+*--------------
+PARAMETER var
+DO CASE
+	CASE var = 'A1(1)'
+		DO p_footer WITH '100010000000000000001', 2
+		ACTIVATE WINDOW a0
+		w_busca = 'DOCU'
+		w_var = 'a1(01)'
+		ON KEY LABEL F6 do busca2 with w_busca,w_var,"DOCUMENTOS",1
+	CASE var = 'A1(2)'
+		ON KEY
+		w_var = 'a1(02)'
+		DO p_footer WITH '100000000000000000001', 2
+		ACTIVATE WINDOW a0
+	CASE var = 'A1(3)'
+		ON KEY
+		DO p_footer WITH '100000000000000000001', 2
+		ACTIVATE WINDOW a0
+		w_var = 'a1(03)'
+		IF w_sw3 = 0
+			a1( 03) = DATE()
+		ENDIF
+	CASE var = 'A1(4)'
+		ON KEY
+		DO p_footer WITH '100000000000000000001', 2
+		ACTIVATE WINDOW a0
+		w_var = 'a1(04)'
+		IF w_sw3 = 0
+			a1( 04) = DATE()
+		ENDIF
+	CASE var = 'A1(5)'
+		DO p_footer WITH '100010000000000000001', 2
+		ACTIVATE WINDOW a0
+		w_busca = 'RECE'
+		w_var = 'a1(05)'
+		ON KEY LABEL F6 do busca2 with w_busca,w_var,'RECEPCION',1
+	CASE var = 'A1(6)'
+		ON KEY
+		w_busca = 'ALMA'
+		w_var = 'a1(06)'
+		ON KEY LABEL F6 do busca2 with w_busca,w_var,'ALMACENES',1
+	CASE var = 'A1(9)'
+		ON KEY
+		w_busca = 'ENTI'
+		w_var = 'a1(09)'
+		ON KEY LABEL F6 do busca2 with w_busca,w_var,'ENTIDADES',1
+	CASE var = 'A1(10)'
+		ON KEY
+		w_busca = a1(09)
+		w_var = 'a1(10)'
+		ON KEY LABEL F6 do entidad with w_busca,w_var
+	CASE var = 'A1(11)'
+		ON KEY
+		DO p_footer WITH '100010000000000000001', 2
+		ACTIVATE WINDOW a0
+		w_busca = 'MONE'
+		w_var = 'a1(11)'
+		ON KEY LABEL F6 do busca2 with w_busca,w_var,'MONEDAS',1
+	CASE var = 'A1(12)'
+		ON KEY
+		DO p_footer WITH '100000000000000000001', 2
+		ACTIVATE WINDOW a0
+		w_var = 'a1(12)'
+		IF w_sw3 = 0
+			a1( 12) = DATE()
+		ENDIF
+	CASE var = 'A1(13)'
+		ON KEY
+		DO p_footer WITH '100010000000000000001', 2
+		ACTIVATE WINDOW a0
+		w_busca = 'DOCU'
+		w_var = 'a1(13)'
+		ON KEY LABEL F6 do busca2 with w_busca,w_var,'DOCUMENTOS',1
+	CASE var = 'A1(14)'
+		DO p_footer WITH '100010000000000000001', 2
+		ON KEY
+		w_var = 'a1(14)'
+		ON KEY LABEL F6 do ooverdoc ACTIVATE WINDOW a0
+ENDCASE
+RETURN
+*
+FUNCTION despues
+*---------------
+PARAMETER var
+DO CASE
+	CASE var = 'A1(1)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		IF a1(1) = 'AJUS' .OR. a1(1) = 'ABON' .OR. a1(1) = 'NCRE' .OR.  ;
+			a1(1) = 'NDEB' .OR. a1(1) = 'ORDE' .OR. a1(1) = 'NOPE'
+			DO p_mensaje WITH 'Tipo de Documento no Permitido'
+			RETURN .F.
+		ENDIF
+		SELECT ge_tab0
+		SEEK 'DOCU' + a1(01)
+		IF  .NOT. FOUND()
+			DO p_mensaje WITH 'Tipo de Documento no Existe'
+			RETURN .F.
+		ELSE
+			w_desdoc = SUBSTR(tab_destab, 1, 30)
+			@ 00, 18 SAY SUBSTR(w_desdoc, 1, 13)
+		ENDIF
+	CASE var = 'A1(2)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		a1( 02) = f_ceros(a1(02),10,2)
+		@ 00, 46 SAY a1(02)
+		IF a1(02) = '0000000000'
+			DO p_mensaje WITH 'Documento en Blanco'
+			RETURN .F.
+		ENDIF
+		SELECT gc_hip00
+		SEEK a1(01) + a1(02)
+		IF FOUND()
+			w_sw3 = 1
+			DO p_mensaje WITH 'Documento ya fue Ingresado'
+			RETURN .F.
+		ELSE
+			w_sw3 = 0
+		ENDIF
+	CASE var = 'A1(3)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+	CASE var = 'A1(4)'
+		IF a1(4) < a1(3)
+			DO p_mensaje WITH ' Fecha de Vcto. no puede ser menor a la Fecha de Recepci¢n.'
+			RETURN .F.
+		ENDIF
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+	CASE var = 'A1(5)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		SELECT ge_tab0
+		SEEK w_busca + a1(05)
+		IF  .NOT. FOUND()
+			DO p_mensaje WITH 'Tipo de Movimiento no Existe'
+			RETURN .F.
+		ELSE
+			w_desmov = SUBSTR(tab_destab, 1, 30)
+			@ 02, 18 SAY SUBSTR(w_desmov, 1, 30)
+		ENDIF
+	CASE var = 'A1(6)'
+		SELECT ge_tab0
+		SEEK 'ALMA' + a1(06)
+		IF  .NOT. FOUND()
+			DO p_mensaje WITH 'Almac‚n no Existe'
+			RETURN .F.
+		ELSE
+			w_desalm = SUBSTR(tab_destab, 1, 30)
+			@ 03, 18 SAY SUBSTR(w_desalm, 1, 20)
+		ENDIF
+	CASE var = 'A1(9)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		IF a1(09) <> 'P' .AND. a1(05) = 'IFC '
+			DO p_mensaje WITH 'Por Favor Ingrese Proveedor por el Tipo de Movimiento'
+			RETURN .F.
+		ENDIF
+		SELECT ge_tab0
+		SEEK 'ENTI' + a1(09)
+		IF  .NOT. FOUND()
+			DO p_mensaje WITH 'No Existe'
+			RETURN .F.
+		ELSE
+			w_desent = SUBSTR(tab_destab, 1, 30)
+			@ 04, 18 SAY SUBSTR(w_desent, 1, 13)
+		ENDIF
+	CASE var = 'A1(10)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		IF a1(09) = 'P' .OR. a1(09) = 'C'
+			SELECT gc_cli00
+		ELSE
+			SELECT gc_vnd00
+		ENDIF
+		SET ORDER TO codigo
+		SEEK ALLTRIM(a1(09)) + a1(10)
+		IF  .NOT. FOUND()
+			IF a1(09) = 'P' .OR. a1(09) = 'C'
+				DO p_mensaje WITH 'Proveedor o Cliente no Existe'
+				RETURN .F.
+			ELSE
+				DO p_mensaje WITH 'Administrativo o Vendedor no Existe'
+				RETURN .F.
+			ENDIF
+		ELSE
+			IF a1(09) = 'P' .OR. a1(09) = 'C'
+				w_razsoc = SUBSTR(cli_razsoc, 1, 17)
+				@ 04, 58 SAY SUBSTR(cli_razsoc, 1, 16)
+				IF a1(09) = 'P'
+					w_tiprov = cli_tipo
+				ELSE
+					w_tiprov = SPACE(04)
+				ENDIF
+			ELSE
+				w_razsoc = SUBSTR(vnd_nombre, 1, 17)
+				@ 04, 58 SAY SUBSTR(vnd_nombre, 1, 16)
+			ENDIF
+		ENDIF
+	CASE var = 'A1(11)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		SELECT ge_tab0
+		SEEK 'MONE' + a1(11)
+		IF  .NOT. FOUND()
+			DO p_mensaje WITH 'Moneda no Existe'
+			RETURN .F.
+		ELSE
+			w_desmon = SUBSTR(tab_destab, 1, 30)
+			@ 05, 18 SAY SUBSTR(w_desmon, 1, 13)
+		ENDIF
+	CASE var = 'A1(12)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		SELECT 20
+		USE SHARED gc_cmv00 ORDER cmv_feinmo
+*		SEEK DTOS(a1(12)) + '1' + rge_monbas + 'DOL '
+*		IF  .NOT. FOUND()
+*			DO p_mensaje WITH '**No Existe Tipo de Cambio para esta Fecha**'
+*			RETURN .F.
+*		ELSE
+			w_tipcav = cmv_tipcav
+*		ENDIF
+	CASE var = 'A1(13)'
+		@ 06, 17 SAY SPACE(12)
+		@ 06, 60 SAY SPACE(18)
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		IF EMPTY(a1(13))
+			RETURN
+		ENDIF
+		SELECT ge_tab0
+		SEEK 'DOCU' + a1(13)
+		IF  .NOT. FOUND()
+			DO p_mensaje WITH 'Tipo de Documento no Existe'
+			RETURN .F.
+		ELSE
+			IF a1(13) = 'IMPO'
+				IF a1(5) = 'IFE ' .OR. a1(5) = 'IFD '
+					DO p_mensaje WITH 'Tipo de Movimiento no Permitido para '+ a1(13)
+					RETURN .F.
+				ELSE
+					IF a1(11) = 'SOL '
+						DO p_mensaje WITH 'Moneda no puede ser soles, si es '+ a1(13)
+						RETURN .F.
+					ENDIF
+				ENDIF
+			ENDIF
+			IF (a1(13) = 'RCLR' .OR. a1(13) = 'PLAN') .AND. a1(6) = rge_codalm
+				DO p_mensaje WITH 'Almac‚n no puede ser igual al de la base, si es '+ a1(13)
+				RETURN .F.
+			ELSE
+				IF a1(13) = 'PLAN' .AND. a1(5) <> 'IFD '
+					DO p_mensaje WITH 'Tipo de Movimiento no Permitido para '+ a1(13)
+					RETURN .F.
+				ELSE
+					w_desref = SUBSTR(tab_destab, 1, 30)
+					@ 06, 22 SAY SUBSTR(w_desref, 1, 10)
+				ENDIF
+			ENDIF
+		ENDIF
+	CASE var = 'A1(14)'
+		IF LASTKEY() = 5 .OR. LASTKEY() = 19
+			RETURN
+		ENDIF
+		IF (a1(13) = 'IMPO' .OR. a1(13) = 'RCLR' .OR. a1(13) = 'PLAN') .AND. EMPTY(a1(14))
+			DO p_mensaje WITH 'No Puede Estar en Blanco Nro.de Pedido'
+			RETURN .F.
+		ENDIF
+		IF a1(14) <> SPACE(10)
+			a1( 14) = f_ceros(a1(14),10,2)
+			@ 06, 49 SAY a1(14) COLOR N/W
+		ENDIF
+		IF a1(13) = 'IMPO'
+			IF  .NOT. EMPTY(a1(14))
+				tcn = 0
+				@ 6, 60 SAY 'TCN:'
+				@ 6, 65 GET tcn PICTURE '99,999.99' VALID tcn > 0
+				READ
+				SELECT gc_hco00
+				SEEK a1(14)
+				IF FOUND()
+					IF hco_indest = 'A'
+						DO p_mensaje WITH 'Orden esta Anulada'
+						RETURN .F.
+					ENDIF
+					IF hco_indest = 'C'
+						DO p_mensaje WITH 'Orden esta Cerrada'
+						RETURN .F.
+					ENDIF
+					IF hco_indest = 'S'
+						DO p_mensaje WITH 'Orden no Esta en Proceso'
+						RETURN .F.
+					ENDIF
+					DO carmat
+						IF m = 0
+							DO p_mensaje WITH 'Documento de Referencia no tiene Productos Confirmados'
+							RETURN .F.
+						ENDIF
+						IF w_exi = 1
+							DO p_mensaje WITH 'C¢digo : '+ w_codexi+ ' no existe en Ficha'
+							RETURN .F.
+						ENDIF
+					ELSE
+						DO p_mensaje WITH 'No existe Documento de Referencia'
+						RETURN .F.
+					ENDIF
+				ELSE
+					DO carque
+				ENDIF
+			ELSE
+				IF a1(13) = 'RCLR' .OR. a1(13) = 'PLAN'
+					SELECT 20
+					USE SHARED gc_hre00 ORDER hre_codtip
+					SEEK a1(6) + a1(13) + a1(14)
+					IF  .NOT. FOUND()
+						DO p_mensaje WITH 'No existe Documento de Referencia'
+						RETURN .F.
+					ELSE
+						IF hre_indest <> 'V'
+							DO p_mensaje WITH 'Documento de Referencia no Esta Vigente '
+							RETURN .F.
+						ELSE
+							DO carmat
+							IF m = 0
+								DO p_mensaje WITH 'Documento de Referencia no tiene Productos Confirmados'
+								RETURN .F.
+							ENDIF
+							IF w_exi = 1
+								DO p_mensaje WITH 'C¢digo : '+w_codexi+' no existe en Ficha'
+								RETURN .F.
+							ENDIF
+						ENDIF
+					ENDIF
+				ELSE
+					DO carque
+				ENDIF
+			ENDIF
+			DO detalle
+			IF LASTKEY() = -1 .OR. 	w_swfin = 0
+				CLEAR READ
+			ENDIF
+		ENDCASE
+RETURN
+*
+PROCEDURE detalle
+*----------------
+ON KEY
+DEFINE WINDOW titpass FROM 10, 01 TO 12, 78 IN screen NONE COLOR SCHEME 8
+DEFINE WINDOW pidpass FROM 19, 01 TO 21, 78 IN screen NONE COLOR SCHEME 20
+ACTIVATE WINDOW titpass
+@ 00, 00 SAY 'ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄ¿'
+@ 01, 00 SAY '³    PRODUCTO  ³   DESCRIPCION    ³  DOCREF  ³CANTIDAD³PRE UNIT  ³   TOTAL   ³'
+@ 02, 00 SAY 'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÙ'
+DO WHILE LASTKEY()<>27 .AND. LASTKEY()<>-1
+	DO cartec
+	DO WHILE w_swfin=1
+		SELECT recep
+		SET FILTER TO cantidad > 0
+		ACTIVATE POPUP detalle
+		IF LASTKEY() = 27
+			w_swfin = 0
+		ENDIF
+	ENDDO
+ENDDO
+SET FILTER TO
+DEACTIVATE POPUP detalle
+DEACTIVATE WINDOW tot
+tmp_1 = 0
+DO p_footer WITH '100010000000000001', 2
+ACTIVATE WINDOW a0
+CLEAR GETS
+CLEAR READ
+ON KEY
+DO pinta2
+RETURN
+*
+PROCEDURE p_lee
+*--------------
+PARAMETER w_opcion
+SET CURSOR ON
+ON KEY
+swt = .T.
+STORE 0 TO tmp_fin, tmp_1
+STORE SPACE(10) TO w_docref
+IF (m = 0 .AND. w_opcion = 2) .OR. ((a1(13) = 'IMPO' .OR. a1(13) = 'RCLR' .OR. a1(13) = 'PLAN') .AND. w_opcion = 1)
+	DO cartec
+	RETURN
+ENDIF
+w_reg = RECNO()
+DO WHILE swt .AND. (LASTKEY()=13 .OR. LASTKEY()=-2)
+	ACTIVATE WINDOW pidpass
+	@ 00, 00 SAY 'ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄ¿'
+	@ 01, 00 SAY '³              ³                  ³          ³        ³          ³           ³'
+	@ 02, 00 SAY 'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÙ'
+	
+	SELECT recep
+	SET FILTER TO
+	DIMENSION a2( FCOUNT())
+	IF w_opcion = 1
+		SCATTER BLANK TO a2
+	ELSE
+		SCATTER TO a2
+		w_docref = a2(4)
+		@ 01, 01 SAY a2(1) PICTURE '@!'
+		@ 01, 16 SAY a2(3) PICTURE '@!'
+		@ 01, 35 SAY a2(4) PICTURE '@!'
+		@ 01, 47 SAY a2(5) PICTURE '999,999'
+		@ 01, 55 SAY a2(6) PICTURE '999,999.99'
+		@ 01, 66 SAY a2(8) PICTURE '9999,999.99'
+	ENDIF
+	tmp_err = 1
+	DO WHILE .T. .AND. tmp_1=0
+		IF w_opcion = 1
+			DO p_footer WITH '100010000000000000001', 2
+			ACTIVATE WINDOW pidpass
+			w_selec = SELECT()
+			w_campo = 'a2(1)'
+			ON KEY LABEL f6 do produc with w_campo,w_selec,w_selpro 
+			@ 01, 01 GET a2(01) PICTURE '@!'
+			READ
+			IF LASTKEY() = 27
+				tmp_1 = 1
+				EXIT
+			ENDIF
+			SELECT gc_pro00
+			SET ORDER TO codigo
+			SEEK a2(1)
+			IF  .NOT. FOUND()
+				DO p_mensaje WITH 'Producto No Existe'
+				LOOP
+			ELSE
+				IF pro_estope = 'B'
+					DO p_mensaje WITH 'Producto Esta Bloqueado'
+					LOOP
+				ENDIF
+				SELECT gc_pro00
+				IF a1(11) = 'DOL '
+					a2( 6) = ROUND(pro_coprmo, 2)
+				ELSE
+					a2( 6) = ROUND(pro_coprmb, 2)
+				ENDIF
+				a2( 3) = SUBSTR(pro_descri, 1, 18)
+				a2( 2) = pro_unimed
+				@ 01, 16 SAY a2(3)
+				@ 01, 55 SAY a2(6) PICTURE '999,999.99'
+			ENDIF
+		ENDIF
+		DO WHILE .T. .AND. tmp_1=0
+			@ 01, 35 GET a2(4) PICTURE '@!'
+			READ
+			IF LASTKEY() = 27
+				tmp_1 = 1
+				EXIT
+			ENDIF
+			n = 0
+			SELECT recep
+			IF a1(13) = 'IMPO' .AND. a1(14) <> SPACE(10)
+				COUNT FOR a2(1) = codigo .AND. a2(9) = nrodo .AND. a2(4) = docref TO n
+			ELSE
+				IF a1(13) = 'RCLR' .OR. a1(13) = 'PLAN'
+					COUNT FOR a2(1) = codigo .AND. a2(10) = tipdoc .AND. a2(4) = docref .AND. a2(11) = nitem TO n
+				ELSE
+					COUNT FOR a2(1) = codigo .AND. a2(4) = docref TO n
+				ENDIF
+			ENDIF
+			IF w_opcion = 1
+				IF n = 1
+					DO p_mensaje WITH 'El Producto ya Existe'
+					LOOP
+				ENDIF
+			ELSE
+				IF n = 1 .AND. w_docref <> a2(4)
+					DO p_mensaje WITH 'El Producto ya Existe'
+					LOOP
+				ENDIF
+			ENDIF
+			
+			DO WHILE .T. .AND. tmp_1=0
+				DO p_footer WITH '100000000000000000001', 2
+				ACTIVATE WINDOW pidpass
+				ON KEY
+				@ 01, 47 GET a2( 5) PICTURE '999,999'
+				READ
+				IF LASTKEY() = 27
+					tmp_1 = 1
+					EXIT
+				ENDIF
+				IF LASTKEY() = 19 .OR. LASTKEY() = 5
+					IF w_opcion = 2
+						LOOP
+					ENDIF
+				ENDIF
+				IF a2(5) = 0
+					DO p_mensaje WITH 'CANTIDAD EN CERO..'
+					LOOP
+				ENDIF
+				IF a2(5) < 0
+					DO p_mensaje WITH 'CANTIDAD NEGATIVA.'
+					LOOP
+				ENDIF
+				
+				a2( 8) = ROUND(a2(5) * a2(6), 2)
+				@ 01, 66 SAY a2(8) PICTURE '9999,999.99'
+				DO WHILE .T. .AND. tmp_1=0
+					DO p_footer WITH '100000000000000000101', 2
+					ACTIVATE WINDOW pidpass
+					SET SYSMENU ON
+					ON KEY
+					ON KEY LABEL f9 do calcu
+					@ 01, 55 GET a2( 6) PICTURE '999,999.99'
+					READ
+					IF LASTKEY() = 27
+						tmp_1 = 1
+					ENDIF
+					
+					IF a2(6) < 0
+						DO p_mensaje WITH 'IMPORTE NEGATIVO.'
+						LOOP
+					ENDIF
+					
+					a2( 8) = ROUND(a2(5) * a2(6),2)
+					@ 01, 66 SAY a2(8) PICTURE '9999,999.99'
+					ON KEY LABEL f9
+					SET SYSMENU OFF
+					tmp_1 = 1
+				ENDDO
+			ENDDO
+		ENDDO
+	ENDDO
+	
+	IF LASTKEY() <> 27
+		SELECT recep
+		IF w_opcion = 1
+			m = m + 1
+			APPEND BLANK
+			REPLACE codigo WITH a2(1)
+			REPLACE descri WITH a2(3)
+			REPLACE docref WITH a2(4)
+			w_docref = a2(4)
+		ENDIF
+		GOTO TOP
+		IF a1(13) = 'IMPO' .AND. a1(14) <> SPACE(10)
+			LOCATE FOR a2(1) = codigo .AND. a2(9) = nrodo .AND. w_docref = docref
+		ELSE
+			IF a1(13) = 'RCLR' .OR. a1(13) = 'PLAN'
+				LOCATE FOR a2(1) = codigo .AND. a2(10) = tipdoc .AND. w_docref = docref .AND. a2(11) = nitem
+			ELSE
+				LOCATE FOR a2(1) = codigo .AND. w_docref = docref
+			ENDIF
+		ENDIF
+		REPLACE unidad WITH a2(2)
+		REPLACE docref WITH a2(4)
+		REPLACE cantidad WITH a2(5)
+		REPLACE tempre WITH a2(6)
+		
+		IF a1(11) = 'DOL '
+			REPLACE precio WITH a2(6)
+		ELSE
+			REPLACE precio WITH ROUND(a2(6) , 2)
+*			REPLACE precio WITH ROUND(a2(6) / w_tipcav, 2)
+		ENDIF
+		REPLACE total WITH a2(8)
+		REPLACE nrodo WITH a2(9)
+		
+		DEACTIVATE WINDOW pidpass, pidposs
+	ENDIF
+	EXIT
+ENDDO
+DEACTIVATE WINDOW pidpass, pidposs
+DO cartec
+SELECT recep
+SET FILTER TO cantidad > 0
+SHOW POPUP detalle
+RETURN
+*
+PROCEDURE calcu
+*--------------
+ACTIVATE SCREEN
+KEYBOARD '{ALT+S}+{C}'
+ACTIVATE WINDOW pidpass
+RETURN
+*
+PROCEDURE p_borra
+ON KEY
+SELECT recep
+DELETE
+m = m - 1
+DO cartec
+RETURN
+*
+PROCEDURE crea
+IF (a1(5) = 'IFC ' .AND. a1(13) =  ;
+   'IMPO' .AND. w_totgas = 0)
+     DO p_mensaje WITH  ;
+        'Faltan Ingresar Gastos [F8] '
+     RETURN
+ENDIF
+ON KEY
+IF w_totgas > 0
+     DO cospro2
+ENDIF
+STORE 0 TO w_igv, w_totcan,  ;
+      w_totpre, w_tottem
+DEFINE WINDOW tot FROM 16, 20 TO  ;
+       21, 60 TITLE 'TOTALES' IN  ;
+       screen
+ACTIVATE WINDOW tot
+@ 1, 0 SAY ' TOTAL CANTIDAD :'
+@ 2, 0 SAY ' MONTO TOTAL    :'
+@ 3,0 SAY " MONTO &sys_codimp     :"
+SELECT recep
+GOTO TOP
+SCAN WHILE  .NOT. EOF()
+     w_totcan = w_totcan +  ;
+                cantidad
+     w_tottem = w_tottem + total
+     w_totpre = w_totpre +  ;
+                ROUND(cantidad *  ;
+                precio, 2)
+ENDSCAN
+w_igv = ROUND(w_tottem * w_facigv,  ;
+        2)
+@ 1, 20 SAY w_totcan PICTURE  ;
+  '999,999,999'
+@ 2, 20 SAY w_tottem PICTURE  ;
+  '999,999,999.99'
+@ 3, 20 SAY w_igv PICTURE  ;
+  '999,999,999.99'
+w_key = 1
+w_swfin = 1
+DO WHILE w_key<>27 .AND. w_key<>- ;
+   1
+     DO p_footer WITH  ;
+        '110001000000000000001',  ;
+        2
+     w_key = INKEY(0)
+     IF w_key = 27
+          DEACTIVATE WINDOW tot
+          w_swfin = 1
+          SELECT recep
+          SET FILTER TO cantidad > 0
+     ELSE
+          IF w_key = -6 .OR.  ;
+             w_key = -1
+               IF LASTKEY() = -6
+                    = imprime()
+               ELSE
+                    w_swfin = 0
+               ENDIF
+          ENDIF
+     ENDIF
+ENDDO
+IF w_swfin = 0
+     = ooaviso( ;
+       ' G R A B A N D O . . .')
+     IF a1(13) = 'IMPO'
+          SELECT 20
+          USE SHARED gc_dco00  ;
+              ORDER codigp
+          SELECT 21
+          USE SHARED gc_ord00  ;
+              ORDER ord_numfac
+          SELECT gc_nfa00
+          SET ORDER TO nfa_facprp
+          SELECT recep
+          SET FILTER TO
+          GOTO TOP
+          SCAN WHILE  .NOT. EOF()
+               SELECT gc_dco00
+               SEEK recep.nrodo +  ;
+                    recep.codprp
+               IF FOUND()
+                    DO rbloquea
+                    REPLACE dco_candes  ;
+                            WITH  ;
+                            dco_candes +  ;
+                            recep.cantidad
+                    REPLACE dco_feclle  ;
+                            WITH  ;
+                            DATE()
+                    REPLACE dco_usuari  ;
+                            WITH  ;
+                            clave
+                    REPLACE dco_fecha  ;
+                            WITH  ;
+                            DATE()
+                    REPLACE dco_hora  ;
+                            WITH  ;
+                            TIME()
+                    IF a1(14) <>  ;
+                       a1(02)
+                         REPLACE dco_numfac  ;
+                                 WITH  ;
+                                 a1(02)
+                    ENDIF
+                    UNLOCK
+                    SELECT gc_nfa00
+                    SEEK a1(14) +  ;
+                         recep.nrodo +  ;
+                         recep.codprp
+                    IF FOUND()
+                         DO rbloquea
+                         REPLACE nfa_indest  ;
+                                 WITH  ;
+                                 'C'
+                         REPLACE nfa_indes2  ;
+                                 WITH  ;
+                                 'C'
+                         REPLACE nfa_usuari  ;
+                                 WITH  ;
+                                 clave
+                         REPLACE nfa_fecha  ;
+                                 WITH  ;
+                                 DATE()
+                         REPLACE nfa_hora  ;
+                                 WITH  ;
+                                 TIME()
+                         IF a1(14) <>  ;
+                            a1(02)
+                              REPLACE  ;
+                               nfa_numfac  ;
+                               WITH  ;
+                               a1(02)
+                         ENDIF
+                         UNLOCK
+                         SELECT gc_dco00
+                         IF (dco_cancon +  ;
+                            dco_cancel) >  ;
+                            0
+                              DO rbloquea
+                              REPLACE  ;
+                               dco_cancon  ;
+                               WITH  ;
+                               dco_cancon -  ;
+                               gc_nfa00.nfa_cancon
+                              IF dco_cancon =  ;
+                                 0
+                                   REPLACE dco_indest WITH 'C'
+                              ENDIF
+                              UNLOCK
+                         ENDIF
+                    ENDIF
+                    SELECT gc_ord00
+                    SEEK a1(14) +  ;
+                         recep.nrodo +  ;
+                         recep.codprp
+                    SCAN WHILE  ;
+                         ord_numfac =  ;
+                         a1(14)  ;
+                         .AND.  ;
+                         ord_nrodoc =  ;
+                         recep.nrodo  ;
+                         .AND.  ;
+                         ord_codprp =  ;
+                         recep.codprp  ;
+                         .AND.   ;
+                         .NOT.  ;
+                         EOF()
+                         DO rbloquea
+                         REPLACE ord_indest  ;
+                                 WITH  ;
+                                 'C',  ;
+                                 ord_codalm  ;
+                                 WITH  ;
+                                 a1(06),  ;
+                                 ord_feclle  ;
+                                 WITH  ;
+                                 DATE()
+                         REPLACE ord_usuari  ;
+                                 WITH  ;
+                                 clave,  ;
+                                 ord_fecha  ;
+                                 WITH  ;
+                                 DATE(),  ;
+                                 ord_hora  ;
+                                 WITH  ;
+                                 TIME()
+                         UNLOCK
+                    ENDSCAN
+                    IF a1(14) <>  ;
+                       a1(02)
+                         REPLACE ord_numfac  ;
+                                 WITH  ;
+                                 a1(02)  ;
+                                 ALL  ;
+                                 FOR  ;
+                                 ord_numfac =  ;
+                                 a1(14)  ;
+                                 .AND.  ;
+                                 ord_nrodoc =  ;
+                                 recep.nrodo  ;
+                                 .AND.  ;
+                                 ord_codprp =  ;
+                                 recep.codprp
+                    ENDIF
+               ENDIF
+               SELECT gc_pro00
+               SEEK recep.codigo
+               IF FOUND()
+                    DO rbloquea
+                    REPLACE pro_stktra  ;
+                            WITH  ;
+                            pro_stktra -  ;
+                            gc_nfa00.nfa_cancon
+                    UNLOCK
+               ENDIF
+               SELECT recep
+          ENDSCAN
+          SELECT gc_nfa00
+          SET ORDER TO nfa_numfac
+          SELECT gc_hco00
+          SEEK a1(14)
+          SCAN WHILE hco_numfac =  ;
+               a1(14) .AND.   ;
+               .NOT. EOF()
+               DO rbloquea
+               REPLACE hco_indest  ;
+                       WITH 'C'
+               REPLACE hco_indes2  ;
+                       WITH 'C'
+               REPLACE hco_feclle  ;
+                       WITH  ;
+                       DATE()
+               REPLACE hco_usuari  ;
+                       WITH  ;
+                       clave
+               REPLACE hco_fecha  ;
+                       WITH  ;
+                       DATE()
+               REPLACE hco_hora  ;
+                       WITH  ;
+                       TIME()
+               UNLOCK
+          ENDSCAN
+          IF a1(14) <> a1(02)
+               REPLACE hco_numfac  ;
+                       WITH  ;
+                       a1(02) ALL  ;
+                       FOR  ;
+                       hco_numfac =  ;
+                       a1(14)
+               a1( 14) = a1(02)
+          ENDIF
+     ELSE
+          IF a1(13) = 'RCLR' .OR.  ;
+             a1(13) = 'PLAN'
+               SELECT 20
+               USE SHARED  ;
+                   gc_hre00 ORDER  ;
+                   hre_codtip
+               SEEK a1(6) +  ;
+                    a1(13) +  ;
+                    a1(14)
+               IF FOUND()
+                    DO rbloquea
+                    REPLACE hre_indest  ;
+                            WITH  ;
+                            'C'
+                    REPLACE hre_usuari  ;
+                            WITH  ;
+                            clave
+                    REPLACE hre_fecha  ;
+                            WITH  ;
+                            DATE()
+                    REPLACE hre_hora  ;
+                            WITH  ;
+                            TIME()
+                    UNLOCK
+               ENDIF
+          ENDIF
+     ENDIF
+     SELECT gc_hip00
+     APPEND BLANK
+     DO rbloquea
+     GATHER FROM a1
+     REPLACE hip_totnet WITH  ;
+             w_totpre
+     REPLACE hip_totigv WITH  ;
+             ROUND(w_totpre *  ;
+             w_facigv, 2)
+     REPLACE hip_totoim WITH  ;
+             w_totpre + w_totgas +  ;
+             hip_totigv
+     REPLACE hip_totgen WITH  ;
+             w_totpre + w_totgas +  ;
+             hip_totigv
+     REPLACE hip_estdoc WITH 'C'
+     REPLACE hip_usuari WITH  ;
+             clave
+     REPLACE hip_fecha WITH  ;
+             DATE()
+     REPLACE hip_hora WITH TIME()
+     UNLOCK
+     DO grapro
+     DEACTIVATE WINDOW winmensaje
+     DEACTIVATE WINDOW tot
+     DEACTIVATE WINDOW titpass,  ;
+                pidpass, titposs,  ;
+                pidposs, a0
+     DEACTIVATE POPUP detalle
+     CLEAR READ
+     CLEAR GETS
+ENDIF
+DEACTIVATE WINDOW tot
+DO cartec
+SELECT recep
+RETURN
+*
+PROCEDURE pinta1
+ACTIVATE WINDOW a0
+@ 00, 00 CLEAR TO 08, 74
+@ 00, 00 SAY 'Tipo Doc.. :'
+@ 00, 32 SAY 'Nro. Doc.   :'
+RETURN
+*
+PROCEDURE pinta2
+ACTIVATE WINDOW a0
+@ 01, 00 SAY 'Fecha..... :'
+@ 01, 32 SAY 'Fecha Vcto. :'
+@ 02, 00 SAY 'Cod. Mov.  :'
+@ 03, 00 SAY 'Alm. Recp. :'
+@ 04, 00 SAY 'Tip. Ent.  :'
+@ 04, 32 SAY 'Cod. Ent... :'
+@ 05, 00 SAY 'Moneda.... :'
+@ 05, 32 SAY 'Fecha Mone. :'
+@ 06, 00 SAY 'Tip. Doc. Ref. :'
+@ 06, 32 SAY 'Nro. Doc. Ref. :'
+SELECT 3
+RETURN
+*
+PROCEDURE gastos
+*---------------
+ON KEY
+CREATE CURSOR gasto (gasto C (4),descrip C (13), importe N (9, 2))
+w_totgas = 0
+DO cargas
+DO WHILE LASTKEY()<>27 .AND. LASTKEY()<>-1
+	ACTIVATE POPUP gas
+ENDDO
+DEACTIVATE POPUP gas
+DEACTIVATE WINDOW gas
+SELECT recep
+DO cartec
+RETURN
+*
+PROCEDURE inggas
+*---------------
+ON KEY
+ACTIVATE WINDOW gas
+@ 00, 00 SAY 'ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄ¿'
+@ 01, 00 SAY '³               ³           ³'
+@ 02, 00 SAY 'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÙ'
+@ 1, 1 SAY descrip
+@ 1, 17 GET importe PICTURE  ;
+  '9999,999.99' VALID  ;
+  entgas(importe)
+READ
+COUNT TO w_count
+ON KEY
+IF w_count = 0
+     DO p_footer WITH  ;
+        '100000000000100000001',  ;
+        2
+ELSE
+     ON KEY LABEL f2 do gragas
+     DO p_footer WITH  ;
+        '110000000000100000001',  ;
+        2
+ENDIF
+ON KEY LABEL enter do inggas 
+DEACTIVATE WINDOW gas
+RETURN
+*
+FUNCTION entgas
+PARAMETER importe
+IF (a1(5) = 'IFL ') .AND. (gasto =  ;
+   'FLET' .OR. gasto = 'SEGU'  ;
+   .OR. gasto = 'ADVA') .AND.  ;
+   importe > 0
+     DO p_mensaje WITH  ;
+        'No Es Posible Ingresar  Seguro,Flete,Adva'
+     importe = 0
+     RETURN .F.
+ENDIF
+RETURN
+*
+PROCEDURE cargas
+w_totgas = 0
+SELECT ge_tab0
+SEEK 'GAST'
+IF FOUND()
+     SCAN WHILE tab_codpre =  ;
+          'GAST' .AND.  .NOT.  ;
+          EOF()
+          SELECT gasto
+          APPEND BLANK
+          REPLACE gasto WITH  ;
+                  ge_tab0.tab_codtab
+          REPLACE descrip WITH  ;
+                  ge_tab0.tab_destab
+          SELECT ge_tab0
+     ENDSCAN
+     SELECT gc_gas00
+     SEEK a1(1) + a1(2)
+     SCAN WHILE gas_tipdoc =  ;
+          a1(1) .AND. gas_nrodoc =  ;
+          a1(2) .AND.  .NOT.  ;
+          EOF()
+          SELECT gasto
+          LOCATE FOR gasto =  ;
+                 gc_gas00.gas_codgas
+          IF FOUND()
+               REPLACE importe  ;
+                       WITH  ;
+                       gc_gas00.gas_valor
+          ENDIF
+          SELECT gc_gas00
+     ENDSCAN
+     SELECT gasto
+     DO p_footer WITH  ;
+        '110000000000100000001',  ;
+        2
+     ON KEY LABEL F2 do gragas
+     ON KEY LABEL enter do inggas 
+ENDIF
+RETURN
+*
+PROCEDURE gragas
+SELECT gasto
+GOTO TOP
+cadena = ''
+w_flag = .T.
+LOCATE FOR gasto = 'ADVA'
+IF importe < 0
+     cadena = cadena +  ;
+              'ADVALOREN '
+     w_flag = .F.
+ENDIF
+IF  .NOT. w_flag
+     DO p_mensaje WITH 'FALTA  :'+ ;
+        cadena
+ELSE
+     GOTO TOP
+     w_totgas = 0
+     SCAN WHILE  .NOT. EOF()
+          IF importe <> 0
+               w_gas = 1
+               w_gasto = gasto
+               w_impo = importe
+               fla2 = .T.
+               IF a1(1) = 'IFL '
+                    IF gasto =  ;
+                       'FLET'  ;
+                       .OR. gasto =  ;
+                       'SEGU'  ;
+                       .OR. gasto =  ;
+                       'ADVA'
+                         fla2 = .F.
+                    ENDIF
+               ENDIF
+               IF fla2
+                    w_totgas = w_totgas +  ;
+                               w_impo
+                    SELECT gc_gas00
+                    SEEK a1(1) +  ;
+                         a1(2) +  ;
+                         w_gasto
+                    IF FOUND()
+                         DO rbloquea
+                         REPLACE gas_valor  ;
+                                 WITH  ;
+                                 w_impo
+                         UNLOCK
+                    ELSE
+                         APPEND BLANK
+                         DO rbloquea
+                         REPLACE gas_tipdoc  ;
+                                 WITH  ;
+                                 a1(1)
+                         REPLACE gas_nrodoc  ;
+                                 WITH  ;
+                                 a1(2)
+                         REPLACE gas_codgas  ;
+                                 WITH  ;
+                                 w_gasto
+                         REPLACE gas_valor  ;
+                                 WITH  ;
+                                 w_impo
+                         REPLACE gas_usuari  ;
+                                 WITH  ;
+                                 clave
+                         REPLACE gas_fecha  ;
+                                 WITH  ;
+                                 DATE()
+                         REPLACE gas_hora  ;
+                                 WITH  ;
+                                 TIME()
+                         UNLOCK
+                    ENDIF
+               ENDIF
+          ENDIF
+          SELECT gasto
+     ENDSCAN
+     DEACTIVATE POPUP gas
+ENDIF
+RETURN
+*
+PROCEDURE carmat
+DO carque
+m = 0
+STORE SPACE(2) TO w_lindet
+w_nf = 65
+w_pf = 0
+IF a1(13) = 'IMPO'
+     SELECT 20
+     USE SHARED gc_dco00 ORDER  ;
+         codigo
+     SELECT gc_nfa00
+     SEEK a1(14)
+     IF FOUND()
+          SCAN FOR nfa_indest <>  ;
+               'C' WHILE  ;
+               nfa_numfac =  ;
+               a1(14) .AND.   ;
+               .NOT. EOF()
+               m = m + 1
+               IF m >= 100
+                    IF w_pf = 9
+                         w_nf = w_nf +  ;
+                                1
+                         w_pf = 1
+                    ELSE
+                         w_pf = w_pf +  ;
+                                1
+                    ENDIF
+                    w_lindet = CHR(w_nf) +  ;
+                               STR(w_pf,  ;
+                               1)
+               ELSE
+                    w_lindet = STR(m,  ;
+                               2)
+               ENDIF
+               SELECT gc_pro00
+               SEEK gc_nfa00.nfa_codpro
+               IF FOUND()
+                    SELECT recep
+                    APPEND BLANK
+                    REPLACE descri  ;
+                            WITH  ;
+                            SUBSTR(gc_pro00.pro_descri,  ;
+                            1,  ;
+                            18)
+                    REPLACE codigo  ;
+                            WITH  ;
+                            gc_nfa00.nfa_codpro
+                    REPLACE cantidad  ;
+                            WITH  ;
+                            gc_nfa00.nfa_cancon
+                    REPLACE codprp  ;
+                            WITH  ;
+                            gc_nfa00.nfa_codprp
+                    REPLACE nitem  ;
+                            WITH  ;
+                            w_lindet
+                    SELECT gc_dco00
+                    SEEK gc_nfa00.nfa_nrodoc +  ;
+                         gc_nfa00.nfa_codpro
+                    IF FOUND()
+                         SELECT recep
+                         REPLACE unidad  ;
+                                 WITH  ;
+                                 gc_dco00.dco_coduni
+                         REPLACE docref  ;
+                                 WITH  ;
+                                 gc_dco00.dco_docref
+                         REPLACE precio  ;
+                                 WITH  ;
+                                 gc_dco00.dco_conpre
+                         REPLACE tempre  ;
+                                 WITH  ;
+                                 gc_dco00.dco_conpre
+                         REPLACE nrodo  ;
+                                 WITH  ;
+                                 gc_dco00.dco_nrodoc
+                         REPLACE total  ;
+                                 WITH  ;
+                                 ROUND(cantidad *  ;
+                                 precio,  ;
+                                 2)
+                    ENDIF
+               ELSE
+                    w_codexi = gc_nfa00.nfa_codpro
+                    w_exi = 1
+                    EXIT
+               ENDIF
+               SELECT gc_nfa00
+          ENDSCAN
+     ENDIF
+ELSE
+     SELECT 20
+     USE SHARED gc_dre00 ORDER  ;
+         codigo
+     SEEK a1(13) + a1(14)
+     IF FOUND()
+          SCAN WHILE dre_tiprep =  ;
+               a1(13) .AND.  ;
+               dre_nrorep =  ;
+               a1(14) .AND.   ;
+               .NOT. EOF()
+               IF dre_codalm =  ;
+                  a1(6)
+                    m = m + 1
+                    IF m >= 100
+                         IF w_pf =  ;
+                            9
+                              w_nf =  ;
+                               w_nf +  ;
+                               1
+                              w_pf =  ;
+                               1
+                         ELSE
+                              w_pf =  ;
+                               w_pf +  ;
+                               1
+                         ENDIF
+                         w_lindet =  ;
+                          CHR(w_nf) +  ;
+                          STR(w_pf,  ;
+                          1)
+                    ELSE
+                         w_lindet =  ;
+                          STR(m,  ;
+                          2)
+                    ENDIF
+                    SELECT gc_pro00
+                    SEEK gc_dre00.dre_codpro
+                    IF FOUND()
+                         SELECT recep
+                         APPEND BLANK
+                         REPLACE descri  ;
+                                 WITH  ;
+                                 SUBSTR(gc_pro00.pro_descri,  ;
+                                 1,  ;
+                                 18)
+                         REPLACE unidad  ;
+                                 WITH  ;
+                                 gc_pro00.pro_unimed
+                         REPLACE codigo  ;
+                                 WITH  ;
+                                 gc_dre00.dre_codpro
+                         REPLACE cantidad  ;
+                                 WITH  ;
+                                 gc_dre00.dre_canpro
+                         REPLACE nitem  ;
+                                 WITH  ;
+                                 w_lindet
+                         REPLACE tipdoc  ;
+                                 WITH  ;
+                                 gc_dre00.dre_tipdoc
+                         REPLACE docref  ;
+                                 WITH  ;
+                                 gc_dre00.dre_nrodoc
+                         IF a1(13) <>  ;
+                            'PLAN'
+                              REPLACE  ;
+                               precio  ;
+                               WITH  ;
+                               gc_dre00.dre_valpro
+                              IF a1(11) =  ;
+                                 'DOL '
+                                   REPLACE tempre WITH gc_dre00.dre_valpro
+                              ELSE
+                                   REPLACE tempre WITH ROUND(gc_dre00.dre_valpro * w_tipcav, 2)
+                              ENDIF
+                              REPLACE  ;
+                               total  ;
+                               WITH  ;
+                               ROUND(cantidad *  ;
+                               tempre,  ;
+                               2)
+                         ELSE
+                              SELECT  ;
+                               gc_pro00
+                              SET ORDER;
+TO 1
+                              SEEK  ;
+                               recep.codigo
+                              IF FOUND()
+                                   SELECT recep
+                                   REPLACE precio WITH gc_pro00.pro_coprmo
+                                   IF a1(11) = 'DOL '
+                                        REPLACE tempre WITH gc_pro00.pro_coprmo
+                                   ELSE
+                                        REPLACE tempre WITH gc_pro00.pro_coprmb
+                                   ENDIF
+                                   REPLACE total WITH ROUND(cantidad * tempre, 2)
+                              ELSE
+                                   SELECT recep
+                              ENDIF
+                         ENDIF
+                         REPLACE nrodo  ;
+                                 WITH  ;
+                                 gc_dre00.dre_nrorep
+                    ELSE
+                         w_codexi =  ;
+                          gc_dre00.dre_codpro
+                         w_exi = 1
+                         EXIT
+                    ENDIF
+                    SELECT gc_dre00
+               ENDIF
+          ENDSCAN
+     ENDIF
+ENDIF
+SELECT recep
+RETURN
+*
+PROCEDURE imprime
+DEFINE WINDOW ped_imp FROM 16, 40  ;
+       TO 20, 60 IN screen COLOR  ;
+       SCHEME 20
+ACTIVATE WINDOW ped_imp
+@ 1, 2 SAY 'N§ DE COPIAS:'
+@ 1, 16 GET _PCOPIES RANGE 1,99  ;
+  PICTURE '99'
+READ
+IF LASTKEY() = 27
+     DEACTIVATE WINDOW ped_imp
+     RETURN
+ENDIF
+DEACTIVATE WINDOW ped_imp
+ON KEY
+DO p_mensaje WITH  ;
+   'Impresi¢n en proceso. Espere......'
+STORE 70 TO aux_lin
+STORE 0 TO aux_sw1, aux_con1,  ;
+      aux_con2, aux_tv, aux_ta
+aux_pep = 'PEDID'
+tmp_pep = f_reporte(aux_pep)
+SET DEVICE TO PRINTER
+set printer to &tmp_pep
+IF w_totgas > 0
+     DO imprim
+ELSE
+     DO imprimir
+ENDIF
+SET DEVICE TO SCREEN
+SET PRINTER TO
+ON KEY
+rpt = .T.
+rpt = f_yesno( ;
+      'Prepare la Impresora y Confirme Acci¢n' ;
+      )
+IF rpt .OR. LASTKEY() = 27
+     PRINTJOB
+     stat = SYS(13)
+     DO WHILE stat='OFFLINE'
+          swt = f_yesno( ;
+                'La Impresora No Esta Lista, Verifique Por Favor' ;
+                )
+          IF swt
+               stat = SYS(13)
+          ELSE
+               DEACTIVATE POPUP  ;
+                          impresora
+               SET CURSOR OFF
+               RETURN
+          ENDIF
+     ENDDO
+     IF w_totgas > 0
+          DO imprim
+     ELSE
+          DO imprimir
+     ENDIF
+     ENDPRINTJOB
+ENDIF
+_PCOPIES = 1
+erase  &tmp_pep   
+RETURN
+*
+PROCEDURE imprimir
+SELECT recep
+GOTO TOP
+SET RELATION TO codigo INTO gc_pro00 ADDITIVE
+??? CHR(27) + CHR(15)
+REPORT FORMAT agcp2226 TO PRINTER  ;
+       NOCONSOLE
+??? CHR(27) + CHR(80)
+SET RELATION TO
+SET DEVICE TO SCREEN
+SET PRINTER TO
+RETURN
+*
+PROCEDURE carque
+*---------------
+CREATE CURSOR recep (codigo C (14), unidad C (4),;
+					 descri C (18), docref C (10),;
+					 cantidad N (10, 0), tempre N (12, 2),;
+					 precio N (12,2), total N (12, 2),;
+					 nrodo C (10), tipdoc C (4),  ;
+					 nitem C (2), fob N (12, 2),  ;
+					 flete N (9, 2), seguro N (9, 2),;
+					 cif N (9, 2), adva N (9, 2), ;
+					 gastos N (9, 2), totnac N (12, 2),;
+					 cosalm N (12, 2), cosuni N (12, 2),;
+					 cospro N (12, 2), codprp C (14))
+RETURN
+*
+PROCEDURE cartec
+*---------------
+ON KEY
+IF m = 0
+	DO p_footer WITH '101000000000000000001', 2
+	ON KEY LABEL F3 do p_lee with 1
+ELSE
+	IF a1(13) = 'IMPO' .OR. a1(13) = 'RCLR' .OR. a1(13) = 'PLAN'
+		IF a1(13) = 'RCLR' .OR. a1(13) = 'PLAN'
+			DO p_footer WITH '110100000000101000001', 2
+		ELSE
+			DO p_footer WITH '110100010000101000001', 2
+			ON KEY LABEL F8 DO GASTOS
+		ENDIF
+	ELSE
+		DO p_footer WITH '111100010000101000001', 2
+		ON KEY LABEL F3 do p_lee with 1
+		ON KEY LABEL F8 do gastos
+	ENDIF
+	ON KEY LABEL F2 do crea 
+	ON KEY LABEL F4 do p_borra 
+ENDIF
+ON KEY LABEL enter do p_lee with 2
+RETURN
+*
+FUNCTION ooverdoc
+*----------------
+PARAMETER w_var
+ON KEY
+IF a1(13) = 'IMPO'
+     SELECT gc_hco00
+     COUNT FOR hco_indest = 'P'  ;
+           .OR. hco_indest = 'R'  ;
+           TO n
+ELSE
+     SELECT 20
+     USE SHARED gc_hre00 ORDER  ;
+         hre_codtip
+     COUNT FOR hre_codalm =  ;
+           a1(06) .AND.  ;
+           hre_tiprep = a1(13)  ;
+           .AND. hre_indest = 'V'  ;
+           TO n
+ENDIF
+IF n = 0
+     DO p_mensaje WITH  ;
+        ' No Hay Documentos Generados'
+     RETURN
+ENDIF
+IF a1(13) = 'IMPO'
+     SELECT DISTINCT  ;
+            TRANSFORM(hco_numfac,  ;
+            '@!') + '³' +  ;
+            DTOC(hco_fecdoc) +  ;
+            '³' + IIF(hco_indest =  ;
+            'P', 'Proceso    ',  ;
+            'Reproceso  ') + '³' +  ;
+            TRANSFORM(hco_totgen,  ;
+            '@ 9,999,999.99')  ;
+            FROM gc_hco00 WHERE  ;
+            (hco_indest = 'P' OR  ;
+            hco_indest = 'R')  ;
+            INTO ARRAY  ;
+            arrayorden
+ELSE
+     SELECT DISTINCT  ;
+            TRANSFORM(hre_nrorep,  ;
+            '@!') + '³' +  ;
+            DTOC(hre_fecemi) +  ;
+            '³' + 'Vigente' FROM  ;
+            gc_hre00 WHERE  ;
+            (hre_tiprep = a1(13)  ;
+            AND hre_codalm =  ;
+            a1(06) AND hre_indest =  ;
+            'V') INTO ARRAY  ;
+            arrayorden
+ENDIF
+ACTIVATE WINDOW marco
+ACTIVATE WINDOW busqueda
+@ 00, 00 SAY  ;
+  '  # Factura   Fecha     Estado      Tot.General    '  ;
+  COLOR N/W 
+@ 01, 00 GET getorden DEFAULT  ;
+  arrayorden SIZE 12, 51 FROM  ;
+  arrayorden VALID  ;
+  oovalor(getorden) COLOR SCHEME  ;
+  8
+READ CYCLE
+IF LASTKEY() = 27
+     w_var = SPACE(10)
+ENDIF
+DEACTIVATE WINDOW busqueda, marco
+a1( 14) = w_var
+RETURN w_var
+*
+FUNCTION oovalor
+PARAMETER cdato
+w_var = SUBSTR(cdato, 1, 10)
+CLEAR READ
+RETURN w_var
+*
+PROCEDURE grapro
+STORE 0 TO tcp
+tcp = w_tipcav
+SELECT 20
+USE SHARED gc_kar00 ORDER docpro
+STORE 0 TO w_cosuni, w_nue,  ;
+      w_precio, w_stkant, w_ant,  ;
+      w_nue, w_prmo, w_prmb,  ;
+      w_almant
+SELECT recep
+SET FILTER TO cantidad > 0
+GOTO TOP
+SCAN WHILE  .NOT. EOF()
+     SELECT gc_pro00
+     SEEK recep.codigo
+     IF FOUND()
+          w_stkant = oototstk(recep.codigo)
+          w_ant = pro_coprmo *  ;
+                  w_stkant
+          IF w_totgas > 0
+               w_nue = recep.cantidad *  ;
+                       recep.cospro
+               w_cosuni = recep.cosuni
+               w_precio = recep.cospro
+          ELSE
+               w_nue = recep.cantidad *  ;
+                       recep.precio
+               IF a1(11) = 'DOL'
+                    w_cosuni = ROUND((recep.precio *  ;
+                               tcp),  ;
+                               2)
+               ELSE
+                    w_cosuni = recep.tempre
+               ENDIF
+               w_precio = recep.precio
+          ENDIF
+          w_prmo = ROUND(((w_ant +  ;
+                   w_nue) /  ;
+                   (w_stkant +  ;
+                   recep.cantidad)),  ;
+                   2)
+          w_ant = pro_coprmb *  ;
+                  w_stkant
+          w_nue = recep.cantidad *  ;
+                  w_cosuni
+          w_prmb = ROUND(((w_ant +  ;
+                   w_nue) /  ;
+                   (w_stkant +  ;
+                   recep.cantidad)),  ;
+                   2)
+          DO rbloquea
+          IF a1(5) <> 'IFD '  ;
+             .AND. a1(5) <>  ;
+             'IFP '
+               REPLACE pro_coprmb  ;
+                       WITH  ;
+                       w_prmb,  ;
+                       pro_coprmo  ;
+                       WITH  ;
+                       w_prmo
+               IF a1(06) =  ;
+                  rge_codalm .OR.  ;
+                  a1(06) =  ;
+                  '0090'
+                    IF a1(5) =  ;
+                       'IFL '  ;
+                       .AND.  ;
+                       a1(9) =  ;
+                       'P' .AND.  ;
+                       a1(10) =  ;
+                       '37270628 '
+                    ELSE
+                         REPLACE pro_coremo  ;
+                                 WITH  ;
+                                 recep.precio
+                    ENDIF
+               ENDIF
+               REPLACE pro_ulcomb  ;
+                       WITH  ;
+                       w_precio
+               REPLACE pro_ultcos  ;
+                       WITH  ;
+                       w_cosuni
+               REPLACE pro_ultcom  ;
+                       WITH  ;
+                       a1(3)
+               REPLACE pro_cosrep  ;
+                       WITH  ;
+                       DATE()
+          ENDIF
+          REPLACE pro_ultmov WITH  ;
+                  DATE()
+          REPLACE pro_usuari WITH  ;
+                  clave
+          REPLACE pro_fecha WITH  ;
+                  DATE()
+          REPLACE pro_hora WITH  ;
+                  TIME()
+          UNLOCK
+          SELECT gc_alm00
+          SEEK recep.codigo +  ;
+               a1(6)
+          IF FOUND()
+               w_almant = alm_stkfis
+          ELSE
+               w_almant = 0
+          ENDIF
+          SELECT gc_kar00
+          APPEND BLANK
+          DO rbloquea
+          REPLACE kar_tipdoc WITH  ;
+                  a1(1)
+          REPLACE kar_nrodoc WITH  ;
+                  a1(2)
+          REPLACE kar_codpro WITH  ;
+                  recep.codigo
+          REPLACE kar_unimed WITH  ;
+                  recep.unidad
+          REPLACE kar_fecing WITH  ;
+                  DATE()
+          REPLACE kar_horing WITH  ;
+                  TIME()
+          REPLACE kar_lindet WITH  ;
+                  recep.nitem
+          REPLACE kar_fecdoc WITH  ;
+                  a1(3)
+          REPLACE kar_codmov WITH  ;
+                  a1(5)
+          REPLACE kar_codmon WITH  ;
+                  a1(11)
+          REPLACE kar_tipent WITH  ;
+                  a1(09)
+          REPLACE kar_codent WITH  ;
+                  a1(10)
+          REPLACE kar_stkant WITH  ;
+                  w_almant
+          REPLACE kar_cantid WITH  ;
+                  recep.cantidad
+          REPLACE kar_import WITH  ;
+                  recep.precio
+          REPLACE kar_cosuni WITH  ;
+                  w_precio
+          REPLACE kar_cosuns WITH  ;
+                  w_cosuni
+          IF a1(5) <> 'IFD '
+               REPLACE kar_cosant  ;
+                       WITH  ;
+                       w_prmo
+               REPLACE kar_cosanb  ;
+                       WITH  ;
+                       w_prmb
+          ELSE
+               REPLACE kar_cosant  ;
+                       WITH  ;
+                       gc_pro00.pro_coprmo
+               REPLACE kar_cosanb  ;
+                       WITH  ;
+                       gc_pro00.pro_coprmb
+          ENDIF
+          REPLACE kar_almrec WITH  ;
+                  a1(6)
+          REPLACE kar_usuari WITH  ;
+                  clave
+          REPLACE kar_fecha WITH  ;
+                  DATE()
+          REPLACE kar_hora WITH  ;
+                  TIME()
+          IF a1(13) = 'IMPO'
+               REPLACE kar_tidore  ;
+                       WITH  ;
+                       a1(13)
+               REPLACE kar_nrdore  ;
+                       WITH  ;
+                       recep.nrodo
+          ELSE
+               IF a1(13) = 'RCLR'  ;
+                  .OR. a1(13) =  ;
+                  'PLAN'
+                    REPLACE kar_tidore  ;
+                            WITH  ;
+                            recep.tipdoc
+                    REPLACE kar_nrdore  ;
+                            WITH  ;
+                            recep.docref
+               ELSE
+                    REPLACE kar_tidore  ;
+                            WITH  ;
+                            SPACE(4)
+                    REPLACE kar_nrdore  ;
+                            WITH  ;
+                            recep.docref
+               ENDIF
+          ENDIF
+          UNLOCK
+          SELECT gc_alm00
+          SEEK recep.codigo +  ;
+               a1(6)
+          IF  .NOT. FOUND()
+               APPEND BLANK
+               DO rbloquea
+               REPLACE alm_codpro  ;
+                       WITH  ;
+                       recep.codigo
+               REPLACE alm_codalm  ;
+                       WITH  ;
+                       a1(6)
+               UNLOCK
+          ENDIF
+          DO rbloquea
+          REPLACE alm_stkfis WITH  ;
+                  w_almant +  ;
+                  recep.cantidad
+          REPLACE alm_usuari WITH  ;
+                  clave,  ;
+                  alm_fecha WITH  ;
+                  DATE()
+          REPLACE alm_hora WITH  ;
+                  TIME()
+          UNLOCK
+     ENDIF
+     SELECT gc_dip00
+     APPEND BLANK
+     DO rbloquea
+     REPLACE dip_tipdoc WITH  ;
+             a1(1)
+     REPLACE dip_nrodoc WITH  ;
+             a1(2)
+     REPLACE dip_propar WITH  ;
+             recep.codigo
+     REPLACE dip_unimed WITH  ;
+             recep.unidad
+     REPLACE dip_cantid WITH  ;
+             recep.cantidad
+     REPLACE dip_docref WITH  ;
+             recep.docref
+     REPLACE dip_import WITH  ;
+             recep.precio
+     REPLACE dip_total WITH  ;
+             ROUND(recep.cantidad *  ;
+             recep.precio, 2)
+     REPLACE dip_usuari WITH  ;
+             clave
+     REPLACE dip_fecha WITH  ;
+             DATE()
+     REPLACE dip_hora WITH TIME()
+     UNLOCK
+     DO ult_precio
+     SELECT recep
+ENDSCAN
+RETURN
+*
+PROCEDURE cospro2
+*----------------
+STORE 0 TO w_impor, timpor,  ;
+      w_tfob, tflete, tseguro,  ;
+      tfob, tcif, tadva, tgastos,  ;
+      fflete, fseguro, fadv,  ;
+      fgastos, fadva, w_proant,  ;
+      w_proanb
+SELECT gasto
+n = RECCOUNT()
+SELECT recep
+SET FILTER TO cantidad > 0
+GOTO TOP
+SCAN WHILE  .NOT. EOF()
+     DO rbloquea
+     REPLACE fob WITH  ;
+             ROUND(precio *  ;
+             cantidad, 2)
+     UNLOCK
+     tfob = tfob + fob
+ENDSCAN
+tflete = gas('FLET')
+fflete = 0
+fflete = tflete / tfob
+tseguro = gas('SEGU')
+fseguro = tseguro / tfob
+SELECT recep
+GOTO TOP
+SCAN WHILE  .NOT. EOF()
+     REPLACE flete WITH ROUND(fob *  ;
+             fflete, 2)
+     REPLACE seguro WITH  ;
+             ROUND(fob * fseguro,  ;
+             2)
+     REPLACE cif WITH ROUND(fob +  ;
+             flete + seguro, 2)
+     tcif = tcif + cif
+ENDSCAN
+tadva = gas('ADVA')
+fadva = tadva / tcif
+tgastos = totgas()
+fgastos = tgastos / tcif
+tcp = w_tipcav
+IF tcn = 0
+     tcn = tcp
+ENDIF
+GOTO TOP
+SCAN WHILE  .NOT. EOF()
+     REPLACE adva WITH ROUND(cif *  ;
+             fadva, 2), gastos  ;
+             WITH ROUND(cif *  ;
+             fgastos, 2), totnac  ;
+             WITH ROUND(adva +  ;
+             gastos, 2), cosalm  ;
+             WITH ROUND((cif *  ;
+             tcp) + (totnac *  ;
+             tcn), 2)
+     REPLACE cosuni WITH  ;
+             ROUND(cosalm /  ;
+             cantidad, 2), cospro  ;
+             WITH ROUND((cif +  ;
+             totnac) / cantidad,  ;
+             2)
+ENDSCAN
+= det_gas()
+RETURN
+*
+PROCEDURE imprim
+*---------------
+SELECT recep
+GOTO TOP
+SET RELATION TO codigo INTO gc_pro00 ADDITIVE
+??? CHR(27) + CHR(15)
+REPORT FORMAT agcp2221 TO PRINTER  ;
+       NOCONSOLE FOR cantidad >  ;
+       0
+??? CHR(27) + CHR(80)
+SET RELATION TO
+SET DEVICE TO SCREEN
+SET PRINTER TO
+RETURN
+*
+FUNCTION gas
+*-----------
+PARAMETER codi
+SELECT gasto
+LOCATE FOR gasto = codi
+IF FOUND()
+     w_impor = importe
+ELSE
+     w_impor = 0
+ENDIF
+SELECT recep
+RETURN w_impor
+*
+FUNCTION totgas
+totimpor = 0
+timpor = 0
+SELECT gasto
+GOTO TOP
+SCAN WHILE  .NOT. EOF()
+     timpor = timpor + importe
+ENDSCAN
+totimpor = timpor - gas('FLET') -  ;
+           gas('SEGU') -  ;
+           gas('ADVA')
+SELECT recep
+RETURN totimpor
+*
+PROCEDURE det_gas
+SELECT gasto
+GOTO TOP
+c = 0
+SCAN WHILE  .NOT. EOF()
+     IF importe > 0 .AND. gasto <>  ;
+        'FLET' .AND. gasto <>  ;
+        'SEGU' .AND. gasto <>  ;
+        'ADVA'
+          c = c + 1
+          g1( c) = descrip
+          g2( c) = importe
+     ENDIF
+ENDSCAN
+RETURN
+*
+PROCEDURE clasifica
+*------------------
+SELECT ge_tab0
+SET NEAR ON
+SEEK "CMCO"+"0000"
+z = 0
+SCAN WHILE tab_codpre = 'CMCO'  ;
+     .AND.  .NOT. EOF()
+     z = z + 1
+ENDSCAN
+DIMENSION valor( z)
+DIMENSION factor( z)
+SEEK 'CMCO' + '0000'
+SET NEAR OFF
+x = 0
+SCAN WHILE tab_codpre = 'CMCO'  ;
+     .AND.  .NOT. EOF()
+     x = x + 1
+     valor( x) = tab_codtab
+     factor( x) = tab_factor
+ENDSCAN
+FOR a = 1 TO x
+     IF w_prmb <= factor(a)
+          w_codcla = valor(a)
+          EXIT
+     ENDIF
+ENDFOR
+SELECT gc_pro00
+SET ORDER TO CODIGO
+SEEK recep.codigo
+IF FOUND()
+     REPLACE pro_clacom WITH  ;
+             w_codcla
+ENDIF
+*
+PROCEDURE ult_precio
+w_prov = 'UCO_PROV0'
+w_ndoc = 'UCO_NDOC0'
+w_fdoc = 'UCO_FDOC0'
+w_cant = 'UCO_CANT0'
+w_prec = 'UCO_PREC0'
+SELECT 25
+USE GC_UCO00 ORDER CODIGO
+SEEK recep.codigo
+IF  .NOT. FOUND()
+     APPEND BLANK
+     REPLACE uco_codigo WITH  ;
+             recep.codigo
+     REPLACE uco_prov01 WITH  ;
+             a1(10)
+     REPLACE uco_ndoc01 WITH  ;
+             a1(2)
+     REPLACE uco_fdoc01 WITH  ;
+             DATE()
+     REPLACE uco_cant01 WITH  ;
+             recep.cantidad
+     REPLACE uco_prec01 WITH  ;
+             recep.precio
+ELSE
+     w_libre = 0
+     w_pos = 1
+     FOR b = 1 TO 5
+          w_pro = w_prov +  ;
+                  ALLTRIM(STR(b))
+          IF &w_pro = a1(10)
+               w_doc = w_ndoc +  ;
+                       ALLTRIM(STR(b))
+               REPL &w_doc WITH a1(2)
+               w_fec = w_fdoc +  ;
+                       ALLTRIM(STR(b))
+               REPL &w_fec WITH DATE()
+               w_can = w_cant +  ;
+                       ALLTRIM(STR(b))
+               REPL &w_can WITH recep.cantidad
+               w_pre = w_prec +  ;
+                       ALLTRIM(STR(b))
+               REPL &w_pre WITH recep.precio
+               w_libre = 1
+               b = 5
+          ELSE
+               w_pro = w_prov +  ;
+                       ALLTRIM(STR(b))
+               IF &w_pro = SPACE(10)
+                    REPL &w_pro WITH a1(10)
+                    w_doc = w_ndoc +  ;
+                            ALLTRIM(STR(b))
+                    REPL &w_doc WITH a1(2)
+                    w_fec = w_fdoc +  ;
+                            ALLTRIM(STR(b))
+                    REPL &w_fec WITH DATE()
+                    w_can = w_cant +  ;
+                            ALLTRIM(STR(b))
+                    REPL &w_can WITH recep.cantidad
+                    w_pre = w_prec +  ;
+                            ALLTRIM(STR(b))
+                    REPL &w_pre WITH recep.precio
+                    b = 5
+                    w_libre = 1
+               ENDIF
+          ENDIF
+          w_fecha = DATE()
+          IF b = 1
+               w_fecha = uco_fdoc01
+          ENDIF
+          w_fecha2 = w_fdoc +  ;
+                     ALLTRIM(STR(b))
+          IF w_fecha < &w_fecha2
+               w_pos = b
+          ENDIF
+     ENDFOR
+     IF w_libre = 0
+          w_pro = w_prov +  ;
+                  ALLTRIM(STR(w_pos))
+          REPL &w_pro WITH a1(10)
+          w_doc = w_ndoc +  ;
+                  ALLTRIM(STR(w_pos))
+          REPL &w_doc WITH a1(2)
+          w_fec = w_fdoc +  ;
+                  ALLTRIM(STR(w_pos))
+          REPL &w_fec WITH DATE()
+          w_can = w_cant +  ;
+                  ALLTRIM(STR(w_pos))
+          REPL &w_can WITH recep.cantidad
+          w_pre = w_prec +  ;
+                  ALLTRIM(STR(w_pos))
+          REPL &w_pre WITH recep.precio
+     ENDIF
+ENDIF
+USE

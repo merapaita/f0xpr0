@@ -1,0 +1,445 @@
+SET PROCEDURE TO libsis
+
+worker = IIF(LTRIM(UPPER(GETENV('WORKER'))) = 'ON', .t.,.f. )
+
+DO Fox_Ambi
+
+SET EXCLUSIVE ON
+
+CLOS DATA
+
+* Borrando Data
+
+USE CAJA.DBF
+ZAP
+USE CEMENT.DBF
+ZAP
+USE CLIENTES.DBF
+ZAP
+USE CREDITOS.DBF
+ZAP
+USE CUARTEL.DBF
+ZAP
+USE DIFUNTO.DBF
+ZAP
+USE DONAC.DBF
+ZAP
+USE ITEPS.DBF
+ZAP
+USE ITEUSU.DBF
+ZAP
+USE ITEUSUOP.DBF
+ZAP
+USE KARCRE.DBF
+ZAP
+USE MAEACC.DBF
+ZAP
+USE MAUSOLEO.DBF
+ZAP
+USE NICHOS.DBF
+ZAP
+USE NICTMP.DBF
+ZAP
+USE NICTMP2.DBF
+ZAP
+USE OCUPFUT.DBF
+ZAP
+USE PAGACTA.DBF
+ZAP
+USE PAGSUB.DBF
+ZAP
+USE RECIBO.DBF
+ZAP
+USE RECIBOS.DBF
+ZAP
+USE SUBVENC.DBF
+ZAP
+USE TRANSFER.DBF
+ZAP
+USE TRASLADO.DBF
+ZAP
+USE VENTAS.DBF
+ZAP
+
+* Actualizando Cement
+
+DO Espera WITH 1,"Actualizando Tabla Cementerios"
+
+USE ..\DATACE~1\Maestro IN 1
+USE Cement IN 2
+SELE Maestro
+GO TOP
+SCAN
+	m.CodCem = PADL(ALLTRIM(STR(Cod_Cement)),2,'0')
+	m.NomCem = Nom_Cement
+	SELE Cement
+	APPEND BLANK
+	GATHER MEMVAR
+	SELE Maestro
+ENDSCAN
+USE in 1
+USE IN 2
+
+* Actualizando Cuartel
+
+DO Espera WITH 1,"Actualizando Tabla Cuartel"
+
+USE ..\DATACE~1\Cuartel IN 1 ALIAS CuarAnt
+USE Cuartel IN 2 ALIAS CuarNew
+SELE CuarAnt
+SET FILTER TO Cod_tipo = 1
+GO TOP
+
+SCAN
+	m.CodCem  = PADL(ALLTRIM(STR(Cod_Cement)),2,'0')
+	m.CodCuar = PADL(ALLTRIM(STR(Cod_Cuarte)),4,'0')
+	m.NomCuar = Nom_Cuarte
+	
+* por definir
+*	m.Filas
+*	m.Columnas
+
+	SELE CuarNew
+	APPEND BLANK
+	GATHER MEMVAR
+	SELE CuarAnt
+ENDSCAN
+USE in 1
+USE IN 2
+
+* Actualizando Difuntos
+
+DO Espera WITH 1,"Actualizando Tabla Difuntos"
+
+USE ..\DATACE~1\Fallecid IN 1
+USE ..\DATACE~1\Cuartel  IN 2 ORDER TAG CUARTEL01
+USE Difunto              IN 3
+
+SELE Fallecid
+GO TOP
+SCAN
+	SELE Cuartel
+	IF SEEK (STR(Fallecid.Cod_Cement,1)+PADL(ALLTRIM(STR(Fallecid.Cod_Cuarte)),3,'0')) AND (Cod_tipo = 1)
+		SELE Fallecid
+		m.CodCem  = PADL(ALLTRIM(STR(Cod_Cement)),2,'0')
+		m.CodCuar = PADL(ALLTRIM(STR(Cod_Cuarte)),4,'0')
+		m.CodDif  = m.CodCem + PADL(ALLTRIM(STR(Cod_Fallec)),6,'0')
+		m.Fila    = Fila
+		m.Columna = PADL(ALLTRIM(STR(Columna)),3,'0')
+		m.TipEnt  = '1'
+		m.ApePat  = Ape_patern
+		m.ApeMat  = Ape_matern
+		m.NomDif  = Nombres
+		m.SexoDif = Sexo
+		m.FecFall = Fec_Fallec
+		m.Reservado = "N"
+		m.Estado = "00"
+		m.EstVta = "00"
+		
+		SELE Difunto
+		APPEND BLANK
+		GATHER MEMVAR
+	ENDIF
+	SELE Fallecid
+ENDSCAN
+USE in 1
+USE IN 2
+USE IN 3
+
+* agregarse datos en la tabla nichos
+
+DO Espera WITH 1,"Actualizando Tabla Nichos"
+
+USE Difunto IN 1
+USE Nichos  IN 2
+USE Cuartel IN 3 ORDER TAG Cuartel1
+
+SELE Difunto
+INDEX ON CodCem+CodCuar+Fila+Columna TO xx
+
+GO TOP
+SCAN
+	xCem = CodCem
+	SCAN WHILE CodCem = xCem
+		xCuar = CodCuar
+*		if XcUAR = '0051'
+*			SET STEP ON
+*		ENDIF
+		nCol = 0
+		nfil = 0
+		SCAN WHILE CodCem = xCem AND CodCuar = xCuar
+			nFil = nFil + 1
+			SELE Nichos
+			APPEND BLANK
+			REPLACE CodCem  WITH Difunto.CodCem,;
+					CodCuar WITH Difunto.CodCuar,;
+					Fila1	WITH str(nFil,1),;
+					Fila2	WITH Difunto.Fila
+					
+			SELE Difunto
+			xFil = Difunto.Fila
+			i = 0
+			SCAN WHILE CodCem = xCem AND CodCuar = xCuar AND Fila = xFil
+				SELE Nichos
+				i = i + 1
+				Campo  = "Col" + PADL(ALLTRIM(STR(i)),3,'0')+'N'
+				Campo2 = "Col" + PADL(ALLTRIM(STR(i)),3,'0')+'E'
+				REPLACE &Campo  WITH val(Difunto.Columna)
+				REPLACE &Campo2 WITH "3"
+				IF nCol <  i
+					nCol = i
+				ENDIF
+				SELE Difunto
+			ENDSCAN
+			SKIP -1
+		ENDSCAN
+		SKIP -1
+		IF SEEK(Difunto.CodCem + Difunto.CodCuar,"Cuartel")
+			SELE Cuartel
+			REPLACE Filas WITH nFil,Columnas WITH nCol
+		ELSE
+			WAIT WIND "Existe un Error"
+		ENDIF
+		SELE Difunto
+	ENDSCAN
+ENDSCAN
+USE IN 1
+USE IN 2
+USE IN 3
+
+* Actualizando Nichos
+
+DO Espera WITH 1,"Actualizando Filas y Columnas de Cuartel"
+
+USE Nichos  IN 1 ORDER TAG Nichos1
+USE Cuartel IN 2 ORDER TAG Cuartel1
+
+SELE Nichos
+SCAN
+	xCem = CodCem
+	SCAN WHILE CodCem = xCem
+		xCuar = CodCuar
+		nMin = 125
+		nMax = 0
+		nFil = 0
+		SCAN WHILE CodCuar = xCuar
+			nFil = nFil + 1
+			FOR i = 1 TO 125
+				Campo = "Col" + PADL(ALLTRIM(STR(i)),3,'0')+'N'
+				IF EMPTY(&Campo)
+					EXIT
+				ENDIF
+				IF nMin > i			&&	"&campo"
+					nMin = i		&&	"&campo"
+				ENDIF
+				IF nMax < i			&&	"&Campo"
+					nMax = i		&&	"&Campo"
+				ENDIF
+			ENDFOR
+		ENDSCAN
+		SKIP -1
+		nCol = (nMax - nMin) + 1
+		IF SEEK(xCem + xCuar,"Cuartel")
+			SELE Cuartel
+			REPLACE Filas WITH nFil,Columnas WITH nCol
+		ELSE
+			WAIT WIND "Existe un Error"
+		ENDIF
+		
+		SELE Nichos
+	ENDSCAN
+	SKIP -1
+ENDSCAN
+
+USE IN 1
+USE IN 2
+
+
+** Actualizando Nichos
+*
+*DO Espera WITH 1,"Actualizando CODIGOS DE nICHOS"
+*
+**SET STEP ON
+*
+*USE Cuartel IN 1 ORDER TAG Cuartel1
+*USE Nichos  IN 2 ORDER TAG Nichos1
+*SELE Cuartel
+*GO TOP
+*SCAN
+*	xCem = CodCem
+*	xCua = CodCuar
+*	IF SEEK(xCem+xCua,"Nichos")
+*		SELE Nichos
+*		nMin = 125
+*		nMax = 0
+*		SCAN WHILE CodCem+CodCuar = xCem+xCua
+*			FOR i = 1 TO 125
+*				Campo = "Col" + PADL(ALLTRIM(STR(i)),3,'0')+'N'
+*				IF EMPTY(&Campo)
+*					EXIT
+*				ENDIF
+*				IF nMin > &campo
+*					nMin = &campo
+*				ENDIF
+*				IF nMax < &Campo
+*					nMax = &Campo
+*				ENDIF
+*			ENDFOR
+*		ENDSCAN
+*		
+*		nCol = (nMax - nMin) + 1
+*		SEEK xCem+xCua
+*		SCAN WHILE CodCem+CodCuar = xCem+xCua
+*			xNic = nMin
+*			FOR k = 1 TO nCol
+*				Campo  = "Col" + PADL(ALLTRIM(STR(k)),3,'0')+'N'
+*				Campo2 = "Col" + PADL(ALLTRIM(STR(k)),3,'0')+'E'
+*				REPLACE &Campo  WITH xNic
+*				REPLACE &Campo2 WITH "1"
+*				xNic = xNic + 1
+*			ENDFOR
+*		ENDSCAN
+*	ENDIF
+*ENDSCAN
+
+*SUSP
+
+* Agregando el Codigo de Nicho
+
+DO Espera WITH 1,"Agregando Codigo de Nicho A Difuntos"
+
+USE Difunto IN 1
+USE Nichos  IN 2
+
+SELE Difunto
+INDEX ON CodCem+CodCuar+Fila+Columna TO xx
+SELE Nichos
+INDEX ON CodCem+CodCuar+Fila2 TO yy
+
+SELE Difunto
+
+*SET STEP ON
+
+SCAN
+	xCem = CodCem
+	xCua = CodCuar
+	IF xCua='0929'
+		SET STEP ON
+	ENDIF
+	xFil = Fila
+	xCol = Columna
+	SELE Nichos
+	xCN = ''
+	xF2 = ''
+	xC2 = ''
+	IF SEEK(xCem+xCua+xFil)
+		xF2 = Fila1
+		FOR i = 1 TO 255
+			Campo  = "Col"+PADL(ALLTRIM(STR(i)),3,'0')+'N'
+			Campo2 = "Col"+PADL(ALLTRIM(STR(i)),3,'0')+'E'
+			IF VAL(xCol) = &Campo
+				REPLACE &Campo2 WITH "3"
+				xC2 = PADL(ALLTRIM(STR(i)),3,'0')
+				EXIT
+			ENDIF
+		ENDFOR
+	ENDIF
+	xCN = xF2 + xC2
+	SELE Difunto
+	REPLACE CodNic WITH xCN
+ENDSCAN
+
+USE IN 1
+USE IN 2
+
+DO Espera WITH 1,"Actualizando Tabla Mausoleo"
+
+USE ..\DATACE~1\Cuartel IN 1 ALIAS MauAnt
+USE Mausoleo            IN 2 ALIAS MauNew
+SELE MauAnt
+SET FILTER TO BETW(Cod_tipo,3,4)
+GO TOP
+
+SCAN
+	m.CodCem  = PADL(ALLTRIM(STR(Cod_Cement)),2,'0')
+	m.CodMau  = PADL(ALLTRIM(STR(Cod_Cement)),2,'0') + PADL(ALLTRIM(STR(Cod_Cuarte)),4,'0')
+	m.Tipo    = IIF(Cod_Tipo=4,1,2)
+	m.Familia = Nom_Cuarte
+	m.TotDif  = Tot_Nichos
+
+	SELE MauNew
+	APPEND BLANK
+	GATHER MEMVAR
+	SELE MauAnt
+ENDSCAN
+USE in 1
+USE IN 2
+
+* Actualizando Difuntos
+
+DO Espera WITH 1,"Actualizando Difuntos enterrados en mausoleos"
+
+USE ..\DATACE~1\Fallecid IN 1
+USE ..\DATACE~1\Cuartel  IN 2 ORDER TAG CUARTEL01
+USE Difunto              IN 3
+
+SELE Fallecid
+GO TOP
+SCAN
+	IF SEEK (STR(Fallecid.Cod_Cement,1)+PADL(ALLTRIM(STR(Fallecid.Cod_Cuarte)),3,'0'),'Cuartel') AND BETW(Cuartel.Cod_tipo,3,4)
+		SELE Fallecid
+		m.CodCem  = PADL(ALLTRIM(STR(Cod_Cement)),2,'0')
+		m.CodMau  = m.CodCem + PADL(ALLTRIM(STR(Cod_Cuarte)),4,'0')
+		m.CodDif  = m.CodCem + PADL(ALLTRIM(STR(Cod_Fallec)),6,'0')
+		m.CodCuar = ""
+		m.CodNic  = ""
+		m.Fila    = ""
+		m.Columna = ""
+		m.TipEnt  = '2'
+		m.ApePat  = Ape_patern
+		m.ApeMat  = Ape_matern
+		m.NomDif  = Nombres
+		m.SexoDif = Sexo
+		m.FecFall = Fec_Fallec
+		
+		SELE Difunto
+		APPEND BLANK
+		GATHER MEMVAR
+	ENDIF
+	SELE Fallecid
+ENDSCAN
+USE in 1
+USE IN 2
+USE IN 3
+
+* Agregando Difuntosa a tabla mausoleos
+
+DO Espera WITH 1,"Difuntos a tabla mausoleos"
+
+
+USE Difunto  IN 1
+USE mausoleo IN 2 ORDER TAG Mausoleo1
+
+SELE Difunto
+INDEX ON codmau TO xx FOR !EMPTY(CodMau)
+GO TOP
+SCAN
+	xMau = CodMau
+	nCon = 0
+	SCAN WHILE CodMau = xMau
+		nCon = nCon + 1
+		IF SEEK(xMau,"Mausoleo")
+			SELE Mausoleo
+			REPLACE NumDif WITH nCon
+		ELSE
+			WAIT WIND "Error Al agregar num de difunto en mausoleo"
+		ENDIF
+		SELE Difunto
+	ENDSCAN
+	SKIP -1
+ENDSCAN
+
+USE IN 1
+USE IN 2
+
+DO Espera WITH 2

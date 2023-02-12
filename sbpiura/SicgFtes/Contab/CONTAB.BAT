@@ -1,0 +1,11 @@
+@ECHO OFF
+CLS
+SET WORKER=OFF
+
+act.exe
+
+CONTAB.EXE
+
+DEL *.IDX
+DEL *.TMP
+@ECHO ON

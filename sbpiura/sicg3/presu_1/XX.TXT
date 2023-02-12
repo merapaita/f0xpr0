@@ -1,0 +1,66 @@
+
+Estructura de la tabla: H:\SISFTES\SICG3\PRESU\75085254.DBF
+N§ de registros:               0
+éltima actualizaci¢n:   08-01-1920
+P g. de c¢digos:        0
+Campo  Nombre      Tipo       Ancho    Dec    Öndice Ordenaci¢n
+    1  PERIODO     Car cter       2                  
+    2  UNIGES      Car cter       2                  
+    3  UNIEJE      Car cter       3                  
+    4  CODCAD      Car cter       4                  
+    5  CODFTE      Car cter       2                  
+    6  FTE00       Num‚rico      15      2           
+    7  FTE01       Num‚rico      15      2           
+    8  FTE09       Num‚rico      15      2           
+    9  FTE13       Num‚rico      15      2           
+   10  FTE19       Num‚rico      15      2           
+   11  TIPPRE      Car cter       1                  
+   12  GENERIC     Car cter       1                  
+   13  SGN1        Car cter       2                  
+   14  SGN2        Car cter       2                  
+   15  ESPN1       Car cter       2                  
+   16  ESPN2       Car cter       2                  
+   17  ESPN3       Car cter       2                  
+   18  ESPN4       Car cter       2                  
+   19  CATGAS      Car cter       1                  
+   20  GRUGEN      Car cter       1                  
+   21  MODAPL      Car cter       2                  
+   22  ESPGAS      Car cter       2                  
+   23  SUBESP      Car cter       2                  
+   24  CODPART     Car cter      14                  
+   25  VALPART     Num‚rico      12      2           
+   26  UBICAC      Car cter      30                  
+   27  CRESUP      Num‚rico      15      2           
+   28  TRA001      Num‚rico      15      2           
+   29  TRA003      Num‚rico      15      2           
+   30  TRA004      Num‚rico      15      2           
+   31  TRA005      Num‚rico      15      2           
+   32  CANTCAL     Num‚rico      15      2           
+   33  TOTAFE      Num‚rico      15      2           
+   34  TOTCAL      Num‚rico      15      2           
+   35  TOTMES      Num‚rico      15      2           
+   36  TOTPAG      Num‚rico      15      2           
+   37  M_01        Num‚rico      15      2           
+   38  M_02        Num‚rico      15      2           
+   39  M_03        Num‚rico      15      2           
+   40  TRI_01      Num‚rico      15      2           
+   41  M_04        Num‚rico      15      2           
+   42  M_05        Num‚rico      15      2           
+   43  M_06        Num‚rico      15      2           
+   44  TRI_02      Num‚rico      15      2           
+   45  M_07        Num‚rico      15      2           
+   46  M_08        Num‚rico      15      2           
+   47  M_09        Num‚rico      15      2           
+   48  TRI_03      Num‚rico      15      2           
+   49  M_10        Num‚rico      15      2           
+   50  M_11        Num‚rico      15      2           
+   51  M_12        Num‚rico      15      2           
+   52  TRI_04      Num‚rico      15      2           
+   53  MODEJE      Car cter       3                  
+   54  CODDEP      Car cter       6                  
+   55  METAS       Car cter     120                  
+   56  NUMCRE      Car cter       8                  
+   57  NUMTRA      Car cter       8                  
+   58  TIPTRN      Car cter       1                  
+   59  ESTFUN      Car cter      35                  
+** Total **                     738

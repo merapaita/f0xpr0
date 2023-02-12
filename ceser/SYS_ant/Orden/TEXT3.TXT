@@ -1,0 +1,141 @@
+ CORP.ANDINA DE DISTRIB.                                                                                      P═gina :          1
+       CESER                               E  S  T  A  D  O     D  E     A  R  T  I  C  U  L  O  S            Fecha  : 26/11/2005
+  CALLE CUZCO 1099                         ммммммммммммммммммммммммммммммммммммммммммммммммммммммм            Hora   :   13:22:15
+                                                 DESDE: 01/07/2005  HASTA: 26/11/2005
+ ESTADO : 021   ALMACEN SIN REPARAR           
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+ЁNЬ   FECHA     NЬ ORDEN   S/S     CLIENTE               TELEFONO MARCA       MODELO      SERIE          TECNICO   GTIA EMIS TALЁ
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+   1 16/06/2005   621038   621038 STOCK TDA CURACAO        302644 L.G        LH-T6540A    404HZ00126         65594 GARA 500  005 
+   2 16/06/2005   621044   621044 PAIVA WILFREDO          9617823 AIWA       NSX-SZ70     S02EH08B0461       40884 FGAR 321  005 
+                                                          -----
+                                         TOTAL 21/07/2005     2
+                                                          =====
+   1 08/07/2005   621240   621240 GARCES CALLE JOSE             0 SONY       CFD-G550     1008140            65594 FGAR 121  005 
+                                                          -----
+                                         TOTAL 13/07/2005     1
+                                                          =====
+   1 12/07/2005   621271   621271 SAGA FALABELLA           606002 AIWA       XR-EM330     9155               15977 GREC 300  005 
+                                                          -----
+                                         TOTAL 23/09/2005     1
+                                                          =====
+   1 12/07/2005   621270   621270 ZARATE GINOCCHIO RAUL         0 SONY       MHC-GN660    44                 40884 GREC 100  005 
+   2 15/07/2005   621304   621304 DAKOTA GAMING PERU SAC        0 AIWA       JAX-PK33     918                65594 GREC 300  005 
+   3 19/07/2005   621324   621324 QUISPE RENE             3391260 SONY       D-NF610      5160151             1000 FGAR 050  005 
+                                                          -----
+                                         TOTAL 19/07/2005     3
+                                                          =====
+   1 20/07/2005   621334   621334 QUISPE RENE             3391260 SONY       D-NF610      5160151            15977 FGAR 050  005 
+                                                          -----
+                                         TOTAL 05/08/2005     1
+                                                          =====
+   1 02/08/2005   621425   621425 CUELA ALIAGA MOISES     9730453 AIWA       JAX-PK10     9153903            40884 GARA 300  005 
+                                                          -----
+                                         TOTAL 15/08/2005     1
+                                                          =====
+   1 02/08/2005   621419   621419 CASTILLO ZAPATA MILTON        0 SONY       CDX-R3300S   3595021            40884 GARA 100  005 
+                                                          -----
+                                         TOTAL 15/08/2005     1
+                                                          =====
+   1 15/08/2005   621551   621551 STOCK CURACAO SULLANA    503388 SONY       CDX-S2010X   9542                1000 GARA 100  005 
+                                                          -----
+                                         TOTAL 30/09/2005     1
+                                                          =====
+   1 16/08/2005   621568   621568 LEON JORGE              9598800 L.G        DVS-5502N    208SH00808         65594 FGAR 050  005 
+                                                          -----
+                                         TOTAL 19/08/2005     1
+                                                          =====
+   1 17/08/2005   621583   621583 FRANCO CHAVEZ JIOVANNI  9783578 SONY       D-171        1099923            40884 FGAR 121  005 
+                                                          -----
+                                         TOTAL 20/08/2005     1
+                                                          =====
+   1 25/08/2005   621637   621637 JOSE VASQUEZ EIRL        308832 SONY       MDS-JE510    8927380            65594 FREC 050  005 
+                                                          -----
+                                         TOTAL 29/08/2005     1
+                                                          =====
+   1 29/08/2005   621664   621664 PAUCAR TUME SERVILIO          0 PIONER     A-700        RLMP004874         40884 FGAR 050  005 
+                                                          -----
+                                         TOTAL 31/08/2005     1
+                                                          ===== CORP.ANDINA DE DISTRIB.                                                                                      P═gina :          2
+       CESER                               E  S  T  A  D  O     D  E     A  R  T  I  C  U  L  O  S            Fecha  : 26/11/2005
+  CALLE CUZCO 1099                         ммммммммммммммммммммммммммммммммммммммммммммммммммммммм            Hora   :   13:22:17
+                                                 DESDE: 01/07/2005  HASTA: 26/11/2005
+ ESTADO : 021   ALMACEN SIN REPARAR           
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+ЁNЬ   FECHA     NЬ ORDEN   S/S     CLIENTE               TELEFONO MARCA       MODELO      SERIE          TECNICO   GTIA EMIS TALЁ
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+   1 30/09/2005   621898   621898 CORPORACION ANDINA DE    302988 DAIWA      PCD-2000     2568               65594 GARA 221  005 
+   2 30/09/2005   621901   621901 CORPORACION ANDINA DE    302988 DAIWA      PCD-4000     3914               65594 GARA 221  005 
+   3 30/09/2005   621902   621902 CORPORACION ANDINA DE    302988 DAIWA      PCD-2000     2879               65594 GARA 221  005 
+   4 30/09/2005   621903   621903 CORPORACION ANDINA DE    302988 DAIWA      PCD-2000     1637               21983 GARA 221  005 
+   5 30/09/2005   621904   621904 CORPORACION ANDINA DE    302988 DAIWA      PCD-2000     0761               21983 GARA 221  005 
+   6 30/09/2005   621907   621907 CORPORACION ANDINA DE    302988 DAIWA      PCD-2000     1948               21983 GARA 221  005 
+                                                          -----
+                                         TOTAL 30/09/2005     6
+                                                          =====
+   1 28/02/2005   619967   619967 MENA LUIS ALBERTO             0 SONY       LBT-N350     4433426            15977 FGAR 100  005 
+                                                          -----
+                                         TOTAL 23/11/2005     1
+                                                          =====
+   1 04/10/2005   621923   621923 CALDERON ESMILDA              0 AIWA       NSX-999      SS                 15977 FGAR 050  005 
+                                                          -----
+                                         TOTAL 10/10/2005     1
+                                                          =====
+   1 07/10/2005   621958   621958 LEON JUAN               9688893 SONY       CMT-EP50     3152794            65594 FGAR 121  005 
+                                                          -----
+                                         TOTAL 26/10/2005     1
+                                                          =====
+   1 12/10/2005   621981   621981 NAVARRO CASTRO JULIO          0 SONY       MHC-RG575S   9153900            21983 GARA 100  005 
+                                                          -----
+                                         TOTAL 24/10/2005     1
+                                                          =====
+   1 13/10/2005   621989   621989 RONDOY CALVO JESUS            0 SONY       MHC-GNX60    9504020            65594 GARA 100  005 
+                                                          -----
+                                         TOTAL 10/11/2005     1
+                                                          =====
+   1 25/10/2005   622072   622072 ESTEVES TRELLES DORIAN        0 SONY       D-NF421      5008066            15977 GARA 100  005 
+                                                          -----
+                                         TOTAL 10/11/2005     1
+                                                          =====
+   1 25/10/2005   622076   622076 NU╔EZ JUANA              307232 AIWA       CSD-ES100    62425794           15977 FGAR 321  005 
+                                                          -----
+                                         TOTAL 03/11/2005     1
+                                                          =====
+   1 26/10/2005   622089   622089 CARRERA KAROL            311384 SONY       MHC-XGR80    9156598            65594 FGAR 050  005 
+                                                          -----
+                                         TOTAL 02/11/2005     1
+                                                          =====
+   1 26/10/2005   622090   622090 ORTEGA SILVIA            346934 SONY       CFD-626      100988             15977 FGAR 121  005 
+                                                          -----
+                                         TOTAL 07/11/2005     1
+                                                          =====
+   1 05/11/2005   622168   622168 ESTRADA MONTERO JUAN     346185 L.G        DVS-5502N    211SH01359         21983 FGAR 050  005 
+                                                          -----
+                                         TOTAL 10/11/2005     1
+                                                          =====
+   1 09/11/2005   622194   622194 TUME CHUNGA JUAN              0 SONY       D-NF401      5023562             1000 GARA 850  005 
+ CORP.ANDINA DE DISTRIB.                                                                                      P═gina :          3
+       CESER                               E  S  T  A  D  O     D  E     A  R  T  I  C  U  L  O  S            Fecha  : 26/11/2005
+  CALLE CUZCO 1099                         ммммммммммммммммммммммммммммммммммммммммммммммммммммммм            Hora   :   13:22:19
+                                                 DESDE: 01/07/2005  HASTA: 26/11/2005
+ ESTADO : 021   ALMACEN SIN REPARAR           
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+ЁNЬ   FECHA     NЬ ORDEN   S/S     CLIENTE               TELEFONO MARCA       MODELO      SERIE          TECNICO   GTIA EMIS TALЁ
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+                                                          -----
+                                         TOTAL 09/11/2005     1
+                                                          =====
+   1 18/11/2005   622274   622274 MACHARE ROSA             361902 AIWA       NSX-BL54     S52LG0840381       15977 FGAR 050  005 
+                                                          -----
+                                         TOTAL 21/11/2005     1
+                                                          =====
+   1 25/11/2005   622347   622347 FLORE PAIVA WILLIAM           0 SONY       MHC-RG270    9151093            21983 GARA 100  005 
+                                                          -----
+                                         TOTAL 26/11/2005     1
+                                                          =====
+                    TOTAL ALMACEN SIN REPARAR                34
+                                                         ======
+

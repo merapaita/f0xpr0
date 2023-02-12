@@ -1,0 +1,351 @@
+ CORP.ANDINA DE DISTRIB.                                                                                          P gina :         1
+         CESER                                REPORTE COMPRA, CONSUMO/DEVOLUCION DE REPUESTOS                     Fecha  :09/04/2005
+   CALLE CUZCO 1099                           ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                     Hora   :  19:02:58
+                                                 Peri¢do del : 01/04/2005 Al : 09/04/2005
+ ALMACEN : 0050  PIURA                                                                                               PLAN 0000000914
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT CODIGO         DESCRIPCION               TIPO NRO. DE     FECHA DE   NRO. DE  EMIS TIPO TIPO  CANTIDAD     PRECIO         TOTAL³
+³                                             DOC. DOCUMENTO   DOCUM.     DOC.REF.      ATEN MOV.                         US$       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EGRESO DEVOLUCION             
+ ==============================
+   1 SMG-1268-02    TARJETA DE FUENTE         GUIA 00078-1787 02/04/2005                     EDEV         1       20.00         20.00
+   2 701030147      24C16                     GUIA 00078-1787 02/04/2005 DEV 62018           EDEV         1        1.83          1.83
+   3 LG=OILNRAC003A M 3355A-01-0425           PED       16928 01/04/2005    62773  500  GARA EPRD         1       20.99         20.99
+   4 LG=4680R-C012A MOTOR (MECH)              PED       16928 01/04/2005    62773  500  GARA EPRD         1        3.34          3.34
+   5 LG=OISK665413C STR F6654                 PED       16929 01/04/2005   620293  500  GARA EPRD         1       10.47         10.47
+   6 LG=OTRSA00001A 2SD 2627                  PED       16929 01/04/2005   620293  500  GARA EPRD         1        1.52          1.52
+   7 LG=6174V-6006H FLY BACK                  PED       16929 01/04/2005   620293  500  GARA EPRD         1       13.62         13.62
+   8 LG=556-219B    SWITCH TACT               PED       16930 01/04/2005   620285  500  GARA EPRD        20        0.30          6.00
+   9 LG=OTR249900AA KTD 2499                  PED       16931 01/04/2005   620282  500  GARA EPRD         1        2.76          2.76
+  10 LG=6174V-6006E FLY BACK                  PED       16931 01/04/2005   620282  500  GARA EPRD         1       13.62         13.62
+  11 LG=OILNRIJ001A IP 4504                   PED       16932 01/04/2005    62776  500  GARA EPRD         1        2.37          2.37
+  12 LG=OIMMREB004A IC MEMORIES               PED       16932 01/04/2005    62776  500  GARA EPRD         1        9.60          9.60
+  13 LG=4680R-C012A MOTOR (MECH)              PED       16932 01/04/2005    62776  500  GARA EPRD         1        3.34          3.34
+  14 LG=OIMCRHY070B IC MICRO CONTROLER        PED       16933 01/04/2005    62783  500  GARA EPRD         1        4.01          4.01
+  15 LG=OIMCRMI051C IC MICRO CONTROLLER       PED       16934 01/04/2005   620256  500  GARA EPRD         1        6.18          6.18
+  16 LG=OIPRPSA010A LA 78040                  PED       16934 01/04/2005   620256  500  GARA EPRD         1        2.79          2.79
+  17 LG=156-A08A    CRYSTAL 32.768 MHZ        PED       16934 01/04/2005   620256  500  GARA EPRD         1        0.75          0.75
+  18 LG=6768S-BP04D DECK MECHANISM PARTS      PED       16935 01/04/2005    62778  500  GARA EPRD         2        0.52          1.04
+  19 LG=4400SB0001A BELT                      PED       16935 01/04/2005    62778  500  GARA EPRD         1        0.34          0.34
+  20 LG=4400SB0001B BELT                      PED       16935 01/04/2005    62778  500  GARA EPRD         1        0.34          0.34
+  21 LG=6717RCA001B PICK UP ASSY              PED       16936 01/04/2005    62777  500  GARA EPRD         1       12.46         12.46
+  22 LG=OIPMGFA054A DM 0265RAN                PED       16937 01/04/2005    62781  500  GARA EPRD         1        1.96          1.96
+  23 LG=4680R-C012A MOTOR (MECH)              PED       16937 01/04/2005    62781  500  GARA EPRD         1        3.34          3.34
+  24 LG=OIPMGFA054A DM 0265RAN                PED       16938 01/04/2005    62782  500  GARA EPRD         1        1.96          1.96
+  25 LG=OIPMGMA001A DM 0265R                  PED       16938 01/04/2005    62782  500  GARA EPRD         1        1.96          1.96
+  26 LG=OIPMGFA054A DM 0265RAN                PED       16939 01/04/2005    62779  500  GARA EPRD         1        1.96          1.96
+  27 LG=4680R-C012A MOTOR (MECH)              PED       16939 01/04/2005    62779  500  GARA EPRD         1        3.34          3.34
+  28 LG=4680R-C012A MOTOR (MECH)              PED       16940 01/04/2005    62780  500  GARA EPRD         1        3.34          3.34
+  29 LG=OIPMGFA054A DM 0265RAN                PED       16940 01/04/2005    62780  500  GARA EPRD         1        1.96          1.96
+  30 LG=4680R-C012A MOTOR (MECH)              PED       16941 01/04/2005    62816  500  GARA EPRD         1        3.34          3.34
+  31 LG=OIPMGFA054A DM 0265RAN                PED       16941 01/04/2005    62816  500  GARA EPRD         1        1.96          1.96
+  32 LG=4680R-C012A MOTOR (MECH)              PED       16942 01/04/2005    62815  500  GARA EPRD         1        3.34          3.34
+  33 LG=6850R-JW14B CABLE FLAT                PED       16943 01/04/2005   620283  500  GREC EPRD         1        0.82          0.82
+  34 LG=6717RCA001B PICK UP ASSY              PED       16944 01/04/2005   620289  500  GARA EPRD         1       12.46         12.46
+  35 LG=6717RCA001B PICK UP ASSY              PED       16945 01/04/2005   620291  500  GARA EPRD         1       12.46         12.46
+  36 701130477      2SA 684                   PED       16946 04/04/2005   620254  221  GREC EPRD         1        0.35          0.35
+  37 4-242-197-01   BELT SQ1.8-117.7          PED       16947 04/04/2005   620180  321  FGAR EPRD         1        1.95          1.95
+  38 703130001      BELT # 5 1/2              PED       16947 04/04/2005   620180  321  FGAR EPRD         2        0.70          1.40
+  39 703130007      BELT # 10                 PED       16947 04/04/2005   620180  321  FGAR EPRD         1        1.03          1.03
+  40 703130050      BELT # 9 1/2              PED       16947 04/04/2005   620180  321  FGAR EPRD         1        0.71          0.71
+  41 LG=OIPMGFA054A DM 0265RAN                PED       16948 01/04/2005    62801  500  GARA EPRD         1        1.96          1.96
+  42 LG=4680R-C012A MOTOR (MECH)              PED       16948 01/04/2005    62801  500  GARA EPRD         1        3.34          3.34
+  43 701030058      STK 4221 MK2 (DAL)        PED       16949 04/04/2005   619732  321  FREC EPRD         1       15.70         15.70
+  44 LG=4680R-C012A MOTOR (MECH)              PED       16950 01/04/2005    62814  500  GARA EPRD         1        3.34          3.34
+  45 LG=OIPMGFA054A DM 0265RAN                PED       16950 01/04/2005    62814  500  GARA EPRD         1        1.96          1.96
+  46 LG=4680R-C012A MOTOR (MECH)              PED       16951 04/04/2005   620308  500  GARA EPRD         1        3.34          3.34
+  47 LG=OIMCRHY070B IC MICRO CONTROLER        PED       16951 04/04/2005   620308  500  GARA EPRD         1        4.01          4.01
+  48 LG=4680R-C012A MOTOR (MECH)              PED       16952 04/04/2005   620327  500  GARA EPRD         1        3.34          3.34
+  49 LG=OIPMGFA054A DM 0265RAN                PED       16952 04/04/2005   620327  500  GARA EPRD         1        1.96          1.96 CORP.ANDINA DE DISTRIB.                                                                                          P gina :         2
+         CESER                                REPORTE COMPRA, CONSUMO/DEVOLUCION DE REPUESTOS                     Fecha  :09/04/2005
+   CALLE CUZCO 1099                           ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                     Hora   :  19:02:58
+                                                 Peri¢do del : 01/04/2005 Al : 09/04/2005
+ ALMACEN : 0050  PIURA                                                                                               PLAN 0000000914
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT CODIGO         DESCRIPCION               TIPO NRO. DE     FECHA DE   NRO. DE  EMIS TIPO TIPO  CANTIDAD     PRECIO         TOTAL³
+³                                             DOC. DOCUMENTO   DOCUM.     DOC.REF.      ATEN MOV.                         US$       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EGRESO PRODUCCION             
+ ==============================
+  50 LG=OIPMGFA054A DM 0265RAN                PED       16953 04/04/2005   620277  500  GARA EPRD         1        1.96          1.96
+  51 LG=4680R-C012A MOTOR (MECH)              PED       16954 05/04/2005   620341  500  GARA EPRD         1        3.34          3.34
+  52 LG=6768S-BP04D DECK MECHANISM PARTS      PED       16955 05/04/2005   620336  500  GARA EPRD         2        0.52          1.04
+  53 LG=4680R-C012A MOTOR (MECH)              PED       16956 05/04/2005   620345  500  GARA EPRD         1        3.34          3.34
+  54 LG=6716DPH006B PICK UP ASSY              PED       16956 05/04/2005   620345  500  GARA EPRD         1       16.14         16.14
+  55 LG=4681RBA001B MOTOR ASSEMBLY            PED       16957 05/04/2005    62831  500  GARA EPRD         1        2.79          2.79
+  56 705380008      KIT ADAPTADOR BATERIA     PED       16958 05/04/2005   620314  121  FGAR EPRD         1        3.08          3.08
+  57 703130007      BELT # 10                 PED       16959 05/04/2005   619732  321  FREC EPRD         1        1.03          1.03
+  58 LG=OIMCRMN013A MSP 3425G                 PED       16960 05/04/2005    62811  500  GARA EPRD         1        8.02          8.02
+  59 LG=OISG729700A TDA 7497 / BCW            PED       16960 05/04/2005    62811  500  GARA EPRD         1        4.77          4.77
+  60 LG=OTRSA00001A 2SD 2627                  PED       16961 05/04/2005    62813  500  GARA EPRD         1        1.52          1.52
+  61 LG=6174V-6002G FLY BACK                  PED       16961 05/04/2005    62813  500  GARA EPRD         1       10.47         10.47
+  62 LG=2B71732E    MAGNETRON                 PED       16962 05/04/2005   620305  500  GARA EPRD         1       16.14         16.14
+  63 LG=3B70856G    FUSE DRAWING 10  250V     PED       16962 05/04/2005   620305  500  GARA EPRD         1        0.39          0.39
+  64 LG=6021W3B001M HV DIODE                  PED       16962 05/04/2005   620305  500  GARA EPRD         1        1.96          1.96
+  65 LG=6871EC1066J PWB (PWC) ASSEMBLY MAIN   PED       16963 05/04/2005    62758  500  FGAR EPRD         1       38.40         38.40
+  66 LG=OICTMTO001C TMP 8823CPNG5AJ4          PED       16964 05/04/2005   620315  500  GARA EPRD         1       10.47         10.47
+  67 LG=OIMCRAL011A 24C04, ATM1314            PED       16964 05/04/2005   620315  500  GARA EPRD         1        0.75          0.75
+  68 705150061      PILA LITIUM CR-2025       PED       16965 05/04/2005   620229  121  FGAR EPRD         1        1.34          1.34
+  69 7008033        REB. TWEETER (4.81 -      PED       16966 06/04/2005   620111  500  GARA EPRD         2        2.65          5.30
+  70 LG=4680R-C012A MOTOR (MECH)              PED       16967 06/04/2005   620348  500  GARA EPRD         1        3.34          3.34
+  71 LG=OIPMGFA054A DM 0265RAN                PED       16967 06/04/2005   620348  500  GARA EPRD         1        1.96          1.96
+  72 703130018      BELT # 6                  PED       16969 06/04/2005   620068  121  FGAR EPRD         1        0.70          0.70
+  73 703130002      BELT # 8 1/2              PED       16969 06/04/2005   620068  121  FGAR EPRD         2        0.70          1.40
+  74 1-692-431-21   SWITCH TACTILE            PED       16970 06/04/2005   620187  100  GARA EPRD         5        0.70          3.50
+  75 A-1062-882-A   MOUNTED C. BOARD MAIN     PED       16971 06/04/2005   620241  100  GARA EPRD         1       70.01         70.01
+  76 8-820-020-11   OPTICAL KSS-213D/Z        PED       16972 06/04/2005   620304  100  GARA EPRD         1       23.10         23.10
+  77 8-820-020-11   OPTICAL KSS-213D/Z        PED       16973 06/04/2005   620300  100  GARA EPRD         1       23.10         23.10
+  78 1-478-416-11   KEY BLOCK CONTROL         PED       16974 06/04/2005   620264  100  GARA EPRD         1       46.59         46.59
+  79 1-771-349-21   SWITCH TACTIL             PED       16975 06/04/2005    62784  100  GARA EPRD        14        0.72         10.08
+  80 LG=4680R-C012A MOTOR (MECH)              PED       16976 06/04/2005   620354  500  GARA EPRD         1        3.34          3.34
+  81 LG=OIPMGFA054A DM 0265RAN                PED       16977 06/04/2005   620323  500  GARA EPRD         1        1.96          1.96
+  82 LG=OIMCRHY070B IC MICRO CONTROLER        PED       16977 06/04/2005   620323  500  GARA EPRD         1        4.01          4.01
+  83 LG=4680R-C012A MOTOR (MECH)              PED       16977 06/04/2005   620323  500  GARA EPRD         1        3.34          3.34
+  84 LG=4680R-C012A MOTOR (MECH)              PED       16978 06/04/2005    62853  500  GARA EPRD         1        3.34          3.34
+  85 LG=6768S-BP04D DECK MECHANISM PARTS      PED       16979 06/04/2005    62852  500  GARA EPRD         2        0.52          1.04
+  86 C=46-4675      OPTICAL KSS-213C =        PED       16980 06/04/2005    62834  253  GARA EPRD         1       17.74         17.74
+  87 SMG-1275-03    ENGRANAJE DE SINTONIZADOR PED       16981 06/04/2005   620222  221  GARA EPRD         1       15.00         15.00
+  88 SMG-1250-02    TRANSISTOR DE SALIDA DE   PED       16982 06/04/2005    62804  253  GARA EPRD         1        2.50          2.50
+  89 8-729-046-07   2SD 2578-YB               PED       16983 06/04/2005    62660  050  FGAR EPRD         1        8.89          8.89
+  90 LG=OTRSA00001A 2SD 2627                  PED       16984 06/04/2005   620293  500  GARA EPRD         1        1.52          1.52
+  91 LG=556-219B    SWITCH TACT               PED       16985 06/04/2005   620316  500  GARA EPRD        17        0.30          5.10
+  92 LG=6717SCP001B PICK UP ASSY              PED       16985 06/04/2005   620316  500  GARA EPRD         1       13.62         13.62
+  93 LG=OCE2286J650 CAPACITOR FIXED           PED       16986 06/04/2005   620326  500  GARA EPRD         1        1.65          1.65
+  94 LG=OIPMGSA009A LA 4631                   PED       16986 06/04/2005   620326  500  GARA EPRD         1        1.96          1.96
+  95 LG=4681RBA001B MOTOR ASSEMBLY            PED       16987 06/04/2005   620338  500  GARA EPRD         1        2.79          2.79
+  96 LG=4400SB0001A BELT                      PED       16987 06/04/2005   620338  500  GARA EPRD         1        0.34          0.34
+  97 LG=6768R-GP01B DECK MECHANISM            PED       16987 06/04/2005   620338  500  GARA EPRD         1        0.82          0.82
+  98 LG=6110E00009B VOLUME,ENCODER            PED       16987 06/04/2005   620338  500  GARA EPRD         1        1.96          1.96 CORP.ANDINA DE DISTRIB.                                                                                          P gina :         3
+         CESER                                REPORTE COMPRA, CONSUMO/DEVOLUCION DE REPUESTOS                     Fecha  :09/04/2005
+   CALLE CUZCO 1099                           ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                     Hora   :  19:02:58
+                                                 Peri¢do del : 01/04/2005 Al : 09/04/2005
+ ALMACEN : 0050  PIURA                                                                                               PLAN 0000000914
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT CODIGO         DESCRIPCION               TIPO NRO. DE     FECHA DE   NRO. DE  EMIS TIPO TIPO  CANTIDAD     PRECIO         TOTAL³
+³                                             DOC. DOCUMENTO   DOCUM.     DOC.REF.      ATEN MOV.                         US$       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EGRESO PRODUCCION             
+ ==============================
+  99 LG=6174V-6006H FLY BACK                  PED       16988 06/04/2005   620282  500  GARA EPRD         1       13.62         13.62
+ 100 LG=6717RCA001B PICK UP ASSY              PED       16989 06/04/2005   620289  500  GARA EPRD         1       12.46         12.46
+ 101 LG=6717RCA001B PICK UP ASSY              PED       16990 06/04/2005    62849  500  GARA EPRD         1       12.46         12.46
+ 102 LG=6717RCA001B PICK UP ASSY              PED       16991 06/04/2005    62832  500  GARA EPRD         1       12.46         12.46
+ 103 LG=J770-00009A THERMOSTATO               PED       16992 06/04/2005    62825  500  GARA EPRD         1        6.76          6.76
+ 104 4-242-197-01   BELT SQ1.8-117.7          PED       16993 06/04/2005   620133  050  FGAR EPRD         1        1.95          1.95
+ 105 1-417-303-11   OPTICAL KSS-213F          PED       16993 06/04/2005   620133  050  FGAR EPRD         1       33.36         33.36
+ 106 4-242-199-01   BELT SQ1.0-63.3           PED       16993 06/04/2005   620133  050  FGAR EPRD         1        2.05          2.05
+ 107 U-0003-640-U   CABLE FFC 16P             PED       16993 06/04/2005   620133  050  FGAR EPRD         1        1.57          1.57
+ 108 703130014      BELT # 9                  PED       16993 06/04/2005   620133  050  FGAR EPRD         1        0.71          0.71
+ 109 703130050      BELT # 9 1/2              PED       16993 06/04/2005   620133  050  FGAR EPRD         1        0.71          0.71
+ 110 703130003      BELT # 6 1/2              PED       16993 06/04/2005   620133  050  FGAR EPRD         1        0.17          0.17
+ 111 U-0000-157-U   OPTICAL KSM-213RDM        PED       16994 07/04/2005   620322  300  GARA EPRD         1       15.04         15.04
+ 112 8-820-020-11   OPTICAL KSS-213D/Z        PED       16995 07/04/2005   620321  100  GARA EPRD         1       23.10         23.10
+ 113 8-820-020-11   OPTICAL KSS-213D/Z        PED       16996 07/04/2005    62833  100  GARA EPRD         1       23.10         23.10
+ 114 LG=4680R-C012A MOTOR (MECH)              PED       16997 07/04/2005   620365  500  GARA EPRD         1        3.34          3.34
+ 115 LG=OIMMREB004A IC MEMORIES               PED       16998 07/04/2005    62847  500  GARA EPRD         1        9.60          9.60
+ 116 LG=6957R-018HL 29LV800TE-70PFTN          PED       16998 07/04/2005    62847  500  GARA EPRD         1        5.18          5.18
+ 117 LG=OISS240210A SS24040X21                PED       16998 07/04/2005    62847  500  GARA EPRD         1        0.98          0.98
+ 118 LG=OIPMGFA054A DM 0265RAN                PED       16999 07/04/2005    62845  500  GARA EPRD         1        1.96          1.96
+ 119 LG=4680R-C012A MOTOR (MECH)              PED       16999 07/04/2005    62845  500  GARA EPRD         1        3.34          3.34
+ 120 LG=6957R-018HL 29LV800TE-70PFTN          PED       16999 07/04/2005    62845  500  GARA EPRD         1        5.18          5.18
+ 121 LG=3041R-M016D PICK UP ASSY              PED       17000 07/04/2005    62844  500  GARA EPRD         1       35.33         35.33
+ 122 LG=6717RCA001B PICK UP ASSY              PED       17001 07/04/2005   620352  500  GARA EPRD         1       12.46         12.46
+ 123 LG=3041R-M016D PICK UP ASSY              PED       17002 07/04/2005   620283  500  GREC EPRD         1       35.33         35.33
+ 124 LG=6871R-7605D PWB (PCB) ASSEMBLY        PED       17003 07/04/2005    62844  500  GARA EPRD         1       14.84         14.84
+ 125 LG=OIPMGFA054A DM 0265RAN                PED       17004 07/04/2005    62854  500  GARA EPRD         1        1.96          1.96
+ 126 LG=OIPMGMA001A DM 0265R                  PED       17004 07/04/2005    62854  500  GARA EPRD         1        1.96          1.96
+ 127 LG=OIMCRHY070B IC MICRO CONTROLER        PED       17004 07/04/2005    62854  500  GARA EPRD         1        4.01          4.01
+ 128 LG=OISS240210A SS24040X21                PED       17005 07/04/2005    62846  500  GREC EPRD         1        0.98          0.98
+ 129 LG=6957R-018HL 29LV800TE-70PFTN          PED       17005 07/04/2005    62846  500  GREC EPRD         1        5.18          5.18
+ 130 LG=OIPMGFA054A DM 0265RAN                PED       17006 07/04/2005   620351  500  GARA EPRD         1        1.96          1.96
+ 131 LG=OFT1601B513 FUSE 1.25 250V            PED       17006 07/04/2005   620351  500  GARA EPRD         1        0.52          0.52
+ 132 LG=614-007A    RESISTOR 2.7 OHM 2W       PED       17006 07/04/2005   620351  500  GARA EPRD         1        0.30          0.30
+ 133 LG=4680R-C012A MOTOR (MECH)              PED       17007 08/04/2005   620366  500  GARA EPRD         1        3.34          3.34
+ 134 8-820-161-02   OPTICAL KSS-213R/C1       PED       17008 08/04/2005    62842  100  GARA EPRD         1       18.23         18.23
+ 135 LG=4400SB0001A BELT                      PED       17009 08/04/2005   620357  500  GARA EPRD         1        0.34          0.34
+ 136 LG=4400SB0001B BELT                      PED       17009 08/04/2005   620357  500  GARA EPRD         1        0.34          0.34
+ 137 LG=6716DPH006B PICK UP ASSY              PED       17010 08/04/2005   620371  500  GARA EPRD         1       16.14         16.14
+ 138 703130020      BELT # 4                  PED       17011 08/04/2005   620294  121  FGAR EPRD         3        0.70          2.10
+ 139 703130003      BELT # 6 1/2              PED       17011 08/04/2005   620294  121  FGAR EPRD         2        0.17          0.34
+ 140 703130045      BELT # 5                  PED       17011 08/04/2005   620294  121  FGAR EPRD         2        0.71          1.42
+ 141 703130047      BELT # 7                  PED       17011 08/04/2005   620294  121  FGAR EPRD         2        0.70          1.40
+ 142 4-242-197-01   BELT SQ1.8-117.7          PED       17012 08/04/2005    62817  2950 GARA EPRD         1        1.95          1.95
+ 143 703130050      BELT # 9 1/2              PED       17012 08/04/2005    62817  2950 GARA EPRD         1        0.71          0.71
+ 144 703130001      BELT # 5 1/2              PED       17012 08/04/2005    62817  2950 GARA EPRD         1        0.70          0.70
+ 145 6-701-104-01   AN 17820A                 PED       17013 08/04/2005   619996  121  FGAR EPRD         1        6.58          6.58
+ 146 46-5590        OPTICAL KSS-210A          PED       17014 08/04/2005   620180  321  FGAR EPRD         1       19.40         19.40
+ 147 SMG-1273-02    SA 1469PH                 PED       17015 08/04/2005   620254  221  GREC EPRD         1        5.00          5.00 CORP.ANDINA DE DISTRIB.                                                                                          P gina :         4
+         CESER                                REPORTE COMPRA, CONSUMO/DEVOLUCION DE REPUESTOS                     Fecha  :09/04/2005
+   CALLE CUZCO 1099                           ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                     Hora   :  19:02:58
+                                                 Peri¢do del : 01/04/2005 Al : 09/04/2005
+ ALMACEN : 0050  PIURA                                                                                               PLAN 0000000914
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT CODIGO         DESCRIPCION               TIPO NRO. DE     FECHA DE   NRO. DE  EMIS TIPO TIPO  CANTIDAD     PRECIO         TOTAL³
+³                                             DOC. DOCUMENTO   DOCUM.     DOC.REF.      ATEN MOV.                         US$       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EGRESO PRODUCCION             
+ ==============================
+ 148 702017009      KEY MEMBRANE              PED       17016 08/04/2005   620107  050  FGAR EPRD         1       10.59         10.59
+ 149 SMG-1150-02    RESIST/SWITCH VAR.        PED       17017 08/04/2005    62765  253  GARA EPRD         1        3.00          3.00
+ 150 701030147      24C16                     PED       17018 08/04/2005   620188  221  GARA EPRD         1        1.83          1.83
+ 151 701030081      KA 78R05                  PED       17019 08/04/2005   620302  521  FGAR EPRD         1        4.52          4.52
+ 152 701030202      ICE2B0565.8PIN            PED       17019 08/04/2005   620302  521  FGAR EPRD         1        2.55          2.55
+ 153 LG=4680R-C012A MOTOR (MECH)              PED       17020 08/04/2005   620377  500  GARA EPRD         1        3.34          3.34
+ 154 SB14831226000  GAVETA DE CARNE           PED       17021 08/04/2005    62724  400  GARA EPRD         1        6.78          6.78
+ 155 LG=OCE4756P618 CAPACITOR, FIXED          PED       17022 08/04/2005   620356  500  GREC EPRD         1        0.30          0.30
+ 156 LG=ORS1000J634 RESISTOR, FIXED METAL     PED       17022 08/04/2005   620356  500  GREC EPRD         1        0.30          0.30
+ 157 LG=OTF630000DA IRF 630A                  PED       17022 08/04/2005   620356  500  GREC EPRD         1        1.17          1.17
+ 158 LG=OTRFC10008A 2SJ 5804                  PED       17022 08/04/2005   620356  500  GREC EPRD         1        3.06          3.06
+ 159 ME2B5065P010   CUBIERTA SUP. EMP24PB     PED       17023 08/04/2005    62806  400  GARA EPRD         1        3.37          3.37
+ 160 LG=6871R-5001B PWB (PCB), ASSY           PED       17024 08/04/2005    62848  500  GARA EPRD         1      111.42        111.42
+ 161 LG=6717RCA001B PICK UP ASSY              PED       17025 08/04/2005   620374  500  GARA EPRD         1       12.46         12.46
+ 162 314B9361P002   FOCO 40W 220V             PED       17026 09/04/2005    62860  400  GARA EPRD         1        0.84          0.84
+ 163 8-598-593-70   TUNER BTF-WA421           PED       17027 09/04/2005   620379  221  GARA EPRD         1       23.34         23.34
+ 164 1-763-818-21   MOTOR DC 8C-027G          PED       17028 09/04/2005   620311  100  GARA EPRD         1        9.19          9.19
+ 165 LG=OIPMGFA054A DM 0265RAN                PED       17029 09/04/2005    62877  500  GARA EPRD         1        1.96          1.96
+ 166 LG=4680R-C012A MOTOR (MECH)              PED       17029 09/04/2005    62877  500  GARA EPRD         1        3.34          3.34
+ 167 LG=6717RCA001B PICK UP ASSY              PED       17030 09/04/2005    62872  500  GARA EPRD         1       12.46         12.46
+ 168 LG=6768S-BP04D DECK MECHANISM PARTS      PED       17031 09/04/2005    62873  500  GARA EPRD         2        0.52          1.04
+ 169 LG=6768S-BP04D DECK MECHANISM PARTS      PED       17032 09/04/2005    62870  500  GARA EPRD         2        0.52          1.04
+ 170 LG=4400SB0001A BELT                      PED       17032 09/04/2005    62870  500  GARA EPRD         1        0.34          0.34
+ 171 LG=4400SB0001B BELT                      PED       17032 09/04/2005    62870  500  GARA EPRD         1        0.34          0.34
+ 172 LG=6768S-BP04D DECK MECHANISM PARTS      PED       17033 09/04/2005    62869  500  GARA EPRD         2        0.52          1.04
+ 173 LG=6716DPH006B PICK UP ASSY              PED       17034 09/04/2005    62875  500  GARA EPRD         1       16.14         16.14
+ 174 705420002      CUCHILLA PICA HIELO       BOLE 0078009417 01/04/2005                     EVTA         1        4.64          4.64
+ 175 8-752-905-80   CXP 82040-109Q            BOLE 0078009432 04/04/2005 007800939           EVTA         1       31.63         31.63
+ 176 705120009      ANTENA DUAL               BOLE 0078009433 04/04/2005                     EVTA         1        1.76          1.76
+ 177 705150028      PILA SONY 1.5V "AA"       BOLE 0078009433 04/04/2005                     EVTA         4        0.12          0.48
+ 178 705420002      CUCHILLA PICA HIELO       BOLE 0078009446 06/04/2005                     EVTA         1        4.64          4.64
+ 179 705420002      CUCHILLA PICA HIELO       BOLE 0078009448 07/04/2005                     EVTA         1        4.64          4.64
+ 180 705420002      CUCHILLA PICA HIELO       BOLE 0078009453 08/04/2005                     EVTA         1        4.64          4.64
+ 181 2W50382F       MANGUERA DE DESAGUE(DRAIN BOLE 0078009459 09/04/2005                     EVTA         1        9.43          9.43
+ 182 1-766-374-11   PLUG F-PIN                BOLE 0078009461 09/04/2005 007800934           EVTA         1        4.93          4.93
+ 183 2W50382F       MANGUERA DE DESAGUE(DRAIN BOLE 0078009464 09/04/2005                     EVTA         1        9.43          9.43
+ ------------------------------------------------------------------------------------------------------------------------------------
+                                                               TOTAL SALIDAS =====>                     252    1,303.64      1,336.81
+ ------------------------------------------------------------------------------------------------------------------------------------
+ CORP.ANDINA DE DISTRIB.                                                                                          P gina :         1
+         CESER                                REPORTE COMPRA, CONSUMO/DEVOLUCION DE REPUESTOS                     Fecha  :09/04/2005
+   CALLE CUZCO 1099                           ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                     Hora   :  19:02:58
+                                                 Peri¢do del : 01/04/2005 Al : 09/04/2005
+ ALMACEN : 0050  PIURA                                                                                               PLAN 0000000915
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT CODIGO         DESCRIPCION               TIPO NRO. DE     FECHA DE   NRO. DE  EMIS TIPO TIPO  CANTIDAD     PRECIO         TOTAL³
+³                                             DOC. DOCUMENTO   DOCUM.     DOC.REF.      ATEN MOV.                         US$       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ INGRESO FISICO DEVOLUCION     
+ ==============================
+   1 LG=4681RBA001B MOTOR ASSEMBLY            PED       16730 06/04/2005                     IFD          1        2.79          2.79
+   2 701030147      24C16                     PED       16891 02/04/2005                     IFD          1        1.83          1.83
+   3 LG=6717RCA001B PICK UP ASSY              PED       16989 08/04/2005                     IFD          1       12.46         12.46
+   4 LG=3041R-M016D PICK UP ASSY              PED       17000 07/04/2005                     IFD          1       35.33         35.33
+ ------------------------------------------------------------------------------------------------------------------------------------
+                                                               TOTAL DEVOLUCIONES =====>                  4       52.41         52.41
+ ------------------------------------------------------------------------------------------------------------------------------------
+ CORP.ANDINA DE DISTRIB.                                                                                          P gina :         1
+         CESER                                REPORTE COMPRA, CONSUMO/DEVOLUCION DE REPUESTOS                     Fecha  :09/04/2005
+   CALLE CUZCO 1099                           ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                     Hora   :  19:02:59
+                                                 Peri¢do del : 01/04/2005 Al : 09/04/2005
+ ALMACEN : 0050  PIURA                                                                                               RCLR 0000000464
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT CODIGO         DESCRIPCION               TIPO NRO. DE     FECHA DE   NRO. DE  EMIS TIPO TIPO  CANTIDAD     PRECIO         TOTAL³
+³                                             DOC. DOCUMENTO   DOCUM.     DOC.REF.      ATEN MOV.                         US$       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ INGRESO FISICO DE COMPRA LOCAL
+ ==============================
+   1 705380008      KIT ADAPTADOR BATERIA     FACT 00001-7934 05/04/2005                     IFL          1        2.14          2.14
+   2 ME2B5065P010   CUBIERTA SUP. EMP24PB     FACT 00005-7382 08/04/2005                     IFL          1        2.46          2.46
+   3 SB14831226000  GAVETA DE CARNE           FACT 00005-7389 08/04/2005                     IFL          1        4.95          4.95
+   4 LG=OILNRAC003A M 3355A-01-0425           FACT 00021-8015 01/04/2005                     IFL          1       20.99         20.99
+   5 LG=OILNRIJ001A IP 4504                   FACT 00021-8015 01/04/2005                     IFL          1        2.37          2.37
+   6 LG=OIMCRHY070B IC MICRO CONTROLER        FACT 00021-8015 01/04/2005                     IFL          5        4.01         20.05
+   7 LG=OIMCRMI051C IC MICRO CONTROLLER       FACT 00021-8015 01/04/2005                     IFL          1        6.18          6.18
+   8 LG=OIMMREB004A IC MEMORIES               FACT 00021-8015 01/04/2005                     IFL          1        9.60          9.60
+   9 LG=OIPMGFA054A DM 0265RAN                FACT 00021-8015 01/04/2005                     IFL         10        1.96         19.60
+  10 LG=OIPMGMA001A DM 0265R                  FACT 00021-8015 01/04/2005                     IFL          1        1.96          1.96
+  11 LG=OIPRPSA010A LA 78040                  FACT 00021-8015 01/04/2005                     IFL          1        2.79          2.79
+  12 LG=OISS240210A SS24040X21                FACT 00021-8015 01/04/2005                     IFL          1        0.98          0.98
+  13 LG=156-A08A    CRYSTAL 32.768 MHZ        FACT 00021-8015 01/04/2005                     IFL          1        0.75          0.75
+  14 LG=4680R-C012A MOTOR (MECH)              FACT 00021-8015 01/04/2005                     IFL         10        3.34         33.40
+  15 LG=6717RCA001B PICK UP ASSY              FACT 00021-8015 01/04/2005                     IFL          3       12.46         37.38
+  16 LG=6850R-JW14B CABLE FLAT                FACT 00021-8015 01/04/2005                     IFL          1        0.82          0.82
+  17 LG=6957R-018HL 29LV800TE-70PFTN          FACT 00021-8015 01/04/2005                     IFL          1        5.18          5.18
+  18 LG=OISK665413C STR F6654                 FACT 00021-8036 01/04/2005 O/R 62029           IFL          1       10.47         10.47
+  19 LG=OTR249900AA KTD 2499                  FACT 00021-8036 01/04/2005 O/R 62028           IFL          1        2.76          2.76
+  20 LG=OTRSA00001A 2SD 2627                  FACT 00021-8036 01/04/2005 O/R 62029           IFL          1        1.52          1.52
+  21 LG=556-219B    SWITCH TACT               FACT 00021-8036 01/04/2005 O/R 62028           IFL         20        0.30          6.00
+  22 LG=6174V-6006E FLY BACK                  FACT 00021-8036 01/04/2005 O/R 62028           IFL          1       13.62         13.62
+  23 LG=6174V-6006H FLY BACK                  FACT 00021-8036 01/04/2005 O/R 62029           IFL          1       13.62         13.62
+  24 LG=OIMCRHY070B IC MICRO CONTROLER        FACT 00021-8054 05/04/2005                     IFL          1        4.01          4.01
+  25 LG=OIMCRMN013A MSP 3425G                 FACT 00021-8054 05/04/2005                     IFL          1        8.02          8.02
+  26 LG=OIPMGFA054A DM 0265RAN                FACT 00021-8054 05/04/2005                     IFL         10        1.96         19.60
+  27 LG=OISG729700A TDA 7497 / BCW            FACT 00021-8054 05/04/2005                     IFL          1        4.77          4.77
+  28 LG=OTRSA00001A 2SD 2627                  FACT 00021-8054 05/04/2005                     IFL          1        1.52          1.52
+  29 LG=2B71732E    MAGNETRON                 FACT 00021-8054 05/04/2005                     IFL          1       16.14         16.14
+  30 LG=3B70856G    FUSE DRAWING 10  250V     FACT 00021-8054 05/04/2005                     IFL          1        0.39          0.39
+  31 LG=4680R-C012A MOTOR (MECH)              FACT 00021-8054 05/04/2005                     IFL         10        3.34         33.40
+  32 LG=6021W3B001M HV DIODE                  FACT 00021-8054 05/04/2005                     IFL          1        1.96          1.96
+  33 LG=6174V-6002G FLY BACK                  FACT 00021-8054 05/04/2005                     IFL          1       10.47         10.47
+  34 LG=6871EC1066J PWB (PWC) ASSEMBLY MAIN   FACT 00021-8054 05/04/2005                     IFL          1       38.40         38.40
+  35 LG=OICTMTO001C TMP 8823CPNG5AJ4          FACT 00021-8059 05/04/2005                     IFL          1       10.47         10.47
+  36 LG=OIMCRAL011A 24C04, ATM1314            FACT 00021-8059 05/04/2005                     IFL          1        0.75          0.75
+  37 LG=OCE2286J650 CAPACITOR FIXED           FACT 00021-8079 06/04/2005 O/R 62032           IFL          1        1.65          1.65
+  38 LG=OIPMGSA009A LA 4631                   FACT 00021-8079 06/04/2005 O/R 62032           IFL          1        1.96          1.96
+  39 LG=OTRSA00001A 2SD 2627                  FACT 00021-8079 06/04/2005 O/R 62029           IFL          1        1.52          1.52
+  40 LG=556-219B    SWITCH TACT               FACT 00021-8079 06/04/2005 O/R 62031           IFL          2        0.30          0.60
+  41 LG=6717SCP001B PICK UP ASSY              FACT 00021-8079 06/04/2005 O/R 62031           IFL          1       13.62         13.62
+  42 LG=4681RBA001B MOTOR ASSEMBLY            FACT 00021-8098 06/04/2005 STOCK               IFL          4        2.79         11.16
+  43 LG=6110E00009B VOLUME,ENCODER            FACT 00021-8098 06/04/2005 O/R 62033           IFL          1        1.96          1.96
+  44 LG=6174V-6006H FLY BACK                  FACT 00021-8098 06/04/2005 O/R 62028           IFL          1       13.62         13.62
+  45 LG=6768R-GP01B DECK MECHANISM            FACT 00021-8098 06/04/2005 O/R 62033           IFL          1        0.82          0.82
+  46 LG=6717RCA001B PICK UP ASSY              FACT 00021-8098 06/04/2005 STOCK               IFL          4       12.46         49.84
+  47 LG=6768S-BP04D DECK MECHANISM PARTS      FACT 00021-8098 06/04/2005 STOCK               IFL         10        0.52          5.20
+  48 LG=J770-00009A THERMOSTATO               FACT 00021-8098 06/04/2005 O/R 62875           IFL          1        6.76          6.76
+  49 LG=OIPMGMA001A DM 0265R                  FACT 00021-8120 07/04/2005 62854/STO           IFL          2        1.96          3.92 CORP.ANDINA DE DISTRIB.                                                                                          P gina :         2
+         CESER                                REPORTE COMPRA, CONSUMO/DEVOLUCION DE REPUESTOS                     Fecha  :09/04/2005
+   CALLE CUZCO 1099                           ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                     Hora   :  19:02:59
+                                                 Peri¢do del : 01/04/2005 Al : 09/04/2005
+ ALMACEN : 0050  PIURA                                                                                               RCLR 0000000464
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT CODIGO         DESCRIPCION               TIPO NRO. DE     FECHA DE   NRO. DE  EMIS TIPO TIPO  CANTIDAD     PRECIO         TOTAL³
+³                                             DOC. DOCUMENTO   DOCUM.     DOC.REF.      ATEN MOV.                         US$       ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ INGRESO FISICO DE COMPRA LOCAL
+ ==============================
+  50 LG=OISS240210A SS24040X21                FACT 00021-8120 07/04/2005                     IFL          2        0.98          1.96
+  51 LG=3041R-M016D PICK UP ASSY              FACT 00021-8120 07/04/2005 O/R 62028           IFL          1       35.33         35.33
+  52 LG=6717RCA001B PICK UP ASSY              FACT 00021-8120 07/04/2005 STOCK               IFL          6       12.46         74.76
+  53 LG=6871R-7605D PWB (PCB) ASSEMBLY        FACT 00021-8120 07/04/2005 O/R 62844           IFL          1       14.84         14.84
+  54 LG=6957R-018HL 29LV800TE-70PFTN          FACT 00021-8120 07/04/2005 62845/6/7           IFL          3        5.18         15.54
+  55 LG=OFT1601B513 FUSE 1.25 250V            FACT 00021-8120 07/04/2005                     IFL          1        0.52          0.52
+  56 LG=OIPMGFA054A DM 0265RAN                FACT 00021-8120 07/04/2005 STOCK               IFL         10        1.96         19.60
+  57 LG=4680R-C012A MOTOR (MECH)              FACT 00021-8120 07/04/2005 STOCK               IFL         10        3.34         33.40
+  58 LG=614-007A    RESISTOR 2.7 OHM 2W       FACT 00021-8120 07/04/2005                     IFL          1        0.30          0.30
+  59 LG=OIMMREB004A IC MEMORIES               FACT 00021-8120 07/04/2005 O/R 62874           IFL          1        9.60          9.60
+  60 LG=OCE4756P618 CAPACITOR, FIXED          FACT 00021-8145 08/04/2005 O/R 62035           IFL          1        0.30          0.30
+  61 LG=ORS1000J634 RESISTOR, FIXED METAL     FACT 00021-8145 08/04/2005 O/R 62035           IFL          1        0.30          0.30
+  62 LG=OTF630000DA IRF 630A                  FACT 00021-8145 08/04/2005 O/R 62035           IFL          1        1.17          1.17
+  63 LG=OTRFC10008A 2SJ 5804                  FACT 00021-8145 08/04/2005 O/R 62035           IFL          1        3.06          3.06
+  64 LG=6717RCA001B PICK UP ASSY              FACT 00021-8145 08/04/2005 STOCK               IFL          1       12.46         12.46
+  65 LG=6871R-5001B PWB (PCB), ASSY           FACT 00021-8145 08/04/2005 O/R 62848           IFL          1      111.42        111.42
+  66 8-598-593-70   TUNER BTF-WA421           FACT 0013-17127 09/04/2005                     IFL          1       23.34         23.34
+  67 1-692-431-21   SWITCH TACTILE            FACT 0013-17862 06/04/2005 O/R 62018           IFL          5        0.70          3.50
+  68 1-478-416-11   KEY BLOCK CONTROL         FACT 0013-17872 06/04/2005 O/R 62026           IFL          1       46.59         46.59
+  69 1-771-349-21   SWITCH TACTIL             FACT 0013-17872 06/04/2005 O/R 62784           IFL         14        0.72         10.08
+  70 8-820-020-11   OPTICAL KSS-213D/Z        FACT 0013-17882 06/04/2005 O/R 62030           IFL          1       23.10         23.10
+  71 8-820-020-11   OPTICAL KSS-213D/Z        FACT 0013-17882 06/04/2005 O/R 62030           IFL          1       23.10         23.10
+  72 A-1062-882-A   MOUNTED C. BOARD MAIN     FACT 0013-17891 06/04/2005 O/R 62024           IFL          1       70.01         70.01
+  73 8-820-020-11   OPTICAL KSS-213D/Z        FACT 0013-18011 07/04/2005 O/R 62833           IFL          1       23.10         23.10
+  74 U-0000-157-U   OPTICAL KSM-213RDM        FACT 0013-18013 07/04/2005 O/R 62032           IFL          1       15.04         15.04
+  75 8-820-020-11   OPTICAL KSS-213D/Z        FACT 0013-18014 07/04/2005 O/R 62032           IFL          1       23.10         23.10
+  76 8-820-161-02   OPTICAL KSS-213R/C1       FACT 0013-18052 08/04/2005                     IFL          1       18.23         18.23
+  77 1-763-818-21   MOTOR DC 8C-027G          FACT 0013-18110 09/04/2005                     IFL          1        9.19          9.19
+ ------------------------------------------------------------------------------------------------------------------------------------
+                                                               TOTAL COMPRA LOCAL =====>                198      776.81      1,105.06
+ ------------------------------------------------------------------------------------------------------------------------------------
+
+ ====================================================================================================================================
+     264                                                       TOTAL GENERAL ====>                      454     2,132.86     2,494.28
+ ====================================================================================================================================
+

@@ -1,0 +1,17 @@
+CLEAR
+USE HojCon   IN 1   order tag HojCon1  ALIAS Hoja
+USE Itehc    IN 2   order tag Itehc1   ALIAS Itehc
+SELE HOJA
+GO TOP
+SCAN
+       SELECT ITEHC
+       SEEK ALLTRIM(HOJA.NumMes) + HOJA.NumHc
+       SCAN WHILE NumMes = ALLTRIM(HOJA.NumMes) and NumHc = HOJA.NumHc AND TIPFUN = 'I' AND EMPTY(CODPART)
+              ?ITEHC.NUMMES,ITEHC.NUMHC,ITEHC.CODPART
+			  REPLACE CodPART  with HOJA.codPART
+
+       ENDSCAN
+   	   GO TOP
+ENDSCAN
+
+RETURN

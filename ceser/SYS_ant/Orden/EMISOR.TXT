@@ -1,0 +1,85 @@
+ CORP.ANDINA DE DISTRIB.                                                                                                P═gina :          1
+         CESER                                    INGRESO DE ARTICULOS POR EMISOR                                       Fecha  :   21/12/20
+   CALLE CUZCO 1099                               ммммммммммммммммммммммммммммммм                                       Hora   :   15:14:19
+                                                DESDE: 01/12/2002  HASTA:21/12/2002
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ   S/SERV.   FECHA/S   MODELO          SERIE                CLIENTE                        MARCA        GTIA FECHA    DOCUMENTO       Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+ 100  SONY SUCURSAL PERU            
+     1    613867 04/12/2002 LBT-XB4         4136688              CRUZ EDITA                     SONY         FGAR
+     1    613887 06/12/2002 LBT-XG80        9156376              ZAPATA PINGO JOSE              SONY         FGAR
+     1    613905 09/12/2002 KV-21R22C       8021473              CHANDUVI JANET                 SONY         FGAR
+     1    613933 12/12/2002 MHC-DX30        9064448              ROSALES SIGUENZA CRONWUEL      SONY         FGAR
+                                                                                         TOTAL FGAR ===>       4
+                                                                                                          ддддддд
+     1    613841 02/12/2002 MHC-DX70        9161754              CUICAPUZA GUTIERREZ ROMULO     SONY         GARA
+     2     57702 02/12/2002 MHC-DX70        9163747              LADINES QUINTANA GERARDO       SONY         GARA
+     3    613843 02/12/2002 KV-21FS100      C418158              ORDINOLA RUEDA JOSELITO        SONY         GARA
+     4     57705 02/12/2002 MHC-DX50        9075262              ZAPATA AGURTO JOSE             SONY         GARA
+     5     57706 02/12/2002 LBT-XGR80       9150221              PACHERREZ ANASTACIO LUIS       SONY         GARA
+     1     57717 04/12/2002 MHC-RG66        9502370              CRUZ PAZ LUCIA                 SONY         GARA
+     1     57720 05/12/2002 MHC-DX30        9073031              URRUNAGA SANDOVAL PEDRO        SONY         GARA
+     2     57727 05/12/2002 MHC-RG55        9056883              CEVALLOS RIVERA PEDRO          SONY         GARA
+     3    613870 05/12/2002 MHC-DX70        9161744              JUAREZ NAMUCHE WILMER          SONY         GARA
+     4    613871 05/12/2002 MHC-RG88        9501551              GOICOCHEA CAPILLIQUEN EDGAR    SONY         GARA
+     5    613879 05/12/2002 MHC-RG55        9051064              PORRAS SAAVEDRA BALTAZAR       SONY         GARA
+     6    613880 05/12/2002 MHC-DX50        9076042              NU╔EZ SANTIAGO ANGEL           SONY         GARA
+     7    613883 05/12/2002 LBT-XG80        9156192              CRUZ CHICOMA DUBERTY           SONY         GARA
+     1     57737 06/12/2002 SLV-LX55        0200855              ALFONSO OYOLA Y/O MARIA DEL    SONY         GARA
+     2     57738 06/12/2002 MHC-RG88        9500427              LLENQUE FIESTAS TOMAS          SONY         GARA
+     3     57739 06/12/2002 MHC-DX70        9156742              TALLEDO SALAZAR CARLOS         SONY         GARA
+     1    613890 07/12/2002 MHC-DX70        9163984              ESTRADA PACHERREZ YSABEL       SONY         GARA
+     2    613893 07/12/2002 MHC-DX30        9069725              LOPEZ CORNEJO DAVID            SONY         GARA
+     1    613901 09/12/2002 MHC-RG33        9157427              GARAY TALLEDO LUCIO            SONY         GARA
+     1    613909 10/12/2002 LBT-XG80        9157789              HUAMAN CASTILLO EUDOCIO        SONY         GARA
+     2    613910 10/12/2002 MHC-DX70        9162607              FLORES TEJADA JOSE             SONY         GARA
+     3    613911 10/12/2002 MHC-DX50        4603650              SANDOVAL VILELA LUIS           SONY         GARA
+     4    613914 10/12/2002 LBT-XG80        9156646              ZAPATA RAMOS FELIX             SONY         GARA
+     5    613917 10/12/2002 MHC-DX30        9075943              ESPINOZA SALAZAR LILIA         SONY         GARA
+     1     57764 11/12/2002 MHC-RG55        9055686              SAAVEDRA CORNEJO NIKOLAIV      SONY         GARA
+     2    613920 11/12/2002 MHC-DX50        9074112              VALLADOLID PAIVA MANUEL        SONY         GARA
+     3     57767 11/12/2002 KV-21FS100      C422463              LOPEZ ALVIA ROSA               SONY         GARA
+     4     57768 11/12/2002 MHC-RG66        9504647               STOCK TDA CURACAO             SONY         GARA
+     5    613922 11/12/2002 MHC-DX50        9070872              BALAREZO REA REYNALDA          SONY         GARA
+     6    613925 11/12/2002 SLV-LX77        0232102              ANCAJIMA MORANTE LUIS(LA       SONY         GARA
+     1    613929 12/12/2002 MHC-DX30        4401640              PE╔A RUIZ SEGUNDO              SONY         GARA
+     2    613931 12/12/2002 MHC-DX50        9073857              BENITES RUIZ LUIS              SONY         GARA
+     3    613932 12/12/2002 MHC-RG22        9152321              ATARAMA CHIROQUE SIXTO         SONY         GARA
+     4    613935 12/12/2002 MHC-DX50        9073942              SILUPU RUGEL SOCORRO           SONY         GARA
+     1    613949 14/12/2002 KV-21FS100      C408121              ZAPATA GUTIERREZ LUIS          SONY         GARA
+     1    613955 16/12/2002 MHC-DX50        9076045              SOSA VIERA JENNY               SONY         GARA
+     2     57790 16/12/2002 MHC-DX80        9511125              VALENCIA SOSA MERCEDES         SONY         GARA
+     3     57791 16/12/2002 MHC-DX70        9163842              AGURTO MONTERO KARIN           SONY         GARA
+     1     57794 17/12/2002 MHC-DX50        9070517              ATOCHE ATOCHE DANITZA          SONY         GARA
+     2    613964 17/12/2002 MHC-DX70        9163574              FERIA ASUNCION MANUEL          SONY         GARA
+     3     57796 17/12/2002 MHC-DX50        9069715              GIRON DE SAENZ MARIA           SONY         GARA
+     4     57798 17/12/2002 MHC-DX70        9161533              CASTILLO MEDINA SILVIA         SONY         GARA
+     1     57802 18/12/2002 MHC-RG66T       9514649              SANCHEZ SAAVEDRA               SONY         GARA
+     2     57803 18/12/2002 LBT-XG80        9156129              MENDOZA ROQUE RICARDO          SONY         GARA
+     3     57804 18/12/2002 MHC-DX50        9074818              CASTILLO OJEDA ALEX            SONY         GARA
+     4    613971 18/12/2002 MHC-DX30        4402877              MATOS RAMIREZ MANUEL           SONY         GARA CORP.ANDINA DE DISTRIB.                                                                                                P═gina :          2
+         CESER                                    INGRESO DE ARTICULOS POR EMISOR                                       Fecha  :   21/12/20
+   CALLE CUZCO 1099                               ммммммммммммммммммммммммммммммм                                       Hora   :   15:14:20
+                                                DESDE: 01/12/2002  HASTA:21/12/2002
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ   S/SERV.   FECHA/S   MODELO          SERIE                CLIENTE                        MARCA        GTIA FECHA    DOCUMENTO       Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+     5    613972 18/12/2002 MHC-RG77        9504802              TIENDAS EFE S.A.               SONY         GARA
+     6    613973 18/12/2002 SLV-LX70        316276               CARRASCO CANALES ALEJANDRO     SONY         GARA
+     7     57812 18/12/2002 MHC-DX50        4602037              SULLON ALBINES GENARO          SONY         GARA
+     1    613986 20/12/2002 MHC-RG88        9501680              ZEGARRA CAMPOVERDE LILIA       SONY         GARA
+     2    613987 20/12/2002 CDX-L450X       3555514              ONTANEDA RUIZ DANTE            SONY         GARA
+     3    613988 20/12/2002 MHC-DX70        9154927              CHUNCHAY REYES MIRIAM          SONY         GARA
+                                                                                         TOTAL GARA ===>      52
+                                                                                                          ддддддд
+     1    613844 02/12/2002 MHC-DX70        9161779              FLORES IPANAQUE JOSE           SONY         GREC
+     1    613852 03/12/2002 MHC-RG77        9501754              MENDOZA CHIROQUE               SONY         GREC
+     1    613886 06/12/2002 MHC-DX50        9073844              ROMAN CARHUAPOMA JAVIER        SONY         GREC
+     1     57748 07/12/2002 MHC-DX30        4402582              VALDIVIEZO CRUZ JOSE           SONY         GREC
+     1    613937 12/12/2002 LBT-XGR80       9150026              COELLO GARCIA GUILLERMO        SONY         GREC
+     1    613951 14/12/2002 MHC-DX30        9064499              IMAN GIRON MRCOS               SONY         GREC
+                                                                                         TOTAL GREC ===>       6
+                                                                                                          ддддддд
+                                                                               TOTAL INGRESADOS 100 ===>       62
+                                                                                                          ммммммм
+

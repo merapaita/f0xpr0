@@ -1,0 +1,32 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   24/11/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   10:23:13
+                                                     DESDE:06/11/2015  HASTA:06/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ GARA EN GARANTIA                   
+
+   090                                
+
+      1     7258 06/11/2015     7258 NEIRA BOBADILLA SERGIO AB OTROS      LE29C800        DH1RC0D1800D     15180 001  06/11/2015
+      2     7269 06/11/2015     7269 SODIMAC                   SAMSUNG    MS32J5133AM/PE  0AE67WDG5017     15180 010  12/11/2015
+      3     7271 06/11/2015     7271 OJEDA ATOCHE FRANCISCA    SAMSUNG    MX-HS8500/PE    SN                2008 001  06/11/2015
+      4     7272 06/11/2015     7272 ORDINOLA MORE CESAR ANTON SAMSUNG    LS19D300NY/PE   ZZ8EH4LFB003     15180 010  10/11/2015
+      5    15041 06/11/2015    15041 GUZMAN CARDOZA LUZ        L.G        T1404OPE        406PNCY37899      2008 011  06/11/2015
+      6    15042 06/11/2015    15042 REQUENES ZAPATA MERCEDES  SONY       CDX-G1150U      1502911          27141 018  21/11/2015
+      7    15043 06/11/2015    15043 TIENDAS EFE S.A           SONY       KDL-32R304B     4031970          27141 018  21/11/2015
+      8    15045 06/11/2015    15045 MORALES SANDOVAL JEAN MAI SAMSUNG    UN32JH4005GXPE  ZZ9L34LG4040      2008 011  06/11/2015
+      9    15046 06/11/2015    15046 RAMOS FLORES CESAR        SAMSUNG    UN40H5500AGXPE  SN               15180 011  06/11/2015
+     10    15047 06/11/2015    15047 GRANADOS CARRANZA JOSE LU SAMSUNG    RSA1JHSL1/XPE   SN                2008 018  09/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>    10
+
+                                                                       TOTAL                               =>    10
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA                   =>    10
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>    10
+                                                                                                             ммммммм
+

@@ -1,0 +1,34 @@
+
+ CORP.TECNOLOGICA DE SERVI                                 PAGINA   :        1
+       CESER                                               FECHA    : 13/09/2006
+  CALLE CUZCO 1099                                         PROGRAMA : AGCR2011
+
+                              RELACION  DE  TABLAS
+
+     TABLA DE  ╞╞  ALMACENES                     
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                  FACTOR           Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      0001     ALMACEN SURQUILLO                                  0.00
+      0002     TIENDA SURQUILLO                                   0.00
+      0020     MIRAFLORES                                         0.00
+      0021     BRE╔A                                              0.00
+      0026     HUACHO                                             0.00
+      0030     TRUJILLO                                           0.00
+      0040     CHICLAYO                                           0.00
+      0050     PIURA                                              0.00
+      0051     SONY TRANSITO                                      0.00
+      0055     TUMBES                                             0.00
+      0060     AREQUIPA                                           0.00
+      0070     CUZCO                                              0.00
+      0080     CARSA                                              0.00
+      0090     ORDECOMSA                                          0.00
+      0100     PUCALLPA                                           0.00
+      0110     CARSA BRE╔A                                        0.00
+      0120     COLATINA                                           0.00
+      0130     HUANCAYO SERV.                                     0.00
+      0140     IQUITOS                                            0.00
+
+ 

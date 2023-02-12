@@ -1,0 +1,612 @@
+*-----------------------------------------
+* SerFun.Prg
+* Registra Servicios Funerarios de SSF
+* Autor: Analista Marco Rodriguez Abad
+*-----------------------------------------
+*- Abriendo Archivos
+CLOS DATA
+USE Servicio IN 1  ORDER TAG Servicio1 ALIAS Servicio
+USE MaeSoc   IN 2  ORDER TAG MaeSoc1   ALIAS MaeSoc
+USE IteSoc   IN 3  ORDER TAG IteSoc1   ALIAS IteSoc
+USE Parmae   IN 4  ORDER TAG Parmae1   ALIAS Parma
+USE KarSSF   IN 5  ORDER TAG KarSSF1   ALIAS KarSSF
+
+*-
+*- Mensajes de aviso al usuario
+vmens01 = 'Registro de Servicios Funerarios'
+vmens02 = ' Servicios : REVISION '
+vmens04 = 'Dicho Servicio no fue encontrado'
+vmens05 = 'No existe Servicio anterior'
+vmens06 = 'No existe Servicio siguiente'
+vmens07 = '¨ Desea Anular este Servicio ?'
+vmens08 = 'No hay registros para procesar'
+vmens09 = 'Este Servicio ha sido anulado'
+SELECT Servicio
+GO BOTT
+*- Variables de trabajo (registro a trabajar)
+*- Inicia proceso
+DO inicia                    && Define ventanas, men£s, t¡tulos
+HIDE POPUP ALL
+DO pantalla                  && Muestra pantalla inicial
+DO vista
+
+*- Activa men£ mientras vEn_accion es .T.
+STORE .T. TO ven_accion
+DO WHILE ven_accion
+	ACTIVATE SCREEN
+	ACTIVATE MENU mmenu
+ENDDO
+
+DO fin_opcion
+
+RETURN
+
+PROCEDURE inicia             && Crea ventanas, men£s y t¡tulos
+*---------------
+ACTIVATE SCREEN
+vtempo = ' Revisa  Busca  Anterior  Siguiente  Corrige  Ingresa  Elimina  Listar  Termina '
+DO logos WITH rotulo1,vtempo
+
+DEFINE WINDOW wind_0 FROM 00,00 TO 23,79  DOUBLE ;
+	TITLE vmens01 COLOR SCHEME 10
+
+DEFINE WINDOW wind_1 FROM 00,00 TO 23,79  DOUBLE ;
+	TITLE vmens02 COLOR SCHEME 10
+
+DEFINE MENU mmenu COLOR SCHEME 3
+DEFINE PAD revis   OF mmenu PROMPT '\<Revisa'     AT 24,00
+DEFINE PAD busca   OF mmenu PROMPT '\<Busca'      AT 24,08
+DEFINE PAD anter   OF mmenu PROMPT '\<Anterior'   AT 24,15
+DEFINE PAD proxi   OF mmenu PROMPT '\<Siguiente'  AT 24,25
+DEFINE PAD corri   OF mmenu PROMPT '\<Corrige'    AT 24,36
+DEFINE PAD ingre   OF mmenu PROMPT '\<Ingresa'    AT 24,45
+DEFINE PAD elimi   OF mmenu PROMPT '\<Eliminar'   AT 24,54
+DEFINE PAD lista   OF mmenu PROMPT '\<Listar '    AT 24,63
+DEFINE PAD termi   OF mmenu PROMPT '\<Termina'    AT 24,71
+ON SELECTION PAD revis  OF mmenu DO revis
+ON SELECTION PAD busca  OF mmenu DO busca
+ON SELECTION PAD anter  OF mmenu DO anter
+ON SELECTION PAD proxi  OF mmenu DO proxi
+ON SELECTION PAD corri  OF mmenu DO corri
+ON SELECTION PAD ingre  OF mmenu DO ingre
+ON SELECTION PAD elimi  OF mmenu DO elimi
+ON SELECTION PAD lista  OF mmenu DO lista
+ON SELECTION PAD termi  OF mmenu DO termi
+RETURN
+
+PROCEDURE pantalla           && Pinta m scara de datos
+*-----------------
+ACTIVATE WINDOW wind_1
+CLEAR
+
+ @  0, 2 SAY "      Servicio :"
+ @  2, 2 SAY "      Contrato :"
+ @  4, 2 SAY "         Fecha :"
+ @  6, 2 SAY "   N§ Afiliado :"
+ @  8, 2 SAY "     Apellidos :"
+ @ 10, 2 SAY "        Nombre :"
+ @ 12, 2 SAY "          Edad :"
+ @ 14, 2 SAY "    Parentesco :"
+ @ 16, 2 SAY "Monto Servicio :"
+
+RETURN
+
+PROCEDURE vista              && Coloca valores de BD en variables y pinta datos
+*--------------
+SELECT Servicio
+ACTIVATE WINDOW wind_0
+
+DO pantalla
+
+IF EOF()
+	RETURN
+ENDIF
+
+SCATTER MEMVAR
+@  0,22 SAY m.NumSer
+@  2,22 SAY m.CodCon
+@  4,22 SAY m.FecSer
+@  6,22 SAY m.NumAfi
+@  8,22 SAY m.ApeAfi
+@ 10,22 SAY m.NomAfi
+@ 12,22 SAY m.EdadAfi
+@ 14,22 SAY m.Parent
+@ 14,25 SAY Val_para(m.parent,'PARENT',' ',22)
+@ 16,22 SAY m.MtoSer
+
+RETURN
+
+PROCEDURE revis              && Revisi¢n de BD en browse
+*--------------
+SELE Servicio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+vtemp = RECNO()
+HIDE MENU mmenu
+ACTIVATE SCREEN
+vtempo = '°°°°°°°°°°°Presione ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+DO logos WITH rotulo1,vtempo
+vtemp = RECNO()
+HIDE MENU mmenu
+ACTIVATE SCREEN
+ON KEY LABEL f10 KEYBOARD CHR(23)
+BROWSE WINDOW wind_0 NOEDIT NOAPPEND NODELETE NOMENU FIELDS ;
+	CodCon    :H='Contrato',;
+	NumAfi    :H='N§ Afi.',;
+	ApeAfi    :H='Apellidos',;	
+	NomAfi    :H='Nombre',;	
+	MtoSer    :H='Hasta'
+
+vtempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+DO logos WITH rotulo1,vtempo
+IF LASTKEY()=27
+	GOTO vtemp
+ENDIF
+SHOW MENU mmenu
+ON KEY LABEL f10
+SELE Servicio
+DO vista
+RETURN
+
+PROCEDURE busca              && Realiza b£squeda directa
+*--------------
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+
+vtemp = RECNO()
+DEFINE POPUP pLista FROM 20,40 COLOR SCHEME c_popup
+
+DEFINE BAR 1  OF pLista PROMPT '\<a. Por Servicio  '
+DEFINE BAR 2  OF pLista PROMPT '\<b. Por Contrato  '
+
+ON SELECTION POPUP pLista  DEACTIVATE POPUP
+ACTIVATE POPUP pLista
+
+cOrd1 = ORDER()
+
+DO CASE
+	CASE BAR() =  1
+		vBusca = SPACE(4)
+		vNombre = "Servicio :"
+		SET ORDER TO TAG Servicio1
+	CASE BAR() =  2
+		vBusca = SPACE(6)
+		vNombre = "Contrato :"
+		SET ORDER TO TAG Servicio2
+ENDCASE
+
+DEFINE WINDOW lisTA FROM 09,12 TO 13,68 DOUBLE ;
+	TITLE ' °° B£squeda °° ' FLOAT COLOR SCHEME 5
+
+ACTIVATE WINDOW lisTA
+
+@  2,2 SAY vNombre GET vBusca
+
+READ VALID val_read()
+
+DEACTIVATE WINDOW lisTA
+
+IF EMPTY(vBusca) .OR. LASTKEY()=27
+	RETURN
+ELSE
+	SEEK ALLTRIM(vBusca)
+	IF !FOUND()
+		DO standby WITH vmens04
+		GOTO vtemp
+	ENDIF
+ENDIF
+DO vista
+SET ORDER TO &cOrd1
+RETURN
+
+PROCEDURE anter
+*--------------
+SELE Servicio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+IF !BOF()
+	SKIP -1
+ENDIF
+IF BOF()
+	GO TOP
+	DO standby WITH vmens05
+ELSE
+	DO vista
+ENDIF
+RETURN
+
+PROCEDURE proxi
+*--------------
+SELE Servicio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+IF !EOF()
+	SKIP
+ENDIF
+IF EOF()
+	DO standby WITH vmens06
+	GO BOTTOM
+ELSE
+	DO vista
+ENDIF
+RETURN
+
+PROCEDURE corri
+*--------------
+SELECT Servicio
+SCATTER MEMVAR
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+IF m.estado = '99'
+	* Anulada
+	DO standby WITH vmens09
+	RETURN
+ENDIF
+DO pantalla
+
+@  0,22 SAY m.NumSer
+@  2,22 SAY m.CodCon
+@  4,22 GET m.FecSer  PICTURE "@!" 
+@  6,22 GET m.NumAfi  PICTURE "@!" 	WHEN .F.
+@  8,22 GET m.ApeAfi  PICTURE "@!"
+@ 10,22 GET m.NomAfi  PICTURE "@!"
+@ 12,22 GET m.edadAfi
+@ 14,22 GET m.Parent	WHEN .F.
+@ 14,25 SAY Val_para(m.parent,'PARENT',' ',22)
+@ 16,22 GET m.MtoSer  PICTURE "99,999.99" VALID m.MtoSer > 0
+
+READ VALID val_read()
+
+IF LASTKEY() # 27
+	ak = ActKar('S',m.NumSer,m.FecSer)
+	GATHER MEMVAR
+ ELSE
+	DO standby WITH 'Proceso cancelado'
+ENDIF
+
+UNLOCK ALL
+SELECT Servicio
+DO vista
+RETURN
+
+PROCEDURE ingre              && Crea nuevo registro en BD
+*--------------
+SELECT Servicio
+op=ORDER()
+vtemp = IIF(!EOF(),RECNO(),-1)
+DO pantalla
+SCATTER MEMVAR BLANK
+
+SELE Parma
+SEEK 'CORRELSERFUN'
+IF FOUND()
+	m.NumSer = PADL(ALLTRIM(STR(NumEnt+1)),4,'0')
+	IF SEEK(m.NumSer,'Servicio')
+		DO StandBy WITH "El Correlativo Generado ya Existe."
+		SELE Servicio
+		*GO nReg
+		DO Vista
+		RETURN
+	ENDIF
+ ELSE
+	DO StandBy WITH "El Parametro de Correlativos no existe. por favor consulte al area de Sistemas"
+	DO Vista
+	RETURN
+ENDIF
+
+SELE Servicio
+m.FecSer = DATE()
+
+@  0,22 GET m.NumSer  WHEN .F.
+@  2,22 GET m.CodCon  VALID Val_Con(m.CodCon) AND ValEst()
+@  4,22 GET m.FecSer  PICTURE "@!" 
+@  6,22 GET m.NumAfi  VALID Val_Afi(m.NumAfi) PICTURE "@!" 
+@  8,22 GET m.ApeAfi  PICTURE "@!"
+@ 10,22 GET m.NomAfi   
+@ 12,22 GET m.edadAfi  
+@ 14,22 GET m.Parent  VALID Val_para(m.parent,'PARENT',' ',22) 
+@ 16,22 GET m.MtoSer  PICTURE "99,999.99"  VALID m.MtoSer > 0
+
+READ VALID val_read()
+
+IF LASTKEY()#27
+	ak = ActKar('S',m.NumSer,m.FecSer)
+	SELE maesoc
+	REPLACE Estado WITH '10'
+	SELE itesoc
+	REPLACE Estado WITH '10'
+	
+	SELE Parma
+	SEEK 'CORRELSERFUN'
+	IF FOUND()
+		REPLACE NumEnt WITH NumEnt+1
+	ENDIF
+	
+	IF ak
+		SELE Servicio
+		IF f_appd()
+			GATHER MEMVAR
+		ENDIF
+	ENDIF
+ ELSE
+	DO StandBy WITH "Cancela Informacion"
+	IF vTemp = -1
+		GO TOP
+	 ELSE
+		go vtemp
+	ENDIF
+	DO vista
+	RETURN
+ENDIF
+
+UNLOCK ALL
+SELECT Servicio
+do pantalla
+DO vista
+RETURN
+
+PROCEDURE elimi
+*---------------
+SELECT Servicio
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+velimina = yesno('¨ Desea ELIMINAR ‚ste Socio?')
+IF velimina .AND.  f_lock(1)
+	SELE maesoc
+	IF SEEK(Servicio.CodCon)
+		IF f_lock(1)
+			REPLACE Estado WITH '00'
+		ENDIF
+	ENDIF
+	SELE itesoc
+	
+	IF SEEK(Servicio.CodCon+Servicio.NumAfi)
+		IF f_lock(1)
+			REPLACE Estado WITH '00'
+		ENDIF
+	ENDIF
+	SELE Servicio
+	DELE NEXT 1
+	IF !BOF()
+		SKIP -1
+	ELSE
+		IF !EOF()
+			SKIP
+		ENDIF
+	ENDIF
+ENDIF
+UNLOCK ALL
+
+DO vista
+RETURN
+
+PROCEDURE lista
+*--------------
+DO StandBy WITH "Opci¢n todavia en proceso"
+RETURN .T.
+vAli = Alias()
+vord = Order()
+vrec = Recno()
+SELECT ITEREC
+SET RELATION TO CODIGO INTO COBRA
+SET SKIP TO COBRA
+STORE 1  TO vToCli,vOrden,vTipPro,vLista,vTofue,vTomes
+STORE date() to vfecini,vfecfin
+vCODIGO = SPACE(4)
+
+DEFINE WINDOW LIS FROM 6,15 TO 18,65 FLOAT DOUBLE TITLE 'Recibos de Cobranzas' COLOR SCHEME 5
+ACTIVATE WINDOW LIS
+
+@ 01,01 SAY "       Todos : " GET vTOCLI  FUNCTION '*RNH \<Si;\<No' SIZE 1,10,6   VALID VALTOD(VTOCLI,1,22)
+
+@ 03,01 SAY "      C¢digo : " 
+@ 03,22 GET vCodigo    PICTURE '!!!!' VALID Val_cobra() when vTOCLI=2
+
+@ 05,01 SAY "     Recibos : " GET vToFue  FUNCTION '*RNH \<Todas;\<Por fechas' SIZE 1,10,6  VALID VALTOD(VTOfue,5,15) 
+@ 07,01 SAY "      Fechas : "
+@ 07,22 GET vfecini  PICTURE '@D'   COLOR SCHEME 7 WHEN vtofue=2 
+@ 07,32 GET vfecfin  PICTURE '@D'   COLOR SCHEME 7 VALID (vfecfin >= vfecini)  WHEN vtofue=2 
+
+@ 09,10 GET OKCANCEL FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+
+READ CYCLE
+
+RELEASE WINDOW LIS
+
+IF OKCANCEL = 1
+	IF vtocli=2
+		SET FILTER TO codigo=vcodigo and iif(vtofue=2,BETWEEN(fecent,vfecini,vfecfin),.t.)
+	Else
+		SET FILTER TO iif(vtofue=2,BETWEEN(fecent,vfecini,vfecfin),.t.)
+	endif
+	do reporte with 2,"LisRec",'Listado de Recibos',2
+ENDIF
+SET FILTER TO
+SET RELATION TO
+SELECT (vAli)
+SET ORDER TO (vord)
+GO vrec
+DO VISTA
+RETURN
+
+PROCEDURE termi
+*--------------
+ven_accion = .F.
+DEACTIVATE MENU
+RETURN
+
+PROCEDURE fin_opcion
+*-------------------
+CLOSE DATA
+ON KEY LABEL F7
+RELEASE WINDOW wind_0
+RELEASE WINDOW wind_1
+RELEASE MENU   mmenu
+RESTORE SCREEN FROM principal
+RETURN
+
+FUNCTION Val_Con
+*---------------
+PARAMETERS xcod
+PRIVATE cOrd
+
+mAlias = ALIAS()
+v_fun = .F.
+v_Ent = .F.
+
+SELE MaeSoc
+GO TOP
+cOrd = ORDER()
+SET ORDER TO MaeSoc1
+
+IF !EMPTY(xcod)
+	SEEK xcod
+	v_fun = IIF(FOUND(),"","")
+	v_Ent = FOUND()
+ENDIF
+
+IF EMPTY(xcod) OR !V_ENT
+	SET ORDER TO MaeSoc2
+	GO TOP
+	ACTIVATE SCREEN
+	ON KEY LABEL F10 KEYBOARD CHR(23)
+	ON KEY LABEL F2 DO FunBusDet
+	DEFINE WINDOW _BusCon FROM 2,01 TO 22,78
+	ACTIVATE WINDOWS _BusCon
+	BROWSE WINDOW _BusCon TITLE '²²²² [F10] Selecciona   [F2] Buscar ²²²²' NOLGRID NOEDIT NOAPPEND NODELETE NOMENU;
+	 FIELDS;
+			CodCon   :H='Contrato'  ,;
+			Apelli   :H='Apellido':30,;
+			Nombre   :H='Nombre'  :30,;
+			Direcc   :H='Direccion:30'
+	
+	ON KEY LABEL F10
+	ON KEY LABEL F2
+	DEACTIVATE WINDOWS _BusCon
+	RELEASE    WINDOW _BusCon
+	
+	IF Lastkey()=27
+		V_FUN = .f.
+		v_ent = .f.
+	 ELSE
+		xCod       = CodCon
+*		SELECT (mAlias)
+		SHOW GETS
+		v_fun = .T.
+		v_ent = .t.
+	ENDIF
+ENDIF
+
+SET ORDER TO cOrd
+
+UNLOCK ALL
+
+SELECT (mAlias)
+IF !V_ENT
+	RETURN v_FUN
+ ELSE
+	RETURN v_ENT
+ENDIF
+
+RETURN
+
+FUNCTION ValEst
+*--------------
+PRIVATE cAlias
+cAlias = ALIAS()
+DO CASE
+	CASE MaeSoc.Estado = '99'
+		DO StandBy WITH 'El Contrato esta Anulado. No puede tener Servicio'
+		m.CodCon = SPACE(6)
+		mRet = .F.
+	CASE MaeSoc.Estado = '90'
+		DO StandBy WITH 'El Contrato esta Rescindido. No puede tener Servicio'
+		m.CodCon = SPACE(6)
+		mRet = .F.
+	OTHERWISE
+		mRet = .T.
+ENDCASE
+SELE (cAlias)
+RETURN mRet
+
+
+FUNCTION FunBusDet			&& Realiza b£squeda directa
+*-----------------
+PRIVATE vTemp
+IF EOF()
+	DO standby WITH vmens08
+	RETURN
+ENDIF
+
+vtemp = IIF(!EOF(),RECNO(),-1)
+
+DEFINE POPUP pLista FROM 15,40 COLOR SCHEME c_popup
+
+DEFINE BAR 1  OF pLista PROMPT '\<a. Por Contrato  '
+DEFINE BAR 2  OF pLista PROMPT '\<b. Por Apellidos '
+
+ON SELECTION POPUP pLista  DEACTIVATE POPUP
+
+ACTIVATE POPUP pLista
+RELEASE  POPUP pLista
+
+cOrd1 = ORDER()
+
+DO CASE
+	CASE BAR() =  1
+		vBusca = SPACE(6)
+		vNombre = "Contrato :"
+		SET ORDER TO TAG MaeSoc1
+	CASE BAR() =  2
+		vBusca = SPACE(30)
+		vNombre = "Apellidos : "
+		SET ORDER TO TAG MaeSoc2
+	OTHERWISE
+		vBusca  = ''
+		vNombre = ''
+		SET ORDER TO
+ENDCASE
+
+IF LASTKEY()#27
+	DEFINE WINDOW lisTA FROM 13,12 TO 16,68 DOUBLE ;
+		TITLE ' °° B£squeda °° ' FLOAT COLOR SCHEME 10
+	
+	ACTIVATE WINDOW lisTA
+	@ 1,2 SAY vNombre GET vBusca
+	READ VALID val_read()
+	DEACTIVATE WINDOW lista
+	RELEASE WINDOW LISTA
+ENDIF
+
+IF EMPTY(vBusca) OR LASTKEY()=27
+	* No hace nada
+ ELSE
+	SEEK ALLTRIM(vBusca)
+	IF !FOUND()
+		DO standby WITH "Contrato no Existe"
+		IF vtemp = -1
+			GO BOTT
+		 ELSE
+			GOTO vtemp
+		ENDIF
+	 ELSE
+		* No hace Nada
+	ENDIF
+ENDIF
+
+SET ORDER TO &cOrd1
+
+RETURN
+

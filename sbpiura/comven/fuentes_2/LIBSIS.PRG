@@ -1,0 +1,1597 @@
+*
+FUNCTION f_lock
+PARAMETER btipo
+beep = CHR(7)
+DO CASE
+     CASE btipo = 1
+          v_fun = .F.
+          IF RLOCK()
+               v_fun = .T.
+          ELSE
+               DO standby WITH  ;
+                  'Registro del archivo '+ ;
+                  ALIAS()+ ;
+                  ' ocupado. Espere un momento por favor o presione <Esc> para cancelar'
+               ?? beep
+               ktecla = 0
+               DO WHILE ktecla<> ;
+                  escape .AND. (  ;
+                  .NOT. RLOCK())
+                    ktecla = INKEY()
+               ENDDO
+               IF ktecla <>  ;
+                  escape
+                    v_fun = .T.
+               ENDIF
+          ENDIF
+     CASE btipo = 2
+          v_fun = .F.
+          IF RLOCK()
+               v_fun = .T.
+          ELSE
+               DO standby WITH  ;
+                  'El registro del file'+ ;
+                  ALIAS()+ ;
+                  ' est  siendo utilizado. Se cancela la operaci¢n'
+               ?? beep
+          ENDIF
+     CASE btipo = 3
+          v_fun = .F.
+          IF FLOCK()
+               v_fun = .T.
+          ELSE
+               DO standby WITH  ;
+                  ALIAS()+ ;
+                  'Archivo ocupado.  Espere un instante por favor o presione <Esc> para cancelar'
+               ?? beep
+               ktecla = 0
+               DO WHILE ktecla<> ;
+                  escape .AND. (  ;
+                  .NOT. FLOCK())
+                    ktecla = INKEY()
+               ENDDO
+               IF ktecla <>  ;
+                  escape
+                    v_fun = .T.
+               ENDIF
+          ENDIF
+     CASE btipo = 4
+          v_fun = .F.
+          IF FLOCK()
+               v_fun = .T.
+          ELSE
+               DO standby WITH  ;
+                  ALIAS()+ ;
+                  ' Archivo ocupado. El proceso se cancela'
+               ?? beep
+          ENDIF
+ENDCASE
+RETURN v_fun
+*
+FUNCTION f_appd
+APPEND BLANK
+v_fun = RLOCK() .OR. f_lock(1)
+RETURN v_fun
+*
+PROCEDURE fox_lock
+PARAMETER btipo, bloquea
+beep = CHR(7)
+DO CASE
+     CASE btipo = 1
+          insiste = .T.
+          bloquea = .F.
+          DO WHILE insiste
+               IF RLOCK()
+                    bloquea = .T.
+                    insiste = .F.
+               ELSE
+                    DO standby  ;
+                       WITH  ;
+                       'Registro ocupado. Espere un momento por favor o presione <Esc> para cancelar.'
+                    ?? beep
+                    ktecla = 0
+                    DO WHILE  ;
+                       ktecla<>27  ;
+                       .AND. (  ;
+                       .NOT.  ;
+                       RLOCK())
+                         ktecla =  ;
+                          INKEY()
+                    ENDDO
+                    IF ktecla <>  ;
+                       27
+                         bloquea =  ;
+                          .T.
+                    ENDIF
+                    insiste = .F.
+               ENDIF
+          ENDDO
+     CASE btipo = 2
+          bloquea = .F.
+          IF RLOCK()
+               bloquea = .T.
+          ELSE
+               DO standby WITH  ;
+                  'El registro esta en uso. Presione <Esc> para cancelar. '
+               ?? beep
+               ktecla = 0
+               DO WHILE ktecla<> ;
+                  27
+                    ktecla = INKEY()
+               ENDDO
+          ENDIF
+     CASE btipo = 3
+          insiste = .T.
+          bloquea = .F.
+          DO WHILE insiste
+               IF FLOCK()
+                    bloquea = .T.
+                    insiste = .F.
+               ELSE
+                    DO standby  ;
+                       WITH  ;
+                       'Archivo ocupado.  Espere un instante por favor o'+ ;
+                       ' presiona <Esc> para cancelar.'
+                    ?? beep
+                    ktecla = 0
+                    DO WHILE  ;
+                       ktecla<>27  ;
+                       .AND. (  ;
+                       .NOT.  ;
+                       FLOCK())
+                         ktecla =  ;
+                          INKEY()
+                    ENDDO
+                    IF ktecla <>  ;
+                       27
+                         bloquea =  ;
+                          .T.
+                    ENDIF
+                    insiste = .F.
+               ENDIF
+          ENDDO
+     CASE btipo = 4
+          bloquea = .F.
+          IF FLOCK()
+               bloquea = .T.
+          ELSE
+               DO standby WITH  ;
+                  'Archivo ocupado.  Presione <Esc> para cancelar.'
+               ?? beep
+               ktecla = 0
+               DO WHILE ktecla<> ;
+                  27
+                    ktecla = INKEY()
+               ENDDO
+          ENDIF
+ENDCASE
+RETURN
+*
+PROCEDURE fox_appd
+PARAMETER lappd
+lappd = .F.
+bloquea = .F.
+gagrega = .T.
+APPEND BLANK
+DO fox_lock WITH 1, bloquea
+IF bloquea
+     lappd = .T.
+ENDIF
+gagrega = .F.
+RETURN
+*
+PROCEDURE fox_errs
+PARAMETER prg_error
+DO CASE
+     CASE ERROR() = 108
+          DO standby WITH  ;
+             'Un momento por favor el archivo est  en uso'
+          RETRY
+     CASE ERROR() = 109
+          WAIT WINDOW NOWAIT  ;
+               'Registro est  siendo modificado por otro usuario.'
+          RETURN
+     CASE ERROR() = 130
+          KEYBOARD CHR(13)
+          RETURN
+     CASE ERROR() = 125
+          IF yesno( ;
+             'La Impresora no est  lista. ¨Se reintenta impresi¢n?' ;
+             )
+               SET DEVICE TO PRINTER
+               RETRY
+          ELSE
+               SET DEVICE TO SCREEN
+               SET PRINTER TO
+               RETURN
+          ENDIF
+     OTHERWISE
+          nom_usr = SYS(30)
+          num_error = ERROR()
+          des_error = MESSAGE()
+          lin_error = MESSAGE(1)
+          dbf_actua = DBF()
+          IF SYS(21) <> '0'
+               idx_actua = NDX(VAL(SYS(21)))
+          ENDIF
+          SAVE SCREEN TO  ;
+               pnt_error
+          CREATE VIEW CORE.VIW
+          SAVE TO 'core.fox'
+          DO poperror WITH  ;
+             'El sistema acaba de detectar un error interno. Avise al  rea de Sistemas.'+ ;
+             CHR(13)+CHR(13)+ ;
+             'Tome nota de la siguiente descripci¢n:'+ ;
+             CHR(13)+'Programa: '+ ;
+             ALLTRIM(prg_error)+ ;
+             CHR(13)+'L¡nea   : '+ ;
+             ALLTRIM(lin_error)+ ;
+             CHR(13)+'Error   : '+ ;
+             ALLTRIM(des_error)
+          IF worker
+               ON ERROR
+               CANCEL
+          ENDIF
+ENDCASE
+RETURN
+*
+FUNCTION letras
+PARAMETER wmonto, simbolo
+wletras = ''
+DIMENSION letras( 4, 9)
+letras( 1, 1) = 'UN '
+letras( 1, 2) = 'DOS '
+letras( 1, 3) = 'TRES '
+letras( 1, 4) = 'CUATRO '
+letras( 1, 5) = 'CINCO '
+letras( 1, 6) = 'SEIS '
+letras( 1, 7) = 'SIETE '
+letras( 1, 8) = 'OCHO '
+letras( 1, 9) = 'NUEVE '
+letras( 2, 1) = 'ONCE '
+letras( 2, 2) = 'DOCE '
+letras( 2, 3) = 'TRECE '
+letras( 2, 4) = 'CATORCE '
+letras( 2, 5) = 'QUINCE '
+letras( 2, 6) = 'DIECISEIS '
+letras( 2, 7) = 'DIECISIETE '
+letras( 2, 8) = 'DIECIOCHO '
+letras( 2, 9) = 'DIECINUEVE '
+letras( 3, 1) = 'DIEZ'
+letras( 3, 2) = 'VEINTI'
+letras( 3, 3) = 'TREINTA'
+letras( 3, 4) = 'CUARENTA'
+letras( 3, 5) = 'CINCUENTA'
+letras( 3, 6) = 'SESENTA'
+letras( 3, 7) = 'SETENTA'
+letras( 3, 8) = 'OCHENTA'
+letras( 3, 9) = 'NOVENTA'
+letras( 4, 1) = 'CIENTO '
+letras( 4, 2) = 'DOSCIENTOS '
+letras( 4, 3) = 'TRESCIENTOS '
+letras( 4, 4) = 'CUATROCIENTOS '
+letras( 4, 5) = 'QUINIENTOS '
+letras( 4, 6) = 'SEISCIENTOS '
+letras( 4, 7) = 'SETECIENTOS '
+letras( 4, 8) = 'OCHOCIENTOS '
+letras( 4, 9) = 'NOVECIENTOS '
+centavos = wmonto - INT(wmonto)
+w2 = STR(INT(wmonto), 18)
+i = 1
+DO WHILE i<=18
+     w1 = 0
+     n = SUBSTR(w2, i, 3)
+     IF VAL(n) > 0
+          x = VAL(n)
+          y = 1
+          DO WHILE y<=3
+               x1 = SUBSTR(n, y,  ;
+                    1)
+               IF VAL(x1) <> 0
+                    DO CASE
+                         CASE y =  ;
+                              1
+                              IF VAL(n) =  ;
+                                 100
+                                   wletras = wletras + 'CIEN '
+                              ELSE
+                                   wletras = wletras + letras(4,VAL(x1))
+                              ENDIF
+                         CASE y =  ;
+                              2
+                              IF VAL(SUBSTR(n,  ;
+                                 y,  ;
+                                 2)) >  ;
+                                 10  ;
+                                 .AND.  ;
+                                 VAL(SUBSTR(n,  ;
+                                 y,  ;
+                                 2)) <  ;
+                                 20
+                                   wletras = wletras + letras(2,VAL(SUBSTR(n, 3, 1)))
+                              ELSE
+                                   wletras = wletras + letras(3,VAL(x1))
+                              ENDIF
+                         CASE y =  ;
+                              3
+                              IF   ;
+                               .NOT.  ;
+                               SUBSTR(n,  ;
+                               2,  ;
+                               1) $  ;
+                               '1'
+                                   IF  .NOT. SUBSTR(n, 2, 1) $ '0' .AND.  .NOT. EMPTY(wletras)
+                                        wletras = wletras + ' Y '
+                                   ENDIF
+                                   wletras = wletras + letras(1,VAL(x1))
+                              ENDIF
+                    ENDCASE
+               ENDIF
+               y = y + 1
+          ENDDO
+          DO CASE
+               CASE i = 1 .OR. i =  ;
+                    7 .OR. i =  ;
+                    13
+                    wletras = wletras +  ;
+                              'MIL '
+               CASE i = 4
+                    wletras = wletras +  ;
+                              'BILLON '
+               CASE i = 10
+                    IF x = 1
+                         wletras =  ;
+                          wletras +  ;
+                          'MILLON '
+                    ELSE
+                         wletras =  ;
+                          wletras +  ;
+                          'MILLONES '
+                    ENDIF
+          ENDCASE
+     ENDIF
+     i = i + 3
+ENDDO
+wletras = ALLTRIM(wletras) +  ;
+          ' Y  ' + STR(centavos *  ;
+          100, 2) + '/100 ' +  ;
+          simbolo
+ll = SUBSTR(wletras, 51, 15)
+l = 0
+t = 16
+r = LEN(wletras)
+IF r > 65
+     DO WHILE t<>20
+          t = t - 1
+          p = SUBSTR(ll, t, 1)
+          IF p = ' '
+               numlet1 = SUBSTR(wletras,  ;
+                         1, 50) +  ;
+                         SUBSTR(ll,  ;
+                         1, t)
+               numlet2 = SUBSTR(wletras,  ;
+                         (51 + t),  ;
+                         (r - (50 +  ;
+                         t)))
+               t = 20
+          ENDIF
+     ENDDO
+ELSE
+     numlet1 = wletras
+ENDIF
+RETURN numlet1
+*
+PROCEDURE standby
+PARAMETER msgwords, posi, posc
+IF  .NOT. WEXIST('standby')
+     DEFINE WINDOW standby FROM  ;
+            19, 27 TO 23, 77  ;
+            FLOAT SHADOW DOUBLE  ;
+            COLOR SCHEME 5
+ENDIF
+IF PARAMETERS() > 1
+     posi = IIF(posi > 19, 19,  ;
+            posi)
+     colp = 27
+     IF PARAMETERS() > 2
+          colp = IIF(posc > 28,  ;
+                 29, posc)
+     ENDIF
+     MOVE WINDOW standby TO posi,  ;
+          colp
+ENDIF
+ACTIVATE WINDOW IN screen standby
+msgwords = ALLTRIM(msgwords)
+_ln = LEN(msgwords)
+_colw = WCOLS()
+msgwords = IIF(_ln > 2 * _colw,  ;
+           PADR(msgwords, 2 *  ;
+           _colw, ' '),  ;
+           msgwords)
+_ln = LEN(msgwords)
+msg1 = IIF(_ln > _colw,  ;
+       LEFT(msgwords, _colw),  ;
+       msgwords)
+msg2 = IIF(_ln > _colw,  ;
+       SUBSTR(msgwords, _colw +  ;
+       1), '')
+IF _ln > _colw
+     FOR i = 0 TO _colw / 3 - 1
+          IF SUBSTR(msg1, _colw -  ;
+             i, 1) == ' '
+               msg1 = LEFT(msg1,  ;
+                      _colw - i)
+               msg2 = SUBSTR(msgwords,  ;
+                      _colw - i +  ;
+                      1)
+               msg2 = IIF(LEN(msg2) >  ;
+                      _colw,  ;
+                      LEFT(msg2,  ;
+                      _colw),  ;
+                      msg2)
+               EXIT
+          ENDIF
+     ENDFOR
+ENDIF
+@ 00, WCOLS() / 2 - LEN(msg1) / 2  ;
+  SAY msg1
+IF  .NOT. EMPTY(msg2)
+     @ 01, WCOLS() / 2 -  ;
+       LEN(msg2) / 2 SAY msg2
+ENDIF
+@ 02, _colw / 2 - 16 SAY  ;
+  '<Pres. una tecla para continuar>'
+_ss = INKEY(0)
+DEACTIVATE WINDOW standby
+MOVE WINDOW standby TO 19, 27
+RETURN
+*
+FUNCTION yesno
+PARAMETER msgwords, posi, posc
+IF  .NOT. WEXIST('yesno')
+     DEFINE WINDOW yesno FROM 19,  ;
+            27 TO 23, 77 GROW  ;
+            FLOAT SHADOW DOUBLE  ;
+            COLOR SCHEME 5
+ENDIF
+IF PARAMETERS() > 1
+     posi = IIF(posi > 19, 19,  ;
+            posi)
+     colp = 27
+     IF PARAMETERS() > 2
+          colp = IIF(posc > 28,  ;
+                 29, posc)
+     ENDIF
+     MOVE WINDOW yesno TO posi,  ;
+          colp
+ENDIF
+ACTIVATE WINDOW yesno
+msgwords = ALLTRIM(msgwords)
+_ln = LEN(msgwords)
+_colw = WCOLS()
+msgwords = IIF(_ln > 2 * _colw,  ;
+           PADR(msgwords, 2 *  ;
+           _colw, ' '),  ;
+           msgwords)
+_ln = LEN(msgwords)
+msg1 = IIF(_ln > _colw,  ;
+       LEFT(msgwords, _colw),  ;
+       msgwords)
+msg2 = IIF(_ln > _colw,  ;
+       SUBSTR(msgwords, _colw +  ;
+       1), '')
+IF _ln > _colw
+     FOR i = 0 TO _colw / 3 - 1
+          IF SUBSTR(msg1, _colw -  ;
+             i, 1) == ' '
+               msg1 = LEFT(msg1,  ;
+                      _colw - i)
+               msg2 = SUBSTR(msgwords,  ;
+                      _colw - i +  ;
+                      1)
+               msg2 = IIF(LEN(msg2) >  ;
+                      _colw,  ;
+                      LEFT(msg2,  ;
+                      _colw),  ;
+                      msg2)
+               EXIT
+          ENDIF
+     ENDFOR
+ENDIF
+@ 00, WCOLS() / 2 - LEN(msg1) / 2  ;
+  SAY msg1
+IF  .NOT. EMPTY(msg2)
+     @ 01, WCOLS() / 2 -  ;
+       LEN(msg2) / 2 SAY msg2
+ENDIF
+v_fun = .F.
+@ 02, 10 GET _nosi DEFAULT 1 SIZE  ;
+  1, 10, 8 FUNCTION  ;
+  '*TH \!\<No;\?\<Si'
+READ CYCLE
+IF LASTKEY() <> 27
+     v_fun = IIF(_nosi = 1, .F.,  ;
+             .T.)
+ENDIF
+DEACTIVATE WINDOW yesno
+RETURN v_fun
+*
+PROCEDURE logos
+PARAMETER rotulo1, rotulo2,  ;
+          tiempo
+ACTIVATE SCREEN
+DO CASE
+     CASE PARAMETERS() = 0
+          STORE SPACE(80) TO  ;
+                rotulo1, rotulo2
+          tiempo = 0
+     CASE PARAMETERS() = 1
+          STORE SPACE(80) TO  ;
+                rotulo2
+          tiempo = 0
+     CASE PARAMETERS() = 2
+          tiempo = 0
+ENDCASE
+FOR i = 0 TO 39 STEP -1
+     @ 00, i SAY c COLOR SCHEME  ;
+       c_borde
+     @ 00, 79 - i SAY  ;
+       LEFT(rotulo1, i + 1) COLOR  ;
+       SCHEME c_fondo
+     @ 24, 79 - i SAY c COLOR  ;
+       SCHEME c_borde
+     @ 24, 00 SAY RIGHT(rotulo2,  ;
+       i + 1) COLOR SCHEME  ;
+       c_fondo
+     FOR y = 0 TO tiempo
+     ENDFOR
+ENDFOR
+FOR i = 40 TO 0 STEP -1
+     @ 00, 79 - i SAY  ;
+       SUBSTR(rotulo1, 2 * (40 -  ;
+       i), i + 1) COLOR SCHEME  ;
+       c_fondo
+     @ 00, i SAY LEFT(rotulo1, 2 *  ;
+       (40 - i)) COLOR SCHEME  ;
+       c_borde
+     @ 24, 00 SAY SUBSTR(rotulo2,  ;
+       i, i) COLOR SCHEME  ;
+       c_fondo
+     @ 24, i SAY RIGHT(rotulo2, 2 *  ;
+       (40 - i)) COLOR SCHEME  ;
+       c_borde
+     FOR y = 0 TO tiempo
+     ENDFOR
+ENDFOR
+RETURN
+*
+PROCEDURE fox_ambi
+ON READERROR DO   Err_input
+SET ALTERNATE OFF
+SET ALTERNATE TO
+SET AUTOSAVE OFF
+SET BELL ON
+SET BLOCKSIZE TO 33
+SET BLINK ON
+SET BORDER TO SINGLE
+SET CENTURY OFF
+SET CLEAR ON
+SET CLOCK ON
+SET CLOCK TO 00, 69
+SET COMPATIBLE OFF
+SET CONFIRM ON
+SET CONSOLE ON
+SET CURRENCY LEFT
+SET DATE BRITISH
+IF  .NOT. worker
+     SET DEBUG OFF
+ELSE
+ENDIF
+SET DECIMALS TO 2
+SET DEFAULT TO
+SET DELETED ON
+IF worker
+     SET DEVELOPMENT ON
+ELSE
+     SET DEVELOPMENT OFF
+ENDIF
+SET DEVICE TO SCREEN
+SET DOHISTORY OFF
+SET ECHO OFF
+IF worker
+     SET ESCAPE ON
+ELSE
+     SET ESCAPE OFF
+ENDIF
+SET EXACT OFF
+SET EXCLUSIVE OFF
+SET MULTILOCKS ON
+SET FIELDS OFF
+SET FIXED ON
+SET FORMAT TO
+SET FULLPATH ON
+SET FUNCTION 1 TO
+SET FUNCTION 2 TO
+SET FUNCTION 3 TO
+SET FUNCTION 4 TO
+SET FUNCTION 5 TO
+SET FUNCTION 6 TO
+SET FUNCTION 7 TO
+SET FUNCTION 8 TO
+SET FUNCTION 9 TO
+SET FUNCTION 10 TO
+SET HEADING OFF
+SET HELP OFF
+SET HOURS TO 24
+SET INSTRUCT ON
+SET INTENSITY ON
+IF worker
+     SET LOGERRORS ON
+ELSE
+     SET LOGERRORS OFF
+ENDIF
+SET MARGIN TO 0
+SET MARK TO '/'
+SET MEMOWIDTH TO 80
+SET MENU ON
+SET MESSAGE TO 23
+SET NOTIFY ON
+SET NEAR OFF
+SET ODOMETER TO 1
+SET PATH TO
+SET POINT TO '.'
+SET PRECISION TO 3
+SET PRINTER OFF
+SET PRINTER TO lpt1
+SET SAFETY OFF
+SET SCOREBOARD OFF
+SET SYSMENU OFF
+SET SEPARATOR TO ','
+SET SPACE OFF
+SET STATUS OFF
+IF  .NOT. worker
+     SET STEP OFF
+ENDIF
+SET STICKY ON
+SET TALK OFF
+SET TOPIC TO
+SET TYPEAHEAD TO 0
+SET TYPEAHEAD TO 25
+SET UDFPARMS TO REFERENCE
+SET UNIQUE OFF
+= INSMODE(.F.)
+= CAPSLOCK(.T.)
+= NUMLOCK(.T.)
+DEFINE WINDOW err_input FROM 01,  ;
+       60 TO 03, 77
+DEFINE WINDOW yesno FROM 19, 27  ;
+       TO 23, 77 GROW FLOAT  ;
+       SHADOW DOUBLE COLOR SCHEME  ;
+       5
+DEFINE WINDOW msg2user FROM 04,  ;
+       02 TO 08, 77 FLOAT SHADOW  ;
+       DOUBLE
+DEFINE WINDOW standby FROM 19, 27  ;
+       TO 23, 77 FLOAT SHADOW  ;
+       DOUBLE COLOR SCHEME 5
+DEFINE WINDOW _funbus FROM 19, 27  ;
+       TO 23, 77 FLOAT SHADOW  ;
+       DOUBLE
+PUBLIC escape
+_ALIGNMENT = 'LEFT'
+_BOX = .T.
+_INDENT = 0
+_LMARGIN = 0
+_PADVANCE = 'FORMFEED'
+_PAGENO = 1
+_PBPAGE = 1
+_PCOPIES = 1
+_PECODE = ''
+_PEJECT = 'AFTER'
+_PEPAGE = 32767
+_PFORM = ''
+_PLENGTH = 60
+_PLOFFSET = 0
+_PPITCH = 'PICA'
+_PQUALITY = .T.
+_PSCODE = ''
+_PSPACING = 1
+_PWAIT = .F.
+_RMARGIN = 80
+_TABS = '10, 20, 30, 40, 50, 60, 70'
+_WRAP = .T.
+RETURN
+*
+FUNCTION val_para
+PARAMETER mvalor, filtro,  ;
+          mvariable, mcol, mlong,  ;
+          mdist
+PRIVATE malias
+DO CASE
+     CASE PARAMETERS() = 2
+          mcol = 0
+          mvariable = ' '
+          mlong = 40
+          mdist = 6
+     CASE PARAMETERS() = 3
+          mcol = 0
+          mlong = 40
+          mdist = 6
+     CASE PARAMETERS() = 4
+          mlong = 40
+          mdist = 6
+     CASE PARAMETERS() = 5
+          mdist = 6
+ENDCASE
+malias = ALIAS()
+SELECT parma
+SEEK filtro + mvalor
+IF  .NOT. FOUND() .AND.  .NOT.  ;
+    mvariable $ 'VZ'
+     _oldwnd = WOUTPUT()
+     ACTIVATE SCREEN
+     SET FILTER TO tipo = filtro
+     GOTO TOP
+     IF EOF()
+          DO standby WITH  ;
+             'No existen Registros para Procesar'
+          SET FILTER TO
+          IF  .NOT. EMPTY(malias)
+               SELECT (malias)
+          ENDIF
+          RETURN
+     ENDIF
+     DEFINE POPUP parametro FROM  ;
+            03, 40 PROMPT FIELDS  ;
+            SUBSTR(descri, 1,  ;
+            40)
+     ON SELECTION POPUP parametro DEACTIVATE;
+POPUP
+     ACTIVATE POPUP parametro
+     IF  .NOT. EMPTY(_oldwnd)
+          ACTIVATE WINDOW &_OldWnd
+     ENDIF
+     RELEASE POPUP parametro
+     SET FILTER TO
+ENDIF
+mvalor = parma.codigo
+mcuenta = parma.descriau2
+mcodaux = parma.codigoaux
+mdescr = SUBSTR(parma.descri, 1,  ;
+         mlong)
+mdescriaux = SUBSTR(parma.descriaux,  ;
+             1, mlong)
+IF  .NOT. EMPTY(malias)
+     SELECT (malias)
+ENDIF
+DO CASE
+     CASE mvariable = ' '
+          @ ROW(), mcol SAY  ;
+            mvalor
+          @ ROW(), mcol + mdist  ;
+            SAY mdescr
+          RETURN .T.
+     CASE mvariable = 'A'
+          RETURN mcodaux
+     CASE mvariable = 'V'
+          @ ROW(), COL() SAY  ;
+            mvalor
+          RETURN mdescr
+     CASE mvariable = 'D'
+          RETURN mdescr
+     CASE mvariable = 'Z'
+          RETURN mdescr
+     CASE mvariable = 'C'
+          RETURN .T.
+     OTHERWISE
+          REPLACE &mVariable WITH mValor
+          RETURN .T.
+ENDCASE
+*
+FUNCTION val_fun
+PARAMETER v__al, v__dev, v__bus,  ;
+          v__cod, v__tipo, v__x,  ;
+          v__y
+PRIVATE medita, mmsg, malias,  ;
+        v_fun, _oldwind, _campo,  ;
+        mvali, mrec
+medita = (PARAMETERS() >= 5)  ;
+         .AND. (v__tipo <> 3)
+mmsg = (PARAMETERS() = 7) .AND.  ;
+       (v__tipo <> 3)
+mvali = (PARAMETERS() = 5) .AND.  ;
+        (v__tipo = 3)
+mrec = IIF(EOF(), -1, RECNO())
+malias = ALIAS()
+IF medita
+     _campo = TRIM(malias) + '.' +  ;
+              IIF(v__tipo > 1,  ;
+              VARREAD(), v__dev)
+ENDIF
+SELECT &v__al
+_oldwnd = WOUTPUT()
+IF  .NOT. medita
+     SEEK v__cod
+     v_fun = IIF(mVali,FOUND(),IIF(FOUND(),&v__bus,""))
+ELSE
+     IF EMPTY(IIF(v__tipo#2,v__cod,&_campo))
+          GOTO TOP
+          IF EOF()
+               DO standby WITH  ;
+                  '²²²²²²²² NO HAY VALORES PARA ELEGIR ²²²²²²²²'
+               v_fun = .F.
+          ELSE
+               IF (v__tipo <> 2)
+                    ACTIVATE SCREEN
+               ENDIF
+               DEFINE POPUP v__xx FROM;
+2,40 TO 17,79 PROMPT FIELD &v__bus
+               ON SELECTION POPUP v__xx;
+DEACTIVATE POPUP
+               ACTIVATE POPUP  ;
+                        v__xx
+               RELEASE POPUP  ;
+                       v__xx
+               IF  .NOT.  ;
+                   EMPTY(_oldwnd)  ;
+                   .AND. v__tipo <>  ;
+                   2
+                    ACTIVATE WINDOW &_OldWnd
+               ENDIF
+               IF LASTKEY() = 27
+                    v_fun = .F.
+               ELSE
+                    v__cod = &v__dev
+                    IF mmsg
+                         @ v__x,v__y SAY;
+&v__bus
+                    ENDIF
+                    IF  .NOT.  ;
+                        EMPTY(malias)
+                         SELECT (malias)
+                         IF (v__tipo =  ;
+                            2)
+                              IF mrec >  ;
+                                 0
+                                   GOTO mrec
+                                   REPLACE &_campo WITH v__cod
+                                   v_fun = .T.
+                              ELSE
+                                   DO standby WITH ' El archivo est  vac¡o '
+                                   v_fun = .F.
+                              ENDIF
+                         ELSE
+                              v_fun =  ;
+                               .T.
+                         ENDIF
+                    ELSE
+                         DO standby  ;
+                            WITH  ;
+                            '²²²²²²²²²² NO HAY ARCHIVO ABIERTO ²²²²²²²²²²'
+                    ENDIF
+               ENDIF
+          ENDIF
+     ELSE
+          SEEK IIF(v__tipo#2,v__cod,&_campo)
+          IF mmsg .AND. FOUND()
+               @ v__x,v__y SAY &v__bus
+          ENDIF
+          v_fun = FOUND()
+     ENDIF
+ENDIF
+IF EMPTY(malias)
+     SELECT 0
+ELSE
+     SELECT (malias)
+ENDIF
+IF  .NOT. EMPTY(ALIAS())
+     IF mrec > 0
+          GOTO mrec
+     ELSE
+          GOTO BOTTOM
+     ENDIF
+ENDIF
+RETURN v_fun
+*
+FUNCTION val_read
+PRIVATE _fun
+_fun = .T.
+IF LASTKEY() <> 27
+     IF  .NOT. yesno( ;
+         '¨ Est n correctos los datos ?' ;
+         )
+          _fun = .F.
+     ENDIF
+ENDIF
+RETURN (_fun)
+*
+FUNCTION poperror
+PARAMETER err_mess
+PRIVATE cur_color, cur_curs,  ;
+        bord_str, err_mess,  ;
+        say_mess
+PRIVATE num_lines, start_line,  ;
+        cur_width, i, rvalue
+PRIVATE cur_win, _mens
+PUSH KEY CLEAR
+cur_win = WOUTPUT()
+cur_width = SET('memowidth')
+SET MEMOWIDTH TO 48
+num_lines = MEMLINES(err_mess)
+altura = num_lines + 3 + 2
+start_line = (25 - altura) / 2
+DEFINE WINDOW poperr FROM  ;
+       start_line, 13 TO  ;
+       start_line + altura, 66  ;
+       SHADOW DOUBLE COLOR SCHEME  ;
+       5
+ACTIVATE WINDOW poperr
+IF num_lines = 1
+     _mens = PADC(err_mess, 48)
+     FOR j = 1 TO LEN(_mens)
+          @ 1, 1 + j SAY  ;
+            SUBSTR(_mens, j, 1)
+     ENDFOR
+     i = 2
+ELSE
+     FOR i = 1 TO num_lines
+          say_mess = LTRIM(MLINE(err_mess,  ;
+                     i))
+          FOR j = 1 TO  ;
+              LEN(say_mess)
+               @ i, 1 + j SAY  ;
+                 SUBSTR(say_mess,  ;
+                 j, 1)
+          ENDFOR
+     ENDFOR
+ENDIF
+@ i + 1, 01 SAY  ;
+  REPLICATE(CHR(196), 49)
+_mens = 'Presione una tecla para continuar ....'
+FOR j = 1 TO LEN(_mens)
+     @ i + 2, 1 + j SAY  ;
+       SUBSTR(_mens, j, 1)
+     = INKEY(0.001 , ' ')
+ENDFOR
+rvalue = INKEY(0, 'hm')
+IF WEXIST('poperr')
+     RELEASE WINDOW poperr
+ENDIF
+IF EMPTY(cur_win)
+     ACTIVATE SCREEN
+ENDIF
+SET MEMOWIDTH TO cur_width
+POP KEY
+RETURN (rvalue)
+*
+PROCEDURE espera
+PARAMETER festado, fmensaje
+DEFINE WINDOW espera FROM 21, 05  ;
+       TO 23, 75 COLOR SCHEME 1
+DO CASE
+     CASE festado = 1
+          ACTIVATE WINDOW espera
+          @ 0, 0 SAY  ;
+            PADC(ALLTRIM(fmensaje),  ;
+            WCOLS()) COLOR W+/RB* 
+          RETURN
+     CASE festado = 2
+          DEACTIVATE WINDOW  ;
+                     espera
+          RETURN
+ENDCASE
+RETURN
+*
+PROCEDURE reporte
+PARAMETER _tipo, _form, _tit,  ;
+          num_c, _wp, ran_pg
+PRIVATE _wndold
+_wndold = WOUTPUT()
+SET ESCAPE ON
+ON ESCAPE STORE .F. TO PRINTING
+_conso = SET('CONSOLE')
+SET CONSOLE ON
+DEFINE WINDOW msg2use FROM 07, 02  ;
+       TO 11, 77 FLOAT SHADOW  ;
+       DOUBLE
+_wp = .F.
+IF PARAMETERS() < 5
+     _wp = .F.
+ENDIF
+IF PARAMETERS() < 4
+     num_c = 1
+ENDIF
+IF num_c <> 1
+     DEFINE WINDOW _xyx FROM 15,  ;
+            40 TO 18, 75 TITLE  ;
+            ' # DE COPIAS '  ;
+            COLOR SCHEME 10
+     ACTIVATE WINDOW _xyx
+     CLEAR
+     @ 1, 5 SAY 'Copias : ' GET  ;
+       num_c PICTURE '99' VALID  ;
+       (num_c > 0)
+     READ
+     RELEASE WINDOW _xyx
+     IF LASTKEY() = 27
+          IF  .NOT.  ;
+              EMPTY(_wndold)
+               ACTIVATE WINDOW &_WndOld
+          ELSE
+               ACTIVATE SCREEN
+          ENDIF
+          SET CONSOLE &_conso
+          RETURN
+     ENDIF
+     _ncopies = num_c
+ENDIF
+IF PARAMETERS() >= 6 .AND. ran_pg
+     DEFINE WINDOW _xyx FROM 15,  ;
+            40 TO 18, 75 TITLE  ;
+            ' Rango de P ginas '  ;
+            COLOR SCHEME 10
+     ACTIVATE WINDOW _xyx
+     CLEAR
+     vpbpage = 1
+     vpepage = 32767
+     @ 0, 5 SAY 'Inicio : ' GET  ;
+       vpbpage PICTURE '99,999'  ;
+       VALID vpbpage <= vpepage
+     @ 1, 5 SAY '   Fin : ' GET  ;
+       vpepage PICTURE '99,999'  ;
+       VALID vpbpage <= vpepage  ;
+       .AND. vpepage <= 32767
+     READ
+     RELEASE WINDOW _xyx
+     IF LASTKEY() = 27
+          IF  .NOT.  ;
+              EMPTY(_wndold)
+               ACTIVATE WINDOW &_WndOld
+          ELSE
+               ACTIVATE SCREEN
+          ENDIF
+          SET CONSOLE &_conso
+          RETURN
+     ENDIF
+ENDIF
+_dest = 'Pantalla '
+IF  .NOT. _wp
+     ACTIVATE WINDOW msg2use
+     _dest = 'Impresora'
+     title = ' DESTINO DE IMPRESION '
+     p_fil = SPACE(8)
+     _dest1 = 1
+     @ 01, 5 SAY  ;
+       'Destino de impresi¢n : Pantalla/Impresora/Archivo'  ;
+       GET _dest PICTURE  ;
+       '@M Impresora,Pantalla,Archivo'
+     READ
+     IF _dest = 'Archivo  '
+          CLEAR
+          @ 01, 20 SAY  ;
+            'Nombre del Archivo :'  ;
+            GET p_fil PICTURE  ;
+            'NNNNNNNN' VALID   ;
+            .NOT. EMPTY(p_fil)
+          READ
+     ENDIF
+     p_fil = ALLTRIM(p_fil) +  ;
+             '.LST'
+     RELEASE WINDOW msg2use
+ENDIF
+IF LASTKEY() = 27
+     IF  .NOT. EMPTY(_wndold)
+          ACTIVATE WINDOW &_WndOld
+     ELSE
+          ACTIVATE SCREEN
+     ENDIF
+     SET CONSOLE &_conso
+     RETURN
+ENDIF
+impre = (_dest = 'Impresora')
+IF  .NOT. impre .AND. _dest =  ;
+    'Pantalla '
+     p_fil = SYS(3) + '.LST'
+ENDIF
+printing = .T.
+IF impre
+     IF  .NOT. EMPTY(LEFT(SYS(0),  ;
+         15))
+          IF  .NOT.  ;
+              yesno( ;
+              '¨Imprime en impresora local?' ;
+              )
+               SET PRINTER TO \\IBM_PC\PRINTQ_0=LPT1
+               SET PRINTER TO \\SPOOLER\NB
+          ENDIF
+     ENDIF
+     IF  .NOT. ready2pr()
+          printing = .F.
+     ENDIF
+ENDIF
+IF printing
+     DEFINE WINDOW _repo FROM 0,  ;
+            0 TO 24, 79 TITLE  ;
+            _tit COLOR SCHEME 10
+     ACTIVATE WINDOW _repo
+     CLEAR
+     IF impre
+          p_fil = SYS(3) + '.LST'
+          SET PRINTER TO &p_fil
+          IF _tipo = 1
+               IF PARAMETERS() >=  ;
+                  6 .AND. ran_pg
+                    PRINTJOB
+                    _PBPAGE = vpbpage
+                    _PEPAGE = vpepage
+                    REPORT FORM &_Form;
+ENVIRONMENT NOEJECT TO PRINT
+                    ENDPRINTJOB
+               ELSE
+                    REPORT FORM &_Form;
+ENVIRONMENT NOEJECT TO PRI
+               ENDIF
+          ELSE
+               IF PARAMETERS() >=  ;
+                  6 .AND. ran_pg
+                    PRINTJOB
+                    _PBPAGE = vpbpage
+                    _PEPAGE = vpepage
+                    REPORT FORM &_Form;
+NOEJECT TO PRINT
+                    ENDPRINTJOB
+               ELSE
+                    REPORT FORM &_Form;
+NOEJECT TO PRINT
+               ENDIF
+          ENDIF
+          SET PRINTER TO
+          IF  .NOT. _wp
+               FOR i = 1 TO num_c
+                    IF ready2pr()  ;
+                       .AND.  ;
+                       IIF(num_c >  ;
+                       1,  ;
+                       yesno( ;
+                       'Copia ' +  ;
+                       STR(i, 2) +  ;
+                       ' .¨Prepare el papel. Listo?' ;
+                       ), .T.)
+                         !TYPE &P_FIL;
+>PRN
+                    ENDIF
+                    IF LASTKEY() =  ;
+                       27
+                         EXIT
+                    ENDIF
+               ENDFOR
+          ELSE
+               !FOXSWAP WP &p_fil
+          ENDIF
+          ERASE &p_fil
+     ELSE
+          IF _tipo = 1
+               IF PARAMETERS() >=  ;
+                  6 .AND. ran_pg
+                    PRINTJOB
+                    _PBPAGE = vpbpage
+                    _PEPAGE = vpepage
+                    REPORT FORM &_Form;
+ENVIRONMENT TO FILE (P_FIL) NOEJECT
+                    ENDPRINTJOB
+               ELSE
+                    REPORT FORM &_Form;
+ENVIRONMENT TO FILE (P_FIL) NOEJECT
+               ENDIF
+          ELSE
+               IF PARAMETERS() >=  ;
+                  6 .AND. ran_pg
+                    PRINTJOB
+                    _PBPAGE = vpbpage
+                    _PEPAGE = vpepage
+                    REPORT FORM &_Form;
+TO FILE (P_FIL) NOEJECT
+                    ENDPRINTJOB
+               ELSE
+                    REPORT FORM &_Form;
+TO FILE (P_FIL) NOEJECT
+               ENDIF
+          ENDIF
+          IF  .NOT. _wp
+               IF _dest =  ;
+                  'Pantalla '
+                    MODIFY COMMAND  ;
+                           (p_fil)  ;
+                           NOEDIT  ;
+                           WINDOW  ;
+                           _repo
+                    IF yesno( ;
+                       '¨Imprime el reporte ? ' ;
+                       )
+                         FOR i =  ;
+                             1 TO  ;
+                             num_c
+                              IF ready2pr()  ;
+                                 .AND.  ;
+                                 IIF(num_c >  ;
+                                 1,  ;
+                                 yesno( ;
+                                 'Copia ' +  ;
+                                 STR(i,  ;
+                                 2) +  ;
+                                 ' .¨Prepare el papel. Listo?' ;
+                                 ),  ;
+                                 .T.)
+                                   !TYPE &P_FIL >PRN
+                              ENDIF
+                              IF LASTKEY() =  ;
+                                 27
+                                   EXIT
+                              ENDIF
+                         ENDFOR
+                    ENDIF
+               ENDIF
+          ELSE
+               !FOXSWAP WP &p_fil
+          ENDIF
+          IF _dest <> 'Archivo  '
+               ERASE (p_fil)
+          ENDIF
+     ENDIF
+     DEACTIVATE WINDOW _repo
+ELSE
+     DO standby WITH  ;
+        'EL REPORTE HA SIDO CANCELADO.'
+ENDIF
+RELEASE WINDOW msg2use
+ON ESCAPE
+SET ESCAPE OFF
+IF _tipo = 1
+     CLOSE DATABASES
+ENDIF
+IF  .NOT. EMPTY(_wndold)
+     ACTIVATE WINDOW &_WndOld
+ELSE
+     ACTIVATE SCREEN
+ENDIF
+SET CONSOLE &_CONSO
+RETURN
+*
+FUNCTION ready2pr
+DO WHILE  .NOT. PRINTSTATUS()
+     IF  .NOT. yesno( ;
+         'La Impresora est  apagada.¨ Continua ?' ;
+         )
+          RETURN .F.
+     ENDIF
+ENDDO
+RETURN .T.
+*
+FUNCTION isdisket
+PARAMETER _drive
+PRIVATE m.drive, vret
+vret = .T.
+m.drive = _drive
+LOAD IsDiskIn.BIN
+CALL isdiskin WITH m.drive
+DO WHILE m.drive='0:'
+     ?? CHR(7) + CHR(7)
+     DO standby WITH  ;
+        '! El drive '+_drive+ ;
+        ' no est  listo !'
+     IF LASTKEY() = 27
+          vret = .F.
+          EXIT
+     ENDIF
+     m.drive = _drive
+     CALL isdiskin WITH m.drive
+ENDDO
+_drive = m.drive
+RELEASE MODULE IsDiskIn.BIN
+RETURN vret
+
+FUNCTION valNumRuc
+*-----------------
+PARAMETERS cNumRuc
+PRIVATE mRet
+nLong = LEN(ALLTRIM(cNumRuc))
+mRet = .F.
+IF (nLong=11)
+	dig01 = VAL(SUBSTR(cNumRuc,1,1))
+	dig02 = VAL(SUBSTR(cNumRuc,2,1))
+	dig03 = VAL(SUBSTR(cNumRuc,3,1))
+	dig04 = VAL(SUBSTR(cNumRuc,4,1))
+	dig05 = VAL(SUBSTR(cNumRuc,5,1))
+	dig06 = VAL(SUBSTR(cNumRuc,6,1))
+	dig07 = VAL(SUBSTR(cNumRuc,7,1))
+	dig08 = VAL(SUBSTR(cNumRuc,8,1))
+	dig09 = VAL(SUBSTR(cNumRuc,9,1))
+	dig10 = VAL(SUBSTR(cNumRuc,10,1))
+	dig11 = VAL(SUBSTR(cNumRuc,11,1))
+	
+	suma = dig01 * 5 + dig02 * 4 + dig03 * 3 + dig04 * 2 + dig05 * 7;
+         + dig06 * 6 + dig07 * 5 + dig08 * 4 + dig09 * 3 + dig10 * 2
+	resto = MOD(suma, 11)
+	res = 11 - resto
+	if (res >= 10) {
+	   res = res= 10
+	endif
+	if (res = dig11) 
+	   mret = .T.
+	*  sRpta = "ok"
+	else
+*	   DO standby WITH 'el ruc no es valido'
+	endif
+ELSE
+*   DO standby WITH 'el ruc no es valido'
+ENDIF
+
+RETURN mRet
+
+*
+PROCEDURE clrscr
+PRIVATE fil, col
+fil = 11
+col = 39
+DO WHILE (col>0) .AND. (fil>0)
+     @ fil, col CLEAR TO 23 - fil,  ;
+       79 - col
+     fil = fil - 1
+     col = col - 3
+     = INKEY(0.001 , 'H')
+ENDDO
+CLEAR
+RETURN
+*
+PROCEDURE err_input
+ACTIVATE WINDOW err_input
+@ 00, 01 SAY 'DATO NO VALIDO'
+aa = INKEY(1, 'H')
+DEACTIVATE WINDOW err_input
+RETURN
+*
+PROCEDURE savcon
+USE IN 0 UsuSis ALIAS usu
+PUBLIC _hora
+SELECT usu
+APPEND BLANK
+_hora = TIME()
+REPLACE codusu WITH vconex
+REPLACE machine WITH vmaq
+REPLACE tipmaq WITH  ;
+        SUBSTR(SYS(17), 3)
+REPLACE prog WITH SYS(16, 1)
+REPLACE hora WITH _hora
+REPLACE dia WITH DAY(DATE())
+REPLACE llave WITH vllav
+vusurec = RECNO()
+USE
+RETURN
+*
+FUNCTION ve_passw
+PARAMETER _psw
+PRIVATE xxx
+xxx = SPACE(6)
+DEFINE WINDOW _pasw FROM 12, 15  ;
+       TO 17, 65 TITLE  ;
+       ' Password de seguridad '  ;
+       COLOR SCHEME 5
+ACTIVATE WINDOW _pasw
+CLEAR
+@ 1, 4 SAY  ;
+  'Opci¢n restringida, ingrese password: '
+@ 2, 20 SAY '[      ]'
+@ 2, 21 GET xxx PICTURE '@!'  ;
+  COLOR ,N 
+READ
+RELEASE WINDOW _pasw
+IF LASTKEY() <> 27 .AND. xxx =  ;
+   UPPER(_psw)
+     RETURN .T.
+ELSE
+     DO standby WITH  ;
+        'Password incorrecto. ! Acceso denegado !'
+ENDIF
+RETURN .F.
+*
+FUNCTION val_ruc
+PARAMETER xcod, _fil, _col
+valias = ALIAS()
+SELECT maeprv
+vorder = ORDER()
+SET ORDER TO MaePrv2
+v_enc = .F.
+v_fun = .F.
+IF  .NOT. EMPTY(xcod)
+     SEEK xcod
+     v_enc = FOUND()
+     v_fun = .T.
+ENDIF
+IF  .NOT. v_enc
+     SET ORDER TO MaePrv3
+     GOTO TOP
+     _oldwnd = WOUTPUT()
+     ACTIVATE SCREEN
+     ON KEY LABEL F10 KEYBOARD CHR(23)
+     ON KEY LABEL F2 DO FunBusPrv
+     ON KEY LABEL F5 DO Agr_Prv
+     DEFINE WINDOW wind_cad FROM  ;
+            05, 10 TO 15, 70  ;
+            TITLE  ;
+            ' ± Proveedores ± ®F2¯ Busca ° ®F5¯ Agrega ° ®F10¯ Selecciona ° '  ;
+            FOOTER '  ' DOUBLE  ;
+            COLOR SCHEME 15
+     ACTIVATE WINDOW wind_cad
+     BROWSE NOOPTIMIZE FIELDS  ;
+            rucprv :H = 'RUC',  ;
+            nomprv :H =  ;
+            'Descripci¢n' : 50  ;
+            NOMENU NOAPPEND  ;
+            NOEDIT NODELETE  ;
+            NOCLEAR WINDOW  ;
+            wind_cad NOREFRESH
+     ON KEY LABEL F10
+     ON KEY LABEL F2
+     ON KEY LABEL F5
+     DEACTIVATE WINDOW wind_cad
+     RELEASE WINDOW wind_cad
+     IF  .NOT. LASTKEY() = 27
+          v_enc = .T.
+     ELSE
+          v_fun = .F.
+     ENDIF
+ENDIF
+IF v_enc
+     xcod = rucprv
+     xdescri = nomprv
+     SHOW GETS
+     v_fun = .T.
+     IF  .NOT. EMPTY(_fil) .OR.   ;
+         .NOT. EMPTY(_col)
+          @ _fil, _col SAY  ;
+            xdescri
+     ENDIF
+ENDIF
+SET ORDER TO &vOrder
+ON KEY LABEL F5
+ON KEY LABEL F8
+ON KEY LABEL F10
+UNLOCK ALL
+SELECT (valias)
+RETURN v_fun
+*
+PROCEDURE funbusprv
+PRIVATE cord1
+xf2 = ON('KEY', 'F2')
+xf5 = ON('KEY', 'F5')
+ON KEY LABEL F2
+ON KEY LABEL F5
+IF EOF()
+     DO standby WITH vmens08
+     RETURN
+ENDIF
+vtemp = IIF( .NOT. EOF(), RECNO(), - ;
+        1)
+cord1 = ORDER()
+SET ORDER TO MaePrv3
+vbusca = SPACE(30)
+vnombre = 'Nombre : '
+IF LASTKEY() <> 27
+     DEFINE WINDOW lista FROM 13,  ;
+            12 TO 16, 68 FLOAT  ;
+            TITLE  ;
+            ' °° B£squeda °° '  ;
+            DOUBLE COLOR SCHEME  ;
+            10
+     ACTIVATE WINDOW lista
+     @ 1, 2 SAY vnombre GET  ;
+       vbusca
+     READ
+     DEACTIVATE WINDOW lista
+     RELEASE WINDOW lista
+ENDIF
+IF EMPTY(vbusca) .OR. LASTKEY() =  ;
+   27
+ELSE
+     SEEK ALLTRIM(vbusca)
+     IF  .NOT. FOUND()
+          DO standby WITH  ;
+             'Proveedor no Existe'
+          IF vtemp = -1
+               GOTO BOTTOM
+          ELSE
+               GOTO vtemp
+          ENDIF
+     ELSE
+     ENDIF
+ENDIF
+SET ORDER TO &cOrd1
+ON KEY LABEL F2 &xF2
+ON KEY LABEL F5 &xF5
+RETURN
+*
+PROCEDURE agr_prv
+PRIVATE malias, m.codprv,  ;
+        m.rucprv, m.nomprv
+xf2 = ON('KEY', 'F2')
+xf5 = ON('KEY', 'F5')
+ON KEY LABEL F2
+ON KEY LABEL F5
+malias = ALIAS()
+SELECT maeprv
+SCATTER BLANK MEMVAR
+DEFINE WINDOW w_cli FROM 05, 05  ;
+       TO 20, 70 TITLE  ;
+       'Ingresando Cliente'  ;
+       DOUBLE COLOR SCHEME 5
+ACTIVATE WINDOW w_cli
+@ 02, 1 SAY '       Codigo : ' +  ;
+  m.codprv
+@ 04, 1 SAY '       R.U.C. : '  ;
+  GET m.rucprv PICTURE  ;
+  '99999999999'
+@ 06, 1 SAY ' Razon Social : '  ;
+  GET m.nomprv FUNCTION '!S30'
+READ VALID val_read()
+DEACTIVATE WINDOW w_cli
+RELEASE WINDOW w_cli
+IF LASTKEY() <> 27
+     m.codprv = corprv()
+     IF f_appd()
+          GATHER MEMVAR
+     ENDIF
+ENDIF
+SELECT (malias)
+ON KEY LABEL F2 &xF2
+ON KEY LABEL F5 &xF5
+RETURN
+*
+FUNCTION corprv
+PRIVATE cord, m.correl
+calias = ALIAS()
+SELECT maeprv
+cord = ORDER()
+SET ORDER TO MaePrv1
+GOTO TOP
+m.correl = '0'
+SCAN
+     m.correl = codprv
+ENDSCAN
+m.correl = PADL(ALLTRIM(STR(VAL(m.correl) + 1)), 4, '0')
+SET ORDER TO (cord)
+RETURN m.correl
+*
+
+FUNCTION val_tdocrf
+*------------------
+PARAMETER _fil, _col
+PRIVATE cali
+cali = ALIAS()
+SELECT pcompag
+IF SEEK(m.tipdocrf)
+     @ _fil, _col SAY  ;
+       ALLTRIM(descri)
+     mret = .T.
+ELSE
+     cord = ORDER()
+     SET ORDER TO pComPag02
+     m.tipdocrf = SPACE(2)
+     DEFINE POPUP v__xx FROM 2,  ;
+            40 TO 17, 79 PROMPT  ;
+            FIELDS descri
+     ON SELECTION POPUP v__xx DEACTIVATE;
+POPUP
+     ACTIVATE POPUP v__xx
+     RELEASE POPUP v__xx
+     IF LASTKEY() <> 27
+          m.tipdocrf = codigo
+          @ _fil, _col SAY  ;
+            LEFT(descri, 40)
+          mret = .T.
+     ELSE
+          mret = .F.
+     ENDIF
+     SET ORDER TO &cOrd
+ENDIF
+SELECT (cali)
+RETURN mret

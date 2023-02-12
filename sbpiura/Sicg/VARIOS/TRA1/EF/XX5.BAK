@@ -1,0 +1,104 @@
+*do creafs
+DO RepFS
+PROCEDURE CREAFS
+	do espera with 1,'estamos trabajando'
+	for i=1 to 12
+		do espera with 1,'estamos trabajando f-1 '+ str(i)
+		do xx1 with i,'F-1'
+	endfor
+	for i=1 to 12
+		do espera with 1,'estamos trabajando f-2 '+ str(i)
+		do xx1 with i,'F-2'
+	endfor
+	do espera with 2
+RETURN
+
+PROCEDURE RepFS
+	do espera with 1,'estamos trabajando'
+	for i=1 to 12
+		do espera with 1,'estamos trabajando f-1 '+ str(i)
+		do case
+			case i=1
+				dFecha1={31/01/98}
+				dFecha2={31/01/97}
+			case i=2
+				dFecha1={28/02/98}
+				dFecha2={28/02/97}
+			case i=3
+				dFecha1={31/03/98}
+				dFecha2={31/03/97}
+			case i=4
+				dFecha1={30/04/98}
+				dFecha2={30/04/97}
+			case i=5
+				dFecha1={31/05/98}
+				dFecha2={31/05/97}
+			case i=6
+				dFecha1={30/06/98}
+				dFecha2={30/06/97}
+			case i=7
+				dFecha1={31/07/98}
+				dFecha2={31/07/97}
+			case i=8
+				dFecha1={31/08/98}
+				dFecha2={31/08/97}
+			case i=9
+				dFecha1={30/09/98}
+				dFecha2={30/09/97}
+			case i=10
+				dFecha1={31/10/98}
+				dFecha2={31/10/97}
+			case i=11
+				dFecha1={30/11/98}
+				dFecha2={30/11/97}
+			case i=12
+				dFecha1={31/12/98}
+				dFecha2={31/12/97}
+		endcase
+		do xx2 with dFecha1,dFecha2,'RepF1'
+	endfor
+	
+	for j=1 to 12
+		do espera with 1,'estamos trabajando f-2 '+ str(j)
+		do case
+			case j=1
+				dFecha1={31/01/98}
+				dFecha2={31/01/97}
+			case j=2
+				dFecha1={28/02/98}
+				dFecha2={28/02/97}
+			case j=3
+				dFecha1={31/03/98}
+				dFecha2={31/03/97}
+			case j=4
+				dFecha1={30/04/98}
+				dFecha2={30/04/97}
+			case j=5
+				dFecha1={31/05/98}
+				dFecha2={31/05/97}
+			case j=6
+				dFecha1={30/06/98}
+				dFecha2={30/06/97}
+			case j=7
+				dFecha1={31/07/98}
+				dFecha2={31/07/97}
+			case j=8
+				dFecha1={31/08/98}
+				dFecha2={31/08/97}
+			case j=9
+				dFecha1={30/09/98}
+				dFecha2={30/09/97}
+			case j=10
+				dFecha1={31/10/98}
+				dFecha2={31/10/97}
+			case j=11
+				dFecha1={30/11/98}
+				dFecha2={30/11/97}
+			case j=12
+				dFecha1={31/12/98}
+				dFecha2={31/12/97}
+		endcase
+		do xx2 with dFecha1,dFecha2,'RepF2'
+	endfor
+do espera with 2
+RETURN

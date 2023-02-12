@@ -1,0 +1,2 @@
+dFecha2=CTOD(IIF(MOD(nAno-1,4)=0,"29/",28/)"30/"+PADL(ALLTRIM(STR(nMes)),2,"0")+"/"+ALLTRIM(STR(nAno-1)))
+Error en l¡nea 33: Error de sintaxis.

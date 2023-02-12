@@ -1,0 +1,6 @@
+****************************
+C:\SYS\BASES\GC_EST00 Recover report - 10/28/03 17:18:33
+
+** DBF file: 
+Record counter adjusted!
+0.10 seconds.

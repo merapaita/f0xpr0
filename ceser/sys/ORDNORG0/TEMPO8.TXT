@@ -1,0 +1,46 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   14/11/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   08:49:14
+                                                     DESDE:13/11/2015  HASTA:13/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   050  SUCURSAL PIURA                
+
+      1     7311 13/11/2015     7311 CRUZ MERINO LUIS          PIONER     DV-270.S        DGTE             15180 001  13/11/2015
+      2     7312 13/11/2015     7312 CRUZ MERINO LUIS          SONY       DVP-K88P        2060254          15180 001  13/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     2
+
+                                                                       TOTAL SUCURSAL PIURA                =>     2
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA             =>     2
+ GARA EN GARANTIA                   
+
+   090                                
+
+      3     7313 13/11/2015     7313 NEIRA NEIRA CLEVER        SAMSUNG    UN40H5100AGXPE  039X3CEF8003      1000 001  13/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     1
+
+                                                                       TOTAL                               =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA                   =>     1
+ GEXS EN GARANTIA EXTENDIDA SAGA    
+
+   850                                
+
+      4    15076 13/11/2015    15076 CARRASCO OLMOS CECILIA DE SAMSUNG    WA13W9XFP/XPE   CC\               2008 011  13/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     1
+
+                                                                       TOTAL                               =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA EXTENDIDA SAGA    =>     1
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>     4
+                                                                                                             ммммммм
+

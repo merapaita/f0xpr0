@@ -1,0 +1,142 @@
+CORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        1
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 05/05/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 18:04:45
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/04/20   AL: 30/04/20
+                                         DEL TALLER:TALLER COMPUTADORAS  AL:TALLER QD           
+                                         DEL EMISOR:SONY SUCURSAL PERU   AL:COLATINA SSP - PIURA
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ GARA EN GARANTIA                
+
+      1   620187   620187 16/03/20 08/04/20     23  SONY       KV-21FS120      C4924            65594 FERIA CAMACHO,      023  30/04/20 GARA
+                                                    POR SWITCH TACT.                      SE CREA OTRA OR                                   
+      2   620343   620343 04/04/20 04/04/20      0  SONY       MHC-GN660       9506602          15977 PASAPERA DOMINGUEZ  100  30/04/20 GARA
+                                                    DECKS SE TRABAN, SE ENCONTRO MECANISMO DE CASETERAS DESAJUSTADO. SE REALIZO LUBRICACION 
+      3   620300   620300 30/03/20 06/04/20      7  SONY       MHC-RG221       9175565          40884 CHAFLOQUE PERICHE   100  12/04/20 GARA
+                                                    ARTICULO NO LEE CD. SE CAMBIO OPTICAL. SE PUSO A PRUEBA Y FUNCIONA OK.                  
+      4   620304   620304 30/03/20 06/04/20      7  SONY       MHC-RG441       9155120          40884 CHAFLOQUE PERICHE   100  12/04/20 GARA
+                                                    ARTICULO NO LEE CD. SE CAMBIO OPTICAL. SE PUSO A PRUEBA Y FUNCIONA OK.                  
+      5   620321   620321 01/04/20 07/04/20      6  SONY       MHC-RG551       9155158          21983 FERIA CAMACHO       100  30/04/20 GARA
+                                                    NO LEE CD, CLIENTE INDICA QUE CASETERA ENREDA CINTA.EN CD SE ENCONTRO OPTICAL           
+      6   620376   620376 08/04/20 13/04/20      5  SONY       MHC-RG441       9156389          21983 FERIA CAMACHO       100  30/04/20 GARA
+                                                    NO LEE CD. SE ENCONTRO OPTICAL DEFECTUOSO.SE PROCEDIO HA REEMLAZAR OPTICAL. PRUEBA      
+      7   620349   620349 05/04/20 14/04/20      9  SONY       MHC-GN770       9505413          21983 FERIA CAMACHO       020  30/04/20 GARA
+                                                    TWETTER NO FUNCIONA. SE ENCONTRO BOBINA DE PARLANTE RECALENTADA.SE CONSULTO GARANTIA DE 
+      8   620420   620420 13/04/20 14/04/20      1  SONY       MHC-GN600       9524703          15977 PASAPERA DOMINGUEZ  010  14/04/20 GARA
+                                                    CLIENTE INDICA QUE DESPUES DE UN TIEMPO AUDIO DISTORSIONA. ARTICULO SE PUSO A PRUEBA POR
+      9   620401   620401 12/04/20 15/04/20      3  SONY       FST-ZX8         9505424          15977 PASAPERA DOMINGUEZ  100  30/04/20 GARA
+                                                    NO FUNCIONA CON AC,EN REVISION SE ENCONTRO CONECTOR DE TRANSFORMADOR QUE VA HACIA LA    
+     10   620419   620419 12/04/20 15/04/20      3  SONY       LBT-XGR88       9504697          40884 CHAFLOQUE PERICHE   100  30/04/20 GARA
+                                                    ARTICULO ALGUNAS TECLAS NO OBEDECEN, DSE REMPLAZO SWITCH TACT EN MAL ESTADO, ADEMAS SE  
+     11   620425   620425 13/04/20 15/04/20      2  SONY       CFD-G550        1003574          21983 FERIA CAMACHO       100  30/04/20 GARA
+                                                    DESPUES DE UN TIEMPO  SE DETIENE CD,SALTA PISTAS. SE ENCONTRO OPTICAL CON BAJA EMISION. 
+     12   620454   620454 15/04/20 16/04/20      1  SONY       MHC-GN660       4408352          40884 CHAFLOQUE PERICHE   100  30/04/20 GARA
+                                                    ARTICULO NO LEE CD. SE LIMPIO LENTE OPTICO. SE PUSO A PRUEBA Y FUNCIONA OK.             
+     13   620458   620458 15/04/20 16/04/20      1  SONY       MHC-GN770       9505413          21983 FERIA CAMACHO       100  30/04/20 GARA
+                                                    TWETTER NO FUNCIONA. SE ENCONTRO BOBINA DE PARLANTE RECALENTADA.SE CONSULTO GARANTIA DE 
+     14   620451   620451 15/04/20 19/04/20      4  SONY       MHC-RG551       9155292          15977 PASAPERA DOMINGUEZ  100  30/04/20 GARA
+                                                    NO LEE CD, EN REVISION SE ENCONTRO OPTICAL BAJO DE EMISION, Y FLAT DE DATOS DE 27 PINES 
+     15   620452   620452 15/04/20 19/04/20      4  SONY       FST-ZX6         9501417          40884 CHAFLOQUE PERICHE   100  30/04/20 GARA
+                                                    ARTICULO NO LEE CD. SE ENCONTRO LECTOR OPTICO BAJO DE EMISION LASER, SE REMPLAZO PRUEBA 
+     16   620453   620453 15/04/20 19/04/20      4  SONY       MHC-RG221       9174266          21983 FERIA CAMACHO       100  30/04/20 GARA
+                                                    NO FUNCIONA CON AC. SE ENCONTRO IC MICROPROCESADOR,CRISTAL OSCILADOR,IC REGULADOR DE 5V 
+     17   620457   620457 15/04/20 19/04/20      4  SONY       MHC-GN660       4409429          15977 PASAPERA DOMINGUEZ  100  30/04/20 GARA
+                                                    NO LEE CD, SE APAGA SOLO, SE ENCONTRO IC AMPLIFICADOR EN CORTO Y OPTICAL    BAJO DE     
+     18   620460   620460 16/04/20 19/04/20      3  SONY       MHC-RG441       9171885          21983 FERIA CAMACHO       100  30/04/20 GARA
+                                                    SALTA PISTAS. SE ENCONTRO OPTICAL BAJO DE EMISION.SWE REEMPLAZO OPTICAL.PRUEBA FUNCIONA,
+     19   620478   620478 18/04/20 20/04/20      2  SONY       MHC-RG221       9174286          40884 CHAFLOQUE PERICHE   020  21/04/20 GARA
+                                                    ARTICULO NO FUNCIONA CON CONTROL REMOTO. SE CAMBIO IC610. SE PUSO A PRUEBA YFUNCIONA OK.
+     20   620500   620500 20/04/20 20/04/20      0  SONY       MHC-GN600       9524956          65594 FERIA CAMACHO,      100  30/04/20 GARA
+                                                    DECKS TRABADAS,SE REALIZO LUBRICACION Y SINCRONIZACION DE LAS CASETERAS,SE PUSO A PRUEBA
+     21   620450   620450 15/04/20 21/04/20      6  SONY       MHC-GN880       9503             21983 FERIA CAMACHO       023  30/04/20 GARA
+                                                    NECESITA REBOBINADO DE PARLANTES.NO ESTA EN GARANTIA, CLIENTE DEBE ASUMIR COSTO.  52.00 
+     22   620512   620512 21/04/20 21/04/20      0  SONY       MHC-GN660       4400426          40884 CHAFLOQUE PERICHE   020  23/04/20 GARA
+                                                    ARTICULO NO FUNCIONA TECLA DE POWER,DISC1, DISC2 Y DISC3. SE ENCONTRO PISTA ABIERTA. SE 
+     23   620514   620514 21/04/20 21/04/20      0  SONY       MHC-GN880       9503198          21983 FERIA CAMACHO       020  30/04/20 GARA
+                                                    SE APAGA SOLO. SE PUSO A PRUEBA EN TODAS LAS FUNCIONES Y NO PRESENTO PROBLEMA. SE LE DIOCORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        2
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 05/05/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 18:04:46
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/04/20   AL: 30/04/20
+                                         DEL TALLER:TALLER COMPUTADORAS  AL:TALLER QD           
+                                         DEL EMISOR:SONY SUCURSAL PERU   AL:COLATINA SSP - PIURA
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     24   620486   620486 19/04/20 22/04/20      3  SONY       MHC-RG441       9170329          40884 CHAFLOQUE PERICHE   020  22/04/20 GARA
+                                                    ARTICULO BANDEJA DE CD A VECES SE TRABA VECES. SE DIAGNOSTICO ENCODER ROTARY EN MAL     
+     25   620501   620501 20/04/20 22/04/20      2  SONY       MHC-RG551S      9168547          40884 CHAFLOQUE PERICHE   020  23/04/20 GARA
+                                                    ARTICULO NO LEE CD. SE DIAGNOSTICO OPTICAL BAJO DE EMISION LASER. SE REEMPLAZO OPTICAL  
+     26   620540   620540 25/04/20 26/04/20      1  SONY       MHC-RG221       9175632          65594 FERIA CAMACHO,      020  27/04/20 GARA
+                                                    ARTICULO PRESENTO PROBLEMA EN FUENTE DE PODER, NO ILUMINA DISPLAY. SE ENCONTRO RESISTOR 
+     27   620550   620550 26/04/20 26/04/20      0  SONY       MHC-RG441       9171031          65594 FERIA CAMACHO,      020  28/04/20 GARA
+                                                    ARTICULO PRESENTO PROBLEMA EN SISTEMA MECANICO DE CD. BANDEJA SE TRABA POR MOMENTOS, SE 
+     28   620541   620541 25/04/20 27/04/20      2  SONY       MHC-RG441       9160157          15977 PASAPERA DOMINGUEZ  020  28/04/20 GARA
+                                                    NO LEE CD. REVISION SE ENCONTRO OPTICAL EN MAL ESTADO. SE REALIZO REEMPLAZO DE          
+     29   620548   620548 26/04/20 27/04/20      1  SONY       MHC-GN660       4407827          65594 FERIA CAMACHO,      020  27/04/20 GARA
+                                                    EL ARTICULO SE MANTUVO EN PRUEBA, NO  PRESENTO EL PROBLEMA QUE SE INDICA, SE RECOMENDO  
+     30   620551   620551 26/04/20 27/04/20      1  SONY       MHC-RG330       9180479          40884 CHAFLOQUE PERICHE   020  28/04/20 GARA
+                                                    CLIENTE INDICA QUE ARTICULO SE SUBE Y BAJA VOLUMEN SOLO. SE PUSO A PRUEBA DURANTE DOS   
+     31   620562   620562 27/04/20 27/04/20      0  SONY       CDX-S2000       7202708          15977 PASAPERA DOMINGUEZ  020  28/04/20 GARA
+                                                    NO LEE CD, EN REVISION SE ENCONTRO LENTE EMPOLVADO, SE REALIZO LIMPIEZA DE DISPOSITIVO  
+     32   620574   620574 28/04/20 29/04/20      1  SONY       MHC-GN600       4443952          40884 CHAFLOQUE PERICHE   020  03/05/20 GARA
+                                                    ARTICULO DEJA DE LEER DESPUES DE UN TIEMPO. SE REALIZO LIMPIEZA DE LENTE OBJETIVO DEL   
+     33   620579   620579 28/04/20 30/04/20      2  SONY       MHC-GN880       9505367          40884 CHAFLOQUE PERICHE   020  03/05/20 GARA
+                                                    ARTICULO CLIENTE INDICA QUE A VECES NO ENCIENDE DESPUES DE QUE SE HA IDO LA LUZ. SE HA  
+     34   620328   620328 01/04/20 02/04/20      1  SONY       DCR-HC15        0854271          40884 CHAFLOQUE PERICHE   100  30/04/20 GARA
+                                                    ARTICULO SALE IMAGEN CON FRANJAS. SE  EALIZO LIMPIEZA DE CABEZAL Y DE PASO DE CINTA. SE 
+     35   620344   620344 04/04/20 05/04/20      1  SONY       DVP-NS575P      2235481          15977 PASAPERA DOMINGUEZ  080  30/04/20 GARA
+                                                    BANDEJA DE CD NO SALE. REVISION SE REALIZO EN MECANISMO LUBRICACION Y SINCRONIZACION.   
+     36   620241   620241 22/03/20 06/04/20     15  SONY       DVP-K870P       2001366          15977 PASAPERA DOMINGUEZ  100  12/04/20 GARA
+                                                    NO LEE VCD, SE ENCONTRO TARJETA DE VIDEO DEFECTUOSA, SE REEMPLAZO TARJETA.PRUEBA        
+     37   620378   620378 08/04/20 11/04/20      3  SONY       DVP-NC675       2002196          15977 PASAPERA DOMINGUEZ  100  30/04/20 GARA
+                                                    NO LEE CDS. SE ENCONTRO BLOQUE OPTICO CON DESAJUSTE, SE RWEALIZO AJUSTE MECANICO. PRUEBA
+     38   620350   620350 05/04/20 13/04/20      8  SONY       KV-25FV300      C4120            40884 CHAFLOQUE PERICHE   023  30/04/20 GARA
+                                                    POR FLYBACK Y TRANSISTOR.             SE GENERO OTRA OR                                 
+     39   620417   620417 12/04/20 13/04/20      1  SONY       DVP-NS575P      2176179          15977 PASAPERA DOMINGUEZ  100  30/04/20 GARA
+                                                    NO HAY IMAGEN. EN REVISION SE ENCONTRO RESISTENCIA DE 75 OHMIOS ABIERTA. SE REALZIO     
+     40   620400   620400 12/04/20 15/04/20      3  SONY       DVP-NS575P      2027729          21983 FERIA CAMACHO       020  23/04/20 GARA
+                                                    DVD ENCIENDE, PERO NO OBEDECE NINGUNA FUNCION.TIENE PROBLEMAS EN LA TERJETA DE VIDEO.SE 
+     41   620422   620422 13/04/20 15/04/20      2  SONY       KV-21FA310      C417972          15977 PASAPERA DOMINGUEZ  100  30/04/20 GARA
+                                                    NO FUNCIONA, EN REVISION SE ENCONTRO PROBLEMAS EN ETAPA HORIZONTAL, SE REEMPLAZO DIODO, 
+     42   620426   620426 13/04/20 15/04/20      2  SONY       KV-25FV300      C412062          40884 CHAFLOQUE PERICHE   020  15/04/20 GARA
+                                                    ARTICULO NO ENCIENDE. SE CAMBIO TRANSISTOR DE SALIDA HORIZONTAL, Y TRANSFORMADOR        
+     43    62989    62989 22/04/20 28/04/20      6  SONY       KV-38DRC2       9000201          65594 FERIA CAMACHO,      020  29/04/20 GARA
+                                                    ARTICULO PRESENTO PROBLEMA EN ETAPA DE SINTONIA, NO CAPTABA LOS CANALES. SE DIAGNOSTICO 
+     44   620306   620306 30/03/20 02/04/20      3  SONY       DCR-TRV361      1857668          40884 CHAFLOQUE PERICHE   100  14/04/20 GARA
+                                                    ARTICULO SALE MENSAJE DE VUELVA A INSERTAR CASSETTE. SE REALIZO LIMPIEZA INTERNA Y      
+     45   620264   620264 28/03/20 07/04/20     10  SONY       CCD-TRV128      857939           40884 CHAFLOQUE PERICHE   100  12/04/20 GARA
+                                                    ARTICULO NO TIENE AUDIO. SE CAMBIO KEY BLOCK CONTROL. SE PUSO A PRUEBA Y FUNCIONA OK.   
+     46   620311   620311 31/03/20 13/04/20     13  SONY       DSC-P32         6897367          40884 CHAFLOQUE PERICHE   020  30/04/20 GARA
+                                                    ARTICULO SALE MENSAJE DE VOLVER A ENCENDER LA CAMARA. SE CAMBIO MOTOR DC. SE PUSO A     
+     47   620397   620397 11/04/20 13/04/20      2  SONY       DCR-TRV33       853055           40884 CHAFLOQUE PERICHE   010  13/04/20 GARA
+                                                    ARTICULO DISTORCIONA IMAGEN INTERMITENTEMENTE EN FUNCION CAMARA. SE REVIZO SIN ENCONTRARCORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        3
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 05/05/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 18:04:46
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/04/20   AL: 30/04/20
+                                         DEL TALLER:TALLER COMPUTADORAS  AL:TALLER QD           
+                                         DEL EMISOR:SONY SUCURSAL PERU   AL:COLATINA SSP - PIURA
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+                          TOTAL ABRIL               м>    47     6    10     8     7     4     1     8     3     3 18
+                          TOTAL TALLER              =>    47     6    10     8     7     4     1     8     3     3 18
+                TOTAL SONY SUCURSAL DEL PERU        =>    47     6    10     8     7     4     1     8     3     3 18
+
+                                                    ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+            TOTAL GARA EN GARANTIA                  =>    47     6    10     8     7     4     1     8     3     3 18
+                                                    ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+         TOTAL PROMEDIO DE ATENCION        45       =>    47     6    10     8     7     4     1     8     3     3 18
+                                                           %   12.7  21.2  17.0  14.8   8.5   2.1  17.0   6.3
+                                                    ACUMUL %   12.7  34.0  51.0  65.9  74.4  76.5  93.6 100.0
+                                                    ммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм
+

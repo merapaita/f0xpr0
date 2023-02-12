@@ -1,0 +1,1416 @@
+CLOSE DATABASES
+USE IN 1 PagaCta  ALIAS pagacta  ORDER PagaCta1
+USE IN 2 Creditos ALIAS creditos ORDER Creditos1
+USE IN 3 Parmae   ALIAS parma    ORDER Parmae1
+USE IN 4 Clientes ALIAS clien    ORDER Clientes1
+USE IN 6 Caja ALIAS caja ORDER Caja1
+USE IN 7 Ventas ALIAS ventas ORDER Ventas1
+USE IN 8 KarCre ALIAS karcre ORDER KarCre1
+vmens01 = 'Registro de Pagos a Cuenta'
+vmens02 = ' Pagos a Cuenta : REVISION '
+vmens04 = 'Dicho Pago a Cuenta no fue encontrado'
+vmens05 = 'No existe Pago a Cuenta anterior'
+vmens06 = 'No existe Pago a Cuenta siguiente'
+vmens07 = '¨ Desea Eliminar ‚ste Pago a Cuenta ?'
+vmens08 = 'No hay registros para procesar'
+vmens09 = 'Este Pago a Cuenta ha sido anulado'
+vmens10 = 'El Pago a Cuenta ya est  Atendido'
+vmens11 = 'El Pago a Cuenta ha sido devuelto'
+SELECT pagacta
+GOTO BOTTOM
+SCATTER BLANK MEMVAR
+DO inicia
+HIDE POPUP ALL
+DO pantalla
+DO vista
+STORE .T. TO ven_accion
+DO WHILE ven_accion
+     ACTIVATE SCREEN
+     ACTIVATE MENU mmenu
+ENDDO
+DO fin_opcion
+RETURN
+*
+PROCEDURE inicia
+ACTIVATE SCREEN
+vtempo = ' Revisa  Busca  Anterior  Siguiente  Corrige  Ingresa  Anula    Listar  Termina '
+DO logos WITH rotulo1, vtempo
+DEFINE WINDOW wind_0 FROM 00, 00 TO 23, 79 TITLE vmens01 DOUBLE COLOR SCHEME 10
+DEFINE MENU mmenu COLOR SCHEME 3
+DEFINE PAD revis OF mmenu PROMPT '\<Revisa' AT 24, 00
+DEFINE PAD busca OF mmenu PROMPT '\<Busca' AT 24, 08
+DEFINE PAD anter OF mmenu PROMPT '\<Anterior' AT 24, 15
+DEFINE PAD proxi OF mmenu PROMPT '\<Siguiente' AT 24, 25
+DEFINE PAD corri OF mmenu PROMPT '\<Corrige' AT 24, 36
+DEFINE PAD ingre OF mmenu PROMPT '\<Ingresa' AT 24, 45
+DEFINE PAD elimi OF mmenu PROMPT 'A\<nula  ' AT 24, 54
+DEFINE PAD lista OF mmenu PROMPT '\<Listar ' AT 24, 63
+DEFINE PAD termi OF mmenu PROMPT '\<Termina' AT 24, 71
+ON SELECTION PAD revis OF mmenu DO revis
+ON SELECTION PAD busca OF mmenu DO busca
+ON SELECTION PAD anter OF mmenu DO anter
+ON SELECTION PAD proxi OF mmenu DO proxi
+ON SELECTION PAD corri OF mmenu DO corri
+ON SELECTION PAD ingre OF mmenu DO ingre
+ON SELECTION PAD elimi OF mmenu DO anula
+ON SELECTION PAD lista OF mmenu DO lista
+ON SELECTION PAD termi OF mmenu DO termi
+RETURN
+*
+PROCEDURE pantalla
+ACTIVATE WINDOW wind_0
+CLEAR
+@ 00, 50 SAY ' Estado :'
+@ 01, 5 SAY '   Pago a Cuenta :'
+@ 01, 40 SAY 'Fecha :'
+@ 02, 5 SAY '   Clase Credito :'
+@ 03, 5 SAY '             C/P :'
+@ 04, 5 SAY '         Credito :'
+@ 04, 40 SAY 'Fecha :'
+@ 05, 5 SAY '           Venta :'
+@ 06, 5 SAY '         Cliente :'
+@ 07, 5 SAY '     RUC Cliente :'
+@ 08, 5 SAY '            Aval :'
+@ 09, 5 SAY '   Credito Total :'
+@ 10, 5 SAY '    Total Amort. :'
+@ 11, 5 SAY '    Total Ajust. :'
+@ 12, 5 SAY 'Saldo a la Fecha :'
+@ 13, 5 SAY '         Interes :'
+@ 16, 5 SAY '          Ajuste :'
+@ 17, 5 SAY '     Nuevo Saldo :'
+@ 18, 5 SAY '   Observaciones :'
+RETURN
+*
+PROCEDURE vista
+*--------------
+ON KEY LABEL F4 DO Imprimir
+SELECT pagacta
+IF EOF()
+     DO pantalla
+     RETURN
+ENDIF
+ACTIVATE WINDOW wind_0
+SCATTER MEMVAR
+@ 00, 60 SAY estpac()
+@ 01, 26 SAY m.codpac
+@ 01, 50 SAY m.fecpac
+@ 02, 26 SAY m.tipvta
+@ 02, 32 SAY val_para(m.tipvta,'TIPVTA','A',32,20)
+@ 04, 26 SAY m.codcre
+@ 04, 50 SAY m.feccre
+@ 05, 26 SAY m.codvta
+@ 06, 26 SAY m.codcli
+@ 06, 33 SAY val_cli(m.codcli,6,33)
+@ 07, 26 SAY m.ruccli
+@ 08, 26 SAY m.codavl
+@ 08, 33 SAY val_avl(m.codavl,8,33)
+@ 09, 26 SAY m.mtocre  PICTURE '999,999.99'
+@ 10, 26 SAY m.totamo  PICTURE '999,999.99'
+@ 11, 26 SAY m.totaju  PICTURE '999,999.99'
+@ 12, 26 SAY m.saldoaf PICTURE '999,999.99'
+@ 13, 26 SAY m.interes PICTURE '999,999.99'
+@ 14, 26 SAY '==========='
+@ 15, 26 SAY m.saldoaf + m.interes PICTURE '999,999.99'
+@ 16, 26 SAY m.mtoaju  PICTURE '999,999.99'
+@ 17, 26 SAY m.saldo   PICTURE '999,999.99'
+@ 18, 26 SAY LEFT(m.observ, 50)
+@ 19, 26 SAY SUBSTR(m.observ, 51,50)
+IF  .NOT. vflag $ 'J*'
+   DO subopc
+ENDIF
+RETURN
+*
+PROCEDURE revis
+*--------------
+ON KEY LABEL F4
+SELECT pagacta
+IF EOF()
+   DO standby WITH vmens08
+   RETURN
+ENDIF
+vtemp = RECNO()
+HIDE MENU mmenu
+ACTIVATE SCREEN
+vtempo = '°°°°°°°°°°°Presione ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+DO logos WITH rotulo1, vtempo
+vtemp = RECNO()
+HIDE MENU mmenu
+ACTIVATE SCREEN
+ON KEY LABEL F10 KEYBOARD CHR(23)
+BROWSE FIELDS codpac :H = 'PAC',;
+       codcre :H = 'Credito',   ;
+       codvta :H = 'Venta',     ;
+       codcli :H = 'Cliente'    ;
+       NOMENU NOAPPEND NOEDIT NODELETE WINDOW wind_0
+vtempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+DO logos WITH rotulo1, vtempo
+IF LASTKEY() = 27
+   GOTO vtemp
+ENDIF
+SHOW MENU mmenu
+ON KEY LABEL F10
+SELECT pagacta
+DO vista
+RETURN
+*
+PROCEDURE busca
+*--------------
+ON KEY LABEL F4
+IF EOF()
+   DO standby WITH vmens08
+   RETURN
+ENDIF
+vtemp = RECNO()
+DEFINE POPUP plista FROM 20, 40 COLOR SCHEME c_popup
+DEFINE BAR 1 OF plista PROMPT '\<a. Por Codigo  '
+ON SELECTION POPUP plista DEACTIVATE POPUP
+ACTIVATE POPUP plista
+cord1 = ORDER()
+DO CASE
+   CASE BAR() = 1
+        vbusca = SPACE(7)
+        vnombre = 'Codigo :'
+        SET ORDER TO PagaCta1
+   OTHERWISE
+        vbusca = ''
+        vnombre = ''
+        SET ORDER TO
+ENDCASE
+IF LASTKEY() <> 27
+   DEFINE WINDOW lista FROM 09,12 TO 16, 68 FLOAT TITLE ' °° B£squeda °° ' DOUBLE COLOR SCHEME 5
+   ACTIVATE WINDOW lista
+   @ 3, 2 SAY vnombre GET vbusca
+   READ VALID val_read()
+   DEACTIVATE WINDOW lista
+   IF EMPTY(vbusca) .OR. LASTKEY() = 27
+   ELSE
+      SEEK ALLTRIM(vbusca)
+      IF  .NOT. FOUND()
+         DO standby WITH vmens04
+         GOTO vtemp
+      ENDIF
+   ENDIF
+ENDIF
+DO vista
+SET ORDER TO &cOrd1
+RETURN
+*
+PROCEDURE anter
+*--------------
+SELECT pagacta
+IF EOF()
+     DO standby WITH vmens08
+     RETURN
+ENDIF
+IF  .NOT. BOF()
+     SKIP -1
+ENDIF
+IF BOF()
+   GOTO TOP
+   DO standby WITH vmens05
+ELSE
+   DO vista
+ENDIF
+RETURN
+*
+PROCEDURE proxi
+*--------------
+SELECT pagacta
+IF EOF()
+   DO standby WITH vmens08
+   RETURN
+ENDIF
+IF  .NOT. EOF()
+   SKIP
+ENDIF
+IF EOF()
+   DO standby WITH vmens06
+   GOTO BOTTOM
+ELSE
+   DO vista
+ENDIF
+RETURN
+*
+PROCEDURE corri
+*--------------
+ON KEY LABEL F4
+IF EOF()
+   DO standby WITH vmens08
+   RETURN
+ENDIF
+SELECT pagacta
+SCATTER MEMVAR
+DO pantalla
+@ 00, 60 SAY val_para(m.estado,'ESTVTA',' ',60,10)
+@ 01, 26 GET m.codpac WHEN .F.
+@ 01, 50 GET m.fecpac WHEN .F.
+@ 02, 26 GET m.tipvta WHEN .F.
+@ 02, 32 SAY val_para(m.tipvta, 'TIPVTA','A',32,20)
+@ 03, 26 GET m.compag WHEN .F.
+@ 03, 32 GET m.codcp
+@ 03, 54 GET m.feccp WHEN .F.
+@ 04, 26 GET m.codcre WHEN .F.
+@ 04, 50 GET m.feccre WHEN .F.
+@ 05, 26 GET m.codvta WHEN .F.
+@ 06, 26 GET m.codcli WHEN .F.
+@ 06, 32 SAY val_cli(m.codcli,6,33)
+@ 07, 26 GET m.ruccli WHEN .F.
+@ 08, 32 SAY val_avl(m.codavl,8,33)
+@ 09, 26 GET m.mtocre  PICTURE '999,999.99' WHEN .F.
+@ 10, 26 GET m.totamo  PICTURE '999,999.99' WHEN .F.
+@ 11, 26 GET m.totaju  PICTURE '999,999.99' WHEN .F.
+@ 12, 26 GET m.saldoaf PICTURE '999,999.99' WHEN .F.
+@ 13, 26 GET m.interes PICTURE '999,999.99' WHEN .F.
+@ 14, 26 SAY '==========='
+@ 15, 26 SAY m.saldoaf + m.interes PICTURE '999,999.99'
+@ 16, 26 GET m.mtoaju PICTURE '999,999.99' WHEN .F.
+@ 17, 26 GET m.saldo  PICTURE '999,999.99' WHEN .F.
+@ 18, 26 GET m.observ PICTURE '@S50'
+READ VALID val_read()
+IF LASTKEY() <> 27
+     IF f_lock(1)
+          SELECT pagacta
+          m.tuser = 'C'
+          m.usercr = vuser_id
+          m.dusercr = DATE()
+          m.husercr = TIME()
+          GATHER MEMVAR
+     ENDIF
+ELSE
+     DO standby WITH 'Proceso cancelado'
+ENDIF
+UNLOCK ALL
+FLUSH
+SELECT pagacta
+DO vista
+RETURN
+*
+PROCEDURE ingre
+*--------------
+ON KEY LABEL F4
+SELECT pagacta
+vtemp = IIF(EOF(), -1, RECNO())
+SCATTER BLANK MEMVAR
+DO pantalla
+m.estado = '00'
+ndeuda = 0
+nacta = 0
+ninteres = 0
+xsaldo = 0
+xfultpag = {}
+STORE m.fecsis TO m.fecpac
+= corpac()
+@ 00, 60 SAY val_para(m.estado,'ESTPAC',' ',60,10)
+@ 01, 26 GET m.codpac WHEN .F.
+@ 01, 50 GET m.fecpac WHEN .F.
+@ 02, 26 GET m.tipvta VALID val_para(m.tipvta,'TIPVTA',' ',26,20) .AND. valcre() .AND. val_cli(m.codcli,6,33) .AND. val_avl(m.codavl,8,33)
+@ 03, 26 GET m.compag VALID val_para(m.compag,'COMPAG','C',26,10)
+@ 03, 32 GET m.codcp
+@ 03, 54 GET m.feccp
+@ 04, 26 GET m.codcre WHEN .F.
+@ 04, 50 GET m.feccre WHEN .F.
+@ 05, 26 GET m.codvta WHEN .F.
+@ 06, 26 GET m.codcli WHEN .F.
+@ 07, 26 GET m.ruccli WHEN .F.
+@ 08, 26 GET m.codavl WHEN .F.
+@ 09, 26 GET m.mtocre PICTURE '999,999.99' WHEN .F.
+@ 10, 26 GET m.totamo PICTURE '999,999.99' WHEN .F.
+@ 11, 26 GET m.totaju PICTURE '999,999.99' WHEN .F.
+@ 12, 26 GET m.saldoaf PICTURE '999,999.99' WHEN .F.
+@ 13, 26 GET m.interes PICTURE '999,999.99' VALID vintcre() WHEN wintcre()
+@ 14, 26 SAY '==========='
+@ 15, 26 GET xsaldo   PICTURE  '999,999.99' WHEN .F.
+@ 16, 26 GET m.mtoaju PICTURE  '999,999.99' VALID vsaldo()
+@ 17, 26 GET m.saldo PICTURE   '999,999.99' WHEN .F.
+@ 18, 26 GET m.observ PICTURE  '@S50'
+READ VALID val_read() .AND. valpac()
+SELECT pagacta
+mact = .T.
+IF LASTKEY() <> 27
+   m.tuser = 'I'
+   m.user = vuser_id
+   m.duser = DATE()
+   m.huser = TIME()
+   DO CASE
+      CASE m.saldo = 0
+           m.estvta = '10'
+           m.estcxc = '10'
+      CASE m.saldo > 0
+           m.estvta = '20'
+           m.estcxc = '20'
+   ENDCASE
+   SELECT caja
+   m.tipcaj = '2'
+   m.fecreg = m.fecpac
+   m.coring = m.codpac
+   m.importe = m.mtoaju
+   IF f_appd()
+      GATHER MEMVAR
+      REPLACE estado WITH '00'
+      UNLOCK
+   ENDIF
+   m.codmov = m.codpac
+   m.fultpag = m.fecreg
+   m.mtoint = m.interes
+   xx = actkarcre('PAC', m.codmov,m.fecpac)
+   SELECT ventas
+   IF SEEK(m.codvta)
+      IF f_lock(1)
+         REPLACE estado WITH m.estvta
+         UNLOCK
+      ENDIF
+   ENDIF
+   IF mact
+      SELECT pagacta
+      IF f_appd()
+         GATHER MEMVAR
+         UNLOCK
+      ENDIF
+      SELECT parma
+      cmes = PADL(ALLTRIM(STR(MONTH(m.fecpac))),2,'0')
+      cano = RIGHT(STR(YEAR(m.fecpac),4), 2)
+      IF  .NOT. SEEK('PAGACT' + cano + cmes)
+         IF f_appd()
+            REPLACE tipo WITH 'PAGACT',;
+                    codigo    WITH cano,  ;
+                    codigoaux WITH cmes,  ;
+                    descri    WITH 'CORRELATIVO DE PAGOS A CUENTA: '+cmes+'/'+cano
+               ENDIF
+         ENDIF
+         IF f_lock(1)
+            REPLACE nument WITH parma.nument + 1
+            UNLOCK
+         ENDIF
+         UNLOCK ALL
+      ENDIF
+   ELSE
+     IF EOF()
+          GOTO BOTTOM
+     ELSE
+          GOTO vtemp
+     ENDIF
+ENDIF
+SELECT pagacta
+FLUSH
+DO vista
+RETURN
+*
+FUNCTION valpac
+*--------------
+mret = .T.
+IF LASTKEY() <> 27
+   IF m.mtoaju = 0.00
+      DO standby WITH 'El Ajuste debe ser diferente de 0'
+      mret = .F.
+   ENDIF
+ENDIF
+RETURN mret
+
+PRIVATE mret, calias, cord1,  ;
+        cord2
+mret = .T.
+calias = ALIAS()
+vidx1 = SYS(3) + '.Idx'
+SELECT creditos.*, clien.nomcli  ;
+       FROM Creditos, Clien WHERE  ;
+       creditos.codcli =  ;
+       clien.codcli AND  ;
+       creditos.tipvta = m.tipvta  ;
+       ORDER BY nomcli INTO  ;
+       CURSOR tmpCre
+SELECT tmpcre
+IF  .NOT. EOF()
+     vtempo = '°°°°°°°°°°° ®F2¯ Buscar   ®F10¯ Seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+     DEFINE WINDOW lista FROM 00,  ;
+            00 TO 24, 79 FLOAT  ;
+            TITLE vtempo DOUBLE  ;
+            COLOR SCHEME 2
+     ACTIVATE WINDOW lista
+     ON KEY LABEL F10 KEYBOARD CHR(23)
+     ON KEY LABEL F2 DO Busdetcr
+     BROWSE FIELDS nomcli :H =  ;
+            'Cliente' : 30,  ;
+            nomben :H = 'Difunto'  ;
+            : 30, feccre :H =  ;
+            'F.Cred.', mtocre :H =  ;
+            'Credito', totint :H =  ;
+            'Intereses', totamo  ;
+            :H = 'Amort.', saldo  ;
+            :H = 'Saldo' NOMENU  ;
+            NOAPPEND NOEDIT  ;
+            NODELETE WINDOW  ;
+            lista
+     ON KEY LABEL F10
+     ON KEY LABEL F2
+     SET RELATION TO
+     DEACTIVATE WINDOW lista
+     RELEASE WINDOW lista
+     IF LASTKEY() <> 27
+          m.codcre = codcre
+          m.feccre = feccre
+          m.codvta = codvta
+          m.codcli = codcli
+          m.codavl = codavl
+          m.mtocre = mtocre
+          m.saldoaf = saldo
+          xfultpag = fultpag
+     ELSE
+          mret = .F.
+     ENDIF
+ELSE
+     DO standby WITH  ;
+        'No Existen Difuntos Pendientes de Pago'
+     mret = .F.
+ENDIF
+USE IN tmpcre
+ERASE (vidx1)
+SELECT (calias)
+SHOW GETS
+RETURN mret
+PRIVATE mret, calias, cord1,  ;
+        cord2
+mret = .T.
+calias = ALIAS()
+SELECT creditos
+cord1 = ORDER()
+SET ORDER TO Creditos2
+SET FILTER TO saldo > 0;
+.AND. tipvta = m.tipvta
+GOTO TOP
+IF  .NOT. EOF()
+     vtempo = '°°°°°°°°°°° ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+     DEFINE WINDOW lista FROM 00,  ;
+            00 TO 24, 79 FLOAT  ;
+            TITLE vtempo DOUBLE  ;
+            COLOR SCHEME 2
+     ACTIVATE WINDOW lista
+     ON KEY LABEL F10 KEYBOARD CHR(23)
+     SET RELATION TO codcli INTO clien
+     BROWSE FIELDS clien.nomcli  ;
+            :H = 'Cliente' : 30,  ;
+            creditos.nomben :H =  ;
+            'Difunto' : 30,  ;
+            creditos.mtocre :H =  ;
+            'Credito',  ;
+            creditos.totint :H =  ;
+            'Intereses',  ;
+            creditos.totamo :H =  ;
+            'Amort.',  ;
+            creditos.saldo :H =  ;
+            'Saldo' NOMENU  ;
+            NOAPPEND NOEDIT  ;
+            NODELETE WINDOW  ;
+            lista
+     ON KEY LABEL F10
+     SET RELATION TO
+     DEACTIVATE WINDOW lista
+     RELEASE WINDOW lista
+     IF LASTKEY() <> 27
+          m.codcre = creditos.codcre
+          m.codvta = creditos.codvta
+          m.codcli = creditos.codcli
+          m.codavl = creditos.codavl
+          m.mtocre = creditos.mtocre
+          m.saldoaf = creditos.saldo
+          xfultpag = creditos.fultpag
+     ELSE
+          mret = .F.
+     ENDIF
+ELSE
+     DO standby WITH  ;
+        'No Existen Difuntos Pendientes de Pago'
+     mret = .F.
+ENDIF
+SELECT creditos
+SET ORDER TO cOrd1
+SHOW GETS
+RETURN mret
+IF EOF()
+     DO standby WITH vmens08
+     RETURN
+ENDIF
+vtemp = IIF( .NOT. EOF(), RECNO(), - ;
+        1)
+DEFINE POPUP plista FROM 15, 40  ;
+       COLOR SCHEME c_popup
+DEFINE BAR 1 OF plista PROMPT  ;
+       '\<a. Por Cliente     '
+DEFINE BAR 2 OF plista PROMPT  ;
+       '\<b. Por Difunto     '
+ON SELECTION POPUP plista DEACTIVATE POPUP
+ACTIVATE POPUP plista
+RELEASE POPUP plista
+cord1 = ORDER()
+vbusca = SPACE(30)
+DO CASE
+     CASE BAR() = 1
+          vnombre = 'Cliente :'
+          INDEX ON UPPER(nomcli)  ;
+                TO (vidx1)
+     CASE BAR() = 2
+          vnombre = 'Difunto : '
+          INDEX ON UPPER(nomben)  ;
+                TO (vidx1)
+     OTHERWISE
+          vbusca = ''
+          vnombre = ''
+          SET ORDER TO
+ENDCASE
+IF LASTKEY() <> 27
+     DEFINE WINDOW lista FROM 13,  ;
+            12 TO 16, 68 FLOAT  ;
+            TITLE  ;
+            ' °° B£squeda °° '  ;
+            DOUBLE COLOR SCHEME  ;
+            10
+     ACTIVATE WINDOW lista
+     @ 1, 2 SAY vnombre GET  ;
+       vbusca FUNCTION '!'
+     READ VALID val_read()
+     DEACTIVATE WINDOW lista
+     RELEASE WINDOW lista
+ENDIF
+IF EMPTY(vbusca) .OR. LASTKEY() =  ;
+   27
+ELSE
+     SEEK ALLTRIM(vbusca)
+     IF  .NOT. FOUND()
+          DO standby WITH  ;
+             'Cliente no Existe'
+          IF vtemp = -1
+               GOTO BOTTOM
+          ELSE
+               GOTO vtemp
+          ENDIF
+     ELSE
+     ENDIF
+ENDIF
+SET ORDER TO &cOrd1
+RETURN
+*
+FUNCTION wintcre
+*---------------
+PRIVATE nsetdec
+IF DTOC(m.feccre, 1) > '20101231'
+     m.interes = ROUND(m.saldoaf*((m.fecpac-xfultpag)/30)*(17.0/1000),2)
+ENDIF
+xsaldo = m.saldoaf + m.interes + m.mtoaju
+SHOW GET m.interes
+SHOW GET xsaldo
+RETURN .T.
+*
+FUNCTION vintcre
+*---------------
+xsaldo = m.saldoaf + m.interes + m.mtoaju
+SHOW GET xsaldo
+RETURN .T.
+*
+FUNCTION corpac
+PRIVATE cmes, cano, calias, mret
+calias = ALIAS()
+SELE &cAlias
+mret = .T.
+cmes = PADL(ALLTRIM(STR(MONTH(m.fecpac))),  ;
+       2, '0')
+cano = RIGHT(STR(YEAR(m.fecpac),  ;
+       4), 2)
+IF SEEK('PAGACT' + cano + cmes,  ;
+   'Parma')
+     m.codpac = cano + cmes +  ;
+                PADL(ALLTRIM(STR(parma.nument +  ;
+                1)), 3, '0')
+     SHOW GET m.codpac
+ELSE
+     m.codpac = cano + cmes +  ;
+                PADL(ALLTRIM(STR(parma.nument +  ;
+                1)), 3, '0')
+     SHOW GET m.codpac
+ENDIF
+SELECT (calias)
+IF EMPTY(m.codpac)
+     DO standby WITH  ;
+        'El C¢digo esta vacio'
+     mret = .F.
+ELSE
+     nreg = RECNO()
+     IF SEEK(m.codpac)
+          DO standby WITH  ;
+             'Ya esta Registrado esta Venta'
+          mret = .F.
+     ENDIF
+ENDIF
+RETURN mret
+PRIVATE calias, cmes, cano
+cmes = PADL(ALLTRIM(STR(MONTH(m.fecvta))),  ;
+       2, '0')
+cano = RIGHT(STR(YEAR(m.fecvta),  ;
+       4), 2)
+calias = ALIAS()
+IF m.convta = '2'
+     IF SEEK('CTAXCO' + cano +  ;
+        cmes, 'Parma')
+          m.codcre = cano + cmes +  ;
+                     PADL(ALLTRIM(STR(parma.nument +  ;
+                     1)), 3,  ;
+                     '0')
+     ELSE
+          m.codcre = cano + cmes +  ;
+                     PADL(ALLTRIM(STR(1)),  ;
+                     3, '0')
+     ENDIF
+ELSE
+     m.codcre = SPACE(7)
+ENDIF
+SHOW GET m.codcre
+RETURN .F.
+PRIVATE mret
+IF m.convta = '1'
+     m.acta = m.mtopag
+     mret = .F.
+ELSE
+     m.acta = 0
+     mret = .T.
+ENDIF
+SHOW GET m.acta
+RETURN mret
+*
+FUNCTION vsaldo
+*--------------
+m.saldo = (m.saldoaf + m.interes + m.mtoaju)
+SHOW GET m.saldo
+IF m.saldo < 0
+     DO standby WITH 'El Saldo no debe ser menor que 0'
+     RETURN .F.
+ENDIF
+RETURN .T.
+*
+FUNCTION val_ruc
+PRIVATE calias
+calias = ALIAS()
+IF SEEK(m.codcli, 'Clien')
+     m.ruccli = clien.ruccli
+ELSE
+     m.ruccli = SPACE(11)
+ENDIF
+SHOW GET m.ruccli
+RETURN .T.
+*
+FUNCTION wcoddif
+PRIVATE mret
+IF m.tipvta = '1'
+     @ 07, 35 SAY IIF( .NOT.  ;
+       EMPTY(m.coddif), vcoddif(7, ;
+       35), SPACE(30))
+     mret = .F.
+ELSE
+     mret = .F.
+ENDIF
+RETURN mret
+*
+FUNCTION wcodmau
+PRIVATE mret
+IF m.tipvta = '2'
+     @ 08, 35 SAY IIF( .NOT.  ;
+       EMPTY(m.codmau), vcodmau(8, ;
+       35), SPACE(30))
+     mret = .F.
+ELSE
+     mret = .F.
+ENDIF
+RETURN mret
+*
+FUNCTION wcodocu
+PRIVATE mret
+IF m.tipvta = '3'
+     @ 09, 35 SAY IIF( .NOT.  ;
+       EMPTY(m.codocu), vcodocu(9, ;
+       35), SPACE(30))
+     mret = .F.
+ELSE
+     mret = .F.
+ENDIF
+RETURN mret
+*
+FUNCTION vcoddif
+PARAMETER cfil, ccol
+PUBLIC m.codcuar, m.codnic,  ;
+       m.fecfall, m.fecsep,  ;
+       m.nomdif, m.sexodif,  ;
+       m.edaddif
+PUBLIC m.fila, m.columna,  ;
+       m.codtras, m.tipent,  ;
+       m.reservado
+PRIVATE malias, mret
+mret = .T.
+menc = .F.
+malias = ALIAS()
+IF SEEK(m.coddif, 'Difunto')
+     menc = .T.
+ELSE
+     malias = ALIAS()
+     SELECT difunto
+     vtempo = '°°°°°°°°°°° ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+     DEFINE WINDOW lista FROM 00,  ;
+            00 TO 24, 79 FLOAT  ;
+            TITLE vtempo DOUBLE  ;
+            COLOR SCHEME 2
+     ACTIVATE WINDOW lista
+     SET FILTER TO estvta = '00';
+.AND. tipent = '1'
+     GOTO TOP
+     IF  .NOT. EOF()
+          ON KEY LABEL F10 KEYBOARD CHR(23)
+          SET RELATION TO codcem INTO;
+cement
+          BROWSE FIELDS  ;
+                 cement.nomcem :H =  ;
+                 'Cementerio' :  ;
+                 30,  ;
+                 difunto.nomdif  ;
+                 :H = 'Difunto'  ;
+                 NOMENU NOAPPEND  ;
+                 NOEDIT NODELETE  ;
+                 WINDOW lista
+          ON KEY LABEL F10
+          SET RELATION TO
+          IF LASTKEY() <> 27
+               m.coddif = difunto.coddif
+               m.nomdif = difunto.nomdif
+          ELSE
+               mret = .F.
+          ENDIF
+          vtempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+     ELSE
+          IF yesno( ;
+             'No Existen No Existen Difuntos Registrados.' ;
+             )
+               mret = .F.
+          ENDIF
+     ENDIF
+     DEACTIVATE WINDOW lista
+     RELEASE WINDOW lista
+     SET FILTER TO
+     SELECT (malias)
+ENDIF
+DO CASE
+     CASE menc
+          @ cfil, ccol SAY  ;
+            ALLTRIM(difunto.nomdif)
+     CASE mret
+          @ cfil, ccol SAY  ;
+            ALLTRIM(m.nomdif)
+ENDCASE
+RETURN mret
+*
+FUNCTION vcodmau
+PARAMETER cfil, ccol
+PUBLIC m.lotizado, m.nomlote,  ;
+       m.tipo, m.ubicacion,  ;
+       m.familia, m.area_adq
+PUBLIC m.area_const, area_cerc,  ;
+       totdif
+PRIVATE malias, mret
+mret = .T.
+menc = .F.
+IF SEEK(m.codmau, 'Mausol')
+     menc = .T.
+ELSE
+     malias = ALIAS()
+     SELECT mausol
+     vtempo = '°°°°°°°°°°° ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+     DEFINE WINDOW lista FROM 00,  ;
+            00 TO 24, 79 FLOAT  ;
+            TITLE vtempo DOUBLE  ;
+            COLOR SCHEME 2
+     ACTIVATE WINDOW lista
+     SET FILTER TO estvta = '00'
+     GOTO TOP
+     IF  .NOT. EOF()
+          ON KEY LABEL F10 KEYBOARD CHR(23)
+          SET RELATION TO codcem INTO;
+cement
+          BROWSE FIELDS  ;
+                 cement.nomcem :H =  ;
+                 'Cementerio' :  ;
+                 25,  ;
+                 mausol.familia  ;
+                 :H = 'Familia' :  ;
+                 25,  ;
+                 mausol.nomlote  ;
+                 :H = 'Lote' : 25  ;
+                 NOMENU NOAPPEND  ;
+                 NOEDIT NODELETE  ;
+                 WINDOW lista
+          ON KEY LABEL F10
+          SET RELATION TO
+          IF LASTKEY() <> 27
+               m.codmau = mausol.codmau
+               m.familia = mausol.familia
+          ELSE
+               mret = .F.
+          ENDIF
+     ELSE
+          IF yesno( ;
+             'No Existen No Existen Mausoleos Registrados.' ;
+             )
+               mret = .F.
+          ENDIF
+     ENDIF
+     DEACTIVATE WINDOW lista
+     RELEASE WINDOW lista
+     SET FILTER TO
+     SELECT (malias)
+ENDIF
+DO CASE
+     CASE menc
+          @ cfil, ccol SAY  ;
+            ALLTRIM(mausol.familia)
+     CASE mret
+          @ cfil, ccol SAY  ;
+            ALLTRIM(m.familia)
+ENDCASE
+RETURN mret
+*
+FUNCTION vcodocu
+PARAMETER cfil, ccol
+PUBLIC m.nomocu, m.edadocu,  ;
+       m.sexoocu, m.dnicli,  ;
+       m.codcuar, m.codnic,  ;
+       m.fila, m.columna
+PRIVATE malias, mret
+mret = .T.
+menc = .F.
+IF SEEK(m.codocu, 'OcuFut')
+     menc = .T.
+ELSE
+     malias = ALIAS()
+     SELECT ocufut
+     vtempo = '°°°°°°°°°°° ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+     DEFINE WINDOW lista FROM 00,  ;
+            00 TO 24, 79 FLOAT  ;
+            TITLE vtempo DOUBLE  ;
+            COLOR SCHEME 2
+     ACTIVATE WINDOW lista
+     SET FILTER TO estado = '10';
+.AND. estvta = '00'
+     GOTO TOP
+     IF  .NOT. EOF()
+          ON KEY LABEL F10 KEYBOARD CHR(23)
+          SET RELATION TO codcem INTO;
+cement
+          BROWSE FIELDS  ;
+                 cement.nomcem :H =  ;
+                 'Cementerio' :  ;
+                 30,  ;
+                 ocufut.nomocu :H =  ;
+                 'Ocupante' : 30  ;
+                 NOMENU NOAPPEND  ;
+                 NOEDIT NODELETE  ;
+                 WINDOW lista
+          ON KEY LABEL F10
+          SET RELATION TO
+          IF LASTKEY() <> 27
+               m.codocu = ocufut.codocu
+               m.nomocu = ocufut.nomocu
+          ELSE
+               mret = .F.
+          ENDIF
+     ELSE
+          IF yesno( ;
+             'No Existen No Existen Ocupaciones Registradas.' ;
+             )
+               mret = .F.
+          ENDIF
+     ENDIF
+     DEACTIVATE WINDOW lista
+     RELEASE WINDOW lista
+     SET FILTER TO
+     SELECT (malias)
+ENDIF
+DO CASE
+     CASE menc
+          @ cfil, ccol SAY  ;
+            ocufut.nomocu
+     CASE mret
+          @ cfil, ccol SAY  ;
+            m.nomocu
+ENDCASE
+RETURN mret
+calias = ALIAS()
+SELECT mausol
+SELE &cAlias
+mret = .T.
+IF SEEK('CORRELMAUSOL' + m.codcem,  ;
+   'Parma')
+     m.codmau = PADL(ALLTRIM(STR(parma.nument +  ;
+                1)), 4, '0')
+     m.codmau = m.codcem +  ;
+                m.codmau
+ELSE
+     DO standby WITH  ;
+        'Parametro de correlativo no existe; favor avisar a sistemas'
+ENDIF
+IF EMPTY(m.codmau)
+     DO standby WITH  ;
+        'El Codigo esta vacio'
+     mret = .F.
+ELSE
+     nreg = RECNO()
+     IF SEEK(m.codmau)
+          DO standby WITH  ;
+             'Ya esta Registrado este Codigo'
+          mret = .F.
+     ENDIF
+ENDIF
+SHOW GET m.codmau
+SELECT (calias)
+RETURN mret
+DO CASE
+     CASE m.tipent = '1'
+          m.codmau = SPACE(6)
+     CASE m.tipent = '2'
+          m.codcuar = SPACE(4)
+          m.codnic = SPACE(4)
+          m.fila = SPACE(1)
+          m.columna = SPACE(3)
+     CASE m.tipent = '3'
+          m.codmau = SPACE(6)
+          m.codcuar = SPACE(4)
+          m.codnic = SPACE(4)
+          m.fila = SPACE(1)
+          m.columna = SPACE(3)
+ENDCASE
+SHOW GETS
+RETURN .T.
+PARAMETER _fil, _col
+PRIVATE cali
+cali = ALIAS()
+SELECT cuartel
+IF SEEK(m.codcem + m.codcuar)
+     @ _fil, _col SAY nomcuar
+     mret = .T.
+ELSE
+     m.codcuar = SPACE(4)
+     SET FILTER TO codcem = m.codcem
+     mret = val_fun('Cuartel', ;
+            'CodCuar','NomCuar', ;
+            m.codcuar,1,_fil, ;
+            _col)
+     SET FILTER TO
+ENDIF
+SELECT (cali)
+RETURN mret
+PARAMETER _fil, _col
+PRIVATE cali
+cali = ALIAS()
+SELECT cuartel
+IF SEEK(mcodcem + mcodcuar)
+     @ _fil, _col SAY nomcuar
+     mret = .T.
+ELSE
+     m.codcuar = SPACE(4)
+     SET FILTER TO codcem = mcodcem
+     mret = val_fun('Cuartel', ;
+            'CodCuar','NomCuar', ;
+            mcodcuar,1,_fil, ;
+            _col)
+     SET FILTER TO
+ENDIF
+SELECT (cali)
+RETURN mret
+*
+PROCEDURE imprimir
+PRIVATE vcon
+SELECT pagacta
+vcon = RECNO()
+SCATTER MEMVAR
+m.fecrec = m.fecpac
+m.impcan = letras(m.mtoamo, ;
+           'SOLES')
+IF SEEK(m.codvta, 'Ventas')
+     m.nomben = ventas.nomben
+     m.cuartel = ventas.cuartel
+     m.nicho = ventas.nicho
+     IF  .NOT.  ;
+         EMPTY(ventas.codcem)
+          m.cement = val_para(ventas.codcem, ;
+                     'CODCEM','V', ;
+                     32,30)
+     ENDIF
+ENDIF
+IF  .NOT. EMPTY(m.codcli)
+     IF SEEK(m.codcli, 'Clien')
+          m.nomcli = clien.nomcli
+          m.dircli = clien.dircli
+     ENDIF
+ENDIF
+IF  .NOT. EMPTY(m.codavl)
+     IF SEEK(m.codavl, 'Clien')
+          m.nomavl = clien.nomcli
+          m.diravl = clien.dircli
+     ENDIF
+ENDIF
+vdbf = SYS(3) + '.Dbf'
+CREATE CURSOR Recibo (codvta C  ;
+       (7), codpac C (7), tipvta  ;
+       C (3), fecrec D, feccre D,  ;
+       compag C (3), codcp C (20),  ;
+       codcli C (6), nomcli C  ;
+       (50), dircli C (50),  ;
+       ruccli C (11), codavl C  ;
+       (6), nomavl C (50), diravl  ;
+       C (50), nomben C (30),  ;
+       cement C (30), cuartel C  ;
+       (30), nicho C (5), subvenc  ;
+       C (1), donacion C (1),  ;
+       codsub C (7), coddon C (7),  ;
+       codcre C (7), estado C (2),  ;
+       mtocre N (10, 2), saldoaf  ;
+       N (10, 2), interes N (10,  ;
+       2), mtoamo N (10, 2),  ;
+       saldo N (10, 2), impcan C  ;
+       (200), observ C (100))
+SELECT recibo
+APPEND BLANK
+GATHER MEMVAR
+IF EOF()
+     DO standby WITH vmens08
+     RETURN
+ELSE
+     DO reporte WITH 2, 'RecPAC',  ;
+        ' Orden de Servicios '
+ENDIF
+SET FILTER TO
+SELECT pagacta
+GOTO vcon
+DO vista
+RETURN
+*
+PROCEDURE anula
+PRIVATE lanula
+DO standby WITH  ;
+   'Ojo. poner claves de Acceso, y revisar bien bien'
+lanula = .T.
+IF yesno( ;
+   'Desea Eliminar este registro' ;
+   )
+     IF  .NOT. ve_passw('ELIDIF')
+          DO standby WITH  ;
+             'Proceso Cancelado'
+          lanula = .F.
+     ENDIF
+ELSE
+     DO standby WITH  ;
+        'Proceso Cancelado'
+     lanula = .F.
+ENDIF
+IF lanula
+     IF m.estado = '99'
+          DO standby WITH  ;
+             'El Pago a Cuenta ya ha sido anulado'
+          lanula = .F.
+     ENDIF
+ENDIF
+IF lanula
+     IF SEEK(m.codcre,  ;
+        'Creditos')
+          IF creditos.saldo =  ;
+             m.saldo .AND.  ;
+             creditos.fultpag =  ;
+             m.fecpac
+               SELECT caja
+               IF SEEK('2' +  ;
+                  m.codpac)
+                    IF f_lock(1)
+                         REPLACE estado  ;
+                                 WITH  ;
+                                 '99',  ;
+                                 tuser  ;
+                                 WITH  ;
+                                 'A',  ;
+                                 usercr  ;
+                                 WITH  ;
+                                 vuser_id,  ;
+                                 dusercr  ;
+                                 WITH  ;
+                                 DATE(),  ;
+                                 husercr  ;
+                                 WITH  ;
+                                 TIME()
+                         UNLOCK
+                    ENDIF
+               ELSE
+                    DO standby  ;
+                       WITH  ;
+                       'No se Encontro registro en caja'
+                    lanula = .F.
+               ENDIF
+               IF lanula
+                    SELECT karcre
+                    cord = ORDER()
+                    SET ORDER TO KarCre2
+                    IF SEEK('PAC' +  ;
+                       m.codpac)
+                         IF f_lock(1)
+                              REPLACE  ;
+                               estado  ;
+                               WITH  ;
+                               '99'
+                              ccodcre =  ;
+                               codcre
+                              DO recalcula  ;
+                                 WITH  ;
+                                 ccodcre
+                         ENDIF
+                    ENDIF
+                    SELECT ventas
+                    IF SEEK(m.codvta)
+                         IF f_lock(1)
+                              REPLACE  ;
+                               estado  ;
+                               WITH  ;
+                               '20'
+                              UNLOCK
+                         ENDIF
+                    ENDIF
+                    SELECT pagacta
+                    IF f_lock(1)
+                         REPLACE estado  ;
+                                 WITH  ;
+                                 '99',  ;
+                                 tuser  ;
+                                 WITH  ;
+                                 'A',  ;
+                                 usercr  ;
+                                 WITH  ;
+                                 vuser_id,  ;
+                                 dusercr  ;
+                                 WITH  ;
+                                 DATE(),  ;
+                                 husercr  ;
+                                 WITH  ;
+                                 TIME()
+                         UNLOCK
+                    ENDIF
+               ENDIF
+          ELSE
+               DO standby WITH  ;
+                  'Este no es el Ultimo Pago a cta. No se Puede Anular'
+          ENDIF
+     ELSE
+          DO standby WITH  ;
+             'Credito no Encontrado. No se Puede Anular este Pago a Cta'
+     ENDIF
+ENDIF
+DO vista
+RETURN
+PRIVATE lanula, cord
+DO standby WITH  ;
+   'Ojo. REVISAR ANTES'
+DO standby WITH  ;
+   'Ojo. poner claves de Acceso, y revisar bien bien'
+lanula = .T.
+IF yesno( ;
+   'Desea Eliminar este registro' ;
+   )
+     IF  .NOT. ve_passw('ELIDIF')
+          DO standby WITH  ;
+             'Proceso Cancelado'
+          lanula = .F.
+     ENDIF
+ELSE
+     DO standby WITH  ;
+        'Proceso Cancelado'
+     lanula = .F.
+ENDIF
+IF lanula
+     IF m.estado = '99'
+          DO standby WITH  ;
+             'El Pago a Cuenta ya ha sido anulado'
+          lanula = .F.
+     ENDIF
+ENDIF
+IF lanula
+     SELECT karcre
+     cord = ORDER()
+     SET ORDER TO KarCre2
+     IF SEEK('PAC' + m.codpac)
+          IF f_lock(1)
+               REPLACE estado  ;
+                       WITH '99'
+               ccodcre = codcre
+               DO recalcula WITH  ;
+                  ccodcre
+          ENDIF
+     ENDIF
+     SELECT caja
+     IF SEEK('2' + m.codpac)
+          IF f_lock(1)
+               REPLACE estado  ;
+                       WITH '99'
+               UNLOCK
+          ENDIF
+     ELSE
+          DO standby WITH  ;
+             'No se Encontro registro en caja'
+          lanula = .F.
+     ENDIF
+     IF m.saldo > 0
+          SELECT ventas
+          IF SEEK(m.codvta)
+               IF f_lock(1)
+                    REPLACE estado  ;
+                            WITH  ;
+                            '20'
+                    UNLOCK
+               ENDIF
+          ENDIF
+     ENDIF
+     SELECT pagacta
+     IF f_lock(1)
+          REPLACE estado WITH  ;
+                  '99'
+          UNLOCK
+     ENDIF
+ENDIF
+RETURN
+DO vista
+RETURN
+*
+PROCEDURE lista
+IF EOF()
+     DO standby WITH vmens08
+     RETURN
+ENDIF
+nreg = RECNO()
+SELECT pagacta
+SET RELATION TO codcli INTO clien
+DEFINE WINDOW wlista FROM 3, 15  ;
+       TO 20, 70 FLOAT TITLE  ;
+       'Listado de Pedidos'  ;
+       DOUBLE COLOR SCHEME 5
+ACTIVATE WINDOW wlista
+vtopa = 1
+vtoti = 1
+mfecha1 = CTOD('01/01/' +  ;
+          STR(YEAR(m.fecsis),  ;
+          4))
+mfecha2 = DATE()
+@ 01, 01 SAY  ;
+  '  Todos Pag a Cta. : ' GET  ;
+  vtopa SIZE 1, 10, 2 FUNCTION  ;
+  '*RNH \<Si;\<No'
+@ 03, 01 SAY  ;
+  '     Pago a Cuenta : ' GET  ;
+  m.codpac WHEN vtopa = 2
+@ 05, 01 SAY  ;
+  '   Todos los Tipos : ' GET  ;
+  vtoti SIZE 1, 10, 2 FUNCTION  ;
+  '*RNH \<Si;\<No' WHEN vtopa =  ;
+  1
+@ 07, 01 SAY  ;
+  '     Tipo de Venta : ' GET  ;
+  m.tipvta VALID  ;
+  val_para(m.tipvta,'TIPVTA',' ', ;
+  23,20) WHEN vtoti = 2
+@ 13, 01 SAY  ;
+  '    Rango de Fechas: ' GET  ;
+  mfecha1 WHEN vtopa = 1
+@ 13, 36 GET mfecha2 WHEN vtopa =  ;
+  1
+@ 15, 10 GET okcancel DEFAULT 1  ;
+  SIZE 1, 11, 8 FUNCTION  ;
+  '*TH \!\<OK;\?\<Cancela'
+READ CYCLE
+RELEASE WINDOW wlista
+IF LASTKEY() <> 27 .AND. okcancel <>  ;
+   2
+     IF vtopa = 2
+          IF SEEK(m.codvta)
+               SET FILTER TO codpac =;
+m.codpac
+               DO reporte WITH 2,  ;
+                  'PagACt',  ;
+                  'Listado de Pagos a Cuenta'
+               SET FILTER TO
+          ELSE
+               DO standby WITH  ;
+                  'Pago a Cuenta no encontrado'
+          ENDIF
+     ELSE
+          lfil = '.T.'
+          IF vtoti = 2
+               lfil = lfil +  ;
+                      ' AND TipVta = m.TipVta'
+          ENDIF
+          SET FILTER TO &lFil AND BETW(FecPAC,mFecha1,mFecha2)
+          DO reporte WITH 2,  ;
+             'PagACt',  ;
+             'Listado de Pagos a Cuenta'
+          SET FILTER TO
+     ENDIF
+ENDIF
+SELECT pagacta
+SET RELATION TO
+GOTO nreg
+DO vista
+RETURN
+*
+FUNCTION rettv
+PARAMETER mtv
+PRIVATE mret
+IF SEEK('TIPVTA' + mtv, 'Parma')
+     mret = parma.descri
+ELSE
+     mret = 'Sin Descripci¢n'
+ENDIF
+RETURN mret
+*
+PROCEDURE termi
+ven_accion = .F.
+DEACTIVATE MENU
+RETURN
+*
+PROCEDURE fin_opcion
+CLOSE DATABASES
+ERASE &vDbf
+RELEASE WINDOW wind_0
+RELEASE MENU mmenu
+RETURN
+*
+PROCEDURE estpac
+DO CASE
+     CASE m.estado = '00'
+          @ ROW(), COL() SAY  ;
+            SPACE(7)
+     CASE m.estado = '99'
+          @ ROW(), COL() SAY  ;
+            'ANULADO' COLOR  ;
+            SCHEME 5
+ENDCASE
+RETURN
+*
+PROCEDURE subopc
+PRIVATE calias
+calias = ALIAS()
+USE IN 0 IteUsuOp ORDER IteUsuOp2
+SET SKIP OF PAD revis OF mmenu;
+ .NOT. SEEK(vusucla + '0011', 'IteUsuOp')
+SET SKIP OF PAD busca OF mmenu;
+ .NOT. SEEK(vusucla + '0012', 'IteUsuOp')
+SET SKIP OF PAD anter OF mmenu;
+ .NOT. SEEK(vusucla + '0013', 'IteUsuOp')
+SET SKIP OF PAD proxi OF mmenu;
+ .NOT. SEEK(vusucla + '0014', 'IteUsuOp')
+SET SKIP OF PAD corri OF mmenu;
+ .NOT. SEEK(vusucla + '0015', 'IteUsuOp')
+SET SKIP OF PAD ingre OF mmenu;
+ .NOT. SEEK(vusucla + '0016', 'IteUsuOp')
+SET SKIP OF PAD elimi OF mmenu;
+ .NOT. SEEK(vusucla + '0017', 'IteUsuOp')
+SET SKIP OF PAD lista OF mmenu;
+ .NOT. SEEK(vusucla + '0018', 'IteUsuOp')
+USE IN iteusuop
+SELECT (calias)
+RETURN
+*

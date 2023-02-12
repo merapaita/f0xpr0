@@ -1,0 +1,56 @@
+SET PROCEDURE TO Far_lib
+DO fox_ambi
+NewRuta = "2012"
+Ruta  = "..\data;..\data\2012"
+Ruta1 = "..\data;..\data\2011"
+SET PATH TO &Ruta
+set console on
+
+IF yesno('Desea Preparar Informacion para este Periodo ' + newruta)
+	DEFINE WINDOW Working   FROM 02,40 TO 23,76 FLOAT   COLOR SCHEME 1
+	ACTIVATE WINDOW Working
+
+	RUN CD..			&&> NUL
+	RUN CD data\2011	&&> NUL
+	RUN ..\..\FUENTES\Pkzip data2012 *.dbf *.cdx *.ftp	&&>NUL
+	RUN CD..			&&> NUL
+	!MD &NewRuta		&&> NUL
+	!CD &NewRuta		&&> NUL
+	RUN ..\..\FUENTES\Pkunzip ..\..\data\2011\data2012 -o		&&>NUL
+	RUN CD ..\..\FUENTES						&&>NUL
+    mret = .T.
+ELSE
+    mret = .F.
+ENDIF
+
+cFecha = ctod("01/01/2012")
+
+IF mRet
+	USE STKALMV EXCLUSIVE
+	REPLACE PERIODO WITH '12' ALL
+	REPLACE FECHA   WITH cFecha ALL
+	
+	USE KARDEXV EXCLUSIVE
+	REPLACE PERIODO WITH '12' ALL
+	REPLACE FECHA   WITH cFecha ALL
+	
+	USE INVINI EXCLUSIVE
+	REPLACE PERIODO WITH '12' ALL
+	REPLACE FecII   WITH cFecha ALL
+	
+	USE ITEII EXCLUSIVE
+	REPLACE PERIODO WITH '12' ALL
+	
+	USE FORDCOM EXCLUSIVE
+	ZAP
+	USE FITEOC EXCLUSIVE
+	ZAP
+	USE FORDPED EXCLUSIVE
+	ZAP
+	USE FITEOP EXCLUSIVE
+	ZAP
+	USE FCOMPAG EXCLUSIVE
+	ZAP
+	USE FITECP EXCLUSIVE
+	ZAP
+ENDIF

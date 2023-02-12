@@ -1,0 +1,288 @@
+CORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        1
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 25/02/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 11:24:55
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/01/20   AL: 31/01/20
+                                         DEL TALLER:DOMICILIO ELECTROMEC AL:DOMICILIO L. BLANCA 
+                                         DEL EMISOR:C.ACOP.S.DOMICILIO - AL:CESER PIURA         
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ GARA EN GARANTIA                
+
+      1    61991    61991 30/12/20 05/01/20      6  L.G        LS-C1420CN      808KA00059        2406 ALBAN VILLAREYES    018  05/01/20 GARA
+                                                                                                                                            
+      2    62120    62120 14/01/20 14/01/20      0  L.G        LM-W2340A       410HZ00016       27141 VILCHEZ             100  31/01/20 GARA
+                                                    SE ENCONTRO OPTICAL BAJO DE EMISION LASER SE REMPLAZO OPTICAL PRUEBA FUNCIONAMIENTO     
+      3    62132    62132 14/01/20 14/01/20      0  PHILIPS    FWM-355         KT0003390088     27141 VILCHEZ             100  31/01/20 GARA
+                                                    CD Y DECKS NO FUNCIONA LUBRICACION SINCRONIZACION GENERAL DE AMBOS MECANISMOS PRUEBA    
+      4    62119    62119 14/01/20 17/01/20      3  L.G        DVK-7811        306SH01077       27141 VILCHEZ             100  21/02/20 GARA
+                                                    SE ENCONTRO FUENTE DE PODER DEFECTUOSA SE REMPLAZARON COMPONENTES.PRUEBA FUNCIONAMIENTO 
+      5    62174    62174 19/01/20 19/01/20      0  L.G        RP-21FB32       406RM21116       27141 VILCHEZ             100  21/02/20 GARA
+                                                    IMAGEN LLUVIOSA SE REVISO Y SE PUSO HA PRUEBA.ENCONTRANDO ANTENA AEREA EN MALA POSICION.
+      6    62083    62083 10/01/20 20/01/20     10  INRESA     CIP24KXX-0      3010127          65526 FERNANDEZ ZAPATA,   018  20/01/20 GARA
+                                                    PERILLA ROTA, MONTAJE DE PERILLA, FUNCIONA OK.                                          
+      7    62178    62178 19/01/20 20/01/20      1  L.G        RP-14CB20       409HZ03173       27141 VILCHEZ             100  21/02/20 GARA
+                                                    SE ENCONTRO FUENTE DE PODER COMPONENTES DEFECTUOSOS E IMPRESO ROTO.SE RECONSTRUYO       
+      8    61972    61972 28/12/20 03/01/20      6  COLDEX     RN-30           0100268195       65526 FERNANDEZ ZAPATA,   100  31/01/20 GARA
+                                                    28-12-2004,FALLA,NO CONGELA,          DIAGNOSTICO,ENCHUFE DEFECTUOSO,       SOLUCCION,SE
+      9    62007    62007 04/01/20 04/01/20      0  L.G        GR-292          403KR1401364     65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    04-01-2004,FALLA,NO CONGELA LOS BODOQUES,                                               
+     10    62008    62008 04/01/20 04/01/20      0  L.G        WF-T1103TP      401KW00299       65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    04-01-2005,FALLA,NO FUNCIONA,         DIAGNOSTICO,SE ENCONTRO CABLES CARCOMIDOS POR     
+     11    62009    62009 04/01/20 04/01/20      0  MABE       PTL1103PBO      0407561271       65526 FERNANDEZ ZAPATA,   018  04/01/20 GARA
+                                                    04-01-2005,INSTALACION DE ACCESORIOS SE EXPLICO Y ENSE╔O MANEJO GENERAL PRUEBA OK.      
+     12    61990    61990 30/12/20 05/01/20      6  L.G        GR-272          403KRPV01176     65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    30-12-2004,FALLA,NO FUNCIONA,         DIAGNOSTICO,MOTOCOMPRESOR DEFECTUOSO SE PEDIRA A  
+     13    62013    62013 04/01/20 06/01/20      2  L.G        GR-272          401KR00364       65526 FERNANDEZ ZAPATA,   027  06/01/20 GARA
+                                                    04-01-2005,SE DIO CON DIRECCION INDICADA EN LA SOLICITUD Y BOLETA DE VENTA,INDICANDO UNA
+     14    62036    62036 06/01/20 06/01/20      0  INRESA     I-370GYBN1      0349333874       65526 FERNANDEZ ZAPATA,   018  06/01/20 GARA
+                                                    06-01-2005,FALLA,SONIDO FUERTE,       DIAGNOSTICO,TUBERIAS EN ROZAMIENTO,   SOLUCCION,SE
+     15    62037    62037 06/01/20 06/01/20      0  MABE       RMT15PYBNO      0411089582       65526 FERNANDEZ ZAPATA,   018  06/01/20 GARA
+                                                    06-01-2005,FALLA,CONGELAMIENTO DEFECTUOSO,                                              
+     16    62015    62015 04/01/20 08/01/20      4  L.G        WF-T1295TP      3850EA3063E      65526 FERNANDEZ ZAPATA,   018  08/01/20 GARA
+                                                    04-01-2005,FALLA,NO BOTA EL AGUA,     DIAGNOSTICO,BOMBA DE DRENAJE DEFECTUOSA NO TIENE  
+     17    62065    62065 08/01/20 10/01/20      2  INRESA     PI46OFYBNO      0412100313       20050 VIVANCO LOPEZ JOSE  018  10/01/20 GARA
+                                                    AJUSTE DEL TIMER. TIMER EN OBSERVACION. SE ENVIA A PROVEEDOR PARA CAMBIO, A SOLICITUD DE
+     18    62066    62066 08/01/20 10/01/20      2  INRESA     PI350SYB        404013214        20050 VIVANCO LOPEZ JOSE  018  10/01/20 GARA
+                                                    SE ARREGLO TOMA CORRIENTE DEFECTUOSO. FUNCIONA OK.                                      
+     19    62067    62067 08/01/20 10/01/20      2  MABE       PMT450          4901649          20050 VIVANCO LOPEZ JOSE  018  10/01/20 GARA
+                                                    ARREGLO DE LA PUERTA, SE HIZO AJUSTE NO CERRABA TOTALMENTE.                             
+     20    62084    62084 10/01/20 12/01/20      2  MABE       PCIP24CBB       025204010143     20050 VIVANCO LOPEZ JOSE  027  12/01/20 GARA
+                                                    SE VISITO A CLIENTE Y EN ESA DIRECCION NO VIVIA LA CLIENTE, SE INFORMO A TIENDA Y       
+     21    62093    62093 11/01/20 12/01/20      1  L.G        WF-5226         405PNCY05197     20050 VIVANCO LOPEZ JOSE  100  31/01/20 GARA
+                                                    REVISION SE RETIRO SEGURO EN LA PARTE INFERIOR Y SE PROBO FUNCIONAMIENTO NORMAL.        
+     22    62094    62094 11/01/20 12/01/20      1  INRESA     I-335           0346306531       20050 VIVANCO LOPEZ JOSE  018  12/01/20 GARA
+                                                    NO CONGELA, SE DIERON INDICACIONES DE USO, TERMOSTATO ESTABA EN 1.          INSTALACION 
+     23    62075    62075 10/01/20 13/01/20      3  MABE       LMA66DDP        VF               65526 FERNANDEZ ZAPATA,   027  13/01/20 GARA
+                                                    10-01-2005,SE VIVSITO SEGUN DIRECCION INDICADA EN EL SERVICIO,VIVIENDO LA FAMILIA FLORESCORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        2
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 25/02/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 11:24:55
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/01/20   AL: 31/01/20
+                                         DEL TALLER:DOMICILIO ELECTROMEC AL:DOMICILIO L. BLANCA 
+                                         DEL EMISOR:C.ACOP.S.DOMICILIO - AL:CESER PIURA         
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     24    62081    62081 10/01/20 13/01/20      3  INRESA     I320SYBN2       0450497275       20050 VIVANCO LOPEZ JOSE  018  13/01/20 GARA
+                                                    10-01-2005,CLIENTE AUSENTE SE DEJO INDICADO A LA SRTA MARIBEL DE LA VISITA. SE REGULO   
+     25    62082    62082 10/01/20 13/01/20      3  MABE       PTX4-1PE        VER              20050 VIVANCO LOPEZ JOSE  027  13/01/20 GARA
+                                                    TECNICO DE MAVILA COMUNICO QUE COCINA NO TENIA NINGUN PROBLEMA, POR LO TANTO NO SE PUDO 
+     26    62101    62101 12/01/20 13/01/20      1  MABE       PRM60YBB        0446452180       20050 VIVANCO LOPEZ JOSE  018  13/01/20 GARA
+                                                    SE DIERON INSTSRUCCIONES DE USO, NO PRESENTO FALLO, FUNCIONA NORMAL                     
+     27    62090    62090 10/01/20 14/01/20      4  L.G        GR-292          404KRQW01236     65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    DESMONTAJE , CAMBIO DE CONTROL ASEMBLY, MONTAJE, PUREBA FUNCIONA OK.                    
+     28    62106    62106 12/01/20 14/01/20      2  L.G        GR-T342         212KR00209       65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    12-01-2005,FALLA,BOTA AGUA POR LA PUERTA INFERIOR,                                      
+     29    62111    62111 13/01/20 14/01/20      1  MABE       PI335FULN1      0411091094       65526 FERNANDEZ ZAPATA,   027  14/01/20 GARA
+                                                    13-01-2005,SE CIERRA ORDEN POR MOTIVO QUE CLIENTE NO TIENE NINGUN COMPROBANTE DE COMPREA
+     30    61951    61951 21/12/20 15/01/20     25  SAMSUNG    SR-32           763841ATC000     65526 FERNANDEZ ZAPATA,   018  15/01/20 GARA
+                                                    21-12-2004,FALLA,NO FUNCIONA,         DIAGNOSTICO,SE ENCONTRO MOTOCOMPRESOR CON BOBINAS 
+     31    62113    62113 13/01/20 15/01/20      2  MABE       LMA-550DBP      ST0405A00079     65526 FERNANDEZ ZAPATA,   018  15/01/20 GARA
+                                                    14-01-2005,FALLA,BOTA AGUA POR PARTE INFERIOR DE LAVADORA,                              
+     32    62115    62115 13/01/20 15/01/20      2  MABE       PRM60YBB        0446452267       20050 VIVANCO LOPEZ JOSE  018  15/01/20 GARA
+                                                    SE REVISO RELAY, TERMOSTATO Y SISTEMA DE FRIO, FUNCIONAMIENTO CORRECTO. SE DIERON       
+     33    62118    62118 13/01/20 15/01/20      2  MABE       PLMA78DBPO      VERIFICAR        65526 FERNANDEZ ZAPATA,   027  15/01/20 GARA
+                                                    14-01-2005,SE VISITO DOMICILIO DE CLIENTE NO TENIENDO SU BOLETA DE VENTA PARA ATENDER SU
+     34    62137    62137 15/01/20 15/01/20      0  MABE       LMA66DDP        ST0406A00178     65526 FERNANDEZ ZAPATA,   018  15/01/20 GARA
+                                                    15-01-2005,SE REALIZO NIVELACION DE FISICO SE PROBO EN TODAS LAS FUNCIONES NO           
+     35    62139    62139 15/01/20 15/01/20      0  L.G        LWC-1430GMJ0    212KA1437        65526 FERNANDEZ ZAPATA,   018  15/01/20 GARA
+                                                    14-01-2005,FALLA,NO ENFRIA,           DIAGNOSTICO,CONECTOR FALSO CONTACTO,              
+     36    62140    62140 15/01/20 15/01/20      0  L.G        WF-5702TPP      410PNYU02290     65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    15-01-2005,FALLA,NO TERMINA EL PROCESO DE CENTRIFUGADO,                                 
+     37    62141    62141 15/01/20 15/01/20      0  L.G        WF-5226TPP      307PN00482       20050 VIVANCO LOPEZ JOSE  018  15/01/20 GARA
+                                                    ATENDIDO SIN REPARAR, CLIENTE QUERIA MANTENIMIENTO COMPLETO Y ESO NO ENTRA EN GARANTIA. 
+     38    62155    62155 18/01/20 18/01/20      0  MABE       PRMG40BB        0420199629        2406 ALBAN VILLAREYES    018  18/01/20 GARA
+                                                    REVISION, CALIBRACION DEL TERMOSTATO, PRUEBA FUNCIONAMIENTO OK.                         
+     39    62158    62158 18/01/20 18/01/20      0  MABE       PRMT45PYBN0     15887694         20050 VIVANCO LOPEZ JOSE  027  18/01/20 GARA
+                                                    REVISION, ARTICULO OPRESENTA DFECTO FISICO, EL PISO DEL GABINETE DEL FREEZER SE ESTA    
+     40    61862    61862 09/12/20 19/01/20     41  MABE       RM-340          011762           65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    10-12-2004,FALLA,PUERTA NO CIERRA,    DIAGNOSTICO,BURLETE DEFECTUOSO RAJADO EN LADO     
+     41    62071    62071 08/01/20 19/01/20     11  INRESA     I320SYBN2       0441402920       65526 FERNANDEZ ZAPATA,   018  19/01/20 GARA
+                                                    08-01-2005,FALLA,PUERTA MUY DURA AL ABRIR,                                              
+     42    62138    62138 15/01/20 19/01/20      4  L.G        GR-292SQ        301KR00046       65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    14-01-2005,FALLA,CONGELACION DEBIL Y LUCES INFERIORES PRENDEN Y SE APAGAN,              
+     43    62142    62142 17/01/20 19/01/20      2  MABE       RMT-15          0316090373       65526 FERNANDEZ ZAPATA,   018  19/01/20 GARA
+                                                    17-01-2005,FALLA,FUGA AGUA POR PUERTA INFERIOR,                                         
+     44    62154    62154 18/01/20 19/01/20      1  MABE       PEMP24FBX-0     054504100497     65526 FERNANDEZ ZAPATA,   018  19/01/20 GARA
+                                                    18-01-2005,FALLA,FUGA DE GAS,         DIAGNOSTICO,SE EXPLICO Y COMPROBO QUE LOS         
+     45    62064    62064 07/01/20 20/01/20     13  MABE       RMT-15          0347310372       65526 FERNANDEZ ZAPATA,   018  20/01/20 GARA
+                                                    REVISION, SE ENCONTRO TIMER DEFROST FAKTANTE, HABIA SIDO RETIRADO POR SERVICIO TECNICO, 
+     46    62108    62108 12/01/20 20/01/20      8  MABE       TAMESIS         055004050021     45407 ESPINOZA LADINES    018  20/01/20 GARA
+                                                    12/1/05 CLIENET INDICA QUE COCINA AHUMA LAS OLLAS, SE VISITO A CLIENTE DIAGNOSTICANDO   
+     47    62156    62156 18/01/20 20/01/20      2  MABE       PRMT45PYBN1     0410077255       65526 FERNANDEZ ZAPATA,   018  20/01/20 GARA
+                                                    20-01-2005,FALLA,NO CONGELA,          DIAGNOSTICO,SE DEBE RECOJER PARA SU REVISION      CORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        3
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 25/02/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 11:24:56
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/01/20   AL: 31/01/20
+                                         DEL TALLER:DOMICILIO ELECTROMEC AL:DOMICILIO L. BLANCA 
+                                         DEL EMISOR:C.ACOP.S.DOMICILIO - AL:CESER PIURA         
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     48    62188    62188 20/01/20 20/01/20      0  L.G        WF-T1103        307KW00007       20050 VIVANCO LOPEZ JOSE  100  21/02/20 GARA
+                                                    REVISION, ARTICULO SE PROBO EN TODAS SUS FUNCIONES, RUIDO ES NORMAL, NO PRESENTO FALLA, 
+     49    62110    62110 13/01/20 22/01/20      9  MABE       PERSEUS         0348323319       65526 FERNANDEZ ZAPATA,   018  22/01/20 GARA
+                                                    13-01-2005,FALLA,NO CONGELA,          DIAGNOSTICO,MOTOR VENTILADOR DEFECTUOSO SE PEDIRA 
+     50    62135    62135 15/01/20 22/01/20      7  MABE       PRMT25PYBN1     044386396        65526 FERNANDEZ ZAPATA,   018  22/01/20 GARA
+                                                    REVISION SE ENCONTRO FUNCIONAMIENTO DEFECTUOSO, TENIA MUCHO HIELO, SE DESCONGELO, SE    
+     51    62107    62107 13/01/20 24/01/20     11  MABE       TD1370DB        0401581409       20050 VIVANCO LOPEZ JOSE  018  24/01/20 GARA
+                                                    NO CENTRIFUGA, SE HIZO AJUSTE DE TABLERO DE FUNCIONES, PRUEBA CON CARGA, FU NCIONA OK.  
+     52    62109    62109 13/01/20 24/01/20     11  MABE       PRMG60YBB       VER              65526 FERNANDEZ ZAPATA,   027  24/01/20 GARA
+                                                    15-01-2005,EXITE LA AVENIDA PERO EN URBANIZACION PIURA EL NUMERO TAMBIEN PERO NO VIVE   
+     53    62112    62112 13/01/20 24/01/20     11  MABE       TM450           003992           20050 VIVANCO LOPEZ JOSE  018  24/01/20 GARA
+                                                    FUNCIONAMIENTO NORMAL, SE DIERON INDICACIONES DE USO.                                   
+     54    62114    62114 13/01/20 24/01/20     11  INRESA     I-370GYBN1      0440588921       20050 VIVANCO LOPEZ JOSE  018  24/01/20 GARA
+                                                    SE DIERON INDICACIONES DE USO.                                                          
+     55    62134    62134 17/01/20 24/01/20      7  MABE       PLMA78DBPO      VERR             65526 FERNANDEZ ZAPATA,   027  24/01/20 GARA
+                                                    TIENE OTRO SERVICIO                                                                     
+     56    62136    62136 15/01/20 24/01/20      9  MABE       TM450           004082           65526 FERNANDEZ ZAPATA,   018  24/01/20 GARA
+                                                    15-01-2005,FALLA,PUERTA INFERIOR NO CIERRA Y NO APAGA EL FOCO,                          
+     57    62157    62157 18/01/20 24/01/20      6  MABE       PI375FYL        VERFI..          20050 VIVANCO LOPEZ JOSE  027  24/01/20 GARA
+                                                    DIRECCION CONFUSA                                                                       
+     58    62167    62167 19/01/20 24/01/20      5  MABE       PRMT15PYBN1     01414129372      20050 VIVANCO LOPEZ JOSE  018  24/01/20 GARA
+                                                    FUNCIONAMIENTO NORMAL, INDICACIONES DE USO.                                             
+     59    62186    62186 20/01/20 24/01/20      4  INRESA     PTL210WWIDS     VERRR.           65526 FERNANDEZ ZAPATA,   027  24/01/20 GARA
+                                                    ENCARGADA DEL HOTEL INDICO QUE NO HABIA PEDIDO SERVICIO, SE CIERRA OR Y SE INFORMA A    
+     60    62191    62191 21/01/20 24/01/20      3  MABE       RMG40PYBN1      0425247234       65526 FERNANDEZ ZAPATA,   018  24/01/20 GARA
+                                                    PUERTA NO CIERRA Y ESTA DURA. SE REALIZO DESMONTAJE Y REGULACION DE VISAGRAS, MONTAJE   
+     61    62196    62196 22/01/20 24/01/20      2  MABE       RM73PYBN1       VERIFICAR        20050 VIVANCO LOPEZ JOSE  027  24/01/20 GARA
+                                                    SE VISITO A CLIENTE VERIFICANDO QUE SE TRATABA DE UA REFRIGERADORA DUREX , SIN SERIE Y  
+     62    62199    62199 22/01/20 24/01/20      2  MABE       I400BB          0438375414       65526 FERNANDEZ ZAPATA,   018  24/01/20 GARA
+                                                    24-01-2005,FALLA,RUIDO AL CERRAR LA PUERTA Y CUANDO FUNCIONA MOTOR,                     
+     63    62201    62201 22/01/20 24/01/20      2  INRESA     I370GYL         0404008019       65526 FERNANDEZ ZAPATA,   018  24/01/20 GARA
+                                                    RUIDO FUERTE, SEPARACION Y AJUSTE DE TUBERIAS POR ESTAR ROZANDO CON GABINETE, PRUEBA    
+     64    62190    62190 21/01/20 25/01/20      4  MABE       TM450           000388           20050 VIVANCO LOPEZ JOSE  018  25/01/20 GARA
+                                                    REVISION SE ENCONTRO FUNCIONANDO NORMAL, SE DIERON INSTRUCCIONES DE USO, FUNCIONA OK.   
+     65    62195    62195 21/01/20 25/01/20      4  MABE       RMT45PYBN1      VERIFLL          20050 VIVANCO LOPEZ JOSE  018  25/01/20 GARA
+                                                    CLIENTE NO SE ENCONTRABA EN DOMICILIO, SE ENCONTRABA EN OLMOS.                          
+     66    62230    62230 25/01/20 25/01/20      0  INRESA     I-370GYBN1      0445445644       45407 ESPINOZA LADINES    018  25/01/20 GARA
+                                                    CALIBRACION DE TERMOSTATO FUNCIONA OK.                                                  
+     67    62233    62233 25/01/20 25/01/20      0  INRESA     I-370GYBN1      30445445891      45407 ESPINOZA LADINES    018  25/01/20 GARA
+                                                    CALIBRACION DE TERMOSTATO, FUNCIONA OK                                                  
+     68    62014    62014 04/01/20 26/01/20     22  ELECTROLUX EPFD-3400       010171000002     65526 FERNANDEZ ZAPATA,   018  26/01/20 GARA
+                                                    04-01-2005,FALLA,NO CONGELA,          DIAGNOSTICO,SE DEBE RECOGER PARA ALMACEN DE CARSA 
+     69    62092    62092 11/01/20 26/01/20     15  MABE       RMG40           0429282798       65526 FERNANDEZ ZAPATA,   018  26/01/20 GARA
+                                                    11-01-2005,FALLA,NO CONGELA,          DIAGNOSTICO,(V=210)MOTOCOMPRESOR RECALIENTA       
+     70    62153    62153 18/01/20 26/01/20      8  INRESA     I400SUBN1       0430286998       65526 FERNANDEZ ZAPATA,   018  26/01/20 GARA
+                                                    18-01-2005,FALLA,CONGELACION DEBIL,   DIAGNOSTICO,SE ENCONTRO FALTA DE GAS REFRIGENATE, 
+     71    62257    62257 26/01/20 26/01/20      0  INRESA     EMP24P          038804020096      2406 ALBAN VILLAREYES    018  26/01/20 GARA
+                                                    SE HIZO AJUSTE DE SISTEMA DE GAS, NIPLES Y VALVULAS, FUNCIONA OK.                       CORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        4
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 25/02/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 11:24:57
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/01/20   AL: 31/01/20
+                                         DEL TALLER:DOMICILIO ELECTROMEC AL:DOMICILIO L. BLANCA 
+                                         DEL EMISOR:C.ACOP.S.DOMICILIO - AL:CESER PIURA         
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     72    62258    62258 26/01/20 26/01/20      0  INRESA     I-320           0411090590        2406 ALBAN VILLAREYES    018  26/01/20 GARA
+                                                    REVISION, SE REGULO TERMOSTATO. FUNCIONA NORMAL                                         
+     73    62171    62171 19/01/20 27/01/20      8  INRESA     I270SUBN2       0450500610       45407 ESPINOZA LADINES    018  27/01/20 GARA
+                                                    REVISION, PRSENTO HENDIDURA EN UNO DE SUS LATERALES Y PUERTA, SE EFECTUO REMPLAZO DE    
+     74    62232    62232 25/01/20 27/01/20      2  MABE       R34XAA14        018621           45407 ESPINOZA LADINES    018  27/01/20 GARA
+                                                    CALIBRACION DE TERMOSTATO, CONTROL DE TEMPERATURA, FUNCIONA OK.                         
+     75    62246    62246 26/01/20 27/01/20      1  INRESA     I320SYBN2       VF               65526 FERNANDEZ ZAPATA,   027  27/01/20 GARA
+                                                    26-01-2005,FALLA,CLIENTE AUSENTE SE DEJO CONSTANCIA DE VISITA VECINA INDICO QUE HABIAN  
+     76    62247    62247 26/01/20 27/01/20      1  MABE       RMT45PYBN1      0416145631       65526 FERNANDEZ ZAPATA,   018  27/01/20 GARA
+                                                    26-01-2005,FALLA,CONGELACION DEBIL,   DIAGNOSTICO,BULBO DE TERMOSTHATO MAL UBICADO,     
+     77    62249    62249 26/01/20 27/01/20      1  L.G        GR-272SQ        404KRHX01473     45407 ESPINOZA LADINES    100  21/02/20 GARA
+                                                    FUNCIONAMIENTO ES NORMAL,SE EXPLICO A CLIENTE USO, CORRECTO.                            
+     78    62263    62263 27/01/20 27/01/20      0  L.G        GR-292          312KR00452       65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    26-01-2005,FALLA,CONGELACION DEBIL Y BOTA AGUA POR PUERTA INFERIOR,                     
+     79    62012    62012 04/01/20 28/01/20     24  FAEDA      POLAR           0100262360       65526 FERNANDEZ ZAPATA,   018  28/01/20 GARA
+                                                    04-12-2004,CLIENTE AUSENTE.           25-01-2005,FALLA,SE VISITO POR 2VEZ NO ENCONTRANDO
+     80    62244    62244 26/01/20 28/01/20      2  MABE       TM450           4005028          45407 ESPINOZA LADINES    018  28/01/20 GARA
+                                                    REVISION PRESENTA FUNCIONAMIENTO DEFECTUOSO, NO CONGELA ES NECESARIO RECOJERLA A TALLER 
+     81    62256    62256 26/01/20 28/01/20      2  L.G        WF-6766TPP      304PN00521       65526 FERNANDEZ ZAPATA,   018  28/01/20 GARA
+                                                    27-01-2005,FALLA,RUIDO AL BOTAR EL AGUA,                                                
+     82    62261    62261 27/01/20 28/01/20      1  INRESA     I-370GYBN1      0449492387       65526 FERNANDEZ ZAPATA,   018  28/01/20 GARA
+                                                    27-01-2005,FALLA,CALIENTA DEMASIADO Y DEMORA EN CONGELAR,                               
+     83    62262    62262 27/01/20 28/01/20      1  INRESA     I375FYBN1       0403007434       65526 FERNANDEZ ZAPATA,   018  28/01/20 GARA
+                                                    27-01-2005,FALLA,NIO CONGELA,         DIAGNOSTICO,FUSIBLE DEFECTUOSO,       SOLUCCION,SE
+     84    62268    62268 27/01/20 28/01/20      1  MABE       RMT45PYBN1      0437366173       45407 ESPINOZA LADINES    018  28/01/20 GARA
+                                                    SE CAMBIO TIMER DEFECTUOSO, FUNCIONA OK.                                                
+     85    62184    62184 20/01/20 29/01/20      9  MABE       RMT45PYBN1      0437365917       65526 FERNANDEZ ZAPATA,   018  29/01/20 GARA
+                                                    22-01-2005,FALLA,FORMA ESCARCHA,      DIAGNOSTICO,SE ENCONTRO TAIMER DEFECTUOSO SE      
+     86    62248    62248 26/01/20 29/01/20      3  MABE       RMT15PYBNO      0343277446       65526 FERNANDEZ ZAPATA,   018  29/01/20 GARA
+                                                    26-01-2005,FALLA,FORMA ESCARCHA,      DIAGNOSTICO,SE ENCONTRO TAIMER DEFECTUOSO SE DEBE 
+     87    62264    62264 27/01/20 29/01/20      2  SAMSUNG    SR-24M          4DAW500377       45407 ESPINOZA LADINES    100  31/01/20 GARA
+                                                    SE ENCONTRO ROZAMIENTO EN TUBERIAS CON GABINETE, SE HIZO AJUSTE DE TUBERIAS, AJUSTE,    
+     88    62267    62267 29/01/20 29/01/20      0  MABE       RMT45PYBN1      0410077360       45407 ESPINOZA LADINES    018  29/01/20 GARA
+                                                    SE CALIBRO CONTROL DE TEMPERATURAA MENOS, FUNCIONA NORMAL.                              
+     89    62270    62270 28/01/20 29/01/20      1  INRESA     EMP24ZBX-2      055004070073     65526 FERNANDEZ ZAPATA,   018  29/01/20 GARA
+                                                    28-01-2005,FALLA,NO ENCIENDEN 2HORNILLAS,                                               
+     90    62282    62282 28/01/20 29/01/20      1  L.G        WF-6766TPP      401PNBM00677     65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    29-01-2005,FALLA,NO TERMINA DE CENTRIFUGAR,                                 DIAGNOSTICO 
+     91    62284    62284 28/01/20 29/01/20      1  COLDEX     RD-14           560529           65526 FERNANDEZ ZAPATA,   018  29/01/20 GARA
+                                                    29-01-2005,FALLA,BOTA AGUA POR PUERTA INFERIOR,                                         
+     92    62187    62187 20/01/20 31/01/20     11  INRESA     PALASKA300BB    305353            2406 ALBAN VILLAREYES    018  31/01/20 GARA
+                                                    SE EXPLICO FUNCIONAMIENTO, FUNCIONA NORMAL.                                             
+     93    62200    62200 22/01/20 31/01/20      9  MABE       I315FUBN1       VERIFICC         65526 FERNANDEZ ZAPATA,   027  31/01/20 GARA
+                                                    CLIENTE AUSEENTE.                                                                       
+     94    62231    62231 25/01/20 31/01/20      6  MABE       TM450           005454           20050 VIVANCO LOPEZ JOSE  018  31/01/20 GARA
+                                                    SE REVISO, FUNCIONA NORMAL, SRA CONGELA MUCHOS MARCIANOS, SE ENSE╔O MANEJO, FUNCIONA OK.
+     95    62266    62266 27/01/20 31/01/20      4  INRESA     I315UBN1        0411094990       20050 VIVANCO LOPEZ JOSE  018  31/01/20 GARA
+                                                    REGULACION TERMOSTATO, FUNCIONA OK.                                                     CORP.ANDINA DE DISTRIB.                                                                                                  P═gina :        5
+        CESER                                          TIEMPO PROMEDIO DE ATENCION                                       Fecha  : 25/02/20
+  CALLE CUZCO 1099                               DESDE RECEPCION O/R HASTA CIERRE DE O/R                                 Hora   : 11:24:58
+                                                 ммммммммммммммммммммммммммммммммммммммм
+                                                   DEL FECHA : 01/01/20   AL: 31/01/20
+                                         DEL TALLER:DOMICILIO ELECTROMEC AL:DOMICILIO L. BLANCA 
+                                         DEL EMISOR:C.ACOP.S.DOMICILIO - AL:CESER PIURA         
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    S/S     O/R      FECHAINI FECHAFIN  T.DIAS MARCA      MODELO           SERIE             TECNICO              ESTADO F.ESTADO TIPOЁ
+Ё                                                      NЬO/R    0     1     2     3     4      5  6-10   +10 DIAS HORAS                    Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     96    62285    62285 29/01/20 31/01/20      2  INRESA     ALASKA 300BB    0030374          45407 ESPINOZA LADINES    018  31/01/20 GARA
+                                                    AJUSTE DE TERMOSTATO, FUNCIONA OK.                                                      
+     97    62286    62286 29/01/20 31/01/20      2  INRESA     CIP24EBB        053804100389     65526 FERNANDEZ ZAPATA,   018  31/01/20 GARA
+                                                    SE REALIZO REGULACION DE VISAGRAS POR ESTAR DOBLADAS, NO ENCAJABA CORRECTAMENTE, PRUEBA 
+                          TOTAL ENERO               м>    97    21    15    20     6     7     1    15    12     4  9
+                          TOTAL DOMICILIO           =>    97    21    15    20     6     7     1    15    12     4  9
+                TOTAL                               =>    97    21    15    20     6     7     1    15    12     4  9
+
+      1   619440   619440 04/01/20 06/01/20      2  MABE       PI295SUBN1      0351347308       65526 FERNANDEZ ZAPATA,   027  06/01/20 GARA
+                                                    04-01-2005,CLIENTE AUSENTE CASA ES COMPARTIDA POR 2FAMILIAS,                            
+      2    62144    62144 17/01/20 17/01/20      0  FAEDA      ATENEA          18299            65526 FERNANDEZ ZAPATA,   018  17/01/20 GARA
+                                                    17-01-2005,FALLA,LLAMA DEMASIADA DEBIL DIAGNOSTICO,REGULADOR DEFECTUOSO,    SOLUCCION,SE
+      3    62161    62161 19/01/20 24/01/20      5  MABE       PRMT25PYBN1     0447467611       20050 VIVANCO LOPEZ JOSE  018  24/01/20 GARA
+                                                    AJUSTE DE SISTEMA DE FRIO.            FUNCIONA NORMAL.                                  
+                          TOTAL ENERO               м>     3     1     0     1     0     0     1     0     0     2  7
+                          TOTAL DOMICILIO           =>     3     1     0     1     0     0     1     0     0     2  7
+                TOTAL CARSA                         =>     3     1     0     1     0     0     1     0     0     2  7
+
+      1    62010    62010 04/01/20 04/01/20      0  MABE       PR34XAA14       VVV              65526 FERNANDEZ ZAPATA,   027  04/01/20 GARA
+                                                    REPARADO POR SERVICIO DE SERTEPI.                                                       
+      2    62044    62044 06/01/20 06/01/20      0  L.G        WF-T7505TP      310KW00473       65526 FERNANDEZ ZAPATA,   100  21/02/20 GARA
+                                                    06-01-2005,FALLA,MANCHA LA ROPA,      DIAGNOSTICO,VALVULA SLENOIDE CON OXIDO            
+      3    62235    62235 25/01/20 26/01/20      1  FAEDA      POLAR           0100392434       20050 VIVANCO LOPEZ JOSE  100  31/01/20 GARA
+                                                    SE ENCONTRO ENCHUFE DE CABLE AC EN FALSO CONTACTO, SE REPARO, PRUEBA FUNCIONA NORMAL.   
+      4    62234    62234 25/01/20 27/01/20      2  COPEMACO   ARTICA          0031336          45407 ESPINOZA LADINES    018  27/01/20 GARA
+                                                    NO CONGELA, FUNCIONAMIENTO ES NORMAL, SE DIERON INDICACIONES, CONGELADORA FUNCIONA DE   
+      5    62281    62281 28/01/20 29/01/20      1  COPEMACO   ARTICA PLUS     0030882          65526 FERNANDEZ ZAPATA,   018  29/01/20 GARA
+                                                    29-01-2005,FALLA,NO CONGELA,          DIAGNOSTICO,FUNCIONAMIENTO Y CONGELACION ES DE    
+                          TOTAL ENERO               м>     5     2     2     1     0     0     0     0     0     0  3
+                          TOTAL DOMICILIO           =>     5     2     2     1     0     0     0     0     0     0  3
+                TOTAL CARSA DOMICILIO               =>     5     2     2     1     0     0     0     0     0     0  3
+
+                                                    ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+            TOTAL GARA EN GARANTIA                  =>   105    24    17    22     6     7     2    15    12     4  3
+                                                    ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+         TOTAL PROMEDIO DE ATENCION       112       =>   105    24    17    22     6     7     2    15    12     4  3
+                                                           %   22.8  16.1  20.9   5.7   6.6   1.9  14.2  11.4
+                                                    ACUMUL %   22.8  39.0  60.0  65.7  72.3  74.2  88.5 100.0
+                                                    ммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм
+

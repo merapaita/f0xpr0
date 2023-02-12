@@ -1,0 +1,7 @@
+go bott
+scatter memvar
+for i = 1 to 74
+	m.numcp = alltrim(str(val(m.numcp) + 1))
+	append blank
+	gather memvar
+endfor

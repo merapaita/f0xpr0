@@ -1,0 +1,51 @@
+C E S E R                                                     N§ XXXXXXXX  
+                 O R D E N    D E    R E P A R A C I O N                   
+                                                                           
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ 
+³CODIGO MARCA    :                                                       ³ 
+³CODIGO PRODUCTO :                                                       ³ 
+³NUMERO DE SERIE :                                                       ³ 
+³STICKER         :     -                                                 ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³CLIENTE         :                                                       ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³FECHA RECEPCION :            INGRESO :           COMPROMISO :           ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³TIPO SERV.      :                                                       ³ 
+³TECNICO         :                                                       ³ 
+³ESTADO ORDEN    :                                                       ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³           S I N T O M A S         ³         A C C E S O R I O S        ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³O B S E R V A C I O N E S                     ³V§ B§    T E C N I C O   ³ 
+³                                              ³                         ³ 
+³                                              ³                         ³ 
+³                                              ³                         ³ 
+³                                              ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ³ 
+³                                              ³          FIRMA          ³ 
+³                                              ³                         ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³N O T A S                                     ³V§ B§    C A L I D A D   ³ 
+³                                              ³                         ³ 
+³                                              ³                         ³ 
+³                                              ³                         ³ 
+³                                              ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ³ 
+³                                              ³          FIRMA          ³ 
+³                                              ³                         ³ 
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ 

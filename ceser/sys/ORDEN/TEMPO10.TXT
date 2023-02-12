@@ -1,0 +1,51 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   19/11/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   12:54:15
+                                                     DESDE:19/11/2015  HASTA:19/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   050  SUCURSAL PIURA                
+
+      1     7338 19/11/2015     7338 LLOCLLA GARCIA ROSA       FUJIFILM   JX500           2SD78948          1000 001  19/11/2015
+      2     7340 19/11/2015     7340 CASTRO CASTRO FRANK       SONY       HCD-GTZ4        9513508          30977 001  19/11/2015
+      3    15102 19/11/2015    15102 LLOCLLA GARCIA ROSA       MABE       LMA             FFS               2008 011  19/11/2015
+      4    15106 19/11/2015    15106 RAMIREZ DIOS MONICA       L.G        WF-             AAAASSDS          2008 011  19/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     4
+
+                                                                       TOTAL SUCURSAL PIURA                =>     4
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA             =>     4
+ GARA EN GARANTIA                   
+
+   090                                
+
+      5     7342 19/11/2015     7342 ORDINOLA MORALES LUIS     EPSON      L355            S42LK307689      60070 001  19/11/2015
+      6    15103 19/11/2015    15103 CUEVAS COBE;AS RICHARD    SAMSUNG    UN50JU6500GXPE  MKJF              1000 011  19/11/2015
+      7    15104 19/11/2015    15104 AREVALO GONZALES ESMERALE SAMSUNG    UN39FH5005GXPE                    1000 011  19/11/2015
+      8    15105 19/11/2015    15105 ROCIO BENITES LUIS ANGEL  SAMSUNG    RT22FAJADSP/PE  MK                1000 011  19/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     4
+
+                                                                       TOTAL                               =>     4
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA                   =>     4
+ GEXS EN GARANTIA EXTENDIDA SAGA    
+
+   090                                
+
+      9     7339 19/11/2015     7339 MICHAELSEN SAFFER WALDEMA CANON      PC1734          S / S             1000 001  19/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     1
+
+                                                                       TOTAL                               =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA EXTENDIDA SAGA    =>     1
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>     9
+                                                                                                             ммммммм
+

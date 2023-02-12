@@ -1,0 +1,34 @@
+ CORP.ANDINA DE DISTRIB.                                                             P gina :          1
+        CESER                      REPUESTOS PENDIENTES POR FACTURAR                 Fecha  : 04/05/2002
+   CALLE CUZCO 1099                ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                 Hora   :   16:25:21
+Propiedad Del P    PROPIO                      Al 04/05/2002                         Program: AGCR0238  
+           Al P    PROPIO                   
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³EMISOR                                              TOTAL          TOTAL          TOTAL          TOTAL³
+³                                                   CANTID     P.VTA. US$       C.P. US$       C.P. S/.³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ TOTAL EMISOR 050  CESER PIURA               ====>      21         217.74         126.54         425.52
+
+ TOTAL EMISOR 100  SONY SUCURSAL PERU        ====>      17         190.28         118.50         409.42
+
+ TOTAL EMISOR 121  COLATINA SSP - PIURA      ====>      65         378.71         232.15         801.95
+
+ TOTAL EMISOR 221  C.ACOP.CARSA PIURA        ====>       6          14.19           4.77          16.42
+
+ TOTAL EMISOR 253  C.ACOP.CARSA SULLANA      ====>       8          32.74          10.80          37.79
+
+ TOTAL EMISOR 2950 GEX GTIA EXTENDIDA 5 A¥OS ====>      10          63.97          54.04         185.95
+
+ TOTAL EMISOR 321  ORDECOMSA PIURA           ====>     140         636.94         341.39       1,181.72
+
+ TOTAL EMISOR 500  L.G ELECTRONICS           ====>       4          38.54          26.57          92.39
+
+ TOTAL EMISOR 521  L.G ELECTRONICS PERU S.A  ====>      46         636.76         508.04       1,750.34
+
+
+========================================================================================================
+    244                       TOTAL GENERAL ====>      317       2,209.87       1,422.80       4,901.50
+========================================================================================================
+

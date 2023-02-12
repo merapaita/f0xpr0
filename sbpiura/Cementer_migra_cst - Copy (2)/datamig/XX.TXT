@@ -1,0 +1,39 @@
+
+Estructura de la tabla: I:\CEMENT~1\DATACE~1\FALLECID.DBF
+N§ de registros:           21463
+éltima actualizaci¢n:   10/29/07
+Bloque de archivo MEMO:       64
+P g. de c¢digos:        1252
+Campo  Nombre      Tipo       Ancho    Dec    Öndice Ordenaci¢n
+    1  COD_CEMENT  Num‚rico       2                  
+    2  COD_CUARTE  Num‚rico       3                  
+    3  COD_FALLEC  Num‚rico       7                  
+    4  COLUMNA     Num‚rico       3                  
+    5  FILA        Car cter       1                  
+    6  APE_PATERN  Car cter      30                  
+    7  APE_MATERN  Car cter      30                  
+    8  NOMBRES     Car cter      30                  
+    9  FEC_FALLEC  Fecha          8                  
+   10  FEC_NACIM   Fecha          8                  
+   11  AP_PAT_PAD  Car cter      20                  
+   12  AP_MAT_PAD  Car cter      20                  
+   13  NOM_PADRE   Car cter      20                  
+   14  AP_PAT_MAD  Car cter      20                  
+   15  AP_MAT_MAD  Car cter      20                  
+   16  NOM_MADRE   Car cter      20                  
+   17  SEXO        Car cter       1                  
+   18  PERS_ILUST  L¢gico         1                  
+   19  ANTEC_FAMI  Memo          10                  
+   20  CAMB_NICHO  L¢gico         1                  
+   21  CAMB_CEMEN  L¢gico         1                  
+   22  SOLICITANT  Car cter      35                  
+   23  COMP_PAGO   Car cter      10                  
+   24  VALOR_NICH  Num‚rico      10      2           
+   25  HOMONIMO    L¢gico         1                  
+   26  COD_HOMONI  Num‚rico       7                  
+   27  OCUP_FUTUR  L¢gico         1                  
+   28  ADUL_PARV   Car cter       1                  
+   29  DIGITADOR   Car cter      10                  
+   30  FEC_DIGIT   Fecha          8                  
+   31  HOR_DIGIT   Car cter      10                  
+** Total **                     350

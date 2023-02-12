@@ -1,0 +1,2385 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<sicg2011>
+<glosas>
+<ano>2011</ano>
+<tipo>00</tipo>
+<orden>01</orden>
+<glosa>POR EL ACTIVO, PASIVO Y PATRIMONIO AL INICIAR LAS OPERACIONES EN EL PRESENTE EJERCICIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>00</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO DE LAS CUENTAS DE ORDEN, AL INICIAR LAS OPERACIONES DEL PRESENTE EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO DEL PRESUPUESTO APROBADO DE INGRESOS POR LA FTE. RECURSOS DIRECTAMENTE RECAUDADOS - DONACIONES Y TRANSFERENCIAS EN EL PRESENTE A¥O. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DEL PRESUPUESTO APROBADO DE GASTOS POR LA FUENTE DE RECURSOS DIRECTAMENTE RECAUDADOS Y DONACIONES Y TRANASFERENCIAS DEL PRESENTE EJERCICIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>04</orden>
+<glosa>INCORPORACION SALDO DE BALANCE-INGRESOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>05</orden>
+<glosa>INCORPORACION SALDO DE BALANCE-GASTOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO DE CREDITO SUPLEMENTARIO EN EL PRESUPUESTO INSTITUCIONAL DE LA SBP-INGRESOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>07</orden>
+<glosa>POR EL REGISTRO DE CREDITO SUPLEMENTARIO DEL PRESUPUESTO INSTITUCIONAL DE LA SBP-GASTOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>08</orden>
+<glosa>POR EL REGISTRO DE TRANSFERENCIAS POR METAS  ENTRE ASIGNACIONES PRESUPUESTARIAS DE GASTOS SEGUN RESOLUCION DIRECTORAL </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>09</orden>
+<glosa>POR EL REGISTRO CONTABLE DE CREDITO SUPLEMENTARIO POR EL INGRESO PROVENIENTE DEL PRESTAMO AL BANCO CONTINENTAL, RPD N§ 129-2011-SBP-P. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>01</tipo>
+<orden>10</orden>
+<glosa>REGISTRO CONTABLE DE CREDITO SUPLEMENTARIO DEL GASTO POR PRESTAMO AL BANCO CONTINENTAL. RPD N§ 129-2011-SBP-P. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>02</tipo>
+<orden>01</orden>
+<glosa>TRASLADO DEL ACM DE LAS CUENTAS 20 Y 21 A CUENTAS DE INGRESOS Y GASTOS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>02</tipo>
+<orden>02</orden>
+<glosa> </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>03</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO DE LOS INGRESOS ESTIMADOS QUE CORRESPONDEN AL SALDO DE BALANCE (INCIDENCIA PRESUPUESTARIA) </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>03</tipo>
+<orden>06</orden>
+<glosa>REGISTRO DE LA EJECUCION DEL SALDO DE BALANCE PTE. EJERCICIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>04</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO DE LA EJECUCION DEL SALDO DEL BALANCE DEL PRESENTE EJERCICIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>04</tipo>
+<orden>07</orden>
+<glosa>MODIFICACION PRESUPUESTAL SEGUN RESOLUCION DIRECTORAL. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO DEL DERECHO DE COBRO POR LA PRESTACION DE SERVICIOS EN CEMENTERIOS,COMEDOR SOCIAL, LOTERIA, SEPELIO FAMILIAR Y OTROS SEGUN EMISION DE RECIBOS Y BOLETAS DE VENTA DURANTE EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>07</orden>
+<glosa>POR LA EMISION DE LAS FACTURAS, BOLETAS DE VENTAS Y/O RECIBOS PARA SU COBRANZA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>08</orden>
+<glosa>POR EL REGISTRO DE LA ESTIMACION DE LA RECAUDACION DE INGRESOS POR RECURSOS DIRECTAMENTE RECAUDADOS Y DONACIONES Y TRANSFERENCIAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>09</orden>
+<glosa>POR EL REGISTRO DE LA EMISION DE RECIBOS DE CAJA POR LA CESION EN USO DE NICHOS, MAUSOLEOS DURANTE EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>10</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA ATENCION DE CESION EN USO DE NICHOS, MAUSOLEOS DURANTE EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO DE ESTIMACION DE LOS RECIBOS DE CAJA EMITIDAS POR EL COBRO POR VENTA DE NICHOS Y MAUSOLEOS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO DE LA EMISION DE FACTURAS, BOLETAS DE VENTA DEL SERVICIO DE CONSULTORIOS MEDICOS, P.E.B.S. Y LABORATORIO-OTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>13</orden>
+<glosa>POR LA REVERSION DE LA ESTIMACION DEL INGRESO POR VENTA DE NICHOS SEGUN PAGO EFECTUADO POR IGV. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>14</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LOS INGRESOS POR VENTA Y ATENCION DE ANALISIS DE LABORATORIO A OFICINA CENTRAL PARA DONACION A PERSONAS DE ESCASOS RECURSOS, SEGUN RESOLUCIONES DIRECTORALES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>15</orden>
+<glosa>POR EL REGISTRO DEL INGRESO QUE LE CORRESPONDE AL SERVICIO DE FARMACIA SEGUN RESOLUCION DIRECTORAL DE DONACIONES DE MEDICINAS, CONSULTAS MEDICAS Y OTROS, QUE EFECTUA LA INSTITUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>16</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL INGRESO POR CONSULTAS MEDICAS, ANALISIS DE LABORATORIO, MEDICAMENTOS Y OTROS, EN EL POLICLINICO  EL BUEN SAMARITANO -SBP, DURANTE EL PRESENTE MES, SEGUN REGISTRO DE VENTAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>17</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA EMISION DE BOLETAS DE VENTA EN LA ATENCION DE CONSULTAS MEDICAS, ANALISIS CLINICO, VENTA DE MEDICAMENTOS Y OTROS, EN POLICLINICO EL BUEN SAMARITANO, DURANTE EL PTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>18</orden>
+<glosa>POR EL INGRESO, DE INTERESES GENERADOS POR MORA SEGUN LETRAS FIRMADAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>19</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE FACTURAS EMITIDAS POR EL SERVICIO DE CONSULTORIOS MEDICOS POR ATENCION A SOCIOS A SERVISEPF DE ENERO, FEB, MARZO Y ABRIL/, SEGUN ANALISIS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>20</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA DEUDA DE LA MUNICIPALIDAD PROVINCIAL DE PIURA, POR CREDITO DE NICHOS A PERSONAS INDIGENTES SEGUN EL INFORME DE LA OFICINA DE CREDITOS Y COBRANZAS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>21</orden>
+<glosa>POR EL REGISTRO CONTABLE DE INGRESOS POR CONSULTAS MEDICAS, ANALISIS DE LABORATORIO, MEDICAMENTOS Y OTROS EN EL POLICLINICO SOCIAL SEDE PRINCIPAL </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>22</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA EMISION DE BOLETAS Y FACTURAS EN LA ATENCION DE CONSULTAS MEDICAS, ANALISIS CLINICOS, MEDICAMENTOS Y OTROS EN EL POLICLINICO SOCIAL SEDE CENTRAL, DURANTE EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>23</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA EMISION DE BOLETAS DE VENTA POR CREDITO DE MENUS DURANTE EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>24</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LOS INGRESOS POR ALQUILERES DE INMUEBLES, AUDITORIO, SALON DE EVENTOS, SILLAS RUEDAS, CAMAS CLINICAS, MULETAS, ETC. EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>25</orden>
+<glosa>POR LA EMISION DE LAS FACTURAS Y BOLETAS POR ALQUILERES DE INMUEBLES, AUDITORIO, SALON DE EVENTOS, SILLAS RUEDAS, CAMAS CLINICAS, MULETAS, ETC. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>45</orden>
+<glosa>POR EL REGISTRO DE LOS INTERESES GENERADOS POR DEPOSITOS EN CUENTAS DE AHORRO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>46</orden>
+<glosa>INTERESES GENERADOS EN CERTIFICADOS A PLAZO FIJO -CUENTAS DE AHORROS, SEGUN ESTADO DE ENTIDAD FINANCIERA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>48</orden>
+<glosa>POR LOS DOCUMENTOS EMITIDOS Y ESTIMACION PRESUPUESTARIA POR COBRO DE NICHOS, TERRENOS PARA MAUSOLEOS, SERVICIOS DE TERCEROS Y OTROS DE A¥OS ANTERIORES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>49</orden>
+<glosa>AJUSTE CONTABLE PARA REBAJAR SALDO DE NICHOS A¥OS ANTERIORES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>50</orden>
+<glosa>AJUSTE-ESTIMAC. PRESUPUESTAL POR VENTA DE NICHOS Y CONSULTAS MEDICAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>51</orden>
+<glosa>AJUSTE-REVERSION DE CUENTAS POR EXON. DE INTERESES Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>52</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LOS CREDITOS OTORGADOS POR VENTA DE NICHOS A LA MUNICIPALIDAD DE PIURA, PARA DONACION A PERSONAS DE ESCASOS RECURSOS ECONOMICOS, SEGUN RELACION DEL ENCARGADO DE CRED.Y COB </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>05</tipo>
+<orden>53</orden>
+<glosa>POR LA ESTIMACION PRESUPUESTARIA  DE LAS DONACIONES EN SERVICIOS MEDICOS Y LABORATORIO A TRAVES DE RESOLUCIONES DE PRESIDENCIA DEL DIRECTORIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>01</orden>
+<glosa>POR EL TRASLADO ENTRE CUENTAS PATRIMONIALES PARA REGISTRAR LA EXIGIBILIDAD DE LA DEUDA DE NICHOS EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>02</orden>
+<glosa>POR LA REVERSION DE CUENTAS POR EXONERACION DEL INTERES RECARGADO EN EL VALOR DEL NICHO ADQUIRIDO CON BOLETA DE VENTA Y/O FACTURA, SEGUN NOTA DE CREDITO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>03</orden>
+<glosa>POR LA EMISION DE BOLETA DE VENTA POR ANULACION DE COMPROBANTE ANTERIOR SEGUN NOTA DE CREDITO, EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO DE DONACION DEL 50% Y 100% DEL VALOR DE NICHOS, SEGUN RESOLUCION DIRECTORAL. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO CONTABLE DE NOTA DE CREDITO, PARA REBAJAR DIFERENCIA POR EXONERACION DE INTERESES Y CONDONACION DEL 50% DEL VALOR DE NICHOS , SEGUN BOLETA DE VENTA EXTENDIDA EN EL EJERCICIO ANTERIOR. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>06</orden>
+<glosa>POR LA REBAJA DE IMPORTE DE BOLETAS Y/O FACTURAS EMITIDAS, SEGUN NOTAS DE CREDITO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>07</orden>
+<glosa>POR LA REBAJA DE CUENTAS PATRIMONIALES POR DEVOLUCION DE INGRESOS A USUARIOS-VELACIONES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>08</orden>
+<glosa>POR EL AJUSTE CONTABLE DE DIFERENCIA DE INGRESOS EN REGISTRO DE FACTURAS Y BOLETAS DE VENTA  DE CONSULTORIOS MEDICOS Y FARMACIA DEL MES DE ENERO/ SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>09</orden>
+<glosa>POR REGISTRO CONTABLE DEL INGRESO POR CONCEPTO DE INTERESES EN COBRANZA DE LETRAS POR CREDITO DE NICHOS Y TERRENOS PARA MAUSOLEO Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>10</orden>
+<glosa>POR EL REGISTRO DE LA NOTA DE CREDITO, POR ANULACION DE B/V Y/O FACT. POR EXONERACION DE SALDO DE NICHO A PERSONAS DE ESCASOS RECURSOS ECONOMICOS, CONFORME A LA RESOLUCION GERENCIAL, </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO DE LA  NUEVA BOLETA EXTENDIDA POR ANULACION DE LA ANTERIOR SEGUN NOTA DE CREDITO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL INGRESO, QUE CORRESPONDE AL VALOR DEL SALDO DE NICHO CONDONADO POR LA BENEFICENCIA SEGUN RESOLUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>13</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA NOTA DE MODIFICACION N§02 POR EL CREDITO FINANCIERO CON BCO CONTINENTAL SEGUN RPD N§129-2011-SBP-P </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>14</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA ESTIMACION DE MAYORES INGRESOS DE LA INVERSION DEL PRESTAMO FINANCIERO SEGUN NOTA DE MODIFICACION N§02 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>15</orden>
+<glosa>REGISTO CONTABLE DE LA REVERSION DE CUENTA PàR DEVOLUCION DE IMPORTE DE LA B/V. ANALISIS CLINICOS Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>06</tipo>
+<orden>16</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA EMISION DE RECIBO DE INGRESO POR INTERESES EN LA COBRANZA DE LETRAS POR CREDITOS DE NICHOS, MAUSOLEOS Y OTROS EN EL PTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>09</tipo>
+<orden>01</orden>
+<glosa>POR LA EMISION DE LAS ORDENES DE COMPRA EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>09</tipo>
+<orden>02</orden>
+<glosa>POR LA REBAJA Y ANULACION DE ORDENES DE COMPRA EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>09</tipo>
+<orden>03</orden>
+<glosa>AJUSTE CONTABLE DE CUENTAS DE ORDEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>10</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DE ORDENES DE COMPRA ATENDIDAS EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>10</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO DE LAS ORDENES DE COMPRA ATENDIDAS EN LAS RENDICIONES DEL COMEDOR SOCIAL Y OTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>11</tipo>
+<orden>01</orden>
+<glosa>POR EL TRASLADO  DE UNA DIVISIONARIA A OTRA DIVISIONARIA POR NO CORRESPONDERLE EN EL PTE. MES SEGUN ANALISIS E INVENTARIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>11</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO CONTABLE DE NOTA DE CREDITO, PARA REBAJAR PORCENTAJE QUE LE CORRESPONDE AL PROFESIONAL MEDICO, POR ATENCION DE CONSULTAS MEDICAS. EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>11</tipo>
+<orden>03</orden>
+<glosa>POR EL TRASLADO ENTRE DE CUENTAS PATRIMONIALES POR NO CORRESPONDER Y REFLEJAR LAS OPERACIONES, SEGUN REBAJAS PRESUPUESTARIAS-PATRIMONIALES Y ANALISIS EFECTUADO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>12</tipo>
+<orden>01</orden>
+<glosa>POR LA ANULACION DE ORDENES DE COMPRA EN EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>12</tipo>
+<orden>02</orden>
+<glosa>POR LA ANULACION DE ORDENES DE SERVICIO EN EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>12</tipo>
+<orden>03</orden>
+<glosa>POR LA REBAJA DE ORDENES DE COMPRA EN EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>12</tipo>
+<orden>04</orden>
+<glosa>POR LA REBAJA DE ORDENES DE SERVICIO EN EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>14</tipo>
+<orden>01</orden>
+<glosa>POR LA EMISION DE LAS ORDENES DE SERVICIO EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>14</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO Y REVERSION  ASIENTOS DE ORDEN DE O/S </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>14</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DE LA ATENCION DE LAS ORDENES DE SERVICIO DEL MES DE DICIEMBRE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>15</tipo>
+<orden>01</orden>
+<glosa>POR LA SALIDAD DE ATAUDES DE LA OFICINA DE SERVISEPF PARA LA ATENCION DE SERVICIOS FUNERARIOS DE SOCIOS DE SERVISEPF </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>17</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DE LAS ORDENES DE SERVICIO ATENDIDAS EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>17</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO DE O/S DE RENDICIONES COMEDOR Y OTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>17</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DE ATENCION DE LAS ORDENES DE SERVICIO - CONTADO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>20</tipo>
+<orden>01</orden>
+<glosa>POR LA EJECUCION DE LA PRESUPUESTARIA DEL GASTO POR LA CANCELACION DEL FONDO DE LAS  CAJAS CHICAS DE LA INSTITUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>21</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO CONTABLE DE DE LA RENDICION DE LOS GASTOS REALIZADOS DEL FONDO DE CAJA CHICA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>21</tipo>
+<orden>02</orden>
+<glosa>POR LA EJECUCION CONTABLE AL LIQUIDAR EL FONDO PARA PAGOS EN EFECTIVO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>21</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA LIQUIDACION DE CAJA CHICA DE OBRAS , SEGUN RENDICION EFECTUADA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>21</tipo>
+<orden>04</orden>
+<glosa>POR LA EJECUCION PRESUPUETARIA A LA CANCELACION DEL FONDO DE CAJA CHICA APERTURADA PARA GASTOS MENUDOS EN LAS OBRAS DE LOS CEMENTERIOS DE PROPIEDAD DE LA BENEFICENCIA, SEGUN RENDICIONES EFECTUADAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL INGRESO DE BIENES A ALMACEN PROVENIENTE DE DONACIONES, SEGUN NEA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL INGRESO DE BIENES DE CAPITAL A LA INSTITUCION, PROVENIENTE DE DONACIONES, SEGUN NEA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DEL VALOR DE BIENES INGRESADOS A ALMACEN, PARA SALDAR LA CUENTA BIENES EN TRANSITO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA NEA N§ . DE FECHA 0 POR SOBRANTE DE GALONES DE PETROLEO ADQUIRIDO EN LA VELACIONES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO CONTABLE DE  NEA POR INGRESO A ALMACEN DE SOBRANTES DE MATERIAL DE CONSTRUCCION DE MAUSOLEOS EN LOS CEMENTERIOS DE LA SBP </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO DE NEA  POR EL INGRESO A ALMACEN DE MATERIAL SOBRANTE DEL PABELLON DE NICHOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>07</orden>
+<glosa>POR EL REGISTRO DE NEA  QUE CORRESPONDE A MATERIAL SOBRANTE DE LA OBRA DE INMUEBLES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>08</orden>
+<glosa>POR EL TRASLADO DE LA PRIMERA CUENTA A LA SEGUNDA POR CORRSPONDER A MATERIAL SOBRANTE DE  OBRA REF.- NEA . </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>09</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA NOTA DE ENTRADA A ALMACEN, POR INGRESO DE MEDICINA SOBRANTE DE DONACION EN CAMPA¥A MEDICA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>10</orden>
+<glosa>POR EL REGISTRO CONTABLE DE NEA , POR DONACION DE UNA COMPUTADORA CON IMPRESORA  Y ACCESORIOS, DONACION </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL INGRESO DE BIENES VENCIDOS, SEGUN ACTAS DE ENTREGA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>22</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO DE LA NEA PARA CONTABILIZAR EL INGRESO A ALMACEN DE MEDICAMENTOS PROVENIENTES DE LAS FARMACIAS DEL POLICLINICO SOCIAL Y POLICLINICO EL BUEN SAMARITANO DE LA SBP. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>23</tipo>
+<orden>01</orden>
+<glosa>PARA REGISTRAR LA EJECUCION PRESUPUESTARIA DEL GASTO DE LOS DESEMBOLSOS SUJETOS A LIQUIDACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>23</tipo>
+<orden>02</orden>
+<glosa>REGISTRO DE CTAS.PATRIMONIALES POR LA RENDICION DE GASTOS EFECTUADOS POR EL DESEMBOLSO SUJETOS A LIQUIDACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>23</tipo>
+<orden>03</orden>
+<glosa>PARA REGISTRAR LA EJECUCION PRESUSPUSTARIA DEL GATOS DE LA LIQUIDACION DE CAJAS CHICAS DE LA INSTITUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DE LAS ORDENES DE SERVICIO EMITIDAS Y TRANSFERENCIAS CORRIENTES EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO DE LAS ORDENES DE SERVICIO EMITIDAS POR OBRAS: CONSTRUCCION DE NICHOS, MEJORAS EN INMUEBLES, ETC. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DE PLLAS. DEL PERSONAL NOMBRADO, CONTRATADO, CESANTE, JUBILADO Y CONTRIBUCIONES SOCIALES (CUOTA PATRONAL)-REGIMEN DE PRESTACION DE SALUD, DIETAS DE DIRECTORIO, Y PLLAS.DE CAFAE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO DEL GASTO DE RACIONAMIENTO Y MOVILIDAD DEL PERSONAL DE LA SBP. POR VELACIONES SEGUN RESOLUCION DE PRESIDENCIA, E INFORME DE PERSONAL Y MEMORANDO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>05</orden>
+<glosa>POR EL REEMBOLSO EQUIVALENTE A LA CUOTA CAPITAL QUE LE CORRESPONDE A SOCIOS DE SERVISEPF POR RENUNCIA Y RESOLUCION DE CONTRATO, SEGUN RESOLUCION GERENCIAL. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO DE GASTOS EJECUTADOS CON EL FONDO DE CAJA CHICA DE LA INSTITUCION SEGUN HOJA DE AFECTACION Y RENDICIONES, DURANTE EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>07</orden>
+<glosa>POR EL REGISTRO DE LAS ORDENES DE COMPRA Y TRANSFERENCIAS CORRIENTES ATENDIDAS EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>08</orden>
+<glosa>POR EL REGISTRO DE LAS ORDENES DE COMPRA EMITIDAS POR OBRAS.- CONSTRUCCION DE NICHOS, MEJORAS, REHABILITACION DE INMUEBLES Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>10</orden>
+<glosa>CUENTAS PRESUPUESTARIS DE LAS HOJAS DE AFECTACION EN EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>11</orden>
+<glosa>AJUSTE CONTABLE DE COMPROMISO PATRIMONIAL DE GASTOS NO EFECTUADOS EN EL MES CORRESPONDIENTE, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO DE GASTOS EFECTUADOS A TRAVES DEL FONDO DE CAJA CHICA SERVISEPF, SEGUN RENDICIONES Y HOJA DE AFECTACION PRESUPUESTAL DEL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>13</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL INGRESO DE BIENES A ALMACEN, POR COMPRAS EFECTUADAS AL CONTADO SEGUN COMPROBANTE DE PAGO EMITIDO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>14</orden>
+<glosa>POR EL REGISTRO DE GASTOS EFECTUADOS ATRAVEZ DEL FONDO DE CAJA CHICA DE COMEDOR SOCIAL SEGUN RENDICION Y HOJA DE AFECTACION PRESUPUESTAL DEL PTE. MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>15</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LOS GASTOS EFECTUADOS EN EL PROYECTO VELACIONES-2009 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>16</orden>
+<glosa>REGISTRO CONTABLE DE COMPROMISO ASUMIDO SEGUN ORDEN DE COMPRA  REFERENCIA: PECOSA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>17</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL GASTO SEGUN ORDEN DE COMPRA Y ORDEN DE SERVICIO, RENDICION DEL COMEDOR SOCIAL EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>18</orden>
+<glosa>POR EL REGISTRO DE PLANILLAS DEL PERSONAL DE OBRAS, MEJORAS Y REHABILIACION DE LA SBP </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>19</orden>
+<glosa>POR EL REGISTRO DE LAS CAJAS CHICAS DE LAS OBRAS, MEJORAS Y REHABILITACION DE LA SBP </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>20</orden>
+<glosa>POR EL REGISTRO DE DE VIATICOS CON CARGO A RENDIR SEGUN RENDICIONES EFECTUADAS POR LOS FUNCIONARIOS Y TRABAJADORES DE LA SBP. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>24</tipo>
+<orden>21</orden>
+<glosa>Por el registro contable de la atencion del servicio de la deuda con el Banco Continental </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>25</tipo>
+<orden>30</orden>
+<glosa>PARA REGISTRAR LA EJECUCION PRESUPUESTARIA  DE LOS INGRESOS EN EL MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>25</tipo>
+<orden>31</orden>
+<glosa>POR LA EFECTIVIZACION DE LOS DOCUMENTO EMITIDOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>25</tipo>
+<orden>57</orden>
+<glosa>REGISTRO DE LOS INGRESOS DURANTE EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>26</tipo>
+<orden>32</orden>
+<glosa>POR LA EJECUCION PRESUPUESTARIA SEGUN COMPROBANTES DE PAGO EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>26</tipo>
+<orden>33</orden>
+<glosa>AJUSTE CONTABLE-EJECUCION PRESUPESTARIA-GASTOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>26</tipo>
+<orden>56</orden>
+<glosa>POR EL REGISTRO DE LAS RETENCIONES EFECTUADAS EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>26</tipo>
+<orden>57</orden>
+<glosa>REGISTRO DE LOS EGRESOS DURANTE  EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>26</tipo>
+<orden>58</orden>
+<glosa>REGISTRO DE LOS EGRESOS DURANTE  EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>27</tipo>
+<orden>01</orden>
+<glosa>POR LOS CHEQUES GIRADOS A LOS BENEFICIARIOS EN EL MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>27</tipo>
+<orden>02</orden>
+<glosa>POR EL AJUSTE CONTABLE DE LOS CHEQUES GIRADOS DE LOS MESES FEBRERO Y ABRIL </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>28</tipo>
+<orden>01</orden>
+<glosa>POR LOS CHEQUES ENTREGADOS A LOS BENEFICIARIOS EN EL MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>28</tipo>
+<orden>02</orden>
+<glosa>POR EL AJUSTE CONTABLE DE ASIENTOS DE ORDEN DE CHEQUES ENTREGADOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>28</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DE LOS CHEQUES ENTREGADOS EN EL PRESENTE MES  Y CORRESPONDEN AL EJERCICIO ANTERIOR. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>29</tipo>
+<orden>01</orden>
+<glosa>POR LA REVERSION DEL COMPROMISO PRESUPUESTAL, SEGUN HOJA DE MODIFICACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>29</tipo>
+<orden>02</orden>
+<glosa>POR LA REVERSION DE CTAS. PATRIMONIALES POR REBAJA DE HOJAS DE AFECTACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>29</tipo>
+<orden>03</orden>
+<glosa>POR LA REBAJA DE LAS O/C Y/O O/S SEGUN HOJA DE MODIFICACION . CUENTAS DE ORDEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>29</tipo>
+<orden>04</orden>
+<glosa>POR LA REVERSION DE LAS CUENTAS DE ORDEN POR EMISION DE C/P Y ANULADOS CON NOTAS DE CREDITOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>29</tipo>
+<orden>05</orden>
+<glosa>POR LA REVERSION DE CUENTAS PATRIMONIALES DE INVERSION POR CORRESPONDER AL EJERCICIO ANTERIOR. COMPROMISO NO EJECUTADO EN SU TOTALIDAD. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>31</tipo>
+<orden>01</orden>
+<glosa>POR LA SALIDA DE SUMINISTROS DE ALMACEN EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>31</tipo>
+<orden>02</orden>
+<glosa>POR LA SALIDA DE BIENES PROVENIENTE DE DONACIONES, SEGUN PECOSA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>31</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LAS ORDENES DE COMPRA POR ADQUISICION DE MEDICAMENTOS PARA FARMACIA DE LA SBP. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>31</tipo>
+<orden>04</orden>
+<glosa>REGISTRO CONTABLE DEL TRASLADO DE LA CUENTA POR COMPRA AL CONTADO, POR LA ATENCION EN EL AREA DE ALMACEN, SEGUN ORDEN DE COMPRA Y PECOSA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>31</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA SALIDA DE SUMINISTROS  SEGUN PECOSAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>31</tipo>
+<orden>06</orden>
+<glosa>POR LA SALIDA DE ATAUDES DE LA OFICIA DE SERVISEPF PARA ATENCION DE SERVICIOS FUNERARIOS DE SOCIOS AFILIADOS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>01</orden>
+<glosa>POR LA ANULACION DE CHEQUES DEL PRESENTE MES SEGUN HOJAS DE ANULACION - CUENTAS DE ORDEN Y PRESUPUESTARIAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>30</orden>
+<glosa>PARA REGISTRAR LA EJECUCION PRESUPUESTARIA  DE LOS INGRESOS EN EL MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>31</orden>
+<glosa>POR LA EFECTIVIZACION DE LOS DOCUMENTO EMITIDOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>32</orden>
+<glosa>POR LA EJECUCION PRESUPUESTARIA SEGUN COMPROBANTES DE PAGO EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>56</orden>
+<glosa>POR EL REGISTRO DE LAS RETENCIONES EFECTUADAS EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>57</orden>
+<glosa>POR EL REGISTRO DE LOS INGRESOS DE CAJA DURANTE EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>58</orden>
+<glosa>POR EL REGISTRO DE LOS EGRESOS DE CAJA DURANTE EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>59</orden>
+<glosa>POR EL AJUSTE DE CTAS. PATRIMONIALES DE RETENCIONES EFECTUADAS EN PLLA. DE OBREROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>33</tipo>
+<orden>60</orden>
+<glosa>AJUSTE CONTABLE DE CAJA, POR TRASLADO ENTRE CUENTAS CONTABLES PATRIMONIALES, APLICADAS EN DOCUMENTOS FUENTES DE LA OFICINA DE TESORERIA, SEGUN ANILISIS DE CUENTAS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>34</tipo>
+<orden>01</orden>
+<glosa>POR LAS CONDONACIONES DE DEUDAS DE NICHOS SEGUN RESOLUCIONES EMITIDAS.(ASIENTOS PRESUPUESTALES) </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>34</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO DE INGRESOS DE NICHOS PARA ATENCION DE EXONERACIONES A PERSONAS INDIGENTES SEGUN RESOLUCIONES EN EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>34</tipo>
+<orden>03</orden>
+<glosa>EXONERACION DE INTERESES POR PRONTO PAGO SEGUN NOTA DE CREDITO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>34</tipo>
+<orden>04</orden>
+<glosa>REGISTRO CONTABLE DE LA CONDONACION DE SALDO DE NICHO  DEL CSMA. R.G. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>34</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO DE CONDONACIONES DE DEUDAS DE NICHOS A PERSONAS INDIGENTES SEGUN RESOLUCIONES EN EL PTE MES.(ASIENTOS PATRIMONIALES) </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>36</tipo>
+<orden>01</orden>
+<glosa>REGISTRO CONTABLE PARA REFLEJAR  LAS CUENTAS POR COBRAR A ESSALUD POR SUBSIDIO  DE MATERNIDAD DE TRABAJADORES DE LA SBP, SEGUN PLANILLA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>38</tipo>
+<orden>57</orden>
+<glosa>ABONO EFECTUADO POR INGRESO DE INABIF E INSTITUCIONES FINANCIERAS Y OTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>38</tipo>
+<orden>58</orden>
+<glosa>ABONO EFECTUADO POR INABIF E INSTITUCIONES FINANCIERAS Y OTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>39</tipo>
+<orden>01</orden>
+<glosa>PARA REGISTRAR LOS ASIENTOS CONTABLES DE LAS HOJAS DE CONTROL POR COMPRAS AL CONTADO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>39</tipo>
+<orden>02</orden>
+<glosa>PARA REGISTRAR LOS ASIENTOS CONTABLES DE LAS RENDICIONES DE LOS VIATICOS CON CARGO A RENDIR OTORGADO A LOS FUNCIONARIOS Y TRABAJADORES DE LA SBP </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>39</tipo>
+<orden>03</orden>
+<glosa>PARA REGISTRAR LOS ASIENTOS CONTABLES DE LOS COMPROBANTES DE PAGO CON CARGO A RENDIR DE FUNCIONARIOS Y TRABAJADORES DE LA SBP </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>40</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DE LA DIFERENCIA DE TIPO DE CAMBIO DE CUENTA EN DOLARES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>40</tipo>
+<orden>02</orden>
+<glosa>AJUSTE POR DIFERENCIA EN TIPO DE CAMBIO EN PAGOS EFECTUADOS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>40</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE POR DIFERENCIA DE TIPO DE CAMBIO DEL CERTIFICADO EN M.E. DE LA CAJA MUNICIPAL. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>40</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO DE LA GANANCIA POR DIFERENCIA DE TIPO DE CAMBIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>40</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO DE LA PERDIDA POR DIFERENCIA DE TIPO DE CAMBIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>43</tipo>
+<orden>01</orden>
+<glosa>POR LA ANULACION DE CHEQUES DEL PRESENTE MES SEGUN HOJA DE ANULACION DE CHEQUES CUENTAS DE ORDEN Y PRESUP. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>43</tipo>
+<orden>57</orden>
+<glosa>HOJAS DE ANULACION DE CHEQUE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>43</tipo>
+<orden>58</orden>
+<glosa>HOJAS DE ANULACION DE CHEQUE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>44</tipo>
+<orden>01</orden>
+<glosa>POR LA ATENCIàN DE ORDENES DE SERVICIO, SEGUN RENDICIONES ADJUNTAS Y/O NOTAS DE CARGO POR SERVICIO TELEFONICO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>45</tipo>
+<orden>01</orden>
+<glosa>REVERSION DE CUENTAS PATRIMONIALES , ORDEN Y PRESUPUESTARIAS POR ANULACION DE FACTURA CON NOTA DE CREDITO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>45</tipo>
+<orden>02</orden>
+<glosa>REGISTRO DE CUENTAS POR COBRAR DIVERSAS DE BONIFICACIONES INDEBIDAS SEGUN R.D.DESCONTADO EN PLANILLA DE HABERES DEL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>45</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DE INGRESOS POR SANCIONES A TRABAJADORES SEGUN RESOLUCION GERENCIAL </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>47</tipo>
+<orden>01</orden>
+<glosa>POR LA REVERSION DE LA EJECUCION PRESUPUESTARIA DEL INGRESO DE VTA. DE NICHOS, POR PAGO DE IGV, SEGUN INSTRUCTIVO N§ 017-2001-EF/93.01, RESOLUCION DE CONTADURIA N§ 141-2001-EF/93.01. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>47</tipo>
+<orden>02</orden>
+<glosa>POR LA REVERSION DE INGRESOS POR TRANSFERENCIA A INABIF, SEGUN T-6 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>47</tipo>
+<orden>03</orden>
+<glosa>POR LA REVERSION DE CUENTAS PRESUPUESTARIAS Y PATRIMONIALES POR LA DEVOLUCION DE INGRESOS Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>47</tipo>
+<orden>04</orden>
+<glosa>REBAJA DE INGRESOS- EXONERACION DE INTERESES POR FACTURA EMITIDA, SEGUN NOTA DE CREDITO DEL PTE. MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>48</tipo>
+<orden>01</orden>
+<glosa>AFECTACION PRESUPUESTAL ( DEVENGUE) </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>49</tipo>
+<orden>57</orden>
+<glosa>REGISTRO DE LOS INGRESOS DE CAJA DURANTE EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>49</tipo>
+<orden>58</orden>
+<glosa>REGISTRO DE LOS INGRESOS DE CAJA DURANTE EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>50</tipo>
+<orden>32</orden>
+<glosa>POR LA EJECUCION PRESUPUESTARIA SEGUN COMPROBANTES DE PAGO Y CARGOS EN LAS CTAS.CTES EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>50</tipo>
+<orden>57</orden>
+<glosa>REGISTRO DE LOS EGRESOS  DE CAJA DURANTE  EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>50</tipo>
+<orden>58</orden>
+<glosa>REGISTRO DE LOS EGRESOS  DE CAJA DURANTE  EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>51</tipo>
+<orden>01</orden>
+<glosa>POR EL REGITSRO DE DEVENGUE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>53</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DE AJUSTE CONTABLE POR GASTO REGISTRADOS  EL EJERCICIO ANTERIOR  Y NO CANCELADOS SEGUN INFORME EMITIDO POR LA OFICINA DE TESORERIA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>54</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA BAJA DE SUMINISTROS SEGUN RESOLUCION DE PRESIDENCIA DE DIRECTORIO, EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>54</tipo>
+<orden>02</orden>
+<glosa>REGISTRO CONTABLE DE LA BAJA DE MEDICINAS DE FARMACIA Y PROVENIENTE DE DONACIONES,SEGUN R.P.D. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>55</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL TRASLADO DE CONSTRUCCION EN CURSO A EDIFICIOS, DE LA OBRA REHABILITACION DE INMUEBLE ESQUINA AV. CAYETANO HEREDIA- AV. RAMON CASTILLA, OBRA ACONDICIONAMIENTO DE QUIROFANO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>01</orden>
+<glosa>REVERSION DE CUENTAS PATRIMONIALES POR NO CORRESPONDER A GASTOS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>02</orden>
+<glosa>REVERSION DE CUENTAS PATRIMONIALES POR NO CORRESPONDER A INGRESOS DE GESTION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>03</orden>
+<glosa>POR LA REVERSION DE CUENTAS PATRIMONIALES SEGUN HOJAS DE MODIFICACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>04</orden>
+<glosa>POR LA REVERSION DEL ASIENTO CONTABLE REALIZADO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>05</orden>
+<glosa>POR LA REVERSION DE CUENTAS DE INGRESOS, POR DEVOLUCION DE CUOTA A SOCIO DE SERVISEPF. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO CONTABLE PARA SALDAR CUENTAS PATRIMONIALES, SEGUN REVERSION DE CUENTAS QUE GENERA LAS HOJAS DE MODIFICACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>07</orden>
+<glosa>POR LA REVERSION DE CUENTAS PATRIMONIALES POR NO CORRESPONDER A INGRESOS CORRIENTES, SEGUN ANALISIS DE CUENTAS. REF.- SEGUN  NEA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>08</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA BOLETAS DE VENTAS EMITIDAS  Y CONTABILIZADO EN MESES ANTERIORE, SEGUN ANALISIS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>09</orden>
+<glosa>REVERSION DE CUENTAS PATRIMONIALES, POR IMPORTES DUPLICADOS EN NOTA DE CONTABILIDAD DE  PECOSAS  CON DESPACHO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>10</orden>
+<glosa>POR EL REGISTRO DE LA REVERSION DE CUENTAS PATRIMONIALES SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO EN CUENTAS DE ORDEN, POR LA SALIDA DE SILLAS DE RUEDAS, CAMAS Y OTROS BIENES NO DEPRECIABLES, SEGUN PECOSA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA REVERSION DE CUENTAS PATRIMONIALES POR MENOR GASTO REALIZADO EN LA COMPRA DE PASAJES DE LA COMISION DE SERVICIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>56</tipo>
+<orden>13</orden>
+<glosa>POR EL REGISTRO EN CUENTAS DE ORDEN DE LOS BIENES NO DEPRECIABLES SUJETOS A CONTROL EN EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>57</tipo>
+<orden>01</orden>
+<glosa>POR LA RECLASIFICACION DE LA LETRAS POR COBRAR A COBRANZA DUDOSA, SEGUN INSTRUCTIVO N§ 03 DE CONTABILIDAD. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>57</tipo>
+<orden>02</orden>
+<glosa>POR LA RECLASIFICACION DE LAS CUENTAS POR COBRAR DIVERSAS A COBRANZA DUDOSA EN EL PRESENTE EJERCICIO, SEGUN INSTRUCTIVO DE CONTABILIDAD. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>57</tipo>
+<orden>03</orden>
+<glosa>AJUSTE CONTABLE POR DIFERENCIA ENCONTRADAS EN DEFICIT O EN EXCESO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>57</tipo>
+<orden>57</orden>
+<glosa>POR LA CANCELACION DE FONDO DE CAJA CHICA  EN EFECTIVO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>58</tipo>
+<orden>01</orden>
+<glosa>REGISTRO CONTABLE DE DONACIONES DE ATENCION DE CONSULTAS MEDICAS A PERSONAS INDIGENTES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>58</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO CONTABLE POR LA EMISION DE DOCUMENTOS PARA LA ATENCION DE DONACIONES EN EL PTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>58</tipo>
+<orden>03</orden>
+<glosa>POR EL AJUSTE CONTABLE DE COMPROMISO NO CONTABILIZADO, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>58</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO DE SUMINISTROS, PARA EL CONSUMO DE LA ENTIDAD </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>63</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DEL COSTO DE LA VENTA DE LOS NICHOS,MAUSOLEOS  SEGUN RECIBOS EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>63</tipo>
+<orden>02</orden>
+<glosa>REGISTRO DE LA RECUPERACION DE NICHO POR TRASLADO DE RESTOS. RESOLUCION DE CONTADURIA N§ 141-2001-EF/93.01, SEGUN INFORMES DE LA ADMINISTRACION DEL CSMA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>64</tipo>
+<orden>01</orden>
+<glosa>POR EL AJUSTE DE CORRECCION MONETARIA DEL PRESENTE EJERCICIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>69</tipo>
+<orden>60</orden>
+<glosa>RENDICION DEL FONDO DE CAJA CHICA - APERTURA SEGUN R.D. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>01</orden>
+<glosa>PARA CANCELAR LA CUENTAS POR DONACIONES DE NICHOS A¥OS ANTERIORES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>02</orden>
+<glosa>REGISTRO DEL INGRESO DE FARMACIA POR VENTA DE MEDICINAS PARA DONACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO DE INGRESOS POR COBRANZA REALIZADA A SOCIOS DE SERVISEPF- CUOTA 20% DE GASTOS ADMINISTRATIVOS, PROBAS-SERVISEPF DURANTE EL PTE. MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO DE LA DEDUCCION DEL 20% DE GASTOS ADMINISTRATIVOS ACUMULADO PROVENIENTES DE CONTRATOS DE PROBAS Y SERV.FUNERARIO ATENDIDO EN SERV.SEPELIO FAMILIAR DURANTE EL PTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>05</orden>
+<glosa>POR LA PROVISION DE LA DEUDA DE LA WLC POR UTILIDADES POR COBRAR, MES DE DICIEMBRE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO DE LA PROVISION DEL INGRESO DEL 50% QUE HA ADONADO LA SBP A PERSONAS INDIGENTES SEGUN RELACION DE TESORERIA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>07</orden>
+<glosa>POR EL REGISTRO DE VENTA DE NICHOS PARA DONACION A PERSONAS INDIGENTES CUARTEL MTC, SEGUN RESOLUCIONES DIRECTORALES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>08</orden>
+<glosa>POR LA CONDONACION DE SALDO DE NICHOS A PERSONAS INDIGENTES SEGUN R.GG </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>09</orden>
+<glosa>POR EL REGISTRO DE DONACION DE NICHOS, LETRA F, DEL CUARTEL MADRE TERESA DE CALCUTA, SEGUN RES. DIRECTORAL </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>10</orden>
+<glosa>PARA CANCELAR LAS CUENTAS POR LAS DONACIONES DE NICHOS EFECTUADAS SEGUN RESOLUCIONES DIRECTORALES DE LA SBP Y OFICIOS DE LA MUNICIPALIDAD PROVICINCIAL DE PIURA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL INGRESO EFECTUADO SEGUN VENTA DE BIENES Y SERVICIOS QUE BRINDA LA INSTITUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>12</orden>
+<glosa>POR LA PROVISION DEL INGRESO DE EJERCICIOS ANTERIORES POR PAGO DE ARBITRIOS DE LOS INMUEBLES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>13</orden>
+<glosa>POR EL REGISTRO DE LA VENTA DEL SERVICIO FUNERARIO DE SERVISEPF AFILIADOS DURANTE EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>14</orden>
+<glosa>POR EL REGISTRO DE TRASLADO A LA CUENTA 12 DEL SALDO EL FONDO DE LOS AFILIADOS ATENDIDOS CON SERVICIOS FUNERARIO EN EL PRESENTE MES PROBAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>15</orden>
+<glosa>POR EL COSTO DE ATAUDES APLICADOS EN LA VENTA DE LOS SERVICIOS FUNERARIOS PROBAS DURANTE EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>16</orden>
+<glosa>POR EL REGISTRO DEL VALOR DE LAS OBLIGACIONES PREVISIONALES DETERMINADAS MEDIANTE CALCULO ACTUARIAL, ESTABLECIDA EN EL INSTRUCTIVO 20 DE LA RESOLUCION DE CONTADURIA PUBLICA N§159-2003-EF/93.01, </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>17</orden>
+<glosa>POR EL TRASLADO DE LA CUENTA 71 INGRESOS NO TRIBUTARIOS A LA CUENTA 70 INGRESOS TRIBUTARIOS POR CORRESPONDER A TASAS (DERECHOS DE LOS CEMENTERIOS) </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>18</orden>
+<glosa>POR EL COSTO DE VENTA DE ATAUDES ENTREGADOS EN DONACION </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>19</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL CAPITAL ACUMULADO A CUENTAS POR COBRAR PARA ESTABLECER SALDO DEL SERVICIO ATENDIDO DE SEPELIO FAMILIAR, DURANTE EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>70</tipo>
+<orden>20</orden>
+<glosa>Por rl registro contable de gastos de mantenimiento de cta. cte mes de Junio/2011. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>01</orden>
+<glosa>POR EL AJUSTE CONTABLE DEL REGISTRO DE BIENES CORRIENTES RECEPCIONADOS PROVENIENTE DE DONACIONES SEGUN NOTA DE ENTRADA A ALMACEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO DE BIENES DE CAPITAL RECEPCIONADOS SEGUN NOTA DE ENTRADA DE ALMACEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA SALIDA DE MEDICINAS DE ALMACEN AL SERVICIO DE FARMACIA, SEGUN PECOSAS EMITIDAS EN EL PRESENTE MES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA SALIDA DE BIENES PARA EL CONSUMO, SEGUN PECOSA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>05</orden>
+<glosa>POR EL AJUSTE CONTABLE DEL REGISTRO DE INGRESO DE BIENES PROVENIENTE DE DONACIONES. SEGUN NEA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>06</orden>
+<glosa>POR EL AJUSTE CONTABLE DE DIFERENCIA DEPOSITADA POR ESSALUD EN LIQUIDACION DE REINTEGRO POR LICENCIA POR ENFERMEDAD DEL SR. MANUEL SANCHEZ CRUZ, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>07</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA PROVISION DE LOS INGRESOS POR CONCEPTO DE INTERESES GENERADOS POR MORA EN EL PAGO DE DEUDA DE NICHOS Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>08</orden>
+<glosa>POR EL COMPROMISO DE PAGO POR DEVOLUCION DE INGRESO DE  COBRO EFECTUADO EN EL EJERCICIO ANTERIOR. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>09</orden>
+<glosa>POR LA PROVISION DEL INGRESO ,POR PAGO DE ARBITRIOS DE A¥OS ANTERIORES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>10</orden>
+<glosa>POR EL REGISTRO DEL COMPROBANTE DE RETENCION DE LOS INQUILINOS POR ALQUILER DE INMUEBLES DE PROPIEDAD DE LA SBP. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO DE DIFERENCIA POR TIPO DE CAMBIO EN COBRANZA Y PAGOS DE BIENES Y SERVICIOS QUE REALIZA LA INSTITUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO DEL TRASLADO DE CONSTRUCCIONES EN CURSO A EDIFICIOS, SEGUN LIQUIDACION DE OBRAS DE LA INSTITUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>13</orden>
+<glosa>POR EL REGISTRO DEL COMPROMISO DE PAGO AL PERSONAL DE LA INSTITUCION DE EJERCICIOS ANTERIORES, SEGUN RESOLUCION DIRECTORAL. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>14</orden>
+<glosa>POR EL AJUSTE CONTABLE POR DIFERENCIAS EN ADQUISICION DE TERRENO SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>15</orden>
+<glosa>POR LA ATENCION DE ORDENES DE SERVICIO Y ORDENES DE COMPRA EMITIDAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>16</orden>
+<glosa>POR EL REGISTRO DE LOS CHEQUES ENTREGADOS, QUE FUERON EMITIDOS EN DICIEMBRE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>71</tipo>
+<orden>17</orden>
+<glosa>REGISTRO CONTABLE DEL INGRESO POR DEVOLUCION DE ENTREGA Y CANASTA SEGUN RECIBO DE INGRESO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DE BIENES ENTREGADOS SEGUN PECOSA, PROVENIENTES DE DONACIONES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>02</orden>
+<glosa>POR LA SALIDA DE BIENES NO DEPRECIABLES, SILLAS DE RUEDAS Y OTROS SEGUN PECOSAS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LAS DONACIONES DE MEDICAMENTOS  A PERSONAS DE ESCASOS RECURSOS, EFECTUADOS A TRAVES DEL SERVICIO DE FARMACIA, PROVIENEN DE DONACION DE VARIAS INSTITUCIONES. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO CONTABLE POR ESTIMACION DE ALQUILERES DE INMUEBLES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO DE EMISION DE FACTURAS, BOLETAS DE VENTA Y OTROS DE ALQUILERES DE INMUEBLES DEUDAS PROVISIONADAS AL 31 DE DICIEMBRE </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO DEL TRASLADO ENTRE CUENTAS DIVISIONARIAS POR NO CORRESPONDER A LA SEGUNDA CUENTA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>07</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL GASTO POR SERVICIOS DE MANTENIMIENTO Y REPARACION CONTABILIZADO EN CUENTA 21 SUMINISTROS DE FUNCIONAMIENTO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>72</tipo>
+<orden>08</orden>
+<glosa>PARA REGISTRAR EL INGRESO EN EXCESO EN RENDICION DE LA CUENTA 38 CARGAS DIVERSAS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>01</orden>
+<glosa>AJUSTE CONTABLE, QUE CORRESPONDE A TRASLADO ENTRE CUENTA PATRIMONIALES, POR REGISTRO EFECTUADO EN LA DIVISIONARIA 71106, DEBIENDO SER 1240901, EN EL MES DE ENERO, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA REVERSION DE DIFERENCIA REGISTRADA DEMAS EN RELACION DE VENTA DE NICHOS SEGUN ANALISIS DE CUENTAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL COMPROBANTE DE RETENCION POR VENTA DE NICHOS SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>04</orden>
+<glosa>POR EL AJUSTE CONTABLE POR REGISTRO DE PECOSAS, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>05</orden>
+<glosa>POR EL AJUSTE CONTABLE PARA SALDAR DIVISIONARIA 131. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>06</orden>
+<glosa>REGISTRO DE AJUSTE CONTABLE PARA REFLEJAR SALDOS REALES, SEGUN INVENTARIO , RPD..(SOBRANTES). </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>07</orden>
+<glosa>REGISTRO DE AJUSTE CONTABLE A FIN DE REFLEJAR SALDOS REALES SEGUN INVENTARIO DE SUMINISTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>08</orden>
+<glosa>AJUSTE CONTABLE SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>09</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE SEGUN ANALISIS DE LAS CUENTAS DE ORDEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>10</orden>
+<glosa>POR EL AJUSTE CONTABLE PARA SALDAR COMPROMISOS DE PAGO NO EJECUTADOS, SEGUN HOJAS DE MODIFICACION, INFORME Y HOJA DE TRAMITE. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE LA EMISION DE LA ORDEN DE SERVICIO  SEGUN ANALISIS DE CUENTAS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LAS COMPRAS AL CONTADO (BIENES EN TRANSITO) SEGUN ANTECEDENTES ADJUNTOS AL COMPROBANTE DE PAGO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>13</orden>
+<glosa>POR EL AJUSTE CONTABLE AL QUEDAR SIN EFECTO LA GARANTIA, CHEQUE SIN FONDOS DEVUELTO POR EL BANCO SEGUN LITERAL E. INFORME Y R.D. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>14</orden>
+<glosa>AJUSTE CONTABLE PARA REFLEJAR SENTENCIA EXPED. POR EL 2DO JUZGADO CIVIL DE LA CORTE SUP.DE JUSTICIA-PIURA,SEGUN LITERAL E INF.-AL, R.D.,PERJ.COSTOS,COSTAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>15</orden>
+<glosa>REVERSION DE CTAS. PRESUPUESTARIAS SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>16</orden>
+<glosa>POR EL REGISTRO CONTABLE, DEL TRASLADO DE LAS RETENCIONES EFECTUADAS EN PLLA. DE HABERES, A LA SRTA. SANDRA VALDIVIEZO C. A INGRESOS DE LA INSTITUCION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>17</orden>
+<glosa>AJUSTE CONTABLE PARA ESTABLECER SALDOS REALES SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>18</orden>
+<glosa>AJUSTE CONTABLE POR EFECTOS DE REDODENDO DE IMPORTES POR PAGOS A SUNAT. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>19</orden>
+<glosa>AJUSTE CONTABLE PARA ESTABLECER SALDOS REALES DEL IGV, SEGUN ANALISIS DE CUENTAS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>20</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE MONTO TRASLADADO A OTRAS CONSTRUCCIONES, SEGUN LIQUIDACION DE OBRAS, R.P.D., EN LA CUAL ESTA INCLUIDO IGV, DIF. DETERMINADA SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>21</orden>
+<glosa>POR EL AJUSTE CONTABLE DE LAS CUENTAS DE ORDEN SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>22</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE POR IMPORTE DE ACM DE LAS OBRAS EJECUTADAS EN EL A¥O  NO TRASLADADO A  OTRAS CONSTRUCCIONES EN DICIEMBRE. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>23</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE LA DEPRECIACON ACUMULADA, SEGUN INVENTARIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>24</orden>
+<glosa>POR EL AJUSTE CONTABLE DEL SUBSIDIO DE SEPELIO Y LUTO DE LOS SERVIDORES DE LA SBP. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>25</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE PARA REBAJAR MONTO DE RESULTADOS POR ASIENTO DE PROVISION DE INGRESOS DEL EJERCICIO, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>26</orden>
+<glosa>REGISTRO DEL AJUSTE CONTABLE  DE DIFERENCIA DE LOS INGRESOS, DETERMINADO EN EL ANALISIS DE CUENTAS SEGUN BOLETAS DE VENTA EMITIDAS, DESAGREGADO EN HOJAS DE TRABAJO DE CONTAB. CORRESPONDIENTE A ENERO/5 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>27</orden>
+<glosa>POR EL AJUSTE CONTABLE DE DIFERENCIA DETERMINADA EN REGISTRO DE FACTURAS, B/V EMITIDAS POR LOS INGRESOS SEGUN LIBRO DE VENTAS DEL PEBS, VENTA DE MEDICINAS, CONS. MEDICAS Y OTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>28</orden>
+<glosa>POR EL AJUSTE CONTABLE DE DIFERENCIA DETERMINADA EN REGISTRO DE LOS INGRESOS, SEGUN B/V EMITIDAS DEL LIBRO DE VENTAS DEL PEBS, MES DE MARZO-05. VENTA DE MEDICAMENTOS, CONS. MEDICAS Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>29</orden>
+<glosa>POR EL AJUSTE CONTABLE DE DIFERENCIA DE IGV TRASLADADA DE CONSTRUCCIONES EN CURSO A EDIFICIOS, REGISTRO EFECTUADO EN  OBRAS: </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>30</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE LA REBAJA DE LA ORDEN DE COMPRA  POR VARIACION DE PRECIOS, INFORME, H.M. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>31</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE LA PECOSA EMITIDA  REFERENTE A EQUIPO QUIRURGICO, POR REBAJA DE O/C. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>32</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE DIFERENCIA DEL GASTO NO CONTABILIZADO EN LA N/C DE LA PECOSA Y O/C.SEGUN ANALISIS DE CUENTAS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>33</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE ASIENTOS GENERADOS DE FACTURAS DE LOS INGRESOS DEL COMEDOR SOCIAL SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>34</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE BOLETAS DE VENTA EMITIDAS POR CREDITOS A TRABAJADORES DE LA INSTTUCION, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>35</orden>
+<glosa>POR EL REGISTRO CONTABLE POR REVERSION DEL REGISTRO DE INGRESO POR CREDITO DE MENUS A TRABAJADORES DE LA SBP DEL COMEDOR SOCIAL, EJERCICIO 2007. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>36</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LA REVERSION DE LA CONTABILIZACION DE R/I.  POR CHEQUE RECHAZADO, EN LOS INGRESOS  SEGUN REBAJA DE INGRESOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>37</orden>
+<glosa>POR EL REGISTRO DEL AJUSTE CONTABLE DE DIFERENCIA EN PLANILLA DE REMUNERACIONES, HOJA DE MODIFICACION </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>38</orden>
+<glosa>POR EL REGISTRO CONTABLE  DEL PARTE DE REBAJA DE INGRESOS POR DEVOLUCION DE MONTO POR VENTA DE ATAUD. REF. R/I. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>39</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL AJUSTE EN DEPOSITO POR DETRACCION EN FACTURA POR ALQUILES DE INMUEBLE, R/I </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>40</orden>
+<glosa>POR EL REGISTRO CONTABLE PARA REFLEJAR LA CUENTA ,POR COBRANZA DUDOSA Y ESTIMACIONES DE CUENTAS POR COBRAR. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>41</orden>
+<glosa>POR EL REGISTRO CONTABLE POR TRASLADO ENTRE CTAS. PATRIMONIALES,SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>42</orden>
+<glosa>REGISTRO DE AJUSTE CONTABLE. REF. SEGUNE REG. EN N/C.EN ALQ. DE SALA DE OPERAC.  DEBE SER EN LA 1ERA CUENTA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>43</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL TRASLADO ENTRE CUENTAS PATRIMONIALES DE GASTOS, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>44</orden>
+<glosa>REVERSION DEL ASIENTO CONTABLE GENERADO POR R/I POR DEVOLUCION DE DINERO SEGUN REBAJA DE INGRESO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>45</orden>
+<glosa>REGISTRO CONTABLE DEL GASTO DE DONACIONES DE MEDICINAS A PERSONAS INDIGENTES, SEGUN ANALISIS: RPD </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>46</orden>
+<glosa>REGISTRO DE LA RECUPERACION DE CUENTAS CASTIGADAS ABONADOS A LA CTA 131 Y A 139 A¥OS ANTERIORES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>47</orden>
+<glosa>REGISTRO DEL AJUSTE EN LAS CUENTAS DE ORDEN, COBRANZA DE CUENTAS CASTIGADAS, ABONADAS A LA CTA 131-139. A¥OS 1995, 1998, 1999, 2000.00 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>48</orden>
+<glosa>REGISTRO DEL POR INTERESE DE PRESTAMO CON BCO CONTINENTAL </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>49</orden>
+<glosa>REGISTRO DE AJUSTE CONTABLE, REVERSION DE CUENTAS, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>50</orden>
+<glosa>POR EL REGISTRO CONTABLE EN  LA ATENCION DE SERVICIOS CON ATAUDES A SOCIOS DE SERVISEPF Y PROBAS SEGUN INFORMACION PRESENTADA POR LA ADMINISTRACION DEL SERVISEPF Y ANALISIS EFECTUADO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>51</orden>
+<glosa>RECLASIFICACIN DE CUENTAS POR COBRAR POR ERROR DE CODIFICACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>52</orden>
+<glosa>REGISTRO DEL AJUSTE CONTABLE, POR TRASLADO DEL INGRESO CAPTADO POR VELACIONES-2006 A INGRESOS NO TRIBUTARIOS, REFLEJAR EL IGV, SEGUN INFORME 031-2006-SBP-OT-EFF-CCH Y HOJA DE TRAMITE N§ 4341. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>53</orden>
+<glosa>POR EL REGISTRO CONTABLE, PARA REBAJAR EL VALOR DEL IGV, DE LOS IMPORTES DE LAS CUENTAS CONTABLES DE LAS PECOSAS DEL SERVICIO DE VELACIONES/2006, INFORME N§ 031-2006-SBP-OT-EFF-CCH, H. DE TRAMITE 4341 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>54</orden>
+<glosa>REGISTRO CONTABLE PARA REFLEJAR EL IMPORTE DEL IGV, POR ADQUISICIONES EN CAMPA¥A DE VELACIONES, SEGUN INFORME 031-151 DE OFICINA DE TESORERIA, H.T. 4341. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>55</orden>
+<glosa>REGISTRO CONTABLE PARA REFLEJAR EL IGV DE GASTOS DEL SERVICIO DE VELACIONES/2006, SEGUN INFORME 031-151-06 DE LA OFIC. DE TESORERIA, H.T. N§ 4341. Y H.T. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>56</orden>
+<glosa>TRASLADO DE REGISTRO CONTABLE DE GASTOS DE FUNCIONAMIENTO A CONSTRUCCIONES EN CURSO, OBRA: CONSTRUCION DE CUARTEL VIRGEN DE GUADALUPE EN EL CSMA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>57</orden>
+<glosa>POR EL REGISTRO CONTABLE DE AJUSTE, PARA ANULAR COMPROMISO DE PAGO DEL EJERCICIO ANTERIO. H.C.N§ 24.10, O/S. 1059-2006. INFORME N§ 029-2007-SBP-OT. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>58</orden>
+<glosa>REGISTRO DEL AJUSTE EN LAS CUENTAS DE ORDEN </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>59</orden>
+<glosa>PARA REGISTRAR LAS DEUDAS POR ARRENDAMIENTO DE INMUEBLES QUE SE PROVISONO EN EL EJERCICIO ANTERIOR Y SE FACTURARON EN EL PRESENTE EJERCICIO CON EL CUAL SE REGULARIZA EL EFECTO EN RESULTADO ACUMULADO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>60</orden>
+<glosa>REGISTRO CONTABLE DEL MONTO POR COBRAR POR MULTA A SUNAT </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>61</orden>
+<glosa>POR EL REGISTRO DE LA SALIDA DE SUMINISTROS DE CONSUMO REFLEJAR SALDOS REALES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>73</tipo>
+<orden>62</orden>
+<glosa>POR EL AJUSTE CONTABLE PARA REBAJAR EL INGRESO DE RESULTADOS ACUMULADOS POR NO CORRESPONDER SIENDO SOLO COBRANZA, SEGFUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>01</orden>
+<glosa>CASTIGO DE CUENTAS DE COBRANZA DUDOSA, SEGUN INFORME N§   -2005-SBP-   R.P.D.N§ </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>02</orden>
+<glosa>PARA REGISTRAR EN CUENTAS DE ORDEN EL CASTIGO DE CUENTAS INCOBRABLES R.P.D.       INFORME N§ </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>03</orden>
+<glosa>PARA REGISTRAR LA PROVISION DEL EJERCICIO POR COBRANZA DUDOSA. RES. 048-2002-SBP-P. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>04</orden>
+<glosa>PARA REGISTRAR LA RECUPERACION DE CUENTAS CASTIGADAS ABONADAS A LA CUENTA 139. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>05</orden>
+<glosa>PARA REGISTRA EL AJUSTE DE CUENTAS DE ORDEN POR CANCELACION DE CUENTAS CASTIGADAS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>06</orden>
+<glosa>POR LA RECLASIFICACION DEL SALDO DE LA CUENTA 131 Y 139 CUENTAS DE COBRANZA DUDOSA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>07</orden>
+<glosa>PARA REGISTRAR EN SU RESPECTIVA CUENTA EL IMPORTE CANCELADO SEGUN BOLETAS DE VENTA DE LOS DEUDORES DE NICHOS Y OTROS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>08</orden>
+<glosa>PARA REGISTRAR EL AJUSTE CONTABLE DEL IMPORTE NO PROVISIONADO QUE CORRESPONDE A EJERCICIOS ANTERIORES POR PROVISION DE CUENTAS DE COBRANZA DUDOSA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>09</orden>
+<glosa>PARA REGISTRAR AJUSTE NO PROVISIONADO DE EJERCICIOS ANTERIORES EN CUENTAS DE COBRANZA DUDOSA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>10</orden>
+<glosa>POR EL AJUSTE CONTABLE,POR CARGO INDIBIDO EN LAS CUENTAS DE SUMINISTROS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>74</tipo>
+<orden>11</orden>
+<glosa>PARA REGISTRAR EL INGRESO COBRADO EN EXCESO DE SALDO DE NICHOS A¥OS ANTERIORES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>75</tipo>
+<orden>01</orden>
+<glosa>POR REGISTRO DEL CONTRATO DE PRESTAMO DEL BANCO CONTINETAL SEGUN RPD N§ 129-2011-SBP-P PARA OBRAS DE INVERSION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>75</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO CONTABLE DE LOS INTERESES DEVENGADO POR PRESTAMO AL BANCO CONTINENTAL, SEGUN RPD.N§ 129-2011-SBP-P. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>75</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL COMPROMISO DE PAGO POR PRESTAMO DEL BANCO CONTINENTAL SEGUN CRONOGRAMA. RPD N§ 129-2011-SBP-P. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>75</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO DEL GASTO POR LA SALIDA DE BIENES DE CONSUMO DE ALMACEN A LAS OFICINAS Y SERVICIOS SOLICITANTES EN EL PRESENTE MES, SEGUN ORDEN DE COMPRA, AFECTACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>01</orden>
+<glosa>POR EL TRASLADO ENTRE CUENTAS PATRIMONIALES, DIVISIONARIAS SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>02</orden>
+<glosa>REGISTRO DE TRASLADO DE LA CTA. 131 A LA CTA. 1240901 POR CORRESPONDER A LA SEGUNDA, DURANTE EL MES DE ENERO/06, SEGUN ANALISIS. RECIBOS DE INGRESOS:18,20,35,75,91,95,163,190,303,334,385. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>03</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL TRASLADO DE LA CTA, 131 A LA CTA. 1240901, POR CORRESPONDES A LA SEGUNDA, DURANTE EL MES DE FECBERO/06 SEGUN ANALISIS. R/I: 485,529,596,609,760,844,860. PARA REFLEJAR LA C </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>04</orden>
+<glosa>POR EL REGISTRO DEL TRASLADO DE LA CTA 131 A LA 1240901, POR CORRESPONDER A LA SEGUNDA, MES DE MARZO/2006, SEGUN ANALISIS DE CUENTAS. R/I N§ 942. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>05</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL TRASLADO ENTRE CUENTAS PATRIMONIALES, SEGUN ANALISIS DE CUENTAS. C/P. 501, H/C. 226.02, C/P 502. H/C. 228.02. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>06</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL TRASLADO ENTRE CUENTAS PATRIMONIALES, SEGUN ANALISIS. REF. C/P 429.02 Y C/P 852.04. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>07</orden>
+<glosa>REGISTRO CONTABLE, POR TRASLADO ENTRE CUENTAS PATRIMONIALES, SEGUN ANALISIS. REF. RET. C/P. 0203.01 C/P.0226.01 Y 0461 DEL 29/02/08. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>08</orden>
+<glosa>POR EL REGISTRO CONTABLE DE AJUSTE POR TRASLADO ENTRE CUENTAS, DIVISIONARIAS, SEGUN ANALISIS. EGRESOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>09</orden>
+<glosa>POR EL REGISTRO CONTABLE DEL AJUSTE, POR TRASLADO ENTRE CUENTAS, DIVISIONARIAS PATRIMONIALES, SEGUN ANALISIS . INGRESOS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>10</orden>
+<glosa>POR EL TRASLADO ENTRE CUENTAS PATRIMONIALES POR NO CORRESPONDER A LA SEGUNDA, SEGUN ANALISIS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>11</orden>
+<glosa>POR EL REGISTRO DEL TRASLADO DE LA SEGUNDA CUENTA A LA PRIMERA, SEGUN C/P. 2566.10, H/C. 197.10, O/C. 432.10 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>12</orden>
+<glosa>POR EL REGISTRO CONTABLE DE IMPORTE QUE CORRESPONDE A ESSALUD POR MOTIVO DE ENFERMEDAD DE LA SRA. MARY ABAD CRUZ, SEGUN INFORME N§ 025-2007-SBP-UP. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>13</orden>
+<glosa>POR EL TRASLADO ENTRE DIVISIONARIAS PARA REFLEJAR SALDOS REALES SEGUN ANALISIS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>76</tipo>
+<orden>14</orden>
+<glosa>PARA REGISTRAR EL TRANSLADO DE LA CUENTA DIVISIONARIA 12400901VENTA DE NICHOS PRESENTE EJERCICIO (CEMENTERIOS) A LA DIVISIONARIA 122090102 NICHOS - TASAS SERVICIOS FUNERARIOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>77</tipo>
+<orden>77</orden>
+<glosa>AJUSTE CONTABLE DE BIENES DE CAPITAL ENTREGADOS EN CESION DE USO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>78</tipo>
+<orden>01</orden>
+<glosa>POR  LA BAJA CONTABLE DE MEDICINA SEGUN R.PD.N§078-2005-SBP-P ,INF N§01-05-SBP-CB </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>80</tipo>
+<orden>59</orden>
+<glosa>EJEC. PRESUP. POR CANCELACIàN SEGéN CRONOGRAMA DE PAGOS SUSCRITOS CON EL BANCO DE LA NACIàN POR DEUDA DE LOTERÖA </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>80</tipo>
+<orden>80</orden>
+<glosa>AJUSTE POR REGULARIZACION DE SALDOS A CUENTAS DE GASTOS, PARA DETERMINAR SALDOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>81</tipo>
+<orden>01</orden>
+<glosa>POR EL AJUSTE CONTABLE DE RECLASIFICACION DE CTAS POR DIFERENCIA DE OBLICACIONES EN EL PTE. A¥O, POR CUOTAS DE FRACCIONAMIENTO DE SUNAT POR IGV. SEGUN RES.DE INTENDENCIA N§ 081-4-04155 DEL 12.03.2002 </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>81</tipo>
+<orden>02</orden>
+<glosa>POR EL AJUSTE DEL REGISTRO CONTABLE DE LA RECLASIFICACION DE CUENTAS A LARGO PLAZO POR FRACCIONAMIENTO DE LA DEUDA CON SUNAT. IGV-FONAVI, RESOLUCION DE INTENDENCIA N§ 081-4-04155.DE FECHA 12.03.2002. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>01</orden>
+<glosa>POR LA PROVISION DE LA COMPENSACION DE BENEFICIOS SOCIALES DE LOS TRABAJADORES AL 30/09/2006. SEGUN CUADRO DE LA OFICINA DE PERSONAL. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>02</orden>
+<glosa>POR LA PROVISION DEL EJERCICIO DE LA DEPRECIACION DE INMUEBLE, MAQUINARIA Y EQUIPO DEL EJERCICIO 2009. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>03</orden>
+<glosa>POR LA PROVISION DEL EJERCICIO DE LA DEPRECIACION DE INFRAESTRUCTURA PUBLICA. 3% DE 2'411,604.62. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>04</orden>
+<glosa>POR LA PROVISION DEL EJERCICIO DE AL AMORTIZACION DE INVERSIONES INTANGIBLES. 10% DE 23,444.43. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>05</orden>
+<glosa>POR LA PROVISION DE CUENTAS POR COBRAR, LETRAS POR COBRAR, CUENTAS POR COBRAR DIVERSAS,EJERCICIO 1,995,1996,1,997,1998,1999, 2,000,2,001,2002. DIV. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>06</orden>
+<glosa>POR EL ASIENTO CONTABLE DE LAS PROVISIONES REALIZADAS EN EJERCICIOS ANTERIORES, POR BAJA DE BIENES. R.D. N§ </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>07</orden>
+<glosa>POR LA PROVISIONES REALIZADAS EN EL EJERCICIO 2,003, SEGUN INFORME DE LA OF.OCI </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>08</orden>
+<glosa>POR EL AJUSTE DE LA PROVISION POR LA RECUPERACION TOTAL Y PARCIAL DE LA CUENTAS DE COBRANZA DUDOSA, A;O 1,998 CTAS POR COBRAR, EJERCICIOS 1,995,1,996,1,997, 1,998,1,999,2,000,2,001.  REALIZADAS EN EL </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>09</orden>
+<glosa>REGISTRO DE LA RECUPERACION DE CUNETAS INCOBRABLES AL 30/09/06. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>10</orden>
+<glosa>REGISTRO DE LA PROVISION DE CUENTAS DE COBRANZA DUDOSA AL 30/09/06. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>82</tipo>
+<orden>11</orden>
+<glosa>POR LA PROVISION DE LOS SERVICIOS OTORGADOS A LOS INDIGENTES, % QUE CORRESPONDE A LOS MEDICOS DEL S.C.M. Y P.E.B.S. PENDIENTES DE SER CANCELADOS ASI COMO CREDITOS OTORGADOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>83</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DEL COSTO DE VENTAS DE LA MEDICINAS DEL SERVICIO DE FARMACIA, EN EL PRESENTE EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>84</tipo>
+<orden>89</orden>
+<glosa>POR LAS DEPRECIACIONES EFECTUADAS EN EL PRESENTE MES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>85</tipo>
+<orden>01</orden>
+<glosa>REGISTRO DE BIENES NO DEPRECIABLES </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>85</tipo>
+<orden>02</orden>
+<glosa>POR LA SALIDA DE BIENES NO DEPRECIABLES, EN CESION DE USO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>86</tipo>
+<orden>01</orden>
+<glosa>POR EL CASTIGO DIRECTO DE LA CUENTAS POR COBRANZA DUDOSA, EJERCICIO 1,995, 1,996, 1,997, 1,998, 1,999, 2,000, 2,001.INFORME 019-2003-SBP-OT-CC Y R.D. N§ 053-2002-SBP-P. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>86</tipo>
+<orden>02</orden>
+<glosa>POR EL REGISTRO EN CUENTAS DE ORDEN DE LA COBRANZA PENDIENTE POR LO QUE SE HA EFECTUADO EL CASTIGO DIRECTO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>87</tipo>
+<orden>97</orden>
+<glosa>PARA CONTABILIZAR EL IGV REGISTRADO COMO GASTO EN EL PRESENTE EJERCICIO </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>91</tipo>
+<orden>01</orden>
+<glosa>POR EL TRASLADO DE LA HACIENDA NACIONAL ADICIONAL A HACIENDA NACIONAL. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>01</orden>
+<glosa>POR EL REGISTRO DEL FACTOR DE AJUSTE POR CORRECCION MONETARIA -ACM-, SEGUN RES. DE CONTADURIA N§ 158-2003-EF/93.01 DEL 13.01.2003. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>02</orden>
+<glosa>AJUSTE POR REVERSION DE ASIENTOS DEL ACM QUE GENERA EL SISTEMA. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>03</orden>
+<glosa>AJUSTE POR EL TRASLADO DEL ACM DE HACIENDA NACIONAL ADICIONAL A HACIENDA NACIONAL- EJERCICIO 2002. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>04</orden>
+<glosa>POR EL TRASLADO DEL ACM DE LAS CUENTAS DE ACTIVO PASIVO Y PATRIMONIO A SUS CUENTAS DE ORIGEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>05</orden>
+<glosa>POR EL TRASLADO DEL ACM DE LAS CUENTAS DE PASIVO Y PATRIMONIO A SUS CUENTAS DE ORIGEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>06</orden>
+<glosa>POR EL TRASLADO DEL ACM DE LAS CUENTAS DE GASTOS A SUS CUENTAS DE ORIGEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>07</orden>
+<glosa>POR EL TRASLADO DEL ACM DE LAS CUENTAS DE INGRESOS A SUS CUENTAS DE ORIGEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>08</orden>
+<glosa>POR EL TRASLADO DEL ACM DE LAS CUENTAS DE RESULTADO A SUS CUENTAS DE ORIGEN. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>93</tipo>
+<orden>73</orden>
+<glosa>AJUSTE DE CUENTAS PATRIMONIALES PRESUPUESTALES Y DE ORDEN POR DIFERENCIA DE VALOR DE NICHOS </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>01</orden>
+<glosa>PARA REGISTRAR EL TRASLADO DE LAS CUENTAS DE GASTOS A LA CUENTA RESULTADO DE OPERACION. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>02</orden>
+<glosa>PARA REGISTRAR EL TRASLADO DE LOS SALDOS DE LAS CUENTAS DE INGRESOS PARA DETERMINAR EL RESULTADO DEL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>03</orden>
+<glosa>PARA REGISTRAR EL TRASLADO DE RESULTADO DE OPERACION AL RESULTADO DEL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>04</orden>
+<glosa>PARA REGISTRAR EL TRASLADO DE CUENTA DE RESULTADOS A RESULTADO DEL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>05</orden>
+<glosa>PARA REGISTRAR EL TRASLADO DE CUENTAS A RESULTADO DEL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>06</orden>
+<glosa>POR EL TRASLADO DEL REIE A RESULTADO DEL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>07</orden>
+<glosa>POR EL TRASLADO DE RESULTADO DEL EJERCICIO A RESULTADOS ACUMULADOS. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>95</tipo>
+<orden>08</orden>
+<glosa>POR EL REGISTRO DEL ACTIVO, PASIVO Y PATRIMONIO AL CIERRE DEL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>96</tipo>
+<orden>01</orden>
+<glosa>PARA REGISTRAR EL CIERRE DE LAS CUENTAS PRESUPUESTARIAS AL FINALIZAR EL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>96</tipo>
+<orden>02</orden>
+<glosa>PARA REGISTRAR EL CIERRE DE LAS CUENTAS PRESUPUESTARIAS AL FINALIZAR EL EJERCICIO. </glosa>
+</glosas>
+<glosas>
+<ano>2011</ano>
+<tipo>97</tipo>
+<orden>01</orden>
+<glosa>POR EL CIERRE DE LAS CUENTAS DE ORDEN DEL PTE. EJERCICIO. </glosa>
+</glosas>
+</sicg2011>

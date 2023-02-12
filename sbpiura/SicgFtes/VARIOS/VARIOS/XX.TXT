@@ -1,0 +1,101 @@
+
+ESCAPE      P£bl   N          27.00  (        27.00000000)
+VNUMMES     P£bl   C  "01"
+CANO        P£bl   N        1999.00  (      1999.00000000)
+VOPCION     P£bl   N           1.00  (         1.00000000)
+OKCANCEL    P£bl   N           1.00  (         1.00000000)
+CPROC       P£bl   C  "ResOC"
+NSUMA       P£bl   L  .F.
+VIDX        P£bl   C  "54713666.Idx"
+XX          P£bl   N           0.00  (         0.00000000)
+WORKER      Priv   L  .T.                                    VARIOSAB
+CIA         Priv   C  "SOCIEDAD DE BENEFICENCIA DE PIURA"    VARIOSAB
+NTOTOC      Priv   N           0.00  (         0.00000000)   RESOC
+NTOTOC1     Priv   N           0.00  (         0.00000000)   RESOC
+NTOTOC2     Priv   N           0.00  (         0.00000000)   RESOC
+TTOTOC      Priv   N           0.00  (         0.00000000)   RESOC
+VNUMMES1    Priv   C  "12"                                   RESOC
+XANO        Priv   C  "1999"                                 RESOC
+VORDEN      Priv   N           1.00  (         1.00000000)   RESOC
+   18 variables definidas,    100 bytes usados
+ 1006 variables disponibles
+
+Variables de memoria del sistema
+
+_ALIGNMENT  P£bl   C  "LEFT"
+_ASSIST     P£bl   C  "F:\FPD26\CATALOG.APP"
+_BEAUTIFY   P£bl   C  ""
+_BOX        P£bl   L  .T.
+_CALCMEM    P£bl   N        0.00  (         0.00000000)
+_CALCVALUE  P£bl   N        0.00  (         0.00000000)
+_CUROBJ     P£bl   N          -1.00  (        -1.00000000)
+_DBLCLICK   P£bl   N        0.49  (         0.49432944)
+_DIARYDATE  P£bl   D  18-08-2005
+_DOS        P£bl   L  .T.
+_FOXDOC     P£bl   C  "F:\FPD26\FOXDOC.EXE"
+_FOXGRAPH   P£bl   C  ""
+_GENGRAPH   P£bl   C  "F:\FPD26\GENGRAPH.APP"
+_GENMENU    P£bl   C  "F:\FPD26\GENMENU.PRG"
+_GENPD      P£bl   C  "F:\FPD26\GENPD.APP"
+_GENSCRN    P£bl   C  "F:\FPD26\GENSCRN.FXP"
+_GENXTAB    P£bl   C  "F:\FPD26\GENXTAB.PRG"
+_INDENT     P£bl   N           0.00  (         0.00000000)
+_LMARGIN    P£bl   N           0.00  (         0.00000000)
+_MAC        P£bl   L  .F.
+_MLINE      P£bl   N           0.00  (         0.00000000)
+_PADVANCE   P£bl   C  "FORMFEED"
+_PAGENO     P£bl   N           1.00  (         1.00000000)
+_PBPAGE     P£bl   N           1.00  (         1.00000000)
+_PCOLNO     P£bl   N          58.00  (        58.00000000)
+_PCOPIES    P£bl   N           1.00  (         1.00000000)
+_PDRIVER    P£bl   C  ""
+_PDSETUP    P£bl   C  ""
+_PECODE     P£bl   C  ""
+_PEJECT     P£bl   C  "AFTER"
+_PEPAGE     P£bl   N       32767.00  (     32767.00000000)
+_PLENGTH    P£bl   N          60.00  (        60.00000000)
+_PLINENO    P£bl   N           3.00  (         3.00000000)
+_PLOFFSET   P£bl   N           0.00  (         0.00000000)
+_PPITCH     P£bl   C  "PICA"
+_PQUALITY   P£bl   L  .T.
+_PRETEXT    P£bl   C  ""
+_PSCODE     P£bl   C  ""
+_PSPACING   P£bl   N           1.00  (         1.00000000)
+_PWAIT      P£bl   L  .F.
+_RMARGIN    P£bl   N          80.00  (        80.00000000)
+_SHELL      P£bl   C  ""
+_STARTUP    P£bl   C  "F:\FPD26\FOXSTART.APP"
+_TABS       P£bl   C  "10, 20, 30, 40, 50, 60, 70"
+_TALLY      P£bl   N           0.00  (         0.00000000)
+_TEXT       P£bl   N          -1.00  (        -1.00000000)
+_THROTTLE   P£bl   N        0.00  (         0.00000000)
+_TRANSPORT  P£bl   C  "F:\FPD26\TRANSPRT.FXP"
+_UNIX       P£bl   L  .F.
+_WINDOWS    P£bl   L  .F.
+_WRAP       P£bl   L  .T.
+
+Hay    57 variables del sistema
+
+Definiciones de men£s y t¡tulos
+
+Hay     0 men£s
+
+Definiciones de emergentes
+
+RUN          1609 bytes  
+WIZARD       1255 bytes  
+
+Hay     2 emergentes
+
+Definiciones de ventanas
+
+Nombre       Desde     A         Tama¤o
+_REPO        0,0       24,79     3596 bytes   ACTIVA
+ERR_INPUT    1,60      3,77      76 bytes  
+YESNO        19,27     23,77     332 bytes  
+MSG2USER     4,2       8,77      492 bytes  
+ESPERA       12,6      14,78     204 bytes  
+STANDBY      19,27     23,77     300 bytes  
+_FUNBUS      19,27     23,77     332 bytes  
+
+Hay     7 ventanas

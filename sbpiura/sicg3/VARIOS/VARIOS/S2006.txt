@@ -1,0 +1,1915 @@
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     1
+***********************************************
+0056.01 16-01-2006       4670.00           4670.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES IGV , RENTA DE 4TA.CATEGORIA DEL PERSONAL INDEPENDIENTE, DIETAS DE         
+        DIRECTORIO CORRESPONDIENTE AL MES DE DICIEMBRE/2005                                                                                 
+OBSERV: SEGUN INF.N§001-2006-SBP-OT-EFF-CCH INF.N§010-06-SBP-OT PROVEIDO S.G.A. ENVIO TELEMATICO PDT.                   
+CLIENTE:                                        
+  16-01-2006 267-26-0100002496 00012255-6      SUNAT - BANCO DE LA                                              4670.00
+***********************************************
+0226.01 31-01-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§060/70 DEL FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155 CORRESPONDIENTE AL 
+        MES DE ENERO/2006.                                                                                                                  
+OBSERV: H/C(0185.01),SEGUN MEMORANDO N§071-2006-SBP-GG                                                                  
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  31-01-2006 267-26-0100002496 00012330-7      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     2
+***********************************************
+0287.02 10-02-2006       3821.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     670.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111     116.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     3
+***********************************************
+0287.02 10-02-2006       3821.00            211.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00             42.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00            403.06
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0287.02 10-02-2006       3821.00              0.08
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES (CEM-S.N.P.ESVIDA) EFECTUADO EN PLLA. DE REMUNERACIONES,PENSIONES          
+        CORRESPONDIENTE AL MES DE ENERO/2005 FTE. DE FTO. D. Y T - R.D.R.                                                                   
+OBSERV: H/C(0006-0081-0083.01),ADJUNTO ANTECEDENTES                    ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-02-2006 631-019056        22349522-7      SUNAT - BANCO DE LA                                              3821.00
+***********************************************
+0349.02 20-02-2006      17787.00          17787.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE IGV, 10% RENTA DE CUARTA CATEGORIA DEL PERSONAL INDEPENDIENTE, DIETAS DE DIRECTORIO CORRESPONDIENTE 
+        AL MES DE ENERO/2006 SEGUN INFORME N§004-2006-SBP-OT-EFF-CCH.                                                                       
+OBSERV: INFORME N§0021-2006-SBP-OT ADJUNTO REPORTES ENVIO PDT ANTE SUNAT                                                
+CLIENTE:                                        
+  20-02-2006 267-26-0100002496 00012371-1      SUNAT - BANCO DE LA                                             17787.00
+***********************************************
+0410.02 27-02-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§61/70 DEL FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§0081-4-04155 CORRESPONDIENTE AL 
+        MES DE FEBRERO/2006.                                                                                                                
+OBSERV: H/C(0091.02),SEGUN MEMORANDO N§0125-2006-SBP-GG DE AUTORIZACION                    ,                            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  27-02-2006 267-26-0100002496 00012388-5      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     100.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111    1273.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     4
+***********************************************
+0533.03 10-03-2006       3762.00 511111     308.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     524.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     179.18
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     104.09
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      76.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     178.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     971.74
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     106.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     5
+***********************************************
+0533.03 10-03-2006       3762.00 511111     151.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     -54.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111    -513.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111    -108.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111    -189.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     -81.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     -54.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     -27.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     6
+***********************************************
+0533.03 10-03-2006       3762.00 511111     -81.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111    -378.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     -27.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     -54.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     193.01
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      47.08
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      49.08
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     7
+***********************************************
+0533.03 10-03-2006       3762.00 511111      48.60
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      49.03
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      47.25
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111     116.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00            211.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00             42.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     8
+***********************************************
+0533.03 10-03-2006       3762.00            373.88
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0533.03 10-03-2006       3762.00             -0.06
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE ESSALUD,S.N.P.ESVIDA DE PLLA. DE REMUNERACIONES DEL PERSONAL          
+        FINANCIADO POR D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE FEBRERO/2006                                                              
+OBSERV: H/C(0010,0093,0095.02),ADJUNTO ANTECEDENTES INFORME N§062-2006-SBP-UP                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-03-2006 631-019056        22349559-9      SUNAT - BANCO DE LA                                              3762.00
+***********************************************
+0590.03 21-03-2006      17127.00          17127.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE A IGV (COMPRAS Y VENTAS), RETENCIONES DE 4TA.CATEGORIA PERSONAL INDEPENDIENTE DIETAS DE DIRECTORIO  
+        DE LA SB.P.CORRESPONDIENTE AL MES DE FEBRERO/2006                                                                                   
+OBSERV: SEGUN INFORME N§007-2006-SBP-OT-EFF-CCH. INF.N                                                                  
+CLIENTE:                                        
+  21-03-2006 267-26-0100002496 00012465-1      SUNAT - BANCO DE LA                                             17127.00
+***********************************************
+0608.03 27-03-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§62 DEL FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155 CORRESPONDIENTE AL MES 
+        DE MARZO/06                                                                                                                         
+OBSERV: H/C(0090.03),DE CONFORMIDAD AL MEMORANDO N§0236-SBP-GG                    ,                                     
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  27-03-2006 267-26-0100002496 00012469-3      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.     9
+***********************************************
+0808.04 17-04-2006       3835.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111     657.44
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111     116.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    10
+***********************************************
+0808.04 17-04-2006       3835.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00            264.87
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00             42.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00            376.36
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0808.04 17-04-2006       3835.00              0.18
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR(CEM-SNP-ESVIDA) DEL PERSONAL FINANCIADO POR D. Y T.- R.D.R.EFECTUADO EN  
+        PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE MARZO/2006.                                                                            
+OBSERV: H/C(0020-0022-0110-0112.03),ADJUNTO HOJAS ADICIONALES                                                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  17-04-2006 631-019056        22349591-2      SUNAT - BANCO DE LA                                              3835.00
+***********************************************
+0863.04 25-04-2006      15630.00          15630.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE IGV, RENTA DE 4TA.CATEGORIA DEL PERSONAL INDEPENDIENTE, DIETAS DE     
+        DIRECTORIO CORRESPONDIENTE AL MES DE MARZO/2006 SEGUN INFORME REFERENCIA                                                            
+OBSERV: ADJUNTO INFORME N§0050-2006-SBP-OT ENVIO TELEMATICO PDT  PROVEIDO DE S.G.A.                                     
+CLIENTE:                                        
+  25-04-2006 267-26-0100002496 00012557-5      SUNAT - BANCO DE LA                                             15630.00
+***********************************************
+0870.04 25-04-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§063 DEL FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155 CORRESPONDIENTE AL MES
+        DE ABRIL/2006.                                                                                                                      
+OBSERV: H/C(0096.04),SEGUN MEMORANDO N§0324-2006-SBP-GG DE AUTORIZACION.                    ,                           
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  25-04-2006 267-26-0100002496 00012560-9      SUNAT - BANCO DE LA                                              2612.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    11
+***********************************************
+1032.05 08-05-2006       3893.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    12
+***********************************************
+1032.05 08-05-2006       3893.00 511111     675.17
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111     116.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00            326.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    13
+***********************************************
+1032.05 08-05-2006       3893.00            358.33
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1032.05 08-05-2006       3893.00             -0.03
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES A ESSALUD (CEM,SNO,ESVIDA) EFECTUADAS EN PLLA.DE REMUNERACIONES DEL MES DE 
+        ABRIL/2006 CORRESPONDIENTE AL PERSONAL FINANCIADO POR D.Y.T - R.D.R.                                                                
+OBSERV: H/C(0014-0084.040086.04),ADJUNTO HOJAS DE TRABAJO Y AFECTACIONES PRESPUESTARIAS ENVIO PDT                       
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-05-2006 631-019056        22349620-9      SUNAT - BANCO DE LA                                              3893.00
+***********************************************
+1054.05 10-05-2006       9535.00           9535.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE IGV 10% RENTA DE 4TA.CATEGORIA DEL PERSONAL INDEPENDIENTE DIETAS DE DIRECTORIO CORRESPONDIENTE AL   
+        MES DE ABRIL/2006 R.D.R. ENVIO TELEMATICO PDT SUNAT                                                                                 
+OBSERV: SEGUN INFORME N§015-06-SBP-OT-EFF-CCH. ADJUNTO ANTECEDENTES PROVEIDO DE S.G.A.                                  
+CLIENTE:                                        
+  10-05-2006 267-26-0100002496 00012625-0      SUNAT - BANCO DE LA                                              9535.00
+***********************************************
+1195.05 26-05-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§064 DEL FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155 CORRESPONDIENTE AL MES
+        DE MAYO/2006.                                                                                                                       
+OBSERV: H/C(0140.05),DE CONFORMIDAD AL MEMORANDO N§407-2006-SBP-GG                                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  26-05-2006 267-26-0100002496 00012677-1      SUNAT-BANCO DE LA                                                2612.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    14
+***********************************************
+1305.06 08-06-2006       6725.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111     670.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111      91.30
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    15
+***********************************************
+1305.06 08-06-2006       6725.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00 651111    1928.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00            326.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00            932.79
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00            358.33
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+***********************************************
+1305.06 08-06-2006       6725.00              0.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,SNP,ESSALUDVIDA EFECTUADO EN PLLA. DE REMUNERACIONES Y JORNALES DE
+        MAYO/2006 PERSONAL NOMBRADO,CONTRATADO Y OBREROS DE LA SBP.                                                                         
+OBSERV: H/C(0003-0004-0066-0098-0100-0139.05),ADJUNTO ANTECEDENTES ENVIO TELEMATICO PDT FTE.FTO. D.Y T.- R.D            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-06-2006 631-019056        25746051-9      SUNAT - BANCO DE LA                                              6725.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    16
+***********************************************
+1314.06 09-06-2006       1835.00           1835.00
+GLOSA : IMPORTE QUE SE GIRA POR POR PAGO DE I.G.V. 10% RENTA DE CTA.CATEGORIA PERSONAL INDEPENDIENTE DIETAS DE DIRECTORIO CORRESPONDIENTE AL
+        MES DE MAYO/2006 ENIVIO TELEMAIICO PDT. INF.N§019-06-SBP-OT-EFF-CCH                                                                 
+OBSERV: SEGUN INFORME N§0076-2006-SBP-GG  PORVEIDO DE S.G.A. ADJUNTO ANTECEDENTES                                       
+CLIENTE:                                        
+  09-06-2006 267-26-0100002496 00012732-4      SUNAT - BANCO DE LA                                              1835.00
+***********************************************
+1440.06 26-06-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA  N§065/70 POR FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155 CORRESPONDIENTE AL
+        MES DE JUNIO/2006.                                                                                                                  
+OBSERV: H/C(0179.06),SEGUN MEMORANDO N§0494-2006-SBP-GG   ,                                                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  26-06-2006 267-26-0100002496 00012775-3      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    17
+***********************************************
+1590.07 10-07-2006       6646.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111     670.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111      69.25
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    18
+***********************************************
+1590.07 10-07-2006       6646.00 651111    1881.28
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00            842.39
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00            326.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00            438.86
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1590.07 10-07-2006       6646.00              0.52
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.P.ESVIDA, EFECTUADAS EN PLANILLA DE REMUNERACIONES,PENSIONES, 
+        JORNALES PERSONAL ACTIVO,CESANTE Y OBREROS DEL MES DE JUNIO/2006.                                                                   
+OBSERV: H/C(004-0028-0113-0115-0133-0149.06 029.07),FTE.FTE. D Y T. Y R.D.R. ENVIO TELEMATICO PDT ADJUNTO AN            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  10-07-2006 631-019056        25746087-3      SUNAT - BANCO DE LA                                              6646.00
+***********************************************
+1614.07 12-07-2006       8945.00           8945.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE IGV RENTA DE 4TA. CATEGORIA 10% DEL PERSONAL INDEPENDIENTE DIETAS DE  
+        DIRECTORIO CORRESPONDIENTE AL MES DE JUNIO/2006.                                                                                    
+OBSERV: SEGUN INFORME N§0090-2006-SBP-OT INF.N§0020-06-SBP-EFF-CCH.                                                     
+CLIENTE:                                        
+  12-07-2006 267-26-0100002496 00012836-3      SUNAT - BANCO DE LA                                              8945.00
+***********************************************
+1821.07 31-07-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§66/70 AVA CUOTA POR FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155           
+        CORRESPONDIENTE AL MES DE JULIO/2006.                                                                                               
+OBSERV: H/C(0087.07),SEGUN MEMORANDO N§0546-2006-SBP-GG DE AUTORIZACION            ,                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  31-07-2006 267-26-0100002496 00012926-2      SUNAT - BANCO DE LA                                              2612.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    19
+***********************************************
+1891.08 08-08-2006       5611.00 511111     150.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111    1295.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111     272.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111     508.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111     201.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111     134.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111      67.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111     200.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    20
+***********************************************
+1891.08 08-08-2006       5611.00 511111     922.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111      97.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111     133.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111     105.25
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111      67.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 511111      64.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00 611111     160.61
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00            430.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    21
+***********************************************
+1891.08 08-08-2006       5611.00            184.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00            574.86
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1891.08 08-08-2006       5611.00              0.03
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES DEL EMPLEADOR CEM PLLA.DE REMUNERACIONES, JORNALES DEL PERSONAL NOMBRADO,CONTRATADO Y  
+        OBREROS FTE.FTO. D. Y T. Y R.D.R. CORRESPONDIENTE AL MES DE JULIO/06.                                                               
+OBSERV: H/C(0018-0037-0116-0118-0260.07), ADJUNTO ANTECEDENTES PAGO DE ENVIO TELEMATICO PDT                             
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  08-08-2006 631-019056        25746120-2      SUNAT - BANCO DE LA                                              5611.00
+***********************************************
+1928.08 14-08-2006       8162.00           8162.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE I.G.V. RENTA DE 4TA. 10% DEL PERSONAL INDEPENDIENTE, DIETAS DE DIRECTORIO CORRESPONDIENTE AL MES DE 
+        JULIO/2006 ENVIO TELEMATICO PDT ANTE SUNAT.                                                                                         
+OBSERV: SEGUN INFORME N§0104-2006-SBP-OT INFORME 0023-SBP-OT-EFF-CCH. ADJUNTO ANTECEDENTES                              
+CLIENTE:                                        
+  14-08-2006 267-26-0100002496 00012967-6      SUNAT-BANCO DE LA                                                8162.00
+***********************************************
+1999.08 23-08-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§67/70 AVA CUOTA DE FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155            
+        CORRESPONDIENTE AL MES DE AGOSTO/2006.                                                                                              
+OBSERV: H/C(0083.08),SEGUN MEMORANDO N§0620-06-SBP-GG DE AUTORIZACION. ,                                                
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  23-08-2006 267-26-0100002496 00013007-0      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    22
+***********************************************
+2159.09 11-09-2006       3947.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111     670.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    23
+***********************************************
+2159.09 11-09-2006       3947.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111      94.45
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00            326.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00            438.86
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+***********************************************
+2159.09 11-09-2006       3947.00             -0.01
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DEL EMPLEADOR CEM,S,N.P. ESVIDA, EFECTUADOS EN PLLA. DE REMUNERACIONES Y 
+        PENSIONES DEL MES DE AGOSTO/2006 PERSONAL NOMBRADO,CONTRATADO Y CONF                                                                
+OBSERV: H/C(003-005-0080-0082.08), ADJUNTO ANTECEDENTES Y HOJAS ADICIONALES ENVIO TELEMATICO PDT.ANTE SUMAT.            
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-09-2006 631-019056        25746150-9      SUNAT - BANCO DE LA                                              3947.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    24
+***********************************************
+2187.09 15-09-2006       8533.00           8533.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE TRIBUTOS I.G.V. RETENCIONES 10% 4TA.CATEGORIA DEL PERSONAL INDEPENDIENTE,DIETAS DE DIRECTORIO       
+        CORRESPONDIENTE AL MES DE AGOSTO/2006 SEGUN INF.N§026-06-SBP-OT-EFF-CCH.                                                            
+OBSERV: INFORME N§0121-2006-SBP-OT ENVIO TELEMATICO PDT ADJUNTO ANTECEDENTES                                            
+CLIENTE:                                        
+  15-09-2006 267-26-0100002496 00013074-0      SUNAT - BANCO DE LA                                              8533.00
+***********************************************
+2349.10 02-10-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§68/70  POR FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-4-04155 CORRESPONDIENTE AL 
+        MES DE SETIEMBRE/2006.                                                                                                              
+OBSERV: H/C(0212.09),SEGUN MEMORANDO N§0708-2006-SBP-GG ,                                                               
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  02-10-2006 267-26-0100002496 00013137-5      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    25
+***********************************************
+2409.10 11-10-2006       3993.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     671.02
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111      97.73
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111     116.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    26
+***********************************************
+2409.10 11-10-2006       3993.00            326.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00            463.19
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2409.10 11-10-2006       3993.00             -0.89
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES, RETENCIONES (CEM.ESVIDA,S.N.P.)DE PLLA. DE REMUNERACIONES,PENSIONES DEL MES DE        
+        SETIEMBRE/2006EL PERSONAL FINANCIADO POR D. Y T. - R.D.D.                                                                           
+OBSERV: H/C(0015-0078-0080.09), ENVIO TELEMATICO PDT ANTE SUNAT ADJUNTO ANTECEDENTES Y HOJAS DE TRABAJO                 
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  11-10-2006 631-019056        25746181-4      SUNAT - BANCO DE LA                                              3993.00
+***********************************************
+2439.10 17-10-2006      12432.00          12432.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE IGV, 10% RENTA DE 4TA.CATEGORIA DEL PERSONAL INDEPENDIENTE DIETAS DE DIRECTORIO CORRESPONDIENTE AL  
+        MES DE SETIEMBRE/2006 SEGUN INFORME N§028-2006-SBP-OT-EFF-CCH.                                                                      
+OBSERV: INFORME N§0138-2006-SBP-OT ENVIO TELEMATICO PDT PROVEIDO DE S.G.A.                                              
+CLIENTE:                                        
+  17-10-2006 267-26-0100002496 00013162-3      SUNAT - BANCO DE LA                                             12432.00
+***********************************************
+2617.10 31-10-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE CUOTA N§069 MES DE OCTUBRE/2006 FRACCIONAMIENTO SEGUN RESOLUCION DE INTENDENCIA N§081-404155        
+        AUTORIZADO SEGUN MEMORANDO N§769-2006-SBP-GG                                                                                        
+OBSERV: H/C(0080.10),                    ,                                                                              
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  31-10-2006 267-26-0100002496 00013229-0      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    27
+***********************************************
+2734.11 15-11-2006       7707.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111     670.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    28
+***********************************************
+2734.11 15-11-2006       7707.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111     116.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00            326.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00           4177.15
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+***********************************************
+2734.11 15-11-2006       7707.00             -0.35
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES,RETENCIONES DE CEM.-SIST.NAC.PENS.ESSALUD VIDA EFECTUADO EN PLLA. DE                   
+        REMUNERACIONES,PENSIONES  DE OCTUBRE/2006 PERSONAL FINANCIADO POR D.Y T. -R.D.R.                                                    
+OBSERV: H/C(003-0083-0085.10),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO PDT SUNAT                                      
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  15-11-2006 631-019056        25746212-7      SUNAT - BANCO DE LA                                              7707.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    29
+***********************************************
+2773.11 20-11-2006      25872.00          25872.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE I.G.V.RENTA DE 4TA.CATEGORIA 10% DIETAS DE DIRECTORIO,PERSONAL INDEPENDIENTE CORRESPONDIENTE AL MES 
+        DE OCTUBRE/2006 SEGUN INFORME N§031-2006-SBP-OT-EFF-CCH.                                                                            
+OBSERV: INFORME N§0151-2006-SBP-OT ADJUNTO ANTECEDENTES                                                                 
+CLIENTE:                                        
+  20-11-2006 267-26-0100002496 00013361-1      SUNAT - BANCO DE LA                                             25872.00
+***********************************************
+2821.11 24-11-2006       2612.00 541171    2612.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE ULTIMA CUOTA N§70/70 AVA CUOTA A SUNAT POR LA DEUDA DE EJERCICIOS ANTERIORES CORRESPONDIENTE AL MES 
+        DE NOVIEMBRE/2006 SEGUN  FRACCIONAMIENTO Y MEMORANDO N§0819-2006-SB9                                                                
+OBSERV: H/C(0051.11), RES.DE INTENDENCIA N§081-4-04155                                                                  
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  24-11-2006 267-26-0100002496 00013393-4      SUNAT - BANCO DE LA                                              2612.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     126.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     953.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     200.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     382.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     147.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111      98.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    30
+***********************************************
+2975.12 13-12-2006       3971.00 511111      49.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     146.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     670.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111      79.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111      97.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111     116.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111      49.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00 511111      46.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    31
+***********************************************
+2975.12 13-12-2006       3971.00            326.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00            441.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+2975.12 13-12-2006       3971.00             -0.75
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES DE CEM,S.N.PENSIONES,DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN    
+        PLLA. DE REMUNERACIONES DE NOVIEMBRE/2006                                                                                           
+OBSERV: H/C(0002-0004-0092-0094.11),ADJUNTO HOJAS ADICIONALES DE TRABAJO ENVIO TELEMATICO SUNAT PDT.                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  13-12-2006 631-019056        28780178-1      SUNAT - BANCO DE LA NACION.                                      3971.00
+***********************************************
+3019.12 20-12-2006       9950.00           9950.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE IGV, RENTA DE 4TA.CATEGORIA 10% DEL PERSONAL INDEPENDIENTE DIETAS DE DIRECTORIO CORRESPONDIENTE AL  
+        MES DE NOVIEMBRE/2006 SEGUN INF.N§036-2006-SBP-OT-EFF-CCH.                                                                          
+OBSERV: SEGUN INFORME N§0162-2006-SBP-OT PORVEIDO DE S.G.A. DE AUTORIZACION                                             
+CLIENTE:                                        
+  20-12-2006 267-26-0100002496 00013486-6      SUNAT - BANCO DE LA NACION.                                      9950.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111     175.81
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111    1295.59
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111     272.07
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    32
+***********************************************
+3178.12 29-12-2006       5341.00 511111     508.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111     201.26
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111     134.69
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111      67.04
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111     200.29
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111     922.67
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111      97.85
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111     133.58
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+SOCIEDAD DE BENEFICENCIA DE PIURA  
+                                                                                                                         Pag.    33
+***********************************************
+3178.12 29-12-2006       5341.00 511111     152.50
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111      67.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00 511111      64.65
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00            430.38
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00             39.00
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00            577.55
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3178.12 29-12-2006       5341.00             -0.06
+GLOSA : IMPORTE QUE SE GIRA POR PAGO DE APORTACIONES Y RETENCIONES A DE CEM,SNP ESVIDA DEL PERSONAL FINANCIADO POR D. Y T. EFECTUADO EN     
+        PLLA. DE REMUNERACIONES DE DICIEMBRE/2006 SEGUN PLANILLAS                                                                           
+OBSERV: H/C(0005-0077-0079.12), ADJUNTO ANTECEDENTES                                                                    
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-019056        28780207-8      SUNAT - BANCO DE LA NACION.                                      5341.00
+***********************************************
+3193.12 29-12-2006       3627.00 541171    3627.00
+GLOSA : IMPORTE QUE SE CARGA EN NUESTRA CUENTA DE DETRACCIONES POR PAGO DE RESOLUCION COACTIVA DE SUNAT SEGUN INFORME                       
+        N§0152-0153-2006-SBP-OT OFICIO N§0171-2001-SBP-GG H/T N§2820-2001-SBP-GG                                                            
+OBSERV: H/C(0227.12),RESOLUCION DE INTENDENCIA N§081-04-04155                     ,                                     
+CLIENTE:SUNAT - BANCO DE LA NACION.             
+  29-12-2006 631-076017        C/O N§0171-006 SUNAT - BANCO DE LA NACION.                                       3627.00
+

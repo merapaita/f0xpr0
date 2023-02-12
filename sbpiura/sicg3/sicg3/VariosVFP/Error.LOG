@@ -1,0 +1,7 @@
+
+Fatal Error in Converter: 
+Error: No hay ninguna tabla abierta en el área de trabajo actual.
+Error Number: 52
+Method: allothers
+Offending Code: LOCATE ...
+File being processed: g:\_trabajo\sbpiura\sicg3\variosvfp\libcaj1.frx

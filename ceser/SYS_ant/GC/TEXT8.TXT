@@ -1,0 +1,20 @@
+
+ CORP.TECNOLOGICA DE SERVI                                 PAGINA   :        1
+       CESER                                               FECHA    : 13/09/2006
+  CALLE CUZCO 1099                                         PROGRAMA : AGCR2011
+
+                              RELACION  DE  TABLAS
+
+     TABLA DE  ╞╞  CONCEPTO DE PAGO A CUENTA     
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                  FACTOR           Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      002      DISGNOSTICO, REVISION                              0.00
+      003      CANCELACION DE MANO DE OBRA                        0.00
+      004      PRESUPUESTO APROBADO                               0.00
+      005      FLETE                                              0.00
+      PCTA     PEDIDO DIRECTO DE REPUESTOS                        0.00
+
+ 

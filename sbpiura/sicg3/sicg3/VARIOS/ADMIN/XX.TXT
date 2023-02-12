@@ -1,0 +1,129 @@
+
+ESCAPE      P£bl   N          27.00  (        27.00000000)
+CIA         P£bl   C  "SOCIEDAD DE BENEFICENCIA DE PIURA"
+OKCANCEL    P£bl   N           1.00  (         1.00000000)
+VOPCION     P£bl   N           5.00  (         5.00000000)
+CANO        P£bl   N        2003.00  (      2003.00000000)
+WORKER      Priv   L  .T.                                    ADMIN
+RUTA        Priv   C  "F:\Bene2001\Data"                     ADMIN
+RUTABK      Priv   C  "..\BACKUP"                            ADMIN
+RUTAPR      Priv   C  "..\DataPr"                            ADMIN
+PRUEBA      Priv   L  .T.                                    ADMIN
+ROTULO1     Priv   C  "Opciones de Administraci¢n"           ADMIN
+C_FONDO     Priv   N           1.00  (         1.00000000)   ADMIN
+C_BORDE     Priv   N          10.00  (        10.00000000)   ADMIN
+V_US        Priv   C  "ADMIN"                                CTRLACC
+VMENS01     Priv   C  "ÍÍ Seguridad ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍSOCIEDA
+                       D DE BENEFICENCIA DE PIURAÍÍÍÍÍÍÍÍÍÍÍ
+                       ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ"      CTRLACC
+VMENS02     Priv   C  "Revisi¢n de Seguridad de SOCIEDAD DE 
+                       BENEFICENCIA DE PIURA"                CTRLACC
+VMENS03     Priv   C  "Digite C¢digo de Usuario que desea :" CTRLACC
+VMENS04     Priv   C  "Dicho Usuario no fue encontrado"      CTRLACC
+VMENS05     Priv   C  "No existe Usuario anterior"           CTRLACC
+VMENS06     Priv   C  "No existe Usuario siguiente"          CTRLACC
+VMENS07     Priv   C  "¨ Est  seguro que desea ANULAR este U
+                       suario ?"                             CTRLACC
+VMENS08     Priv   C  "No hay registros para procesar"       CTRLACC
+VMENS09     Priv   C  "M¢dulos"                              CTRLACC
+VMENS10     Priv   C  "¨ Est  seguro que desea ANULAR este m
+                       ¢dulo ?"                              CTRLACC
+PANTALLA    Priv   S  80 by 25                               CTRLACC
+VEN_ACCION  Priv   L  .T.                                    CTRLACC
+VTEMP       Priv   N           2.00  (         2.00000000)   BUSCA
+   27 variables definidas,    619 bytes usados
+  997 variables disponibles
+
+Variables de memoria del sistema
+
+_ALIGNMENT  P£bl   C  "LEFT"
+_ASSIST     P£bl   C  "C:\FPD26\CATALOG.APP"
+_BEAUTIFY   P£bl   C  ""
+_BOX        P£bl   L  .T.
+_CALCMEM    P£bl   N        0.00  (         0.00000000)
+_CALCVALUE  P£bl   N        0.00  (         0.00000000)
+_CUROBJ     P£bl   N          -1.00  (        -1.00000000)
+_DBLCLICK   P£bl   N        0.49  (         0.49432944)
+_DIARYDATE  P£bl   D  14-11-2003
+_DOS        P£bl   L  .T.
+_FOXDOC     P£bl   C  "C:\FPD26\FOXDOC.EXE"
+_FOXGRAPH   P£bl   C  ""
+_GENGRAPH   P£bl   C  "C:\FPD26\GENGRAPH.APP"
+_GENMENU    P£bl   C  "C:\FPD26\GENMENU.PRG"
+_GENPD      P£bl   C  "C:\FPD26\GENPD.APP"
+_GENSCRN    P£bl   C  "C:\FPD26\GENSCRN.PRG"
+_GENXTAB    P£bl   C  "C:\FPD26\GENXTAB.PRG"
+_INDENT     P£bl   N           0.00  (         0.00000000)
+_LMARGIN    P£bl   N           0.00  (         0.00000000)
+_MAC        P£bl   L  .F.
+_MLINE      P£bl   N           0.00  (         0.00000000)
+_PADVANCE   P£bl   C  "FORMFEED"
+_PAGENO     P£bl   N           2.00  (         2.00000000)
+_PBPAGE     P£bl   N           1.00  (         1.00000000)
+_PCOLNO     P£bl   N          58.00  (        58.00000000)
+_PCOPIES    P£bl   N           1.00  (         1.00000000)
+_PDRIVER    P£bl   C  ""
+_PDSETUP    P£bl   C  ""
+_PECODE     P£bl   C  ""
+_PEJECT     P£bl   C  "AFTER"
+_PEPAGE     P£bl   N       32767.00  (     32767.00000000)
+_PLENGTH    P£bl   N          60.00  (        60.00000000)
+_PLINENO    P£bl   N          11.00  (        11.00000000)
+_PLOFFSET   P£bl   N           0.00  (         0.00000000)
+_PPITCH     P£bl   C  "PICA"
+_PQUALITY   P£bl   L  .T.
+_PRETEXT    P£bl   C  ""
+_PSCODE     P£bl   C  ""
+_PSPACING   P£bl   N           1.00  (         1.00000000)
+_PWAIT      P£bl   L  .F.
+_RMARGIN    P£bl   N          80.00  (        80.00000000)
+_SHELL      P£bl   C  ""
+_STARTUP    P£bl   C  "C:\FPD26\FOXSTART.APP"
+_TABS       P£bl   C  "10, 20, 30, 40, 50, 60, 70"
+_TALLY      P£bl   N          21.00  (        21.00000000)
+_TEXT       P£bl   N          -1.00  (        -1.00000000)
+_THROTTLE   P£bl   N        0.00  (         0.00000000)
+_TRANSPORT  P£bl   C  "C:\FPD26\TRANSPRT.PRG"
+_UNIX       P£bl   L  .F.
+_WINDOWS    P£bl   L  .F.
+_WRAP       P£bl   L  .T.
+
+Hay    57 variables del sistema
+
+Definiciones de men£s y t¡tulos
+
+Nombre de men£
+FMENU        429 bytes  
+        T¡tulo
+      REVIS        118 bytes  
+      BUSCA        118 bytes  
+      ANTER        118 bytes  
+      PROXI        118 bytes  
+      CORRI        118 bytes  
+      INGRE        118 bytes  
+      ELIMI        118 bytes  
+      LISTA        118 bytes  
+      TERMI        118 bytes  
+
+Hay     1 men£
+
+Definiciones de emergentes
+
+RUN          1609 bytes  
+WIZARD       1255 bytes  
+
+Hay     2 emergentes
+
+Definiciones de ventanas
+
+Nombre       Desde     A         Tama¤o
+ERR_INPUT    1,60      3,77      76 bytes  
+MSG2USER     4,2       8,77      460 bytes  
+_FUNBUS      19,27     23,77     300 bytes  
+YESNO        19,27     23,77     300 bytes  
+WIND_F1      0,0       23,79     3436 bytes  
+WIND_F2      8,0       23,79     2188 bytes  
+WIND_F0      0,0       8,79      1100 bytes  
+STANDBY      19,27     23,77     300 bytes   ACTIVA
+
+Hay     8 ventanas

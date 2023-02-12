@@ -1,0 +1,11 @@
+@ECHO OFF
+CLS
+SET WORKER=OFF
+
+REM act.exe  -T
+
+x:foxprox PRESU.EXE
+
+DEL *.IDX
+DEL *.TMP
+@ECHO ON

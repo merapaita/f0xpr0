@@ -1,0 +1,23 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   13/11/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   13:13:34
+                                                     DESDE:13/11/2015  HASTA:13/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ GEXS EN GARANTIA EXTENDIDA SAGA    
+
+   850                                
+
+      1    15076 13/11/2015    15076 CARRASCO OLMOS CECILIA DE SAMSUNG    WA13W9XFP/XPE   CC\               2008 011  13/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     1
+
+                                                                       TOTAL                               =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA EXTENDIDA SAGA    =>     1
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>     1
+                                                                                                             ммммммм
+

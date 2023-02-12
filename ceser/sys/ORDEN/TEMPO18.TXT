@@ -1,0 +1,164 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   10/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   10:20:18
+                                                     DESDE:01/12/2015  HASTA:09/12/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   050  SUCURSAL PIURA                
+
+      1     7431 01/12/2015     7431 TANG VALDIVIEZO DE RICOS  SAMSUNG    SM-T110         RF2F517FJ4L      60070 002  05/12/2015
+      2     7432 01/12/2015     7432 CUNYA YANGUA MARIA RUBI   SAMSUNG    RT29FAJHDSP/PE  JL7H4BAF5014      2008 002  03/12/2015
+      3     7433 01/12/2015     7433 CORO ABAD LEONCIO         SAMSUNG    UN40EH5000GXPE  Z4YL3CUD9003     15180 005  03/12/2015
+      4     7434 01/12/2015     7434 BOBADILLA ATOCHA ISAAC    SONY       KDL-32EX525     3008157          15180 021  05/12/2015
+      5     7435 02/12/2015     7435 RAMOS MOSCOL FELIPE       SAMSUNG    UN32FH4005GXPE  01WZ3CEF1003     15180 005  03/12/2015
+      6     7436 02/12/2015     7436 CATACORA GARCIA RONY      HP         120-1016LA      4CS13616V1       60070 001  02/12/2015
+      7     7437 02/12/2015     7437 TABOADA RIVAS FLOR DE MAR SONY       KDL-32R405A     6040238          30977 006  05/12/2015
+      8    15186 02/12/2015    15186 LA TORRE VDA DE MALDONADO GENERAL    LAVADORA        CCVVD             2008 011  03/12/2015
+      9    15189 02/12/2015    15189 CALLE LLACSAHUANGA ROCIO  SAMSUNG    WA1DXARFP       CCEEFF            2008 100  03/12/2015
+     10     7438 03/12/2015     7438 VIGO MORE JESIKA          SAMSUNG    BN59-01178K     SXXX             30977 100  04/12/2015
+     11     7439 03/12/2015     7439 ASOCIACION DE PADRES DE F EPSON      L355            S42K152122       60070 001  07/12/2015
+     12     7442 03/12/2015     7442 MACHADO ARRTIETA BERTILDE SAMSUNG    UN32EH5000GXPE  Z4SK3CGC2006     30977 010  05/12/2015
+     13     7443 03/12/2015     7443 CORTEZ MAZA JAIME RICHARD SONY       HCD-ZX80D       9501413          30977 001  03/12/2015
+     14     7448 04/12/2015     7448 CUEVAS NUNUERA VERONICA   SAMSUNG    MX-FS8000/PE    ZX4Y12DD3000     30977 005  05/12/2015
+     15     7449 04/12/2015     7449 BLAS ROLDAN PAOLA         SAMSUNG    MG5920T         72QF100182       15180 021  09/12/2015
+     16     7450 04/12/2015     7450 VILCHEZ QUIROGA ARMANDO A SONY       HDR-XR260V      1163052          15977 001  04/12/2015
+     17     7451 04/12/2015     7451 ROSALES DE MORAN MAGDALEN SONY       DAV-DZ77T       3105016          15180 001  04/12/2015
+     18     7452 04/12/2015     7452 BARRANZUELA CHIRA FRANCIS SAMSUNG    SM-T210         278MW            60070 001  04/12/2015
+     19     7453 04/12/2015     7453 CHUNGA IPANAQUE GEGORIA   SONY       DSC-HX20V       5293599          15977 100  07/12/2015
+     20     7455 04/12/2015     7455 CHUNGA IPANAQUE GEGORIA   SONY       RM-YD079        S/S              15180 005  05/12/2015
+     21     7457 04/12/2015     7457 HONORATO BRUNO SANDOVAL   L.G        60PB5600-S.A.WF 411RMEN5M436     15180 001  04/12/2015
+     22     7460 04/12/2015     7460  SOSA ZAPATA THELMO       SONY       SVE14117FLB     275455203012     60070 001  04/12/2015
+     23    15199 04/12/2015    15199 CUEVA ALCANTARA ROGER     SAMSUNG    REFRIGERADORA   FASS              2008 100  09/12/2015
+     24     7464 05/12/2015     7464 ALVARADO BERMEJO GLORIA   L.G        AKB72915209     SS               15180 100  05/12/2015
+     25     7465 05/12/2015     7465 ALVARADO BERMEJO GLORIA   AOC        CONTROL REMOTO  AA               15180 100  05/12/2015
+     26     7466 05/12/2015     7466 GARCIA LABAN SEGUNDO      L.G        42PQ10R-MB      909RMXX24656     30977 001  05/12/2015
+     27     7468 07/12/2015     7468 ALCAS MENA JUAN CARLOS    SAMSUNG    SM-T330         RF2F41C00SL      60070 001  07/12/2015
+     28     7470 07/12/2015     7470 RIO VERDE S.A.C           SAMSUNG    LN40D503F7GXPE  Z44G3CCB9029     15180 021  09/12/2015
+     29     7471 07/12/2015     7471 RUIZ DE SOMOQURCIO ALFRED SONY       NWZ-W273S       6619690          15977 001  07/12/2015
+     30    15205 07/12/2015    15205 RUIDIAS ALAMO SOCORRO PAT SAMSUNG    WA1DXARFP       SECCCC            2008 016  09/12/2015
+     31     7472 09/12/2015     7472 CARNERO BERRU MIRTHA      EPSON      L210            S27K162089       60070 001  09/12/2015
+     32     7474 09/12/2015     7474 SANDOVAL PONCE GIOVANNA E SONY       KDL-32R405A     6071445          30977 001  09/12/2015
+     33     7475 09/12/2015     7475 SANDOVAL PONCE GIOVANNA E SAMSUNG    CT14F26X/STR    3CCT601496H      30977 001  09/12/2015
+     34     7479 09/12/2015     7479 RAMIREZ CALDERON ARCIDA   SAMSUNG    UN46F6800AGXPE  Z7G13CAD4000     30977 001  09/12/2015
+     35    14504 09/12/2015    14504 REYES CORNEJO JORTE STEEV SAMSUNG    RT34DKTS1/XPE   SSCC              2008 100  27/08/2015
+     36    15153 09/12/2015    15153 ALVA PAZ SHIRLY           SAMSUNG    WA10F5L4UWA     JLP95BBD5002      2008 011  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>    36
+
+                                                                       TOTAL SUCURSAL PIURA                =>    36
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA             =>    36
+ FREC FUERA DE GARANTIA  RECLAMO    
+
+   050  SUCURSAL PIURA                
+
+     37     7444 03/12/2015     7444 ARTEAGA CAMPOS DANIEL     SONY       KDL-37L4000     4903830          15180 001  03/12/2015
+ CESER PIURA SRL                                                                                              P═gina :          2
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   10/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   10:20:22
+                                                     DESDE:01/12/2015  HASTA:09/12/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+
+                                                                       TOTAL DICIEMBRE                     =>     1
+
+                                                                       TOTAL SUCURSAL PIURA                =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA  RECLAMO    =>     1
+ GARA EN GARANTIA                   
+
+   090                                
+
+     38     7403 01/12/2015     7403 GUERRA GONZALES FREDER AL SONY       NWZ-E383        7072976          15977 004  01/12/2015
+     39     7422 01/12/2015     7422 LORO CHUICA MARIA CRUZ    SONY       HCD-GPX555      4427423          15180 021  01/12/2015
+     40     7429 01/12/2015     7429 RIVERA JIMENEZ RINA       EPSON      L555            S4XY058460       60070 010  07/12/2015
+     41     7430 01/12/2015     7430 MARCIMEX                  SAMSUNG    LS19D300NY/PE   ZZ8EH4LG2006     15180 021  02/12/2015
+     42    15179 01/12/2015    15179 CURACAO PIURA I           SAMSUNG    UN50H5303AGXPE  UJAS             15180 018  03/12/2015
+     43    15183 01/12/2015    15183 CASTILLO SANDRA           SAMSUNG    RSA1JHSL1/XPE   JHJHDJ            2008 011  04/12/2015
+     44    15184 01/12/2015    15184 ARELLANO CARRASCO LELIA D SAMSUNG    UN48J5500AGXPE  MMKL             15180 011  03/12/2015
+     45    15185 01/12/2015    15185 BURGOS JHON               SAMSUNG    UN40FH6203GXPE  NMND             30977 011  03/12/2015
+     46    15187 01/12/2015    15187 GARCIA AVILA DANTI WILLIA SONY       KDL-40R354B     4048639          27141 011  01/12/2015
+     47    15188 01/12/2015    15188 TIMANA SILVA SEGUNDO PEDR SONY       CDX-G1050U      1502686          27141 011  01/12/2015
+     48    15190 02/12/2015    15190 CHAPILLIQUEN FLORES JESSI SAMSUNG    UN48J6400AGXPE  044J3CVG9001      2014 018  09/12/2015
+     49    15191 02/12/2015    15191 BENITES CRUZ MERCEDES VIC SAMSUNG    UN46FH5005GXPE  ,MF               2014 011  03/12/2015
+     50     7440 03/12/2015     7440 LIZANO DE MARTOS AURA BEA SAMSUNG    MX-H830/PE      0AAN122G1004     15180 010  04/12/2015
+     51    15192 03/12/2015    15192 RIVERA RIVERA DANIEL      SAMSUNG    UN40FH5303GXPE  M,G              27141 011  03/12/2015
+     52    15193 03/12/2015    15193 EFE TALARA                SAMSUNG    MX-H830/PE      JNK              27141 011  03/12/2015
+     53    15194 03/12/2015    15194 MORE GOMEZ JOSE EFRAIN    SAMSUNG    MX-HS6500/PE                     27141 011  03/12/2015
+     54    15195 03/12/2015    15195 CUBAS LOPEZ JOSE SALOMON  SAMSUNG    RS21HKLMR1/SAM  D67343AG9000      2014 018  05/12/2015
+     55     7445 04/12/2015     7445 CHANTA CORDOVA SEBERINA   SONY       KDL-32R425B     7001811          15180 004  04/12/2015
+     56     7446 04/12/2015     7446 MESONES CALLE CECILIA     SAMSUNG    UN32J4300AGXPE  03XB3CFG7003     15180 010  09/12/2015
+     57     7447 04/12/2015     7447 SAGA FALABELLA S.A.       SAMSUNG    UN40J5500AGXPE  03Q83CTG6000     15180 010  09/12/2015
+     58     7454 04/12/2015     7454 TRELLES ALVARES CLAUDIA   EPSON      L455            UE5K040211       60070 021  10/12/2015
+     59     7458 04/12/2015     7458 SILVA ABANTO VICTOR MANUE SAMSUNG    SAMSUNG WB35F   A9PFC9AF901A     15977 001  07/12/2015
+     60     7459 04/12/2015     7459 JARAMILLO CASTILLO DE FAR SAMSUNG    SM-T210         RF2F603A15P      60070 010  09/12/2015
+     61    15200 04/12/2015    15200 CHIRA SAAVEDRA JORGE LUIS SAMSUNG    WA10F5L2UWW/PE  JLPD5BAG8004      2014 018  05/12/2015
+     62    15201 04/12/2015    15201 NAVARRETE ANA             SAMSUNG    RSA1JHSL1/XPE   0EF84ADGA003      2014 018  05/12/2015
+     63     7461 05/12/2015     7461 FARFAN CELI HECTOR WILFRE EPSON      L355            S42K205744       60070 010  09/12/2015
+     64     7462 05/12/2015     7462 NAVARRO DIOSES ELIZABETH  EPSON      L220             VGK047196       60070 010  09/12/2015
+     65     7463 05/12/2015     7463 ROJAS CALLE JEFFERSON     SAMSUNG    UN40H5500AGXPE  021R3CUF3001     15180 010  09/12/2015
+     66    15202 05/12/2015    15202 SERNA VEGA LILIA          OTROS      CAMPANA EXTRACT CCCC              2008 011  05/12/2015
+     67     7441 07/12/2015     7441 FARIAS MOSCOL CARLOS AUDO PHILIPS    HTS5593/78      PT2C13100018     30977 005  07/12/2015
+     68     7469 07/12/2015     7469 VILLALOBOS CRUZ CATALINA( GLOBAL     L48D2710        0FD120182B07     30977 001  07/12/2015
+     69    15206 07/12/2015    15206 IMAN IPANAQUE FRANCISCA   SAMSUNG    UN40H5103AGXPE  03A33CTFA040      2014 027  07/12/2015
+     70    15207 07/12/2015    15207 TALLEDO COVE;AS JOSE FRAN SAMSUNG    RSA1JTSL1/XPE   Y5SF4ADDC000      2014 004  09/12/2015
+     71    15208 07/12/2015    15208 ROJAS JUAN CARLOS         SAMSUNG    WD11J6410AX/PE  0E265ABG9001      2014 018  07/12/2015
+     72    15209 07/12/2015    15209 ADRIANZEN ZAPATA MELINA/  SAMSUNG    RT29FBRNDSP/PE  0AEL4BAG7005      2014 018  09/12/2015
+     73    15210 07/12/2015    15210 BARRANTES VARGAS JORGE HE SAMSUNG    RSA1JHSL1/XPE   0EF84ADGA000      2014 018  09/12/2015
+     74    15211 07/12/2015    15211 CURACAO CHULUCANAS        SAMSUNG    UN32EH4003GXPE  MKLGF             2014 027  09/12/2015
+     75     7456 09/12/2015     7456 PARDO TRONCO ANA (PC PLAN EPSON      L800            Q83K022130       60070 002  09/12/2015
+     76     7467 09/12/2015     7467 SANCHEZ ENCALADA DANILO J SAMSUNG    UN32F5500AGXPE  Z7D23CED5015     15180 010  09/12/2015
+     77     7476 09/12/2015     7476 CORDOVA PURCA KEREN       EPSON      L365            VH5K079934       60070 001  09/12/2015
+     78     7480 09/12/2015     7480 ZAPATA TORRES ROMAN LUACI EPSON      L220             VGQK015509      60070 010  09/12/2015
+     79     7481 09/12/2015     7481 GARCIA GUTIERREZ MAGALY   EPSON      L220            VGGK060817       60070 001  09/12/2015 CESER PIURA SRL                                                                                              P═gina :          3
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   10/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   10:20:25
+                                                     DESDE:01/12/2015  HASTA:09/12/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     80     7484 09/12/2015     7484 MAZA MORENO LUIS ALBERTO  SAMSUNG    MX-H830/PE      0AAN122FA006      1000 001  09/12/2015
+     81    15213 09/12/2015    15213 MENDOZA ALBUJAR MARIO     SAMSUNG    UN48H6400AGXPE  02573CVFA021     27141 011  09/12/2015
+     82    15214 09/12/2015    15214 BALDOCEDA CORDOVA JENY    SAMSUNG    UN48J5300AGXPE  044Z3CVG4008      2014 018  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>    45
+
+                                                                       TOTAL                               =>    45
+   050  SUCURSAL PIURA                
+
+     83     7482 09/12/2015     7482 RAMOS GUTIERREZ CESAR ALB SONY       BDP-S1200       1053281           1000 001  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     1
+
+                                                                       TOTAL SUCURSAL PIURA                =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA                   =>    46
+ GEXS EN GARANTIA EXTENDIDA SAGA    
+
+   850                                
+
+     84     7428 01/12/2015     7428 ALBAN SOLANO ROSARIO      L.G        AKB73615319     99               30977 010  01/12/2015
+     85    15196 03/12/2015    15196 AVILA RUIZ ESTEBAN [TOTTU SAMSUNG    WA12F5L6DTA/PE  CC                2008 018  05/12/2015
+     86    15197 03/12/2015    15197 RIVERA PE;A NENY [TOTTUS  L.G        WF-T1054TP/LGP  CC                2008 018  07/12/2015
+     87    15198 04/12/2015    15198 BALDEON CALLE ADALHIF [SA L.G        42PG20R         CC               30977 011  04/12/2015
+     88    15203 07/12/2015    15203 VARGAS GUAYLUPO PATRICIA  SAMSUNG    WA14N9MFP/XPE   CC                2008 018  09/12/2015
+     89    15204 07/12/2015    15204 GUERRERO DE SANCHEZ MIRIA L.G        WF-T1054TP/LGP   CC               2008 004  09/12/2015
+     90    15212 07/12/2015    15212 JUAREZ CHUQUIMARCA MARTIN CANON      SX280HS         722034001412     15977 018  09/12/2015
+     91    15216 09/12/2015    15216 CASTILLO JARAMILLO DORIS  L.G        AN-MR400H        SIN SERIE       30977 011  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     8
+
+                                                                       TOTAL                               =>     8
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA EXTENDIDA SAGA    =>     8
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>    91
+                                                                                                             ммммммм
+

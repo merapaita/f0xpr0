@@ -1,0 +1,151 @@
+*- Polizas.PRG
+*- Listados de Polizas
+*- Luis Castillo
+*- Setiembre 1994 ,Dic 1994
+*----------------------------
+*-Abriendo archivos
+
+USE OrdCom   IN 1   order tag OrdCom1  ALIAS OrdCOM
+USE IteOc    IN 2   order tag IteOc1   ALIAS IteOc
+USE Parmae   IN 3   order tag Parmae1  ALIAS Parma
+USE Artmae   IN 4   order tag Artmae1  ALIAS Produ
+USE Pecosa   IN 5   order tag Pecosa1  ALIAS Pecosa
+USE Itepec   IN 6   order tag ItePec1  ALIAS Itepec
+USE AuxCot   IN 7   order tag AuxCot1  ALIAS Auxcot
+USE Promae   IN 8   order tag Promae1  ALIAS Promae
+USE calen    IN 9   order tag calen1   ALIAS calen
+USE Iteart   IN 10  order tag iteart1  ALIAS iteart
+
+Vmens08 = 'No hay registros para procesar'
+
+Public vfecfin,vfecini
+
+IF escolor
+   DEFINE POPUP LisPrg FROM 10,51 SHADOW COLOR &l_col
+ELSE
+   DEFINE POPUP LisPrg FROM 10,51 COLOR SCHEME c_popup
+ENDIF
+
+DEFINE BAR 1 OF LisPrg PROMPT "\<Entrada  "
+DEFINE BAR 2 OF LisPrg PROMPT "\<Salida   "
+
+ON SELECTION POPUP LisPrg DEACTIVATE POPUP
+
+ACTIVATE POPUP LisPrg
+
+vChoice = BAR()
+
+IF LASTKEY()=27
+   close data
+   RETURN
+ENDIF
+
+DEFINE WINDOW LisPrg FROM 2,0 TO 23,79 COLOR SCHEME 10 ;
+   TITLE " Listados "
+
+DO CASE
+   CASE BAR()=1
+     sele ordcom
+     IF EOF()
+       DO standby WITH Vmens08
+       RETURN
+     ENDIF
+     DEFINE WINDOW Lis FROM 5,5 TO 18,75 FLOAT DOUBLE COLOR SCHEME 5
+     ACTIVATE WINDOW Lis
+     STORE 1        TO vToCta,vTip
+     STORE SPACE(3) TO vCta
+     STORE DATE()   TO vFecIni, vFecFin
+     @ 01,01 SAY " Todas las Fuentes: " GET vToCta  FUNCTION '*RNH \<Si;\<No' SIZE 1,10,6   VALID VALTOD(vToCta,3,22)
+
+     @ 03,01 SAY "            Fuente: "
+     @ 03,22 GET vCta   WHEN vToCta=2 VALID Val_para(vCta,"CODFTE",' ',22,20)
+     
+     @ 08,01 SAY "         Fecha :"
+     @ 09,22 GET vFecIni  PICTURE '@D' COLOR SCHEME 7
+     @ 09,32 GET vFecFin  PICTURE '@D' VALID (vFecFin >= vFecIni) COLOR SCHEME 7
+
+     @ 11,18 GET okcancel FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+     READ CYCLE
+
+     RELEASE WINDOW Lis
+     IF OkCancel = 1
+        ACTIVATE WINDOW STANDBY
+        xColor = '*' + SET('COLOR')
+        @ 01,02 SAY 'Espere un momento...Reporte en proceso' COLOR &xColor
+        SELECT ordcoM
+        set relation to periodo+numoc into iteoc
+        SET SKIP TO ITEOC
+        set filter to iif(vToCta=1,.t.,substr(Ordcom.Codcal,5,3)=alltrim(vCta)) and BETWEEN(ordcom.FecOc,vFecIni,vFecFin) AND ESTADO='5'
+        GO TOP
+        DEACTIVATE WINDOW STANDBY
+        IF !EOF()
+           DO REPORTE WITH 2,"LisPeb"," Listado P¢liza de Entrada de Bienes "
+        ELSE
+           DO standby WITH Vmens08
+        ENDIF
+      ENDIF        
+   case bar()=2   
+      
+     sele pecosa
+     IF EOF()
+       DO standby WITH Vmens08
+       RETURN
+     ENDIF
+     DEFINE WINDOW Lis FROM 5,5 TO 18,75 FLOAT DOUBLE COLOR SCHEME 5
+     ACTIVATE WINDOW Lis
+     STORE 1        TO vToCta,vTip
+     STORE SPACE(3) TO vCta
+     STORE DATE()   TO vFecIni, vFecFin
+     @ 01,01 SAY " Todas las Fuentes: " GET vToCta  FUNCTION '*RNH \<Si;\<No' SIZE 1,10,6   VALID VALTOD(vToCta,3,22)
+
+     @ 03,01 SAY "            Fuente: "
+     @ 03,22 GET vCta   WHEN vToCta=2 VALID Val_para(vCta,"CODFTE",' ',22,20)
+     
+     @ 08,01 SAY "         Fecha :"
+     @ 09,22 GET vFecIni  PICTURE '@D' COLOR SCHEME 7
+     @ 09,32 GET vFecFin  PICTURE '@D' VALID (vFecFin >= vFecIni) COLOR SCHEME 7
+
+     @ 11,18 GET okcancel FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+     READ CYCLE
+
+     RELEASE WINDOW Lis
+     IF OkCancel = 1
+        ACTIVATE WINDOW STANDBY
+        xColor = '*' + SET('COLOR')
+        @ 01,02 SAY 'Espere un momento...Reporte en proceso' COLOR &xColor
+        SELECT pecosa
+        set relation to periodo+numpec into itepec
+        SET SKIP TO ITEpec
+        set filter to iif(vToCta=1,.t.,substr(Pecosa.Codcal,5,3)=alltrim(vCta)) and BETWEEN(pecosa.FecPec,vFecIni,vFecFin)
+        GO TOP
+        DEACTIVATE WINDOW STANDBY
+        IF !EOF()
+           DO REPORTE WITH 2,"LisPSB"," Listado P¢liza de Salida de Bienes "
+        ELSE
+           DO standby WITH Vmens08
+        ENDIF
+      ENDIF        
+ENDCASE
+RELEASE WINDOW LisPrg
+close data
+RETURN
+
+PROCEDURE BUSCA 
+*--------------
+as=alias()
+SELECT iteart
+seek 'B'+iteoc.codart
+
+xx=iif(found(),iteart.Preuni,0)
+select (as)
+return xx 
+
+PROCEDURE BUSCA1
+*--------------
+as=alias()
+SELECT iteart
+seek 'B'+iteoc.codart
+
+xx=iif(found(),iteart.CODART,' -- ')
+select (as)
+return xx 

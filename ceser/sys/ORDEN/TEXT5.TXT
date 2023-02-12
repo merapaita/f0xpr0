@@ -1,0 +1,49 @@
+ CESER PIURA SRL                                 INGRESO DE ORDENES POR EMISOR - TALLER                                 P gina :          1
+         CESER                                   ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                                 Fecha  : 27/09/2022
+  AV.SAN TEODORO N§442                  FECHA  : 27/09/2022                 AL : 27/09/2022                             Hora   :   12:23:38
+                                        EMISOR : 050  CESER PIURA           AL : 950  WENCI CHAUCA        
+                                        TALLER : 002  TALLER                AL : 066  PROVEEDOR S/D       
+                                        GTIA.  : FGAR FUERA DE GARANTIA     AL : VENT VENTAS              
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³      Nø    O/R      S/S     FECHA    FCH.VTA  DOC. VENTA       MARCA MODELO         SERIE         CLIENTE                   TIP   ESTA   ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ TALLER : 006  TALLER VIDEO                  
+      EMISOR : 050  CESER PIURA                   
+        1    52946          27/09/2022 12/06/2021 BNEA-2222      04   UN50TU8000GXPE 09MA3CXR401592 AGUIRRE SILUPU NORMA      GARA
+                                                                                                TOTAL EMISOR 050  =====>       1
+      EMISOR : 090  IRT                           
+        1    52948          27/09/2022 15/10/2020 JKJHB          04   UN50TU8000GXPE                CORREA CHUQUIHUANGA YHON  GARA
+                                                                                                TOTAL EMISOR 090  =====>       1
+                                                                                                                         -------
+                                                                                                TOTAL TALLER 006  =====>       2
+ TALLER : 007  TALLER CAMARAS                
+      EMISOR : 050  CESER PIURA                   
+        1    52945          27/09/2022                           04   SM-A505G       R28M52LPDVL    YAMUNAQUE ZAPATA VERONICA FREC
+                                                                                                TOTAL EMISOR 050  =====>       1
+                                                                                                                         -------
+                                                                                                TOTAL TALLER 007  =====>       1
+ TALLER : 013  DOMICILIO L. BLANCA           
+      EMISOR : 050  CESER PIURA                   
+        1    35091          27/09/2022 31/08/2020 1225 GEX       04   REFRIGERADORA  KKKDKD         ZIMIC PALACIOS ADRIANA    GARA
+                                                                                                TOTAL EMISOR 050  =====>       1
+      EMISOR : 090  IRT                           
+        1    35092          27/09/2022 13/09/2022 KKKFKFK        04   RS65R5691B4/PE KKDKDKD        ROMAN ZETA DORALISA       GARA
+                                                                                                TOTAL EMISOR 090  =====>       1
+                                                                                                                         -------
+                                                                                                TOTAL TALLER 013  =====>       2
+ TALLER : 016  DOMICILIO VIDEO               
+      EMISOR : 050  CESER PIURA                   
+        1    52944          27/09/2022                           96   49UJ6510-SA    704EMZL19717   NIZAMA NACIMIENTO ROSA    FGAR
+                                                                                                TOTAL EMISOR 050  =====>       1
+      EMISOR : 090  IRT                           
+        1    35093          27/09/2022 01/10/2020 KDKDK          04   UN58TU7000GXPE                NEIRA CHAMBA LEOPOLDO     GARA
+        2    35095          27/09/2022 13/08/2021 JJFJFJ         04   UN58TU7000GXPE 09L93CUR102433 REYES COVE;A JAIRO RAFAEL GARA
+                                                                                                TOTAL EMISOR 090  =====>       2
+                                                                                                                         -------
+                                                                                                TOTAL TALLER 016  =====>       3
+ ==========================================================================================================================================
+                                                                                                 TOTAL INGRESADOS =====>       8
+ ==========================================================================================================================================
+

@@ -1,0 +1,22 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   19/03/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   10:57:50
+                                                     DESDE:01/03/2015  HASTA:19/03/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   050  SUCURSAL PIURA                
+
+
+                                                                       TOTAL MARZO                         =>    66
+
+                                                                       TOTAL SUCURSAL PIURA                =>    66
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA             =>    66
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>    66
+                                                                                                             ммммммм
+

@@ -1,0 +1,356 @@
+worker = IIF( LTRIM(UPPER(GETENV('WORKER'))) = 'ON', .T.,.F. )
+SET PROCEDURE TO Adm_lib
+DO Fox_Ambi
+cia = 'SOCIEDAD DE BENEFICENCIA DE PIURA'
+
+SET PATH TO H:\SICGDATA\DATA2005
+*SET PATH TO \GLCH\SBP\SICG\DATAPR
+PUBLIC cAno,vOpcion,OkCancel,cProc
+
+CLOS DATA
+
+DO Pantalla
+DO Escoge
+IF !EMPTY(cProc)
+	DO &cProc
+ENDIF
+
+RETURN
+
+PROCEDURE Pantalla
+*-----------------
+USE Parmae IN 0 ORDER TAG Parmae1 ALIAS Parma
+SELE Parma
+DEFINE WINDOW LIS FROM 5,15 TO 18,65 FLOAT DOUBLE TITLE '' COLOR SCHEME 5
+ACTIVATE WINDOW LIS
+
+STORE 1 TO vOpcion,OkCancel
+cAno  = YEAR(DATE())
+@ 02,01 SAY "       Opciones : " 
+@ 01,20 GET vOpcion  FUNCTION '^ Usuarios;Genera Claves;Retorno Claves;Cambio Accesos'
+@ 07,01 SAY "  Periodo a Trabajar : "
+@ 07,25 GET cAno PICTURE '9,999'
+@ 10,10 GET OkCancel FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+READ CYCLE
+RELEASE WINDOW LIS
+USE IN Parma
+RETURN
+
+PROCEDURE Escoge
+*---------------
+IF LASTKEY()=27 OR OkCancel = 2
+	cProc = ''
+	RETURN
+ENDIF
+IF !EMPTY(cAno)
+	cRuta = "h:\SICGDATA\DATA"+iif(cAno<2000,right(str(cano,4),2),str(cano,4))
+ ELSE
+	DO StandBy WITH "Ruta Especificada no es correcta"
+	RETURN .T.
+ENDIF
+SET PATH TO &cRuta
+DO CASE
+	CASE vOpcion = 1
+		cProc = 'Usuarios'
+	CASE vOpcion = 2
+*		cProc = 'GenCla'
+	CASE vOpcion = 3
+		cProc = 'RetCla'
+	CASE vOpcion = 4
+		cProc = 'CamAcc'
+ENDCASE
+RETURN
+
+Function GenCla
+*--------------
+*---------------------------------------------
+* Funcion que permite Generar Claves de Acceso
+*---------------------------------------------
+CLOS DATA
+IF YESNO("Esta seguro de Generar Claves")
+	USE Claves IN 0
+	USE Usuario IN 0 ORDER TAG Usuario1
+	SELE Usuario
+	SCAN
+		cClave = ''
+		FOR I = 1 TO 6
+			cClave = cClave+dig()
+		ENDFOR
+		
+		cClave = chrtran(cClave,'ABCDEFGHIJKLMN¥OPQRSTUVWXYZ0123456789',;
+								'XWAQSD!R$1Z2LH)^CEP&67UIYMTxw%/-+}{?~«¬@›_#')
+		
+		SELE Claves
+		LOCATE FOR ALLTRIM(Claves.User) = ALLTRIM(Usuario.Usuario)
+		IF FOUND()
+			IF f_Lock(1)
+				REPLACE Claves.Clave WITH cClave
+			ENDIF
+		 ELSE
+			IF f_Appd()
+				REPLACE Claves.User  WITH Usuario.Usuario;
+						Claves.Clave WITH cClave
+			ENDIF
+		ENDIF
+		SELE Usuario
+		IF SEEK(Claves.User)
+			REPLACE Clave WITH cClave
+		ENDIF
+	ENDSCAN
+	USE IN Claves
+	USE IN Usuario
+ENDIF
+RETURN
+
+Function RetCla
+***************
+PRIVATE cClave
+CLOS DATA
+USE Claves EXCLU IN 1
+ZAP
+USE Usuario IN 2
+SELE Usuario
+SCAN
+	SELE Claves
+	APPEND BLANK
+	REPLACE User WITH Usuario.Usuario, Clave WITH Usuario.Clave
+	SELE Usuario
+ENDSCAN
+SELE Claves
+GO TOP
+SCAN
+	cClave = chrtran(Claves.Clave,'XWAQSD!R$1Z2LH)^CEP&67UIYMTxw%/-+}{?~«¬@›_#',;
+			'ABCDEFGHIJKLMN¥OPQRSTUVWXYZ0123456789')
+	REPLACE Claves.Clave2 WITH cClave
+ENDSCAN
+USE in claves
+RETURN
+
+PROCEDURE Usuarios
+*-----------------
+PRIVATE OkCancel,cUsua
+CLOS DATA
+USE Usuario IN 0 ORDER TAG Usuario1 ALIAS Usua
+USE Claves IN 0
+
+STORE 1 TO OkCancel
+STORE SPACE(10) TO cUsua
+ON KEY LABEL F5 DO CambiaCla
+DEFINE WINDOW WinCla FROM 5,15 TO 12,65 FLOAT DOUBLE TITLE '[F5] Genera Clave' COLOR SCHEME 5
+ACTIVATE WINDOW WinCla
+*@ 1,30 SAY IIF(EMPTY(Usua.Clave),'Sin Clave','Con Clave')
+@ 2,2 SAY 'Nombre: ' GET cUsua  VALID Val_Fun("Usua","Usuario","Nombre",@cUsua,1,2,22) AND SHGET(cUsua)
+@ 4,10 GET OkCancel FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+READ CYCLE
+RELEASE WINDOW WinCla
+CLOS DATABASES
+RETURN
+
+PROCEDURE CambiaCla
+*------------------
+PRIVATE xCla,xReg
+xCla = CambiaCla1()
+SELE Claves
+xReg = RECNO()
+GO TOP
+DO WHILE .T.
+	DO CASE
+		CASE xCla == ALLTRIM(Clave) AND xReg = RECNO()
+			* SKIP
+		CASE xCla == ALLTRIM(Clave) AND xReg # RECNO()
+			GO xReg
+			xCla = CambiaCla1()
+			GO TOP
+		CASE EOF()
+			EXIT
+	ENDCASE
+	SKIP 1
+	IF EOF()
+		EXIT
+	ENDIF
+ENDDO
+DO RetCla
+RETURN
+
+PROCEDURE CambiaCla1
+*-------------------
+PRIVATE cClave,cAlias
+cAlias = ALIAS()
+
+IF YesNo('Esta Seguro de Cambiar la Clave de:'+Usua.Usuario)
+	SELE Usua
+	cClave = ''
+	FOR I = 1 TO 6
+		cClave = cClave+dig()
+	ENDFOR
+	
+	cClave = chrtran(cClave,'ABCDEFGHIJKLMN¥OPQRSTUVWXYZ0123456789',;
+							'XWAQSD!R$1Z2LH)^CEP&67UIYMTxw%/-+}{?~«¬@›_#')
+	
+	SELE Claves
+	LOCATE FOR ALLTRIM(Claves.User) = ALLTRIM(Usua.Usuario)
+	IF FOUND()
+		IF f_Lock(1)
+			REPLACE Claves.Clave WITH cClave
+		ENDIF
+	 ELSE
+		IF f_Appd()
+			REPLACE Claves.User  WITH Usua.Usuario;
+					Claves.Clave WITH cClave
+		ENDIF
+	ENDIF
+	SELE Usua
+	IF SEEK(Claves.User)
+		REPLACE Clave WITH cClave
+	ENDIF
+
+ENDIF
+SELE (cAlias)
+SHOW GETS
+RETURN cClave
+
+Function CamAcc
+*--------------
+*---------------------------------------------
+* Funcion que Cambiar los Accesos de Un Usuario A Otro
+*---------------------------------------------
+PRIVATE OkCancel,cUsuaO,cUsuaD
+USE Usuario	 IN 0 ORDER TAG Usuario1	ALIAS Usua
+USE IteUsu	 IN 0 ORDER TAG IteUsu1
+USE IteUsuOp IN 0 ORDER TAG IteUsuOp1
+
+STORE 1 TO OkCancel
+STORE SPACE(10) TO cUsuaO,cUsuaD
+DEFINE WINDOW WinCla FROM 5,10 TO 14,75 FLOAT DOUBLE TITLE 'Cambio de Accesos' COLOR SCHEME 5
+ACTIVATE WINDOW WinCla
+@ 1,2 SAY ' Usuario Origen: ' GET cUsuaO  VALID Val_Fun("Usua","Usuario","Nombre",@cUsuaO,1,1,31) AND SHGET(cUsuaO)
+@ 3,2 SAY 'Usuario Destino: ' GET cUsuaD  VALID Val_Fun("Usua","Usuario","Nombre",@cUsuaD,1,3,31) AND SHGET(cUsuaD)
+@ 6,10 GET OkCancel FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+READ CYCLE
+RELEASE WINDOW WinCla
+
+IF LASTKEY()#27
+	IF OkCancel=1 AND !EMPTY(cUsuaO) AND !EMPTY(cUsuaD)
+		Cla1 = chrtran(ALLTRIM(cUsuaO),'ABCDEFGHIJKLMN¥OPQRSTUVWXYZ0123456789',;
+								       'XWAQSD!R$1Z2LH)^CEP&67UIYMTxw%/-+}{?~«¬@›_#')
+		Cla2 = chrtran(ALLTRIM(cUsuaD),'ABCDEFGHIJKLMN¥OPQRSTUVWXYZ0123456789',;
+								       'XWAQSD!R$1Z2LH)^CEP&67UIYMTxw%/-+}{?~«¬@›_#')
+
+		SELE Usua
+		IF SEEK(cUsuaO)
+			SELE IteUsu
+			SET FILTER TO UsuCla=Cla1
+			REPLACE UsuCla WITH Cla2 ALL
+
+			SELE IteUsuOp
+			SET FILTER TO User=Cla1
+			REPLACE User WITH Cla2 ALL
+			DO StandBy WITH 'BINGOOO...  Cambiados'
+		ELSE
+			DO StandBy WITH 'Usuario no Encontrado'
+		ENDIF
+	ENDIF
+ENDIF
+CLOS DATA
+RETURN
+
+
+FUNCTION SHGET
+*------------
+PARAMETERS xUsua
+IF SEEK(xUsua)
+	@ ROW()+1,31 SAY IIF(EMPTY(Usua.Clave),'Sin Clave','Con Clave')
+ENDIF
+SHOW GETS
+RETURN .T.
+
+FUNCTION Dig
+*-----------
+*-------------------------------
+* Funcion que Debuelve un digito
+*-------------------------------
+
+xDig = 14
+
+DO WHILE xDig = 14
+	xDig = VAL(ALLTRIM(STR(RAND()*36)))
+ENDDO
+
+DO CASE
+	CASE xDig = 0
+		xDeb = 'A'
+	CASE xDig = 1
+		xDeb = 'B'
+	CASE xDig = 2
+		xDeb = 'C'
+	CASE xDig = 3
+		xDeb = 'D'
+	CASE xDig = 4
+		xDeb = 'E'
+	CASE xDig = 5
+		xDeb = 'F'
+	CASE xDig = 6
+		xDeb = 'G'
+	CASE xDig = 7
+		xDeb = 'H'
+	CASE xDig = 8
+		xDeb = 'I'
+	CASE xDig = 9
+		xDeb = 'J'
+	CASE xDig = 10
+		xDeb = 'K'
+	CASE xDig = 11
+		xDeb = 'L'
+	CASE xDig = 12
+		xDeb = 'M'
+	CASE xDig = 13
+		xDeb = 'N'
+	CASE xDig = 14
+		xDeb = '¥'
+	CASE xDig = 15
+		xDeb = 'O'
+	CASE xDig = 16
+		xDeb = 'P'
+	CASE xDig = 17
+		xDeb = 'Q'
+	CASE xDig = 18
+		xDeb = 'R'
+	CASE xDig = 19
+		xDeb = 'S'
+	CASE xDig = 20
+		xDeb = 'T'
+	CASE xDig = 21
+		xDeb = 'U'
+	CASE xDig = 22
+		xDeb = 'V'
+	CASE xDig = 23
+		xDeb = 'W'
+	CASE xDig = 24
+		xDeb = 'X'
+	CASE xDig = 25
+		xDeb = 'Y'
+	CASE xDig = 26
+		xDeb = 'Z'
+	CASE xDig = 27
+		xDeb = '0'
+	CASE xDig = 28
+		xDeb = '1'
+	CASE xDig = 29
+		xDeb = '2'
+	CASE xDig = 30
+		xDeb = '3'
+	CASE xDig = 31
+		xDeb = '4'
+	CASE xDig = 32
+		xDeb = '5'
+	CASE xDig = 33
+		xDeb = '6'
+	CASE xDig = 34
+		xDeb = '7'
+	CASE xDig = 35
+		xDeb = '8'
+	CASE xDig = 36
+		xDeb = '9'
+ENDCASE
+
+RETURN xDeb

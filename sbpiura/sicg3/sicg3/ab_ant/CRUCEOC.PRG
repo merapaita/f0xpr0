@@ -1,0 +1,18 @@
+USE PECOSA IN 1  ORDER TAG PECOSA1
+SELE 1
+SET FILT TO CODFTE='PRP'
+GO TOP
+VPERIODO='95'
+VFUENTE='PRP'
+I=1
+F=2
+SET DEVICE TO file PECOPRP.txt
+FOR I=1 TO 1877
+	SEEK VPERIODO+ALLTRIM(PADL(I,4,'0'))+VFUENTE
+	IF !FOUND()
+       xnum= VPERIODO+' '+PADL(I,4,'0')+' '+VFUENTE
+       @ F,5 SAY 'No encontrado el N§ : '+xnum
+       F=F+1
+	endif
+ENDFOR
+set device to scree	

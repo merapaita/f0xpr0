@@ -1,0 +1,45 @@
+ CESER PIURA SRL                                                                                                     P gina :         1
+        CESER                                     INGRESO DE ORDENES POR TECNICO - PROVEEDOR                         Fecha  :01/04/2016
+   AV.SAN TEODORO                                 ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                         Hora   :  09:18:27
+                                                DEL        : 31/03/2016   AL        : 31/03/2016
+                                                DEL TECNICO:        261   AL TECNICO:  204622680
+                                                DEL TALLER : 002          AL TALLER : 066 
+                                                DEL EMISOR : 050          AL EMISOR : 900 
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ N§   S/S    FECHA DE    MODELO           CLIENTE        TELEFONO ³   O/R    FECHA DE      ESTADO ACTUAL       FECHA DE  OBSERVACIONES³
+³               S/S                                                ³           EMISION                           ESTADO                ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ TECNICO :     1000 ALMACEN RECEPCION             
+
+   1     8267 31/03/2016 PC1737      CARBONEL MOGOLLON JE 96808739 ³    8267 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   2     8268 31/03/2016 40D50       SAGA FALABELLA S.A.   6161000 ³    8268 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   3     8269 31/03/2016 40K221W     SAGA FALABELLA S.A.   6161000 ³    8269 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   4     8270 31/03/2016 50K381UW    SAAVEDRA LAMAR TEODO        0 ³    8270 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   5     8271 31/03/2016 UN43JU6000G SAGA FALABELLA S.A.   6161000 ³    8271 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   6     8273 31/03/2016 UN40J6500AG SAGA FALABELLA S.A.   6161000 ³    8273 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   7    15823 31/03/2016 UN40D6000SG SILVA AYOSA EDUARDO    313343 ³   15823 31/03/2016 DIAGNOSTICO EN         31/03/2016               
+     TECNICO :      1000     7
+
+
+ TECNICO :     2008 CHUQUIHUANCA NI¥O JHON        
+
+   1     8276 31/03/2016 WA1AV9IFP/Y ARESTEGUI ALVAREZ JA 97110066 ³    8276 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+     TECNICO :      2008     1
+
+
+ TECNICO :    15180 RAMIREZ CALDERON ANGEL        
+
+   1     8272 31/03/2016 RMCTPJ1AP2  VALLE GUERRERO VILMA 95653308 ³    8272 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   2     8274 31/03/2016 42LD650-SA. ROSAS FARFAN AUGUSTO 96844939 ³    8274 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   3     8277 31/03/2016 UN40D5500RG CIRUGIA Y CIRUJANOS  96963778 ³    8277 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+     TECNICO :     15180     3
+
+
+ TECNICO :    60070 SANDOVAL SANDOVAL ALEXANDER   
+
+   1     8275 31/03/2016 L365        CASTILLO DURAN LUIS  96971396 ³    8275 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+   2     8278 31/03/2016 L555        VILLEGAS NAVARRO JUA        0 ³    8278 31/03/2016 ASIGNACION DE O/R      31/03/2016               
+     TECNICO :     60070     2
+
+
+

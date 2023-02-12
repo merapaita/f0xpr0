@@ -1,0 +1,48 @@
+C E S E R                                                     N§ XXXXXXXX  
+              S O L I C I T U D   D E    S E R V I C I O                   
+                                                                           
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ 
+³CODIGO MARCA    :                                                       ³ 
+³CODIGO DE MODELO:                                                       ³ 
+³NUMERO DE SERIE :                                                       ³ 
+³TIPO DE ATENCION:                                                       ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³CLIENTE         :                                                       ³ 
+³DIRECCION       :                                                       ³ 
+³DISTRITO        :                                                       ³ 
+³CIUDAD          :                                                       ³ 
+³TELEFONOS       :                                                       ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³FECHA RECEPCION :            HORA :        FECHA COMPROMISO :           ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³EMISOR          :                                                       ³ 
+³TIPO SERV.      :                                                       ³ 
+³PAGO A CUENTA   :                MONEDA :                               ³ 
+³DESTINO         : R REPARACION                                          ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³           S I N T O M A S         ³         A C C E S O R I O S        ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+³                                   ³                                    ³ 
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ 
+³O B S E R V A C I O N E S - E S T A D O       ³C L I E N T E            ³ 
+³                                              ³                         ³ 
+³                                              ³                         ³ 
+³                                              ³                         ³ 
+³                                              ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ³ 
+³                                              ³     FIRMA ACEPTACION    ³ 
+³                                              ³REVISAR CONTRATO AL DORSO³ 
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ 

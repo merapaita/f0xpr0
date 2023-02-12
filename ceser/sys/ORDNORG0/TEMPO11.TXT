@@ -1,0 +1,36 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   21/11/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   12:01:54
+                                                     DESDE:21/11/2015  HASTA:21/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   050  SUCURSAL PIURA                
+
+      1     7359 21/11/2015     7359 NEGOCIOS E INVERSIONES VA SAMSUNG    UN32F5500AGXPE  Z7D23CED4010     30977 001  21/11/2015
+      2    15116 21/11/2015    15116 CASTILLO VAZQUEZ LUIS SAN SAMSUNG    LAVADORA        FFSA              2008 011  21/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     2
+
+                                                                       TOTAL SUCURSAL PIURA                =>     2
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA             =>     2
+ GARA EN GARANTIA                   
+
+   090                                
+
+      3    15117 21/11/2015    15117 HUAMAN QUISPE CAROLINA    SAMSUNG    WA10F5L4UWA/PE  002               1000 011  21/11/2015
+      4    15118 21/11/2015    15118 ESCOBAR PALACIOS VANESSA  SAMSUNG    WA90H4400SW/PE  03                1000 011  21/11/2015
+
+                                                                       TOTAL NOVIEMBRE                     =>     2
+
+                                                                       TOTAL                               =>     2
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA                   =>     2
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>     4
+                                                                                                             ммммммм
+

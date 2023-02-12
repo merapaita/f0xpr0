@@ -1,0 +1,14 @@
+
+Reg. N§  USER       CLAVE      CLAVE2    
+-------------------------------------
+      1  ADMIN      UxPXZR     V0RAKH    
+      2  CARMELA    wAZ^Z^     1CKOKO    
+      3  CLARA      X/?1x$     A38J0I    
+      4  DANY       H?XR/X     N8AH3A    
+      5  JULIO      -RM2M7     4HYLYU    
+      6  LUCHO      UE{1++     VQ7J55    
+     10  ROSARIO    IR/UPT     WH3VRZ    
+     11  TIMOTEO    %A1w?Z     2CJ18K    
+     24  MAGDA      D}!+%%     F6G522    
+     25  MARIXA     P6H6%Q     RTNT2D    
+     26  MILUSKA    UD+}21     VF56LJ    

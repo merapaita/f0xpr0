@@ -1,0 +1,17 @@
+
+ CORP.TECNOLOGICA DE SERVI                                 PAGINA   :        1
+       CESER                                               FECHA    : 13/09/2006
+  CALLE CUZCO 1099                                         PROGRAMA : AGCR2011
+
+                              RELACION  DE  TABLAS
+
+     TABLA DE  ╞╞  BANCOS                        
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                  FACTOR           Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      001      BANCO CONTINENTAL                                  0.00
+      002      BANCO DE COMERCIO                                  0.00
+
+ 

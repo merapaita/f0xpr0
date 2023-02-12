@@ -1,0 +1,67 @@
+* RepOno.Prg
+* Autor :Marco Rodriguez Abad
+*
+
+CLOS DATA
+USE Parmae IN 1 ORDER TAG Parmae1 ALIAS Parma
+
+*- Mensajes de aviso al usuario
+vmens01 = 'No hay Registros'
+
+DO LISTA
+DO fin_opcion
+RETURN
+
+PROCEDURE lista
+*--------------
+DEFINE WINDOW LIS FROM 09,15 TO 16,65 FLOAT DOUBLE TITLE 'Reporte de Onomasticos' COLOR SCHEME 5
+ACTIVATE WINDOW LIS
+
+cMes = SPACE(2)
+@ 01,01 SAY " Mes : " GET cMes  PICTURE '999' valid val_para(cMes,'FECMES',' ',17,18)
+@ 03,10 GET OKCANCEL FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+
+READ CYCLE
+
+RELEASE WINDOW LIS
+
+IF OKCANCEL = 1
+	SELE MaeSoc.CodCon,MaeSoc.Estado,ApeAfi,NomAfi,parent,IteSoc.fecNac,PADL(MONT(IteSoc.FecNac),2,'0')+PADL(DAY(IteSoc.FecNac),2,'0')+PADL(YEAR(IteSoc.FecNac),4,'0') AS FN;
+		FROM MaeSoc,IteSoc;
+		WHERE MaeSoc.CodCon = IteSoc.CodCon AND Parent = '00' AND MaeSoc.Estado#'99' AND MaeSoc.Estado#'90' AND PADL(MONT(IteSoc.FecNac),2,'0')=cMes;
+		INTO CURSOR xTbl;
+		ORDER BY FN
+		
+		IF _Tally > 0
+*			SELE xTbl
+*			BROW NORM
+*			susp
+			do reporte with 2,"RepOno",'Cobranzas Diarias',2
+		ELSE
+			DO STANDBY WITH vmens01
+		ENDIF
+ENDIF
+
+RETURN
+
+
+PROCEDURE fin_opcion
+*-------------------
+CLOSE DATA
+RESTORE SCREEN FROM principal
+RETURN
+
+
+
+
+
+
+
+*****************
+*cMes = '01'
+*SELE MaeSoc.CodCon,MaeSoc.Estado,ApeAfi,NomAfi,parent,IteSoc.fecNac,PADL(MONT(IteSoc.FecNac),2,'0')+PADL(DAY(IteSoc.FecNac),2,'0')+PADL(YEAR(IteSoc.FecNac),4,'0') AS FN;
+*	FROM MaeSoc,IteSoc;
+*	WHERE MaeSoc.CodCon = IteSoc.CodCon AND Parent = '00' AND MaeSoc.Estado#'99' AND MaeSoc.Estado#'90' AND PADL(MONT(IteSoc.FecNac),2,'0')=cMes ;
+*	INTO CURSOR xTbl;
+*	ORDER BY FN
+

@@ -1,0 +1,196 @@
+*------------------------------------------------------
+* PROGRAMA: Indexa.prg
+* OBJETIVO: Rutina de Organizaci¢n archivos
+*           Crea ¡ndices compuestos y compacta la data.
+* Autor   : SECS
+*-------------------------------------------------------
+PARAMETER _fil
+
+PRIVATE _auto, _path, ss, pos
+ss=SET('PATH')
+pos = AT(";",ss)
+_path=IIF(pos=0,ss,SUBSTR(ss,1,AT(";",ss)-1))
+
+_auto = IIF( PARAMETER()>0,.T.,.F.)
+
+CLOSE DATA
+
+IF !WEXIST("msg2user")
+   DEFINE WINDOW MSG2USER FROM 19,27 TO 23,77
+ENDIF
+
+IF !_auto
+
+  IF escolor
+    DEFINE POPUP _yt  FROM 6,55          SHADOW COLOR &L_COL
+  ELSE
+    DEFINE POPUP _yt  FROM 6,55          COLOR SCHEME C_POPUP
+  ENDIF
+
+  DEFINE BAR  1 OF _yt PROMPT "\<a Par metros  "
+  DEFINE BAR  2 OF _yt PROMPT "\<b Cobranzas   "
+  DEFINE BAR  3 OF _yt PROMPT "\<c Ingresos    "
+  DEFINE BAR  4 OF _yt PROMPT "\<d Socios      "
+  DEFINE BAR  5 OF _yt PROMPT "\<e Promotores  "
+  DEFINE BAR  6 OF _yt PROMPT "\-"
+  DEFINE BAR  7 OF _yt PROMPT "\<f TODOS       "    
+  
+  ON SELECTION POPUP _yt DO ORGANIZA WITH BAR()
+  ACTIVATE POPUP _yt
+
+  RELEASE POPUP _yt
+
+ELSE
+  x = _num(_fil)
+  DO organiza WITH x
+ENDIF
+
+RETURN
+
+
+PROCEDURE organiza
+*-----------------
+PARAMETER cual
+
+DEFINE WINDOW Working   FROM 02,40 TO 23,76 FLOAT   COLOR SCHEME 1
+ACTIVATE WINDOW Working
+
+CLOSE DATA
+SET EXCLUSIVE ON
+SET TALK ON
+_con = SET('CONSOLE')
+SET CONSOLE ON
+
+ACTIVATE WINDOW Working
+
+CLEAR
+
+IF cual = 1 or cual=7
+ *-Archivo de Parametros
+  USE ParMae EXCLUSIVE
+  PACK
+  =ordena("Tipo+allt(Codigo)+allt(CodigoAux)","ParMae1")
+  =ordena("TIPO+DESCRI+CODIGO+CODIGOAUX","ParMae2")
+  =ordena("DESCRI","ParMae3","TIPO='CODRET'")
+  USE
+ENDIF
+
+IF cual = 2 or cual=7
+ *-Archivo del Calendario
+  USE maecob EXCLUSIVE
+  PACK
+  =ordena("CODIGO","MAECOB1")
+  =ordena("APELLI+NOMBRE","MAECOB2")
+  =ordena("LIBELE","MAECOB3")
+  USE
+  USE ITEcob EXCLUSIVE
+  PACK
+  =ordena("CODCON+NumCob","ITECOB1")
+  =ordena("CODCON+STR(DAY(FECCOB),2)+STR(MONTH(FECCOB),2)+STR(YEAR(FECCOB),2)","ITECOB2")
+  =ordena("CODCOB","ITECOB3")
+  =ordena("CODCON+DTOC(FecPag,1)","ITECOB4")
+  USE
+  
+  USE KarSSF EXCLUSIVE
+  PACK
+  =ordena("CODCON+TIPO+CORREL","KarSSF1")
+  =ordena("CODCON+DTOC(FECHA,1)+DTOC(FECCOB,1)","KarSSF2")
+
+  USE Servicio EXCLUSIVE
+  PACK
+  =ordena("NumSer","Servicio1")
+  =ordena("CODCON+NUMAFI","Servicio2")
+  =ordena("CODCON+DTOC(FECSER,1)","Servicio3")
+
+  USE maePER EXCLUSIVE
+  PACK
+  =ordena("CODIGO","MAEPER1")
+  =ordena("APELLI+NOMBRE","MAEPER2")
+  =ordena("LIBELE","MAEPER3")
+  USE
+ 
+endif
+
+IF cual = 3 or cual=7
+ *-Archivo del Presupuesto
+  USE INGRESO EXCLUSIVE
+  PACK
+  =ordena("CODIGO","INGRESO1")
+  USE
+  USE gastos EXCLUSIVE
+  PACK
+  =ordena("CODIGO","gastos1")
+  USE
+endif
+
+if cual = 4 or cual=7
+
+ *-Archivo de Ingresos
+  USE maesoc  EXCLUSIVE
+  PACK
+  =ordena("CODCON","MAESOC1")
+  =ordena("APELLI+NOMBRE","MAESOC2")
+  =ordena("LIBELE","MAESOC3")
+  =ordena("CODPRO","MAESOC4")
+  =ordena("CODINS+CODCON","MAESOC5")
+  USE
+  USE ITESOC  EXCLUSIVE
+  PACK
+  =ordena("CODCON+NumAfi","ITESOC1")
+  USE  
+  
+endif
+
+if cual = 5 or cual=7
+ *-Archivo de Creditos Suplementarios
+   USE MAEPRO EXCLUSIVE
+   PACK
+   =ordena("CODIGO","MAEPRO1")
+   =ordena("APELLI+NOMBRE","MAEPRO2")
+   =ordena("LIBELE","MAEPRO3")
+   USE
+endif
+
+RELEASE WINDOW Working
+CLOSE DATA
+SET EXCLU OFF
+SET TALK OFF
+
+RETURN
+
+
+FUNCTION ordena
+*--------------
+PARAMETER key,idx,condi
+   IF PARAMETERS()<3
+      INDEX ON &key TAG (idx)
+   ELSE
+      INDEX ON &key TAG (idx) FOR &condi
+   ENDIF
+RETURN ""
+
+
+FUNCTION _num
+*------------
+PARAMETER _FF
+
+   _ff = UPPER(_ff)
+
+   DO CASE
+   CASE _ff="TODOS"
+      _ffun = 1
+   CASE _ff="CABDIC"
+      _ffun = 2
+   CASE _ff="PARMAE"
+      _ffun = 3
+   CASE _ff="PARMAE"
+      _ffun = 3
+   CASE _ff="CRESUP"
+      _ffun = 4
+   CASE _ff="TRAPAR"
+      _ffun = 5
+   OTHERWISE
+      _ffun = 0
+   ENDCASE
+
+RETURN _ffun

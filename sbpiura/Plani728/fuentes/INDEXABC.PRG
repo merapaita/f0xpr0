@@ -1,0 +1,126 @@
+*------------------------------------------------------
+* PROGRAMA: Indexa.prg
+* OBJETIVO: Rutina de Organizaci¢n archivos
+*           Crea ¡ndices compuestos y compacta la data.
+* Autor   : UDEP ,LCD
+*-------------------------------------------------------
+PARAMETER _fil
+
+PRIVATE _auto, _path, ss, pos
+ss=SET('PATH')
+pos = AT(";",ss)
+_path=IIF(pos=0,ss,SUBSTR(ss,1,AT(";",ss)-1))
+
+_auto = IIF( PARAMETER()>0,.T.,.F.)
+
+CLOSE DATA
+
+IF !WEXIST("msg2user")
+   DEFINE WINDOW MSG2USER FROM 19,27 TO 23,77
+ENDIF
+
+IF !_auto
+
+  IF Iscolor()
+    DEFINE POPUP _yt  FROM 9,55          SHADOW COLOR &L_COL
+  ELSE
+    DEFINE POPUP _yt  FROM 9,55          COLOR SCHEME C_POPUP
+  ENDIF
+  DEFINE BAR 1 OF _yt PROMPT "\<a TODOS"
+  ON SELECTION POPUP _yt DO ORGANIZA WITH BAR()
+  ACTIVATE POPUP _yt
+
+  RELEASE POPUP _yt
+
+ELSE
+  x = _num(_fil)
+  DO organiza WITH x
+ENDIF
+
+RETURN
+
+
+PROCEDURE organiza
+*-----------------
+PARAMETER cual
+
+DEFINE WINDOW Working   FROM 02,40 TO 23,76 FLOAT   COLOR SCHEME 1
+ACTIVATE WINDOW Working
+
+CLOSE DATA
+SET EXCLUSIVE ON
+SET TALK ON
+_con = SET('CONSOLE')
+SET CONSOLE ON
+
+ACTIVATE WINDOW Working
+
+CLEAR
+
+IF CUAL=1 
+    USE Personal EXCLUSIVE
+    PACK
+    =ordena("lib_ele","Persona1","CON_PER#'3'.AND.CON_PER#'4'")
+    =ordena("nro_cta","Persona2")
+    =ordena("ape_nom","Persona3")
+    =ordena("Num_Pla","Persona4","CON_PER#'3'.AND.CON_PER#'4'")
+    =ordena("Num_Pla","Persona5","CON_PER='3'.OR.CON_PER='4'")
+    =ordena("Lib_Ele","Persona6","CON_PER='3'.OR.CON_PER='4'")
+    =ordena("Lib_Ele","Persona7")
+    USE
+
+    USE iteper EXCLUSIVE
+    PACK
+    =ordena("LIB_ELE+MES_SUE+NIV_PER+TIP_ADN+COD_ADN","iteper1")
+    USE
+
+    USE iteNiv EXCLUSIVE
+    PACK
+    =ordena("Niv_Per","iteNiv1")
+    USE
+
+    USE iteUsu EXCLUSIVE
+    PACK
+    =ordena("USUCLA+MODULO","iteUsu1")
+    USE
+
+    USE MaeNiv EXCLUSIVE
+    PACK
+    =ordena("Niv_Per","MaeNiv1")
+    USE
+
+    USE Parmae EXCLUSIVE
+    PACK
+    =ordena("TIPO+ALLTRIM(CODIGO)+ALLTRIM(CODIGOAUX)","Parmae1")
+    =ordena("TIPO+DESCRI+CODIGO+CODIGOAUX","Parmae2")
+    USE
+
+    USE Planilla EXCLUSIVE
+    PACK
+    =ordena("LIB_ELE+MES_SUE","Planilla1")
+    USE
+
+    USE TotApor EXCLUSIVE
+    PACK
+    =ordena("LIB_ELE+PERIODO+MES_SUE","TotApor1")
+    USE
+    
+ENDIF
+
+RELEASE WINDOW Working
+CLOSE DATA
+SET TALK OFF
+SET EXCLU OFF
+RETURN
+
+
+FUNCTION ordena
+*--------------
+PARAMETER key,idx,condi
+   IF PARAMETERS()<3
+      INDEX ON &key TAG (idx)
+   ELSE
+      INDEX ON &key TAG (idx) FOR &condi
+   ENDIF
+RETURN ""
+

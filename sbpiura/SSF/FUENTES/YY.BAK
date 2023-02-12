@@ -1,0 +1,14 @@
+PARAMETERS mCont
+
+set step on
+SElE ITECOB
+seek mCont
+IF found()
+	SCAN WHILE codcon=mCont
+		SCATTER MEMVAR
+		ak = ActKar('C',m.NumCob,m.FecPag)
+		SELE itecob
+	ENDSCAN
+ELSE
+	DO STANDBY WITH 'CONTRATO NO ENCONTRADO'
+ENDIF

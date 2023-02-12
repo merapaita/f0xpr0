@@ -1,0 +1,263 @@
+************************
+* porl4005.prg
+* reporte de ordenes estados
+************************
+tit_prg = ' REPORTE '
+wrk_progra = PROGRAM()
+DO crea_win
+@ 2, 1 SAY DATE()
+DO saycenter WITH 1, tit_prg
+DO saycenter WITH 2, ' ESTADO ACTUAL DE ARTICULOS '
+
+CLOSE DATABASES
+USE ST_IOREP in 1 ORDER ORD_ESEM
+USE GE_TAB0 in 2 ORDER CODIGO
+USE ST_MVORD in 3 ORDER tag ESTADO
+USE ST_ICLPR in 4 ORDER CODIGO
+STORE 1 TO wrk_opcion, wrk_salida
+STORE SPACE(4) TO wrk_estado, wrk_tabini, wrk_tabfin, wrk_desest, wrk_garini, wrk_garfin
+STORE DATE() TO wrk_fecini, wrk_fecfin
+STORE 0 TO wrk_cont
+wrk_fecini = wrk_fecini-7
+STORE 1 TO wrk_copia
+DO WHILE .T.
+	DO esc_modo WITH 'S'
+	DO esc_indica WITH 1, 'AYU', 'BBB', 'BUS', 'BBB'
+	DO esc_indica WITH 2, 'BBB', 'BBB', 'BBB', 'ESC'
+	@ 07, 01 CLEAR TO 15, 77 
+    wrk_orden = ' (CODEMI >= wrk_tabini AND CODEMI <= wrk_tabfin) '
+*    @ 04, 01 SAY 'Estado         :' SIZE 01, 16, 0
+    @ 04, 01 SAY 'Tipo de Gt¡a.  :' SIZE 01, 16, 0
+    @ 07, 01 SAY 'Ordenado por   :' SIZE 01, 16, 0
+    @ 10, 01 SAY 'Fecha Inicio   :' SIZE 01, 16, 0
+    @ 10, 29 SAY 'Fecha Final   :' SIZE 01, 16, 0
+    @ 13, 01 SAY 'Tipo de Salida :' SIZE 01, 16, 0
+	SET CURSOR ON
+*    @ 04, 18 GET wrk_estado PICTURE '@!' VALID valida2(wrk_estado,1) WHEN antes(1)
+    @ 04, 18 GET wrk_garini PICTURE '@!' VALID valida2(wrk_garini,3) WHEN antes(4)
+    @ 05, 18 GET wrk_garfin RANGE wrk_garini PICTURE '@!' VALID valida2(wrk_garfin,3) WHEN antes(4)
+    @ 07, 18 GET wrk_opcion DEFAULT 1 SIZE 1, 10, 0 PICTURE '@*RVTN Taller;Emisor;Marca' VALID valida() WHEN antes(2)
+    READ
+    IF LASTKEY() = 27
+         CLOSE DATABASES
+         EXIT
+    ENDIF
+    @ 10, 18 GET wrk_fecini 
+    @ 10, 45 GET wrk_fecfin 
+	@ 12,01 SAY 'SOLO ORDENES FUERA DE PLAZO'
+	@ 12,30 GET wrk_cont FUNCTION '*C'
+    @ 13, 18 GET wrk_salida DEFAULT 1 SIZE 1, 11, 0 PICTURE '@*RVTN Detalle;Resumen' WHEN antes(2)
+    READ
+    IF LASTKEY() = 27
+       CLOSE DATABASES
+       EXIT
+    ENDIF
+    DO mensa WITH '** Un momento, Por Favor ... **', 'COLO'
+     wrk_file = da_nombre()
+     SELECT 5
+     CREATE table &wrk_file (;
+     	NUMDOC C(8),;
+		FECEMI D,     CODEMI C(4),  CODENT C(11),;
+		INDORI C(4),  AUXEST C(4),  CODMAR C(4),;
+		CODMOD C(15), NUMSER C(20), CODTEC C(9),;
+		NUMSOL C(8),  CODTALL C(4), FECEST D,;
+	    OBSERV M, 	  COSMOB N(10,2),  COSREP N(10,2),;
+	    estados c(40),;
+	    conest n(2))
+     SELECT 1
+     
+     set filter to betw(fecemi,wrk_fecini,wrk_fecfin)
+     go top
+     SCAN
+        IF &wrk_orden .AND. INDEST # "N" .AND. (INDORI >= wrk_garini .AND. INDORI <= wrk_garfin)
+           m.numdoc = numdoc
+           m.numsol = numsol
+           m.fecemi = fecemi
+           m.codemi = codemi
+           m.codent = codent
+           m.indori = indori
+           m.auxest = auxest
+           m.codmar = codmar
+           m.codmod = codmod
+           m.numser = numser
+           m.codtec = codtec
+           m.codtal = codtall
+           m.fecest = fecest
+           m.observ = observ
+           m.cosmob = cosmob
+           m.cosrep = cosrep
+           SELE ST_MVORD
+           m.estados = ""
+           m.conest = 0
+           seek m.numdoc
+           SCAN WHILE orden=m.numdoc
+              m.conest = m.conest + 1
+              m.estados= m.estados + estado + " "
+           ENDSCAN
+           SELE &wrk_file
+           APPEND BLANK
+           gather memvar
+        ENDIF
+        SELECT 1
+     ENDSCAN
+     SELE &wrk_file
+     COUNT TO wrk_valor
+     IF wrk_valor = 0
+          DO mensa WITH '***  Un momento, Por Favor ...  ***', 'SACA'
+          DO error WITH '***  No Existen registros a Listar  ***'
+          LOOP
+     ENDIF
+     DO CASE
+          CASE wrk_opcion = 1
+               INDEX ON codtall + numsol TAG taller for  iif(wrk_cont=1,conest=1 and date()-fecemi>=3, .t.)
+               SET ORDER TO TALLER
+          CASE wrk_opcion = 2
+               INDEX ON codemi + numsol TAG emisor for iif(wrk_cont=1,conest=1, .t.)
+               SET ORDER TO EMISOR
+          CASE wrk_opcion = 3
+               INDEX ON codmar + numsol TAG marca for iif(wrk_cont=1,conest=1, .t.)
+               SET ORDER TO MARCA
+     ENDCASE
+     DO mensa WITH '***  Un momento, Por Favor ...  ***', 'SACA'
+     DO esc_indica WITH 2, 'BBB', 'VER', 'IMP', 'ESC'
+     DO WHILE LASTKEY()#27 .AND. LASTKEY()#-6 .AND. LASTKEY()#-4
+          wrk_inkey = INKEY(0, 'H')
+     ENDDO
+     IF wrk_inkey = -6
+          DO esc_indica WITH 2, 'BBB', 'BBB', 'BBB', 'ESC'
+          @ 13, 40 SAY 'Copias : ' GET wrk_copia VALID .NOT. EMPTY(wrk_copia)
+          READ
+          IF LASTKEY() = 27
+               LOOP
+          ENDIF
+          FOR a = 1 TO wrk_copia
+               DO mensa WITH '*** I m p r i m i e n d o ... ***', 'COLO'
+               ??? CHR(18)
+               IF wrk_salida = 1
+                    REPORT FORMAT PORL4005 TO PRINTER NOCONSOLE
+               ELSE
+                    REPORT FORMAT PORL4015 TO PRINTER NOCONSOLE
+               ENDIF
+               SET PRINTER TO
+               DO mensa WITH '*** I m p r i m i e n d o ... ***', 'SACA'
+          ENDFOR
+     ENDIF
+     IF wrk_inkey = -4
+          DO esc_indica WITH 2, 'BBB', 'BBB', 'BBB', 'ESC'
+          DO mensa WITH '** Un momento, Por Favor ... **', 'COLO'
+          wrk_file02 = SUBSTR(f_archivo(),1, 8) + '.TXT'
+          IF wrk_salida = 1
+               REPO FORM PORL4005 TO FILE &wrk_file02  NOCONSOLE
+          ELSE
+               REPO FORM PORL4015 TO FILE &wrk_file02  NOCONSOLE
+          ENDIF
+          DO mensa WITH '** Un momento, Por Favor ... **', 'SACA'
+          SET SYSMENU ON
+          KEYBOARD '{CTRL+F10}'
+          MODI COMM &wrk_file02 NOEDIT WINDOW PANTALL
+          SET SYSMENU OFF
+          DELE FILE &wrk_file02
+     ENDIF
+     SELE &wrk_file
+     USE
+     ERASE FILE &wrk_file
+     DELETE FILE SUBSTR(wrk_file, 1, 8) + '.FPT'
+     DELETE FILE SUBSTR(wrk_file, 1, 8) + '.CDX'
+ENDDO
+DO saca_win
+RETURN
+
+
+PROCEDURE antes
+PARAMETER opc1
+DO CASE
+	CASE opc1 = 1
+    	DO esc_indica WITH 1, 'AYU', 'BBB', 'BUS', 'BBB'
+		ON KEY LABEL F6 DO AYUDA WITH 1
+	CASE opc1 = 2
+		DO esc_indica WITH 1, 'AYU', 'BBB', 'BBB', 'BBB'
+	CASE opc1 = 3
+		DO esc_indica WITH 1, 'AYU', 'BBB', 'BUS', 'BBB'
+		ON KEY LABEL F6 DO AYUDA WITH 2
+	CASE opc1 = 4
+		ON KEY LABEL F6 DO AYUDA WITH 3
+ENDCASE
+RETURN
+
+PROCEDURE ayuda
+PARAMETER opc
+SELECT 2
+DO CASE
+   CASE opc = 1
+      SET FILTER TO tab_codpre == 'ESOR'
+   CASE opc = 2
+      DO CASE
+         CASE wrk_opcion = 1
+            SET FILTER TO tab_codpre == 'TALL'
+         CASE wrk_opcion =  2
+            SET FILTER TO tab_codpre == 'EMIS'
+         CASE wrk_opcion = 3
+            SET FILTER TO tab_codpre == 'MARC'
+      ENDCASE
+   CASE opc = 3
+      SET FILTER TO tab_codpre == 'INGA'
+ENDCASE
+GOTO TOP
+campo = 'tab_codtab + "  " + tab_destab'
+titulo = 'AYUDA DE TABLAS'
+DO ayuda1 WITH campo, titulo, 'tab_codtab'
+SET FILTER TO
+RETURN
+
+FUNCTION valida
+ON KEY
+@ 07, 29 SAY 'Del :'
+@ 08, 29 SAY 'Al  :'
+@ 07, 35 GET wrk_tabini PICTURE '@!' VALID valida2(wrk_tabini,2) WHEN antes(3)
+@ 08, 35 GET wrk_tabfin RANGE wrk_tabini PICTURE '@!' VALID valida2(wrk_tabfin,2) WHEN antes(3)
+READ
+IF LASTKEY() = 27
+     RETURN .F.
+ENDIF
+SELECT 2
+DO CASE
+     CASE wrk_opcion = 1
+          wrk_orden = ' (CODTALL >= wrk_tabini AND CODTALL <= wrk_tabfin) '
+     CASE wrk_opcion = 2
+          wrk_orden = ' (CODEMI  >= wrk_tabini AND CODEMI  <= wrk_tabfin) '
+     CASE wrk_opcion = 3
+          wrk_orden = ' (CODMAR  >= wrk_tabini AND CODMAR  <= wrk_tabfin) '
+ENDCASE
+
+FUNCTION valida2
+PARAMETER wrk_codtab, opc3
+SELECT 2
+DO CASE
+   CASE opc3 = 1
+      SEEK 'ESOR' + wrk_codtab
+   CASE opc3 = 2
+      IF EMPTY(wrk_codtab)
+         DO error WITH 'No se Permiten Blancos'
+         RETURN .F.
+      ENDIF
+      DO CASE
+         CASE wrk_opcion = 1
+            SEEK 'TALL' + wrk_codtab
+         CASE wrk_opcion = 2
+            SEEK 'EMIS' + wrk_codtab
+         CASE wrk_opcion = 3
+            SEEK 'MARC' + wrk_codtab
+      ENDCASE
+   CASE opc3 = 3
+      SEEK 'INGA' + wrk_codtab
+ENDCASE
+IF  .NOT. FOUND()
+   DO error WITH 'C¢digo de Tabla No Existe'
+   RETURN .F.
+ENDIF
+IF opc3 = 1
+   wrk_desest = tab_destab
+ENDIF
+@ ROW(), 40 SAY tab_destab
+ON KEY
+RETURN

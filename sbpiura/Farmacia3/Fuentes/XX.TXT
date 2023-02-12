@@ -1,0 +1,194 @@
+
+WORKER      P£bl   L  .T.
+VUSUREC     P£bl   N        1289.00  (      1289.00000000)
+FECSIS      P£bl   D  02/10/2011
+RUTA        Priv   C  "..\DATA"                              FARMA
+RUTAPR      Priv   C  "..\DATAPR"                            FARMA
+DESA        Priv   C  "  "                                   FARMA
+SISTEMA     Priv   C  "7"                                    FARMA
+VUSER_ID    Priv   C  "ADMIN"                                FARMA
+VMAQ        Priv   C  "55"                                   FARMA
+VCONEX      Priv   C  "DESKTOP"                              FARMA
+VLLAV       Priv   C  "61599"                                FARMA
+VNOMBRE     Priv   C  "ADMINISTRADOR"                        FARMA
+VCODDEP     Priv   C  "700000"                               FARMA
+VNUMDEP     Priv   N           1.00  (         1.00000000)   FARMA
+VFLAG       Priv   C  "*"                                    FARMA
+VUSUCLA     Priv   C  "XQL$H"                                FARMA
+VACCESO     Priv   C  " "                                    FARMA
+CIA         Priv   C  "SBP - PIURA"                          FARMA
+DETAW       Priv   C  "SOCIEDAD DE BENEFICENCIA DE PIURA"    FARMA
+DIREW       Priv   C  "Jr. Lima 878 2do. Piso"               FARMA
+TELEW       Priv   C  "328112"                               FARMA
+RUCW        Priv   C  "           "                          FARMA
+SUBC        Priv   C  " "                                    FARMA
+TITU        Priv   C  "   Modulo de Control de Kardex "      FARMA
+ESCOLOR     Priv   L  .T.                                    FARMA
+C_PANTA     Priv   N           8.00  (         8.00000000)   FARMA
+C_BORDE     Priv   N          10.00  (        10.00000000)   FARMA
+C_POPUP     Priv   N           4.00  (         4.00000000)   FARMA
+C_TEXTO     Priv   C  "N/W"                                  FARMA
+C_FONDO     Priv   N           1.00  (         1.00000000)   FARMA
+SPAC        Priv   N          14.00  (        14.00000000)   FARMA
+ROTULO1     Priv   C  "SBP - PIURA                 Modulo de
+                        Control de Kardex               "    FARMA
+USUARIOS    Priv   C  "® USER: ADMINISTRADOR ¯"              FARMA
+FECHA       Priv   C  "02/10/2011  "                         FARMA
+ROTULO2     Priv   C  "                            ® USER: A
+                       DMINISTRADOR ¯                 02/10/
+                       2011  "                               FARMA
+PRINCIPAL   Priv   S  80 by 25                               FARMA
+PANTALLA    Priv   S  80 by 25                               FARMA
+VEN_SISTEM  Priv   L  .T.                                    FARMA
+ESC_TECLA   Priv   L  .F.                                    FARMA
+L_COL       Priv   C  "W+/W,N/W,N/W,GR+/B, R+/B, W+/B , W+/W
+                       , N+/N, GR+/B, R+/B "                 FARMA
+CHOICE      Priv   N           2.00  (         2.00000000)   ACT_MENUS
+VMENS01     Priv   C  "Registro de Comprobantes de Pago"     FCOMPAG
+VMENS02     Priv   C  "Comprobantes de Pago : REVISION "     FCOMPAG
+VMENS04     Priv   C  "Dicho C/P no fue encontrado"          FCOMPAG
+VMENS05     Priv   C  "No existe Comprobante anterior"       FCOMPAG
+VMENS06     Priv   C  "No existe Comprobante siguiente"      FCOMPAG
+VMENS07     Priv   C  "¨ Desea Anular este Comprobante ?"    FCOMPAG
+VMENS08     Priv   C  "No hay registros para procesar"       FCOMPAG
+VMENS09     Priv   C  "Este Comprobante ha sido anulado"     FCOMPAG
+VMENS10     Priv   C  "Edici¢n"                              FCOMPAG
+PIGV        Priv   N           1.18  (         1.18000000)   FCOMPAG
+PERIODO     Priv   C  "11"                                   FCOMPAG
+NUMCP       Priv   C  "0043"                                 FCOMPAG
+ESTADO      Priv   C  "00"                                   FCOMPAG
+FECCP       Priv   D  02/10/2011                             FCOMPAG
+RUCCLI      Priv   C  "           "                          FCOMPAG
+CLIENTE     Priv   C  "                              "       FCOMPAG
+PEDIDOS     Priv   C  "1621"                                 FCOMPAG
+TIPCP       Priv   C  "   "                                  FCOMPAG
+FACTURA     Priv   C  "          "                           FCOMPAG
+BOLVTA      Priv   C  "          "                           FCOMPAG
+DONACION    Priv   C  "          "                           FCOMPAG
+RECIBO      Priv   C  "          "                           FCOMPAG
+OBSERVA     Priv   C  "                                     
+                                                            
+                                                            
+                                "                            FCOMPAG
+TOTCOM      Priv   N           0.00  (         0.00000000)   FCOMPAG
+IGV         Priv   N           0.00  (         0.00000000)   FCOMPAG
+VALCOM      Priv   N           0.00  (         0.00000000)   FCOMPAG
+TUSER       Priv   C  "I"                                    FCOMPAG
+USER        Priv   C  "ADMIN"                                FCOMPAG
+USERCR      Priv   C  "          "                           FCOMPAG
+HUSER       Priv   C  "17:06:51"                             FCOMPAG
+HUSERCR     Priv   C  "        "                             FCOMPAG
+DUSER       Priv   D  02/10/2011                             FCOMPAG
+DUSERCR     Priv   D    /  /                                 FCOMPAG
+VEN_ACCION  Priv   L  .T.                                    FCOMPAG
+NREG        Priv   N          27.00  (        27.00000000)   INGRE
+VSUN        Priv   L  .T.                                    TRABAJA_HI
+XOK         Priv   L  .F.                                    TRABAJA_HI
+VTEMPO      Priv   C  "°°°°°F2->Edita°°°°°°°°°F5->Agregar°°°
+                       °°°°°°F8->Eliminar°°°°°°°°F10->Termin
+                       ar°°°°"                               TRABAJA_HI
+AGR         Priv   L  .T.                                    TRABAJA_HI
+CALIAS      Priv   C  "ITECP"                                COMP_SUNAT
+   81 variables definidas,    1389 bytes usados
+  943 variables disponibles
+
+Variables de memoria del sistema
+
+_ALIGNMENT  P£bl   C  "LEFT"
+_ASSIST     P£bl   C  "C:\FPD26\CATALOG.APP"
+_BEAUTIFY   P£bl   C  ""
+_BOX        P£bl   L  .T.
+_CALCMEM    P£bl   N        0.00  (         0.00000000)
+_CALCVALUE  P£bl   N        0.00  (         0.00000000)
+_CUROBJ     P£bl   N          -1.00  (        -1.00000000)
+_DBLCLICK   P£bl   N        0.49  (         0.49432944)
+_DIARYDATE  P£bl   D  02/10/2011
+_DOS        P£bl   L  .T.
+_FOXDOC     P£bl   C  "C:\FPD26\FOXDOC.EXE"
+_FOXGRAPH   P£bl   C  ""
+_GENGRAPH   P£bl   C  "C:\FPD26\GENGRAPH.APP"
+_GENMENU    P£bl   C  "C:\FPD26\GENMENU.PRG"
+_GENPD      P£bl   C  "C:\FPD26\GENPD.APP"
+_GENSCRN    P£bl   C  "C:\FPD26\GENSCRN.PRG"
+_GENXTAB    P£bl   C  "C:\FPD26\GENXTAB.PRG"
+_INDENT     P£bl   N           0.00  (         0.00000000)
+_LMARGIN    P£bl   N           0.00  (         0.00000000)
+_MAC        P£bl   L  .F.
+_MLINE      P£bl   N           0.00  (         0.00000000)
+_PADVANCE   P£bl   C  "FORMFEED"
+_PAGENO     P£bl   N           2.00  (         2.00000000)
+_PBPAGE     P£bl   N           1.00  (         1.00000000)
+_PCOLNO     P£bl   N          58.00  (        58.00000000)
+_PCOPIES    P£bl   N           1.00  (         1.00000000)
+_PDRIVER    P£bl   C  ""
+_PDSETUP    P£bl   C  ""
+_PECODE     P£bl   C  ""
+_PEJECT     P£bl   C  "AFTER"
+_PEPAGE     P£bl   N       32767.00  (     32767.00000000)
+_PLENGTH    P£bl   N          60.00  (        60.00000000)
+_PLINENO    P£bl   N           7.00  (         7.00000000)
+_PLOFFSET   P£bl   N           0.00  (         0.00000000)
+_PPITCH     P£bl   C  "PICA"
+_PQUALITY   P£bl   L  .T.
+_PRETEXT    P£bl   C  ""
+_PSCODE     P£bl   C  ""
+_PSPACING   P£bl   N           1.00  (         1.00000000)
+_PWAIT      P£bl   L  .F.
+_RMARGIN    P£bl   N          85.00  (        85.00000000)
+_SHELL      P£bl   C  ""
+_STARTUP    P£bl   C  "C:\FPD26\FOXSTART.APP"
+_TABS       P£bl   C  "10, 20, 30, 40, 50, 60, 70"
+_TALLY      P£bl   N           1.00  (         1.00000000)
+_TEXT       P£bl   N          -1.00  (        -1.00000000)
+_THROTTLE   P£bl   N        0.00  (         0.00000000)
+_TRANSPORT  P£bl   C  "C:\FPD26\TRANSPRT.PRG"
+_UNIX       P£bl   L  .F.
+_WINDOWS    P£bl   L  .F.
+_WRAP       P£bl   L  .T.
+
+Hay    57 variables del sistema
+
+Definiciones de men£s y t¡tulos
+
+Nombre de men£
+MMENU        429 bytes  
+        T¡tulo
+      REVIS        118 bytes  
+      BUSCA        118 bytes  
+      ANTER        118 bytes  
+      PROXI        118 bytes  
+      INGRE        118 bytes  
+      ANULA        118 bytes  
+      LISTA        118 bytes  
+      TERMI        118 bytes  
+
+Hay     1 men£
+
+Definiciones de emergentes
+
+POP_06       1019 bytes  
+POP_05       1137 bytes  
+POP_04       665 bytes  
+POP_03A      783 bytes  
+POP_03       783 bytes  
+POP_02       901 bytes  
+POP_01       547 bytes  
+MENU         1373 bytes  
+RUN          1609 bytes  
+WIZARD       1255 bytes  
+
+Hay    10 emergentes
+
+Definiciones de ventanas
+
+Nombre       Desde     A         Tama¤o
+ESPERA       12,6      14,78     172 bytes  
+MSG2USER     12,2      16,77     492 bytes  
+STANDBY      19,23     23,77     364 bytes  
+YESNO        19,27     23,77     300 bytes  
+WIND_1       12,0      23,79     1580 bytes  
+WIND_2       0,0       23,79     3436 bytes  
+WIND_0       0,0       11,79     1580 bytes  
+WVENTANA     5,5       10,60     460 bytes   ACTIVA
+
+Hay     8 ventanas

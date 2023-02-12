@@ -1,0 +1,79 @@
+ CESER PIURA SRL                                                                                                     P gina :         1
+        CESER                                     INGRESO DE ORDENES POR TECNICO - PROVEEDOR                         Fecha  :03/12/2015
+   AV.SAN TEODORO                                 ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                         Hora   :  12:48:18
+                                                DEL        : 01/12/2015   AL        : 02/12/2015
+                                                DEL TECNICO:        261   AL TECNICO:  204622680
+                                                DEL TALLER : 002          AL TALLER : 066 
+                                                DEL EMISOR : 050          AL EMISOR : 900 
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ N§   S/S    FECHA DE    MODELO           CLIENTE        TELEFONO ³   O/R    FECHA DE      ESTADO ACTUAL       FECHA DE  OBSERVACIONES³
+³               S/S                                                ³           EMISION                           ESTADO                ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ TECNICO :     2008 CHUQUIHUANCA NI¥O JHON        
+
+   1     7432 01/12/2015 RT29FAJHDSP CUNYA YANGUA MARIA R 96831370 ³    7432 01/12/2015 EN DIAGNOSTICO         03/12/2015 TARJETA       
+   2    15183 01/12/2015 RSA1JHSL1/X CASTILLO SANDRA      94546071 ³   15183 01/12/2015 DIAGNOSTICO EN         02/12/2015 SE REALIZO    
+   3    15186 01/12/2015 LAVADORA    LA TORRE VDA DE MALD   343448 ³   15186 02/12/2015 DIAGNOSTICO EN         03/12/2015 SE COMUNICO   
+   4    15189 02/12/2015 WA1DXARFP   CALLE LLACSAHUANGA R 97618622 ³   15189 02/12/2015 FACTURADO Y ENTREGADO  03/12/2015 REVISION SE   
+     TECNICO :      2008     4
+
+
+ TECNICO :     2014 CAMPOS SAMAME ENRIQUE         
+
+   1    15190 02/12/2015 UN48J6400AG CHAPILLIQUEN FLORES    349901 ³   15190 02/12/2015 DIAGNOSTICO EN         03/12/2015               
+   2    15191 02/12/2015 UN46FH5005G BENITES CRUZ MERCEDE 94754429 ³   15191 02/12/2015 DIAGNOSTICO EN         03/12/2015               
+     TECNICO :      2014     2
+
+
+ TECNICO :    15180 RAMIREZ CALDERON ANGEL        
+
+   1     7430 01/12/2015 LS19D300NY/ MARCIMEX               411637 ³    7430 01/12/2015 ALMACEN SIN REPARAR    02/12/2015 MANCHA EN     
+   2     7433 01/12/2015 UN40EH5000G CORO ABAD LEONCIO    98117727 ³    7433 01/12/2015 ASIGNACION DE O/R      01/12/2015               
+   3     7434 01/12/2015 KDL-32EX525 BOBADILLA ATOCHA ISA 96960843 ³    7434 01/12/2015 ASIGNACION DE O/R      01/12/2015               
+   4    15179 01/12/2015 UN50H5303AG CURACAO PIURA I      96233486 ³   15179 01/12/2015 PENDIENTE POR REPUESTO 01/12/2015 PANEL         
+   5    15184 01/12/2015 UN48J5500AG ARELLANO CARRASCO LE   348271 ³   15184 01/12/2015 DIAGNOSTICO EN         03/12/2015               
+   6     7422 30/11/2015 HCD-GPX555  LORO CHUICA MARIA CR 99923510 ³    7422 01/12/2015 ALMACEN SIN REPARAR    01/12/2015 NO ENCIENDE,  
+     TECNICO :     15180     6
+
+
+ TECNICO :    15977 PASAPERA DOMINGUEZ WALTER     
+
+   1     7403 27/11/2015 NWZ-E383    GUERRA GONZALES FRED 96817325 ³    7403 01/12/2015 PENDIENTE POR REPUESTO 01/12/2015 FALLA NO      
+     TECNICO :     15977     1
+
+
+ TECNICO :    27141 VILCHEZ PASACHE,ALEJANDRO     
+
+   1    15187 01/12/2015 KDL-40R354B GARCIA AVILA DANTI W   485600 ³   15187 01/12/2015 DIAGNOSTICO EN         01/12/2015               
+   2    15188 01/12/2015 CDX-G1050U  TIMANA SILVA SEGUNDO 99896917 ³   15188 01/12/2015 DIAGNOSTICO EN         01/12/2015               
+     TECNICO :     27141     2
+
+
+ TECNICO :    30977 PARDO APARCANA LUIS ALBERTO   
+
+   1     7428 01/12/2015 AKB73615319 ALBAN SOLANO ROSARIO   502685 ³    7428 01/12/2015 ALMACEN DE REPARADOS   01/12/2015 SE REEMPLAZO  
+   2    15185 01/12/2015 UN40FH6203G BURGOS JHON          94582131 ³   15185 01/12/2015 DIAGNOSTICO EN         03/12/2015               
+   3     7435 02/12/2015 UN32FH4005G RAMOS MOSCOL FELIPE  96990416 ³    7435 02/12/2015 ASIGNACION DE O/R      02/12/2015               
+   4     7437 02/12/2015 KDL-32R405A TABOADA RIVAS FLOR D 94788847 ³    7437 02/12/2015 ASIGNACION DE O/R      02/12/2015               
+     TECNICO :     30977     4
+
+ CESER PIURA SRL                                                                                                     P gina :         2
+        CESER                                     INGRESO DE ORDENES POR TECNICO - PROVEEDOR                         Fecha  :03/12/2015
+   AV.SAN TEODORO                                 ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                         Hora   :  12:48:18
+                                                DEL        : 01/12/2015   AL        : 02/12/2015
+                                                DEL TECNICO:        261   AL TECNICO:  204622680
+                                                DEL TALLER : 002          AL TALLER : 066 
+                                                DEL EMISOR : 050          AL EMISOR : 900 
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ N§   S/S    FECHA DE    MODELO           CLIENTE        TELEFONO ³   O/R    FECHA DE      ESTADO ACTUAL       FECHA DE  OBSERVACIONES³
+³               S/S                                                ³           EMISION                           ESTADO                ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ TECNICO :    60070 SANDOVAL SANDOVAL ALEXANDER   
+
+   1     7429 01/12/2015 L555        RIVERA JIMENEZ RINA    324532 ³    7429 01/12/2015 ASIGNACION DE O/R      01/12/2015               
+   2     7431 01/12/2015 SM-T110     TANG VALDIVIEZO DE R 96954789 ³    7431 01/12/2015 ASIGNACION DE O/R      01/12/2015               
+   3     7436 02/12/2015 120-1016LA  CATACORA GARCIA RONY 95060542 ³    7436 02/12/2015 ASIGNACION DE O/R      02/12/2015               
+     TECNICO :     60070     3
+
+
+

@@ -1,0 +1,168 @@
+ CORP.ANDINA DE DISTRIB.                                            P gina  :          1
+        CESER                CONSUMO DE REPUESTOS                   Fecha   : 17/08/2005
+   CALLE CUZCO 1099          ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                   Hora    :   17:53:36
+                        Per¡odo de 01/07/2005 al 17/08/2005         Programa:   AGCR0210
+        Tipo Atenci¢n:                           Tipo Emisor:
+         Del EN GARANTIA                          Del SONY SUCURSAL PERU            
+          Al EN GARANTIA                           Al COLATINA SSP - PIURA          
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT   NUMERO FECHA      NUMERO    NUMERO  CODIGO        DESCRIPCION               CANT.³
+³      PEDIDO PEDIDO       O/R      S/S    PRODUCTO                                     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EMISOR : 100   SONY SUCURSAL PERU            
+
+  SUB-CATEGORIA : 2020 BLOQUES ELECTROMECANICOS COMPL
+                                           1-478-416-11   KEY BLOCK CONTROL             1
+                                                                      TOTAL 2020        1
+  SUB-CATEGORIA : 1085 OPTICAL                       
+                                           8-820-020-11   OPTICAL KSS-213D/Z            2
+                                                                      TOTAL 1085        2
+  SUB-CATEGORIA : 1025 CIRCUITOS COMPLETOS           
+                                           A-1062-844-A   MOUNTED C. BOARD MAIN         1
+                                                                      TOTAL 1025        1
+  SUB-CATEGORIA : 3020 BLOQUES MECANICOS COMPLETOS   
+                                           1-796-487-61   DECK MECH                     1
+                                                                      TOTAL 3020        1
+  SUB-CATEGORIA : 2020 BLOQUES ELECTROMECANICOS COMPL
+                                           1-468-737-21   POWER SWITCHING               1
+                                                                      TOTAL 2020        1
+  SUB-CATEGORIA : 1080 FLY BACKS BLOQUES DE ALTA     
+                                           1-453-336-11   FLY BACK NX4011/X4A4          1
+                                                                      TOTAL 1080        1
+  SUB-CATEGORIA : 1025 CIRCUITOS COMPLETOS           
+                                           A-1062-882-A   MOUNTED C. BOARD MAIN         1
+                                                                      TOTAL 1025        1
+  SUB-CATEGORIA : 1030 CIRCUITOS INTEGRADOS          
+                                           9-885-062-61   MECANISMO COMPLETO DE         1
+                                           8-749-017-06   STK 412-150                   1
+                                                                      TOTAL 1030        2
+  SUB-CATEGORIA : 1050 CRISTALES                     
+                                           1-760-252-12   VIBRATOR CRYSTAL 32.768       1
+                                                                      TOTAL 1050        1
+  SUB-CATEGORIA : 3520 PUENTES                       
+                                           1-795-004-21   VIBRATOR CERAMIC 10MHZ        1
+                                                                      TOTAL 3520        1
+  SUB-CATEGORIA : 1030 CIRCUITOS INTEGRADOS          
+                                           6-804-130-01   LC 876996A-52S4E              1
+                                                                      TOTAL 1030        1
+  SUB-CATEGORIA : 1130 TRANSISTORES - TIRISTORES     
+                                           8-729-216-22   2SA 1162                      3
+                                           8-729-422-33   2SD 601A                      1
+                                                                      TOTAL 1130        4
+  SUB-CATEGORIA : 2130 INTERRUPTORES - RELAYS        
+                                           1-755-373-11   RELAY                         1
+                                                                      TOTAL 2130        1
+  SUB-CATEGORIA : 1085 OPTICAL                       
+                                           8-848-483-05   OPTICAL KSS-213C              1
+                                           8-820-237-06   OPTICAL KHM-310AAA            1
+                                                                      TOTAL 1085        2
+  SUB-CATEGORIA : 1025 CIRCUITOS COMPLETOS           
+                                           A-1062-844-A   MOUNTED C. BOARD MAIN         1 CORP.ANDINA DE DISTRIB.                                            P gina  :          2
+        CESER                CONSUMO DE REPUESTOS                   Fecha   : 17/08/2005
+   CALLE CUZCO 1099          ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                   Hora    :   17:53:36
+                        Per¡odo de 01/07/2005 al 17/08/2005         Programa:   AGCR0210
+        Tipo Atenci¢n:                           Tipo Emisor:
+         Del EN GARANTIA                          Del SONY SUCURSAL PERU            
+          Al EN GARANTIA                           Al COLATINA SSP - PIURA          
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT   NUMERO FECHA      NUMERO    NUMERO  CODIGO        DESCRIPCION               CANT.³
+³      PEDIDO PEDIDO       O/R      S/S    PRODUCTO                                     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EMISOR : 100   SONY SUCURSAL PERU            
+
+                                                                      TOTAL 1025        1
+  SUB-CATEGORIA : 1080 FLY BACKS BLOQUES DE ALTA     
+                                           1-453-336-11   FLY BACK NX4011/X4A4          1
+                                                                      TOTAL 1080        1
+  SUB-CATEGORIA : 1130 TRANSISTORES - TIRISTORES     
+                                           6-550-041-01   2SD 2634-YB                   1
+                                                                      TOTAL 1130        1
+  SUB-CATEGORIA : 1025 CIRCUITOS COMPLETOS           
+                                           A-1400-739-A   MOUNTED C. BOARD VAR M3       1
+                                                                      TOTAL 1025        1
+  SUB-CATEGORIA : 1130 TRANSISTORES - TIRISTORES     
+                                           1-215-457-00   RESITOR METAL33K 1/4W         1
+                                           1-249-405-11   RESISTOR CARBON 100 OHM       1
+                                           8-719-050-84   DIODO RB-441Q                 1
+                                                                      TOTAL 1130        3
+  SUB-CATEGORIA : 1085 OPTICAL                       
+                                           8-820-020-11   OPTICAL KSS-213D/Z            1
+                                                                      TOTAL 1085        1
+  SUB-CATEGORIA : 1030 CIRCUITOS INTEGRADOS          
+                                           6-600-174-01   RPM 7240-H4                   1
+                                           LG=6717RCA001B PICK UP ASSY                  1
+                                                                      TOTAL 1030        2
+  SUB-CATEGORIA : 1085 OPTICAL                       
+                                           8-820-244-01   OPTICAL KSM-215DCP/C          1
+                                                                      TOTAL 1085        1
+  SUB-CATEGORIA : 2020 BLOQUES ELECTROMECANICOS COMPL
+                                           1-468-737-21   POWER SWITCHING               1
+                                                                      TOTAL 2020        1
+  SUB-CATEGORIA : 1120 SINTONIZADORES - UNIDADES R.F.
+                                           8-598-593-70   TUNER BTF-WA421               1
+                                                                      TOTAL 1120        1
+  SUB-CATEGORIA : 1060 DIODOS                        
+                                           6-500-177-01   DIODO MA7D50                  1
+                                                                      TOTAL 1060        1
+  SUB-CATEGORIA : 1085 OPTICAL                       
+                                           8-820-020-11   OPTICAL KSS-213D/Z            2
+                                                                      TOTAL 1085        2
+  SUB-CATEGORIA : 4990 VARIOS                        
+                                           1-962-648-11   HARNESS (PD-124)              1
+                                                                      TOTAL 4990        1
+  SUB-CATEGORIA : 1060 DIODOS                        
+                                           8-719-057-52   DIODO EZ0150AV1               1
+                                                                      TOTAL 1060        1
+  SUB-CATEGORIA : 2020 BLOQUES ELECTROMECANICOS COMPL
+                                           1-468-737-21   POWER SWITCHING               1
+                                                                      TOTAL 2020        1
+  SUB-CATEGORIA : 1130 TRANSISTORES - TIRISTORES      CORP.ANDINA DE DISTRIB.                                            P gina  :          3
+        CESER                CONSUMO DE REPUESTOS                   Fecha   : 17/08/2005
+   CALLE CUZCO 1099          ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                   Hora    :   17:53:36
+                        Per¡odo de 01/07/2005 al 17/08/2005         Programa:   AGCR0210
+        Tipo Atenci¢n:                           Tipo Emisor:
+         Del EN GARANTIA                          Del SONY SUCURSAL PERU            
+          Al EN GARANTIA                           Al COLATINA SSP - PIURA          
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT   NUMERO FECHA      NUMERO    NUMERO  CODIGO        DESCRIPCION               CANT.³
+³      PEDIDO PEDIDO       O/R      S/S    PRODUCTO                                     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EMISOR : 100   SONY SUCURSAL PERU            
+
+                                           1-215-457-00   RESITOR METAL33K 1/4W         1
+                                           1-249-405-11   RESISTOR CARBON 100 OHM       1
+                                           8-719-050-84   DIODO RB-441Q                 2
+                                                                      TOTAL 1130        4
+  SUB-CATEGORIA : 1085 OPTICAL                       
+                                           8-820-020-11   OPTICAL KSS-213D/Z            1
+                                                                      TOTAL 1085        1
+  SUB-CATEGORIA : 1090 PANTALLAS                     
+                                           8-738-823-05   PICTURE TUBE                  1
+                                                                      TOTAL 1090        1
+  SUB-CATEGORIA : 2020 BLOQUES ELECTROMECANICOS COMPL
+                                           1-478-539-13   POWER BLOCK                   1
+                                                                      TOTAL 2020        1
+  SUB-CATEGORIA : 1026 CONECTORE - TERMINALES-SOCKET 
+                                           1-775-251-11   WIRE FLAT TYPE 27 CORE        1
+                                                                      TOTAL 1026        1
+  SUB-CATEGORIA : 3020 BLOQUES MECANICOS COMPLETOS   
+                                           1-796-487-61   DECK MECH                     1
+                                                                      TOTAL 3020        1
+  SUB-CATEGORIA : 1085 OPTICAL                       
+                                           8-820-020-11   OPTICAL KSS-213D/Z            1
+                                                                      TOTAL 1085        1
+  SUB-CATEGORIA : 1022 CABEZALES DE VIDEO - CTL      
+                                           A-4751-431-A   TARJETA DE MONTAJE BD81A      1
+                                                                      TOTAL 1022        1
+  SUB-CATEGORIA : 1030 CIRCUITOS INTEGRADOS          
+                                           A-7013-219-A   CCD BLOCK ASSY                1
+                                                                      TOTAL 1030        1
+  SUB-CATEGORIA : 1025 CIRCUITOS COMPLETOS           
+                                           A-1062-844-A   MOUNTED C. BOARD MAIN         1
+                                                                      TOTAL 1025        1
+       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       TOTAL SONY SUCURSAL PERU             ->    49                                   52
+                               ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                               TOTAL GENERAL->    49                                   52
+
+

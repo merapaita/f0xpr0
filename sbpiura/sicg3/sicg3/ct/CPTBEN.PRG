@@ -1,0 +1,1301 @@
+* ÖÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ·
+* º  Programa SubPrincipal :  CPTBEN.Prg                                º
+* ºÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄº
+* º  Empresa             : BENEFCICENCIA PUBLICA PIURA-PERU             º
+* º  Software            : Fox Pro 2.x                                  º
+* º  Inicio              : FEBRERO 1997, 10 			                º
+* º  Subsistema          : Contabilidad Patrimonial                     º
+* ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
+
+SET ESCAPE OFF
+CLEAR
+CLOSE ALL
+
+CLEAR ALL
+
+worker = IIF( LTRIM(UPPER(GETENV('WORKER'))) = 'ON', .T.,.F. )
+
+SET PROCEDURE TO Con_lib
+
+DO fox_ambi
+PUBLIC mbloqueo,vUsuRec,vConex
+PUBLIC festado,fmensaje,DESUSE,FinArchivo
+
+DO lColores
+
+IF SelPer()
+*	*
+ELSE
+	RETURN
+ENDIF
+
+*SET PATH TO ..\DATA2013
+*SET PATH TO H:\BENEdata\sicgdata\DATA2005
+IF WorKer
+	IF YesNo("Datos de Prueba?")
+*		SET PATH TO F:\BENE2003\DATAPR
+		SET PATH TO ..\DATAPR
+		DESA = " CPT96-PRUEBA "
+	ENDIF
+ENDIF
+DESA = RIGHT(SET("PATH"),8)
+
+**-- Definiciones para el Men£  --**
+*----------------------------------*
+CIA  = "SOCIEDAD DE BENEFICENCIA DE PIURA"
+TITU = " CONTABILIDAD "+ "("+ALLTRIM(LEFT(SYS(0),AT('#',SYS(0))-1))+")"
+
+**-- Colores
+escolor = iscolor()
+
+IF escolor
+   SET COLOR TO ,N/W,B
+   c_panta = 8
+   c_borde = 10
+   c_popup = 15
+   c_texto = "N/W"
+   c_fondo = 1
+ELSE
+   c_panta = 8
+   c_borde = 7
+   c_popup = 3
+   c_texto = "N+/W"
+   c_fondo = 1
+ENDIF
+
+SET MESSAGE TO 23 CENTER
+@  1, 0,23,80  BOX "°°°°°°°°°" COLOR SCHEME c_fondo
+@  1, 1,23,24  BOX "±±±±±±±±±" COLOR SCHEME c_fondo
+
+USE USUARIO IN 0 ORDER USUARIO1
+* SEEK ALLTRIM(SUBSTR(SYS(0),1,10))
+ SEEK 'CONTAB'
+* IF FOUND()
+*    SPAC1  = LEN(ALLT(usuario.nombre))  
+     DESUSE = subst(Usuario.Nombre,1,25)
+     *DESUSE = "CONTAB" 
+* ELSE
+*    DESUSE =ALLTRIM(SUBSTR(SYS(0),1,10))
+* ENDIF
+
+spac = (80 -(LEN(CIA)+LEN(TITU)+10))/2
+Rotulo1 = CIA + SPACE(spac) + TITU + SPAC(spac) + space(10)
+
+spac = (80 - (LEN(DESA)+LEN(DESUSE)+10))/2
+Rotulo2 = DESA + SPACE(spac)+' '+DESUSE+' '+SPAC(spac)+DTOC(DATE())
+C    = " "
+
+DO Logos WITH Rotulo1,Rotulo2,50
+SAVE SCREEN TO Principal
+
+IF WORKER
+   ON ERROR
+ENDIF
+
+SAVE SCREEN TO Pantalla
+STORE .t. TO vEn_sistema
+
+*-- Clave de acceso
+vUser_ID = SPACE(5)
+vUser_ID = ALLTRIM(LEFT(SYS(0),15))
+vUser_ID = "CONTAB"
+
+IF !FILE( 'USUARIO.CDX')
+	DO STANdBY WITH 'Error en INDEXA'
+ENDIF
+
+USE Usuario ORDER TAG Usuario1  ALIAS Usua
+IF !Clave()
+	CLOSE DATA
+	DO STANDBY WITH '!! Acceso Denegado !!',10,15
+	IF Worker
+		CANCEL
+	ENDIF
+	QUIT
+ENDIF
+
+vUser_ID = ALLTRIM(Usuario)
+
+vnombre  = alltrim(nombre)
+vcoddep  = coddep
+vnumdep  = numdep
+vflag    = flag
+vConex = ALLTRIM(LEFT(SYS(0),8))
+vmaq   = ALLTRIM(RIGHT(SYS(0),2))
+vllav  = ALLTRIM(sys(2))
+
+use
+
+USE IteUsu ORDER TAG IteUsu1   ALIAS IteU
+SELE IteU
+SET FILT TO sistema='5'
+vUsuCla = CHRTRAN(vUser_ID,'ABCDEFGHIJKLMN¥OPQRSTUVWXYZ0123456789',;
+                           'XWAQSD!R$1Z2LH)^CEP&67UIYMTxw%/-+}{?~«¬@›_#')
+vAcceso = ''
+
+SEEK vUsuCla
+SCAN WHILE ALLT(vUsuCla) = ALLT(IteU.UsuCla)
+	vAcceso = vAcceso + ALLT(IteU.Modulo)
+ENDSCAN
+SET FILT TO
+USE
+
+=SavCon(1)
+
+SET CLOCK ON
+STORE .t. TO vEn_sistema
+STORE .f. TO esc_tecla
+= SYS(2002,1)        && Set cursor on
+
+*--- El men£ principal ---**
+L_COL  ="W+/W,N/W,N/W,GR+/B, R+/B, W+/B , W+/W, N+/N, GR+/B, R+/B "
+
+IF escolor
+   DEFINE POPUP menu FROM 6,2 TO 16,21 SHADOW COLOR &L_COL
+ELSE
+   DEFINE POPUP menu FROM 6,2 TO 16,21        COLOR SCHEME C_POPUP
+ENDIF
+
+DEFINE BAR  1 OF menu PROMPT ' \<Documentos      '
+DEFINE BAR  2 OF menu PROMPT ' \<Procesos        '
+DEFINE BAR  3 OF menu PROMPT ' \<Reportes        '
+DEFINE BAR  4 OF menu PROMPT ' \<Mantenimiento   '
+DEFINE BAR  5 OF menu PROMPT ' \<Utilitarios     '
+DEFINE BAR  6 OF menu PROMPT ' Datos \<Iniciales '
+* DEFINE BAR  7 OF menu PROMPT ' \<Especiales      ' MESSAGE "Consultas y reportes especiales"
+DEFINE BAR  7 OF menu PROMPT ' \<Salida           '
+
+*- Documentos
+IF escolor
+   DEFINE POPUP pop_01 FROM 5,24 SHADOW COLOR &l_col
+ELSE
+   DEFINE POPUP pop_01 FROM 5,24 COLOR SCHEME c_popup
+ENDIF
+
+DEFINE BAR  01  OF  pop_01 PROMPT '\<Documentos  Varios    '         MESSAGE ''
+DEFINE BAR  02  OF  pop_01 PROMPT '\<Notas de Contabilidad '         MESSAGE ''
+DEFINE BAR  03  OF  pop_01 PROMPT 'Notas del \<Constructivo'         MESSAGE ''
+DEFINE BAR  04  OF  pop_01 PROMPT '\<Listados de Control  '         MESSAGE ''
+DEFINE BAR  05  OF  pop_01 PROMPT '\<Aplic. Ctas Pre-Proces.'         
+*DEFINE BAR  06  OF  pop_01 PROMPT '\<Registro de Ventas    '         MESSAGE ''
+*DEFINE BAR  07  OF  pop_01 PROMPT 'credi\<Tos             '         MESSAGE ''
+
+*- Listado de Errores 
+  IF Escolor
+     DEFINE POPUP pop_013 FROM 06,52  SHADOW COLOR &l_col
+  ELSE
+     DEFINE POPUP pop_013 FROM 06,52  to 12,75  COLOR SCHEME c_popup
+  ENDIF
+  
+  DEFINE BAR  1 OF pop_013  PROMPT 'Consistencia \<General        ' MESSAGE ''
+  DEFINE BAR  2 OF pop_013  PROMPT 'Consistencia \<Detallada      ' MESSAGE ''
+  DEFINE BAR  3 OF pop_013  PROMPT '\<Listado de errores          ' MESSAGE ''
+  DEFINE BAR  4 OF pop_013  PROMPT '\<Errores por tipo de auxiliar' MESSAGE ''
+* DEFINE BAR  5 OF pop_013  PROMPT 'Errores por Tipo \<Financiero ' MESSAGE ''
+
+  
+*- Procesos
+IF escolor
+   DEFINE POPUP pop_02 FROM 6,26 SHADOW COLOR &l_col
+ELSE
+   DEFINE POPUP pop_02 FROM 6,26 TO 12,50        COLOR SCHEME c_popup
+ENDIF
+
+DEFINE BAR 1  OF  pop_02 PROMPT '\<Proceso DOCS X Lotes ' MESSAGE ''
+DEFINE BAR 2  OF  Pop_02 PROMPT '\-'
+DEFINE BAR 3  OF  pop_02 PROMPT '\<Mayorizaci¢n          ' MESSAGE ''
+DEFINE BAR 4  OF  pop_02 PROMPT 'Mayori\<Z. Constructivo ' MESSAGE ''
+DEFINE BAR 5  OF  pop_02 PROMPT 'Proceso de \<Ajuste ACM ' MESSAGE ''
+*DEFINE BAR 6  OF  pop_02 PROMPT '\-'
+*DEFINE BAR 6  OF  pop_02 PROMPT '\<Saldos de ACM a dic.  ' MESSAGE ''
+DEFINE BAR 6 OF  pop_02 PROMPT '\<Cierre del Mes        ' MESSAGE ''
+DEFINE BAR 7 OF  pop_02 PROMPT '\<Re-procesos           ' MESSAGE ''
+DEFINE BAR 8 OF  pop_02 PROMPT '\<Generaci¢n EE.FF.     ' MESSAGE ''
+DEFINE BAR 9 OF  pop_02 PROMPT 'An \<Lisis de Cuenta    ' MESSAGE ''
+
+*- Integraciones
+IF escolor
+   DEFINE POPUP pop_021 FROM 6,52 SHADOW COLOR &l_col
+ELSE
+   DEFINE POPUP pop_021 FROM 6,52 COLOR SCHEME c_popup
+ENDIF
+
+DEFINE BAR 1  OF  pop_021 PROMPT '\<Hojas de Control         ' MESSAGE ''
+DEFINE BAR 2  OF  pop_021 PROMPT '\<Afectaciones (Devengados)' MESSAGE ''
+DEFINE BAR 3  OF  pop_021 PROMPT '\<Recibos de Ingreso       ' MESSAGE ''
+DEFINE BAR 4  OF  pop_021 PROMPT '\<Comprobantes / Pago      ' MESSAGE ''
+DEFINE BAR 5  OF  pop_021 PROMPT '\<Boletas de Deposito      ' MESSAGE ''
+DEFINE BAR 6  OF  pop_021 PROMPT '\<Notas de Cargo           ' MESSAGE ''
+DEFINE BAR 7  OF  pop_021 PROMPT 'Notas de \<Abono           ' MESSAGE ''
+DEFINE BAR 8  OF  pop_021 PROMPT 'Notas d \<Entrada a Almac‚n' MESSAGE ''
+DEFINE BAR 9  OF  pop_021 PROMPT '\<Facturas                 ' MESSAGE ''
+DEFINE BAR 10 OF  pop_021 PROMPT 'Hojas de \<Modificaci¢n    ' MESSAGE ''
+DEFINE BAR 11 OF  pop_021 PROMPT '\<Ordenes de Compra O/C    ' MESSAGE ''
+DEFINE BAR 12 OF  pop_021 PROMPT 'che\<Ques                  ' MESSAGE ''
+DEFINE BAR 13 OF  pop_021 PROMPT 'Ordenes de \<Servicio O/S  ' MESSAGE ''
+DEFINE BAR 14 OF  pop_021 PROMPT 'Ordene de Serv\<icio - C/P ' MESSAGE ''
+DEFINE BAR 15 OF  pop_021 PROMPT 'Re\<versiones T - 6        ' MESSAGE ''
+DEFINE BAR 16 OF  pop_021 PROMPT 'Reba\Vja de Ingresos       ' MESSAGE ''
+DEFINE BAR 17 OF  pop_021 PROMPT 'Par\<te de Reb.y Anul.OC,OS' MESSAGE ''
+DEFINE BAR 18 OF  pop_021 PROMPT '\<Pecosas                  ' MESSAGE ''
+
+*- Reportes
+IF escolor
+   DEFINE POPUP pop_03 FROM 04,24 SHADOW COLOR &l_col
+ELSE
+   DEFINE POPUP pop_03 FROM 04,24 TO 20,48  COLOR SCHEME c_popup
+ENDIF
+
+DEFINE BAR 01  OF  pop_03 PROMPT 'L\<Ibro Caja                    ' MESSAGE ''
+DEFINE BAR 02  OF  pop_03 PROMPT 'Libro Diario (\<Detallado)      ' MESSAGE ''
+DEFINE BAR 03  OF  pop_03 PROMPT 'Libro Diario (\<Resumen  )      ' MESSAGE ''
+DEFINE BAR 04  OF  pop_03 PROMPT 'Libro \<Mayor                   ' MESSAGE ''
+DEFINE BAR 05  OF  pop_03 PROMPT 'Libro I\<Nventarios y Balances  ' MESSAGE ''
+DEFINE BAR 06  OF  pop_03 PROMPT '\-'
+DEFINE BAR 07  OF  pop_03 PROMPT '\<Balances                     ' MESSAGE ''
+DEFINE BAR 08  OF  pop_03 PROMPT '\-'
+DEFINE BAR 09  OF  pop_03 PROMPT 'Auxiliar E\<Standard           ' MESSAGE ''
+DEFINE BAR 10  OF  pop_03 PROMPT 'Libro Ban\<Cos                  ' MESSAGE ''
+DEFINE BAR 11  OF  pop_03 PROMPT 'Asiento Centrali\<Zaci¢n        ' MESSAGE ''
+DEFINE BAR 12  OF  pop_03 PROMPT '\-'
+DEFINE BAR 13  OF  pop_03 PROMPT '\<Analisis de cuentas          ' MESSAGE ''
+DEFINE BAR 14  OF  pop_03 PROMPT '\-'
+DEFINE BAR 15  OF  pop_03 PROMPT 'C\<edulas de Ajustes           ' MESSAGE ''
+DEFINE BAR 16  OF  pop_03 PROMPT '\<Not/Con Ajustes              ' MESSAGE ''
+DEFINE BAR 17  OF  pop_03 PROMPT '\<Centraliz. Caja (Diciembre)  ' MESSAGE ''
+*DEFINE BAR 16  OF  pop_03 PROMPT 'Saldos \<Hoj. Trab. a Dic' MESSAGE ''
+*DEFINE BAR 16  OF  pop_03 PROMPT 'Estados \<Financieros    ' MESSAGE ''
+
+
+* An lisis de Cuentas 
+*-----------------------
+
+IF escolor
+     DEFINE POPUP pop_313 FROM 13,52 SHADOW COLOR &l_col
+ELSE
+    DEFINE POPUP pop_313 FROM 13,52  TO 23,75  COLOR SCHEME c_popup     
+ENDIF
+DEFINE BAR  1 OF pop_313  PROMPT 'Por \<Proveedor'  MESSAGE ''
+DEFINE BAR  2 OF pop_313  PROMPT 'Por \<Obra     '  MESSAGE ''
+
+*- Estados Financieros
+
+IF escolor
+	DEFINE POPUP pop_315 FROM 06,52 SHADOW COLOR &l_col
+ ELSE
+	DEFINE POPUP pop_315 FROM 06,52  TO 23,75  COLOR SCHEME c_popup
+ENDIF
+
+DEFINE BAR  1 OF pop_315  PROMPT 'AF1 \<Inversiones             '  MESSAGE 'Inversiones'
+DEFINE BAR  2 OF pop_315  PROMPT 'AF2 Inmueble, \<Maq. y Equipo '  MESSAGE 'Inmueble, Maquinaria y Equipo'
+DEFINE BAR  3 OF pop_315  PROMPT 'AF2A Infraestructura \<Publica'   MESSAGE 'Infraestructura Publica'
+DEFINE BAR  4 OF pop_315  PROMPT 'AF3 \<Depreciaci¢n Acumulada  '  MESSAGE 'Depreciaci¢n, Agotamiento y Amortizaci¢n Acumulada'
+DEFINE BAR  5 OF pop_315  PROMPT 'AF4 \<Otras Cuentas Activo    '  MESSAGE 'Otras Cuentas del Activo'
+DEFINE BAR  6 OF pop_315  PROMPT 'AF5 \<Provisi¢n Benef.Sociales'  MESSAGE 'Provisiones para Beneficios Sociales'
+DEFINE BAR  7 OF pop_315  PROMPT 'AF6 In\<gresos Diferidos      '  MESSAGE 'Ingresos Diferidos'
+DEFINE BAR  8 OF pop_315  PROMPT 'AF7 \<Hacienda Nac. Adicional '  MESSAGE 'Hacienda Nacional Adicional'
+DEFINE BAR  9 OF pop_315  PROMPT 'F1  \<Balance General         '  MESSAGE 'Balance General'
+DEFINE BAR 10 OF pop_315  PROMPT 'F2  \<Estado de Gesti¢n       '  MESSAGE 'Estado de Gesti¢n'
+DEFINE BAR 11 OF pop_315  PROMPT 'F3  Estado Cambios Patr.\<Neto'  MESSAGE 'Estado de Cambios en el Patrimonio Neto'
+DEFINE BAR 12 OF pop_315  PROMPT 'F4  Estado de \<Flujo Efectivo'  MESSAGE 'Estado de Flujos en Efectivo'
+
+*- Balances 
+  IF Escolor
+     DEFINE POPUP pop_034 FROM 07,52  SHADOW COLOR &l_col
+  ELSE
+     DEFINE POPUP pop_034 FROM 07,52  to 12,75  COLOR SCHEME c_popup
+  ENDIF
+  
+  DEFINE BAR  1 OF pop_034  PROMPT 'Compro\<Baci¢n       ' MESSAGE ''
+  DEFINE BAR  2 OF pop_034  PROMPT 'Cons\<Tructivo       ' MESSAGE ''
+  DEFINE BAR  3 OF pop_034  PROMPT '\<Hist¢rico          ' MESSAGE ''
+  DEFINE BAR  4 OF pop_034  PROMPT '\-'
+  DEFINE BAR  5 OF pop_034  PROMPT '\<Estado de gesti¢n  ' MESSAGE ''
+  
+*- Mantenimiento
+IF escolor
+   DEFINE POPUP pop_04 FROM 09,24 SHADOW COLOR &l_col
+ELSE
+   DEFINE POPUP pop_04 FROM 09,24 TO 15,53        COLOR SCHEME c_popup
+ENDIF
+
+DEFINE BAR 1  OF  pop_04 PROMPT 'Plan \<Contable              '  MESSAGE ''
+DEFINE BAR 2  OF  pop_04 PROMPT '\<Auxiliares                '  MESSAGE ''
+DEFINE BAR 3  OF  pop_04 PROMPT '\<Tablas                    '  MESSAGE ''
+DEFINE BAR 4  OF  pop_04 PROMPT 'Estructura EE.FF            '  MESSAGE ''
+
+*-  Parametros 
+IF escolor
+   DEFINE POPUP pop_04d FROM 11,55 SHADOW COLOR &L_COL
+ELSE
+   DEFINE POPUP pop_04d FROM 11,55 COLOR SCHEME C_POPUP
+ENDIF
+
+DEFINE BAR  1  OF pop_04d PROMPT 'Tipos \<Auxiliares         '
+DEFINE BAR  2  OF pop_04d PROMPT '\<Par metros de Control    '
+DEFINE BAR  3  OF pop_04d PROMPT 'Tipos de \<Documentos      '
+DEFINE BAR  4  OF pop_04d PROMPT 'Cam\<bio de Tipos      '
+DEFINE BAR  5  OF pop_04d PROMPT '\<Seguridad			    '
+DEFINE BAR  6  OF pop_04d PROMPT 'Tipos \<Financieros        '
+DEFINE BAR  7  OF pop_04d PROMPT 'Estru\<Tura  E.E.F.F.      '
+DEFINE BAR  8  OF pop_04d PROMPT 'Tipos Financ. A\<Utom ticos'
+DEFINE BAR  9  OF pop_04d PROMPT 'Factores A.C.\<M. - I.P.M  '
+DEFINE BAR 10  OF pop_04d PROMPT '\<Fechas del Sistema       '  MESSAGE ''
+DEFINE BAR 11  OF Pop_04d PROMPT 'Ma\<ntenimiento Correlativos'  MESSAGE ''
+
+*-  Tablas
+IF escolor
+   DEFINE POPUP pop_03d FROM 09,55 SHADOW COLOR &L_COL
+ELSE
+   DEFINE POPUP pop_03d FROM 09,55 COLOR SCHEME C_POPUP
+ENDIF
+
+DEFINE BAR 1  OF pop_03d PROMPT 'Conceptos \<Movs. Bancarios'   
+DEFINE BAR 2  OF Pop_03d PROMPT 'G\<Losas                   '
+DEFINE BAR 3  OF Pop_03d PROMPT '\<Clases de cuentas        '
+
+*-  ESTRUCTURA EE.FF.
+IF escolor
+   DEFINE POPUP pop_02d FROM 09,55 SHADOW COLOR &L_COL
+ELSE
+   DEFINE POPUP pop_02d FROM 09,55 COLOR SCHEME C_POPUP
+ENDIF
+
+DEFINE BAR 1  OF pop_02d PROMPT '\<a.F-1 Balance Gral.'
+DEFINE BAR 2  OF Pop_02d PROMPT '\<b.F-2 Estado de Gesti¢n'
+DEFINE BAR 3  OF Pop_02d PROMPT '\<c.F-3 Est. Cambios en el Pat. Neto'
+
+*- Utilitarios
+IF escolor
+   DEFINE POPUP pop_05 FROM 09,24 SHADOW COLOR &l_col
+ELSE
+   DEFINE POPUP pop_05 FROM 09,24 COLOR SCHEME c_popup
+ENDIF
+DEFINE BAR  1  OF Pop_05 PROMPT '\<Indexar Archivos              '
+DEFINE BAR  2  OF Pop_05 PROMPT '\<Backup de los Archivos        '
+DEFINE BAR  3  OF Pop_05 PROMPT 'De\<Puraci¢n de Backups         '
+DEFINE BAR  4  OF Pop_05 PROMPT 'Impresi¢n de \<Archivos         '
+DEFINE BAR  5  OF Pop_05 PROMPT '\-'
+DEFINE BAR  6  OF Pop_05 PROMPT '\<Usuarios CPT96                 '
+DEFINE BAR  7  OF Pop_05 PROMPT '\<Seguridad                      ' MESSAGE '® Acceso Restringido ¯'
+
+*- Datos Iniciales
+IF escolor
+   DEFINE POPUP Pop_06 FROM 11,26 SHADOW COLOR &L_COL
+ELSE
+   DEFINE POPUP Pop_06 FROM 11,26 TO 16,53 COLOR SCHEME C_POPUP
+ENDIF
+
+DEFINE BAR  1 OF Pop_06 PROMPT '\<Saldos y Sumas          '
+DEFINE BAR  2 OF Pop_06 PROMPT 'Saldos de Apertura \<EE.FF.' 
+DEFINE BAR  3 OF Pop_06 PROMPT 'Saldos de \<Auxiliar      '
+
+
+ON SELECTION POPUP menu DO ACT_MENUS
+
+IF !vFlag$'J*'
+	DO ABREPAS
+ENDIF
+
+*IF !vUser_ID$'JOSELCDJFGFMC'
+*	DO ABREPAS
+*ENDIF	
+
+IF  !escolor
+  @ 04, 01, 20, 22 BOX "ÛÛÛÛÛÛÛÛÛ" COLOR SCHEME c_fondo
+  @ 05, 02  FILL TO  21, 23    COLOR BR+/B
+  @ 05, 02  FILL TO  20, 22    COLOR BR/B
+ENDIF
+
+**- La sombra del principal
+**- SAVE SCREEN TO principal
+ACTIVATE POPUP menu
+DO WHILE  EMPTY(PROMPT())
+   ACTIVATE POPUP menu
+ENDDO
+*-Cerrar todo...
+ON KEY
+*=BorCon()
+RETURN
+
+*-- Fin  del Programa Principal
+
+
+PROCEDURE ACT_MENUS
+*------------------
+DO CASE
+   CASE BAR() = 1
+     ON SELECTION POPUP pop_01  DO  menu_01
+     ACTIVATE POPUP pop_01
+   CASE BAR() = 2
+     ON SELECTION POPUP pop_02  DO  menu_02
+     ACTIVATE POPUP pop_02
+   CASE BAR() = 3
+     ON SELECTION POPUP pop_03  DO  menu_03
+     ACTIVATE POPUP pop_03
+   CASE BAR() = 4
+     ON SELECTION POPUP pop_04  DO  menu_04
+     ACTIVATE POPUP pop_04
+   CASE BAR() = 5
+     ON SELECTION POPUP pop_05  DO  menu_05
+     ACTIVATE POPUP pop_05
+   CASE BAR() = 6
+     ON SELECTION POPUP pop_06  DO  menu_06
+     ACTIVATE POPUP pop_06
+   CASE BAR() = 7
+     DO Salmenu
+ENDCASE
+
+RESTORE SCREEN FROM principal
+RETURN
+
+
+PROCEDURE menu_01   && Comprobantes
+*----------------
+
+  choice=BAR()
+  DO CASE
+    CASE choice = 1
+        DO Coming
+    CASE choice = 2
+        DO Notcon
+    CASE choice = 3
+		DO NotCons
+*        DO NotCcons
+    CASE choice = 4
+      ON SELECTION POPUP pop_013 DO menu_013
+      ACTIVATE POPUP pop_013            && Errores
+    CASE choice = 5
+		DO AplCC
+  ENDCASE
+    
+  IF !escolor
+    RESTORE SCREEN FROM principal
+    ON SELECTION POPUP pop_01  DO menu_01
+  ENDIF
+  SHOW POPUP POP_01,menu
+  HIDE WINDOW ALL
+RETURN
+
+
+PROCEDURE menu_013   && Listado de Errores
+*----------------
+  choice=BAR()
+  DO CASE
+    CASE choice = 1
+      DO ConCom
+    CASE choice = 2
+      DO ConDet1
+    CASE choice = 3
+      DO ComErr
+    CASE choice = 4
+      DO ErrAux
+  ENDCASE
+  
+  IF !escolor
+  	RESTORE SCREEN FROM principal
+  ENDIF
+  SHOW POPUP menu, pop_01,pop_013
+  RETURN
+
+PROCEDURE menu_02   && Procesos
+*----------------
+  choice=BAR()
+  DO CASE
+    CASE choice = 1
+         ON SELECTION POPUP pop_021 DO menu_021
+         ACTIVATE POPUP pop_021
+    CASE choice = 3
+       DO Mayoriz1    && Mayoriza
+    CASE choice = 4
+       DO MayCon1    && Mayoriza Constructivo 
+    CASE choice = 5
+      DO AjuACM1      && Ajuste ACM
+*      DO AjuACM       && Ajuste ACM
+*    CASE choice = 6
+*      DO AcmADic       && saldos de Ajuste ACM a diciembre
+    CASE choice = 6
+      DO Ciemes       && Cierre-Mes 
+    CASE choice = 7
+      DO Apemes       && Re-Apertura Mes 
+    CASE choice = 8
+      DO REPFIN    && Generacion de Estados Financieros 
+    CASE choice = 9
+      DO Genanal    && Generacion de Analisis de Cuenta 
+  ENDCASE
+  IF !escolor
+    RESTORE SCREEN FROM principal
+    ON SELECTION POPUP pop_02  DO menu_02
+  ENDIF
+  SHOW POPUP pop_02,menu
+  HIDE WINDOW ALL
+RETURN
+  
+PROCEDURE menu_021  && Integra Lotes
+*----------------
+choice=BAR()
+DO CASE
+	CASE choice = 1
+		Do IntHC1      && Integra Hojas de Control
+	CASE choice = 2
+		Do IntDev      && Integra Afectaciones (Devengados)
+	CASE choice = 3
+		Do IntRI      && Integra Recibos de Ingreso
+	CASE choice = 4
+		DO IntCP      && Integra Comprobantes de Pago
+	CASE choice = 5
+		DO IntBD      && Integra Movimientos Bancarios B/D
+	CASE choice = 6
+		DO IntNC      && Integra Movimientos Bancarios  N/C
+	CASE choice = 7
+		DO IntNA      && Integra Movimientos Bancarios  N/A
+	CASE choice = 8
+		DO IntNEA     && Integra Poliza de Entrada / Salida
+	CASE choice = 9
+		DO IntFact    && Integra Facturas que no quisieron ingresar en las los Recibos de ingreso
+	CASE choice = 10
+		DO Inthm      && Integra Hojas de Modificaci¢n
+	CASE choice = 11
+		DO IntOC     && Integra O/C
+	CASE choice = 12
+		DO IntChE    && Integra cheques
+	CASE choice = 13
+		DO Intos    && Integra o/s
+	CASE choice = 14
+*		DO Intoscp   && Integra o/s - c/p
+	CASE choice = 15
+		DO Intrev    && Integra reversiones T-6
+	CASE choice = 16
+		DO IntrebIN  && Integra rebajas de Ingresos
+	CASE choice = 17
+		DO IntPRA  && Integra Partes de Rebaja Y ANULAC. O/C, O/S
+	CASE choice = 18
+		DO IntPec  && Integra Pecosas
+ENDCASE
+
+IF !escolor
+	RESTORE SCREEN FROM principal
+	ON SELECTION POPUP pop_021  DO menu_021
+ENDIF
+SHOW POPUP pop_021,menu
+HIDE WINDOW ALL
+RETURN
+
+PROCEDURE menu_03   && Reportes
+*----------------
+
+ choice=BAR()
+  DO CASE
+    CASE choice = 1    && Libro Caja
+      DO LibCaj
+    CASE choice = 2    && Diario
+      DO LibDiR
+    CASE choice = 3    && Diario resumen
+        DO Libdia
+*        DO Libdia1
+    CASE choice = 4    && Mayor
+       DO LibMay3
+    CASE choice = 5    && Libro de inventarios y Balances
+      DO InvIni
+    CASE choice = 7    && Balances
+      ON SELECTION POPUP pop_034 DO menu_034
+      ACTIVATE POPUP pop_034
+    CASE choice = 9    && Auxiliar Standar
+      DO LibAuST
+    CASE choice = 10   && Libro Bancos
+	   DO Libban3
+*	   DO Libbans
+    CASE choice = 11   && Asiento de Cantralizacion
+      DO Asicen
+    CASE choice = 13   && Analisis de Cuenta 
+      DO AnaCue
+    CASE choice = 15   && Hojas de Trabajo REI
+      DO HojTra
+    CASE choice = 16   && Saldos de Hojas de Trabajo a diciembre REI
+      DO CedAjuNC
+    CASE choice = 17   && Saldos de Hojas de Trabajo a diciembre REI
+      DO CenCaj
+*    CASE choice = 16   && Saldos de Hojas de Trabajo a diciembre REI
+*      DO HTaDic
+   * CASE choice = 16   && Reportes AF's-F's
+   *   ON SELECTION POPUP pop_315 DO menu_315
+   *   ACTIVATE POPUP pop_315
+  ENDCASE
+  
+  IF !escolor
+     RESTORE SCREEN FROM principal
+     ON SELECTION POPUP pop_03  DO menu_03
+  ENDIF
+  SHOW POPUP pop_03,menu
+  HIDE WINDOW ALL
+RETURN
+
+PROCEDURE menu_034    && Balance
+*----------------------
+ STORE BAR() TO choice
+ DO CASE
+*    CASE choice = 1
+*       DO BalComI         && Balance de Comprobaci¢n I
+    CASE choice = 1
+       DO BalComII        && Balance de Comprobaci¢n  II
+    CASE choice = 2
+       DO BalConSE          && Balance Constructivo 
+    CASE choice = 3  
+       DO BalConHI        && Balance HISTORICO
+    CASE choice = 5
+       DO EstGes          && Estado de gesti¢n
+ ENDCASE
+  IF !escolor
+    RESTORE SCREEN FROM principal
+ ENDIF
+ SHOW POPUP menu, pop_03,pop_034
+RETURN
+
+
+
+**** NO HAY
+PROCEDURE menu_313  && An lisis de Cuentas 
+*------------------
+STORE BAR() TO choice
+    DO CASE
+       CASE choice = 1
+*         DO Analis2    && Por PROVEEDOR
+       CASE choice = 2
+*         DO Analisob   && Por Obra 
+    ENDCASE
+ IF !escolor
+    RESTORE SCREEN FROM principal
+ ENDIF
+ SHOW POPUP menu, pop_03,pop_313
+RETURN
+
+
+PROCEDURE menu_315    && Estados Financieros
+*------------------
+    STORE BAR() TO choice
+    DO CASE
+       CASE choice = 1
+        DO RepEEFF WITH 'AF-1','REPAF1'
+       CASE choice = 2
+         DO RepEEFF WITH 'AF-2','REPAF2'       
+       CASE choice = 3
+         DO RepEEFF WITH 'AF-2A','REPAF2A'       
+       CASE choice = 4
+         DO RepEEFF WITH 'AF-3','REPAF3'      
+       CASE choice = 5
+         DO RepEEFF WITH 'AF-4','REPAF4'       
+       CASE choice = 6
+         DO RepEEFF WITH 'AF-5','REPAF5'       
+       CASE choice = 7
+         DO RepEEFF WITH 'AF-6','REPAF6'       
+       CASE choice = 8
+         DO RepEEFF WITH 'AF-7','REPAF7M'       
+       CASE choice = 9
+ 		 DO RepEEFF WITH 'F-1','REPF1a'       
+       CASE choice = 10
+         SET DECIMAL TO 0
+         DO RepEEFF WITH 'F-2','REPF2a'       
+         SET DECIMAL TO 2
+       CASE choice = 11
+      	 DO RepEEFF WITH 'F-3','REPF3'       
+       CASE choice = 12
+      	 DO RepEEFF WITH 'F-4','REPF4'       
+    ENDCASE
+ IF !escolor
+    RESTORE SCREEN FROM principal
+ ENDIF
+ SHOW POPUP menu, pop_03,pop_315
+RETURN
+
+PROCEDURE menu_04   && Mantenimientos
+*----------------
+  choice=BAR()
+  DO CASE
+    CASE BAR()=1   && Concepto Movimientos Bancarios
+       	DO Cuentas
+    CASE choice = 2    && auxiliares
+      	ON SELECTION POPUP pop_04d DO menu_04d
+      	ACTIVATE POPUP pop_04d
+    CASE BAR()=3
+      	ON SELECTION POPUP pop_03d DO menu_03d
+      	ACTIVATE POPUP pop_03d
+    CASE BAR()=4
+      	ON SELECTION POPUP pop_02d DO menu_02d
+      	ACTIVATE POPUP pop_02d
+ ENDCASE
+     
+  IF !escolor
+    RESTORE SCREEN FROM principal
+    ON SELECTION POPUP pop_04  DO menu_04
+  ENDIF
+  SHOW POPUP pop_04,menu
+  HIDE WINDOW ALL
+  RETURN
+
+PROCEDURE menu_04d
+*-----------------
+  DO CASE
+    CASE BAR()=1
+       DO TipAux
+    CASE BAR()=2
+       DO MANPAR1 WITH 'OPERAT',' Descripci¢n ','Par metros del Sistema',7
+    CASE BAR()=3
+       DO TipDoc
+    CASE BAR()=4
+       DO CamTip
+    CASE BAR()=5
+       DO STANDBY WITH "Vistas de Usuario aun no Definidas" 
+       * DO SegUsu
+    CASE BAR()=6
+       DO Tipfin
+    CASE BAR()=7
+       DO EstFin
+    CASE BAR()=8
+       DO STANDBY WITH "Opcion no definida para el periodo 1996"
+       * DO AutFin
+    CASE BAR()=9			&& fACTORES de ajuste
+       DO ACMIPM 
+*       DO Factores 
+    CASE BAR()=10
+       DO MESANO          &&Mantenimiento de Fecha para el trabajo en Linea 
+    CASE BAR()=11
+       DO CORREL          &&Mantenimiento de Correlativos 
+  ENDCASE
+  IF !escolor
+     RESTORE SCREEN FROM principal
+     ON SELECTION POPUP pop_04d  DO menu_04d
+  ENDIF
+  SHOW POPUP pop_04d, pop_04, menu
+  HIDE WINDOW ALL
+RETURN
+
+PROCEDURE menu_05   && Utilitarios
+*----------------
+ DO CASE
+    CASE BAR() = 1
+         DO Indexa
+    CASE BAR() = 2
+         DO Backup
+    CASE BAR() = 3
+         DO DepBK
+*    CASE BAR() = 4
+*         RUN CAPTURE /Q=PRINTQ_0 /TI=0 /No Banner /No Formfeed
+*         RESTORE  SCREEN FROM Principal
+*    CASE BAR() = 5
+*         RUN ENDCAP
+*         RESTORE  SCREEN FROM Principal
+    CASE BAR() = 4
+         DO ImpArc
+    CASE BAR() = 6
+*         DO UsersCPT
+    CASE BAR() = 7
+		do segCpt WITH vUser_Id
+		RESTORE  SCREEN FROM Principal
+  ENDCASE
+
+  IF !escolor
+     RESTORE SCREEN FROM principal
+     ON SELECTION POPUP pop_05  DO menu_05
+  ENDIF
+  SHOW POPUP pop_05,menu
+  HIDE WINDOW ALL
+  RETURN
+  
+PROCEDURE menu_06   && Datos Iniciales
+*----------------
+  DO CASE
+     CASE BAR()=1
+          DO Saldos
+     CASE BAR()=2
+	      OK=VE_PASSW('FELPA')
+          IF OK
+             * DO Saldini 
+             DO STANDBY WITH "Programa aun en Prueba...!"
+          ENDIF
+     CASE BAR()=3
+          DO PSalAux
+     CASE BAR()=4
+          * DO Acumula
+          * DO Finano
+          DO STANDBY WITH "Programa aun en Prueba...!"
+  ENDCASE
+  IF !escolor
+     RESTORE SCREEN FROM principal
+     ON SELECTION POPUP pop_06  DO menu_06
+  ENDIF
+  SHOW POPUP pop_06,menu
+  HIDE WINDOW ALL
+RETURN
+
+
+PROCEDURE salmenu
+*----------------
+STORE  YESNO(' Estamos Terminando la sesi¢n ') TO in_regrau
+IF in_regrau
+	CLOSE DATA
+	CLEAR WINDOWS
+	RELEASE ALL
+	CLEAR
+	*=BorCon()
+	=SavCon(2)
+	IF !worker
+		QUIT
+	 ELSE
+		CANCEL
+	ENDIF
+ ELSE
+	RETURN
+ENDIF
+
+
+PROCEDURE menu_03d
+*-----------------
+  DO CASE
+     CASE BAR() = 1
+          DO MANPAR3 WITH "MOTIVO","Motivo","Motivos"
+     CASE BAR() = 2
+         DO glosas  && Glosas
+     CASE BAR() = 3
+         DO MANPAR3 WITH 'TIPCLA',' Descripci¢n ','Clases de Cuentas',7
+  ENDCASE
+  IF !escolor
+     RESTORE SCREEN FROM principal
+     ON SELECTION POPUP pop_03d  DO menu_03d
+  ENDIF
+  SHOW POPUP pop_03d, pop_04, menu
+  HIDE WINDOW ALL
+  RETURN
+
+PROCEDURE menu_02d
+*-----------------
+  DO CASE
+     CASE BAR() = 1
+     	=STANDBY('OPCION AUN NO REALIZADA')
+     CASE BAR() = 2
+     CASE BAR() = 3
+  ENDCASE
+  IF !escolor
+     RESTORE SCREEN FROM principal
+     ON SELECTION POPUP pop_03d  DO menu_03d
+  ENDIF
+  SHOW POPUP pop_02d, pop_04, menu
+  HIDE WINDOW ALL
+  RETURN
+
+PROCEDURE ABREPAS
+*----------------
+**- Accesos a las Documentos
+SET SKIP OF BAR 1  OF pop_01 !'A' $vAcceso
+SET SKIP OF BAR 2  OF pop_01 !'B' $vAcceso
+SET SKIP OF BAR 3  OF pop_01 !'C' $vAcceso
+SET SKIP OF BAR 4  OF pop_01 !'D' $vAcceso
+
+**- Accesos a las Documentos:Listados de Control
+SET SKIP OF BAR 1  OF pop_013 !'E' $vAcceso
+SET SKIP OF BAR 2  OF pop_013 !'F' $vAcceso
+SET SKIP OF BAR 3  OF pop_013 !'G' $vAcceso
+SET SKIP OF BAR 4  OF pop_013 !'H' $vAcceso
+
+**- Accesos a las Procesos
+SET SKIP OF BAR 1  OF pop_02 !'I' $vAcceso
+SET SKIP OF BAR 3  OF pop_02 !'J' $vAcceso
+SET SKIP OF BAR 4  OF pop_02 !'K' $vAcceso
+SET SKIP OF BAR 5  OF pop_02 !'L' $vAcceso
+SET SKIP OF BAR 6  OF pop_02 !'M' $vAcceso
+SET SKIP OF BAR 7  OF pop_02 !'N' $vAcceso
+SET SKIP OF BAR 8  OF pop_02 !'O' $vAcceso
+SET SKIP OF BAR 9  OF pop_02 !'P' $vAcceso
+
+**- Accesos a las Procesos:Integraci¢n
+SET SKIP OF BAR 1  OF pop_021 !'Q' $vAcceso
+SET SKIP OF BAR 2  OF pop_021 !'R' $vAcceso
+SET SKIP OF BAR 3  OF pop_021 !'S' $vAcceso
+SET SKIP OF BAR 4  OF pop_021 !'T' $vAcceso
+SET SKIP OF BAR 5  OF pop_021 !'U' $vAcceso
+SET SKIP OF BAR 6  OF pop_021 !'V' $vAcceso
+SET SKIP OF BAR 7  OF pop_021 !'W' $vAcceso
+SET SKIP OF BAR 8  OF pop_021 !'X' $vAcceso
+SET SKIP OF BAR 9  OF pop_021 !'Y' $vAcceso
+SET SKIP OF BAR 10 OF pop_021 !'Z' $vAcceso
+SET SKIP OF BAR 11 OF pop_021 !'a' $vAcceso
+SET SKIP OF BAR 12 OF pop_021 !'b' $vAcceso
+SET SKIP OF BAR 13 OF pop_021 !'c' $vAcceso
+SET SKIP OF BAR 14 OF pop_021 !'d' $vAcceso
+SET SKIP OF BAR 15 OF pop_021 !'e' $vAcceso
+SET SKIP OF BAR 16 OF pop_021 !'f' $vAcceso
+
+**- Accesos a las Reportes
+SET SKIP OF BAR 1  OF pop_03 !'g' $vAcceso
+SET SKIP OF BAR 2  OF pop_03 !'h' $vAcceso
+SET SKIP OF BAR 3  OF pop_03 !'i' $vAcceso
+SET SKIP OF BAR 4  OF pop_03 !'j' $vAcceso
+SET SKIP OF BAR 5  OF pop_03 !'k' $vAcceso
+SET SKIP OF BAR 7  OF pop_03 !'l' $vAcceso
+SET SKIP OF BAR 9  OF pop_03 !'m' $vAcceso
+SET SKIP OF BAR 11 OF pop_03 !'n' $vAcceso
+SET SKIP OF BAR 10 OF pop_03 !'o' $vAcceso
+SET SKIP OF BAR 13 OF pop_03 !'p' $vAcceso
+SET SKIP OF BAR 15 OF pop_03 !'q' $vAcceso
+SET SKIP OF BAR 16 OF pop_03 !'r' $vAcceso
+
+**- Accesos a las Balances
+SET SKIP OF BAR 1  OF pop_034 !'u' $vAcceso
+SET SKIP OF BAR 2  OF pop_034 !'v' $vAcceso
+SET SKIP OF BAR 3  OF pop_034 !'w' $vAcceso
+SET SKIP OF BAR 5  OF pop_034 !'x' $vAcceso
+
+**- Accesos a las Mantenimiento
+SET SKIP OF BAR 1  OF pop_04 !'y' $vAcceso
+SET SKIP OF BAR 2  OF pop_04 !'z' $vAcceso
+SET SKIP OF BAR 3  OF pop_04 !'1' $vAcceso
+SET SKIP OF BAR 4  OF pop_04 !'2' $vAcceso
+
+**- Accesos a las Mantenimiento:Auxiliares
+SET SKIP OF BAR 1  OF pop_04d !'3' $vAcceso
+SET SKIP OF BAR 2  OF pop_04d !'4' $vAcceso
+SET SKIP OF BAR 3  OF pop_04d !'5' $vAcceso
+SET SKIP OF BAR 4  OF pop_04d !'6' $vAcceso
+SET SKIP OF BAR 5  OF pop_04d !'7' $vAcceso
+SET SKIP OF BAR 6  OF pop_04d !'8' $vAcceso
+SET SKIP OF BAR 7  OF pop_04d !'9' $vAcceso
+SET SKIP OF BAR 8  OF pop_04d !'0' $vAcceso
+SET SKIP OF BAR 9  OF pop_04d !'{' $vAcceso
+SET SKIP OF BAR 10 OF pop_04d !'|' $vAcceso
+SET SKIP OF BAR 11 OF pop_04d !'}' $vAcceso
+
+**- Accesos a las Mantenimiento:Tablas
+SET SKIP OF BAR 1  OF pop_03d !'~' $vAcceso
+SET SKIP OF BAR 2  OF pop_03d !'' $vAcceso
+SET SKIP OF BAR 3  OF pop_03d !'‚' $vAcceso
+
+**- Accesos a las Mantenimiento:EE.FF
+SET SKIP OF BAR 1  OF pop_02d !'ƒ' $vAcceso
+SET SKIP OF BAR 2  OF pop_02d !'„' $vAcceso
+SET SKIP OF BAR 3  OF pop_02d !'…' $vAcceso
+
+**- Accesos a las Utilitarios
+SET SKIP OF BAR 1  OF pop_05 !'†' $vAcceso
+SET SKIP OF BAR 2  OF pop_05 !'ˆ' $vAcceso
+SET SKIP OF BAR 3  OF pop_05 !'‰' $vAcceso
+SET SKIP OF BAR 4  OF pop_05 !'Š' $vAcceso
+SET SKIP OF BAR 6  OF pop_05 !'‹' $vAcceso
+SET SKIP OF BAR 7  OF pop_05 !'Œ' $vAcceso
+
+**- Accesos a las Datos Iniciales
+SET SKIP OF BAR 1  OF pop_06 !'' $vAcceso
+SET SKIP OF BAR 2  OF pop_06 !'Ž' $vAcceso
+SET SKIP OF BAR 3  OF pop_06 !'' $vAcceso
+
+* No acceso a comprobantes:Consistencia Errores
+vOpcion = .T.
+FOR I = 1 TO 4
+	IF !SKPBAR('pop_013',I)
+		vOpcion = .F.
+		EXIT
+	ENDIF
+ENDFOR
+SET SKIP OF BAR 4 OF Pop_01 vOpcion
+
+* No acceso a comprobantes
+vOpcion = .T.
+FOR I = 1 TO 4
+	IF !SKPBAR('pop_01',I)
+		vOpcion = .F.
+		EXIT
+	ENDIF
+ENDFOR
+SET SKIP OF BAR 1 OF menu vOpcion
+
+* No acceso a Integrac. Doc. x Lotes
+vOpcion = .T.
+FOR I = 1 TO 16
+  IF !SKPBAR('pop_021',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 1  OF pop_02 vOpcion
+
+* No acceso a Procesos
+vOpcion = .T.
+FOR I = 1 TO 9
+  IF !SKPBAR('pop_02',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 2  OF menu  vOpcion
+
+* No acceso a Reportes:Balances
+vOpcion = .T.
+FOR I = 1 TO 5
+  IF !SKPBAR('pop_034',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 7  OF pop_03 vOpcion
+
+* No acceso a Reportes
+vOpcion = .T.
+FOR I = 1 TO 16
+  IF !SKPBAR('pop_03',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 3  OF menu vOpcion
+
+* No acceso a Mantenimiento:Auxiliares
+vOpcion = .T.
+FOR I = 1 TO 11
+  IF !SKPBAR('pop_04d',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 2  OF pop_04 vopcion
+
+* No acceso a Mantenimiento:Tablas
+vOpcion = .T.
+FOR I = 1 TO 3
+  IF !SKPBAR('pop_03d',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 3  OF pop_04 vopcion
+
+* No acceso a Mantenimiento:Estructura de Estados Financieros
+vOpcion = .T.
+FOR I = 1 TO 3
+  IF !SKPBAR('pop_02d',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 4  OF Pop_04 vopcion
+
+* No acceso a Mantenimiento
+vOpcion = .T.
+FOR I = 1 TO 4
+  IF !SKPBAR('pop_04',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 4  OF menu vopcion
+
+* No acceso a Utilitarios
+vOpcion = .T.
+FOR I = 1 TO 7
+  IF !SKPBAR('pop_05',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 5  OF menu vopcion
+
+* No acceso a Datos iniciales
+vOpcion = .T.
+FOR I = 1 TO 3
+  IF !SKPBAR('pop_06',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 6  OF menu vopcion
+
+RETURN
+
+PROCEDURE XABREPAS
+*----------------
+**- Accesos a las opciones; seg£n la seguridad especificada
+SET SKIP OF BAR 1  OF pop_01 !'A' $vAcceso
+SET SKIP OF BAR 2  OF pop_01 !'B' $vAcceso
+SET SKIP OF BAR 3  OF pop_01 !'C' $vAcceso
+SET SKIP OF BAR 4  OF pop_01 !'D' $vAcceso
+SET SKIP OF BAR 6  OF pop_01 !'E' $vAcceso
+SET SKIP OF BAR 7  OF pop_01 !'F' $vAcceso
+SET SKIP OF BAR 8  OF pop_01 !'G' $vAcceso
+SET SKIP OF BAR 10 OF pop_01 !'H' $vAcceso
+SET SKIP OF BAR 11 OF pop_01 !'\' $vAcceso
+
+SET SKIP OF BAR 1  OF pop_02 !'I' $vAcceso
+SET SKIP OF BAR 3  OF pop_02 !'J' $vAcceso
+SET SKIP OF BAR 4  OF pop_02 !'K' $vAcceso
+SET SKIP OF BAR 5  OF pop_02 !'L' $vAcceso
+SET SKIP OF BAR 6  OF pop_02 !'M' $vAcceso
+SET SKIP OF BAR 7  OF pop_02 !'N' $vAcceso
+SET SKIP OF BAR 8  OF pop_02 !'O' $vAcceso
+SET SKIP OF BAR 9  OF pop_02 !'P' $vAcceso
+
+SET SKIP OF BAR 1  OF pop_03 !'Q' $vAcceso
+SET SKIP OF BAR 2  OF pop_03 !'R' $vAcceso
+SET SKIP OF BAR 3  OF pop_03 !'S' $vAcceso
+SET SKIP OF BAR 4  OF pop_03 !'T' $vAcceso
+SET SKIP OF BAR 5  OF pop_03 !'U' $vAcceso
+SET SKIP OF BAR 6  OF pop_03 !'V' $vAcceso
+SET SKIP OF BAR 7  OF pop_03 !'W' $vAcceso
+SET SKIP OF BAR 8  OF pop_03 !'X' $vAcceso
+SET SKIP OF BAR 9  OF pop_03 !'Y' $vAcceso
+SET SKIP OF BAR 10 OF pop_03 !'Z' $vAcceso
+SET SKIP OF BAR 11 OF pop_03 !'a' $vAcceso
+SET SKIP OF BAR 12 OF pop_03 !'b' $vAcceso
+SET SKIP OF BAR 13 OF pop_03 !'c' $vAcceso
+SET SKIP OF BAR 14 OF pop_03 !'d' $vAcceso
+
+SET SKIP OF BAR 1  OF pop_04 !'e' $vAcceso
+SET SKIP OF BAR 2  OF pop_04 !'f' $vAcceso
+SET SKIP OF BAR 3  OF pop_04 !'g' $vAcceso
+SET SKIP OF BAR 4  OF pop_04 !'h' $vAcceso
+SET SKIP OF BAR 5  OF pop_04 !'i' $vAcceso
+
+SET SKIP OF BAR 1  OF pop_05 !'j' $vAcceso
+SET SKIP OF BAR 2  OF pop_05 !'k' $vAcceso
+SET SKIP OF BAR 3  OF pop_05 !'l' $vAcceso
+SET SKIP OF BAR 4  OF pop_05 !'m' $vAcceso
+SET SKIP OF BAR 5  OF pop_05 !'n' $vAcceso
+SET SKIP OF BAR 6  OF pop_05 !'o' $vAcceso
+SET SKIP OF BAR 8  OF pop_05 !'p' $vAcceso
+SET SKIP OF BAR 9  OF pop_05 !'q' $vAcceso
+
+SET SKIP OF BAR 1  OF pop_06 !'r' $vAcceso
+SET SKIP OF BAR 2  OF pop_06 !'s' $vAcceso
+SET SKIP OF BAR 3  OF pop_06 !'t' $vAcceso
+SET SKIP OF BAR 4  OF pop_06 !'u' $vAcceso
+SET SKIP OF BAR 5  OF pop_06 !'v' $vAcceso
+SET SKIP OF BAR 6  OF pop_06 !'w' $vAcceso
+
+SET SKIP OF BAR 1  OF pop_07 !'x' $vAcceso
+SET SKIP OF BAR 2  OF pop_07 !'y' $vAcceso
+SET SKIP OF BAR 3  OF pop_07 !'z' $vAcceso
+SET SKIP OF BAR 4  OF pop_07 !'°' $vAcceso
+SET SKIP OF BAR 6  OF pop_07 !'1' $vAcceso
+SET SKIP OF BAR 7  OF pop_07 !'2' $vAcceso
+SET SKIP OF BAR 8  OF pop_07 !'3' $vAcceso
+SET SKIP OF BAR 9  OF pop_07 !'4' $vAcceso
+SET SKIP OF BAR 10 OF pop_07 !'5' $vAcceso
+
+SET SKIP OF BAR 1  OF pop_04d !'6' $vAcceso
+SET SKIP OF BAR 2  OF pop_04d !'7' $vAcceso
+SET SKIP OF BAR 3  OF pop_04d !'8' $vAcceso
+SET SKIP OF BAR 4  OF pop_04d !'9' $vAcceso
+SET SKIP OF BAR 5  OF pop_04d !'0' $vAcceso
+SET SKIP OF BAR 6  OF pop_04d !'!' $vAcceso
+SET SKIP OF BAR 7  OF pop_04d !'@' $vAcceso
+SET SKIP OF BAR 8  OF pop_04d !'#' $vAcceso
+SET SKIP OF BAR 9  OF pop_04d !'$' $vAcceso
+SET SKIP OF BAR 10 OF pop_04d !'%' $vAcceso
+SET SKIP OF BAR 11 OF pop_04d !'^' $vAcceso
+SET SKIP OF BAR 12 OF pop_04d !'&' $vAcceso
+SET SKIP OF BAR 13 OF pop_04d !'*' $vAcceso
+SET SKIP OF BAR 14 OF pop_04d !'(' $vAcceso
+SET SKIP OF BAR 15 OF pop_04d !')' $vAcceso
+SET SKIP OF BAR 16 OF pop_04d !'|' $vAcceso
+
+* No acceso a comprobantes
+vOpcion = .T.
+FOR I = 1 TO 11
+  IF !SKPBAR('pop_01',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 1 OF menu vOpcion
+
+* No acceso a Procesos
+vOpcion = .T.
+FOR I = 1 TO 9
+  IF !SKPBAR('pop_02',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 2  OF menu  vOpcion
+
+* No acceso a Reportes
+vOpcion = .T.
+FOR I = 1 TO 14
+  IF !SKPBAR('pop_03',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 3  OF menu vOpcion
+
+* No acceso a Tablas
+vOpcion = .T.
+FOR I = 1 TO 5
+  IF !SKPBAR('pop_04',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 4  OF menu vopcion
+
+
+* No acceso a Utilitarios
+vOpcion = .T.
+FOR I = 1 TO 9
+  IF !SKPBAR('pop_05',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 5  OF menu vopcion
+
+* No acceso a Datos iniciales
+vOpcion = .T.
+FOR I = 1 TO 6
+  IF !SKPBAR('pop_06',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 6  OF menu vopcion
+
+* No acceso a Especiales
+vOpcion = .T.
+FOR I = 1 TO 10
+  IF !SKPBAR('pop_07',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 7  OF menu vopcion
+
+* No acceso a Tablas
+vOpcion = .T.
+FOR I = 1 TO 16
+  IF !SKPBAR('pop_04d',I)
+    vOpcion = .F.
+    EXIT
+  ENDIF
+ENDFOR
+SET SKIP OF BAR 3  OF popup pop_03
+
+RETURN
+
+PROCEDURE lColores
+*-----------------
+SET COLOR OF SCHEME  1  TO W/N, N+/W, W+/N, W+/N, W/N, U+/N, W+/N, - , W+/N, W/N
+SET COLOR OF SCHEME 10  TO G/N, GR+/B, G/N, G/N, GR+/N, W+/BG, BG+/B, - , W+/N, W/N
+SET COLOR OF SCHEME 21  TO W/N, N+/W, W+/N, W+/N, W/N, U+/N, W+/N, -, W+/N, W/N
+
+* 1 para fondo
+* 2 para campos read
+* 3 para bordes
+* 4 titulos
+* 5 titulos Desactivados
+
+* 1 Otros registros
+* 2 Campo actual
+* 3 Borde
+* 4 Color del t¡tulo cuando la ventana Examinar est  activa
+* 5 Color del t¡tulo cuando hay otra ventana activa
+* 6 Texto seleccionado
+* 7 Registro actual
+* 8 Sombra
+
+RETURN

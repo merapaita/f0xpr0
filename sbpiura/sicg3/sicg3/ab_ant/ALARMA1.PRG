@@ -1,0 +1,26 @@
+SET BELL TO
+FOR I=1 TO 2
+ 	SET BELL TO 200 -(18+I),5
+  	? CHR(7)
+ENDFOR
+FOR I=1 TO 2
+ 	SET BELL TO 200 -(18-I),5
+ 	? CHR(7)
+ENDFOR
+FOR I=1 TO 2
+ 	SET BELL TO 200 -(18/I),5
+  	? CHR(7)
+ENDFOR
+FOR I=1 TO 2
+ 	SET BELL TO 200 -(18*I),5
+  	? CHR(7)
+ENDFOR
+FOR I=1 TO 2
+ 	SET BELL TO 200 -(18-I),5
+ 	@12,12 say CHR(14)
+  	? CHR(14)
+  	? CHR(14)
+  	? CHR(14)
+  	? CHR(14)
+  	? CHR(14)
+ENDFOR

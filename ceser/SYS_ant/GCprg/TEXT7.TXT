@@ -1,0 +1,19 @@
+
+ CORP.TECNOLOGICA DE SERVI                                 PAGINA   :        1
+       CESER                                               FECHA    : 13/09/2006
+  CALLE CUZCO 1099                                         PROGRAMA : AGCR2011
+
+                              RELACION  DE  TABLAS
+
+     TABLA DE  ╞╞  CATEGORIA CLIENTE/PROVEEDOR   
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                  FACTOR           Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      0001     MAYORISTA EXTRANJERO                               0.00
+      0002     MAYORISTA NACIONAL                                 0.00
+      0003     MINORISTA EXTRANJERO                               0.00
+      0004     MINORISTA NACIONAL                                 0.00
+
+ 

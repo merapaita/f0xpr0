@@ -1,0 +1,17 @@
+
+  CORP.TECNOLOGICA DE SERVI                                 FECHA  : 13/09/2006
+    ╞╞  C E S E R   ╝╝                                      PAGINA :        1
+
+                             RELACION DE INDICADORES
+
+     INDICADORES DE  ╞╞  ESTADO OPERATIVO              
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                                   Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      A        ACTIVO                        
+      B        BLOQUEADO                     
+      O        PRODUCTO EN OFERTA            
+
+ 

@@ -1,0 +1,91 @@
+CORP.TECNOLOGICA DE                                         P═gina :          1
+        CESER            PRODUCCION MENSUAL DE TECNICOS     Fecha  : 20/01/2009
+ JR HUANUCO 480          ммммммммммммммммммммммммммммммм    Hora   :   09:00:36
+                      DE TALLER :002         A :008 
+                      DE FECHA  :01/01/2009  A :20/01/2009
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё     T┌cnico    Descripci╒n                          Total Producci╒n        Ё
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ 003  TALLER L.BLANCA               
+      010                                
+          2008 CHUQUIHUANCA NI╔O JHON                         1
+         15179 OJEDA YANAYACO JOSE TERCERO QD                 3
+         30977 PARDO APARCANA LUIS ALBERTO                    4
+                 TOTAL                          ====>         8
+                                                      ддддддддд
+                 TOTAL TALLER L.BLANCA          ====>         8
+
+ 004  TALLER COMPUTADORAS           
+      010                                
+           520 PABLO VILCHEZ BRUNO                            1
+         10210 HUAYAMA HUAMAN EDGAR CARLOS                    8
+         15179 OJEDA YANAYACO JOSE TERCERO QD                 3
+         20057 PABLO VILCHEZ BRUNO                            4
+         25683 PRADO SANCHEZ JAVIER ENRIQUE                  11
+         30977 PARDO APARCANA LUIS ALBERTO                    1
+                 TOTAL                          ====>        28
+      021                                
+         15179 OJEDA YANAYACO JOSE TERCERO QD                 1
+         25683 PRADO SANCHEZ JAVIER ENRIQUE                   1
+                 TOTAL                          ====>         2
+                                                      ддддддддд
+                 TOTAL TALLER COMPUTADORAS      ====>        30
+
+ 005  TALLER AUDIO                  
+      010                                
+           520 PABLO VILCHEZ BRUNO                            6
+          1000 ALMACEN RECEPCION                              1
+         10210 HUAYAMA HUAMAN EDGAR CARLOS                   19
+         15179 OJEDA YANAYACO JOSE TERCERO QD                27
+         20057 PABLO VILCHEZ BRUNO                           14
+         30977 PARDO APARCANA LUIS ALBERTO                   33
+                 TOTAL                          ====>       100
+      021                                
+           520 PABLO VILCHEZ BRUNO                            1
+         10210 HUAYAMA HUAMAN EDGAR CARLOS                    1
+         15179 OJEDA YANAYACO JOSE TERCERO QD                 2
+         20057 PABLO VILCHEZ BRUNO                            1
+         30977 PARDO APARCANA LUIS ALBERTO                    1
+                 TOTAL                          ====>         6
+                                                      ддддддддд
+                 TOTAL TALLER AUDIO             ====>       106
+
+ 006  TALLER VIDEO                  
+      010                                
+         10210 HUAYAMA HUAMAN EDGAR CARLOS                    8
+         15179 OJEDA YANAYACO JOSE TERCERO QD                10
+         15977 PASAPERA DOMINGUEZ WALTER                      1
+         20057 PABLO VILCHEZ BRUNO                            9
+         30977 PARDO APARCANA LUIS ALBERTO                   18CORP.TECNOLOGICA DE                                         P═gina :          2
+        CESER            PRODUCCION MENSUAL DE TECNICOS     Fecha  : 20/01/2009
+ JR HUANUCO 480          ммммммммммммммммммммммммммммммм    Hora   :   09:00:37
+                      DE TALLER :002         A :008 
+                      DE FECHA  :01/01/2009  A :20/01/2009
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё     T┌cnico    Descripci╒n                          Total Producci╒n        Ё
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+                 TOTAL                          ====>        46
+      021                                
+           520 PABLO VILCHEZ BRUNO                            1
+                 TOTAL                          ====>         1
+                                                      ддддддддд
+                 TOTAL TALLER VIDEO             ====>        47
+
+ 007  TALLER CAMARAS                
+      010                                
+          1789 JAVIER VICU╔A CASTILLO                         9
+         15977 PASAPERA DOMINGUEZ WALTER                     12
+                 TOTAL                          ====>        21
+      021                                
+          1789 JAVIER VICU╔A CASTILLO                         1
+         15977 PASAPERA DOMINGUEZ WALTER                      6
+                 TOTAL                          ====>         7
+                                                      ддддддддд
+                 TOTAL TALLER CAMARAS           ====>        28
+
+                                                      ддддддддд
+                 TOTAL  GENERAL                 ====>       219
+                                                      ддддддддд
+

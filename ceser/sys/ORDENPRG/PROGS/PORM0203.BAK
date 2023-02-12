@@ -1,0 +1,2350 @@
+*** 
+*** ReFox X  #UK933629  MANRIQUE ORELLANA  MANSOFT SYSTEMS [FP25]
+***
+PARAMETER config_prg
+IF config_prg == 1
+     titu1 = 'CREACION'
+ENDIF
+IF config_prg == 2
+     titu1 = 'MANTENCION'
+ENDIF
+IF config_prg == 3
+     titu1 = 'ANULACION'
+ENDIF
+CLOSE DATABASES
+set step on
+SELECT 1
+USE SHARED st_iorep ORDER ord_numsol
+SELECT 2
+USE SHARED st_isrep ORDER codigo
+SELECT 3
+USE SHARED ge_tab0 ORDER codigo
+SELECT 4
+USE SHARED st_iclpr ORDER codigo
+SELECT 5
+USE SHARED st_sint ORDER sin_lincod
+SELECT 6
+USE SHARED st_imode ORDER codigo
+SELECT 7
+USE SHARED st_iseri ORDER ser_codmar
+SELECT 8
+USE SHARED st_mobra ORDER codigo
+SELECT 9
+USE SHARED st_itecn ORDER codigo
+titu2 = 'ORDEN DE REPARACION'
+wrk_progra = PROGRAM()
+w_pro = SPACE(4)
+DO crea_win
+ON KEY LABEL F6 do ayuda12
+ON KEY LABEL F10 do FCINCO
+@ 02, 01 SAY DATE()
+DO saycenter WITH 1, titu1
+DO saycenter WITH 2, titu2
+DO esc_modo WITH 'I'
+DO esc_indica WITH 1, 'AYU', 'BBB', 'BBB', 'INT'
+DO esc_indica WITH 2, 'BBB', 'BBB', 'IGN', 'ESC'
+@ 06, 10 CLEAR TO 10, 65
+@ 06, 10 TO 10, 65
+SAVE SCREEN TO w_panta
+ppal = .T.
+PUBLIC tecnico, dmg1, dmg2
+STORE 0 TO dmg1, dmg2, w_facigv, w_numgui, w_nroguia
+w_facigv = facigv()
+DO WHILE ppal
+     RESTORE SCREEN FROM w_panta
+     DO esc_indica WITH 1, 'AYU', 'BBB', 'BBB', 'INT'
+     DO esc_indica WITH 2, 'BBB', 'BBB', 'IGN', 'ESC'
+     STORE 1 TO efecin
+     STORE 0 TO w_numero, w_otec, w_numord, w_flete, w_pgta
+     STORE 0 TO w_codcca, w_monto, w_cosmob, w_rep, w_numaux
+     STORE 1 TO w_indica
+     STORE SPACE(9) TO w_provee
+     STORE SPACE(5) TO w_codemp
+     STORE SPACE(4) TO w_codtal, w_ogar, w_oest, w_aoest, w_linea, w_emisor
+     STORE SPACE(15) TO w_dogtia
+     STORE SPACE(30) TO w_desdis
+     IF config_prg == 1
+          @ 7, 20 SAY 'Origen Solicitud de Servicio'
+          @ 9, 20 SAY 'N£mero : ' GET w_numero PICTURE '99999999' VALID ordnul(w_numero) WHEN colocaf6()
+     ELSE
+          @ 08, 20 SAY ' N§ Solic. Servicio: ' GET w_numero PICTURE '99999999' VALID numord2(w_numero) WHEN colocaf6()
+     ENDIF
+     SET CURSOR ON
+     READ
+     SET CURSOR OFF
+     DO CASE
+          CASE LASTKEY() == 27 AND efecin == 1
+               CLEAR GETS
+               ppal = .F.
+               LOOP
+          CASE LASTKEY() == 27 AND efecin == 2
+               CLEAR GETS
+               LOOP
+     ENDCASE
+     ACTIVATE SCREEN
+     ACTIVATE WINDOW trabajo
+     SET DISPLAY TO VGA50
+     ZOOM WINDOW trabajo NORM FROM 1, 0 TO 42, 76
+     ZOOM WINDOW indicar NORM FROM 45, 0 TO 48, 76
+     ACTIVATE SCREEN
+     ACTIVATE WINDOW trabajo
+     lin = 40
+     anc = 75
+     des = 1
+     com = 1
+     DIMENSION solic( 48)
+     STORE FOPEN('solicitu.txt') TO file_handl
+     FOR i = 1 TO 48
+          solic( i) = FREAD(file_handl, 77)
+     ENDFOR
+     = FCLOSE(file_handl)
+     solic( 3) = '                O R D E N   D E   R E P A R A C I O N         N§ ' + STR(w_numord, 8) + '  '
+     DIMENSION w_codsin( 15)
+     DIMENSION w_acceso( 15)
+     DIMENSION w_observ( 15)
+     DIMENSION w_obssol( 06)
+     w_numaux = STR(w_numero, 8)
+     SELECT st_isrep
+     seek '&w_numaux'
+     w_fecemi = fecemi
+     w_feccom = feccom
+     w_emisor = codemi
+     w_codcli = VAL(codent)
+     w_indori = indori
+     w_indest = indest
+     w_codmar = codmar
+     w_codmod = codmod
+     w_numser = numser
+     w_abonos = monabo
+     w_codmon = codmon
+     w_codstk = codstk
+     w_numstk = VAL(numstk)
+     w_coddes = coddes
+     w_aux = ''
+     w_dogtia = ooseri2(w_codmar, w_codmod, w_numser)
+     FOR i = 1 TO 15
+          w_codsin = SPACE(35)
+          w_acceso( i) = SUBSTR(desace, 1 + ((i - 1) * 35), 35)
+          w_acceso( i) = w_acceso(i) + SPACE(35 - LEN(w_acceso(i)))
+          IF i <= 6
+               w_obssol( i) =  ;
+                       SUBSTR(observ,  ;
+                       1 + ((i -  ;
+                       1) * 45),  ;
+                       45)
+               w_obssol( i) =  ;
+                       w_obssol(i) +  ;
+                       SPACE(45 -  ;
+                       LEN(w_obssol(i)))
+          ENDIF
+     ENDFOR
+     FOR i = 1 TO 14
+          w_observ( i) =  ;
+                  SPACE(38)
+     ENDFOR
+     SELECT ge_tab0
+     SEEK 'INGA' + w_indori
+     w_destia = SUBSTR(tab_destab,  ;
+                1, 30)
+     w_cliaux = 'C' +  ;
+                STR(w_codcli,  ;
+                11)
+     SELECT st_iclpr
+     seek '&w_cliaux'
+     w_noment = noment
+     w_nomcal = nomcal
+     w_nomdis = nomdis
+     w_nomciu = nomciu
+     w_numte1 = numte1
+     w_numte2 = numte2
+     w_aux = w_codmar + w_codmod
+     SELECT st_imode
+     seek '&w_aux'
+     w_aux = codcla
+     w_codart = codcla
+     w_linea = linea
+     DO sintom1
+     DO col_bk1b
+     DO col_bk2b
+     FOR i = des TO (lin + des -  ;
+         1)
+          @ i - des, 0 SAY  ;
+            SUBSTR(solic(i), com,  ;
+            anc)
+     ENDFOR
+     DO CASE
+          CASE config_prg == 1
+               DO creaord
+          CASE config_prg == 2
+               DO modiord
+          CASE config_prg == 3
+               DO anulord
+     ENDCASE
+     SET DISPLAY TO VGA25
+     ACTIVATE SCREEN
+     ZOOM WINDOW trabajo NORM  ;
+          FROM 1, 0 TO 17, 76
+     ZOOM WINDOW indicar NORM  ;
+          FROM 20, 0 TO 23, 76
+     ACTIVATE WINDOW trabajo
+ENDDO
+CLOSE DATABASES
+ON KEY LABEL F6
+ON KEY LABEL F10
+SET DISPLAY TO VGA25
+ZOOM WINDOW trabajo NORM FROM 1,0 TO 17, 76
+ZOOM WINDOW indicar NORM FROM 20,0 TO 23, 76
+DO sacawin
+RELEASE tecnico
+RETURN
+*
+PROCEDURE creaord
+ACTIVATE WINDOW indicar
+SAVE SCREEN TO w_pantax
+ACTIVATE WINDOW trabajo
+DO esc_indica WITH 1, 'AYU', 'BBB', 'BBB', 'INT'
+DO esc_indica WITH 2, 'MBV', 'BBB', 'IGN', 'ESC'
+@ 14, 10 FILL TO 28, 65 COLOR N+/N 
+@ 13, 09 CLEAR TO 36, 64
+@ 13, 09 TO 36, 64
+@ 14, 28 SAY ' Creaci¢n de Orden ' COLOR SCHEME 8
+STORE SPACE(4) TO w_codtal, w_oest
+w_ogar = w_indori
+DO taller
+w_otec = 0
+@ 17, 31 SAY SUBSTR(w_destia, 1,18) + ALLTRIM(w_dogtia)
+@ 16, 11 SAY 'Fecha Orden : ' + DTOC(DATE())
+@ 17, 11 SAY 'Tipo Atenci.: ' + w_ogar
+@ 18, 11 SAY 'Taller      :' GET w_codtal PICTURE '@!' VALID valtab2('TALL',w_codtal,30,20) WHEN colocaf6()
+@ 19, 11 SAY 'Estado      :' GET w_oest PICTURE '@!' VALID lle_est(2) AND valtab2('ESOR',w_oest,30,25) WHEN colocaf6() AND lle_est(1)
+@ 20, 11 SAY 'T‚cnico     :' GET w_otec PICTURE '999999999' VALID tecnic2(w_otec,20,35,2) WHEN colocaf6()
+@ 21, 11 SAY 'Notas       :'
+FOR i = 1 TO 14
+     @ 21 + i, 25 GET w_observ(i) PICTURE '@!'
+ENDFOR
+SET CURSOR ON
+READ
+SET CURSOR OFF
+IF w_ogar = 'GARA' AND w_ogar = 'GREC'
+     @ 18, 49 SAY ALLTRIM(w_doctia)
+ENDIF
+IF LASTKEY()#27
+     DO emplea
+     DO esc_indica WITH 1, 'AYU',  ;
+        'BBB', 'BBB', 'GUI'
+     DO esc_indica WITH 2, 'GRA',  ;
+        'BBB', 'IGN', 'ESC'
+     w_key = 0
+     DO WHILE w_key#-1 AND  ;
+        w_key#-6 AND w_key#-9  ;
+        AND w_key#27
+          w_key = INKEY(0, 'H')
+     ENDDO
+     IF w_key == -1 OR w_key == - ;
+        6
+          DO buscaor
+          DO mensa2 WITH  ;
+             'Grabando  ORDEN '+ ;
+             ' N§ '+STR(w_numord,  ;
+             8), 'COLO'
+          SELECT st_iorep
+          APPEND BLANK
+          DO rbloquea
+          REPLACE numdoc WITH  ;
+                  STR(w_numord,  ;
+                  8), fecemi WITH  ;
+                  DATE(), horemi  ;
+                  WITH TIME()
+          REPLACE codemi WITH  ;
+                  w_emisor,  ;
+                  codent WITH  ;
+                  STR(w_codcli,  ;
+                  11)
+          REPLACE indori WITH  ;
+                  w_ogar, indest  ;
+                  WITH 'V'
+          REPLACE auxest WITH  ;
+                  w_oest, codmar  ;
+                  WITH w_codmar,  ;
+                  codmod WITH  ;
+                  w_codmod
+          REPLACE numser WITH  ;
+                  w_numser,  ;
+                  codtec WITH  ;
+                  STR(w_otec, 9)
+          REPLACE codtall WITH  ;
+                  w_codtal,  ;
+                  fecest WITH  ;
+                  DATE(), horest  ;
+                  WITH TIME(),  ;
+                  entfac WITH  ;
+                  f_ceros(fecest -  ;
+                  fecemi,9,1)
+          REPLACE user WITH users
+          REPLACE time WITH  ;
+                  TIME()
+          REPLACE date WITH  ;
+                  DATE()
+          REPLACE numsol WITH  ;
+                  STR(w_numero,  ;
+                  8)
+          UNLOCK
+          w_aux = ''
+          FOR i = 1 TO 14
+               IF LEN(TRIM(w_observ(i)))# ;
+                  0
+                    w_aux = w_aux +  ;
+                            w_observ(i)
+               ENDIF
+          ENDFOR
+          DO rbloquea
+          REPLACE observ WITH  ;
+                  w_aux
+          UNLOCK
+          w_aux = ''
+          w_numo = w_numord
+          SELECT 20
+          USE SHARED st_iredo
+          APPEND BLANK
+          DO rbloquea
+          REPLACE indodo WITH  ;
+                  'SSE ', numodo  ;
+                  WITH  ;
+                  STR(w_numero,  ;
+                  8)
+          REPLACE indddo WITH  ;
+                  'ORD ', numddo  ;
+                  WITH STR(w_numo,  ;
+                  8)
+          REPLACE user WITH users
+          REPLACE time WITH  ;
+                  TIME()
+          REPLACE date WITH  ;
+                  DATE()
+          UNLOCK
+          SELECT st_isrep
+          w_aux = STR(w_numero,  ;
+                  8)
+          seek '&w_aux'
+          IF FOUND()
+               DO rbloquea
+               REPLACE indest  ;
+                       WITH 'P'
+               REPLACE user WITH  ;
+                       users
+               REPLACE time WITH  ;
+                       TIME()
+               REPLACE date WITH  ;
+                       DATE()
+               UNLOCK
+          ENDIF
+          SELECT 20
+          USE SHARED st_users  ;
+              ORDER codigo
+          APPEND BLANK
+          DO rbloquea
+          REPLACE numord WITH  ;
+                  STR(w_numord,  ;
+                  8)
+          REPLACE numsol WITH  ;
+                  STR(w_numero,  ;
+                  8)
+          REPLACE codemp WITH  ;
+                  w_codemp
+          REPLACE estado WITH  ;
+                  w_oest
+          REPLACE user WITH users
+          REPLACE fecha WITH  ;
+                  DATE()
+          REPLACE hora WITH  ;
+                  TIME()
+          UNLOCK
+          w_esorde = SPACE(40)
+          w_aux = 'ESOR' + w_oest
+          SELECT ge_tab0
+          SEEK '&w_aux'
+          w_esorde = tab_destab
+          SELECT 20
+          USE SHARED st_mvord  ;
+              ORDER estado
+          APPEND BLANK
+          DO rbloquea
+          REPLACE dia WITH DATE(),  ;
+                  hora WITH  ;
+                  TIME()
+          REPLACE orden WITH  ;
+                  STR(w_numord,  ;
+                  8), tecnico  ;
+                  WITH STR(w_otec,  ;
+                  9)
+          REPLACE estado WITH  ;
+                  w_oest, destado  ;
+                  WITH w_esorde
+          REPLACE user WITH users
+          REPLACE time WITH  ;
+                  TIME(), date  ;
+                  WITH DATE()
+          UNLOCK
+          DO mensa2 WITH  ;
+             'Grabando  ORDEN '+ ;
+             ' N§ '+STR(w_numord,  ;
+             8), 'SACA'
+          IF w_key == -1
+               w_numord = 0
+          ENDIF
+     ENDIF
+     IF w_key == -6
+          sw_impre = 0
+          DO impresora WITH  ;
+             sw_impre
+          IF sw_impre#1
+               eror_imp = .T.
+               RETURN
+          ENDIF
+          w_print = PRINTSTATUS()
+          DO WHILE !w_print
+               DO error2 WITH  ;
+                  '** Error en Impresora. Continua ? (S/N) '
+               IF LASTKEY() == 27
+                    EXIT
+               ENDIF
+               w_print = PRINTSTATUS()
+          ENDDO
+          w_print = PRINTSTATUS()
+          IF w_print
+               DO imp_ord
+               w_numord = 0
+          ENDIF
+     ENDIF
+     DO esc_indica WITH 1, 'AYU',  ;
+        'BBB', 'BBB', 'INT'
+     DO esc_indica WITH 2, 'RAC',  ;
+        'BBB', 'IGN', 'ESC'
+ENDIF
+ACTIVATE WINDOW indicar
+RESTORE SCREEN FROM w_pantax
+ACTIVATE WINDOW trabajo
+RETURN
+*
+FUNCTION lle_est
+*---------------
+PARAMETER num
+SELECT ge_tab0
+SEEK 'TALL' + w_codtal
+w_cotalp = SUBSTR(tab_parame, 1, 1)
+IF num = 1
+     IF w_cotalp = '2'
+          w_oest = '011 '
+     ELSE
+          w_oest = '001 '
+     ENDIF
+ELSE
+     IF config_prg == 1
+          IF (w_cotalp = '2' AND w_oest# '011 ') OR (w_cotalp = '1' AND w_oest#'001 ')
+               DO error WITH '** Estado no permit¡do. **'
+               w_indica = 0
+               RETURN .F.
+          ENDIF
+     ELSE
+*          IF w_oest = '003 '
+*               DO error WITH '** Ir a generar un Presupuesto **'
+*               w_indica = 0
+*               RETURN .F.
+*          ENDIF
+          IF w_oest = '026 '
+               DO error WITH '** Ir a cierre de Presupuesto No aprobado **'
+               w_indica = 0
+               RETURN .F.
+          ENDIF
+          IF w_cotalp = '2'
+               IF (w_oest<'011 ' AND w_oest#'003 ' AND w_oest#'007 ' AND w_oest#'004 ') OR  ;
+                  (w_oest > '018 ' AND w_oest#'027 ' AND w_oest#'032 ' AND w_oest#'034 ' AND  ;
+                  w_oest#'035 ' AND w_oest#'036 ' AND w_oest#'040 ' AND w_oest#'043 ' AND  ;
+                  w_oest#'045 ' AND w_oest#'050 ')
+                    DO error WITH '** Estado no permitido. **'
+                    w_indica = 0
+                    RETURN .F.
+               ENDIF
+          ELSE
+               IF w_oest > '010' AND w_oest#'021' AND w_oest#'032 ' AND w_oest#'033 ' AND  ;
+                  w_oest#'034 ' AND w_oest#'035 ' AND w_oest#'036 ' AND w_oest#'040 ' AND  ;
+                  w_oest#'045 ' AND w_oest#'050 ' AND w_oest#'060 '
+                    DO error WITH '** Estado no permitido. **'
+                    w_indica = 0
+                    RETURN .F.
+               ENDIF
+          ENDIF
+          IF w_oest = '010 ' AND w_aoest#'009 '
+               DO error WITH '** Tiene que pasar por Control de Calidad  **'
+               w_indica = 0
+               RETURN .F.
+          ENDIF
+          IF w_aoest = '003 ' AND (w_oest#'007 ' AND w_oest#'026 ') AND w_aoest#w_oest
+               DO error WITH '** Debe Aceptar o Rechazar  Presupuesto  **'
+               w_indica = 0
+               RETURN .F.
+          ENDIF
+     ENDIF
+ENDIF
+RETURN
+*
+PROCEDURE modiord
+ACTIVATE WINDOW indicar
+SAVE SCREEN TO w_pantax
+ACTIVATE WINDOW trabajo
+DO esc_indica WITH 1, 'AYU', 'BBB', 'BBB', 'INT'
+DO esc_indica WITH 2, 'MBV', 'BBB', 'IGN', 'ESC'
+@ 14, 10 FILL TO 28, 65 COLOR N+/N 
+@ 13, 09 CLEAR TO 37, 64
+@ 13, 09 TO 37, 64
+@ 14, 28 SAY ' Cambio de Estado ' COLOR SCHEME 8
+w_ogar = w_indori
+STORE SPACE(5) TO w_codemp
+STORE SPACE(4) TO w_est
+SELECT st_iorep
+w_numaux = STR(w_numord, 8)
+SEEK STR(w_numero, 8)
+w_monto = cosmob
+w_cosmob = cosmob
+w_ogar = indori
+w_aoest = auxest
+w_oest = auxest
+w_fecest = fecest
+w_otec = VAL(codtec)
+w_codtal = codtall
+FOR i = 1 TO 14
+     w_observ( i) = SUBSTR(observ, 1 + ((i - 1) * 38), 38)
+     w_observ( i) = w_observ(i) + SPACE(38 - LEN(w_observ(i)))
+ENDFOR
+w_obux = 'ESOR' + w_aoest
+SELECT ge_tab0
+seek '&w_obux'
+@ 20, 30 SAY SUBSTR(tab_destab, 1, 28)
+SEEK 'INGA' + w_ogar
+@ 18, 30 SAY SUBSTR(tab_destab, 1, 18) + '-' + ALLTRIM(w_dogtia)
+SEEK 'TALL' + w_codtal
+@ 19, 30 SAY SUBSTR(tab_destab, 1, 28)
+w_obux = STR(w_otec, 9)
+SELECT st_itecn
+seek '&w_obux'
+@ 21, 35 SAY SUBSTR(noment, 1, 28)
+@ 16, 11 SAY 'N§ Orden    : ' + STR(w_numord, 8) + SPACE(4) + 'N§ S/S :' + STR(w_numero, 8)
+@ 17, 11 SAY 'Fecha Orden : ' + DTOC(DATE())
+@ 18, 11 SAY 'Tipo Atenci.: ' + w_ogar
+@ 19, 11 SAY 'Taller      :' GET w_codtal PICTURE '@!' VALID valtab2('TALL',w_codtal,30,20) WHEN colocaf6()
+@ 20, 11 SAY 'Estado      :' GET w_oest PICTURE '@!' VALID lle_est(2) AND valtab2('ESOR', w_oest,30,25) AND mobra(w_oest) WHEN colocaf6()
+@ 21, 11 SAY 'T‚cnico     :' GET w_otec PICTURE '999999999' VALID tecnic2(w_otec,21,35,2)   WHEN colocaf6()
+@ 22, 11 SAY 'Notas       :'
+FOR i = 1 TO 14
+     @ 22 + i, 25 GET w_observ(i) PICTURE '@!'
+ENDFOR
+SET CURSOR ON
+READ
+SET CURSOR OFF
+IF w_ogar = 'GARA' OR w_ogar = 'GREC'
+     @ 18, 50 SAY ALLTRIM(w_dogtia)
+ENDIF
+w_key = 0
+IF w_indica = 1
+     DO emplea
+     IF LASTKEY()#27
+          DO esc_indica WITH 1, 'AYU', 'BBB', 'IMP', 'GUI'
+          DO esc_indica WITH 2, 'GRA', 'BBB', 'IGN', 'ESC'
+          w_key = 0
+          DO WHILE w_key#-1 AND w_key#-6 AND w_key#-9 AND w_key#27 AND w_key#-7
+               w_key = INKEY(0,'H')
+          ENDDO
+          IF w_key == -7
+               w_nroguia = 0
+               SELECT ge_tab0
+               SEEK 'GUIA' + '200 '
+               IF FOUND()
+                    w_nroguia = tab_factor + 1
+                    REPLACE tab_factor WITH w_nroguia
+               ENDIF
+               DO imp_guia
+               IF LASTKEY() = 27
+                    RETURN
+               ENDIF
+          ENDIF
+          IF w_key == -1 OR w_key == -6 OR w_key == -7
+               w_sgr = bus_est()
+               IF w_sgr = 1
+                    IF ((w_codtal > '010 ' AND w_codtal < '020 ') OR (w_codtal > '060 '  ;
+                       AND w_codtal < '070 ')) AND w_ogar#'GARA' AND w_ogar#'PVEN'
+                        
+                        IF w_oest = '027 '
+                              IF w_pgta >= (w_cosmob + w_rep + w_flete) OR w_ogar = 'GREC'  ;
+                                 OR w_ogar = 'PREC'
+                                   w_est = '028 '
+                              ELSE
+                                   w_est = w_oest
+                              ENDIF
+                         ELSE
+                              IF w_oest = '018 ' AND ((w_ogar = 'FREC' AND w_rep = 0)  ;
+                                 OR (w_ogar = 'GREC' AND w_rep = 0) OR (w_ogar = 'PREC'  ;
+                                 AND w_rep = 0))
+                                   w_est = '029 '
+                              ELSE
+                                   w_est = w_oest
+                              ENDIF
+                         ENDIF
+                    ELSE
+                         IF w_oest = '008 '
+                              w_est = '005 '
+                         ELSE
+                              w_est = w_oest
+                         ENDIF
+                    ENDIF
+               ENDIF
+               w_aux = ''
+               FOR i = 1 TO 14
+                    IF LEN(TRIM(w_observ(i)))#0
+                         w_aux = w_aux + w_observ(i)
+                    ENDIF
+               ENDFOR
+               SELECT st_iorep
+               w_numaux = STR(w_numord, 8)
+               SEEK STR(w_numero, 8)
+               DO rbloquea
+               REPLACE codtec WITH STR(w_otec, 9)
+               REPLACE cosmob WITH w_monto
+               REPLACE observ WITH w_aux
+               IF indest#'P'
+                    REPLACE indest WITH 'P'
+               ENDIF
+               REPLACE user WITH users
+               REPLACE time WITH TIME()
+               REPLACE date WITH DATE()
+               w_codcca = VAL(codtec)
+               IF w_sgr = 1
+                    REPLACE codtall WITH w_codtal
+                    REPLACE indori WITH w_ogar
+                    REPLACE fecest WITH DATE(), horest WITH TIME()
+                    REPLACE auxest WITH w_est
+               ENDIF
+               UNLOCK
+               IF w_sgr = 1
+                    IF (w_oest = '010 ' OR w_oest = '021 ') OR (((w_codtal > '010 '  ;
+                       AND w_codtal < '020 ') OR (w_codtal > '060 ' AND w_codtal < '070 '))  ;
+                       AND (w_oest = '018 ' OR w_oest = '027 '))
+                         DO cierre
+                    ENDIF
+                    SELECT 20
+                    USE SHARED st_users ORDER codigo
+                    APPEND BLANK
+                    DO rbloquea
+                    REPLACE numord WITH STR(w_numord, 8)
+                    REPLACE numsol WITH STR(w_numero, 8)
+                    REPLACE codemp WITH w_codemp
+                    REPLACE estado WITH w_oest
+                    REPLACE user   WITH users
+                    REPLACE fecha  WITH DATE()
+                    REPLACE hora   WITH TIME()
+                    UNLOCK
+                    w_aux = ''
+                    w_esorde = SPACE(40)
+                    w_aux = 'ESOR' + w_oest
+                    SELECT ge_tab0
+                    seek '&w_aux'
+                    w_esorde = ALLTRIM(tab_destab)
+                    SELECT 20
+                    USE SHARED st_mvord ORDER estado
+                    SEEK w_numaux + w_oest
+                    IF !FOUND() OR (FOUND() AND w_aoest#w_oest AND (w_oest = '009 ' OR w_oest = '008 ' OR w_oest = '005 '  ;
+                        OR w_oest = '004 '))
+                         IF FOUND() AND w_oest = '009 ' AND w_aoest#w_oest
+                              DELETE
+                         ENDIF
+                         APPEND BLANK
+                         DO rbloquea
+                         REPLACE dia WITH DATE(),hora WITH TIME()
+                         REPLACE orden WITH STR(w_numord, 8), tecnico WITH STR(w_otec,9)
+                         REPLACE estado WITH w_oest
+                         IF LASTKEY() = -7
+                              REPLACE destado WITH ALLTRIM(w_esorde) + ' G/' + ALLTRIM(STR(w_nroguia, 10))
+                         ELSE
+                              REPLACE destado WITH w_esorde
+                         ENDIF
+                         REPLACE user WITH users
+                         REPLACE time WITH TIME()
+                         REPLACE date WITH DATE()
+                         UNLOCK
+                         w_aux = ''
+                         FOR i = 1 TO 14
+                              IF LEN(TRIM(w_observ(i)))#0
+                                   w_aux = w_aux + w_observ(i)
+                              ENDIF
+                         ENDFOR
+                         DO rbloquea
+                         REPLACE inftec WITH w_aux
+                         UNLOCK
+                         IF w_oest#w_est
+                              w_aux = 'ESOR' + w_est
+                              SELECT ge_tab0
+                              SEEK '&w_aux'
+                              w_esorde = SUBSTR(tab_destab, 1, 30)
+                              SELECT st_mvord
+                              APPEND BLANK
+                              DO rbloquea
+                              REPLACE dia WITH DATE(), hora WITH TIME()
+                              REPLACE orden WITH STR(w_numord,8), tecnico WITH STR(w_otec,9)
+                              REPLACE estado WITH w_est
+                              IF LASTKEY() = -7
+                                   REPLACE destado WITH ALLTRIM(w_esorde) + ' G/' + ALLTRIM(STR(w_nroguia, 10))
+                              ELSE
+                                   REPLACE destado WITH w_esorde
+                              ENDIF
+                              REPLACE user WITH users, time WITH TIME()
+                              REPLACE date WITH DATE()
+                              UNLOCK
+                         ENDIF
+                    ENDIF
+                    IF w_oest = '009 ' OR w_oest = '018 ' OR w_oest = '027 '
+                         SELECT 20
+                         USE SHARED st_movca ORDER codigo
+                         SEEK STR(w_numord, 8)
+                         IF FOUND()
+                              SCAN WHILE numord = STR(w_numord, 8) AND !EOF()
+                                   DO rbloquea
+                                   DELETE
+                                   UNLOCK
+                              ENDSCAN
+                         ENDIF
+                         SELECT 21
+                         USE SHARED st_movso ORDER codigo
+                         SEEK STR(w_numord, 8)
+                         IF FOUND()
+                              SCAN WHILE numord = STR(w_numord, 8) AND !EOF()
+                                   DO rbloquea
+                                   DELETE
+                                   UNLOCK
+                              ENDSCAN
+                         ENDIF
+                         SELECT tmp_mocs
+                         GOTO TOP
+                         SCAN WHILE !EOF()
+                              IF tip = 'C'
+                                   SELECT st_movca
+                                   APPEND BLANK
+                                   DO rbloquea
+                                   REPLACE numord WITH tmp_mocs.numord
+                                   REPLACE numsol WITH tmp_mocs.numsol
+                                   REPLACE codcau WITH tmp_mocs.codigo
+                                   REPLACE user WITH users
+                                   REPLACE date WITH DATE()
+                                   REPLACE time WITH TIME()
+                                   UNLOCK
+                              ELSE
+                                   SELECT st_movso
+                                   APPEND BLANK
+                                   DO rbloquea
+                                   REPLACE numord WITH tmp_mocs.numord
+                                   REPLACE numsol WITH tmp_mocs.numsol
+                                   REPLACE codsol WITH tmp_mocs.codigo
+                                   REPLACE user WITH users
+                                   REPLACE date WITH DATE()
+                                   REPLACE time WITH TIME()
+                                   UNLOCK
+                              ENDIF
+                              SELECT tmp_mocs
+                         ENDSCAN
+                    ENDIF
+                    IF w_oest = '009 ' OR w_oest = '018 ' OR w_oest = '027 '  ;
+                       OR w_oest = '028 ' OR w_oest = '029 '
+                         IF w_pro# SPACE(4)
+                              IF USED('st_movca')
+                                   SELECT st_movca
+                              ELSE
+                                   USE st_movca
+                              ENDIF
+                              APPEND BLANK
+                              DO rbloquea
+                              REPLACE numord WITH STR(w_numord,8)
+                              REPLACE numsol WITH STR(w_numero,8)
+                              REPLACE codcau WITH w_pro
+                              REPLACE user WITH users
+                              REPLACE date WITH DATE()
+                              REPLACE time WITH TIME()
+                              UNLOCK
+                         ENDIF
+                    ENDIF
+               ENDIF
+          ENDIF
+          IF w_key == -6
+               w_print = PRINTSTATUS()
+               DO WHILE ! w_print
+                    DO error2 WITH '** Error en Impresora. Continua ? (S/N) '
+                    IF LASTKEY() == 27
+                         EXIT
+                    ENDIF
+                    w_print = PRINTSTATUS()
+               ENDDO
+               w_print = PRINTSTATUS()
+               IF w_print
+                    DO imp_ord
+               ENDIF
+          ENDIF
+          DO esc_indica WITH 1, 'AYU', 'BBB', 'BBB', 'INT'
+          DO esc_indica WITH 2, 'RAC', 'BBB', 'IGN', 'ESC'
+     ENDIF
+ENDIF
+ACTIVATE WINDOW indicar
+RESTORE SCREEN FROM w_pantax
+ACTIVATE WINDOW trabajo
+RETURN
+*
+FUNCTION lle_mob
+SELECT 20
+USE SHARED st_mvord ORDER estado
+SEEK w_numaux
+m_mob = 0
+IF FOUND()
+     SCAN WHILE w_numaux = orden  ;
+          AND !EOF()
+          SELECT ge_tab0
+          SEEK 'ESOR' +  ;
+               st_mvord.estado
+          IF FOUND()
+               m_mob = m_mob +  ;
+                       tab_factor
+          ENDIF
+          SELECT st_mvord
+     ENDSCAN
+ENDIF
+RETURN m_mob
+*
+FUNCTION lle_mog
+w_opc = SPACE(4)
+DO CASE
+     CASE ALLTRIM(w_provee) =  ;
+          '10663571'
+          w_opc = '100 '
+     CASE ALLTRIM(w_provee) =  ;
+          '25360443'
+          IF w_linea < '0010'
+               w_opc = '201 '
+          ELSE
+               w_opc = '202 '
+          ENDIF
+     CASE ALLTRIM(w_provee) =  ;
+          '30626176'
+          w_opc = '300 '
+ENDCASE
+SELECT ge_tab0
+SEEK 'MOEN' + w_opc
+IF FOUND()
+     m_mob = tab_factor
+ELSE
+     SELECT st_mobra
+     SEEK w_codmar + w_codart
+     IF FOUND()
+          m_mob = mo_monmog
+     ELSE
+          m_mob = 0
+     ENDIF
+     SELECT ge_tab0
+ENDIF
+RETURN m_mob
+*
+FUNCTION bus_est
+SELECT 20
+USE SHARED st_mvord ORDER estado
+SEEK w_numaux + w_oest
+w_sig = 1
+IF !FOUND()
+     w_sig = 1
+ELSE
+     IF w_aoest = w_oest OR  ;
+        w_oest = '009 ' OR  ;
+        w_oest = '004 ' OR  ;
+        w_oest = '005 ' OR  ;
+        w_oest = '008 '
+          w_sig = 1
+     ELSE
+          w_sig = 0
+     ENDIF
+ENDIF
+RETURN w_sig
+*
+FUNCTION pagta
+PARAMETER w_numsol
+SELECT 20
+USE SHARED gc_hve00 ORDER nrdore
+STORE 0 TO w_pagsol, a, w_pagdol,  ;
+      w_flete
+SEEK w_numsol
+SCAN WHILE  ;
+     VAL(gc_hve00.hve_nrdore) =  ;
+     VAL(w_numsol) AND ! ;
+     EOF()
+     IF gc_hve00.hve_estdoc# ;
+        'A'
+          a = a + 1
+          w_pagdol = w_pagdol +  ;
+                     hve_totvta
+          IF hve_codcta = '005 '
+               w_flete = w_flete +  ;
+                         hve_totvta
+          ENDIF
+     ENDIF
+ENDSCAN
+RETURN w_pagdol
+*
+PROCEDURE anulord
+ACTIVATE WINDOW indicar
+SAVE SCREEN TO w_pantax
+ACTIVATE WINDOW trabajo
+@ 14, 10 FILL TO 28, 65 COLOR N+/ ;
+  N 
+@ 13, 09 CLEAR TO 37, 64
+@ 13, 09 TO 37, 64
+@ 14, 30 SAY ' Anular Orden '
+SELECT st_iorep
+w_numaux = STR(w_numord, 8)
+w_oest = auxest
+STORE indori TO w_ogar, w_indori
+w_fecest = fecest
+w_otec = VAL(codtec)
+w_codtal = codtall
+FOR i = 1 TO 14
+     w_observ( i) = SUBSTR(observ,  ;
+             1 + ((i - 1) * 38),  ;
+             38)
+     w_observ( i) = w_observ(i) +  ;
+             SPACE(38 -  ;
+             LEN(w_observ(i)))
+ENDFOR
+w_obux = 'ESOR' + w_oest
+SELECT ge_tab0
+SEEK '&w_obux'
+@ 20, 30 SAY SUBSTR(tab_destab, 1,  ;
+  28)
+SEEK 'TALL' + w_codtal
+@ 19, 30 SAY SUBSTR(tab_destab, 1,  ;
+  28)
+SEEK 'INGA' + w_ogar
+@ 18, 30 SAY SUBSTR(tab_destab, 1,  ;
+  20)
+w_obux = STR(w_otec, 9)
+SELECT st_itecn
+SEEK '&w_obux'
+@ 21, 35 SAY SUBSTR(noment, 1,  ;
+  28)
+w_otec = codent
+@ 16, 11 SAY 'N§ Orden    : ' +  ;
+  STR(w_numord, 8) + SPACE(4) +  ;
+  'N§ S/S :' + STR(w_numero, 8)
+@ 17, 11 SAY 'Fecha Orden : ' +  ;
+  DTOC(DATE())
+@ 18, 11 SAY 'Tipo Atenci.: ' +  ;
+  w_ogar
+@ 19, 11 SAY 'Taller      : ' GET  ;
+  w_codtal PICTURE '@!' VALID  ;
+  valtab2('TALL',w_codtal,30,20)  ;
+  WHEN colocaf6()
+@ 20, 11 SAY 'Estado      : ' GET  ;
+  w_oest PICTURE '@!' VALID  ;
+  valtab2('ESOR',w_oest,30,25)  ;
+  WHEN colocaf6()
+@ 21, 11 SAY 'T‚cnico     : ' GET  ;
+  w_otec PICTURE '999999999'  ;
+  VALID tecnic2(w_otec,21,35,2)  ;
+  WHEN colocaf6()
+@ 22, 11 SAY 'Notas       : '
+FOR i = 1 TO 14
+     @ 22 + i, 25 GET w_observ(  ;
+       i) PICTURE '@!'
+ENDFOR
+CLEAR GETS
+DO esc_indica WITH 1, 'AYU',  ;
+   'BBB', 'BBB', 'BBB'
+DO esc_indica WITH 2, 'ANU',  ;
+   'BBB', 'IGN', 'ESC'
+w_key = 0
+DO emplea
+DO WHILE w_key#-1 AND w_key#- ;
+   9 AND w_key#27
+     w_key = INKEY(0, 'H')
+ENDDO
+IF w_key == -1
+     DO error2 WITH  ;
+        '** Confirma Anular Orden ? (S/N) '
+     IF UPPER(CHR(LASTKEY())) ==  ;
+        'S'
+          SELECT st_iorep
+          SEEK STR(w_numero, 8)
+          IF FOUND()
+               DO rbloquea
+               REPLACE indest  ;
+                       WITH 'N'
+               REPLACE user WITH  ;
+                       users
+               REPLACE time WITH  ;
+                       TIME()
+               REPLACE date WITH  ;
+                       DATE()
+               DELETE
+               UNLOCK
+          ENDIF
+          SELECT st_isrep
+          SEEK STR(w_numero, 8)
+          IF FOUND()
+               DO rbloquea
+               REPLACE indest  ;
+                       WITH 'V'
+               REPLACE user WITH  ;
+                       users
+               REPLACE time WITH  ;
+                       TIME()
+               REPLACE date WITH  ;
+                       DATE()
+               UNLOCK
+          ENDIF
+          SELECT 20
+          USE SHARED st_mvord  ;
+              ORDER ordia
+          SEEK STR(w_numero, 8)
+          IF FOUND()
+               DO rbloquea
+               DELETE
+               UNLOCK
+          ENDIF
+     ENDIF
+ENDIF
+DO esc_indica WITH 1, 'AYU',  ;
+   'BBB', 'BBB', 'INT'
+DO esc_indica WITH 2, 'RAC',  ;
+   'BBB', 'IGN', 'ESC'
+ACTIVATE WINDOW indicar
+RESTORE SCREEN FROM w_pantax
+ACTIVATE WINDOW trabajo
+RETURN
+*
+PROCEDURE ayuda12
+ON KEY LABEL F6
+ON KEY LABEL F8
+IF VARREAD() = 'W_NUMERO' AND  ;
+   config_prg = 1
+     w_origen = 'SS'
+     SELECT st_isrep
+     w_orden = ORDER()
+     SET FILTER TO ALLTRIM(indest) = 'V'
+     campoa = 'numdoc+" "+dtoc(fecemi)+" "+substr(numser,1,15)+" "+codent+" "+substr(codmod,1,15)+" "+subst(indest,1,2)+" "+indori'
+     DO ayuda8 WITH campoa,  ;
+        w_origen, SELECT()
+     SELECT st_isrep
+     set order to &w_orden
+     SET FILTER TO
+ENDIF
+IF VARREAD() == 'W_OEST'
+     SELECT ge_tab0
+     IF w_codtal <= '010 '
+          SET FILTER TO tab_codpre = 'ESOR';
+AND (tab_codtab >= '001 ';
+AND tab_codtab < '007 ';
+OR (tab_codtab >= '032 ';
+AND tab_codtab <= '036 '))
+     ELSE
+          SET FILTER TO tab_codpre = 'ESOR';
+AND ((tab_codtab > '010 ';
+AND tab_codtab < '020 ');
+OR (tab_codtab = '003 ';
+OR tab_codtab = '004 ';
+OR tab_codtab = '007 ');
+OR tab_codtab = '027 ';
+OR (tab_codtab >= '032 ';
+AND tab_codtab <= '036 ';
+AND tab_codtab#'033 ');
+OR (tab_codtab = '043 '))
+     ENDIF
+     campo = 'tab_codtab + "  " + tab_destab'
+     titulo = 'AYUDA ESTADO OPERACION'
+     DO ayuda1 WITH campo, titulo,  ;
+        'tab_codtab'
+     SET ORDER TO codigo
+     SET FILTER TO
+ENDIF
+IF VARREAD() == 'W_CODTAL'
+     SELECT ge_tab0
+     IF nivell = 'A11'
+          SET FILTER TO tab_codpre ==;
+'TALL' AND (SUBSTR(tab_codtab, 1, 2) = '05' OR SUBSTR(tab_codtab, 1, 2) = '06')
+     ELSE
+          SET FILTER TO tab_codpre ==;
+'TALL'
+     ENDIF
+     campo = 'tab_codtab + "  " + tab_destab'
+     titulo = 'TALLER DE REPARACION'
+     DO ayuda1 WITH campo, titulo,  ;
+        'tab_codtab'
+     SET ORDER TO codigo
+     SET FILTER TO
+ENDIF
+IF VARREAD() == 'W_OTEC'
+     SELECT st_itecn
+     IF nivell = 'A11'
+          SET FILTER TO codent > ' 10000000'
+     ENDIF
+     campoa = '" "+codent+" "+noment+" "+CODTEC'
+     campob = '" "+noment+" "+codent+" "+CODTEC'
+     titulo = 'AYUDA DE TECNICOS'
+     DO ayuda2 WITH campoa,  ;
+        campob, titulo,  ;
+        'iif(len(ltrim(codent))<11,codent+chr(13),codent)'
+     SET ORDER TO codigo
+     SET FILTER TO
+ENDIF
+IF VARREAD() == 'W_OGAR'
+     SELECT ge_tab0
+     SET FILTER TO tab_codpre == 'INGA'
+     campo = 'tab_codtab + "  " + tab_destab'
+     titulo = 'AYUDA TIPO DE ATENCION'
+     DO ayuda1 WITH campo, titulo,  ;
+        'tab_codtab'
+     SET ORDER TO codigo
+     SET FILTER TO
+ENDIF
+IF VARREAD() == 'W_NUMERO' AND  ;
+   config_prg > 1
+     SELECT st_iorep
+     SET FILTER TO indest#'N';
+AND indest#'F';
+AND indest#'B'
+     campoa = 'numsol+" "+dtoc(fecemi)+" "+numdoc+" "+substr(numser,1,12)+" "+codent+" "+substr(codmod,1,10)+" "+subst(indest,1,2)+" "+alltrim(indori)'
+     w_origen = 'OR'
+     DO ayuda8 WITH campoa,  ;
+        w_origen, SELECT()
+     SELECT st_iorep
+     SET ORDER TO ord_numsol
+     SET FILTER TO
+ENDIF
+ON KEY LABEL F6 do ayuda12
+RETURN
+*
+FUNCTION garantia
+PARAMETER gar
+boleano = 0
+DO control WITH boleano
+IF boleano = 1
+     boleano = 0
+     RETURN 0
+ENDIF
+IF gar == SPACE(4)
+     DO error2 WITH  ;
+        '** Error Item debe ser Ingresado. **'
+     KEYBOARD '{CTRL+Y}' PLAIN
+     RETURN .F.
+ENDIF
+RETURN .T.
+*
+FUNCTION numord2
+PARAMETER num
+IF num == 0
+     DO error WITH  ;
+        '** Error N§ debe ser Ingresado. **'
+     RETURN .F.
+ENDIF
+SELECT st_iorep
+SEEK STR(num, 8)
+w_clave = numdoc
+IF !FOUND()
+     DO error WITH  ;
+        '** N§ Solicitud de Servicio NO EXISTE **'
+     RETURN .F.
+ENDIF
+IF indest = 'N   '
+     DO error WITH  ;
+        '** N§ Solicitud de Servicio Anulada **'
+     RETURN .F.
+ENDIF
+IF indest = 'F   '
+     DO error WITH  ;
+        '** N§ Solicitud FACTURADA **'
+     RETURN .F.
+ENDIF
+IF indest = 'B   '
+     DO error WITH  ;
+        '** N§ Solicitud BOLETEADA **'
+     RETURN .F.
+ENDIF
+IF indest = 'C   '
+     DO error WITH  ;
+        '** N§ Solicitud CERRADA **'
+     RETURN .F.
+ENDIF
+IF config_prg = 3
+     IF auxest#'001' AND  ;
+        auxest#'011'
+          DO error WITH  ;
+             '** N§ Solicitud no esta vigente **'
+          RETURN .F.
+     ENDIF
+ENDIF
+w_rep = 0
+w_rep = con_rep(w_clave)
+IF config_prg = 3
+     IF w_rep > 0
+          DO error WITH  ;
+             '** N§ Solicitud tiene repuestos **'
+          RETURN .F.
+     ENDIF
+ENDIF
+SELECT st_iorep
+w_numero = VAL(numsol)
+w_numord = VAL(numdoc)
+w_pgta = pagta(numsol)
+RETURN .T.
+*
+FUNCTION con_rep
+PARAMETER w_clave
+SELECT 20
+USE SHARED st_iprep ORDER  ;
+    rep_numord
+SELECT 21
+USE SHARED st_idped ORDER codigo
+SELECT st_iprep
+SEEK w_clave
+SCAN WHILE numord = w_clave AND   ;
+    !EOF()
+     IF indest#'N'
+          w_numped = numdoc
+          SELECT st_idped
+          SEEK w_numped + w_clave
+          IF FOUND()
+               SCAN WHILE numdoc =  ;
+                    w_numped  ;
+                    AND numord =  ;
+                    w_clave AND   ;
+                   !EOF()
+                    IF canpro > 0
+                         w_rep = w_rep +  ;
+                                 totite
+                    ENDIF
+               ENDSCAN
+          ENDIF
+          SELECT st_iprep
+     ENDIF
+ENDSCAN
+RETURN w_rep
+*
+FUNCTION ordnul
+PARAMETER cod
+IF cod = 0
+     DO error WITH  ;
+        '** Error  N§ debe ser Ingresado. **'
+     KEYBOARD '{CTRL+Y}' PLAIN
+     RETURN .F.
+ENDIF
+cod = STR(cod, 8)
+SELECT st_isrep
+seek '&cod'
+IF !FOUND()
+     DO error WITH  ;
+        '** Error Solicitud NO EXISTE. **'
+     KEYBOARD '{CTRL+Y}' PLAIN
+     RETURN .F.
+ENDIF
+IF SUBSTR(indest, 1, 1) == 'N'
+     DO error WITH  ;
+        '** Error Solicitud esta Anulada. **'
+     KEYBOARD '{CTRL+Y}' PLAIN
+     RETURN .F.
+ENDIF
+IF SUBSTR(indest, 1, 1)#'V'
+     DO error WITH  ;
+        '** Error Solicitud en Procesos. **'
+     KEYBOARD '{CTRL+Y}' PLAIN
+     RETURN .F.
+ENDIF
+DO sacaf6
+RETURN .T.
+*
+PROCEDURE imp_ord
+clave = w_codmar + w_codmod
+SELECT st_imode
+seek '&clave'
+w_desmod = nommod
+SELECT ge_tab0
+SEEK 'MARC' + w_codmar
+w_desmar = tab_destab
+SEEK 'INGA' + w_ogar
+w_destia = SUBSTR(tab_destab, 1,  ;
+           30)
+w_numaux = STR(w_numord, 8)
+SELECT st_itecn
+SEEK STR(w_otec, 9)
+w_destec = noment
+SELECT st_iorep
+w_numsol = numsol
+tit_client = w_noment
+tit_tel1 = w_numte1
+tit_tel2 = w_numte2
+tit_codigo = STR(w_codcli, 11)
+tit_direcc = w_nomcal
+tit_distri = w_desdis
+tit_feccom = w_feccom
+tit_tit1 = 'DESTINO : '
+tit_destin = IIF(w_coddes == 'R',  ;
+             'REPARACION',  ;
+             'DOMICILIO')
+IF w_coddes = 'R'
+     tit_tit5 = 'O R D E N   D E   R E P A R A C I O N '
+ELSE
+     tit_tit5 = 'S E R V I C I O   D O M I C I L I O '
+ENDIF
+w_fecha = DTOC(DATE())
+tit_fechho = w_fecha
+tit_tit2 = 'SINTOMAS :'
+tit_tit3 = 'ACCESORIOS :'
+tit_tit4 = 'OBSERVACIONES :'
+tit_tit6 = 'INF.TEC./ NOTAS :'
+tit_fecha = w_fecha + ' - ' +  ;
+            TIME()
+tit_eminro = w_emisor + ' N§: ' +  ;
+             w_numaux
+tit_nrosol = 'S/S  N§: ' +  ;
+             w_numsol
+tit_codmod = w_codmod
+tit_numser = w_numser
+tit_desmar = w_desmar
+tit_desmod = w_desmod
+DIMENSION w_sol( 3), w_obs( 3)
+o = 1
+FOR i = 1 TO 3
+     w_obs( i) = w_observ(o) +  ;
+          w_observ(o + 1)
+     w_sol( i) = w_obssol(o) +  ;
+          w_obssol(o + 1)
+     o = o + 2
+ENDFOR
+SET CONSOLE OFF
+SET DEVICE TO PRINTER
+SET PRINTER ON
+@ PROW(), PCOL() SAY CHR(15)
+@ PROW(), PCOL() SAY CHR(27) +  ;
+  'C' + CHR(33)
+DO pormord
+EJECT
+w_numord = w_numord + 1
+SET PRINTER TO
+SET PRINTER OFF
+SET DEVICE TO SCREEN
+SET CONSOLE ON
+RETURN
+*
+PROCEDURE buscaor
+w_numord = w_numero
+RETURN
+*
+FUNCTION ooseri2
+PARAMETER w_marca, w_modelo,  ;
+          w_numser
+narea = SELECT()
+SELECT st_iseri
+SEEK w_marca + w_modelo +  ;
+     w_numser
+IF FOUND()
+     w_provee = codent
+     w_desser = DTOC(st_iseri.fecvta) +  ;
+                ' ' +  ;
+                ALLTRIM(docgar)
+ELSE
+     w_desser = ''
+ENDIF
+SELECT (narea)
+RETURN w_desser
+*
+FUNCTION mobra
+PARAMETER w_estado
+DEFINE WINDOW mobra FROM 20, 30  ;
+       TO 26, 55
+w_indica = 1
+IF w_estado = '026 '
+     DO error WITH  ;
+        '**Ir a Cierre Presupuesto No aprobado **'
+     KEYBOARD '{CTRL+Y}' PLAIN
+     w_indica = 0
+     RETURN .F.
+ENDIF
+IF SUBSTR(w_indori, 2, 1)#'R'
+     IF w_estado = '009 ' OR  ;
+        w_estado = '021 ' OR  ;
+        (w_codtal > '010 ' AND  ;
+        (w_estado = '018 ' OR  ;
+        w_estado = '027 '))
+          IF w_codtal > '010 '
+               IF w_estado =  ;
+                  '027 ' AND  ;
+                  w_indori =  ;
+                  'FGAR'
+                    IF w_pgta <  ;
+                       (w_cosmob +  ;
+                       w_rep +  ;
+                       w_flete)
+                         DO error  ;
+                            WITH  ;
+                            '** O/R tiene saldo a cancelar **'
+                         KEYBOARD  ;
+                          '{CTRL+Y}'  ;
+                          PLAIN
+                         w_indica =  ;
+                          0
+                         RETURN .F.
+                    ELSE
+                         w_cosmob =  ;
+                          w_pgta -  ;
+                          w_rep -  ;
+                          w_flete
+                         w_monto =  ;
+                          w_cosmob
+                    ENDIF
+               ELSE
+                    IF w_indori =  ;
+                       'GARA'  ;
+                       OR  ;
+                       w_indori =  ;
+                       'PVEN'
+                         w_cosmob =  ;
+                          lle_mog()
+                         w_monto =  ;
+                          w_cosmob
+                    ELSE
+                         SELECT 20
+                         USE st_ispre  ;
+                             ORDER  ;
+                             pre_numord
+                         SEEK st_iorep.numdoc
+                         IF FOUND()
+                              WAIT  ;
+                               WINDOW  ;
+                               NOWAIT  ;
+                               'Mano de obra de Presupuesto'
+                              w_monto =  ;
+                               monman /  ;
+                               (1 +  ;
+                               w_facigv)
+                         ELSE
+                              SELECT  ;
+                               st_mobra
+                              SEEK  ;
+                               w_codmar +  ;
+                               w_codart
+                              IF FOUND()
+                                   w_monto = mo_monmof
+                              ENDIF
+                         ENDIF
+                         SELECT 20
+                         USE
+                    ENDIF
+               ENDIF
+          ELSE
+               IF w_oest = '021 '
+                    IF w_indori =  ;
+                       'FGAR'  ;
+                       AND  ;
+                       w_pgta >  ;
+                       0
+                         w_monto =  ;
+                          w_pgta -  ;
+                          w_rep -  ;
+                          w_flete
+                    ELSE
+                         IF w_indori =  ;
+                            'GARA'  ;
+                            OR  ;
+                            w_indori =  ;
+                            'PVEN'
+                              w_monto =  ;
+                               lle_mog()
+                         ELSE
+                              SELECT  ;
+                               ge_tab0
+                              SEEK  ;
+                               'TALL' +  ;
+                               '008 '
+                              IF FOUND()
+                                   w_monto = tab_factor
+                              ENDIF
+                         ENDIF
+                    ENDIF
+               ELSE
+                    DO CASE
+                         CASE w_codtal =  ;
+                              '008 '
+                              IF w_indori =  ;
+                                 'GARA'  ;
+                                 OR  ;
+                                 w_indori =  ;
+                                 'PVEN'
+                                   w_monto = lle_mog()
+                              ELSE
+                                   SELECT ge_tab0
+                                   SEEK 'TALL' + w_codtal
+                                   IF FOUND()
+                                        w_monto = tab_factor
+                                   ENDIF
+                              ENDIF
+                         CASE w_codtal# ;
+                              '008 '  ;
+                              AND  ;
+                              w_codtal <=  ;
+                              '010 '
+                              IF w_indori =  ;
+                                 'GARA'  ;
+                                 OR  ;
+                                 w_indori =  ;
+                                 'PVEN'
+                                   w_cosmob = lle_mog()
+                                   w_monto = w_cosmob
+                              ELSE
+                                   SELECT 20
+                                   USE st_ispre ORDER pre_numord
+                                   SEEK st_iorep.numdoc
+                                   IF FOUND()
+                                        WAIT WINDOW NOWAIT 'Mano de obra de Presupuesto'
+                                        w_monto = monman / (1 + w_facigv)
+                                   ELSE
+                                        SELECT st_mobra
+                                        SEEK w_codmar + w_codart
+                                        IF FOUND()
+                                             w_monto = mo_monmof
+                                        ENDIF
+                                        SELECT 20
+                                        USE
+                                   ENDIF
+                              ENDIF
+                    ENDCASE
+               ENDIF
+          ENDIF
+          ACTIVATE WINDOW mobra
+          CLEAR
+          @ 01, 00 SAY  ;
+            'Total de   '
+          STORE .T. TO w_man
+          DO WHILE w_man
+               @ 02, 00 SAY  ;
+                 'M.Obra $.:' GET  ;
+                 w_monto PICTURE  ;
+                 '9,999,999.99'  ;
+                 VALID  ;
+                 mano(w_monto)
+               READ
+          ENDDO
+          DEACTIVATE WINDOW mobra
+     ENDIF
+ENDIF
+IF w_estado = '009 ' OR  ;
+   w_estado = '018 ' OR  ;
+   w_estado = '027 '
+     xxsele = SELECT()
+     DO esc_indica WITH 1, 'AYU',  ;
+        'BBB', 'BBB', 'INT'
+     DO esc_indica WITH 2, 'MBV',  ;
+        'BBB', 'IGN', 'ESC'
+     CREATE CURSOR TMP_MOCS (tip  ;
+            C (1), numord C (8),  ;
+            numsol C (8), codigo  ;
+            C (4))
+     DO causol
+     SELECT (xxsele)
+ENDIF
+IF w_estado = '010 ' OR  ;
+   w_estado = '021 '
+     ACTIVATE WINDOW mobra
+     CLEAR
+     @ 02, 00 SAY 'T.C.Calidad:'  ;
+       GET w_codcca PICTURE  ;
+       '999999999' VALID  ;
+       tecnic2(w_codcca,2,0,2)
+     READ
+     DEACTIVATE WINDOW mobra
+ENDIF
+IF w_estado = '009 ' OR  ;
+   w_estado = '018 ' OR  ;
+   w_estado = '026 ' OR  ;
+   w_estado = '027 ' OR  ;
+   w_estado = '029 '
+     DO solucion
+ENDIF
+RETURN
+*
+PROCEDURE cierre
+SELECT st_iorep
+DO rbloquea
+REPLACE fecfin WITH DATE(),  ;
+        indest WITH 'C'
+REPLACE codcca WITH STR(w_codcca,  ;
+        9), horfin WITH TIME()
+UNLOCK
+SELECT 20
+USE SHARED st_ispre ORDER  ;
+    st_numsol
+SEEK st_iorep.numsol
+IF FOUND()
+     DO rbloquea
+     REPLACE indest WITH 'C'
+     REPLACE indori WITH  ;
+             st_iorep.indori
+     REPLACE user WITH users
+     REPLACE date WITH DATE()
+     REPLACE time WITH TIME()
+     UNLOCK
+ENDIF
+SELECT st_iorep
+STORE 0 TO sum, tot_titore,  ;
+      cuenta
+w_fecemi = CTOD('  /  /    ')
+w_indori = indori
+w_codmod = codmod
+w_codmar = codmar
+w_numser = numser
+w_fecrep = fecemi
+w_fecdes = DATE()
+w_codtec1 = codtec
+w_cosmob = cosmob
+w_flete = w_flete + flete
+w_solici = numsol
+w_titore = DATE() - w_fecrep
+SELECT st_isrep
+seek '&w_solici'
+IF FOUND()
+     DO rbloquea
+     REPLACE indest WITH 'C'
+     REPLACE user WITH users
+     REPLACE date WITH DATE()
+     REPLACE time WITH TIME()
+     UNLOCK
+ENDIF
+k_feccom = feccom
+SELECT 20
+USE SHARED st_iprep ORDER  ;
+    rep_numord
+SELECT 21
+USE SHARED st_idped ORDER codigo
+SELECT st_iprep
+SEEK w_numaux
+SCAN WHILE numord = w_numaux  ;
+     AND !EOF()
+     IF indest#'N'
+          w_numped = numdoc
+          SELECT st_idped
+          SEEK w_numped +  ;
+               w_numaux
+          IF FOUND()
+               SCAN WHILE numdoc =  ;
+                    w_numped  ;
+                    AND numord =  ;
+                    w_numaux  ;
+                    AND ! ;
+                    EOF()
+                    IF canpro > 0
+                         tot_titore =  ;
+                          tot_titore +  ;
+                          totite
+                    ENDIF
+               ENDSCAN
+          ENDIF
+          SELECT st_iprep
+          DO rbloquea
+          REPLACE indest WITH 'C'
+          REPLACE user WITH users
+          REPLACE date WITH  ;
+                  DATE()
+          REPLACE time WITH  ;
+                  TIME()
+          UNLOCK
+     ENDIF
+ENDSCAN
+subto = tot_titore + w_cosmob +  ;
+        w_flete
+totneto = subto
+totigva = ROUND(totneto *  ;
+          w_facigv, 2)
+totbrut = totneto + totigva
+SELECT st_iorep
+SEEK STR(w_numero, 8)
+DO rbloquea
+REPLACE subtot WITH subto, cosmob  ;
+        WITH w_cosmob
+REPLACE flete WITH w_flete
+REPLACE totnet WITH totneto,  ;
+        totigv WITH totigva
+REPLACE totbru WITH totbrut,  ;
+        cosrep WITH tot_titore
+IF (w_codtal > '010 ' AND  ;
+   w_codtal < '020 ') OR  ;
+   (w_codtal > '060 ' AND  ;
+   w_codtal < '070 ')
+     REPLACE fecent WITH DATE()
+     REPLACE horent WITH TIME()
+ENDIF
+UNLOCK
+SELECT 20
+USE SHARED st_estad ORDER codigo
+APPEND BLANK
+DO rbloquea
+REPLACE indori WITH w_indori,  ;
+        anorep WITH YEAR(DATE())
+REPLACE mesrep WITH MONTH(DATE()),  ;
+        numord WITH w_numord
+REPLACE codmod WITH w_codmod,  ;
+        codmar WITH w_codmar
+REPLACE numser WITH w_numser,  ;
+        fecrep WITH w_fecrep
+REPLACE fecdes WITH DATE(),  ;
+        feccon WITH w_feccom
+REPLACE codtec WITH w_codtec1,  ;
+        valmao WITH w_cosmob
+REPLACE titore WITH w_titore,  ;
+        valrep WITH tot_titore
+REPLACE user WITH users
+REPLACE date WITH DATE()
+REPLACE time WITH TIME()
+UNLOCK
+RETURN
+*
+PROCEDURE sintom1
+SELECT 20
+USE SHARED st_sicli ORDER codigo
+SEEK STR(w_numero, 8)
+i = 1
+IF FOUND()
+     SCAN WHILE !EOF()  ;
+          AND numdoc =  ;
+          STR(w_numero, 8)
+          w_aux2 = codsin
+          SELECT st_sint
+          SEEK w_linea +  ;
+               SUBSTR(w_aux2, 2,  ;
+               3)
+          w_codsin( i) =  ;
+                  SUBSTR(dessin,  ;
+                  1, 35)
+          i = i + 1
+          SELECT st_sicli
+     ENDSCAN
+ENDIF
+RETURN
+*
+PROCEDURE causol
+SELECT ge_tab0
+ON KEY LABEL f6
+mja = 1
+pre = 'CAUS'
+DEFINE WINDOW causas FROM 12, 1  ;
+       TO 35, 38 SHADOW NONE
+DEFINE POPUP causas FROM 0, 0  ;
+       TITLE  ;
+       ' CAUSAS DE LOS DA¥OS '  ;
+       SHADOW MARGIN IN causas  ;
+       MULTI COLOR ,N/W,N/W,W+/N, ;
+       W/N*,W/N 
+SEEK pre
+PUBLIC kev, barra
+STORE 0 TO kev
+STORE SPACE(10) TO barra
+STORE 0 TO dmg1, dmg2
+SCAN FOR tab_codpre = pre
+     DIMENSION causas( mja)
+     causas( mja) = '' +  ;
+           tab_codtab + '³' +  ;
+           tab_destab
+     DEFINE BAR mja OF causas  ;
+            PROMPT causas(mja)
+     SET MARK OF BAR mja OF causas TO;
+'û'
+     IF tab_codpre#pre
+          EXIT
+     ENDIF
+     mja = mja + 1
+ENDSCAN
+ACTIVATE WINDOW causas
+SHOW POPUP causas
+mja1 = 1
+pre = 'SOLU'
+DEFINE WINDOW soluciones FROM 12,  ;
+       39 TO 35, 72 SHADOW NONE
+DEFINE POPUP soluciones FROM 00,  ;
+       00 TITLE  ;
+       ' SOLUCIONES DE LOS DA¥OS '  ;
+       SHADOW MARGIN MULTI COLOR , ;
+       N/W,N/W,W+/N,W/N*,W/N 
+SEEK pre
+SCAN FOR tab_codpre = pre
+     DIMENSION soluciones( mja1)
+     soluciones( mja1) = ' ' +  ;
+               tab_codtab + '³' +  ;
+               tab_destab
+     DEFINE BAR mja1 OF  ;
+            soluciones PROMPT  ;
+            soluciones(mja1)
+     SET MARK OF BAR mja1 OF soluciones;
+TO 'û'
+     IF tab_codpre#pre
+          EXIT
+     ENDIF
+     mja1 = mja1 + 1
+ENDSCAN
+ON KEY LABEL SPACEBAR KEYBOARD '{shift+spacebar}';
+PLAIN
+ON KEY LABEL ENTER KEYBOARD '{ESCAPE}'
+ON KEY LABEL F10 DO CANCELAR
+ACTIVATE WINDOW soluciones
+SHOW POPUP soluciones
+ON KEY LABEL TAB DO ACTISOL
+ACTIVATE POPUP soluciones NOWAIT
+ACTIVATE POPUP causas NOWAIT
+DO acticau
+DEACTIVATE POPUP causas
+DEACTIVATE POPUP soluciones
+DEACTIVATE WINDOW causas
+DEACTIVATE WINDOW soluciones
+ON KEY LABEL ENTER
+ON KEY LABEL TAB
+ON KEY LABEL SPACEBAR
+IF (dmg1 = 0 OR dmg2 = 0)
+     DO error2 WITH  ;
+        'Error: Se tiene que ingresar Causas y Soluciones'
+     DO causol
+ENDIF
+ON KEY LABEL F6 do ayuda12
+ON KEY LABEL F10 DO FCINCO
+RETURN
+*
+PROCEDURE actisol
+ON KEY LABEL TAB DO ACTICAU
+ON KEY LABEL SPACEBAR KEYBOARD '{shift+spacebar}';
+PLAIN
+ON KEY LABEL ENTER KEYBOARD '{ESCAPE}'
+ACTIVATE WINDOW soluciones
+ON SELECTION POPUP soluciones DO GRAB_SOLU
+ACTIVATE POPUP soluciones
+DEACTIVATE POPUP soluciones
+DEACTIVATE WINDOW soluciones
+DEACTIVATE POPUP causas
+DEACTIVATE WINDOW causas
+RETURN
+*
+PROCEDURE acticau
+CREATE CURSOR TMP_MOCS (tip C (1),  ;
+       numord C (8), numsol C (8),  ;
+       codigo C (4))
+ON KEY LABEL TAB DO ACTISOL
+ON KEY LABEL SPACEBAR KEYBOARD '{shift+spacebar}';
+PLAIN
+ON KEY LABEL ENTER KEYBOARD '{ESCAPE}'
+ACTIVATE WINDOW causas
+ON SELECTION POPUP causas DO GRAB_CAUS
+ACTIVATE POPUP causas
+RETURN
+*
+PROCEDURE grab_caus
+kev = LASTKEY()
+IF !(kev = 32)
+     RETURN
+ENDIF
+barra = causas
+SELECT tmp_mocs
+APPEND BLANK
+REPLACE tip WITH 'C', numsol WITH  ;
+        STR(w_numero, 8), numord  ;
+        WITH STR(w_numord, 8),  ;
+        codigo WITH  ;
+        LEFT(causas(BAR()), 4)
+dmg1 = dmg1 + 1
+ON KEY LABEL SPACEBAR KEYBOARD '{shift+spacebar}';
+PLAIN
+kev = 0
+ON KEY LABEL ENTER KEYBOARD '{ESCAPE}'
+RETURN
+*
+PROCEDURE grab_solu
+kev = LASTKEY()
+IF !(kev = 32)
+     RETURN
+ENDIF
+barra = soluciones
+SELECT tmp_mocs
+APPEND BLANK
+REPLACE tip WITH 'S', numsol WITH  ;
+        STR(w_numero, 8), numord  ;
+        WITH STR(w_numord, 8),  ;
+        codigo WITH  ;
+        SUBSTR(soluciones(BAR()),  ;
+        2, 4)
+dmg2 = dmg2 + 1
+ON KEY LABEL SPACEBAR KEYBOARD '{shift+spacebar}';
+PLAIN
+kev = 0
+ON KEY LABEL ENTER KEYBOARD '{ESCAPE}'
+RETURN
+*
+PROCEDURE marca
+barra = causas
+KEYBOARD '{ENTER}{shift+spacebar}'  ;
+         PLAIN
+RETURN
+*
+PROCEDURE sal1
+DEACTIVATE POPUP causas
+DEACTIVATE POPUP soluciones
+DEACTIVATE WINDOW causas
+DEACTIVATE WINDOW soluciones
+ON KEY LABEL ENTER
+ON KEY LABEL TAB
+ON KEY LABEL ESCAPE
+ON KEY LABEL SPACEBAR
+RETURN
+*
+PROCEDURE cancelar
+ON KEY LABEL F10
+DEACTIVATE WINDOW causas
+DEACTIVATE WINDOW soluciones
+DEACTIVATE POPUP causas
+DEACTIVATE POPUP soluciones
+RETURN
+*
+FUNCTION mano
+PARAMETER impor
+IF impor < 0
+     DO error2 WITH  ;
+        '** Importe no puede ser menor de cero**'
+     RETURN .F.
+ENDIF
+IF impor = 0 AND  ;
+   SUBSTR(w_indori, 2, 1)#'R'  ;
+   AND STR(w_otec, 9)# ;
+   '      500'
+     DO error2 WITH  ;
+        '** Falta importe de Mano de Obra **'
+     RETURN .F.
+ENDIF
+w_man = .F.
+RETURN
+*
+PROCEDURE taller
+IF w_linea = '0002'
+     IF w_coddes = 'R'
+          w_codtal = '002 '
+     ELSE
+          w_codtal = '012 '
+     ENDIF
+ELSE
+     IF w_linea = '0003'
+          IF w_coddes = 'R'
+               w_codtal = '003 '
+          ELSE
+               w_codtal = '013 '
+          ENDIF
+     ELSE
+          IF w_linea = '0010'
+               IF w_coddes = 'R'
+                    w_codtal = '005 '
+               ELSE
+                    w_codtal = '015 '
+               ENDIF
+          ELSE
+               IF w_linea =  ;
+                  '0011'
+                    IF w_coddes =  ;
+                       'R'
+                         w_codtal =  ;
+                          '006 '
+                    ELSE
+                         w_codtal =  ;
+                          '016 '
+                    ENDIF
+               ELSE
+                    IF w_linea =  ;
+                       '0012'
+                         IF w_coddes =  ;
+                            'R'
+                              w_codtal =  ;
+                               '007 '
+                         ELSE
+                              w_codtal =  ;
+                               '017 '
+                         ENDIF
+                    ELSE
+                         IF w_linea =  ;
+                            '0013'
+                              IF w_coddes =  ;
+                                 'R'
+                                   w_codtal = '004 '
+                              ELSE
+                                   w_codtal = '014 '
+                              ENDIF
+                         ENDIF
+                    ENDIF
+               ENDIF
+          ENDIF
+     ENDIF
+ENDIF
+RETURN
+*
+FUNCTION valtab2
+PARAMETER clave, codig, colu,  ;
+          largo
+SELECT ge_tab0
+codaux = clave + codig
+seek '&codaux'
+IF !FOUND()
+     DO error2 WITH  ;
+        '** C¢digo NO EXISTE **'
+     KEYBOARD '{CTRL+Y}' PLAIN
+     RETURN .F.
+ENDIF
+IF colu#0
+     @ ROW(), colu SAY  ;
+       SUBSTR(tab_destab, 1,  ;
+       largo)
+ENDIF
+DO sacaf6
+RETURN .T.
+*
+PROCEDURE col_bk1b
+SELECT ge_tab0
+w_aux = 'EMIS' + w_emisor
+SEEK '&w_aux'
+IF FOUND()
+     w_nomemi = tab_destab
+ELSE
+     w_nomemi = SPACE(35)
+ENDIF
+w_aux = 'ESTA' + w_indest
+SEEK '&w_aux'
+w_estado = tab_destab
+w_aux = 'MONE' + w_codmon
+SEEK '&w_aux'
+IF FOUND()
+     w_nommon = tab_destab
+ELSE
+     w_nommon = SPACE(35)
+ENDIF
+w_aux = 'DIST' + w_nomdis
+SEEK '&w_aux'
+w_desdis = tab_destab
+w_aux = 'PROV' + w_nomciu
+SEEK '&w_aux'
+w_desciu = tab_destab
+DO coloca WITH 01, 66,  ;
+   STR(w_numero, 8)
+DO coloca WITH 16, 20,  ;
+   DTOC(w_fecemi)
+DO coloca WITH 16, 38,  ;
+   SUBSTR(TIME(), 1, 5)
+DO coloca WITH 18, 20, w_emisor
+DO coloca WITH 18, 25,  ;
+   SUBSTR(w_nomemi, 1, 24)
+DO coloca WITH 02, 01,  ;
+   SUBSTR(w_estado, 1, 06)
+DO coloca WITH 05, 20, w_codmar
+DO coloca WITH 06, 20, w_codmod
+DO coloca WITH 07, 20, w_numser
+DO coloca WITH 08, 20, w_indori
+DO coloca WITH 08, 25,  ;
+   STR(w_numstk, 9)
+w_aux = 'MARC' + w_codmar
+SELECT ge_tab0
+SEEK '&w_aux'
+IF FOUND()
+     DO coloca WITH 05, 25,  ;
+        SUBSTR(tab_destab, 1,  ;
+        30)
+ENDIF
+w_aux = 'INGA' + w_indori
+SELECT ge_tab0
+seek '&w_aux'
+IF FOUND()
+     DO coloca WITH 08, 25,  ;
+        SUBSTR(tab_destab, 1,  ;
+        30)
+ENDIF
+w_aux = w_codmar + w_codmod
+SELECT st_imode
+seek '&w_aux'
+IF FOUND()
+     DO coloca WITH 06, 36,  ;
+        SUBSTR(nommod, 1, 30)
+ENDIF
+IF w_indori == 'GARA' OR  ;
+   w_indori == 'GREC'
+     DO coloca WITH 19, 20,  ;
+        'EN GARANTIA   '
+ELSE
+     IF w_indori == 'PVEN' OR  ;
+        w_indori == 'PREC'
+          DO coloca WITH 19, 20,  ;
+             'PREVENTA      '
+     ELSE
+          DO coloca WITH 19, 20,  ;
+             'FUERA GARANTIA'
+     ENDIF
+ENDIF
+DO coloca WITH 10, 20,  ;
+   STR(w_codcli, 11)
+DO coloca WITH 10, 30, w_noment
+DO coloca WITH 11, 20, w_nomcal
+DO coloca WITH 12, 20, w_nomdis
+DO coloca WITH 12, 25, w_desdis
+DO coloca WITH 13, 20, w_nomciu
+DO coloca WITH 13, 25, w_desciu
+DO coloca WITH 14, 20,  ;
+   STR(w_numte1, 8)
+DO coloca WITH 14, 30,  ;
+   STR(w_numte2, 8)
+DO coloca WITH 16, 64,  ;
+   DTOC(w_feccom)
+DO coloca WITH 20, 20,  ;
+   TRANSFORM(w_abonos,  ;
+   '9,999,999.99')
+DO coloca WITH 20, 44, w_codmon
+DO coloca WITH 20, 49,  ;
+   SUBSTR(w_nommon, 1, 15)
+DO coloca WITH 21, 20, w_coddes+ ;
+   ' '+IIF(w_coddes=='R',  ;
+   'REPARACION ', 'DOMICILIO')
+FOR i = 1 TO 15
+     DO coloca WITH 24+i, 2,  ;
+        w_codsin(i)
+ENDFOR
+FOR i = 1 TO 15
+     DO coloca WITH 24+i, 38,  ;
+        w_acceso(i)
+ENDFOR
+RETURN
+*
+PROCEDURE col_bk2b
+FOR i = 1 TO 06
+     DO coloca WITH 41+i, 2,  ;
+        w_observ(i)
+ENDFOR
+RETURN
+*
+PROCEDURE col_bk1c
+DO coloca WITH 01, 68,  ;
+   STR(w_numero, 8)
+DO coloca WITH 05, 20, w_codmar
+DO coloca WITH 05, 25, w_nommar
+DO coloca WITH 06, 20, w_codmod
+DO coloca WITH 06, 36, w_nommod
+DO coloca WITH 07, 20, w_numser
+DO coloca WITH 08, 25,  ;
+   STR(w_numstk, 9)
+DO coloca WITH 10, 20,  ;
+   STR(w_codcli, 11)
+DO coloca WITH 10, 30, w_noment
+DO coloca WITH 11, 20, w_nomcal
+DO coloca WITH 12, 20, w_nomdis
+DO coloca WITH 12, 25, w_desdis
+DO coloca WITH 13, 20, w_nomciu
+DO coloca WITH 13, 25, w_desciu
+DO coloca WITH 14, 20,  ;
+   STR(w_numte1, 8)
+DO coloca WITH 14, 30,  ;
+   STR(w_numte2, 8)
+DO coloca WITH 16, 20,  ;
+   DTOC(w_fecemi)
+DO coloca WITH 16, 65,  ;
+   DTOC(w_fecven)
+DO coloca WITH 18, 20, w_emisor
+DO coloca WITH 18, 25, w_nomemi
+DO coloca WITH 19, 20, w_indori
+DO coloca WITH 19, 25, w_destia
+DO coloca WITH 20, 20,  ;
+   TRANSFORM(w_abonos,  ;
+   '9,999,999.99')
+DO coloca WITH 20, 44, w_codmon
+DO coloca WITH 20, 49,  ;
+   SUBSTR(w_nommon, 1, 25)
+DO coloca WITH 21, 20,  ;
+   STR(w_tecnic, 9)
+DO coloca WITH 21, 30, w_nomtec
+FOR i = 1 TO 10
+     DO coloca WITH 24+i, 2,  ;
+        pro(i)
+     DO coloca WITH 24+i, 17,  ;
+        dex(i)
+     DO coloca WITH 24+i, 38,  ;
+        IIF(can(i)#0, STR(can(i),  ;
+        6, 2), SPACE(6))
+     DO coloca WITH 24+i, 45,  ;
+        uni(i)
+     DO coloca WITH 24+i, 49,  ;
+        IIF(pre(i)#0, STR(pre(i),  ;
+        9, 2), SPACE(9))
+     DO coloca WITH 24+i, 59,  ;
+        IIF(dec(i)#0, STR(dec(i),  ;
+        5, 2), SPACE(5))
+     DO coloca WITH 24+i, 60,  ;
+        IIF(sto(i)#0, STR(sto(i),  ;
+        5, 0), SPACE(5))
+     DO coloca WITH 24+i, 65,  ;
+        IIF(tot(i)#0, STR(tot(i),  ;
+        10, 2), SPACE(10))
+ENDFOR
+DO coloca WITH 39, 03,  ;
+   STR(w_totrep, 10, 2)
+DO coloca WITH 39, 14,  ;
+   STR(w_totdes, 05, 2)
+DO coloca WITH 39, 20,  ;
+   STR(w_totnet, 10, 2)
+DO coloca WITH 39, 31,  ;
+   STR(w_totman, 10, 2)
+DO coloca WITH 39, 42,  ;
+   STR(w_totafe, 10, 2)
+DO coloca WITH 39, 53,  ;
+   STR(w_totigv, 10, 2)
+DO coloca WITH 39, 64,  ;
+   STR(w_totgrl, 10, 2)
+RETURN
+*
+PROCEDURE col_bk2c
+FOR i = 1 TO 06
+     DO coloca WITH 41+i, 2,  ;
+        w_obspre(i)
+ENDFOR
+RETURN
+*
+PROCEDURE solucion
+SELECT ge_tab0
+SET NEAR ON
+SEEK 'SOFI'
+SET NEAR OFF
+x = 0
+SCAN WHILE tab_codpre = 'SOFI'
+     x = x + 1
+     DIMENSION cod[ x], descri[  ;
+               x]
+     cod[ x] = tab_codtab
+     descri[ x] = tab_destab
+ENDSCAN
+DEFINE POPUP estad FROM 16, 14  ;
+       TITLE  ;
+       ' ORIGEN DE SERVICIO '  ;
+       SHADOW IN screen COLOR  ;
+       SCHEME 8
+FOR y = 1 TO x
+     DEFINE BAR y OF estad PROMPT  ;
+            cod(y) + descri(y)
+ENDFOR
+a = 0
+DO WHILE a=0
+     ON KEY LABEL enter do salir with;
+prompt(), bar()
+     ACTIVATE POPUP estad
+ENDDO
+ON KEY LABEL ENTER
+RETURN
+*
+PROCEDURE salir
+PARAMETER pro, bar
+w_pro = pro
+a = 1
+DEACTIVATE POPUP estad
+*
+FUNCTION imp_guia
+DEFINE WINDOW pide FROM 40, 10 TO  ;
+       45, 60 TITLE  ;
+       ' Impresi¢n de Gu¡a de Remisi¢n '
+ACTIVATE WINDOW pide
+SET CURSOR ON
+STORE 0 TO w_numgui, w_coddes
+STORE SPACE(30) TO w_nomdes,  ;
+      w_dirdes
+@ 00, 01 SAY 'Nro. de Gu¡a :'
+@ 01, 01 SAY 'Destino      :'
+@ 02, 01 SAY 'Direcci¢n    :'
+@ 00, 16 SAY w_nroguia
+@ 01, 16 GET w_coddes PICTURE  ;
+  '999999999' VALID  ;
+  oodestino(VARREAD())
+READ
+IF LASTKEY() = 27
+     RETURN .F.
+ENDIF
+w_print = PRINTSTATUS()
+DO WHILE !w_print
+     DO error2 WITH  ;
+        '** Error en Impresora. Continua ? (S/N) '
+     IF LASTKEY() = 27
+          RETURN
+     ENDIF
+     w_print = PRINTSTATUS()
+ENDDO
+DEACTIVATE WINDOW pide
+SET CONSOLE OFF
+SET DEVICE TO PRINTER
+SET PRINTER ON
+@ PROW(), PCOL() SAY CHR(15)
+@ PROW(), PCOL() SAY CHR(27) +  ;
+  'C' + CHR(33)
+IF w_oest = '016 '
+     @ 07, 062 SAY '- RECOJO'
+ENDIF
+@ 07, 077 SAY 'X'
+@ 09, 015 SAY w_nomdes
+@ 09, 080 SAY 'RUC : ' +  ;
+  STR(w_coddes, 10)
+@ 09, 108 SAY DATE()
+@ 09, 120 SAY TIME()
+@ 10, 015 SAY w_dirdes
+@ 11, 015 SAY 'CESER'
+@ 12, 015 SAY  ;
+  'AV. REP. DE PANAMA 4123 - SURQUILLO'
+SELECT ge_tab0
+SEEK 'CLAS' + w_codart
+w_nomart = SUBSTR(tab_destab, 1,  ;
+           25)
+SEEK 'MARC' + w_codmar
+w_desmar = SUBSTR(tab_destab, 1,  ;
+           25)
+@ 15, 000 SAY STR(w_numord, 8)
+@ 15, 012 SAY w_desmar
+@ 15, 028 SAY w_codmod
+@ 15, 051 SAY w_numser
+@ 15, 075 SAY w_nomart
+@ 15, 106 SAY w_indori
+IF USED('GC_VND00')
+     SELECT gc_vnd00
+     SET ORDER TO CODIGO
+ELSE
+     SELECT 25
+     USE GC_VND00 ORDER CODIGO
+ENDIF
+SEEK 'A' + w_codemp
+IF FOUND()
+     w_desemp = SUBSTR(vnd_nombre,  ;
+                1, 25)
+ENDIF
+SELECT 20
+USE
+@ 20, 01 SAY 'Operador: ' +  ;
+  w_desemp
+@ 29, 01 SAY w_nroguia
+EJECT
+SET PRINTER TO
+SET PRINTER OFF
+SET DEVICE TO SCREEN
+SET CONSOLE ON
+RETURN
+*
+FUNCTION oodestino
+PARAMETER w_dest
+SELECT st_itecn
+SEEK STR(w_coddes, 9)
+IF !FOUND()
+     DO error WITH  ;
+        '*** C¢digo de Proveedor No Existe ***'
+     RETURN .F.
+ENDIF
+@ 02, 16 SAY noment
+@ 03, 16 SAY nomcal
+w_nomdes = noment
+w_dirdes = nomcal
+RETURN
+*
+*** 
+*** ReFox - retrace your steps ... 
+***

@@ -1,0 +1,51 @@
+nMes = 2
+set dele on
+set exclu off
+use iteri in 1 order tag iteri1
+use diario in 2 order tag diario11
+SELE Iteri
+SET FILTER TO VAL(NumMes) = nMes
+SELE Diario
+Index on Comprob+ComAdi TO xx FOR Comprob='25' and cuenta='8' AND MONT(FecEmi)=nMes
+
+SELE Iteri
+GO TOP
+SCAN
+	m.NumRI = NumRI
+	m.NumMes = NumMes
+	m.ValPart = 0
+	SCAN WHILE NumRI = m.NumRI
+		DO CASE
+			CASE EMPTY(Iteri.Tipo)
+				lErr = .T.
+			CASE Iteri.Tipo = 'P' AND EMPTY(CodPart)
+				lErr = .T.
+			CASE Iteri.Tipo = 'O' AND !EMPTY(CodPart)
+				lErr = .T.
+			OTHERWISE
+				lErr = .F.
+		ENDCASE
+		IF lErr
+			WAIT WIND "Error en R/I "+NumRI
+		ELSE
+			IF Iteri.Tipo = 'P' AND !EMPTY(CodPart)
+				m.ValPart = m.ValPart + ImpParc
+			ENDIF
+		ENDIF
+	ENDSCAN
+	SELE Diario
+	SEEK "25" + PADL(ALLTRIM(STR(VAL(m.NumRI))),5,'0') + m.NumMes
+	nMtos = 0
+	IF FOUND()
+		m.ComProb = Comprob
+		SCAN WHILE Comprob = m.Comprob
+			nMtos = nMtos + Montos
+		ENDSCAN
+	ENDIF
+	IF m.ValPart # nMtos/2
+		WAIT WIND "Error en N/C " + m.Comprob
+		wait wind str(m.valpart,2)+ ' '+str(nMtos/2,2)
+	ENDIF
+	SELE Iteri
+	SKIP -1
+ENDSCAN

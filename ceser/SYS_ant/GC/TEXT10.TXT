@@ -1,0 +1,19 @@
+
+  CORP.TECNOLOGICA DE SERVI                                 FECHA  : 13/09/2006
+    ╞╞  C E S E R   ╝╝                                      PAGINA :        1
+
+                             RELACION DE INDICADORES
+
+     INDICADORES DE  ╞╞  AJUSTES                       
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                                   Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      AFNE     POR FISICO NEGATIVO           
+      AFPO     POR FISICO POSITIVO           
+      AVNE     POR VALOR NEGATIVO            
+      AVPO     POR VALOR POSITIVO            
+      EMER     POR EGRESO MERMA              
+
+ 

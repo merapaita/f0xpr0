@@ -1,0 +1,19 @@
+ CESER PIURA SRL                                                                                                     P gina :         1
+        CESER                                     INGRESO DE ORDENES POR TECNICO - PROVEEDOR                         Fecha  :07/01/2016
+   AV.SAN TEODORO                                 ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                         Hora   :  09:54:02
+                                                DEL        : 01/01/2016   AL        : 07/01/2016
+                                                DEL TECNICO:      60070   AL TECNICO:      60070
+                                                DEL TALLER : 004          AL TALLER : 004 
+                                                DEL EMISOR : 050          AL EMISOR : 050 
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ N§   S/S    FECHA DE    MODELO           CLIENTE        TELEFONO ³   O/R    FECHA DE      ESTADO ACTUAL       FECHA DE  OBSERVACIONES³
+³               S/S                                                ³           EMISION                           ESTADO                ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ TECNICO :    60070 SANDOVAL SANDOVAL ALEXANDER   
+
+   1     7674 06/01/2016 L1300       HERMOZA FLORES GUILL   345620 ³    7674 06/01/2016 ASIGNACION DE O/R      06/01/2016               
+   2     7604 28/12/2015 L110        GOMEZ NUNURA HERBERT 96822401 ³    7604 04/01/2016 PENDIENTE POR REPUESTO 05/01/2016 FALLA| ERROR  
+     TECNICO :     60070     2
+
+
+

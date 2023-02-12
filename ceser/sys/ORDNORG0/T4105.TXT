@@ -1,0 +1,60 @@
+ CESER PIURA SRL                                                                                                       P═gina :          1
+       CESER                                        CONTROL DE SERVICIO POR TECNICO                                    Fecha  : 11/11/2015
+  AV.SAN TEODORO N╖442                              ммммммммммммммммммммммммммммммм                                    Hora   :   11:48:00
+                                                  Desde: 01/11/2015 Hasta: 10/11/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё NЬ     FEC.O/R  NЬ O/R    NЬS/S   FEC.ESTA   CLIENTE                MARCA    MODELO        SERIE          INFORME                  GTIAЁ
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     15180 RAMIREZ CALDERON ANGEL        
+    1 04/11/2015     7234     7234 04/11/2015 LOZADA REMIGIO OSCAR    SAMSUNG    LN32B650T1FX AZUM3CES600115                         FGAR
+    2 04/11/2015     7246     7246 04/11/2015 GONZAGA CAMACHO LEYTER  L.G        42PG20R-MA.A 805RMPG035016                          FGAR
+    3 05/11/2015     7250     7250 05/11/2015 AGUIRRE ALARCON ALAN    SAMSUNG    AGE614ST     08617DAQ800039                         FGAR
+    4 05/11/2015     7259     7259 05/11/2015 YARLEQUE PE;A ALEX      SONY       BDP-S190     1024932                                FGAR
+    5 06/11/2015     7265     7265 06/11/2015 NORABUENA ORTIZ ROCIO   SAMSUNG    WA1DXARFP    CCC                                    FGAR
+    6 06/11/2015     7273     7273 06/11/2015 REQUENA PAIVA CHINTIA   SAMSUNG    UN40F5000AGX ZT153CVD200959                         FGAR
+    7 07/11/2015     7275     7275 07/11/2015 FIESTAS CHUNGA FELICITA SONY       CUH-1011A    56882413                               FGAR
+    8 09/11/2015     7283     7283 09/11/2015 CASTRO SOTO CARLOS IVAN L.G        CM8440-AB.DP 403HZEE032700                          FGAR
+    9 09/11/2015     7288     7288 09/11/2015 FLORES CARBAJAL MIGUEL  SONY       CECH-4211A   AC715199662                            FGAR
+    1 10/11/2015     7291     7291 10/11/2015 FEBRE JIMENEZ MILTON    SAMSUNG    MX-E871/PE                                          FREC
+    1 06/11/2015     7258     7258 06/11/2015 NEIRA BOBADILLA SERGIO  OTROS      LE29C800     DH1RC0D1800DZE                         GARA
+                                                                      TOTAL ASIGNACION DE O/R              ====>   11
+    1 04/11/2015     7243     7243 04/11/2015 MIJA CARRERA            SONY       KDL-40W605B  7208176        NO ENCIENDE. EN         GARA
+    2 07/11/2015     7277     7277 10/11/2015 GARCIA DEL VALLE ISABEL SAMSUNG    LS19D300NY/P ZZ8EH4LFC05229 PANEL                   GARA
+    3 09/11/2015     7284     7284 10/11/2015 GARCIA RONDOY EDILBERTO SAMSUNG    MX-HS6500/PE 0AT2122FA00095 MECANISMO               GARA
+    4 09/11/2015     7287     7287 10/11/2015 MENDOZA ACOSTA MILAGROS SAMSUNG    LS19D300NY/P ZZ8EH4LF607400 PANEL                   GARA
+    5 10/11/2015     7289     7289 10/11/2015 CARLIN CANALES          SAMSUNG    UN32FH4005GX 01WZ3CSF400133 PANEL                   GARA
+    6 10/11/2015    15053    15053 10/11/2015 PAIVA TEMOCHE MARIA     SONY       CDX-G1050U   1502448        SE DETIENE ENCD Y       GARA
+                                                                      TOTAL PENDIENTE POR REPUESTO         ====>    6
+    1 04/11/2015     7242     7242 04/11/2015 MARTINEZ RAYMUNDO       SAMSUNG    UN32JH4005GX ZZ9L34LG408343 IMAGEN CON FRANJA Y     FGAR
+    2 04/11/2015     7245     7245 05/11/2015 CHERO INGA MANUEL       SAMSUNG    UN32EH6030GX Z6133CECB00174 NO ENCIENDE, ARTICULO   FGAR
+    3 05/11/2015     7257     7257 05/11/2015 TEMOCHE CORDOVA         SAMSUNG    UN32J4300AGX 03XB3CSG800256 IMAGEN CON RAYAS. EN    FGAR
+    4 06/11/2015     7268     7268 06/11/2015 MORALES ZAPATA JULIO    SAMSUNG    UN32FH4005GX 01WZ3CFF406657 NO HAY IMAGEN. SE       FGAR
+    5 07/11/2015     7276     7276 11/11/2015 GUERRERO PARRILLA NILDA L.G        CM7520-AU     205HZZM251213 SE ENCONTRO MAINBOAR    FGAR
+                                                                      TOTAL EN MESA DE REPARACION          ====>    5
+    1 02/11/2015     7223     7223 06/11/2015 MENDOZA FELIZ JUAN      SONY       SRS-BTX300   4005596        BOTONES NO FUNCIONAN    GARA
+    2 02/11/2015     7224     7224 06/11/2015 CUNIA CHINGUE SALOME    SONY       MHC-V5       4120351        MENSAJE PROTEC 04, EN   GARA
+    3 03/11/2015     7241     7241 05/11/2015 NU;EZ MIJA MARIA        SAMSUNG    UN40H5100AGX 039X3CTFA02728 LINEA VERTICAL EN       GARA
+    4 04/11/2015     7231     7231 05/11/2015 ROMERO ASITIMBAY DIEGO  SAMSUNG    UN40J6400AGX 044G3CUG501081 CLIENTE INDICA SE       GARA
+    5 04/11/2015     7232     7232 06/11/2015 TIENDAS EFE S.A         SAMSUNG    UN48J5500AGX 03Q93CVG403212 PANTALLA CON LINEAS, EN GARA
+    6 04/11/2015     7247     7247 07/11/2015 OECHSLE                 SAMSUNG    AMW831K/XPE  J6E47WRF400550 NO CALIENTA. EN         GARA
+    7 05/11/2015     7251     7251 10/11/2015 SANDOVAL MORALES        SAMSUNG    UN48H6400AGX 02573CVFC00640 IMAGEN BLANCA. EN       GARA
+    8 05/11/2015     7253     7253 11/11/2015 AGUILAR PERALTA MARLOS  SONY       KDL-32R425B  7169064        NO ENCIENDE. EN         GARA
+    9 05/11/2015     7254     7254 10/11/2015 SUPERMERCADOS PERUANOS  SAMSUNG    AMW831K/XPE  JGE47WRG700172 AVECES NO CALIENTA.     GARA
+   10 05/11/2015     7255     7255 10/11/2015 TORRES PE;A JANYS HAYDE SAMSUNG    UN40FH6203GX 01Z03CTF202001 IMAGEN OSCURA. EN       GARA
+   11 06/11/2015     7272     7272 10/11/2015 ORDINOLA MORE CESAR     SAMSUNG    LS19D300NY/P ZZ8EH4LFB00332 LINEA VERTICAL EN       GARA
+                                                                      TOTAL ALMACEN DE REPARADOS           ====>   11
+    1 06/11/2015     7270     7270 06/11/2015 RIVAS MONTERO MARCO     SAMSUNG    UN19D4003BXP Z123C2342457X                          FGAR
+    1 02/11/2015    15015    15015 02/11/2015 CALDERON CHIROQUE       SONY       KDL-32R425B  7191552                                GARA
+    2 04/11/2015    15026    15026 04/11/2015 PINGO PAZ ANTHONY       SAMSUNG    UN40H6203AGX SS                                     GARA
+    3 06/11/2015    15046    15046 06/11/2015 RAMOS FLORES CESAR      SAMSUNG    UN40H5500AGX SN                                     GARA
+    4 09/11/2015    15051    15051 09/11/2015 AGURTO GUTIERREZ SILVIA SONY       HCD-ECL99BT  4126806                                GARA
+                                                                      TOTAL DIAGNOSTICO EN DOMICILIO       ====>    5
+    1 09/11/2015    15049    15049 09/11/2015 ZAPATA MARTINEZ DEISY   SONY       HCD-GPX555   4436866        CLIENTE INDICA QUE SE   GARA
+                                                                      TOTAL DOMICILIO SIN REPARAR          ====>    1
+                                                                                                                ддддд
+                                                                      TOTAL RAMIREZ CALDERON ANGEL         ====>   39
+                                                                                                               дддддд
+                                                                                                 TOTAL    ====>    39
+                                                                                                               мммммм
+

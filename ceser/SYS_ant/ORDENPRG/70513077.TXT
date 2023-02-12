@@ -1,0 +1,48 @@
+ CORP.ANDINA DE DISTRIB.
+        CESER                                                                       CONTROL DE PRODUCCION DEL  01/01/2005 AL   21/02/2005                                                                             P═gina :       1
+   CALLE CUZCO 1099                                                  DEL EMISOR : 050  CESER PIURA                   AL EMISOR : 900   CESER PIURA                                                                    Fecha  :21/02/2005
+                                                                     DEL TALLER : 002  TALLER ELECTROMECANI          AL TALLER : 066   PROVEEDOR S/D CAMARA                                                           Hora   :16:48:35
+                                                                     DEL TECNICO:      45407 ESPINOZA LADINES RAUL   AL TECNICO:      45407 ESPINOZA LADINES RAUL                                                     Program:PORL4084  
+
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё   N╖     TECNICO           DESCRIPCION   Ё                  NO CERRADAS                     Ё        PENDIENTES            Ё TOTAL  Ё PRODUCC.Ё  TOTAL   Ё TOTAL  Ё TOTAL  Ё TOTAL  Ё DIAS ЁOBJETV.Ё PROMD. ЁEFICIE.Ё OBSERVACIONES   Ё
+Ё                                          Ё   001    002    003    005    007    008    009  Ё  004    006   OTROS          ЁINGRESOSЁ STANDAR Ё CERRADAS ЁRECLAMOSЁRECHAZO ЁPRODUCC.ЁLABOR.ЁX DIA  ЁDIA.REALЁ   %   Ё                 Ё
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+ TALLER: TALLER L.BLANCA               
+ ддддддддддддддддддддддддддддд
+ GRUPO  :   001                            
+      1         45407  ESPINOZA LADINES RAU       0      0      0      0      0      0      0        0      0      1                4       1.90       3          0        0        3    0.50    3.80     6.00   157.89 TECNICO TERCERO
+
+ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+                                 SUBTOTAL:        0      0      0      0      0      0      0        0      0      1                4       1.90       3          0        0        3    0.50    3.80     6.00   157.89
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё   N╖     TECNICO           DESCRIPCION   Ё                  NO CERRADAS                     Ё        PENDIENTES            Ё TOTAL  Ё PRODUCC.Ё  TOTAL   Ё TOTAL  Ё TOTAL  Ё TOTAL  Ё DIAS ЁOBJETV.Ё PROMD. ЁEFICIE.Ё TOTAL EFICIENCIAЁ
+Ё                                          Ё   003    007    011    012    013    014    016  Ё  004    015    017   OTROS   ЁINGRESOSЁ STANDAR Ё CERRADAS ЁRECLAMOSЁRECHAZO ЁPRODUCC.ЁLABOR.ЁX DIA  ЁDIA.REALЁ   %   Ё        %        Ё
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+ TALLER: DOMICILIO ELECTROMECANICA     
+ ддддддддддддддддддддддддддддд
+ GRUPO  :   001                            
+      1         45407  ESPINOZA LADINES RAU       0      0      4      0      0      0      0        1      0      0               51      81.70      46          0        0       46   21.50    3.80     2.14    56.32          107.11
+
+ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+                                 SUBTOTAL:        0      0      4      0      0      0      0        1      0      0               51      81.70      46          0        0       46   21.50    3.80     2.14    56.32
+ мммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм
+           TOTAL REG:    2 TOTAL GENERAL  :Ё      0      0      4      0      0      0      0 Ё      1      0      1         Ё     55 Ё    83.60Ё     49   Ё      0 Ё      0 Ё     49 Ё 22.00    3.80     4.07    58.61
+                                  (%)      Ё   0.00   0.00   7.27   0.00   0.00   0.00   0.00 Ё   1.82   0.00   1.82    .    Ё 100.00 Ё         Ё  89.09   Ё   0.00 Ё   0.00 Ё  89.09 Ё
+                            ACUMULADO (%)  Ё   0.00   0.00   7.27   7.27   7.27   7.27   7.27 Ё   9.09   9.09  10.91    .    Ё
+                                                                                                                                           83.60
+
+ LEYENDA        ESTADOS DE LA ORDEN DE REPARACION
+ мммммммммммммммммммммммммммммммммммммммммммммммм
+ 001     :    ASIGNACION DE O/R                         011     :   DIAGNOSTICO EN DOMICILIO           
+ 002     :    EN DIAGNOSTICO                            012     :   DIRECCION CONFUSA                  
+ 003     :    EN PRESUPUESTO                            013     :   CLIENTE AUSENTE                    
+ 004     :    PENDIENTE POR REPUESTO                    014     :   FALTAN INSTALACIONES               
+ 005     :    EN MESA DE REPARACION                     015     :   REPARACION EN OBSERVACION          
+ 006     :    REPARACION SUSPENDIDA                     016     :   RECOJO                             
+ 007     :    PRESUPUESTO APROBADO                      017     :   PENDIENTE POR REVISION             
+ 008     :    RECHAZADOS POR CONTROL CALIDAD            018     :   ATENDIDO Y SOLUCIONADO             
+ 009     :    EN CONTROL DE CALIDAD              
+ 010     :    ALMACEN DE REPARADOS               
+
+

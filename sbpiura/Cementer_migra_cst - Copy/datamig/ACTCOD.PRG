@@ -1,0 +1,49 @@
+PARAMETERS cCod
+
+SET DELE ON
+
+DO Espera WITH 1,"Agregando Codigo de Nicho A Difuntos"
+
+USE Difunto IN 1
+USE Nichos  IN 2
+
+SELE Difunto
+INDEX ON CodCem+CodCuar+Fila+Columna TO xx FOR CodCuar=cCod
+SELE Nichos
+INDEX ON CodCem+CodCuar+Fila2 TO yy
+
+SELE Difunto
+
+*SET STEP ON
+
+SCAN
+	xCem = CodCem
+	xCua = CodCuar
+*	IF xCua='0929'
+*		SET STEP ON
+*	ENDIF
+	xFil = Fila
+	xCol = Columna
+	SELE Nichos
+	xCN = ''
+	xF2 = ''
+	xC2 = ''
+	IF SEEK(xCem+xCua+xFil)
+		xF2 = Fila1
+		FOR i = 1 TO 255
+			Campo  = "Col"+PADL(ALLTRIM(STR(i)),3,'0')+'N'
+			Campo2 = "Col"+PADL(ALLTRIM(STR(i)),3,'0')+'E'
+			IF VAL(xCol) = &Campo
+				REPLACE &Campo2 WITH "3"
+				xC2 = PADL(ALLTRIM(STR(i)),3,'0')
+				EXIT
+			ENDIF
+		ENDFOR
+	ENDIF
+	xCN = xF2 + xC2
+	SELE Difunto
+	REPLACE CodNic WITH xCN
+ENDSCAN
+
+USE IN 1
+USE IN 2

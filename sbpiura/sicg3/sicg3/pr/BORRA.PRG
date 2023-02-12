@@ -1,0 +1,11 @@
+CLEAR
+FOR U=1 TO 9
+Q0=STR(U,1)+'*.DBF'
+Q1=STR(U,1)+'*.IDX'
+Q2=STR(U,1)+'*.TMP'
+Q3=STR(U,1)+'*.FPT'
+!DEL &Q0
+!DEL &Q1
+!DEL &Q2
+!DEL &Q3
+ENDF

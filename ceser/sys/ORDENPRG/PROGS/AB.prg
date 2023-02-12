@@ -1,0 +1,18 @@
+*** 
+*** ReFox X  #UK933629  MANRIQUE ORELLANA  MANSOFT SYSTEMS [FP25]
+***
+CLOSE DATABASES
+USE IN 1 ST_IPREP
+USE IN 2 ST_IOREP
+SELECT st_iprep
+SET ORDER TO REP_NUMORD
+SELECT st_iorep
+SET RELATION TO numdoc INTO st_iprep
+SELECT st_iorep
+BROWSE NOWAIT
+SELECT st_iprep
+BROWSE NOWAIT
+*
+*** 
+*** ReFox - retrace your steps ... 
+***

@@ -1,0 +1,34 @@
+
+Estructura de la tabla: I:\MARCO2\NICHOS~1\FUENTES\71764204.TMP
+N§ de registros:               6
+éltima actualizaci¢n:   12-11-1907
+P g. de c¢digos:        0
+Campo  Nombre      Tipo       Ancho    Dec    Öndice Ordenaci¢n
+    1  CODDIF      Car cter       8                  
+    2  FECFALL     Fecha          8                  
+    3  FECSEP      Fecha          8                  
+    4  NOMDIF      Car cter      30                  
+    5  APEDIF      Car cter      30                  
+    6  SEXODIF     Car cter       1                  
+    7  EDADDIF     Num‚rico       3                  
+    8  CODCEM_A    Car cter       2                  
+    9  CODCUAR_A   Car cter       4                  
+   10  CODNIC      Car cter       4                  
+   11  FILA        Car cter       1                  
+   12  COLUMNA     Car cter       3                  
+   13  CODCLI      Car cter       6                  
+   14  CODTRAS     Car cter       6                  
+   15  TIPENT      Car cter       1                  
+   16  CODMAU      Car cter       6                  
+   17  ESTADO_A    Car cter       2                  
+   18  CODOCU      Car cter       8                  
+   19  RESERVADO   Car cter       1                  
+   20  ESTVTA      Car cter       2                  
+   21  CODCEM_B    Car cter       2                  
+   22  CODCUAR_B   Car cter       4                  
+   23  NOMCUAR     Car cter      50                  
+   24  FILAS       Num‚rico       2                  
+   25  COLUMNAS    Num‚rico       3                  
+   26  ORDEN       Num‚rico       2                  
+   27  ESTADO_B    Car cter       2                  
+** Total **                     200

@@ -1,0 +1,34 @@
+
+**Recrea Astpre de C/P **
+**FMV**
+
+set procedure to tes_lib
+SET TALK ON
+set escape on
+USE COMPAG IN 1 ORDER COMPAG1 ALIAS COMPAG
+USE ASTPre IN 2 ORDER ASTPRE7 ALIAS ASTPRE
+DEFINE WINDOW XX FROM 01,01 TO 20,70 COLOR SCHEME 05 TITLE 'Procesando Contingencias'
+ACTIVATE WINDOW XX
+SELE COMPAG
+SET FILT TO COMPAG.Tipdoc#'SU' AND COMPAG.tipdoc#'ME' AND COMPAG.TIPDOC#'IN' AND !EMPTY(RETEN) AND ESTADO#'99'
+SET RELA TO NUMMES+NUMCP+CODCTC INTO ASTPRE
+GO TOP
+SCAN
+   sele astpre
+   seek compag.nummes+compag.numcp+compag.codctc
+   if found()   
+      SCAN WHILE compag.nummes+compag.numcp+compag.codctc=ASTPRE.NUMMES+ASTPRE.NUMREF+ASTPRE.CODCTC 
+		REPLACE valdeb WITH IIF(ASTPRE.TIPO='D',compag.valdeb-COMPAG.RETEN,0) ,;
+	        	valhab WITH IIF(ASTPRE.TIPO='H',compag.valHAB-COMPAG.RETEN,0)  
+	ENDSCAN
+    ?CHR(7)  
+	?CHR(7)  
+ELSE
+    ?'N O   E N C O N T R A D O'	
+ENDIF
+SELE compag
+?STR(RECNO(),10)
+?NUMMES+NUMCP+CODCTC
+ENDSCAN
+DEACTIVATE WINDOW XX
+CLOSE ALL

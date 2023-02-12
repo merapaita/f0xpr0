@@ -1,0 +1,20 @@
+
+ CORP.TECNOLOGICA DE SERVI                                 PAGINA   :        1
+       CESER                                               FECHA    : 14/05/2012
+  AV. GRAU 911                                             PROGRAMA : AGCR2011
+
+                              RELACION  DE  TABLAS
+
+     TABLA DE  ╞╞  NOTA DE AJUSTE                
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                  FACTOR           Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      AFNE     POR FISICO NEGATIVO                                0.00
+      AFPO     POR FISICO POSITIVO                                0.00
+      AVNE     POR VALOR NEGATIVO                                 0.00
+      AVPO     POR VALOR POSITIVO                                 0.00
+      EMER     POR EGRESO MERMA                                   0.00
+
+ 

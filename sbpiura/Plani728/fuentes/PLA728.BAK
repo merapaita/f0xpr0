@@ -1,0 +1,7 @@
+@echo off
+cls
+SET WORKER=OFF
+placas.exe -t
+cls
+@ECHO ON
+

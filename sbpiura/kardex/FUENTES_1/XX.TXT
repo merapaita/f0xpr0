@@ -1,0 +1,208 @@
+
+WORKER      P£bl   L  .T.
+VUSUREC     P£bl   N        5301.00  (      5301.00000000)
+FECSIS      P£bl   D  13/12/2016
+RUTA        Priv   C  "..\DATA"                              KARDEX
+RUTAPR      Priv   C  "..\DATAPR"                            KARDEX
+DESA        Priv   C  "  "                                   KARDEX
+SISTEMA     Priv   C  "6"                                    KARDEX
+VUSER_ID    Priv   C  "ADMIN"                                KARDEX
+VMAQ        Priv   C  "55"                                   KARDEX
+VCONEX      Priv   C  "SBPIURA"                              KARDEX
+VLLAV       Priv   C  "42115"                                KARDEX
+VNOMBRE     Priv   C  "Nombre : "                            KARDEX
+VCODDEP     Priv   C  "700000"                               KARDEX
+VNUMDEP     Priv   N           1.00  (         1.00000000)   KARDEX
+VFLAG       Priv   C  "*"                                    KARDEX
+VUSUCLA     Priv   C  "XQL$H"                                KARDEX
+VACCESO     Priv   C  " "                                    KARDEX
+CIA         Priv   C  "SBP - PIURA"                          KARDEX
+DETAW       Priv   C  "SOCIEDAD DE BENEFICENCIA DE PIURA"    KARDEX
+DIREW       Priv   C  "Jr. Lima 878 2do. Piso"               KARDEX
+TELEW       Priv   C  "328112"                               KARDEX
+RUCW        Priv   C  "20147082861"                          KARDEX
+SUBC        Priv   C  " "                                    KARDEX
+TITU        Priv   C  "   Modulo de Control de Kardex "      KARDEX
+ESCOLOR     Priv   L  .T.                                    KARDEX
+C_PANTA     Priv   N           8.00  (         8.00000000)   KARDEX
+C_BORDE     Priv   N          10.00  (        10.00000000)   KARDEX
+C_POPUP     Priv   N           4.00  (         4.00000000)   KARDEX
+C_TEXTO     Priv   C  "N/W"                                  KARDEX
+C_FONDO     Priv   N           1.00  (         1.00000000)   KARDEX
+SPAC        Priv   N          14.00  (        14.00000000)   KARDEX
+ROTULO1     Priv   C  "SBP - PIURA                 Modulo de
+                        Control de Kardex               "    KARDEX
+USUARIOS    Priv   C  "® USER: ADMINISTRADOR ¯"              KARDEX
+FECHA       Priv   C  "13/12/2016  "                         KARDEX
+ROTULO2     Priv   C  "                            ® USER: A
+                       DMINISTRADOR ¯                 13/12/
+                       2016  "                               KARDEX
+PRINCIPAL   Priv   S  80 by 25                               KARDEX
+PANTALLA    Priv   S  80 by 25                               KARDEX
+VEN_SISTEM  Priv   L  .T.                                    KARDEX
+ESC_TECLA   Priv   L  .F.                                    KARDEX
+L_COL       Priv   C  "W+/W,N/W,N/W,GR+/B, R+/B, W+/B , W+/W
+                       , N+/N, GR+/B, R+/B "                 KARDEX
+CHOICE      Priv   N           5.00  (         5.00000000)   ACT_MENUS
+VMENS01     Priv   C  "Registro de Inventario Inicial"       INVINI
+VMENS02     Priv   C  "Inventario Inicial : REVISION "       INVINI
+VMENS04     Priv   C  "Dicho Inventario no fue encontrado"   INVINI
+VMENS05     Priv   C  "No existe Inventario anterior"        INVINI
+VMENS06     Priv   C  "No existe Inventario siguiente"       INVINI
+VMENS07     Priv   C  "¨ Desea Anular ‚sta Inventario ?"     INVINI
+VMENS08     Priv   C  "No hay registros para procesar"       INVINI
+VMENS09     Priv   C  "Este Inventario ha sido anulada"      INVINI
+VMENS10     Priv   C  "Edici¢n"                              INVINI
+PERIODO     Priv   C  "16"                                   INVINI
+NUMII       Priv   C  "0002"                                 INVINI
+FECII       Priv   D  02/01/2016                             INVINI
+DOCREF      Priv   C  "MEM"                                  INVINI
+NUMREF      Priv   C  "01-2016-SBP-ABAS    "                 INVINI
+TOTII       Priv   N           0.00  (         0.00000000)   INVINI
+FECREF      Priv   D  02/01/2016                             INVINI
+OBSERV      Priv   C  "INGRESO DE INVENTARIO INICIAL - PERIO
+                       DO 2016                              
+                                                 "           INVINI
+ESTADO      Priv   C  "00"                                   INVINI
+TUSER       (oclt) C  "C"                                    INVINI
+USER        (oclt) C  "BERECHE   "                           INVINI
+USERCR      Priv   C  "ADMIN     "                           INVINI
+HUSER       (oclt) C  "08:23:21"                             INVINI
+HUSERCR     Priv   C  "11:29:29"                             INVINI
+DUSER       (oclt) D  25/05/2016                             INVINI
+DUSERCR     Priv   D  13/12/2016                             INVINI
+VEN_ACCION  Priv   L  .T.                                    INVINI
+VSUN        Priv   L  .T.                                    TRABAJA_HI
+VTEMPO      Priv   C  "°°°°°F2->Edita°°°°°°°°°F5->Agregar°°°
+                       °°°°°°F8->Eliminar°°°°°°°°F10->Termin
+                       ar°°°°"                               TRABAJA_HI
+LCANT       Priv   L  .T.                                    AGREGA_ITE
+LFRAC       Priv   L  .F.                                    AGREGA_ITE
+ITEM        Priv   C  "0001"                                 AGREGA_ITE
+TIPKAR      Priv   C  "1"                                    AGREGA_ITE
+CODART      (oclt) C  "51.20.0021.0348"                      AGREGA_ITE
+DESART      Priv   C  "PAPEL ABSORBENTE PARA USO EN LABORATO
+                       RIO 33 CM X 45 CM APROX. X 500       
+                                                            
+                                               "             AGREGA_ITE
+MENUDEO     Priv   C  "N"                                    AGREGA_ITE
+UNIDAD      Priv   C  "UNIDAD             "                  AGREGA_ITE
+UNIFRAC     Priv   C  "          "                           AGREGA_ITE
+CANTIDAD    Priv   N          10.00  (        10.00000000)   AGREGA_ITE
+FRACCION    Priv   N           1.00  (         1.00000000)   AGREGA_ITE
+TOTCAN      Priv   N          10.00  (        10.00000000)   AGREGA_ITE
+PREUNI      Priv   N           1.50  (         1.50000000)   AGREGA_ITE
+IGV         Priv   N           0.00  (         0.00000000)   AGREGA_ITE
+VALUNI      Priv   N           0.00  (         0.00000000)   AGREGA_ITE
+VALUNIFR    Priv   N           0.00  (         0.00000000)   AGREGA_ITE
+VALCOM      Priv   N           0.00  (         0.00000000)   AGREGA_ITE
+PRECOM      Priv   N          15.00  (        15.00000000)   AGREGA_ITE
+TUSER       Priv   C  "I"                                    AGREGA_ITE
+USER        Priv   C  "ADMIN"                                AGREGA_ITE
+HUSER       Priv   C  "11:42:03"                             AGREGA_ITE
+DUSER       Priv   D  13/12/2016                             AGREGA_ITE
+CART        Priv   @  CODART
+CALI        Priv   C  "ITEII"                                VAL_PU
+CORD        Priv   C  "ITEART2"                              VAL_PU
+   94 variables definidas,    1545 bytes usados
+  930 variables disponibles
+
+Variables de memoria del sistema
+
+_ALIGNMENT  P£bl   C  "LEFT"
+_ASSIST     P£bl   C  "C:\FPD26\CATALOG.APP"
+_BEAUTIFY   P£bl   C  ""
+_BOX        P£bl   L  .T.
+_CALCMEM    P£bl   N        0.00  (         0.00000000)
+_CALCVALUE  P£bl   N        0.00  (         0.00000000)
+_CUROBJ     P£bl   N          -1.00  (        -1.00000000)
+_DBLCLICK   P£bl   N        0.49  (         0.49432944)
+_DIARYDATE  P£bl   D  13/12/2016
+_DOS        P£bl   L  .T.
+_FOXDOC     P£bl   C  "C:\FPD26\FOXDOC.EXE"
+_FOXGRAPH   P£bl   C  ""
+_GENGRAPH   P£bl   C  "C:\FPD26\GENGRAPH.APP"
+_GENMENU    P£bl   C  "C:\FPD26\GENMENU.PRG"
+_GENPD      P£bl   C  "C:\FPD26\GENPD.APP"
+_GENSCRN    P£bl   C  "C:\FPD26\GENSCRN.PRG"
+_GENXTAB    P£bl   C  "C:\FPD26\GENXTAB.PRG"
+_INDENT     P£bl   N           0.00  (         0.00000000)
+_LMARGIN    P£bl   N           0.00  (         0.00000000)
+_MAC        P£bl   L  .F.
+_MLINE      P£bl   N           0.00  (         0.00000000)
+_PADVANCE   P£bl   C  "FORMFEED"
+_PAGENO     P£bl   N           3.00  (         3.00000000)
+_PBPAGE     P£bl   N           1.00  (         1.00000000)
+_PCOLNO     P£bl   N          58.00  (        58.00000000)
+_PCOPIES    P£bl   N           1.00  (         1.00000000)
+_PDRIVER    P£bl   C  ""
+_PDSETUP    P£bl   C  ""
+_PECODE     P£bl   C  ""
+_PEJECT     P£bl   C  "AFTER"
+_PEPAGE     P£bl   N       32767.00  (     32767.00000000)
+_PLENGTH    P£bl   N          60.00  (        60.00000000)
+_PLINENO    P£bl   N          22.00  (        22.00000000)
+_PLOFFSET   P£bl   N           0.00  (         0.00000000)
+_PPITCH     P£bl   C  "PICA"
+_PQUALITY   P£bl   L  .T.
+_PRETEXT    P£bl   C  ""
+_PSCODE     P£bl   C  ""
+_PSPACING   P£bl   N           1.00  (         1.00000000)
+_PWAIT      P£bl   L  .F.
+_RMARGIN    P£bl   N          85.00  (        85.00000000)
+_SHELL      P£bl   C  ""
+_STARTUP    P£bl   C  "C:\FPD26\FOXSTART.APP"
+_TABS       P£bl   C  "10, 20, 30, 40, 50, 60, 70"
+_TALLY      P£bl   N           1.00  (         1.00000000)
+_TEXT       P£bl   N          -1.00  (        -1.00000000)
+_THROTTLE   P£bl   N        0.00  (         0.00000000)
+_TRANSPORT  P£bl   C  "C:\FPD26\TRANSPRT.PRG"
+_UNIX       P£bl   L  .F.
+_WINDOWS    P£bl   L  .F.
+_WRAP       P£bl   L  .T.
+
+Hay    57 variables del sistema
+
+Definiciones de men£s y t¡tulos
+
+Nombre de men£
+MMENU        429 bytes  
+        T¡tulo
+      REVIS        118 bytes  
+      BUSCA        118 bytes  
+      ANTER        118 bytes  
+      PROXI        118 bytes  
+      CORRI        118 bytes  
+      INGRE        118 bytes  
+      LISTA        118 bytes  
+      TERMI        118 bytes  
+
+Hay     1 men£
+
+Definiciones de emergentes
+
+POP_05       1019 bytes  
+POP_04       1019 bytes  
+POP_03       665 bytes  
+POP_02       1019 bytes  
+POP_01       783 bytes  
+MENU         1137 bytes  
+RUN          1609 bytes  
+WIZARD       1255 bytes  
+
+Hay     8 emergentes
+
+Definiciones de ventanas
+
+Nombre       Desde     A         Tama¤o
+_FUNBUS      19,27     23,77     300 bytes  
+ESPERA       12,6      14,78     204 bytes  
+MSG2USER     12,2      16,77     460 bytes  
+STANDBY      19,23     23,77     364 bytes  
+WIND_2       0,0       23,79     3436 bytes  
+WIND_1       12,0      23,79     1580 bytes  
+WIND_0       0,0       11,79     1580 bytes  
+WIND_3       2,4       20,71     2252 bytes   ACTIVA
+YESNO        19,27     23,77     300 bytes  
+
+Hay     9 ventanas

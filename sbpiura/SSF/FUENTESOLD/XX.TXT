@@ -1,0 +1,19 @@
+
+Estructura de la tabla: C:\MISDOC~1\MARCOS~1\MARCO2\SBP\SSF\DATA\ITECOB.DBF
+N§ de registros:           82294
+éltima actualizaci¢n:   19-06-1907
+P g. de c¢digos:        0
+Campo  Nombre      Tipo       Ancho    Dec    Öndice Ordenaci¢n
+    1  CODCON      Car cter       6                  
+    2  NUMCOB      Car cter       4                  
+    3  RECCOB      Car cter       6                  
+    4  FECCOB      Fecha          8                  
+    5  FECPAG      Fecha          8                  
+    6  TIPCOB      Car cter       1                  
+    7  CODPRO      Car cter       4                  
+    8  CODCOB      Car cter       4                  
+    9  CANCOB      Num‚rico      15      2           
+   10  CTACAP      Num‚rico      15      2           
+   11  GTOADM      Num‚rico      15      2           
+   12  OBSERV      Car cter      80                  
+** Total **                     167

@@ -1,0 +1,1347 @@
+<?xml version='1.0'?>
+<sicg2011>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   1</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104010102000</cuenta>
+<tipo>H</tipo>
+<monto>         2352.0200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   2</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120901000000000</cuenta>
+<tipo>H</tipo>
+<monto>        23750.4500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   3</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120902020000000</cuenta>
+<tipo>H</tipo>
+<monto>        69675.7200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   4</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150801010000000</cuenta>
+<tipo>H</tipo>
+<monto>       206947.4300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   5</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150801020000000</cuenta>
+<tipo>H</tipo>
+<monto>      6806884.2200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   6</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150801030000000</cuenta>
+<tipo>H</tipo>
+<monto>      2938022.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   7</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150802010000000</cuenta>
+<tipo>H</tipo>
+<monto>       115507.2800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   8</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150802020000000</cuenta>
+<tipo>H</tipo>
+<monto>       642505.4800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>   9</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150803010000000</cuenta>
+<tipo>H</tipo>
+<monto>         4186.8500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  10</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150803020000000</cuenta>
+<tipo>H</tipo>
+<monto>        16903.8800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  11</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210101020000000</cuenta>
+<tipo>H</tipo>
+<monto>          225.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  12</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210103010100000</cuenta>
+<tipo>H</tipo>
+<monto>         6412.7100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  13</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210103010200000</cuenta>
+<tipo>H</tipo>
+<monto>           70.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  14</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210103020000000</cuenta>
+<tipo>H</tipo>
+<monto>         1483.8600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  15</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210109010000000</cuenta>
+<tipo>H</tipo>
+<monto>          124.1500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  16</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210203010100000</cuenta>
+<tipo>H</tipo>
+<monto>        29759.1000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  17</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210299000000000</cuenta>
+<tipo>H</tipo>
+<monto>         4944.9200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  18</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210301010100000</cuenta>
+<tipo>H</tipo>
+<monto>        23307.9900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  19</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210301010200000</cuenta>
+<tipo>H</tipo>
+<monto>         4340.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  20</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210303000000000</cuenta>
+<tipo>H</tipo>
+<monto>        29209.4600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  21</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399010100000</cuenta>
+<tipo>H</tipo>
+<monto>         6031.5000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  22</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399010200000</cuenta>
+<tipo>H</tipo>
+<monto>         4583.4000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  23</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399030000000</cuenta>
+<tipo>H</tipo>
+<monto>          437.5000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  24</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399040000000</cuenta>
+<tipo>H</tipo>
+<monto>          679.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  25</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399050000000</cuenta>
+<tipo>H</tipo>
+<monto>           87.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  26</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399090000000</cuenta>
+<tipo>H</tipo>
+<monto>         5966.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  27</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399100000000</cuenta>
+<tipo>H</tipo>
+<monto>           50.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  28</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399110000000</cuenta>
+<tipo>H</tipo>
+<monto>          469.5000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  29</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399120000000</cuenta>
+<tipo>H</tipo>
+<monto>           14.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  30</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210399990000000</cuenta>
+<tipo>H</tipo>
+<monto>          516.2800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  30</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>240102990000000</cuenta>
+<tipo>H</tipo>
+<monto>        18965.3700</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  31</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>250199000000000</cuenta>
+<tipo>H</tipo>
+<monto>       826937.9500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  32</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>310101000000000</cuenta>
+<tipo>H</tipo>
+<monto>       556630.6800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  33</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>310103000000000</cuenta>
+<tipo>H</tipo>
+<monto>     18968060.3200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  35</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110101010200000</cuenta>
+<tipo>D</tipo>
+<monto>          931.7300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  36</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110103010601000</cuenta>
+<tipo>D</tipo>
+<monto>        12436.6100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  37</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104010101000</cuenta>
+<tipo>D</tipo>
+<monto>        50256.4400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  38</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104010103000</cuenta>
+<tipo>D</tipo>
+<monto>       189636.6000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  39</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104010104000</cuenta>
+<tipo>D</tipo>
+<monto>         1691.6100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  40</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104010105000</cuenta>
+<tipo>D</tipo>
+<monto>         5029.4000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  41</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104010106000</cuenta>
+<tipo>D</tipo>
+<monto>          253.4500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  42</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104010107000</cuenta>
+<tipo>D</tipo>
+<monto>        10146.1600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  43</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104020200000</cuenta>
+<tipo>D</tipo>
+<monto>        36657.0100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  44</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104030300000</cuenta>
+<tipo>D</tipo>
+<monto>         2504.7300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  45</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110104030400000</cuenta>
+<tipo>D</tipo>
+<monto>       177783.4500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  46</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120103020500000</cuenta>
+<tipo>D</tipo>
+<monto>        15727.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  47</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120103020600000</cuenta>
+<tipo>D</tipo>
+<monto>          302.9900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  48</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120103021500000</cuenta>
+<tipo>D</tipo>
+<monto>         5094.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  49</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120103021600000</cuenta>
+<tipo>D</tipo>
+<monto>        11254.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  50</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120103030100000</cuenta>
+<tipo>D</tipo>
+<monto>         1376.5000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  51</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120104020100000</cuenta>
+<tipo>D</tipo>
+<monto>         9307.3300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  52</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120104020200000</cuenta>
+<tipo>D</tipo>
+<monto>        63434.7900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  53</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120198010000000</cuenta>
+<tipo>D</tipo>
+<monto>         2519.5000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  54</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120198020000000</cuenta>
+<tipo>D</tipo>
+<monto>        42141.1600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  55</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120199000000000</cuenta>
+<tipo>D</tipo>
+<monto>        29220.5300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  56</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120298010000000</cuenta>
+<tipo>D</tipo>
+<monto>          351.4800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  57</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120298030000000</cuenta>
+<tipo>D</tipo>
+<monto>        64675.4500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  58</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120299000000000</cuenta>
+<tipo>D</tipo>
+<monto>        82666.8200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  59</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120505010000000</cuenta>
+<tipo>D</tipo>
+<monto>          762.2500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  60</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>120505020000000</cuenta>
+<tipo>D</tipo>
+<monto>         2880.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  61</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130105010100000</cuenta>
+<tipo>D</tipo>
+<monto>         2194.7800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  62</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130105010200000</cuenta>
+<tipo>D</tipo>
+<monto>         4319.3100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  63</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130105030100000</cuenta>
+<tipo>D</tipo>
+<monto>         1054.6900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  64</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130105040100000</cuenta>
+<tipo>D</tipo>
+<monto>         6634.2700</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  65</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130105999900000</cuenta>
+<tipo>D</tipo>
+<monto>        13248.8800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  66</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130107010000000</cuenta>
+<tipo>D</tipo>
+<monto>         1524.2300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  67</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130111010000000</cuenta>
+<tipo>D</tipo>
+<monto>          982.8000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  68</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130111040000000</cuenta>
+<tipo>D</tipo>
+<monto>          250.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  69</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130111050000000</cuenta>
+<tipo>D</tipo>
+<monto>         6389.9600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  70</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130199030000000</cuenta>
+<tipo>D</tipo>
+<monto>         1505.3000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  71</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130199990100000</cuenta>
+<tipo>D</tipo>
+<monto>        46129.2900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  72</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130199990200000</cuenta>
+<tipo>D</tipo>
+<monto>         5130.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  73</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130301019900000</cuenta>
+<tipo>D</tipo>
+<monto>         4087.5100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  74</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130301030100000</cuenta>
+<tipo>D</tipo>
+<monto>         3040.1500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  75</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130301039900000</cuenta>
+<tipo>D</tipo>
+<monto>          100.6000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  76</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>130301990000000</cuenta>
+<tipo>D</tipo>
+<monto>        14683.4900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  77</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150101010000000</cuenta>
+<tipo>D</tipo>
+<monto>       239886.1900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  78</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150102010000000</cuenta>
+<tipo>D</tipo>
+<monto>      1590358.8400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  79</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150102030000000</cuenta>
+<tipo>D</tipo>
+<monto>      2855927.0300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  80</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150102050000000</cuenta>
+<tipo>D</tipo>
+<monto>       207412.4600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  81</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150102990000000</cuenta>
+<tipo>D</tipo>
+<monto>      5927784.6500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  82</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103990200000</cuenta>
+<tipo>D</tipo>
+<monto>        15298.8300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  83</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103070000000</cuenta>
+<tipo>D</tipo>
+<monto>      3582900.0000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  84</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103990100000</cuenta>
+<tipo>D</tipo>
+<monto>        20126.5200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  85</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103990300000</cuenta>
+<tipo>D</tipo>
+<monto>          178.2100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  86</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103990500000</cuenta>
+<tipo>D</tipo>
+<monto>        39661.3000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  87</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103990600000</cuenta>
+<tipo>D</tipo>
+<monto>        39170.0500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  88</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103990700000</cuenta>
+<tipo>D</tipo>
+<monto>         7798.4000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  89</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103990800000</cuenta>
+<tipo>D</tipo>
+<monto>         1148.6800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  90</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103991000000</cuenta>
+<tipo>D</tipo>
+<monto>        59021.2900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  91</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150103991100000</cuenta>
+<tipo>D</tipo>
+<monto>        43174.4800</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  92</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150201010000000</cuenta>
+<tipo>D</tipo>
+<monto>      4514107.6500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  93</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150301010000000</cuenta>
+<tipo>D</tipo>
+<monto>       126804.2400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  94</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302010100000</cuenta>
+<tipo>D</tipo>
+<monto>         8186.2000</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  95</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302010200000</cuenta>
+<tipo>D</tipo>
+<monto>         8971.2900</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  96</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302030100000</cuenta>
+<tipo>D</tipo>
+<monto>       171165.7700</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  97</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302030200000</cuenta>
+<tipo>D</tipo>
+<monto>         6326.5600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  98</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302030300000</cuenta>
+<tipo>D</tipo>
+<monto>         6497.8200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item>  99</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302040100000</cuenta>
+<tipo>D</tipo>
+<monto>        53869.7400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 100</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302040200000</cuenta>
+<tipo>D</tipo>
+<monto>       405104.2400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 101</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302090100000</cuenta>
+<tipo>D</tipo>
+<monto>         7755.0100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 102</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302090200000</cuenta>
+<tipo>D</tipo>
+<monto>        23530.2100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 103</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302090400000</cuenta>
+<tipo>D</tipo>
+<monto>        16988.2600</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 104</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302090500000</cuenta>
+<tipo>D</tipo>
+<monto>        66235.6100</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 105</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150302099900000</cuenta>
+<tipo>D</tipo>
+<monto>        54258.3500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 106</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150503000000000</cuenta>
+<tipo>D</tipo>
+<monto>         4187.8500</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 107</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150602000000000</cuenta>
+<tipo>D</tipo>
+<monto>         9464.2400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 108</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150703010000000</cuenta>
+<tipo>D</tipo>
+<monto>         2448.7400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 109</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>150703020000000</cuenta>
+<tipo>D</tipo>
+<monto>        28105.7300</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 110</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>210101050100000</cuenta>
+<tipo>D</tipo>
+<monto>         1903.1200</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 111</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>340102000000000</cuenta>
+<tipo>D</tipo>
+<monto>     10238207.2700</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+<diario>
+<comprob>000000101     </comprob>
+<comadi>01</comadi>
+<orden>01</orden>
+<item> 112</item>
+<fecemi>2011-01-01</fecemi>
+<cuenta>110103010201000</cuenta>
+<tipo>D</tipo>
+<monto>         1759.9400</monto>
+<coddep>112000</coddep>
+<estado>  </estado>
+</diario>
+</sicg2011>

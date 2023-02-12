@@ -1,0 +1,76 @@
+ CORP.TECNOLOGICA DE                                                P gina  :          1
+        CESER                CONSUMO DE REPUESTOS                   Fecha   : 31/03/2008
+   JR HUANUCO 480            ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                   Hora    :   20:09:12
+                        Per¡odo de 26/02/2008 al 26/02/2008         Programa:   AGCR0210
+        Tipo Atenci¢n:                           Tipo Emisor:
+         Del EN GARANTIA                          Del SONY SUCURSAL PERU            
+          Al EN GARANTIA                           Al MABE PERU                     
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT   NUMERO FECHA      NUMERO    NUMERO  CODIGO        DESCRIPCION               CANT.³
+³      PEDIDO PEDIDO       O/R      S/S    PRODUCTO                                     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EMISOR : 100   SONY SUCURSAL PERU            
+
+  SUB-CATEGORIA : 1065 DISPLAY                       
+                                           1-788-363-12   OPTICAL UNIT (ED13A)          1
+                                                                      TOTAL 1065        1
+       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       TOTAL SONY SUCURSAL PERU             ->     1                                    1
+ CORP.TECNOLOGICA DE                                                P gina  :          2
+        CESER                CONSUMO DE REPUESTOS                   Fecha   : 31/03/2008
+   JR HUANUCO 480            ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                   Hora    :   20:09:12
+                        Per¡odo de 26/02/2008 al 26/02/2008         Programa:   AGCR0210
+        Tipo Atenci¢n:                           Tipo Emisor:
+         Del EN GARANTIA                          Del SONY SUCURSAL PERU            
+          Al EN GARANTIA                           Al MABE PERU                     
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT   NUMERO FECHA      NUMERO    NUMERO  CODIGO        DESCRIPCION               CANT.³
+³      PEDIDO PEDIDO       O/R      S/S    PRODUCTO                                     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EMISOR : 105   SONY OTROS DISTRIBUIDORES     
+
+  SUB-CATEGORIA : 1130 TRANSISTORES - TIRISTORES     
+                                           6-551-406-01   IRFS614BYDTU                  1
+                                                                      TOTAL 1130        1
+       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       TOTAL SONY OTROS DISTRIBUIDORES      ->     1                                    1
+ CORP.TECNOLOGICA DE                                                P gina  :          3
+        CESER                CONSUMO DE REPUESTOS                   Fecha   : 31/03/2008
+   JR HUANUCO 480            ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                   Hora    :   20:09:12
+                        Per¡odo de 26/02/2008 al 26/02/2008         Programa:   AGCR0210
+        Tipo Atenci¢n:                           Tipo Emisor:
+         Del EN GARANTIA                          Del SONY SUCURSAL PERU            
+          Al EN GARANTIA                           Al MABE PERU                     
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT   NUMERO FECHA      NUMERO    NUMERO  CODIGO        DESCRIPCION               CANT.³
+³      PEDIDO PEDIDO       O/R      S/S    PRODUCTO                                     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EMISOR : 400   MABE PERU                     
+
+  SUB-CATEGORIA : 2170 RELOJES                       
+                                           M=162D6492P004 TIMER 08HR 220V 33MIN         1
+                                                                      TOTAL 2170        1
+       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       TOTAL MABE PERU                      ->     1                                    1
+ CORP.TECNOLOGICA DE                                                P gina  :          4
+        CESER                CONSUMO DE REPUESTOS                   Fecha   : 31/03/2008
+   JR HUANUCO 480            ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                   Hora    :   20:09:12
+                        Per¡odo de 26/02/2008 al 26/02/2008         Programa:   AGCR0210
+        Tipo Atenci¢n:                           Tipo Emisor:
+         Del EN GARANTIA                          Del SONY SUCURSAL PERU            
+          Al EN GARANTIA                           Al MABE PERU                     
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ IT   NUMERO FECHA      NUMERO    NUMERO  CODIGO        DESCRIPCION               CANT.³
+³      PEDIDO PEDIDO       O/R      S/S    PRODUCTO                                     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ EMISOR : 500   L.G ELECTRONICS               
+
+  SUB-CATEGORIA : 2120 FUSIBLES                      
+                                           LG=EBR35874205 OPTION CODE ASSEMBLY          1
+                                                                      TOTAL 2120        1
+       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       TOTAL L.G ELECTRONICS                ->     1                                    1
+                               ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                               TOTAL GENERAL->     4                                    4
+
+

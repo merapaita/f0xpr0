@@ -1,0 +1,57 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   03/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   09:33:29
+                                                     DESDE:01/12/2015  HASTA:01/12/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   050  SUCURSAL PIURA                
+
+      1     7431 01/12/2015     7431 TANG VALDIVIEZO DE RICOS  SAMSUNG    SM-T110         RF2F517FJ4L      60070 001  01/12/2015
+      2     7432 01/12/2015     7432 CUNYA YANGUA MARIA RUBI   SAMSUNG    RT29FAJHDSP/PE  JL7H4BAF5014      2008 001  01/12/2015
+      3     7433 01/12/2015     7433 CORO ABAD LEONCIO         SAMSUNG    UN40EH5000GXPE  Z4YL3CUD9003     15180 001  01/12/2015
+      4     7434 01/12/2015     7434 BOBADILLA ATOCHA ISAAC    SONY       KDL-32EX525     3008157          15180 001  01/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     4
+
+                                                                       TOTAL SUCURSAL PIURA                =>     4
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA             =>     4
+ GARA EN GARANTIA                   
+
+   090                                
+
+      5     7403 01/12/2015     7403 GUERRA GONZALES FREDER AL SONY       NWZ-E383        7072976          15977 004  01/12/2015
+      6     7422 01/12/2015     7422 LORO CHUICA MARIA CRUZ    SONY       HCD-GPX555      4427423          15180 021  01/12/2015
+      7     7429 01/12/2015     7429 RIVERA JIMENEZ RINA       EPSON      L555            S4XY058460       60070 001  01/12/2015
+      8     7430 01/12/2015     7430 MARCIMEX                  SAMSUNG    LS19D300NY/PE   ZZ8EH4LG2006     15180 021  02/12/2015
+      9    15179 01/12/2015    15179 CURACAO PIURA I           SAMSUNG    UN50H5303AGXPE  UJAS             15180 004  01/12/2015
+     10    15183 01/12/2015    15183 CASTILLO SANDRA           SAMSUNG    RSA1JHSL1/XPE   JHJHDJ            2008 011  02/12/2015
+     11    15184 01/12/2015    15184 ARELLANO CARRASCO LELIA D SAMSUNG    UN48J5500AGXPE  MMKL              1000 011  01/12/2015
+     12    15185 01/12/2015    15185 BURGOS JHON               SAMSUNG    UN40FH6203GXPE  NMND              1000 011  01/12/2015
+     13    15187 01/12/2015    15187 GARCIA AVILA DANTI WILLIA SONY       KDL-40R354B     4048639          27141 011  01/12/2015
+     14    15188 01/12/2015    15188 TIMANA SILVA SEGUNDO PEDR SONY       CDX-G1050U      1502686          27141 011  01/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>    10
+
+                                                                       TOTAL                               =>    10
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA                   =>    10
+ GEXS EN GARANTIA EXTENDIDA SAGA    
+
+   850                                
+
+     15     7428 01/12/2015     7428 ALBAN SOLANO ROSARIO      L.G        AKB73615319     99               30977 010  01/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     1
+
+                                                                       TOTAL                               =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA EXTENDIDA SAGA    =>     1
+                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>    15
+                                                                                                             ммммммм
+

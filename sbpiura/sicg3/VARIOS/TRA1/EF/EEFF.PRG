@@ -1,0 +1,37 @@
+*********************************
+* EEFF.prg
+*********************************
+*SET DEFA TO F:\BENE2000\DATA
+ DO Lib_Aux
+
+nM = 1
+nA = 0
+cR = "F-1"
+cRep = "RepF1"
+ DO creafs WITH cR,nM,nA
+ DO RepFS WITH cRep,nM,nA
+
+PROCEDURE CREAFS
+PARAMETERS cRep,nMes,nAno
+do espera with 1,"estamos trabajando " + cRep +" de "+ str(nMes) +" de "+ str(nAno)
+do EEFF_Fs with cRep,nMes,nAno
+do espera with 2
+RETURN
+
+PROCEDURE RepFS
+PARAMETERS cRep,nMes,nAno
+do espera with 1,"estamos trabajando " + cRep +" de "+ str(nMes) +" de "+ str(nAno)
+DO CASE
+	CASE nMes=1 OR nMes=3 OR nMes=5 OR nMes=7 OR nMes=8 OR nMes=10 OR nMes=12
+		dFecha1=CTOD("31/"+PADL(ALLTRIM(STR(nMes)),2,"0")+"/"+ALLTRIM(STR(nAno)))
+		dFecha2=CTOD("31/"+PADL(ALLTRIM(STR(nMes)),2,"0")+"/"+ALLTRIM(STR(nAno-1)))
+	CASE nMes=4 OR nMes=6 OR nMes=9 OR nMes=11
+		dFecha1=CTOD("30/"+PADL(ALLTRIM(STR(nMes)),2,"0")+"/"+ALLTRIM(STR(nAno)))
+		dFecha2=CTOD("30/"+PADL(ALLTRIM(STR(nMes)),2,"0")+"/"+ALLTRIM(STR(nAno-1)))
+	CASE nMes=2
+		dFecha1=CTOD(IIF(MOD(nAno,4)=0,"29/","28/")+PADL(ALLTRIM(STR(nMes)),2,"0")+"/"+ALLTRIM(STR(nAno)))
+		dFecha2=CTOD(IIF(MOD(nAno-1,4)=0,"29/",28/)"30/"+PADL(ALLTRIM(STR(nMes)),2,"0")+"/"+ALLTRIM(STR(nAno-1)))
+ENDCASE
+DO Rep_Fs with dFecha1,dFecha2,cRep
+DO espera with 2
+RETURN

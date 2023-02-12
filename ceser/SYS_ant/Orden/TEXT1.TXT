@@ -1,0 +1,162 @@
+CORP.ANDINA DE DISTRIB.                                                                                    P═gina:          1
+       CESER                              ORDENES Y REPUESTOS UTILIZADOS                                   Fecha : 12/05/2005
+  CALLE CUZCO 1099                        мммммммммммммммммммммммммммммм                                   Time  :   02:10:07
+                                        DESDE:01/05/2005  HASTA:31/05/2005
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    NЬ   FECHA     NЬO/R    SERIE                OBSERVACIONES                      COD.PRODUCTO    DESCRIPCION         CANTЁ
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+ MARCA :96   L.G                 
+
+ CD-363A         RADIOGRABADORA                
+      1 02/05/2005    63067 305HD01466           NO FUNCIONA CD SE ENCONTRO          LG=556-219B    SWITCH TACT             5
+      2 09/05/2005    63140 308HD00707           SE ENCONTRO OPTICAL BAJO DE EMISION LG=6717SCP001B PICK UP ASSY            1
+
+ CP-14J52A       TV.COLOR                      
+      1 09/05/2005    63137 311AZ01062           SE ENCONTRO TRANSISTOR DE SALIDA    LG=OTRSA00001A 2SD 2627                1
+
+ DVD-7542N       DVD                           
+      1 04/05/2005    63102 302SH01044           NO SALE BANDEJA SE REVISO           LG=140-315A    SWITCH TACT             7
+
+ DVE-8421N       DVD                           
+      1 02/05/2005   620600 405SH01404           NO ENCIENDE, SE ENCONTRO IC POWER Y LG=4680R-C012A MOTOR (MECH)            1
+      2 02/05/2005   620600 405SH01404           NO ENCIENDE, SE ENCONTRO IC POWER Y LG=OIPMGFA054A DM 0265RAN              1
+      3 03/05/2005   620607 406SH03478           ARTICULO PRESENTO PROBLEMA EN       LG=4680R-C012A MOTOR (MECH)            1
+      4 03/05/2005   620620 408SH06534           IMAGEN SE CONGELA. SE REALIZO       LG=4680R-C012A MOTOR (MECH)            1
+      5 03/05/2005   620615 406SH00977           PROBLEMAS DE IMAGEN, SE ENCONTRO    LG=4680R-C012A MOTOR (MECH)            1
+      6 03/05/2005   620614 407SH09600           ARTICULO PRESENTO PROBLEMA EN       LG=OIPMGFA054A DM 0265RAN              1
+      7 03/05/2005   620615 406SH00977           PROBLEMAS DE IMAGEN, SE ENCONTRO    LG=6716DPH006B PICK UP ASSY            1
+      8 04/05/2005   620631 406SH00610           PRESENTO ERROR DE DISCO,SE ENCONTRO LG=4680R-C012A MOTOR (MECH)            1
+      9 04/05/2005   620625 408SH04391           NO REPRODUCE,SALE ERROR DE DISCO SE LG=4680R-C012A MOTOR (MECH)            1
+     10 04/05/2005    63098 405SH05106           SE REMPLAZO MOTOR MECH Y MEMORY     LG=4680R-C012A MOTOR (MECH)            1
+     11 04/05/2005    63098 405SH05106           SE REMPLAZO MOTOR MECH Y MEMORY     LG=OISS240210A SS24040X21              1
+     12 04/05/2005   620632 404SH02701           NO FUNCIONA CON AC. EN REVISION SE  LG=ODRRE00060A DIODE RECTIFIERS        1
+     13 04/05/2005   620632 404SH02701           NO FUNCIONA CON AC. EN REVISION SE  LG=OFT1601B513 FUSE 1.25 250V          1
+     14 04/05/2005   620632 404SH02701           NO FUNCIONA CON AC. EN REVISION SE  LG=OCE686JU6A0 CAPACITOR               1
+     15 04/05/2005    63097 410SHZY005173        SE REMPLAZO DISPLEY PRUEBA          LG=6871R-8883A PWB (PCB) ASSY          1
+     16 06/05/2005   620653 407SH01068           ERROR DE DISCO. SE ENCONTRO MOTOR   LG=4680R-C012A MOTOR (MECH)            1
+     17 06/05/2005   620647 407SH05047           SE APAGA SOLO, IMAGEN SE CONGELA.   LG=4680R-C012A MOTOR (MECH)            1
+     18 06/05/2005   620647 407SH05047           SE APAGA SOLO, IMAGEN SE CONGELA.   LG=OIPMGFA054A DM 0265RAN              1
+     19 06/05/2005   620650 406SH01604           ARTICULO PRESENTO PROBLEMA EN       LG=6716DPH006B PICK UP ASSY            1
+     20 09/05/2005   620660 407SH09978           ARTICULO PRESENTO PROBLEMAS EN      LG=4680R-C012A MOTOR (MECH)            1
+     21 09/05/2005   620660 407SH09978           ARTICULO PRESENTO PROBLEMAS EN      LG=OIPMGFA054A DM 0265RAN              1
+     22 10/05/2005   620671 406SH04266           NO LEE CD, EN REVISION SE ENCONTRO  LG=4680R-C012A MOTOR (MECH)            1
+     23 10/05/2005    63156 407SH01975           SE REMPLAZO MOTOR MECH GIRO DE      LG=4680R-C012A MOTOR (MECH)            1
+     24 10/05/2005   620666 407SH00592           IMAGEN SE CONGELA. EN REVISION SE   LG=4680R-C012A MOTOR (MECH)            1
+     25 10/05/2005   620675 407SH01855           SE CONGELA IMAGEN,SE ENCONTRO MOTOR LG=4680R-C012A MOTOR (MECH)            1
+
+ DVK-8721X       DVD                           
+      1 03/05/2005   620619 410SH03915           NO FUNCIONA. SE ENCONTRO IC         LG=OIMCRHY070B IC MICRO CONTROLER      1
+      2 05/05/2005   620642 407SH17507           SE APAGA SOLO. SE ENCONTRO          LG=OIPMGFA054A DM 0265RAN              1
+
+ DVS-8521N       DVD                           
+      1 02/05/2005    63069 406SH00357           SE REMPLAZO MOTRO MECH GIRO DE      LG=4680R-C012A MOTOR (MECH)            1
+      2 03/05/2005   620611 407SH02159           ARTICULO PRESENTO PROBLEMA EN IC    LG=OIPMGFA054A DM 0265RAN              1
+      3 03/05/2005   620611 407SH02159           ARTICULO PRESENTO PROBLEMA EN IC    LG=4680R-C012A MOTOR (MECH)            1
+      4 04/05/2005    63099 407SH07547           SE REMPLAZO MOTOR GIRO DE DISCO     LG=4680R-C012A MOTOR (MECH)            1
+      5 06/05/2005   620654 409SH06693           IMAGEN SE DETIENE. SE ENCONTRO      LG=4680R-C012A MOTOR (MECH)            1
+      6 06/05/2005    63124 406SH03624           SE REEMPLAZO MOTOR MECH.GIRO DE     LG=4680R-C012A MOTOR (MECH)            1
+      7 09/05/2005   620662 407SH03789           IMAGEN SE CONGELA. EN REVISION SE   LG=4680R-C012A MOTOR (MECH)            1
+      8 10/05/2005   620665 406SH08412           ARTICULO SALE ERROR Y BANDEJA SE    LG=6716DPH006B PICK UP ASSY            1
+      9 10/05/2005   620669 406SH01581           ERROR DEL DISCO. SE ENCONTRO MOTOR  LG=4680R-C012A MOTOR (MECH)            1CORP.ANDINA DE DISTRIB.                                                                                    P═gina:          2
+       CESER                              ORDENES Y REPUESTOS UTILIZADOS                                   Fecha : 12/05/2005
+  CALLE CUZCO 1099                        мммммммммммммммммммммммммммммм                                   Time  :   02:10:07
+                                        DESDE:01/05/2005  HASTA:31/05/2005
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    NЬ   FECHA     NЬO/R    SERIE                OBSERVACIONES                      COD.PRODUCTO    DESCRIPCION         CANTЁ
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+ MARCA :96   L.G                 
+     10 10/05/2005   620673 409SH04860           NO REPRODUCE Y SALE  ERROR DE       LG=4680R-C012A MOTOR (MECH)            1
+     11 11/05/2005    63170 406SH03731                                               LG=4680R-C012A MOTOR (MECH)            1
+
+ FFH-185A        MICROCOMPONENTE               
+      1 04/05/2005    63101 303HJ00610           DECKS TRABADOS LUBRICACION          LG=6768S-BP04D DECK MECHANISM PARTS    1
+
+ FFH-196A        MICROCOMPONENTE               
+      1 02/05/2005    63072 211HZD00421          LUBRICACION SINCRONIZACION GENRAL   LG=6768S-BP04D DECK MECHANISM PARTS    1
+
+ FFH-586A        EQUIPO                        
+      1 04/05/2005    63100 303HZX00248          NO HAY AUDIO SE REVISO ENCONTRANDO  LG=OISG729400B TDA 7294                2
+      2 04/05/2005    63100 303HZX00248          NO HAY AUDIO SE REVISO ENCONTRANDO  LG=OFS5001B51D FUSE 5A SLOW BLOW       2
+
+ FFH-986A        EQUIPO                        
+      1 03/05/2005   620621 209HZJ00195          NO LEE CD, DECKS SE TRABAN. SE      LG=4400SB0001B BELT                    1
+      2 03/05/2005   620621 209HZJ00195          NO LEE CD, DECKS SE TRABAN. SE      LG=6768S-BP04D DECK MECHANISM PARTS    1
+      3 03/05/2005   620621 209HZJ00195          NO LEE CD, DECKS SE TRABAN. SE      LG=4400SB0001A BELT                    1
+
+ GR-T342GV       REFRIGERADORA                 
+      1 04/05/2005    63092 411KRTA00553         04-05-2005,FALLA,NO FUNCIONA CON    LG=2521C-A5292 COMPRESOR ASSY          1
+      2 04/05/2005    63092 411KRTA00553         04-05-2005,FALLA,NO FUNCIONA CON    705560007      FILTRO SECADOR 1/20     1
+      3 04/05/2005    63092 411KRTA00553         04-05-2005,FALLA,NO FUNCIONA CON    703990030      VARILLA DE SOLDADURA    1
+      4 04/05/2005    63092 411KRTA00553         04-05-2005,FALLA,NO FUNCIONA CON    703720014      TUBO DE COBRE 1/4       1
+      5 04/05/2005    63092 411KRTA00553         04-05-2005,FALLA,NO FUNCIONA CON    709990006      GAS 134A (ECOLOGICO)    1
+
+ LH-D6245A       HOME THEATER                  
+      1 03/05/2005   620617 403HZ00331           ARTICULO PRESENTO PROBLEMAS EN      LG=OIPMGFA054A DM 0265RAN              1
+      2 10/05/2005   620674 403HZ01171           PENDIENTE POR IC POWER, E IC        LG=OIPMGFA054A DM 0265RAN              1
+
+ LH-T6540A       HOME THEATHER                 
+      1 11/05/2005   620680 404HZ00126                                               LG=OIPMGFA054A DM 0265RAN              1
+
+ LM-530A         EQUIPO                        
+      1 05/05/2005   620638 305HJ00062           DECKS TRABADAS,CD NO LEE. SE        LG=6768S-BP04D DECK MECHANISM PARTS    2
+      2 05/05/2005   620638 305HJ00062           DECKS TRABADAS,CD NO LEE. SE        LG=4681RBA001B MOTOR ASSEMBLY          1
+      3 11/05/2005    63165 305HJ01855                                               LG=4681RBA001B MOTOR ASSEMBLY          1
+
+ LM-M1030A       EQUIPO                        
+      1 02/05/2005    63070 405HZ00388           SE REMPLAZO MOTRO ASEMBLY GIRO DE   LG=4681RBA001B MOTOR ASSEMBLY          1
+      2 05/05/2005   620643 407HZ00390           NO GIRA PLATO DE CD. SE ENCONTRO    LG=4681RBA001B MOTOR ASSEMBLY          1
+      3 06/05/2005    63123 502HJTV000345        SE ENCONTRO BLOQUE DE SINTONIA      LG=6700FM0073A TUNER                   1
+
+ LM-M533A        EQUIPO                        
+      1 02/05/2005    63071 404HZ00710           SE REMPLAZO MOTOR GIRO DE BANDEJA   LG=4681RBA001B MOTOR ASSEMBLY          1
+      2 06/05/2005    63125 402HZ01210           SE REEMPLAZO GIRO DE BANDEJA DE     LG=4681RBA001B MOTOR ASSEMBLY          1
+
+ LM-M730A        EQUIPO                        
+      1 02/05/2005    63068 404HZ00890           SE REMPLAZO MOTOR GIRO DE BANDEJA   LG=4681RBA001B MOTOR ASSEMBLY          1
+
+ LPC-LM340A      RADIOGRABADORA                
+      1 09/05/2005   620657 410HZ00551           PULSADORES NO OBEDECEN. SE ENCONTRO LG=556-219B    SWITCH TACT            20
+CORP.ANDINA DE DISTRIB.                                                                                    P═gina:          3
+       CESER                              ORDENES Y REPUESTOS UTILIZADOS                                   Fecha : 12/05/2005
+  CALLE CUZCO 1099                        мммммммммммммммммммммммммммммм                                   Time  :   02:10:07
+                                        DESDE:01/05/2005  HASTA:31/05/2005
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    NЬ   FECHA     NЬO/R    SERIE                OBSERVACIONES                      COD.PRODUCTO    DESCRIPCION         CANTЁ
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+ MARCA :96   L.G                 
+
+ LPC-LM730A      RADIOGRABADORA                
+      1 05/05/2005   620646 408HZ00834           ARTICULO INGRESO A SERVICIO CON     LG=6717RCA001B PICK UP ASSY            1
+      2 10/05/2005    63151 406HZ01593                                               LG=6717SCP001B PICK UP ASSY            1
+
+ LX-M140A        MINICOMPONENTE                
+      1 10/05/2005    63150 407SY00685                                               LG=OIPMGSA009A LA 4631                 1
+      2 10/05/2005    63150 407SY00685                                               LG=617-602F    CRYSTAL                 1
+      3 10/05/2005    63150 407SY00685                                               LG=6212AA2983C RESONATOR CRYSTAL       1
+
+ RP-20CB62       TV.COLOR                      
+      1 02/05/2005    63066 311AZ00133           NO FUNCIONA SE ENCONTRO ETAPA       LG=OTRSA00001A 2SD 2627                1
+      2 02/05/2005    63066 311AZ00133           NO FUNCIONA SE ENCONTRO ETAPA       LG=6174V-6002G FLY BACK                1
+
+ RP-21FB32       TV.COLOR                      
+      1 02/05/2005    63065 401RM21731           NO FUNCIONA SE ENCONTRO ETAPA       LG=6174V-6006H FLY BACK                1
+      2 02/05/2005    63065 401RM21731           NO FUNCIONA SE ENCONTRO ETAPA       LG=OTRSA00001A 2SD 2627                1
+
+ RP-21FC60       TV.COLOR                      
+      1 09/05/2005    63138 503RMZL084301        SE ENCONTRO ETAPA HORIZONTAL        LG=6174V-6006H FLY BACK                1
+      2 09/05/2005    63138 503RMZL084301        SE ENCONTRO ETAPA HORIZONTAL        LG=OTRSA00001A 2SD 2627                1
+
+ RP-21FC60G      TV.COLOR                      
+      1 10/05/2005    63154 409RM10461                                               LG=OTRSA00001A 2SD 2627                1
+
+ RP-21FD10C      TV.COLOR                      
+      1 09/05/2005    63139 502RMNE119439                                            LG=OTRSA00001A 2SD 2627                1
+
+ V-641M          COMBO                         
+      1 03/05/2005   620603 308SH00463           ARTICULO IMAGEN DISTORCIONA EN VHS  LG=4400R-0006B BELT CAPSTAN            1
+      2 03/05/2005   620603 308SH00463           ARTICULO IMAGEN DISTORCIONA EN VHS  LG=6723R-D403A DRUM (CIRC)ASSY         1
+      3 03/05/2005   620603 308SH00463           ARTICULO IMAGEN DISTORCIONA EN VHS  LG=4861R-0016C CLAMP ASSEMBLY (TAPA    1
+
+ WF-5226TPP      LAVADORA                      
+      1 05/05/2005    63109 303PN02082           05-05-2005,FALLA,SE ACTIVA ALARMA   LG=6871FN1036T PWB (PCB) ASSY          1
+

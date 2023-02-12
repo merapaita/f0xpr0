@@ -1,0 +1,11 @@
+@ECHO OFF
+CLS
+SET WORKER=OFF
+
+ren act.exe  -T
+
+TESO.EXE
+
+DEL *.IDX
+DEL *.TMP
+@ECHO ON

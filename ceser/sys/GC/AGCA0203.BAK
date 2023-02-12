@@ -1,0 +1,1697 @@
+*** 
+* agca0203.PRG
+* Ficha del producto
+***
+SET SYSMENU ON
+ON KEY
+SET CURSOR ON
+SET CENTURY ON
+STORE 0 TO tmp_cod, tmp_1, tmp_2, tmp_fin, tmp_sw1, tmp_swarc1, tmp_swarc2, tmp_swarc3, tmp_swarc4, wrk_selpro
+STORE SPACE(04) TO tmp_ano, tmp_capmot, busca, buscax
+DEFINE WINDOW tablas FROM 00, 00 TO 24, 79 IN screen DOUBLE
+DEFINE WINDOW t0 FROM 02, 64 TO 02, 73 IN screen NONE
+DEFINE WINDOW a0 FROM 05, 03 TO 05, 75 IN screen NONE
+DEFINE WINDOW c0 FROM 07, 27 TO 07, 39 IN screen NONE
+DEFINE WINDOW a1 FROM 06, 03 TO 20, 75 IN screen
+DEFINE WINDOW a2 FROM 21, 70 TO 21, 75 IN screen NONE
+DEFINE WINDOW a3 FROM 07, 04 TO 07, 74 IN screen NONE
+DEFINE POPUP tabesp FROM 12, 27 TO 18, 58 PROMPT FIELDS  ;
+       spc_codcom + ' ³' + spc_code + ' ³' + spc_desc IN screen COLOR SCHEME 8
+ON SELECTION POPUP tabesp DEAC POPUP TABESP
+ACTIVATE WINDOW tablas
+
+set step on
+
+DO p_prestab WITH 'MANTENCION', 'FICHA DE PRODUCTOS', 'SELECCION', .F.
+@ 02, 63 SAY PROGRAM()
+CLOSE DATABASES
+SELECT 1
+USE GC_PRO00 ORDER CODIGO
+wrk_selpro = SELECT()
+SELECT 2
+USE GE_TAB0 ORDER CODIGO
+wrk_sele2 = SELECT()
+SELECT 3
+USE GC_CLI00 ORDER CODIGO
+SELECT 4
+USE GC_ALM00 ORDER CODIGO
+SELECT 5
+USE GC_DIN00 ORDER CODIGO
+SELECT 6
+USE GC_DLP00 ORDER CODIGO
+SELECT 7
+USE GC_NVE00 ORDER CODIGO
+STORE 0 TO wrk_opci
+rge_cosimp = 1.4 
+STORE SPACE(40) TO wrk_desin
+DO WHILE tmp_fin<>27 .OR. tmp_fin<>-2
+     STORE SPACE(14) TO wrk_produc, wrk_campo
+     STORE SPACE(04) TO wrk_codalm, wrk_estado, wrk_desmon
+     STORE 0 TO tmp_ing, tmp_sw, wrk_existe, tmp_cod, tmp_1, wrk_modo, tmp_modo, wrk_nuevo, wrk_fis, wrk_arra, w_facimp
+     ACTIVATE WINDOW t0
+     @ 0, 0 SAY 'SELECCIONA'
+     wrk_swcha = 1
+     SELECT gc_pro00
+     DIMENSION a1( FCOUNT()), b1(FCOUNT())
+     SCATTER BLANK TO a1
+     DO p_footer WITH '100010000000000000001',2
+     = pinta1()
+     ACTIVATE WINDOW a0
+     @ 00, 43 CLEAR TO 00, 75
+     wrk_selec = SELECT()
+     wrk_campo = 'A1(1)'
+     ON KEY LABEL F6 DO PRODUC WITH WRK_CAMPO,WRK_SELEC,WRK_SELPRO
+     SET CURSOR ON
+     @ 00, 01 SAY 'Productoúúúúúúúúúúúúúúúúú :'
+     @ 00, 28 GET a1( 1) PICTURE '@!' COLOR W/N,N/W 
+     READ
+     IF a1(1) = SPACE(14)
+          EXIT
+     ENDIF
+     IF LASTKEY() = 27
+          EXIT
+     ENDIF
+     SELECT gc_pro00
+     SET ORDER TO CODIGO
+     SEEK a1(1)
+     IF FOUND()
+          SCATTER TO a1
+          = desing(1)
+          ACTIVATE WINDOW t0
+          @ 00, 0 SAY 'CONSULTAR '
+          = proceso1(5)
+          tmp_x = 0
+          ON KEY LABEL F7 DO DESING WITH 2
+          DO WHILE tmp_x<>27
+               tmp_x = INKEY(0,'H')
+               DO CASE
+                    CASE tmp_x = 13
+                         tmp_1 = 0
+                         ACTIVATE WINDOW t0
+                         @ 00, 0 SAY 'MODIFICAR '
+                         = proceso1(4)
+                         EXIT
+                    CASE tmp_x = - 3
+                         SELECT gc_alm00
+                         SEEK a1(1)
+                         SCAN WHILE alm_codpro = a1(1)
+                              wrk_fis = wrk_fis + alm_stkfis
+                         ENDSCAN
+                         IF  .NOT. FOUND() .OR. wrk_fis = 0
+                              = elimina()
+                              EXIT
+                         ELSE
+                              DO p_mensaje WITH 'NO SE PERMITE BORRAR ....  ARTICULO TIENE STOCK'
+                         ENDIF
+                    CASE tmp_x = 18
+                         = pant2()
+                         EXIT
+                    CASE tmp_x = 3
+                         = pant3()
+                         EXIT
+                    CASE tmp_x = - 6
+                         DO desing WITH 2
+                    OTHERWISE
+                         EXIT
+               ENDCASE
+          ENDDO
+     ELSE
+          ACTIVATE WINDOW t0
+          @ 0, 0 SAY 'CREACION  '
+          = proceso1(1)
+          tmp_1 = 0
+          wrk_nuevo = 1
+          = proceso1(4)
+     ENDIF
+     IF LASTKEY() <> 27 .AND. (tmp_modo = 4 .OR. tmp_modo = 1)
+          tmp_x = 99
+          DO WHILE tmp_x<>-1 .AND. tmp_x<>27 .AND. tmp_x<>-4
+               DO p_footer WITH '110000000100000000001', 2
+               tmp_x = INKEY(0, 'H')
+               DO CASE
+                    CASE tmp_x = - 1
+                         = graba(tmp_modo)
+                    CASE tmp_x = - 4
+                         DO precio
+                         = graba(tmp_modo)
+               ENDCASE
+          ENDDO
+     ENDIF
+ENDDO
+FOR x = 1 TO 12
+     SIZE WINDOW a1 BY -1, 0
+     FOR y = 1 TO 6
+          SIZE WINDOW a1 BY 0, -1
+     ENDFOR
+ENDFOR
+DEACTIVATE WINDOW tablas
+RELEASE WINDOW t0, a0, a1, c0, a2, a3
+ON KEY
+CLOSE DATABASES
+DO p_footer WITH '100000000001011000001', 1
+ACTIVATE SCREEN
+RETURN
+*
+PROCEDURE proceso1
+PARAMETER wrk_modo
+IF wrk_modo = 5
+     DO p_footer WITH  ;
+        '10010010000010100000111',  ;
+        2
+ENDIF
+IF wrk_modo = 4
+     DO p_footer WITH  ;
+        '100000100000000000001',  ;
+        2
+ENDIF
+ACTIVATE WINDOW a1
+DO WHILE tmp_fin<>27
+	wrk_swmot = 1
+	DO WHILE .T. .AND. tmp_1=0
+		@ 00, 27 GET a1( 2) PICTURE '@!' COLOR W/N,N/W 
+		IF wrk_modo = 4
+			ON KEY
+			ON KEY LABEL F7 DO DESING WITH 1
+			IF wrk_opci = 1
+				ON KEY LABEL F9 DO ARRASTRE
+			ENDIF
+			
+               READ
+               ON KEY
+               IF LASTKEY() = 5  ;
+                  .OR. LASTKEY() =  ;
+                  19
+                    LOOP
+               ENDIF
+               IF LASTKEY() = 27
+                    tmp_1 = 1
+                    EXIT
+               ENDIF
+               IF a1(2) =  ;
+                  SPACE(40)
+                    DO p_mensaje  ;
+                       WITH  ;
+                       'Ingrese Descripci¢n'
+                    IF wrk_modo =  ;
+                       4
+                         LOOP
+                    ENDIF
+               ENDIF
+          ENDIF
+          DO WHILE .T. .AND.  ;
+             tmp_1=0
+               @ 01, 27 GET a1(  ;
+                 3) PICTURE '@!'  ;
+                 COLOR W/N,N/W 
+               IF wrk_modo = 4
+                    READ
+                    IF LASTKEY() =  ;
+                       5 .OR.  ;
+                       LASTKEY() =  ;
+                       19
+                         DO p_footer  ;
+                            WITH  ;
+                            '100000100000000000001',  ;
+                            2
+                         ACTIVATE  ;
+                          WINDOW  ;
+                          a1
+                         EXIT
+                    ENDIF
+                    IF LASTKEY() =  ;
+                       27
+                         tmp_1 = 1
+                         EXIT
+                    ENDIF
+                    IF a1(3) =  ;
+                       SPACE(20)
+                         DO p_mensaje  ;
+                            WITH  ;
+                            'Ingrese Modelo'
+                         IF wrk_modo =  ;
+                            4
+                              LOOP
+                         ENDIF
+                    ENDIF
+               ENDIF
+               DO WHILE .T. .AND.  ;
+                  tmp_1=0
+                    IF wrk_modo =  ;
+                       4
+                         DO p_footer  ;
+                            WITH  ;
+                            '100010000000000000001',  ;
+                            2
+                         ACTIVATE  ;
+                          WINDOW  ;
+                          a1
+                         ON KEY
+                         wrk_busca =  ;
+                          'PROC'
+                         wrk_var =  ;
+                          'A1(4)'
+                         ON KEY LABEL;
+F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                    ENDIF
+                    @ 02, 27 GET  ;
+                      a1( 04)  ;
+                      PICTURE  ;
+                      '@!' COLOR  ;
+                      W/N,N/W 
+                    IF wrk_modo =  ;
+                       4
+                         READ
+                         IF LASTKEY() =  ;
+                            5  ;
+                            .OR.  ;
+                            LASTKEY() =  ;
+                            19
+                              DO p_footer  ;
+                                 WITH  ;
+                                 '100000000000000000001',  ;
+                                 2
+                              ACTIVATE  ;
+                               WINDOW  ;
+                               a1
+                              EXIT
+                         ENDIF
+                         IF LASTKEY() =  ;
+                            27
+                              tmp_1 =  ;
+                               1
+                              EXIT
+                         ENDIF
+                    ENDIF
+                    IF wrk_modo =  ;
+                       4 .OR.  ;
+                       wrk_modo =  ;
+                       5
+                         SELECT ge_tab0
+                         SEEK 'PROC' +  ;
+                              a1(4)
+                         IF  .NOT.  ;
+                             FOUND()
+                              @ 02,  ;
+                                32  ;
+                                SAY  ;
+                                'Procedencia no Existe'
+                              IF wrk_modo =  ;
+                                 4
+                                   LOOP
+                              ENDIF
+                         ELSE
+                              @ 02,  ;
+                                32  ;
+                                SAY  ;
+                                tab_destab
+                         ENDIF
+                    ENDIF
+                    DO WHILE .T.  ;
+                       .AND.  ;
+                       tmp_1=0
+                         ON KEY
+                         wrk_busca =  ;
+                          'PROP'
+                         wrk_var =  ;
+                          'A1(5)'
+                         ON KEY LABEL;
+F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                         @ 03, 27  ;
+                           GET  ;
+                           a1( 5)  ;
+                           PICTURE  ;
+                           '@!'  ;
+                           COLOR  ;
+                           W/N,N/ ;
+                           W 
+                         IF wrk_modo =  ;
+                            4
+                              READ
+                              IF LASTKEY() =  ;
+                                 5  ;
+                                 .OR.  ;
+                                 LASTKEY() =  ;
+                                 19
+                                   EXIT
+                              ENDIF
+                              IF LASTKEY() =  ;
+                                 27
+                                   tmp_1 = 1
+                                   EXIT
+                              ENDIF
+                         ENDIF
+                         IF wrk_modo =  ;
+                            4  ;
+                            .OR.  ;
+                            wrk_modo =  ;
+                            5
+                              SELECT  ;
+                               ge_tab0
+                              SEEK  ;
+                               'PROP' +  ;
+                               a1(5)
+                              IF   ;
+                               .NOT.  ;
+                               FOUND()
+                                   @ 03, 32 SAY 'Propiedad no Existe'
+                                   IF wrk_modo = 4
+                                        LOOP
+                                   ENDIF
+                              ELSE
+                                   @ 03, 32 SAY tab_destab
+                              ENDIF
+                         ENDIF
+                         DO WHILE  ;
+                            .T.  ;
+                            .AND.  ;
+                            tmp_1= ;
+                            0
+                              IF wrk_modo =  ;
+                                 4
+                              ENDIF
+                              wrk_busca =  ;
+                               'IGV '
+                              wrk_var =  ;
+                               'A1(6)'
+                              ON KEY LABEL;
+F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                              @ 04,  ;
+                                27  ;
+                                GET  ;
+                                a1(  ;
+                                6)  ;
+                                PICTURE  ;
+                                '@!'  ;
+                                COLOR  ;
+                                W/ ;
+                                N, ;
+                                N/ ;
+                                W 
+                              IF wrk_modo =  ;
+                                 4
+                                   READ
+                                   IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                        EXIT
+                                   ENDIF
+                                   IF LASTKEY() = 27
+                                        tmp_1 = 1
+                                        EXIT
+                                   ENDIF
+                              ENDIF
+                              IF wrk_modo =  ;
+                                 4  ;
+                                 .OR.  ;
+                                 wrk_modo =  ;
+                                 5
+                                   SELECT ge_tab0
+                                   SEEK 'IGV ' + a1(6)
+                                   IF  .NOT. FOUND()
+                                        @ 04, 39 SAY 'Impuesto no Existe'
+                                        IF wrk_modo = 4
+                                             LOOP
+                                        ENDIF
+                                   ELSE
+                                        @ 04, 32 SAY tab_factor PICTURE '999.99'
+                                        @ 04, 39 SAY tab_destab
+                                   ENDIF
+                              ENDIF
+                              DO WHILE  ;
+                                 .T.  ;
+                                 .AND.  ;
+                                 tmp_1= ;
+                                 0
+                                   ON KEY
+                                   wrk_busca = 'OTIM'
+                                   wrk_var = 'A1(7)'
+                                   ON KEY LABEL F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                                   @ 05, 27 GET a1( 7) PICTURE '@!' COLOR W/N,N/W 
+                                   IF wrk_modo = 4
+                                        READ
+                                        IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                             EXIT
+                                        ENDIF
+                                        IF LASTKEY() = 27
+                                             tmp_1 = 1
+                                             EXIT
+                                        ENDIF
+                                   ENDIF
+                                   IF wrk_modo = 4 .OR. wrk_modo = 5
+                                        SELECT ge_tab0
+                                        SEEK 'OTIM' + a1(7)
+                                        IF  .NOT. FOUND()
+                                             @ 05, 39 SAY 'Otro Impuesto no Existe'
+                                             IF wrk_modo = 4
+                                                  LOOP
+                                             ENDIF
+                                        ELSE
+                                             @ 05, 32 SAY tab_factor PICTURE '999.99'
+                                             @ 05, 39 SAY tab_destab
+                                        ENDIF
+                                   ENDIF
+                                   DO WHILE .T. .AND. tmp_1=0
+                                        ON KEY
+                                        IF wrk_modo = 1 .OR. wrk_arra = 1
+                                             a1( 8) = 'N'
+                                        ENDIF
+                                        wrk_busca = 'NICR'
+                                        wrk_var = 'A1(8)'
+                                        @ 06, 27 SAY a1(8) PICTURE '@!' COLOR W/N,N/W 
+                                        IF wrk_modo = 4
+                                             IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                  EXIT
+                                             ENDIF
+                                             IF LASTKEY() = 27
+                                                  tmp_1 = 1
+                                                  EXIT
+                                             ENDIF
+                                        ENDIF
+                                        IF wrk_modo = 4 .OR. wrk_modo = 5
+                                             SELECT ge_tab0
+                                             SEEK 'NICR' + a1(8)
+                                             IF  .NOT. FOUND()
+                                                  @ 06, 32 SAY 'No Existe'
+                                             ELSE
+                                                  @ 06, 32 SAY SPACE(10)
+                                                  @ 06, 32 SAY SUBSTR(tab_destab, 1, 17)
+                                             ENDIF
+                                        ENDIF
+                                        DO WHILE .T. .AND. tmp_1=0
+                                             IF wrk_modo = 1 .OR. wrk_arra = 1
+                                                  a1( 42) = 'N'
+                                             ENDIF
+                                             ON KEY
+                                             wrk_busca = 'RCOM'
+                                             wrk_var = 'A1(42)'
+                                             ON KEY LABEL F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                                             w_rcom = a1(42)
+                                             @ 06, 67 GET a1( 42) PICTURE '@!' COLOR W/N,N/W 
+                                             IF wrk_modo = 4
+                                                  READ
+                                                  IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                       EXIT
+                                                  ENDIF
+                                                  IF LASTKEY() = 27
+                                                       tmp_1 = 1
+                                                       EXIT
+                                                  ENDIF
+                                             ENDIF
+                                             IF wrk_modo = 4 .OR. wrk_modo = 5
+                                                  SELECT ge_tab0
+                                                  SEEK 'RCOM' + a1(42)
+                                                  IF  .NOT. FOUND()
+                                                       a1( 42) = w_rcom
+                                                       @ 07, 42 SAY SPACE(25)
+                                                       @ 07, 42 SAY 'Rango de Compra no Existe'
+                                                       IF wrk_modo = 4
+                                                            LOOP
+                                                       ENDIF
+                                                  ELSE
+                                                       IF a1(42) <> w_rcom
+                                                            IF a1(42) <> 'Z' .AND. a1(42) <> 'H' .AND. a1(42) <> 'Y' .AND. a1(8) <> a1(42)
+                                                                 @ 07, 42 SAY 'Cambio no permitido      '
+                                                                 a1( 42) = w_rcom
+                                                                 IF wrk_modo = 4
+                                                                      LOOP
+                                                                 ENDIF
+                                                            ENDIF
+                                                       ENDIF
+                                                  ENDIF
+                                             ENDIF
+                                             DO WHILE .T. .AND. tmp_1=0
+                                                  ON KEY
+                                                  wrk_busca = 'MONE'
+                                                  wrk_var = 'A1(9)'
+                                                  ON KEY LABEL F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                                                  @ 07, 42 SAY SPACE(25)
+                                                  @ 07, 27 GET a1( 9) PICTURE '@!' COLOR W/N,N/W 
+                                                  IF wrk_modo = 4
+                                                       READ
+                                                       IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                            EXIT
+                                                       ENDIF
+                                                       IF LASTKEY() = 27
+                                                            tmp_1 = 1
+                                                            EXIT
+                                                       ENDIF
+                                                  ENDIF
+                                                  IF wrk_modo = 4 .OR. wrk_modo = 5
+                                                       SELECT ge_tab0
+                                                       SEEK 'MONE' + a1(9)
+                                                       IF  .NOT. FOUND()
+                                                            @ 07, 32 SAY 'Moneda no Existe'
+                                                            IF wrk_modo = 4
+                                                                 LOOP
+                                                            ENDIF
+                                                       ENDIF
+                                                  ENDIF
+                                                  IF wrk_modo = 5 .OR. wrk_modo = 4
+                                                       wrk_desmon = tab_destab
+                                                       @ 07, 32 SAY tab_destab
+                                                  ENDIF
+                                                  DO WHILE .T. .AND. tmp_1=0
+                                                       ON KEY
+                                                       wrk_busca = 'ESOP'
+                                                       wrk_var = 'A1(10)'
+                                                       ON KEY LABEL F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                                                       @ 08, 27 GET a1( 10) PICTURE '@!' COLOR W/N,N/W 
+                                                       IF wrk_modo = 4
+                                                            READ
+                                                            IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                 EXIT
+                                                            ENDIF
+                                                            IF LASTKEY() = 27
+                                                                 tmp_1 = 1
+                                                                 EXIT
+                                                            ENDIF
+                                                       ENDIF
+                                                       IF wrk_modo = 4 .OR. wrk_modo = 5
+                                                            SELECT ge_tab0
+                                                            SEEK 'ESOP' + a1(10)
+                                                            IF  .NOT. FOUND()
+                                                                 @ 08, 32 SAY 'Estado Operativo no Existe'
+                                                                 IF wrk_modo = 4
+                                                                      LOOP
+                                                                 ENDIF
+                                                            ELSE
+                                                                 @ 08, 32 SAY tab_destab
+                                                            ENDIF
+                                                       ENDIF
+                                                       DO WHILE .T. .AND. tmp_1=0
+                                                            ON KEY
+                                                            wrk_busca = 'UNID'
+                                                            wrk_var = 'A1(11)'
+                                                            ON KEY LABEL F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                                                            @ 09, 27 GET a1( 11) PICTURE '@!' COLOR W/N,N/W 
+                                                            IF wrk_modo = 4
+                                                                 READ
+                                                                 IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                      EXIT
+                                                                 ENDIF
+                                                                 IF LASTKEY() = 27
+                                                                      tmp_1 = 1
+                                                                      EXIT
+                                                                 ENDIF
+                                                            ENDIF
+                                                            IF wrk_modo = 4 .OR. wrk_modo = 5
+                                                                 SELECT ge_tab0
+                                                                 SEEK 'UNID' + a1(11)
+                                                                 IF  .NOT. FOUND()
+                                                                      @ 09, 32 SAY 'Unidad de Medida no Existe'
+                                                                      IF wrk_modo = 4
+                                                                           LOOP
+                                                                      ENDIF
+                                                                 ELSE
+                                                                      @ 09, 32 SAY tab_destab
+                                                                 ENDIF
+                                                            ENDIF
+                                                            @ 10, 27 GET a1( 40) PICTURE '99,999.99' COLOR W/N,N/W 
+                                                            IF wrk_modo = 4
+                                                                 READ
+                                                                 IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                      EXIT
+                                                                 ENDIF
+                                                                 IF LASTKEY() = 27
+                                                                      tmp_1 = 1
+                                                                      EXIT
+                                                                 ENDIF
+                                                            ENDIF
+                                                            DO WHILE .T. .AND. tmp_1=0
+                                                                 ON KEY
+                                                                 wrk_busca = 'P'
+                                                                 wrk_var = 'A1(12)'
+                                                                 ON KEY LABEL F6 DO ENTIDAD WITH WRK_BUSCA,WRK_VAR
+                                                                 @ 11, 27 GET a1( 12) PICTURE '@!' COLOR W/N,N/W 
+                                                                 IF wrk_modo = 4
+                                                                      READ
+                                                                      IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                           EXIT
+                                                                      ENDIF
+                                                                      IF LASTKEY() = 27
+                                                                           tmp_1 = 1
+                                                                           EXIT
+                                                                      ENDIF
+                                                                 ENDIF
+                                                                 IF wrk_modo = 4 .OR. wrk_modo = 5
+                                                                      SELECT 3
+                                                                      SEEK 'P' + a1(12)
+                                                                      IF  .NOT. FOUND()
+                                                                           @ 11, 39 SAY 'Proveedor no Existe'
+                                                                           IF wrk_modo = 4
+                                                                                LOOP
+                                                                           ENDIF
+                                                                      ELSE
+                                                                           @ 11, 39 SAY cli_razsoc
+                                                                      ENDIF
+                                                                 ENDIF
+                                                                 DO WHILE .T. .AND. tmp_1=0
+                                                                      ON KEY
+                                                                      @ 12, 27 GET a1( 39) PICTURE '@!' COLOR W/N,N/W 
+                                                                      IF wrk_modo = 4
+                                                                           READ
+                                                                           IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                                EXIT
+                                                                           ENDIF
+                                                                           IF LASTKEY() = 27
+                                                                                tmp_1 = 1
+                                                                                EXIT
+                                                                           ENDIF
+                                                                      ENDIF
+                                                                      tmp_1 = 1
+                                                                      tmp_modo = wrk_modo
+                                                                      IF wrk_modo <> 4
+                                                                           CLEAR GETS
+                                                                      ENDIF
+                                                                 ENDDO
+                                                            ENDDO
+                                                       ENDDO
+                                                  ENDDO
+                                             ENDDO
+                                        ENDDO
+                                   ENDDO
+                              ENDDO
+                         ENDDO
+                    ENDDO
+               ENDDO
+          ENDDO
+     ENDDO
+     EXIT
+ENDDO
+IF tmp_modo = 4 .AND. (LASTKEY() <>  ;
+   27 .OR. LASTKEY() <> 5 .OR.  ;
+   LASTKEY() <> 19)
+     tmp_1 = 0
+     = pinta2()
+     IF wrk_nuevo = 1 .AND.  ;
+        wrk_arra = 0
+          = proceso2(1)
+     ELSE
+          = proceso2(5)
+     ENDIF
+     tmp_1 = 0
+     = proceso2(4)
+ENDIF
+IF wrk_modo = 5
+     wrk_ing = 1
+ENDIF
+RETURN
+*
+PROCEDURE proceso2
+PARAMETER wrk_modo
+ACTIVATE WINDOW a1
+DO WHILE tmp_fin<>27
+     ON KEY
+     wrk_swmot = 1
+     DO WHILE .T. .AND. tmp_1=0
+          ON KEY
+          wrk_busca = 'LINE'
+          wrk_var = 'A1(13)'
+          @ 00, 27 GET a1( 13)  ;
+            PICTURE '@!' COLOR W/ ;
+            N,N/W 
+          IF wrk_modo = 4
+               ON KEY LABEL F6 DO BUSCA;
+WITH WRK_BUSCA,WRK_VAR
+               DO p_footer WITH  ;
+                  '100010000000000000001',  ;
+                  2
+               ACTIVATE WINDOW a1
+               READ
+               IF LASTKEY() = 5  ;
+                  .OR. LASTKEY() =  ;
+                  19
+                    = pinta1()
+                    = proceso1(5)
+                    tmp_1 = 0
+                    = proceso1(4)
+               ENDIF
+               IF LASTKEY() = 27
+                    tmp_1 = 1
+                    EXIT
+               ENDIF
+          ENDIF
+          IF wrk_modo = 4 .OR.  ;
+             wrk_modo = 5
+               SELECT ge_tab0
+               SEEK 'LINE' +  ;
+                    a1(13)
+               IF  .NOT. FOUND()
+                    @ 00, 32 SAY  ;
+                      'L¡nea no Existe'
+                    IF wrk_modo =  ;
+                       4
+                         LOOP
+                    ENDIF
+               ELSE
+                    @ 00, 32 SAY  ;
+                      tab_destab
+               ENDIF
+          ENDIF
+          DO WHILE .T. .AND.  ;
+             tmp_1=0
+               wrk_busca = 'CATE'
+               wrk_var = 'A1(14)'
+               ON KEY LABEL F6 DO BUSCA;
+WITH WRK_BUSCA,WRK_VAR
+               @ 01, 27 GET a1(  ;
+                 14) PICTURE '@!'  ;
+                 COLOR W/N,N/W 
+               IF wrk_modo = 4
+                    READ
+                    IF LASTKEY() =  ;
+                       5 .OR.  ;
+                       LASTKEY() =  ;
+                       19
+                         EXIT
+                    ENDIF
+                    IF LASTKEY() =  ;
+                       27
+                         tmp_1 = 1
+                         EXIT
+                    ENDIF
+               ENDIF
+               IF wrk_modo = 4  ;
+                  .OR. wrk_modo =  ;
+                  5
+                    SELECT ge_tab0
+                    SEEK 'CATE' +  ;
+                         a1(14)
+                    IF  .NOT.  ;
+                        FOUND()
+                         @ 01, 32  ;
+                           SAY  ;
+                           'Categor¡a no Existe'
+                         IF wrk_modo =  ;
+                            4
+                              LOOP
+                         ENDIF
+                    ELSE
+                         @ 01, 32  ;
+                           SAY  ;
+                           tab_destab
+                    ENDIF
+               ENDIF
+               DO WHILE .T. .AND.  ;
+                  tmp_1=0
+                    wrk_busca = 'SUCA'
+                    wrk_var = 'A1(15)'
+                    ON KEY LABEL F6 DO;
+BUSCA WITH WRK_BUSCA,WRK_VAR
+                    @ 02, 27 GET  ;
+                      a1( 15)  ;
+                      PICTURE  ;
+                      '@!' COLOR  ;
+                      W/N,N/W 
+                    IF wrk_modo =  ;
+                       4
+                         READ
+                         IF LASTKEY() =  ;
+                            5  ;
+                            .OR.  ;
+                            LASTKEY() =  ;
+                            19
+                              EXIT
+                         ENDIF
+                         IF LASTKEY() =  ;
+                            27
+                              tmp_1 =  ;
+                               1
+                              EXIT
+                         ENDIF
+                    ENDIF
+                    IF wrk_modo =  ;
+                       4 .OR.  ;
+                       wrk_modo =  ;
+                       5
+                         SELECT ge_tab0
+                         SEEK 'SUCA' +  ;
+                              a1(15)
+                         IF  .NOT.  ;
+                             FOUND()
+                              @ 02,  ;
+                                32  ;
+                                SAY  ;
+                                'Sub Categor¡a no Existe'
+                              IF wrk_modo =  ;
+                                 4
+                                   LOOP
+                              ENDIF
+                         ELSE
+                              @ 02,  ;
+                                32  ;
+                                SAY  ;
+                                tab_destab
+                         ENDIF
+                    ENDIF
+                    DO WHILE .T.  ;
+                       .AND.  ;
+                       tmp_1=0
+                         ON KEY
+                         wrk_busca =  ;
+                          'MARC'
+                         wrk_var =  ;
+                          'A1(16)'
+                         ON KEY LABEL;
+F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                         @ 03, 27  ;
+                           GET  ;
+                           a1(  ;
+                           16)  ;
+                           PICTURE  ;
+                           '@!'  ;
+                           COLOR  ;
+                           W/N,N/ ;
+                           W 
+                         IF wrk_modo =  ;
+                            4
+                              READ
+                              IF LASTKEY() =  ;
+                                 5  ;
+                                 .OR.  ;
+                                 LASTKEY() =  ;
+                                 19
+                                   EXIT
+                              ENDIF
+                              IF LASTKEY() =  ;
+                                 27
+                                   tmp_1 = 1
+                                   EXIT
+                              ENDIF
+                         ENDIF
+                         IF wrk_modo =  ;
+                            4  ;
+                            .OR.  ;
+                            wrk_modo =  ;
+                            5
+                              SELECT  ;
+                               ge_tab0
+                              SEEK  ;
+                               'MARC' +  ;
+                               a1(16)
+                              IF   ;
+                               .NOT.  ;
+                               FOUND()
+                                   @ 03, 32 SAY 'Marca no Existe'
+                                   IF wrk_modo = 4
+                                        LOOP
+                                   ENDIF
+                              ELSE
+                                   @ 03, 32 SAY tab_destab
+                              ENDIF
+                         ENDIF
+                         DO WHILE  ;
+                            .T.  ;
+                            .AND.  ;
+                            tmp_1= ;
+                            0
+                              ON KEY
+                              wrk_busca =  ;
+                               'RUBR'
+                              wrk_var =  ;
+                               'A1(17)'
+                              ON KEY LABEL;
+F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                              @ 04,  ;
+                                27  ;
+                                GET  ;
+                                a1(  ;
+                                17)  ;
+                                PICTURE  ;
+                                '@!'  ;
+                                COLOR  ;
+                                W/ ;
+                                N, ;
+                                N/ ;
+                                W 
+                              IF wrk_modo =  ;
+                                 4
+                                   READ
+                                   IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                        EXIT
+                                   ENDIF
+                                   IF LASTKEY() = 27
+                                        tmp_1 = 1
+                                        EXIT
+                                   ENDIF
+                              ENDIF
+                              IF wrk_modo =  ;
+                                 4  ;
+                                 .OR.  ;
+                                 wrk_modo =  ;
+                                 5
+                                   SELECT ge_tab0
+                                   SEEK 'RUBR' + a1(17)
+                                   IF  .NOT. FOUND()
+                                        @ 04, 32 SAY 'Rubro no Existe'
+                                        IF wrk_modo = 4
+                                             LOOP
+                                        ENDIF
+                                   ELSE
+                                        @ 04, 32 SAY tab_destab
+                                   ENDIF
+                              ENDIF
+                              DO WHILE  ;
+                                 .T.  ;
+                                 .AND.  ;
+                                 tmp_1= ;
+                                 0
+                                   ON KEY
+                                   wrk_busca = 'SURU'
+                                   wrk_var = 'A1(18)'
+                                   ON KEY LABEL F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                                   @ 05, 27 GET a1( 18) PICTURE '@!' COLOR W/N,N/W 
+                                   IF wrk_modo = 4
+                                        READ
+                                        IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                             EXIT
+                                        ENDIF
+                                        IF LASTKEY() = 27
+                                             tmp_1 = 1
+                                             EXIT
+                                        ENDIF
+                                   ENDIF
+                                   IF wrk_modo = 4 .OR. wrk_modo = 5
+                                        SELECT ge_tab0
+                                        SEEK 'SURU' + a1(18)
+                                        IF  .NOT. FOUND()
+                                             @ 05, 32 SAY 'Sub Rubro no Existe'
+                                             IF wrk_modo = 4
+                                                  LOOP
+                                             ENDIF
+                                        ELSE
+                                             @ 05, 32 SAY tab_destab
+                                        ENDIF
+                                   ENDIF
+                                   DO WHILE .T. .AND. tmp_1=0
+                                        ON KEY
+                                        wrk_busca = 'CMCO'
+                                        wrk_var = 'A1(19)'
+                                        ON KEY LABEL F6 DO BUSCA WITH WRK_BUSCA,WRK_VAR
+                                        @ 06, 27 GET a1( 19) PICTURE '@!' COLOR W/N,N/W 
+                                        IF wrk_modo = 4
+                                             READ
+                                             IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                  EXIT
+                                             ENDIF
+                                             IF LASTKEY() = 27
+                                                  tmp_1 = 1
+                                                  EXIT
+                                             ENDIF
+                                        ENDIF
+                                        IF wrk_modo = 4 .OR. wrk_modo = 5
+                                             SELECT ge_tab0
+                                             SEEK 'CMCO' + a1(19)
+                                             IF  .NOT. FOUND()
+                                                  @ 06, 39 SAY 'Clase Comercial no Existe'
+                                                  IF wrk_modo = 4
+                                                       LOOP
+                                                  ENDIF
+                                             ELSE
+                                                  @ 06, 32 SAY tab_factor PICTURE '999.99'
+                                                  @ 06, 39 SAY tab_destab
+                                             ENDIF
+                                        ENDIF
+                                        DO WHILE .T. .AND. tmp_1=0
+                                             ON KEY
+                                             IF wrk_nuevo = 1
+                                                  a1( 20) = a1(01)
+                                             ENDIF
+                                             @ 07, 27 GET a1( 20) PICTURE '@!' COLOR W/N,N/W 
+                                             IF wrk_modo = 4
+                                                  DO p_footer WITH '100000000000000000001', 2
+                                                  ACTIVATE WINDOW a1
+                                                  READ
+                                                  IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                       DO p_footer WITH '100010000000000000001', 2
+                                                       ACTIVATE WINDOW a1
+                                                       EXIT
+                                                  ENDIF
+                                                  IF LASTKEY() = 27
+                                                       tmp_1 = 1
+                                                       EXIT
+                                                  ENDIF
+                                                  IF a1(20) = SPACE(14)
+                                                       @ 07, 39 SAY 'Ingrese N£mero de Parte'
+                                                       IF wrk_modo = 4
+                                                            LOOP
+                                                       ENDIF
+                                                  ENDIF
+                                             ENDIF
+                                             DO WHILE .T. .AND. tmp_1=0
+                                                  ON KEY
+                                                  @ 08, 27 GET a1( 21) PICTURE 'XXXXXXXXXXXXX' COLOR W/N,N/W 
+                                                  IF wrk_modo = 4
+                                                       READ
+                                                       IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                            EXIT
+                                                       ENDIF
+                                                       IF LASTKEY() = 27
+                                                            tmp_1 = 1
+                                                            EXIT
+                                                       ENDIF
+                                                       IF EMPTY(a1(21))
+                                                            @ 08, 39 SAY 'Ingrese Partida Arancelaria'
+                                                            IF wrk_modo = 4
+                                                                 LOOP
+                                                            ENDIF
+                                                       ENDIF
+                                                  ENDIF
+                                                  DO WHILE .T. .AND. tmp_1=0
+                                                       @ 09, 27 GET a1( 22) PICTURE '999.99' COLOR W/N,N/W 
+                                                       IF wrk_modo = 4
+                                                            READ
+                                                            IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                 EXIT
+                                                            ENDIF
+                                                            IF LASTKEY() = 27
+                                                                 tmp_1 = 1
+                                                                 EXIT
+                                                            ENDIF
+                                                            IF a1(22) = 0
+                                                                 @ 09, 39 SAY 'Porcentaje de Internaci¢n'
+                                                                 IF wrk_modo = 4
+                                                                      LOOP
+                                                                 ENDIF
+                                                            ENDIF
+                                                       ENDIF
+                                                       DO WHILE .T. .AND. tmp_1=0
+                                                            ON KEY
+                                                            @ 10, 27 GET a1( 36) PICTURE '99' COLOR W/N,N/W 
+                                                            IF wrk_modo = 4
+                                                                 READ
+                                                                 IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                      EXIT
+                                                                 ENDIF
+                                                                 IF LASTKEY() = 27
+                                                                      tmp_1 = 1
+                                                                      EXIT
+                                                                 ENDIF
+                                                                 IF a1(36) = 0
+                                                                      @ 10, 39 SAY 'Ingrese Meses de Seguridad'
+                                                                      IF wrk_modo = 4
+                                                                           LOOP
+                                                                      ENDIF
+                                                                 ENDIF
+                                                            ENDIF
+                                                            DO WHILE .T. .AND. tmp_1=0
+                                                                 ON KEY
+                                                                 @ 11, 27 GET a1( 37) PICTURE '9999,999.99'
+                                                                 IF wrk_modo = 4
+                                                                      READ
+                                                                      IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                           EXIT
+                                                                      ENDIF
+                                                                      IF LASTKEY() = 27
+                                                                           tmp_1 = 1
+                                                                           EXIT
+                                                                      ENDIF
+                                                                      IF a1(37) = 0
+                                                                           @ 11, 39 SAY 'Lote de Compra'
+                                                                           IF wrk_modo = 4
+                                                                                LOOP
+                                                                           ENDIF
+                                                                      ENDIF
+                                                                 ENDIF
+                                                                 DO WHILE .T. .AND. tmp_1=0
+                                                                      ON KEY
+                                                                      @ 12, 27 GET a1( 43) PICTURE '999'
+                                                                      IF wrk_modo = 4
+                                                                           READ
+                                                                           IF LASTKEY() = 5 .OR. LASTKEY() = 19
+                                                                                EXIT
+                                                                           ENDIF
+                                                                           IF LASTKEY() = 27
+                                                                                tmp_1 = 1
+                                                                                EXIT
+                                                                           ENDIF
+                                                                      ENDIF
+                                                                      tmp_modo = wrk_modo
+                                                                      tmp_1 = 1
+                                                                      IF wrk_modo <> 4
+                                                                           CLEAR GETS
+                                                                      ENDIF
+                                                                 ENDDO
+                                                            ENDDO
+                                                       ENDDO
+                                                  ENDDO
+                                             ENDDO
+                                        ENDDO
+                                   ENDDO
+                              ENDDO
+                         ENDDO
+                    ENDDO
+               ENDDO
+          ENDDO
+     ENDDO
+     EXIT
+ENDDO
+IF tmp_modo = 4 .AND. LASTKEY() <>  ;
+   27
+     tmp_1 = 0
+     = pinta3()
+     IF wrk_nuevo = 1 .AND.  ;
+        wrk_arra = 0
+          = proceso3(1)
+     ELSE
+          = proceso3(5)
+     ENDIF
+     tmp_1 = 0
+     = proceso3(4)
+ENDIF
+RETURN
+*
+PROCEDURE proceso3
+PARAMETER wrk_modo
+ACTIVATE WINDOW a1
+ON KEY
+wrk_swmot = 1
+DO WHILE .T. .AND. tmp_1=0
+     ON KEY
+     IF wrk_arra = 1
+          a1( 27) = CTOD( ;
+            '  /  /    ')
+     ENDIF
+     @ 01, 22 SAY a1(27) PICTURE  ;
+       '99/99/9999' COLOR W/N,N/W 
+     IF wrk_modo = 4
+          IF LASTKEY() = 5 .OR.  ;
+             LASTKEY() = 19
+               = pinta2()
+               = proceso2(5)
+               tmp_1 = 0
+               = proceso2(4)
+          ENDIF
+          IF LASTKEY() = 27
+               tmp_1 = 1
+               EXIT
+          ENDIF
+     ENDIF
+     IF wrk_modo = 1 .OR.  ;
+        wrk_arra = 1
+          a1( 32) = DATE()
+     ENDIF
+     @ 01, 59 SAY a1(32) PICTURE  ;
+       '99/99/9999'
+     IF wrk_arra = 1
+          a1( 28) = CTOD( ;
+            '  /  /    ')
+     ENDIF
+     @ 02, 22 SAY a1(28) PICTURE  ;
+       '99/99/9999'
+     IF wrk_arra = 1
+          a1( 29) = CTOD( ;
+            '  /  /    ')
+     ENDIF
+     @ 02, 59 SAY a1(29) PICTURE  ;
+       '@!'
+     IF wrk_arra = 1
+          a1( 30) = CTOD( ;
+            '  /  /    ')
+     ENDIF
+     @ 03, 22 SAY a1(30) PICTURE  ;
+       '@!'
+     IF wrk_arra = 1
+          a1( 31) = CTOD( ;
+            '  /  /    ')
+     ENDIF
+     @ 03, 59 SAY a1(31) PICTURE  ;
+       '@!'
+     DO WHILE .T. .AND. tmp_1=0
+          IF wrk_arra = 1
+               a1( 34) = 0
+          ENDIF
+          @ 05, 22 SAY a1(34)  ;
+            PICTURE  ;
+            '9999,999.99'
+          DO WHILE .T. .AND.  ;
+             tmp_1=0
+               IF wrk_arra = 1
+                    a1( 38) = 0
+               ENDIF
+               @ 05, 59 SAY  ;
+                 a1(38) PICTURE  ;
+                 '9999,999.99'
+               DO WHILE .T. .AND.  ;
+                  tmp_1=0
+                    IF wrk_arra =  ;
+                       1
+                         a1( 35) =  ;
+                           0
+                    ENDIF
+                    @ 06, 22 SAY  ;
+                      a1(35)  ;
+                      PICTURE  ;
+                      '9999,999.99'
+                    IF wrk_arra =  ;
+                       1
+                         a1( 33) =  ;
+                           0
+                    ENDIF
+                    @ 06, 59 SAY  ;
+                      a1(33)  ;
+                      PICTURE  ;
+                      '9999,999.99'
+                    DO WHILE .T.  ;
+                       .AND.  ;
+                       tmp_1=0
+                         @ 08, 22  ;
+                           GET  ;
+                           a1(  ;
+                           26)  ;
+                           PICTURE  ;
+                           '9999,999.99'  ;
+                           COLOR  ;
+                           W/N,N/ ;
+                           W 
+                         IF wrk_modo =  ;
+                            4
+                              READ
+                              IF LASTKEY() =  ;
+                                 5  ;
+                                 .OR.  ;
+                                 LASTKEY() =  ;
+                                 19
+                                   EXIT
+                              ENDIF
+                              IF LASTKEY() =  ;
+                                 27
+                                   tmp_1 = 1
+                                   EXIT
+                              ENDIF
+                              IF a1(26) =  ;
+                                 0  ;
+                                 .AND.  ;
+                                 a1(5) =  ;
+                                 'P'
+                                   @ 08, 22 SAY 'Error'
+                                   IF wrk_modo = 4
+                                        LOOP
+                                   ENDIF
+                              ENDIF
+                         ENDIF
+                         @ 08, 37  ;
+                           SAY  ;
+                           SUBSTR(wrk_desmon,  ;
+                           1,  ;
+                           18)
+                         IF wrk_arra =  ;
+                            1
+                              a1(  ;
+                                25) =  ;
+                                0
+                         ENDIF
+                         @ 10, 22  ;
+                           SAY  ;
+                           a1(25)  ;
+                           PICTURE  ;
+                           '9999,999.99'
+                         @ 10, 37  ;
+                           SAY  ;
+                           wrk_desmon
+                         tmp_modo =  ;
+                          wrk_modo
+                         tmp_1 = 1
+                         IF wrk_modo <>  ;
+                            4
+                              CLEAR  ;
+                               GETS
+                         ENDIF
+                         IF wrk_arra =  ;
+                            1
+                              a1(  ;
+                                24) =  ;
+                                0
+                         ENDIF
+                         @ 11, 22  ;
+                           SAY  ;
+                           a1(24)  ;
+                           PICTURE  ;
+                           '9999,999.99'
+                         SELECT ge_tab0
+                         SEEK 'MONE' +  ;
+                              rge_monbas
+                         IF FOUND()
+                              @ 11,  ;
+                                37  ;
+                                SAY  ;
+                                tab_destab
+                         ENDIF
+                         IF wrk_arra =  ;
+                            1
+                              a1(  ;
+                                23) =  ;
+                                0
+                         ENDIF
+                         @ 12, 22  ;
+                           SAY  ;
+                           a1(23)  ;
+                           PICTURE  ;
+                           '9999,999.99'
+                         @ 12, 37  ;
+                           SAY  ;
+                           wrk_desmon
+                    ENDDO
+               ENDDO
+          ENDDO
+     ENDDO
+ENDDO
+RETURN
+*
+PROCEDURE elimina
+SELECT gc_pro00
+IF pro_stktra <= 0 .AND.  ;
+   pro_stksol <= 0 .AND.  ;
+   pro_stkbor <= 0
+     DO rbloquea
+     DELETE
+     UNLOCK
+     SELECT gc_nve00
+     SEEK a1(1)
+     IF FOUND()
+          DO rbloquea
+          DELETE
+          UNLOCK
+     ENDIF
+     SELECT gc_pro00
+ELSE
+     DO p_mensaje WITH  ;
+        ' NO SE PUEDE ELIMINAR EXISTEN SALDOS'
+ENDIF
+RETURN
+*
+PROCEDURE pinta1
+ACTIVATE WINDOW a0
+@ 00, 43 CLEAR TO 00, 73
+ACTIVATE WINDOW a2
+@ 00, 0 SAY 'P g. 1'
+ACTIVATE WINDOW a1
+@ 00, 00 CLEAR TO 12, 76
+@ 00, 00 SAY  ;
+  'Descripci¢núúúúúúúúúúúúúú :'
+@ 01, 00 SAY  ;
+  'Modeloúúúúúúúúúúúúúúúúúúú :'
+@ 02, 00 SAY  ;
+  'Procedenciaúúúúúúúúúúúúúú :'
+@ 03, 00 SAY  ;
+  'Propiedadúúúúúúúúúúúúúúúú :'
+@04,00 SAY "&sys_codimpúúúúúúúúúúúúúúúúúúúúú :"
+@ 05, 00 SAY  ;
+  'Otro Impuestoúúúúúúúúúúúú :'
+@ 06, 00 SAY  ;
+  'Nivel de Movimientoúúúúúú :'
+@ 06, 50 SAY 'Rango de Compra:'
+@ 07, 00 SAY  ;
+  'Moneda Origenúúúúúúúúúúúú :'
+@ 08, 00 SAY  ;
+  'Estado Operativoúúúúúúúúú :'
+@ 09, 00 SAY  ;
+  'Unidad de Medidaúúúúúúúúú :'
+@ 10, 00 SAY  ;
+  'Peso en Gramos........... :'
+@ 11, 00 SAY  ;
+  'C¢digo Proveedorúúúúúúúúú :'
+@ 12, 00 SAY  ;
+  'C¢digo de Reemplazo.úúúúú :'
+RETURN
+*
+PROCEDURE pinta2
+ACTIVATE WINDOW a0
+@ 00, 43 SAY SUBSTR(a1(2), 1, 30)
+ACTIVATE WINDOW a2
+@ 00, 0 SAY 'Pag. 2'
+ACTIVATE WINDOW a1
+@ 00, 00 CLEAR TO 12, 76
+@ 00, 00 SAY  ;
+  'L¡neaúúúúúúúúúúúúúúúúúúúú :'
+@ 01, 00 SAY  ;
+  'Categor¡aúúúúúúúúúúúúúúúú :'
+@ 02, 00 SAY  ;
+  'Sub Categor¡aúúúúúúúúúúúú :'
+@ 03, 00 SAY  ;
+  'Marcaúúúúúúúúúúúúúúúúúúúú :'
+@ 04, 00 SAY  ;
+  'Rubroúúúúúúúúúúúúúúúúúúúú :'
+@ 05, 00 SAY  ;
+  'Sub Rubroúúúúúúúúúúúúúúúú :'
+@ 06, 00 SAY  ;
+  'Clase Comercialúúúúúúúúúú :'
+@ 07, 00 SAY  ;
+  'N£mero de Parteúúúúúúúúúú :'
+@ 08, 00 SAY  ;
+  'Partú Arancelariaúúúúúúúú :'
+@ 09, 00 SAY  ;
+  '% de Internaci¢núúúúúúúúú :'
+@ 10, 00 SAY  ;
+  'Meses de Seguridadúúúúúúú :'
+@ 11, 00 SAY  ;
+  'Lote de Compraúúúúúúúúúúú :'
+@ 12, 00 SAY  ;
+  'C¢digo de Edadúúúúúúúúúúú :'
+RETURN
+*
+PROCEDURE pinta3
+ACTIVATE WINDOW a0
+@ 00, 43 SAY SUBSTR(a1(2), 1, 30)
+ACTIVATE WINDOW a2
+@ 00, 00 SAY 'P g. 3'
+ACTIVATE WINDOW a1
+@ 00, 00 CLEAR TO 12, 76
+@ 00, 00 SAY 'FECHA :' COLOR  ;
+  SCHEME 8
+@ 01, 00 SAY  ;
+  'Costo de Reposici¢n :'
+@ 01, 37 SAY  ;
+  'Creaci¢núúúúúúúúúúú :'
+@ 02, 00 SAY  ;
+  'Ultima Compraúúúúúú :'
+@ 02, 37 SAY  ;
+  'Ultimo Movimientoúú :'
+@ 03, 00 SAY  ;
+  'Ultima Toma Inventú :'
+@ 03, 37 SAY  ;
+  'Ultima Ventaúúúúúúú :'
+@ 04, 00 SAY 'STOCK :' COLOR  ;
+  SCHEME 8
+@ 05, 00 SAY  ;
+  'M¡nimoúúúúúúúúúúúúú :'
+@ 05, 37 SAY  ;
+  'M ximoúúúúúúúúúúúúú :'
+@ 06, 00 SAY  ;
+  'Cr¡ticoúúúúúúúúúúúú :'
+@ 06, 37 SAY  ;
+  'En Tr nsitoúúúúúúúú :'
+@ 07, 00 SAY 'PRECIO :' COLOR  ;
+  SCHEME 8
+@ 08, 00 SAY  ;
+  'Price Listúúúúúúúúú :'
+@ 09, 00 SAY 'COSTOS :' COLOR  ;
+  SCHEME 8
+@ 10, 00 SAY  ;
+  'Proú Monú Origenúúú :'
+@ 11, 00 SAY  ;
+  'Proú Monú Baseúúúúú :'
+@ 12, 00 SAY  ;
+  'Ultú Comú Monú Orig :'
+RETURN
+*
+PROCEDURE graba
+PARAMETER wrk_modo
+SELECT gc_pro00
+IF wrk_nuevo = 1
+     APPEND BLANK
+     SELECT gc_nve00
+     APPEND BLANK
+     DO rbloquea
+     REPLACE nve_codpro WITH  ;
+             a1(1)
+     REPLACE nve_usuari WITH  ;
+             clave
+     REPLACE nve_fecha WITH  ;
+             DATE()
+     REPLACE nve_hora WITH TIME()
+     UNLOCK
+ENDIF
+SELECT gc_pro00
+DO rbloquea
+GATHER FROM a1
+IF wrk_nuevo = 1
+     REPLACE pro_stksol WITH 0
+     REPLACE pro_stkbor WITH 0
+     REPLACE pro_stktra WITH 0
+ENDIF
+REPLACE pro_usuari WITH clave
+REPLACE pro_fecha WITH DATE()
+REPLACE pro_hora WITH TIME()
+UNLOCK
+FOR cont = 2 TO FCOUNT()
+     b1( cont) = a1(cont)
+ENDFOR
+wrk_opci = 1
+SELECT gc_din00
+SEEK a1(1)
+IF  .NOT. FOUND()
+     APPEND BLANK
+ENDIF
+DO rbloquea
+REPLACE din_codpro WITH a1(1)
+REPLACE din_descri WITH wrk_desin
+REPLACE din_usuari WITH clave
+REPLACE din_fecha WITH DATE()
+REPLACE din_hora WITH TIME()
+UNLOCK
+RETURN
+*
+PROCEDURE pant2
+= pinta2()
+tmp_1 = 0
+= proceso2(5)
+tmp_x = INKEY(0, 'H')
+IF tmp_x = 13
+     tmp_1 = 0
+     ACTIVATE WINDOW t0
+     @ 0, 0 SAY 'MODIFICAR '
+     = pinta1()
+     tmp_1 = 0
+     = proceso1(5)
+     tmp_1 = 0
+     = proceso1(4)
+ENDIF
+IF tmp_x = 3
+     = pant1()
+ENDIF
+IF tmp_x = 18
+     = pant3()
+ENDIF
+RETURN
+*
+PROCEDURE pant1
+= pinta1()
+tmp_1 = 0
+= proceso1(5)
+tmp_x = INKEY(0, 'H')
+IF tmp_x = 13
+     tmp_1 = 0
+     ACTIVATE WINDOW t0
+     @ 0, 0 SAY 'MODIFICAR '
+     = pinta1()
+     tmp_1 = 0
+     = proceso1(5)
+     tmp_1 = 0
+     = proceso1(4)
+ENDIF
+IF tmp_x = 18
+     = pant2()
+ENDIF
+IF tmp_x = 3
+     = pant3()
+ENDIF
+RETURN
+*
+PROCEDURE pant3
+= pinta3()
+tmp_1 = 0
+= proceso3(5)
+tmp_x = INKEY(0, 'H')
+IF tmp_x = 13
+     tmp_1 = 0
+     ACTIVATE WINDOW t0
+     @ 0, 0 SAY 'MODIFICAR '
+     = pinta1()
+     tmp_1 = 0
+     = proceso1(5)
+     tmp_1 = 0
+     = proceso1(4)
+ENDIF
+IF tmp_x = 18
+     = pant1()
+ENDIF
+IF tmp_x = 3
+     = pant2()
+ENDIF
+RETURN
+*
+PROCEDURE arrastre
+FOR cont = 2 TO FCOUNT()
+     a1( cont) = b1(cont)
+ENDFOR
+= proceso1(5)
+tmp_1 = 0
+wrk_arra = 1
+RETURN
+*
+PROCEDURE desing
+PARAMETER wrk_opc
+IF wrk_opc = 1 .OR. wrk_arra = 0
+     SELECT gc_din00
+     SEEK a1(1)
+     IF FOUND()
+          wrk_desin = din_descri
+     ENDIF
+ENDIF
+ACTIVATE WINDOW a3
+IF wrk_opc = 1 .OR. wrk_arra = 1
+     @ 00, 00 SAY  ;
+       'Descripci¢n en Inglesúúúú :'
+     @ 00, 27 GET wrk_desin  ;
+       PICTURE '@!' COLOR W/N,N/W 
+     READ
+ELSE
+     @ 00, 00 SAY  ;
+       'Descripci¢n en Inglesúúúú :'
+     @ 00, 27 GET wrk_desin  ;
+       PICTURE '@!' COLOR W/N,N/W 
+     CLEAR GETS
+     = INKEY(0)
+ENDIF
+DEACTIVATE WINDOW a3
+ACTIVATE WINDOW a1
+RETURN
+*
+PROCEDURE precio
+*---------------
+IF a1(5) = 'C'
+     STORE 0 TO w_prsigv, w_prcigv
+ELSE
+     SELECT ge_tab0
+     SEEK 'CMCO' + a1(19)
+     IF FOUND()
+          w_fact01 = tab_factor
+     ELSE
+          w_fact01 = 0
+     ENDIF
+     SEEK 'IGV ' + a1(6)
+     IF FOUND()
+          w_fact02 = (1 + (tab_factor / 100))
+     ELSE
+          w_fact02 = 0
+     ENDIF
+     IF a1(04) = 'I' .AND. (a1(12) = '37270628' .OR. a1(12) = '10000001') .AND. a1(25) > 0
+          w_prsigv = ROUND((a1(25) * w_fact01), 2)
+     ELSE
+          IF a1(04) = 'I' .AND. (a1(12) = '37270628' .OR. a1(12) = '10000001') .AND. a1(25) = 0
+               w_prsigv = ROUND((a1(26) * w_fact01), 2)
+          ELSE
+               IF a1(04) = 'I'
+                    w_prsigv = ROUND(((a1(26) * w_fact01) * rge_cosimp), 2)
+               ELSE
+                    w_prsigv = ROUND((a1(26) * w_fact01), 2)
+               ENDIF
+          ENDIF
+     ENDIF
+     w_prcigv = ROUND((w_prsigv * w_fact02), 2)
+ENDIF
+SELECT gc_dlp00
+SEEK rge_lispre + a1(1)
+IF  .NOT. FOUND()
+     APPEND BLANK
+ENDIF
+DO rbloquea
+REPLACE dlp_codlis WITH rge_lispre
+REPLACE dlp_codpro WITH a1(1)
+REPLACE dlp_unimed WITH 'UNID'
+REPLACE dlp_prsigv WITH w_prsigv
+REPLACE dlp_prcigv WITH w_prcigv
+REPLACE dlp_usuari WITH clave
+REPLACE dlp_fecha WITH DATE()
+REPLACE dlp_hora WITH TIME()
+UNLOCK
+RETURN

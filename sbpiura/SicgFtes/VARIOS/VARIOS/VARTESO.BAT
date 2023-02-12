@@ -1,0 +1,2 @@
+VARIOSTS.exe
+EXIT

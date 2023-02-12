@@ -1,0 +1,63 @@
+ CESER PIURA SRL                                                                                              P═gina :          1
+       CESER                                      INGRESO DE ORDENES POR TIPO DE ATENCION                     Fecha  :   10/12/20
+  AV.SAN TEODORO N╖442                            ммммммммммммммммммммммммммммммммммммммм                     Hora   :   09:31:57
+                                                     DESDE:09/12/2015  HASTA:09/12/2015
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё  NЬ    O/R     FECHA       S/S      CLIENTE                   MARCA     MODELO          SERIE        TECNICO  ESTADO  F.ESTADO Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ FGAR FUERA DE GARANTIA             
+
+   050  SUCURSAL PIURA                
+
+      1     7472 09/12/2015     7472 CARNERO BERRU MIRTHA      EPSON      L210            S27K162089       60070 001  09/12/2015
+      2     7474 09/12/2015     7474 SANDOVAL PONCE GIOVANNA E SONY       KDL-32R405A     6071445          30977 001  09/12/2015
+      3     7475 09/12/2015     7475 SANDOVAL PONCE GIOVANNA E SAMSUNG    CT14F26X/STR    3CCT601496H      30977 001  09/12/2015
+      4     7479 09/12/2015     7479 RAMIREZ CALDERON ARCIDA   SAMSUNG    UN46F6800AGXPE  Z7G13CAD4000     30977 001  09/12/2015
+      5    14504 09/12/2015    14504 REYES CORNEJO JORTE STEEV SAMSUNG    RT34DKTS1/XPE   SSCC              2008 100  27/08/2015
+      6    15153 09/12/2015    15153 ALVA PAZ SHIRLY           SAMSUNG    WA10F5L4UWA     JLP95BBD5002      2008 011  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     6
+
+                                                                       TOTAL SUCURSAL PIURA                =>     6
+                                                                                                            ддддддд
+                                                                       TOTAL FUERA DE GARANTIA             =>     6
+ GARA EN GARANTIA                   
+
+   090                                
+
+      7     7456 09/12/2015     7456 PARDO TRONCO ANA (PC PLAN EPSON      L800            Q83K022130       60070 002  09/12/2015
+      8     7467 09/12/2015     7467 SANCHEZ ENCALADA DANILO J SAMSUNG    UN32F5500AGXPE  Z7D23CED5015     15180 010  09/12/2015
+      9     7476 09/12/2015     7476 CORDOVA PURCA KEREN       EPSON      L365            VH5K079934       60070 001  09/12/2015
+     10     7480 09/12/2015     7480 ZAPATA TORRES ROMAN LUACI EPSON      L220             VGQK015509      60070 010  09/12/2015
+     11     7481 09/12/2015     7481 GARCIA GUTIERREZ MAGALY   EPSON      L220            VGGK060817       60070 001  09/12/2015
+     12     7484 09/12/2015     7484 MAZA MORENO LUIS ALBERTO  SAMSUNG    MX-H830/PE      0AAN122FA006      1000 001  09/12/2015
+     13    15213 09/12/2015    15213 MENDOZA ALBUJAR MARIO     SAMSUNG    UN48H6400AGXPE  02573CVFA021     27141 011  09/12/2015
+     14    15214 09/12/2015    15214 BALDOCEDA CORDOVA JENY    SAMSUNG    UN48J5300AGXPE  044Z3CVG4008      2014 018  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     8
+
+                                                                       TOTAL                               =>     8
+   050  SUCURSAL PIURA                
+
+     15     7482 09/12/2015     7482 RAMOS GUTIERREZ CESAR ALB SONY       BDP-S1200       1053281           1000 001  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     1
+
+                                                                       TOTAL SUCURSAL PIURA                =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA                   =>     9
+ GEXS EN GARANTIA EXTENDIDA SAGA    
+
+   850                                
+
+     16    15216 09/12/2015    15216 CASTILLO JARAMILLO DORIS  L.G        AN-MR400H        SIN SERIE       30977 011  09/12/2015
+
+                                                                       TOTAL DICIEMBRE                     =>     1
+
+                                                                       TOTAL                               =>     1
+                                                                                                            ддддддд
+                                                                       TOTAL EN GARANTIA EXTENDIDA SAGA    =>     1                                                                                                             ддддддд
+                                                                                  TOTAL O/R INGRESADOS     =>    16
+                                                                                                             ммммммм
+

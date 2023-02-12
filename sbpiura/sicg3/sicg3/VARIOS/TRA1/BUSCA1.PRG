@@ -1,0 +1,718 @@
+worker = IIF( LTRIM(UPPER(GETENV('WORKER'))) = 'ON', .T.,.F. )
+SET PROCEDURE TO SAI_LIB
+DO Fox_Ambi
+SET DELE ON
+SET HEAD ON
+*SET PATH TO \BENE99\DATA
+PUBLIC cMes,vOpcion,OkCancel,cProc,cCuenta,cComprobante
+
+*DO Pantalla
+*DO Escoge
+*IF !EMPTY(cProc)
+*	DO &cProc
+*ENDIF
+
+DO BUSCA		&& SACAR CUENTAS DEL DIARIO
+*DO COR_HC		&& Abrir tablas de hojas de afectacion para modificar
+*DO COR_RI		&& Abrir tablas de recibos de ingreso para modificar
+*DO COR_CP		&& Abrir tablas de comprobantes de pago para modificar
+*DO CORR_NC		&& Abrir tablas notas de contabilidad para modificar
+*DO ASTPRE		&& Emite Reporte de Asientos presupuestales de Docum. Fuentes.
+*DO ASTPAT		&& Emite Reporte de Asientos Patrimoniales  de Docum. Fuentes.
+*DO AGRART
+*DO JEMA
+*DO Borra_Fac	&& Borra Facturas .... Prohibido correr este procedimiento
+*DO OS
+*DO OS_CP		&& Seguimineto de Ordenes de Servicio que han sido atendidas
+*DO OS_CP1
+*DO Caja		&& Corre el Reporte de Caja
+*DO CadTri	WITH '1,2,3,4'	&& Cadenas trimestrales para efectos de presentacion en el sicon
+*DO Depura
+*DO hojcon
+*plananuPART
+
+PROCEDURE BUSCA
+*-------------------------------------------
+*BUSCA CUENTAS EN EL DIARIO PARA COMPARARLAS
+*-------------------------------------------
+*DO PantBusca
+*IF LASTKEY()=27 OR OkCancel = 2
+*	RETURN
+*ENDIF
+SET path to \bene2001\data
+CLOS DATA
+USE DIARIO
+SELE 0
+USE COMPRO
+SET ORDER TO COMPRO7
+SELE DIARIO
+SET RELATION TO COMPROB INTO COMPRO
+
+*INDEX ON ORDEN+COMPRO.CODCAD+COMPROB+CUENTA+TIPO TO XX FOR MONT(FECEMI)=7 AND ORDEN='08'
+INDEX ON COMPROB+CUENTA+TIPO TO XX FOR COMPROB='93' AND CUENTA='848'
+*INDEX ON COMPROB+CUENTA+TIPO TO XX FOR CUENTA="42903" 
+*SUSP
+*INDEX ON Orden+CUENTA+TIPO TO XX FOR Orden='87'
+
+* DETALLADO
+DO REPORTE WITH 2, "Busca", ' ',1,.F.,.T.
+
+* TOTALES
+*DO REPORTE WITH 2, "Busca1", ' ',1,.F.,.T.
+CLOS DATA
+RETURN
+
+
+PROCEDURE SumaDebe
+PRIVATE cCuenta,cTipo,nDebe,cCompro,cOrden
+cCuenta = Diario.Cuenta
+cTipo = 'D'
+cCompro=LEFT(Diario.comprob,2)
+nDebe = 0
+nRecno = RECNO()
+cOrden = Diario.Orden
+SCAN WHILE diario.Cuenta=cCuenta AND cTipo=diario.tipo and LEFT(Diario.comprob,2)=cCompro and cOrden = Diario.Orden
+	nDebe=nDebe+IIF(TIPO='D',diario.montos,0)
+ENDSCAN
+RETURN nDebe
+
+PROCEDURE SumaHaber
+PRIVATE cCuenta,nHaber,nRecno,cOrden
+cCuenta = Diario.Cuenta
+cTipo = 'H'
+nHaber = 0
+cCompro=LEFT(Diario.comprob,2)
+cOrden = Diario.Orden
+SCAN WHILE diario.Cuenta=cCuenta AND cTipo=diario.tipo and LEFT(Diario.comprob,2)=cCompro and cOrden = Diario.Orden
+	nHaber=nHaber+IIF(TIPO='H',diario.montos,0)
+ENDSCAN 
+RETURN nHaber
+
+PROCEDURE COR_HC
+*--------------
+* ABRE TABLAS PARA CORREJIR H/C 
+*
+CLOS DATA
+SET PATH TO \BENE2000\DATA
+
+USE HojCon ORDER TAG Reg_E51 IN 1
+USE IteHC  ORDER TAG IteHC1  IN 2
+USE AstPre ORDER TAG AstPre5 IN 3
+USE IteCla ORDER TAG IteCla1 IN 4
+USE Diario ORDER TAG Diario1 IN 5
+SELE AstPre
+SET FILTER TO TIPDOC='H/C'
+SELECT HojCon
+SET RELATION TO NUMMES+NUMHC INTO ITEHC
+SET RELATION TO NUMMES+NUMHC INTO ASTPRE ADDITIVE
+SET RELATION TO '240'+NUMHC+NUMMES INTO DIARIO ADDITIVE
+
+SELE IteHC
+SET RELATION TO CodPart INTO IteCla
+SELECT HojCon
+
+RETURN
+
+PROCEDURE COR_CP
+*--------------
+* ABRE TABLAS PARA CORREJIR R/I
+*
+CLOS DATA
+USE COMPAG ORDER TAG COMPAG1 IN 1
+USE ITECP  ORDER TAG ITECP1  IN 2
+USE ASTPAT					 IN 3
+USE ASTPRE ORDER TAG ASTPRE5 IN 4
+USE CHEQUE ORDER TAG CHEQUE1 IN 5
+USE RETEN  ORDER TAG RETEN1  IN 6
+USE DIARIO ORDER TAG DIARIO1 IN 7
+SELE ASTPRE
+SET FILTER TO TIPDOC='C/P'
+SELE ASTPAT
+INDEX ON NUMMES+NUMREF+TIPDOC TO XX FOR TIPDOC='C/P'
+SELECT COMPAG
+SET RELATION TO NUMMES+NUMCP INTO ITECP
+SET RELATION TO NUMMES+NUMCP INTO CHEQUE ADDITIVE
+SET RELATION TO NUMMES+NUMCP INTO RETEN  ADDITIVE
+SET RELATION TO NUMMES+NUMCP INTO ASTPAT ADDITIVE
+SET RELATION TO NUMMES+NUMCP INTO ASTPRE ADDITIVE
+SET RELATION TO '260'+NUMCP+NUMMES INTO DIARIO ADDITIVE
+
+RETURN
+
+PROCEDURE COR_RI
+*--------------
+* ABRE TABLAS PARA CORREJIR C/P
+*
+CLOS DATA
+USE RECING ORDER TAG RECING1 IN 1
+USE ITERI  ORDER TAG ITERI1  IN 2
+USE ASTPAT					 IN 3
+USE ASTPRE ORDER TAG ASTPRE5 IN 4
+USE DIARIO ORDER TAG DIARIO1 IN 5
+SELE ASTPRE
+SET FILTER TO TIPDOC='R/I'
+SELE ASTPAT
+INDEX ON NUMMES+NUMREF+TIPDOC TO XX FOR TIPDOC='R/I'
+SELECT RECING
+SET RELATION TO PERIODO+NUMMES+NUMRI INTO ITERI
+SET RELATION TO NUMMES+NUMRI INTO ASTPAT ADDITIVE
+SET RELATION TO NUMMES+NUMRI INTO ASTPRE ADDITIVE
+SET RELATION TO '250'+NUMRI+NUMMES INTO DIARIO ADDITIVE
+
+RETURN
+
+PROCEDURE ASTPRE
+*---------------
+*SACA LAS CUENTAS PRESUPUESTALES DE ASTPRE
+*
+CLOS DATA
+SET PATH TO \BENE2000\DATA
+USE ASTPRE IN 1
+USE PARMAE IN 2 ALIAS PARMA ORDER TAG PARMAE1
+INDEX ON TIPDOC+CODCAD+NUMMES+NUMREF TO XX FOR NUMMES=cMes
+SET FILTER TO TIPDOC='C/P' OR TIPDOC='H/C' OR TIPDOC='R/I'
+DO REPORTE WITH 2, "ASTPRE", ' ',1,.T.,.T.
+CLOS DATA
+RETURN
+
+PROCEDURE ASTPAT
+*---------------
+*SACA LAS CUENTAS PATRIMONIALES DE ASTPAT
+*
+CMES=1
+CLOS DATA
+SET PATH TO \BENE2000\DATA
+USE ASTPAT IN 1
+USE PARMAE IN 2 ALIAS PARMA ORDER TAG PARMAE1
+INDEX ON CodCta+TipCta+tipdoc+numref TO xx FOR MONT(fecha)=cMes AND codcta='101' AND codcta#'1010119'	&& Caja
+*INDEX ON CodCtc+TipDoc+numref TO xx FOR MONT(fecha)=cMes AND codcta='104'							&& Bancos
+DO REPORTE WITH 2, "ASTPAT", ' ',1,.T.,.T.
+CLOS DATA
+RETURN
+
+
+PROCEDURE AGRART
+*---------------
+*Agrega medicamenos al stock de farmacia
+*
+*SET STEP ON
+SET PATH TO \BENE2001\DATA
+CLOS DATA
+USE ITEART IN 1 ORDER TAG ITEART1
+USE STKALM IN 2 ORDER TAG STKALM2
+SET FILTER TO CODART='59'
+SET RELATION TO ALLTRIM(DESCRI) INTO STKALM
+COPY STRU TO XX
+USE XX IN 3 ALIAS ARTIC
+GO TOP
+SCAN
+	SELE STKALM
+	IF EOF()
+		SELE ITEART
+		SCATTER MEMVAR
+		SELE ARTIC
+		APPEND BLANK
+		GATHER MEMVAR
+	ENDIF
+	SELE ITEART
+ENDSCAN
+*SET STEP ON
+*QQ
+CLOS DATA
+USE XX IN 1 ALIAS ARTIC
+SELE ARTIC
+INDEX ON CODART TO XX
+USE STKALM IN 2
+SELE STKALM
+SET ORDER TO TAG STKALM1
+SELE ARTIC
+REPLACE CODART WITH TIPART+ALLTRIM(CODART) ALL
+SET RELATION TO CODART INTO STKALM
+GO TOP
+SCAN
+	SCATTER MEMVAR
+	SELE STKALM
+	IF EOF()
+		APPEND BLANK
+		GATHER MEMVAR
+	ENDIF	
+	SELE ARTIC
+ENDSCAN
+CLOS DATA
+ERASE XX.DBF
+ERASE XX.IDX
+RETURN
+
+PROCEDURE CORR_NC
+*----------------
+*PARA CORREGIR NOTAS DE CONTABILIDAD
+*-----------------
+CLOS DATA
+USE COMPRO IN 1 ORDER TAG COMPRO1
+USE DIARIO IN 2 ORDER TAG DIARIO11
+SET RELATION TO COMPROB+COMADI INTO DIARIO
+RETURN
+
+PROCEDURE JEMA
+**************
+PRIVATE cNumMes
+CLOS DATA
+cNumMes = '12'
+*USE COMPAG ORDER TAG COMPAG1
+*SET FILTER TO NumMes = cNumMes
+*DO REPORTE WITH 2, "cp", ' ',1,.F.,.T.
+
+clos data
+use cheque order tag cheque1
+SET FILTER TO NumMes = cNumMes
+DO REPORTE WITH 2, "Cheque", ' ',1,.F.,.T.
+
+clos data
+RETU
+
+use compag in 1 order tag compag1
+use hojcon in 2 order tag hojcon1
+use ordser in 3
+SET FILTER TO NumMes = cNumMes AND HojCon.TipDoc='O/S'
+INDEX ON ORDSER.NUMOS TO YY
+sele hojcon
+set filter to tipdoc = 'O/S'
+sele ordser
+INDEX ON NUMOS TO XX
+SELE COMPAG
+SET RELATION TO NUMMESHC+NUMHC INTO HOJCON
+SELE HOJCON
+SET RELATION TO NUMREF INTO ORDSER
+SELE COMPAG
+DO REPORTE WITH 2, "Seg_cp", ' ',1,.F.,.T.
+CLOS DATA
+
+RETURN
+
+PROCEDURE Borra_Fac
+*------------------
+*REVISAR ANTES DE UTILIZAR
+SET PATH TO \BENE2000\DATA
+IF !ve_passw("GLCH")
+	CLOS DATA
+	RETURN
+ENDIF
+*SET STEP ON
+USE diario
+***** OJO CON ESTO
+set filTer to comprob='05' AND MONT(fecemi)=4
+*****
+GO TOP
+IF YESNO("BORRANDO FACTURAS DEL MES "+STR(MONT(FECEMI),4))
+	
+	DO BORRFAC WITH '12506'			&& De Salud
+	DO BORRFAC WITH '1240601'		&& Venta de Medicinas
+	DO BORRFAC WITH '1240901'		&& Venta de Nichos del Presente Mes
+	DO BORRFAC WITH '1240902'		&& Venta de Nichos A¤os anteriores
+	DO BORRFAC WITH '1240903'		&& Venta de Terrenos para Mausoleos
+	DO BORRFAC WITH '1240904'		&& Saldo de terrenos para Mausoleos A¤os ANteriores
+	*DO BORRFAC WITH '1250905'		&& Auspicio de Video Loteria
+	
+ENDIF
+RETURN
+
+PROCEDURE BORRFAC
+*----------------
+*BORRA FACTURAS
+*----------------
+PARAMETERS cCuenta
+PRIVATE cRec,mComprob
+*SET STEP ON
+
+SET ORDER TO Diario3
+GO TOP
+DO ESPERA WITH 1,"BORRANDO FACTURAS DE LA CUENTA "+cCuenta+" DEL MES "+STR(MONT(FECEMI),4)
+mRec = RECNO()
+SCAN
+	SEEK cCuenta
+	IF EOF()
+		GO BOTT
+		EXIT
+	ENDIF
+	SKIP 1
+	mRec = RECNO()
+	SKIP -1
+	mComprob = 	Diario.comprob
+	SET ORDER TO Diario1
+	SEEK mComprob
+	DELE WHILE Diario.Comprob=mComprob
+	SET ORDER TO Diario3
+	GO mRec
+ENDSCAN
+DO Espera WITH 2
+RETURN
+
+PROCEDURE Caja
+*-------------
+cia = 'SOCIEDAD DE BENEFICENCIA DE PIURA'
+SET CENTURY OFF
+CLOS DATA
+USE PARMAE ORDER TAG PARMAE1
+SEEK 'MESANO'
+REPLACE Descri WITH LEFT(Descri,4)+cMes
+USE
+DO LibCaj
+RETURN
+
+PROCEDURE OS_Cp
+**************
+PRIVATE cNumMes
+CLOS DATA
+cNumMes = '05'
+
+USE ordser IN 1
+USE hojcon IN 2 ORDER TAG hojcon1
+USE compag IN 3 ORDER TAG compag1
+
+SELE OrdSer
+INDEX ON NUMOS TO XX
+SET RELATION TO Perhc+NumHc INTO HojCon
+SELE HojCon
+SET FILTER TO TipDoc='O/S'
+SET RELATION TO NumMesCP+NumCP INTO Compag
+SELE OrdSer
+SET FILTER TO ComPag.NumMes = cNumMes
+DO REPORTE WITH 2, "Seg_cp", ' ',1,.F.,.T.
+
+CLOS DATA
+
+RETURN
+
+
+PROCEDURE OS_Cp1
+**************
+PRIVATE cNumMes
+SET PATH TO \BENE98\DATA
+CLOS DATA
+*cNumMes = '05'
+
+USE ordser IN 1
+USE hojcon IN 2 ORDER TAG hojcon1
+USE compag IN 3 ORDER TAG compag1
+USE IteHC  IN 4 ORDER TAG IteHC1
+
+SELE IteHC
+SET FILTER TO Itehc.Codpart='531137'
+SET RELATION TO NumMes+NumHC INTO HojCon  ADDITIVE
+
+SELE HojCon
+SET RELATION TO NumMesCP+NumCP INTO Compag ADDITIVE
+
+sele IteHC
+
+DO REPORTE WITH 2, "Seg_cp1", ' ',1,.F.,.T.
+
+CLOS DATA
+
+RETURN
+
+
+PROCEDURE Pantalla
+*-----------------
+USE Parmae IN 0 ORDER TAG Parmae1 ALIAS Parma
+SELE Parma
+DEFINE WINDOW LIS FROM 5,15 TO 18,65 FLOAT DOUBLE TITLE '' COLOR SCHEME 5
+ACTIVATE WINDOW LIS
+
+STORE 1 TO vOpcion,OkCancel
+cMes    = SPAC(2)
+@ 02,01 SAY " Opciones : " GET vOpcion  FUNCTION '^ BUSCA;Asientos Presupuestales;Libro Caja'
+@ 06,01 SAY "   Mes a Reportar : "
+@ 06,22 GET cMes Valid Val_para(cMes,'FECMES',' ',22)
+@ 08,10 GET OkCancel FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+READ CYCLE
+RELEASE WINDOW LIS
+USE IN Parma
+RETURN
+
+PROCEDURE Escoge
+*---------------
+IF LASTKEY()=27 OR OkCancel = 2
+	cProc = ''
+	RETURN
+ENDIF
+DO CASE
+	CASE vOpcion = 1
+		cProc = 'Busca'
+	CASE vOpcion = 2
+		cProc = 'AstPre'
+	CASE vOpcion = 3
+		cProc = 'Caja'
+	OTHERWISE
+		cProc = ''
+ENDCASE
+
+PROCEDURE PantBusca
+*-----------------
+USE Parmae IN 0 ORDER TAG Parmae1 ALIAS Parma
+DEFINE WINDOW LIS FROM 5,15 TO 18,65 FLOAT DOUBLE TITLE '' COLOR SCHEME 5
+ACTIVATE WINDOW LIS
+
+STORE 1 TO vOpcion,OkCancel
+vCuentas = 1
+cCuenta  = SPAC(10)
+vComprobantes = 1
+cComprobante = SPAC(2)
+@ 01,01 GET vCuentas PICTURE '@*RH Una Cuenta;Todas Las Cuentas' 
+@ 03,05 GET cCuenta  PICTURE "@!" WHEN vCuentas=1
+@ 05,01 GET vComprobantes PICTURE '@*RH Un Comprobante;Todos Los Comprobantes' SIZE 1,11
+@ 07,01 GET cComprobante  PICTURE "!!" WHEN vComprobantes=1 VALID Val_para1(cComprobante,'TIPDOC',' ',5)
+@ 09,10 GET OkCancel FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+READ CYCLE
+RELEASE WINDOW LIS
+USE IN Parma
+RETURN
+
+PROCEDURE CadTri
+*---------------
+PARAMETERS xTrim
+SET DELE ON
+CLOS DATA
+DO CASE
+	CASE xTrim = 1
+		Mes1 = 1
+		Mes2 = 3
+	CASE xTrim = 2
+		Mes1 = 4
+		Mes2 = 6
+	CASE xTrim = 3
+		Mes1 = 7
+		Mes2 = 9
+	CASE xTrim = 4
+		Mes1 = 10
+		Mes2 = 12
+ENDCASE
+USE f:\bene2000\data\ITEHC IN 1 
+INDEX ON NumMes+CodCad+codfte+CodPart TO XX FOR BETW(VAL(NumMes),Mes1,Mes2) and estado#'99' AND Estado#'92'
+COPY STRU TO TRIMESTR
+SELE 0
+USE Trimestr
+INDEX ON NumMes+CodCad+codfte+CodPart TO yy
+SELE IteHC
+SCAN
+	m.NUMMES = PADL(ALLTRIM(STR(xTrim)),2,'0')
+	m.CODCAD = IteHC.CodCad
+	m.CODFTE = IteHC.CodFte
+	m.CODPART = IteHC.CodPart
+	m.VALPART = IteHC.ValPart
+	SELE Trimestr
+	IF !seek(m.NumMes+IteHC.CodCad+IteHC.codfte+IteHC.CodPart)
+		APPEND BLANK
+		GATHER MEMVAR
+	 ELSE
+		m.VALPART = m.ValPart*IIF(IteHC.TipOpe='-',-1,1)
+		REPLACE ValPart WITH ValPart+m.ValPArt
+	ENDIF
+	SELE IteHC
+ENDSCAN
+****
+SELE IteHC
+INDEX ON NumMesHM+CodCad+codfte+CodPart TO XX FOR BETW(VAL(NumMesHM),Mes1,Mes2) and Estado='92'
+GO TOP
+SCAN
+	m.NUMMES = PADL(ALLTRIM(STR(xTrim)),2,'0')
+	m.CODCAD = IteHC.CodCad
+	m.CODFTE = IteHC.CodFte
+	m.CODPART = IteHC.CodPart
+	m.VALPART = IteHC.ValPart
+	SELE Trimestr
+	IF !seek(m.NumMes+IteHC.CodCad+IteHC.codfte+IteHC.CodPart)
+		APPEND BLANK
+		GATHER MEMVAR
+	 ELSE
+		m.VALPART = m.ValPart*IIF(IteHC.TipOpe='-',-1,1)
+		REPLACE ValPart WITH ValPart+m.ValPArt
+	ENDIF
+	SELE IteHC
+ENDSCAN
+SELE Trimestr
+GO TOP
+DO REPORTE WITH 2, "CadTri", ' ',1,.F.,.T.
+
+ERASE Trimestr.Dbf
+ERASE xx.Idx
+ERASE yy.Idx
+
+RETURN
+
+PROCEDURE HOJCON
+*---------------
+*********************************************************
+* OPCION PARA DETALLES DE TODAS LAS HOJAS DE AFECTACIãN *
+*********************************************************
+CLOS DATA
+SET PATH TO \BENE2001\DATA
+USE ITEHC  IN 1
+USE HOJCON IN 2 order tag hojcon1
+USE Clase  IN 3 ORDER TAG Clase2
+USE ITECLA IN 4 ORDER TAG Itecla1
+INdEX ON NUMMES+CODPART+CODCLA TO XX for (codpart='531130')
+SET RELATION TO NUMMES+NUMHC   INTO hojcon ADDITIVE
+SET RELATION TO CodPart        INTO Clase  ADDITIVE
+SET RELATION TO CodPArt+CodCla INTO IteCla ADDITIVE
+
+do reporte with 2,"ResHC", "lista de afectaciones",2,.f.,.t.
+RETURN
+
+**********************************************************************************
+* OPCION PARA VER DETALLES DE LAS HOJAS DE AFECTACION EN PANTALA PREVIA RELACION *
+**********************************************************************************
+clear
+@ 10,5 SAY "Glosa:  "
+@ 11,5 SAY MLINE(HojCon.Observ,1)
+@ 12,5 SAY MLINE(HojCon.Observ,2)
+@ 13,5 SAY MLINE(HojCon.Observ,3)
+@ 14,5 SAY MLINE(HojCon.Observ,4)
+@ 15,5 SAY MLINE(HojCon.Observ,5)
+@ 16,5 SAY MLINE(HojCon.Observ,6)
+@ 17,5 SAY MLINE(HojCon.Observ,7)
+@ 18,5 SAY MLINE(HojCon.Observ,8)
+
+RETURN .T.
+
+PROCEDURE plananu
+*----------------
+
+PARAMETERS  nMes
+
+SET DEFA TO F:\BENE2001\DATA
+XANO='2001'
+
+public nSuma
+nTotOC = 0
+
+CLOS DATA
+USE IteOC  IN 1 ORDER TAG IteOC1  
+USE OrdCom IN 2 ORDER TAG OrdCom1 ALIAS Orden
+USE IteOC1 IN 3 ORDER TAG IteOC11
+USE Promae IN 4 ORDER TAG Promae1
+
+SET RELATION TO periodo+ numoc INTO Orden ADDITIVE
+SET FILTER TO BETW(VAL(Orden.NumMes),1,nMes) AND !EMPTY(CodArt)
+
+CIA='SOCIEDAD DE BENEFICENCIA DE PIURA'
+DO Reporte WITH 2,"PlanAnu","Plan Anual de Adquisiciones",2,.F.,.T.
+
+CLOS DATA
+
+FUNCTION SumaOC
+*------------
+PARAMETERS xComp
+PRIVATE xRec
+xRec   = RECNO()
+xComp  = IteOC.NumOC
+
+nTotOC = 0
+IF !EOF()
+	SCAN WHILE xComp = IteOC.NumOC
+		nTotOC = nTotOC + IteOC.ValTot
+	ENDSCAN
+	GO xRec
+ENDIF
+
+RETURN nTotOC
+*---.----
+
+PROCEDURE plananus
+*-----------------
+PARAMETERS  nMes
+
+SET DEFA TO F:\BENE2001\DATA
+XANO='2001'
+
+public nSuma
+nTotOC = 0
+
+CLOS DATA
+USE OrdSer IN 1 ORDER TAG OrdSer1 ALIAS Orden 
+USE IteOs1 IN 2 ORDER TAG IteOs11
+USE Promae IN 3 ORDER TAG Promae1
+
+SET RELATION TO periodo+ numOS INTO IteOS1 ADDITIVE
+SET FILTER TO BETW(VAL(Orden.NumMes),1,nMes)
+
+CIA='SOCIEDAD DE BENEFICENCIA DE PIURA'
+DO Reporte WITH 2,"PlanAnuS","Plan Anual de Adquisiciones",2,.F.,.T.
+
+CLOS DATA
+
+RETURN
+
+*---
+*JJ
+
+PROCEDURE plananuPART
+*--------------------
+
+PARAMETERS  nMes
+
+SET DEFA TO F:\BENE2001\DATA
+XANO='2001'
+
+public nSuma
+nTotOC = 0
+
+CLOS DATA
+USE IteOC  IN 1 ORDER TAG IteOC1  
+USE OrdCom IN 2 ORDER TAG OrdCom1 ALIAS Orden
+USE IteOC1 IN 3 ORDER TAG IteOC11
+USE Promae IN 4 ORDER TAG Promae1
+
+SET RELATION TO periodo+ numoc INTO iteoc1  ADDITIVE
+*SET RELATION TO periodo+ numoc INTO IteOC1 ADDITIVE
+susp
+
+SET FILTER TO BETW(VAL(Orden.NumMes),1,nMes) AND !EMPTY(CodArt)
+
+CIA='SOCIEDAD DE BENEFICENCIA DE PIURA'
+DO Reporte WITH 2,"PlanAnu","Plan Anual de Adquisiciones",2,.F.,.T.
+
+CLOS DATA
+
+FUNCTION SumaOC
+*------------
+PARAMETERS xComp
+PRIVATE xRec
+xRec   = RECNO()
+xComp  = IteOC.NumOC
+
+nTotOC = 0
+IF !EOF()
+	SCAN WHILE xComp = IteOC.NumOC
+		nTotOC = nTotOC + IteOC.ValTot
+	ENDSCAN
+	GO xRec
+ENDIF
+
+RETURN nTotOC
+*---.----
+
+PROCEDURE plananus
+*-----------------
+PARAMETERS  nMes
+
+SET DEFA TO F:\BENE2001\DATA
+XANO='2001'
+
+public nSuma
+nTotOC = 0
+
+CLOS DATA
+USE OrdSer IN 1 ORDER TAG OrdSer1 ALIAS Orden 
+USE IteOs1 IN 2 ORDER TAG IteOs11
+USE Promae IN 3 ORDER TAG Promae1
+
+SET RELATION TO periodo+ numOS INTO IteOS1 ADDITIVE
+SET FILTER TO BETW(VAL(Orden.NumMes),1,nMes)
+
+CIA='SOCIEDAD DE BENEFICENCIA DE PIURA'
+DO Reporte WITH 2,"PlanAnuS","Plan Anual de Adquisiciones",2,.F.,.T.
+
+CLOS DATA
+
+RETURN

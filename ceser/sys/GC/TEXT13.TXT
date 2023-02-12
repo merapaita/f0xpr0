@@ -1,0 +1,22 @@
+
+  CORP.TECNOLOGICA DE SERVI                                 FECHA  : 13/09/2006
+    ╞╞  C E S E R   ╝╝                                      PAGINA :        1
+
+                             RELACION DE INDICADORES
+
+     INDICADORES DE  ╞╞  DESPACHO                      
+
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё    CODIGO    DESCRIPCION                                                   Ё
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+      ECOM     EGRESO COMPRA                 
+      EDEM     EGRESO DEMOSTRACION           
+      EDEV     EGRESO DEVOLUCION             
+      EORF     EGRESO DE O/R FACT. F/GTIA.   
+      EORG     EGRESO DE O/R FACT. DE GTIA.  
+      EPRD     EGRESO PRODUCCION             
+      EVSU     EGRESO DE VENTA SUCURSAL      
+      EVTA     EGRESO VENTA                  
+
+ 

@@ -1,0 +1,27 @@
+ CORP.TECNOLOGICA DE                             INGRESO DE ORDENES POR EMISOR - TALLER                                 P gina :          1
+         CESER                                   ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                                 Fecha  : 25/09/2009
+  JR HUANUCO 480                        FECHA  : 01/08/2009                 AL : 30/08/2009                             Hora   :   08:58:48
+                                        EMISOR : 050  CESER PIURA           AL : 950  WENCI CHAUCA        
+                                        TALLER : 002  TALLER                AL : 008  TALLER QD           
+                                        GTIA.  : GREC EN GARANTIA RECLAMO   AL : GREC EN GARANTIA RECLAMO 
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³      Nø    O/R      S/S     FECHA    FCH.VTA  DOC. VENTA       MARCA MODELO         SERIE         CLIENTE                   TIP   ESTA   ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ TALLER : 005  TALLER AUDIO                  
+      EMISOR : 105  SONY OTROS DISTRIBUIDORES     
+        1   645316          04/08/2009 14/08/2008 000706         01   MHC-GT555      9161805        PORRAS MARTINEZ MANUEL    GREC
+                                                                                                TOTAL EMISOR 105  =====>       1
+                                                                                                                         -------
+                                                                                                TOTAL TALLER 005  =====>       1
+ TALLER : 006  TALLER VIDEO                  
+      EMISOR : 221  C.ACOP.CARSA PIURA            
+        1   645505          14/08/2009 11/05/2009 09781-12492    111  TF-DVD7377     0873018012     HERRERA CAJAN WILLIAN     GREC
+                                                                                                TOTAL EMISOR 221  =====>       1
+                                                                                                                         -------
+                                                                                                TOTAL TALLER 006  =====>       1
+ ==========================================================================================================================================
+                                                                                                 TOTAL INGRESADOS =====>       2
+ ==========================================================================================================================================
+

@@ -1,0 +1,27 @@
+ CORP.ANDINA DE DISTRIB.                                                                                               P═gina :          1
+       CESER                                        CONTROL DE SERVICIO POR TECNICO                                    Fecha  : 31/10/2005
+  CALLE CUZCO 1099                                  ммммммммммммммммммммммммммммммм                                    Hora   :   18:11:25
+                                                  Desde: 01/10/2005 Hasta: 31/10/2005
+здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё NЬ     FEC.O/R  NЬ O/R    NЬS/S   FEC.ESTA   CLIENTE                MARCA    MODELO        SERIE          INFORME                  GTIAЁ
+юдддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+     15977 PASAPERA DOMINGUEZ WALTER     
+    1 26/10/2005   622093   622093 27/10/2005 SAAVEDRA MARIA          AIWA       CSD-A220     S64L03N2383    HAY QUE REEMPLAZAR      FGAR
+                                                                      TOTAL EN PRESUPUESTO                 ====>    1
+    1 13/10/2005   621986   621986 17/10/2005 CESPEDES BARBOSA        SONY       CDX-S2210X   6537935        ARTICULO NECESITA       FGAR
+    1 24/10/2005   622067   622067 26/10/2005 TAVARA MORALES MARCO    DAIWA      HT-1000      DSA0266358     NO HAY IMAGEN, EN       GARA
+    2 28/10/2005   622118   622118 31/10/2005 TORRES SAUCEDO JUAN     SONY       DVP-NS575P   2165533        NO LEE DISCOS MP3,      GARA
+    3 31/10/2005   622127   622127 31/10/2005 CORONADO NAVARRO ESTELA L.G        MS-1144DP    502TAJD01364   POR MAGNETRON           GARA
+                                                                      TOTAL PENDIENTE POR REPUESTO         ====>    4
+    1 26/10/2005   622090   622090 26/10/2005 ORTEGA SILVIA           SONY       CFD-626      100988         FALLA: BANDEJA TRABADA, FGAR
+    2 27/10/2005   622100   622100 28/10/2005 PAZ CECILIA             DAIWA      DVD-305      40400893       SRTICULO REVISADO POR   FGAR
+                                                                      TOTAL EN MESA DE REPARACION          ====>    2
+    1 24/10/2005   622066   622066 28/10/2005 RIVERA DE ESPEZUA MERY  L.G        700E         402DINUH8903   ARTICULO INGRESA POR    GREC
+                                                                      TOTAL EN LIMA PARA REPARACION        ====>    1
+                                                                                                                ддддд
+                                                                      TOTAL PASAPERA DOMINGUEZ WALTER      ====>    8
+                                                                                                               дддддд
+                                                                                                 TOTAL    ====>     8
+                                                                                                               мммммм
+

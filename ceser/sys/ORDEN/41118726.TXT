@@ -1,0 +1,30 @@
+ CESER PIURA SRL                                                                                                     P gina :         1
+        CESER                                     INGRESO DE ORDENES POR TECNICO - PROVEEDOR                         Fecha  :07/01/2016
+   AV.SAN TEODORO                                 ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                         Hora   :  09:48:08
+                                                DEL        : 01/12/2015   AL        : 31/12/2015
+                                                DEL TECNICO:      60070   AL TECNICO:      60070
+                                                DEL TALLER : 004          AL TALLER : 004 
+                                                DEL EMISOR : 050          AL EMISOR : 050 
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ N§   S/S    FECHA DE    MODELO           CLIENTE        TELEFONO ³   O/R    FECHA DE      ESTADO ACTUAL       FECHA DE  OBSERVACIONES³
+³               S/S                                                ³           EMISION                           ESTADO                ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ TECNICO :    60070 SANDOVAL SANDOVAL ALEXANDER   
+
+   1     7436 02/12/2015 120-1016LA  CATACORA GARCIA RONY 95060542 ³    7436 02/12/2015 FACTURADO Y ENTREGADO  17/12/2015 FALLA> POR    
+   2     7439 03/12/2015 L355        ASOCIACION DE PADRES 95390198 ³    7439 03/12/2015 EN DIAGNOSTICO         12/12/2015 FALLA| ERROR  
+   3     7452 04/12/2015 SM-T210     BARRANZUELA CHIRA FR 94539751 ³    7452 04/12/2015 FACTURADO Y ENTREGADO  31/12/2015 FALLA| NO     
+   4     7460 04/12/2015 SVE14117FLB  SOSA ZAPATA THELMO    212422 ³    7460 04/12/2015 EN DIAGNOSTICO         11/12/2015 FALLA> TECLADO
+   5     7468 07/12/2015 SM-T330     ALCAS MENA JUAN CARL   613897 ³    7468 07/12/2015 ALMACEN SIN REPARAR    17/12/2015 FALLA| IMAGEN 
+   6     7472 07/12/2015 L210        CARNERO BERRU MIRTHA 96883462 ³    7472 09/12/2015 ALMACEN DE REPARADOS   14/12/2015 FALLA| ERROR  
+   7     7492 10/12/2015 GT-N8010    VILLALTA CAMACHO NAT 96960223 ³    7492 10/12/2015 EN DIAGNOSTICO         17/12/2015 FALLA| NO     
+   8     7549 16/12/2015 L555        ARRIETA NINO GAMMAL  96658314 ³    7549 16/12/2015 ALMACEN SIN REPARAR    29/12/2015 FALLA| BASE   
+   9     7562 17/12/2015 C462J       MARCOS OCHOA CALDERO 95656219 ³    7562 17/12/2015 EN DIAGNOSTICO         29/12/2015 FALLA| NO     
+  10     7566 18/12/2015 NP270E4E-K0 DEZAR ESTRADA MARIA  97647998 ³    7566 18/12/2015 ALMACEN SIN REPARAR    29/12/2015 FALLA| BIOS   
+  11     7578 21/12/2015 L350        MARQUEZ SAAVEDRA OMA 95699712 ³    7578 21/12/2015 ALMACEN SIN REPARAR    29/12/2015 FALLA| NO     
+  12     7601 28/12/2015 SM-T210     IBA;EZ ESPINOZA WILI   323390 ³    7601 28/12/2015 EN DIAGNOSTICO         05/01/2016 FALLA| NO     
+  13     7630 30/12/2015 SVD11225CLB BARRON GUADALUPE       304079 ³    7630 30/12/2015 ASIGNACION DE O/R      30/12/2015               
+     TECNICO :     60070    13
+
+
+

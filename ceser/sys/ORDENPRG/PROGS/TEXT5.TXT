@@ -1,0 +1,28 @@
+ CESER PIURA SRL                                 INGRESO DE ORDENES POR EMISOR - TALLER                                 P gina :          1
+         CESER                                   ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                                 Fecha  : 29/09/2022
+  AV.SAN TEODORO N§442                  FECHA  : 01/09/2022                 AL : 29/09/2022                             Hora   :   21:28:19
+                                        EMISOR : 050  CESER PIURA           AL : 050  CESER PIURA         
+                                        TALLER : 002  TALLER                AL : 002  TALLER              
+                                        GTIA.  : FGAR FUERA DE GARANTIA     AL : VENT VENTAS              
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³      Nø    O/R      S/S     FECHA    FCH.VTA  DOC. VENTA       MARCA MODELO         SERIE         CLIENTE                   TIP   ESTA   ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ TALLER : 002  TALLER ELECTROMECANICA        
+      EMISOR : 050  CESER PIURA                   
+        1    52814          01/09/2022                           96   47LB5800-SB    403RMQKA2940   GUTIERREZ ARROYO JOEL     FGAR
+        2    52815          02/09/2022                           96   MH8295DIR      709TAJDDL372   GONZAGA GALVEZ DIONEL     FGAR
+        3    52836          05/09/2022                           04   UN46F5500AGXPE Z7CJ3CVD500189 PE;A FRIAS EVELIN         FGAR
+        4    52868          12/09/2022                           04   MW8740W        72QDB00066     CRAGG CAMERO LUIS         FGAR
+        5    52890          15/09/2022                           13   L575            W9AY043297    CALLE PACHERREZ JEAN      FGAR
+        6    52899          16/09/2022                           04   UN55H7100AGXPE                NOBLECILLA MACEDA CARLOS  FGAR
+        7    52901          16/09/2022                           13   L575           W9YA119004     MENDOZA CHAPILLIQUEN      FGAR
+        8    52947          27/09/2022                           04   UN40H6203AGXPE 02XE3CFF800083 YARLEQUE SANCHEZ KARINA   FGAR
+                                                                                                TOTAL EMISOR 050  =====>       8
+                                                                                                                         -------
+                                                                                                TOTAL TALLER 002  =====>       8
+ ==========================================================================================================================================
+                                                                                                 TOTAL INGRESADOS =====>       8
+ ==========================================================================================================================================
+

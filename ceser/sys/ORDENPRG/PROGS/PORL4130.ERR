@@ -1,0 +1,4 @@
+WHERE st_mvord.orden = st_iorep.numdoc AND   (st_iorep.indest <> 'N' AND st_mvord.estado =   wrk_estado AND st_mvord.dia >= fecha1 AND   st_mvord.dia <= fecha2) 
+Error en l¡nea 65: Comando irreconocible.
+ORDER BY st_mvord.destado, st_mvord.dia,   st_iorep.numdoc   INTO CURSOR   QUERY
+Error en l¡nea 69: Comando irreconocible.

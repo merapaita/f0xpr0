@@ -1,0 +1,41 @@
+CESER PIURA SRL                                             P═gina :          1
+        CESER            PRODUCCION MENSUAL DE TECNICOS     Fecha  : 10/12/2015
+ AV.SAN TEODORO N╖442    ммммммммммммммммммммммммммммммм    Hora   :   16:24:36
+                      DE TALLER :003         A :005 
+                      DE FECHA  :01/12/2015  A :10/12/2015
+зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+Ё     T┌cnico    Descripci╒n                          Total Producci╒n        Ё
+юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+ 003  TALLER L.BLANCA               
+      010  ALMACEN DE REPARADOS          
+          2008 CHUQUIHUANCA NI╔O JHON                         2
+                 TOTAL ALMACEN DE REPARADOS     ====>         2
+                                                      ддддддддд
+                 TOTAL TALLER L.BLANCA          ====>         2
+
+ 004  TALLER COMPUTADORAS           
+      010  ALMACEN DE REPARADOS          
+         60070 SANDOVAL SANDOVAL ALEXANDER                   12
+                 TOTAL ALMACEN DE REPARADOS     ====>        12
+      021  ALMACEN SIN REPARAR           
+         60070 SANDOVAL SANDOVAL ALEXANDER                    4
+                 TOTAL ALMACEN SIN REPARAR      ====>         4
+                                                      ддддддддд
+                 TOTAL TALLER COMPUTADORAS      ====>        16
+
+ 005  TALLER AUDIO                  
+      010  ALMACEN DE REPARADOS          
+         15180 RAMIREZ CALDERON ANGEL                         2
+         30977 PARDO APARCANA LUIS ALBERTO                    3
+                 TOTAL ALMACEN DE REPARADOS     ====>         5
+      021  ALMACEN SIN REPARAR           
+         15180 RAMIREZ CALDERON ANGEL                         1
+                 TOTAL ALMACEN SIN REPARAR      ====>         1
+                                                      ддддддддд
+                 TOTAL TALLER AUDIO             ====>         6
+
+                                                      ддддддддд
+                 TOTAL  GENERAL                 ====>        24
+                                                      ддддддддд
+

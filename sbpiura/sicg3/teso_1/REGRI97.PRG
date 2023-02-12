@@ -1,0 +1,2773 @@
+* ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+* ³ RegRi.PRG     21/11/96                             L: 2773   ³	
+* ³ Registro de Recibos de Ingreso - Emisi¢n de Facturas         ³
+* ³ AUTOR   : Ing. Federico Montero Valdiviezo REGION GRAU       ³
+* ÔÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¾
+*- Abriendo Archivos
+
+USE Parmae   IN  1  ORDER TAG Parmae1 	    ALIAS Parma
+USE Cajas    IN  2  ORDER TAG Cajas1   		ALIAS Caja
+USE RecIng97 IN  3  ORDER TAG RecIng1  		ALIAS Ri
+USE IteRi97  IN  4  ORDER TAG IteRi1   		ALIAS IteRi
+USE Ingreso  IN  5  ORDER TAG Ingreso1 		ALIAS IngR
+USE AstPat97 IN  6  ORDER TAG AstPat14      ALIAS astpat
+USE Cuentas  IN  7  ORDER TAG Cuentas1 		ALIAS cuenta
+USE Auxil    IN  8  ORDER TAG Auxil1   		ALIAS Auxil
+USE Factura  IN 12  ORDER TAG Factura1 		ALIAS Fact
+USE MaePre   IN 16  ORDER TAG MaePre1       ALIAS maepre
+USE ItePar   IN 25  ORDER TAG ItePar1       ALIAS ItePar          
+USE Movbco   IN 10  ORDER TAG Movbco11  	ALIAS Movbco
+USE Reversio IN 14  ORDER TAG Rever1    	ALIAS Rever
+USE SubCtas  IN 17  ORDER TAG Subctas1      ALIAS Subcta
+
+*- Mensajes de aviso al usuaRio
+Vmens01 = ' Recibos de Ingreso : REVISION '
+Vmens02 = ' °    Registro de Recibos de Ingreso   ° '
+Vmens04 = 'Dicho R/I no fue encontrada'
+Vmens05 = 'No existe R/I anteRior'
+Vmens06 = 'No existe R/I siguiente'
+Vmens07 = '¨ Desea Anular este R/I ?'
+Vmens08 = 'No hay registros para procesar'
+Vmens09 = 'Este R/I ha sido anulada'
+Vmens10 = 'El R/I ya est  Atendido'
+Vmens11 = 'El R/I ha sido devuelto'
+Vmens12 = 'El R/I ya tiene Cheque'
+SELECT Ri
+GO BOTTOM
+*- VaRiables de trabajo (registro a trabajar)
+PUBLIC aa,vOrden,vOrd,vRec,vAli,vCli,vMes,vTipPro,vToCli,vCta,vAlo,vMesT,vKey,vTot1,M.TipAux,wCodPart,Mdescr,w_TipCtc,wclase,Vnumero,wtiprev
+PUBLIC vcodprg,vcodsub,vproyec,vsubpry,vcodact,vflag1,vscta,vofig,vctc,Vdeb,vhab,w_ctaD,w_ctaH,w_clas,w_asip,vctadeb,vctahab,vvaldeb,vvalhab,VUSER_ID,wuser_id
+PUBLIC fruc,fdescri,fdirecc,figv,fserie,fnumero,fconcepto,vconcurso,Dconcurso
+vUser_ID = ALLTRIM(LEFT(SYS(0),15))
+wUser_ID= CHRTRAN(vUser_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',;
+          'XWAQSD!R$1Z2LH)^CEP&67UIYMTxw%/-+}{?')
+STORE SPACE(1)  TO Vorden,w_asip
+STORE SPACE(40) TO aa,vKey
+STORE SPACE(2)  TO vMes,vMesT,vcodprg,vofig
+STORE SPACE(3)  TO vcodsub,vproyec,vcodact
+STORE SPACE(11) TO wCodPart
+STORE SPACE(10) TO vdeb,vhab,w_ctaD,w_ctaH,vctadeb,vctahab
+STORE SPACE(8)  TO vscta
+STORE SPACE(9)  TO w_clas
+STORE 0         TO vflag1,vvaldeb,vvalhab
+STORE SPACE(4)  TO vsubpry
+STORE SPACE(14) TO vctc
+vhab  ='1010101000'
+w_ctaD='1010101000'
+SCATTER MEMVAR BLANK         && Crea vaRiables en blanco
+*- Inicia proceso
+DO Inicia                    && Define ventanas, men£s, t¡tulos
+HIDE POPUP ALL
+DO Pantalla                  && Muestra pantalla inicial
+DO Vista
+ON KEY LABEL F2 DO VISOBS
+*- Activa men£ mientras vEn_accion es .T.
+STORE .T. TO vEn_accion
+DO WHILE vEn_accion
+  ACTIVATE SCREEN
+  ACTIVATE MENU mMenu
+ENDDO
+DO Fin_opcion
+RETURN
+
+PROCEDURE Inicia             && Crea ventanas, men£s y t¡tulos
+*---------------
+ ACTIVATE SCREEN
+ vTempo = ' Revisa  Busca  AnteRior  Siguiente  CorRige  Ingresa  Anular   Listar  Termina '
+ DO Logos WITH Rotulo1,vTempo
+
+ DEFINE WINDOW Wind_0 FROM 00,00 TO 23,79  DOUBLE ;
+ TITLE Vmens01 COLOR SCHEME 10
+
+ DEFINE WINDOW Wind_1 FROM 00,00 TO 14,79  DOUBLE ;
+ TITLE Vmens02 COLOR SCHEME 10
+
+ DEFINE WINDOW Wind_2 FROM 15,00 TO 23,79 DOUBLE ;
+ TITLE 'Detalle: Rec.Ing.' ;
+ COLOR SCHEME 10
+
+ DEFINE WINDOW Wind_3 FROM 15,00 TO 23,79 DOUBLE ;
+ TITLE 'Detalle: Bol.dep.' ;
+ COLOR SCHEME 10
+
+ DEFINE WINDOW Wind_4 FROM 06,00 TO 23,79 DOUBLE ;
+ TITLE 'Detalle: Factura [F10] para terminar' ;
+ COLOR SCHEME 10
+
+ DEFINE WINDOW wind_6 FROM 13,10 TO 17,70 ;
+ TITLE ' ASIENTOS PRESUPUESTALES' COLOR SCHEME 02
+
+ DEFINE WINDOW Wind_7 FROM 00,00 TO 23,79  DOUBLE ;
+ TITLE Vmens01 COLOR SCHEME 10
+
+ DEFINE WINDOW Wind_8 FROM 13,10 TO 17,70  ;
+ TITLE 'Concurso de Licitaci¢n'  COLOR SCHEME 10
+
+ DEFINE MENU mMenu COLOR SCHEME 3
+ DEFINE PAD revis   OF mMenu PROMPT '\<Revisa'     AT 24,00
+ DEFINE PAD busca   OF mMenu PROMPT '\<Busca'      AT 24,08
+ DEFINE PAD anter   OF mMenu PROMPT '\<AnteRior'   AT 24,15
+ DEFINE PAD proxi   OF mMenu PROMPT '\<Siguiente'  AT 24,25
+ DEFINE PAD corRi   OF mMenu PROMPT '\<CorRige'    AT 24,36
+ DEFINE PAD ingre   OF mMenu PROMPT '\<Ingresa'    AT 24,45
+ DEFINE PAD anula   OF mMenu PROMPT 'a\<Nular '    AT 24,54
+ DEFINE PAD lista   OF mMenu PROMPT '\<Listar '    AT 24,63
+ DEFINE PAD termi   OF mMenu PROMPT '\<Termina'    AT 24,71
+ ON SELECTION PAD revis  OF mMenu DO revis
+ ON SELECTION PAD busca  OF mMenu DO busca
+ ON SELECTION PAD anter  OF mMenu DO anter
+ ON SELECTION PAD proxi  OF mMenu DO proxi
+ ON SELECTION PAD corRi  OF mMenu DO corRi
+ ON SELECTION PAD ingre  OF mMenu DO ingre
+ ON SELECTION PAD anula  OF mMenu DO anula
+ ON SELECTION PAD lista  OF mMenu DO lista
+ ON SELECTION PAD termi  OF mMenu DO termi
+ ON KEY LABEL f4 DO imp_Ri
+ ON KEY LABEL F9 DO cor_as
+ RETURN
+
+PROCEDURE Pantalla           && Pinta m scara de datos
+*-----------------
+ ACTIVATE WINDOW Wind_1
+ CLEAR
+ @  1, 2 SAY "       N£mero R/I :"
+ @  1,43 SAY "Fec.R/I :"
+ @  1,62 SAY "PeRiodo :"
+ @  2, 2 SAY " Deposito Cta.Cte :"
+ @  2,62 SAY "Per.Ref :"
+ @  3, 2 SAY "         Tipo R/I :"
+ @  4, 2 SAY "    Tipo Auxiliar :" 
+ @  5, 2 SAY "  Cod.  Auxiliar. :" 
+ @  6, 2 SAY "  Doc. Referencia :"
+ @  6,40 SAY " Fecha Doc.Refer. :"
+ @ 07,02 SAY "Fte.Financiamiento:"
+ @ 07,40 SAY "             Tipo :"
+ @ 08,02 SAY "         Programa :"
+ @ 09,02 SAY "      SubPrograma :"
+ @ 10,02 SAY " Proyecto/Activid :"
+ @ 11, 2 SAY " Monto Depositado :"
+ @ 12,0 SAY PADC('° ®F2¯ Observaciones  ®F4¯ImpRime R/I  ®F9¯ Corrige Asientos Patrimoniales °',79,' ') COLOR W+/B
+ RETURN
+
+PROCEDURE Vista              && Coloca valores de BD en vaRiables y pinta datos
+*--------------
+ ACTIVATE WINDOW Wind_1
+ SELECT Ri
+ SCATTER MEMVAR
+ ON KEY LABEL F9 DO cor_as
+ @  1,22 SAY m.NumRi
+ @  1,27 SAY m.numMes
+ @  1,52 SAY m.FecRi
+ @  1,72 SAY m.Periodo
+ @  2,22 SAY m.CodCtc 
+ @  2,72 SAY m.PerRef PICTURE "!!" 
+ @  3,22 SAY Val_Para(m.TipRi,"TIPRI ","V",22,30)
+ @  3,60 SAY IIF(m.tipRi = '50','REFERENCIAL',IIF(m.estado='99','  ANULADO ','  ATENDIDO ')) COLOR SCHEME 2
+ @  4,22 SAY Val_Para(m.TipAux,"AUXIL ","V",22,30)
+ @  5,22 say val_Auxi(ALLT(m.CodPrv),ALLT(m.TipAux),'V')
+ *@  5,22 say m.codprv  PICTURE '@S10' 
+ @  6,22 SAY m.DocRef   PICTURE "@S18"
+ @  6,60 SAY m.FecDig 
+ @  7,22 SAY Val_para(m.CodFte,'CODFTE','V',22)
+ @  7,60 SAY val_para(m.tipfun,'TIPFUN','D',22,15)
+ @  8,22 SAY val_para(SUBSTR(m.codcal, 8,2),'CODPRG','V',26,40)
+ @  9,22 SAY VAL_SUBP(substr(m.codcal,10,3),'CODSUB'+substr(m.codcal,8,2)+'    ','V',22,40)
+ @ 10,22 SAY VAL_PYAC(alltRim(substr(m.codcal,13,3)),m.Periodo+substr(m.CodCal, 8,5),'V',22,40,3)
+   IF alltRim(m.Tipfun)='I' 
+	  @ 10,25 SAY '.'
+	  @ 10,26 SAY VAL_SUPY(alltRim(substr(m.codcal,16,2)),m.Periodo+substr(m.codcal, 8,8),'V',22,40,5) 
+   ELSE
+      @ 10,22 SAY Spac(60)	
+   ENDIF
+ @ 11,22 SAY m.CanRi    PICTURE "99,999,999.99"
+ DO Vista_Hijo
+ RETURN
+
+PROCEDURE Vista_Hijo
+*-------------------
+SCATTER MEMVAR
+xdesmov=SPACE(6)
+xdesmov='MovBco'
+SELE CAJA
+SEEK ALLT(m.codctc)
+IF FOUND() AND caja.clase='T'
+   xdesmov='Revers'
+ENDIF  
+SELECT IteRi
+SEEK m.Periodo+ALLTRiM(m.NumMes)+ALLTRiM(m.NumRi)
+IF !empty(ALLT(docref))
+   IF allt(xdesmov)#'Revers'
+	   @ 4,58 SAY 'Mov.Bco Autom tico' COLOR SCHEME 2
+	ELSE   
+	   @ 4,58 SAY 'Revers. Autom tica' COLOR SCHEME 2
+	ENDIF   
+ELSE	
+	   @ 4,58 SAY 'Pendiente Mov.Bco ' COLOR SCHEME 5
+ENDIF	
+BROWSE ;
+   NOCLEAR NOREFRESH NOOPTIMIZE NOEDIT TIMEOUT 0.005;
+   WINDOW Wind_2 KEY m.Periodo+ALLTRiM(m.NumMes)+ALLTRiM(m.NumRi);
+   FIELDS;
+   docref  :H= xdesmov ,;
+   BolDep  :H= 'Boleta',;
+   FecDep  :H= 'FecDep',;
+   ImpParc :H= 'Nombre Part.',;
+   CodPart :H= 'C¢d.Par' ,;
+   aa = IIF(!EMPTY(CODPART),mdescr,' ') :H='DescRipci¢n' :40 :W=!EMPTY(CodPart)
+   SELECT Ri
+RETURN
+
+PROCEDURE Revis              && Revisi¢n de BD en browse
+*--------------
+ SELE Ri
+ IF EOF()
+    DO standby WITH Vmens08
+    RETURN
+ ENDIF
+ SET RELATION TO PERiODO+NumMes+NumRi INTO IteRi
+ SET SKIP TO IteRi
+ Vtemp = RECNO()
+ HIDE MENU mMenu
+ ACTIVATE SCREEN
+ vTempo = '°°°°°°°°°°°Presione ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+ DO Logos WITH Rotulo1,vTempo
+ ON KEY LABEL F10 KEYBOARD CHR(23)
+ BROWSE WINDOW Wind_0 NOEDIT NOAPPEND NODELETE NOMENU FIELDS ;
+ NumRi         :H=' N§ Ri',;
+ NumMes        :H='Mes',;
+ FecRi         :H='FecRi',;
+ CodCtc        :H='CtaCte',;
+ IteRi.BolDep  :H='Boleta',;
+ IteRi.FecDep  :H='Fec.B/D',;
+ IteRi.Impparc :H='Monto B/D',;
+ CanRi         :H='Total R/I',;
+ DocRef        :H='Referencia'
+ vTempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+ DO Logos WITH Rotulo1,vTempo
+ IF LASTKEY()=27
+   GOTO Vtemp
+ ENDIF
+ SHOW MENU mMenu
+ ON KEY LABEL F10
+ SET RELATION OFF INTO Ri
+ SELE Ri
+ SET RELATION OFF INTO IteRi
+ DO Vista
+ RETURN
+
+PROCEDURE Busca              && Realiza b£squeda directa
+*--------------
+VTEMP=RECNO()
+IF EOF()
+   DO standby WITH Vmens08
+   RETURN
+ENDIF
+vano=space(2)
+vano=Right(str(year(date())),2)
+ACTIVATE WINDOW standby
+ @ 1,01 SAY 'Ingrese N£mero Ri: ' GET vRi PICTURE '@!' DEFAULT SPACE(4)
+ @ 1,26 SAY 'Mes:' GET vMes
+ @ 1,36 SAY 'A¤O:' GET vano
+READ
+DEACTIVATE WINDOW standby
+ IF EMPTY(vRi) .or. LASTKEY()=27
+    RETURN
+ ELSE
+    vRi = PADL(ALLTRiM(vRi),4,'0')
+    SEEK vano+ALLTRiM(vMes)+ALLTRiM(vRi)
+    IF !FOUND()
+       DO standby WITH Vmens04
+       GOTO Vtemp
+    ELSE
+       DO Vista
+    ENDIF
+ ENDIF
+RETURN
+
+PROCEDURE Anter
+*--------------
+ IF EOF()
+    DO standby WITH Vmens08
+    RETURN
+ ENDIF
+ IF !BOF()
+    SKIP -1
+ ENDIF
+ IF BOF()
+    GO TOP
+    DO standby WITH Vmens05
+ ELSE
+    DO Vista
+ ENDIF
+ RETURN
+
+PROCEDURE Proxi
+*--------------
+ IF EOF()
+    DO standby WITH Vmens08
+    RETURN
+ ENDIF
+ IF !EOF()
+   SKIP
+ ENDIF
+ IF EOF()
+   DO standby WITH Vmens06
+   GO BOTTOM
+ ELSE
+   DO Vista
+ ENDIF
+ RETURN
+
+
+PROCEDURE CorRi
+*--------------
+ IF EOF()
+    DO standby WITH Vmens08
+    RETURN
+ ENDIF
+ IF Estado = '99'  && Anulada
+   DO STANDBY WITH Vmens09
+   RETURN
+ ENDIF
+ STORE .F. TO ingreso
+ SELECT Ri
+ SCATTER MEMVAR
+ ACTIVATE WINDOW Wind_1
+ DO PANTALLA
+ IF RLOCK() OR F_LOCK(1)
+ VCODPRG=SUBSTR(M.CODCAL,8,2)
+ VCODSUB=SUBSTR(M.CODCAL,10,3)
+    @  1,22 SAY m.NumRi
+    @  1,27 GET m.NumMes   PICTURE '!!'  VALID Val_Para(m.NUmMes  ,'FECMES',' ',27,9) DISABLE
+    @  1,52 GET m.FecRi    VALID(MONTH(m.fecRi)=VAL(m.nummes)) 
+    @  1,72 get m.Periodo  PICTURE "!!" VALID valf(m.fecRi)  DISABLE
+    @  2,22 GET m.CodCtc   PICTURE "@!" VALID Val_Fun("Caja","CodCtc","CodCtc+' '+DescRi",m.CodCtc,1,2,22) DISABLE
+    @  2,72 GET m.PerRef   PICTURE "!!"
+    READ
+    @  3,22 GET m.TipRi    PICTURE "@!" VALID Val_ParaD(m.TipRI,"TIPRI "," ",22)
+    @  4,22 GET m.TipAux   PICTURE "!!" VALID val_ParaD(ALLT(m.TipAux),"AUXIL "," ",22) 
+    @  5,22 GET m.CodPrv   PICTURE "@!" VALID val_AuxiD(ALLT(m.CodPrv),ALLT(m.TipAux),'A',30)
+    @  6,22 GET m.DocRef   PICTURE "@S18"  
+    @  6,60 GET m.FecDig
+	@  7,22 GET m.codfte   PICTURE '!!!' VALID val_para(m.codfte ,'CODFTE',' ',22,20)
+	@  7,60 GET m.tipfun   PICTURE '!'   VALID val_para(m.tipfun,'TIPFUN',' ',60,15,2)  
+    @ 8,22 GET vCodPrg     PICTURE '!!'   VALID VAL_PARA(vCodPrg,'CODPRG',' ',22,40) 
+    @ 9,22 GET vCodSub     PICTURE '!!!'  VALID VAL_SUBP(vCodSub,'CODSUB'+vCodPrg,' ',22,40)
+    @ 10,22 GET vProyec    PICTURE '!!!'  VALID VAL_PYAC(aLLTRiM(vProyec),m.PerRef+ALLTRiM(vcodprg)+ALLTRiM(vCodsub),'vproyec',22,40)  when m.tipfun='I'
+    @ 10,22 GET vCodAct    PICTURE '!!!'  VALID VAL_PYAC(aLLTRiM(vCodact),m.PerRef+ALLTRiM(vcodprg)+ALLTRiM(vCodsub),'vcodact',22,40)  when m.tipfun='F' 
+    @ 10,26 GET vSubPry    PICTURE '!!!!' VALID VAL_SUPY(alltRim(vSubPry),m.PerRef+ALLTRiM(vcodprg)+ALLTRiM(vCodsub)+ALLTRiM(vProyec),'vSubPry',22,40)  when !EMPTY(vProyec) and ALLTRiM(m.tipfun)='I'
+    @ 11,22 GET m.CanRi    PICTURE "99,999,999.99"
+    READ VALID Val_Read()
+    m.usuario = wuser_id
+    m.codcal  = m.PerRef+ALLTRiM(m.NumMes)+ALLTRiM(m.CodFte)+ALLTRiM(vCodPrg)+ALLTRiM(vCodSub)+IIF(m.Tipfun='I',alltRim(vProyec)+alltRim(vSubPry),alltRim(vCodAct))	  
+ 	  SELE CAJA
+	  SEEK m.CodCtc
+	  w_TipCtc=CAJA.TIPO
+	  wbanco = CAJA.banco
+	  wclase = CAJA.clase
+  SELE parma
+  SEEK 'TIPRI '+m.tipri
+  w_ctaH=LEFT(ALLT(parma.descriaux),10)
+  w_clas=IIF(LEFT(ALLT(parma.descriau2),1)='S',SUBSTR(ALLT(parma.descriau2),4,9),SPACE(9))
+  w_asip=LEFT(ALLT(parma.descriau2),1)
+	  SELE Ri
+      IF LASTKEY() # 27
+	  IF ALLT(m.tipri)='02'  &&Venta de Bases
+         DO concurso
+      ENDIF   	     
+         =Observa()    
+         SELECT Ri
+         IF RLOCK()
+            GATHER MEMVAR
+         ENDIF
+       SELECT IteRi
+          DO IngAp
+          IF ALLT(wclase)='T'  &&Cta Unica Tesoro P£blico
+          	 DO CASE
+          	    CASE m.tipri='03'
+          	         wtiprev='03'
+          	    CASE m.tipri='12'
+          	         wtiprev='01'
+          	    CASE m.tipri='15'
+          	         wtiprev='02'
+          	    CASE m.tipri='17'
+          	         wtiprev='04'
+          	    CASE m.tipri='29'
+          	         wtiprev='06'
+        	  	OTHER
+          	         wtiprev='07'
+          	ENDCASE    
+   		    wAstpat = pidapREV()
+		    DO Tra_Hijo
+	        =Valida()
+	        DO IngAp2 WITH Wastpat
+		  ELSE	          	    
+   		  	vAstpat = pidapBD()
+		    DO Trabaja_Hijo
+	        =Valida()
+   		    DO IngAp1 WITH vastpat
+   		  ENDIF  
+		  IF ALLT(w_asip)='S'
+			 DO compre    
+		  ENDIF   
+		  IF ALLT(m.tipri)='02'
+		     DO factura WITH m.tipri,'2'
+		  ENDIF
+    ELSE
+       DO STANDBY WITH 'Proceso cancelado'
+    ENDIF
+ ELSE
+    DO STANDBY WITH 'Registro bloqueado'
+ ENDIF
+ UNLOCK ALL
+ ON KEY LABEL F2 DO VISOBS
+ ON KEY LABEL f4 DO imp_Ri
+ DO Vista                    && Muestra nuevos datos
+ RETURN
+
+
+PROCEDURE Ingre              && Crea nuevo registro en BD
+*--------------
+ SELECT Ri
+ DO Pantalla
+ SCATTER MEMVAR BLANK
+ SELECT Parma
+ SEEK 'CORREL'+'RECING'
+ m.NumRi = PADL(NumEnt+1,4,'0')
+ STORE DATE() TO m.FecRi, m.FecDEP, m.fecdig
+ m.Estado= '00'
+ STORE .T. TO ingreso
+   @  1,22 GET m.NumRi  PICTURE '!!!!'
+   @  1,26 SAY '.'
+   @  1,27 GET m.NumMes  PICTURE '!!'   VALID Val_Para(m.NUmMes  ,'FECMES',' ',27,9) .AND. IGUAL()
+   @  1,52 GET m.FecRi VALID(MONTH(m.fecRi)=VAL(m.nummes)) AND VALF(M.FECRi)
+   @  1,72 get m.Periodo PICTURE '!!'
+   @  2,22 GET m.CodCtc PICTURE "@!"   VALID Val_Fun("Caja","CodCTc","CodCtc+' '+DescRi",m.CodCtc,1,2,22)
+   @  2,72 GET m.PerRef  PICTURE "!!"
+   READ
+   @  3,22 GET m.TipRi    PICTURE "@!"   VALID Val_Parad(m.TipRi,"TIPRI "," ",22,30)
+   @  4,22 GET m.TipAux   PICTURE "!!"   VALID Val_ParaD(m.TipAux,"AUXIL "," ",22,30) 
+   @  5,22 GET m.CodPrv   PICTURE "@!"   VALID val_AuxiD(m.CodPrv,m.TipAux,"A",30)
+   @  6,22 GET m.DocRef PICTURE "@S18"
+   @  6,60 GET m.FecDig
+   @  7,22 GET m.codfte    PICTURE '!!!' VALID val_para(m.codfte ,'CODFTE',' ',22,20)
+   @  7,60 GET m.tipfun    PICTURE '!'   VALID val_para(m.tipfun,'TIPFUN',' ',60,15,2) 
+   @  8,22 GET vCodPrg     PICTURE '!!'  VALID VAL_PARA(vCodPrg,'CODPRG',' ',22,40) 
+   @ 9,22  GET vCodSub     PICTURE '!!!' VALID VAL_SUBP(vCodSub,'CODSUB'+vCodPrg,' ',22,40)
+   @ 10,22 GET vProyec     PICTURE '!!!'  VALID VAL_PYAC(aLLTRiM(vProyec),m.PerRef+ALLTRiM(vcodprg)+ALLTRiM(vCodsub),'vproyec',22,40)  when m.tipfun='I'
+   @ 10,22 GET vCodAct     PICTURE '!!!'  VALID VAL_PYAC(aLLTRiM(vCodact),m.PerRef+ALLTRiM(vcodprg)+ALLTRiM(vCodsub),'vcodact',22,40)  when m.tipfun='F' 
+   @ 10,26 GET vSubPry     PICTURE '!!!!' VALID VAL_SUPY(alltRim(vSubPry),m.PerRef+ALLTRiM(vcodprg)+ALLTRiM(vCodsub)+ALLTRiM(vProyec),'vSubPry',22,40)  when !EMPTY(vProyec) and m.tipfun='I'
+   @ 11,22 GET m.CanRi  PICTURE "99,999,999.99"
+   READ VALID Val_Read()
+   m.usuario = wuser_id
+   m.codcal  = m.PerRef+ALLTRiM(m.NumMes)+ALLTRiM(m.CodFte)+ALLTRiM(vCodPrg)+ALLTRiM(vCodSub)+IIF(m.Tipfun='I',alltRim(vProyec)+alltRim(vSubPry),alltRim(vCodAct))	  
+  SELE CAJA
+  SEEK ALLTRiM(m.CodCtc)
+  IF FOUND()
+  w_TipCtc=CAJA.TIPO
+  wbanco = CAJA.banco
+  wclase = Caja.Clase
+  vdeb   = Caja.CuentaH
+  ENDIF
+  SELE parma
+  SEEK 'TIPRI '+m.tipri
+  w_ctaH=LEFT(ALLT(parma.descriaux),10)
+  w_clas=IIF(LEFT(ALLT(parma.descriau2),1)='S',SUBSTR(ALLT(parma.descriau2),4,9),SPACE(9))
+  w_asip=LEFT(ALLT(parma.descriau2),1)
+  SELE Ri
+  IF LASTKEY()#27
+    vAnula = .F.
+    SELECT Ri
+    IF F_Appd()
+       GATHER MEMVAR
+       UNLOCK ALL
+       SELECT Parma
+       SEEK 'CORREL'+'RECING'
+       REPLACE NumEnt WITH NumEnt + 1       
+       SELECT Ri
+       IF ALLT(wclase)='T'
+	   	  SELECT Parma
+	      SEEK "CORREL"+"REVERS"
+		  vNUMERO=PADL(NUMENT+1,4,'0')
+          DO Agreg1
+       ELSE
+	   	  SELECT Parma
+	      SEEK "CORREL"+"MOVBCO"
+		  vNUMERO=PADL(NUMENT+1,4,'0')
+          DO Agreg_item
+       ENDIF
+       SELECT IteRi
+	  IF ALLT(m.tipri)='02'  &&Venta de Bases
+         DO concurso
+      ENDIF   	     
+       =Observa()
+       SCATTER MEMVAR
+       DO WHILE .T.
+          SELECT IteRi
+          DO IngAp
+          IF ALLT(wclase)='T'  &&Cta Unica Tesoro P£blico
+          	 DO CASE
+          	    CASE ALLT(m.tipri)='03'
+          	         wtiprev='03'
+          	    CASE ALLT(m.tipri)='12'
+          	         wtiprev='01'
+          	    CASE ALLT(m.tipri)='15'
+          	         wtiprev='02'
+          	    CASE ALLT(m.tipri)='17'
+          	         wtiprev='04'
+          	    CASE ALLT(m.tipri)='29'
+          	         wtiprev='06'
+		       	OTHER
+          	         wtiprev='07'
+          	ENDCASE    
+   		    wAstpat = pidaprev()
+		    DO Tra_hijo
+	        DO IngAp2 WITH Wastpat
+		  ELSE	          	    
+   		  	vAstpat = pidapbd()
+		    DO Trabaja_Hijo
+   		    DO IngAp1 WITH vastpat
+   		  ENDIF  
+		  IF ALLT(w_asip)='S'
+			 DO compre    
+		  ENDIF   
+		  IF ALLT(m.tipri)='02'  &&Venta de Bases
+		     DO factura WITH m.tipri,'1'
+		  ENDIF
+          IF LASTKEY() = 27
+             IF YESNO( '¨ Cancela el Ingreso ?' )
+                vAnula = .T.
+                EXIT
+             ENDIF
+          ELSE
+             IF YESNO( '¨ Est n correctos los datos ?')
+                EXIT
+                =Valida()
+             ENDIF
+          ENDIF
+       ENDDO
+       IF vAnula
+          DO Anula
+       ENDIF
+    ELSE
+       GO BOTTOM
+    ENDIF
+ ELSE
+    DO STANDBY WITH 'Proceso cancelado'
+ ENDIF
+ UNLOCK ALL
+ SELECT Ri
+ GO BOTT
+ ON KEY LABEL F2 DO VISOBS
+ ON KEY LABEL f4 DO imp_Ri
+ DO Vista
+ RETURN
+
+
+FUNCTION VALF
+*-----------------
+PARAMETERS XFEC
+m.Periodo=RiGHT(STR(YEAR(XFEC)),2)
+m.PerRef=m.Periodo
+RETURN 
+
+
+PROCEDURE Trabaja_Hijo
+*---------------------
+ ACTIVATE SCREEN
+ HIDE MENU mMenu
+ vTempo = '°°°°°°°°F5->Agregar°°°°°°°°°°°°°°F8->Eliminar°°°°°°°°°°°°°°F10->Terminar°°°°°°°°'
+ DO Logos WITH Rotulo1,vTempo
+ ON KEY LABEL F5  DO Agreg_item
+ ON KEY LABEL F8  DO Elimi_item
+ ON KEY LABEL F10 KEYBOARD CHR(23)
+ SELE IteRi
+ SEEK ALLTRiM(m.Periodo)+ALLTRiM(m.NumMes)+ALLTRiM(m.NumRi)
+ IF !FOUND()
+    DO Agreg_Item
+ ENDIF
+   BROWSE NOAPPEND NODELETE NOMENU NOREFRESH NOOPTIMIZE WINDOW Wind_2;
+   KEY m.Periodo+ALLTRiM(m.NumMes) + ALLTRiM(m.NumRi) FIELD ;
+   Tipo       :H= 'T':P='@M O,P',;
+   CodPart    :H= 'Partida':V=VAL_INGE(SUBSTR(CodPart,11,2),LEFT(CodPart,9),'codpart'):F:W=Tipo='P',;
+   aa = IIF(!EMPTY(CODPART),mdescr,' ') :H='DescRipci¢n' :40 :W=!EMPTY(CodPart),;
+   BolDep     :H= 'N§ Bol./Dep.': P='@!',;
+   FecDep     :H= 'FechaDep',;
+   Glosa      :H= 'Ingreso en': P='@!',;
+   ImpParc    :H='Monto' : P='999,999,999,999.99',;
+   DocREF     :H='B/D' :R :F
+   
+ SELECT IteRi
+ ON KEY LABEL F10
+ ON KEY LABEL F8
+ ON KEY LABEL F5
+ UNLOCK ALL
+ SELECT Ri
+ ACTIVATE SCREEN
+ vTempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+ DO Logos WITH Rotulo1,vTempo
+ SHOW MENU mMenu
+ RETURN
+
+
+PROCEDURE Anula
+*--------------
+ SELECT Ri
+ IF EOF()
+    DO standby WITH Vmens08
+    RETURN
+ ENDIF
+ IF Estado = '99' && ya pas¢
+    DO STANDBY WITH Vmens09
+    RETURN
+ ENDIF
+ velimina = YESNO('¨ Desea ANULAR este R/I ?')
+ IF vElimina .AND. ( RLOCK() .OR. F_Lock(1) )
+   REPLACE ESTADO WITH '99'
+   REPLACE usuario WITH wuser_id
+ ENDIF
+ UNLOCK
+ sele astpat
+
+ SEEK m.Periodo+ALLTRiM(m.nummes)+m.numRi+alltRim(m.CodCtc)
+ IF FOUND()
+   	scan while PERiODO=m.Periodo AND nummes=alltRim(m.nummes) and numref=m.numRi and codctc=m.CodCtc and tipdoc="R/I" 
+	    IF RLOCK() .OR. F_LOCK(1)
+    		   DELETE NEXT 1
+		ENDIF       
+	    UNLOCK
+    ENDSCAN
+ ENDIF	    
+    USE astpre97   IN 9  ORDER TAG astpre20      ALIAS astpre
+    sele astpRE
+    SEEK m.Periodo+ALLTRiM(m.nummes)+m.numRi+alltRim(m.CodCtc)
+    IF FOUND()
+    	SCAN while PERiODO=m.Periodo AND nummes=alltRim(m.nummes) and numref=m.numRi and codctc=m.CodCtc and tipdoc="R/I" 
+		    IF RLOCK() .OR. F_LOCK(1)
+		       DELETE NEXT 1
+		    ENDIF       
+		    UNLOCK
+	    ENDSCAN
+    ENDIF
+    USE IN 9 
+    SELE Ri
+   DO Vista
+ RETURN
+
+PROCEDURE Agreg_Item
+*-------------------
+SELECT Parma
+SEEK "CORREL"+"MOVBCO"
+vNUMERO=PADL(NUMENT+1,4,'0')
+SELECT IteRi
+IF F_Appd()
+   REPLACE Periodo WITH m.Periodo,;
+   		   NumRi   WITH m.NumRi ,;
+   		   NumMes  WITH m.NumMes,;
+   		   ImpParc WITH 0,;
+   		   Estado  WITH m.Estado,;
+   		   Fecdep  WITH m.fecRi,;
+   		   docref  WITH vnumero,;
+   		   tipo    WITH IIF(EMPTY(w_clas),'O','P'),;
+   		   codpart WITH w_clas,;
+   		   impparc WITH m.canri
+   SELECT Parma
+   SEEK "CORREL"+"MOVBCO"
+   REPLACE NUMENT WITH NUMENT+1
+   SELE ITERI
+ENDIF
+RETURN
+
+
+
+PROCEDURE Elimi_Item
+*-------------------
+SELECT IteRi
+if rlock()
+   SELECT IteRi
+   DELETE NEXT 1
+else
+   do standby with 'No puede eliminar este Item.'
+endif
+
+return
+
+
+PROCEDURE Lista  &&Reportes vaRios
+*--------------
+vAli=ALIAS()
+vOrd=ORDER()
+IF EOF()
+   DO standby WITH Vmens10
+   RETURN
+ENDIF
+IF LASTKEY()=27
+   RETURN
+ENDIF
+vTemp=RECNO()
+PRiVATE VFTE
+DEFINE WINDOW LIS FROM 4,15 TO 24,65 FLOAT DOUBLE TITLE 'Listado Recibo de Ingresos' COLOR SCHEME 5
+ACTIVATE WINDOW LIS
+STORE 1         TO vToCli,Vorden,vTipPro,vToCta,vLista
+STORE SPACE(4)  TO vCli
+STORE SPACE(2)  TO vMes,vMesT,vTipRi,vtipaux,VPER
+store space(10) to vauxiliar
+STORE SPACE(14) TO vcta
+STORE SPACE(3)  TO vFTE
+vMesT='0'+ALLTRiM(STR(MONTH(DATE())))
+vMest = PADL(ALLTRiM(vMest),2,'0')
+store date() to vfecini,vfecfin
+Vper=m.Periodo
+Vcli=m.numri
+Vmes=m.nummes
+@ 01,01 SAY "     Tipo Listado : " GET vlista  FUNCTION '^ Documento;CtaCte;FteFto;Fecha de Emisi¢n;Concepto;Auxiliar'          
+@ 05,01 SAY "           N§ R/I : "
+@ 05,22 GET vCli    WHEN VLISTA=1  PICTURE '!!!!'
+@ 05,27 GET vMesT    WHEN VLISTA=1  PICTURE '!!'  
+@ 05,30 GET VPER   WHEN VLISTA=1  PICTURE '!!'   VALID ValRes()
+@ 06,01 SAY "   Cta. CorRiente : "
+@ 06,22 GET vcta  VALID val_fun('Caja', 'CodCtc', "CodCtC+' '+DescRi",vcta,1,8,12) AND vctc() WHEN  vlista=2  OR VLISTA=5
+@ 07,01 SAY "      Fte. Financ.: " GET vfte  VALID Val_Para(Vfte,"CODFTE"," ",22,30) WHEN VLISTA=3 
+@ 09,01 SAY "         Concepto : " GET vTIPRi  VALID Val_ParaD(VTipRI,"TIPRI "," ",22,30) WHEN VLISTA=5 
+@ 10,01 SAY "     Tipo Auxiliar: " GET vTIPaux VALID Val_ParaD(vtipaux,"AUXIL "," ",22,30) WHEN VLISTA=6
+@ 11,01 SAY "   C¢digo Auxiliar: " GET vAUXILIAR VALID Val_AUXID(Vauxiliar,VTIPAUX," ",30) WHEN VLISTA=6 
+@ 13,01 SAY "           Estado : " GET vTipPro  FUNCTION '^ Registrados;Anulados' WHEN vlista=2
+@ 15,01 SAY " Fecha de Emisi¢n : "
+@ 16,22 GET vfecini  PICTURE '@D' COLOR SCHEME 7   WHEN vlista<>1 
+@ 16,32 GET vfecfin  PICTURE '@D' VALID (vfecfin >= vfecini) COLOR SCHEME 7 WHEN vlista<>1 
+@ 18,10 GET OKCANCEL FUNCTION '*TH \!\<OK;\?\<Cancela' DEFAULT 1 SIZE 1,11,8
+READ CYCLE
+RELEASE WINDOW LIS
+IF OKCANCEL = 1
+   ACTIVATE WINDOW STANDBY
+   @ 01,04 SAY 'Espere un momento........'
+   SELECT Ri
+   SET MEMOWIDTH TO 50
+   vInd = SYS(3) + '.IDX'
+   DEACTIVATE WINDOW STANDBY
+   
+      DO CASE
+      
+	   CASE vLista = 1
+		    VKEY=PERiODO+ALLTRiM(VMES)+VCLI
+    		SELE Ri
+    		SEEK VKEY
+    		DO repPRG WITH "LISRi"," Listado Comprobante de Pago ",2
+    		
+       CASE vLista=2
+		      vTitulo=IIF(vTipPro=1,'Registrados ',' Anulados ')
+	          DO CASE
+	           CASE Vtippro=1
+		     	   SELECT DISTINCT I.*, R.TIPRi, R.CODCTC  ;
+		     	   FROM IteRi I, RECING R;
+		     	   WHERE !EMPTY(R.PERiODO+R.NumMes+R.NumRi) AND ;
+		     	    (R.PERiODO+R.NumMes+R.NumRi=I.PERiODO+I.NumMes+I.NumRi) ;
+		     	   	AND (R.codctc=vcta AND BETWEEN(R.fecRi,vfecini,vfecfin);
+		     	   	AND R.ESTADO#"99");
+		     	   ORDER BY I.numRi ;
+		     	   INTO CURSOR ITRi
+
+		     	   SELECT ITRi
+		     	   VIND = SYS(3)+'.IDX'
+		     	   INDEX ON PERiODO+NumMes+NumRi TO (VIND)
+				   SELECT Ri
+		     	   SET FILTER TO codctc=vcta AND BETWEEN(fecRi,vfecini,vfecfin) AND ESTADO#"99"
+				   SELECT ItRi
+	  		       SET RELATION TO PERiODO+NumMes+NumRi INTO Ri
+				   SELECT ITRi
+		     	   IF EOF()
+		     	      DO STANDBY WITH "Registros no existen"
+		     	      SELE  Ri
+		     	      SET FILT TO
+		     	      GO BOTT
+		     	      RETURN
+		     	   ENDIF   
+               CASE Vtippro=2
+		     	   SELECT DISTINCT I.*, R.TIPRi, R.CODCTC  ;
+		     	   FROM IteRi I, RECING R;
+		     	   WHERE !EMPTY(R.PERiODO+R.NumMes+R.NumRi) AND ;
+		     	    (R.PERiODO+R.NumMes+R.NumRi=I.PERiODO+I.NumMes+I.NumRi) ;
+		     	   	AND (R.codctc=vcta AND BETWEEN(R.fecRi,vfecini,vfecfin);
+		     	   	AND R.ESTADO="99");
+		     	   ORDER BY I.numRi ;
+		     	   INTO CURSOR ITRi
+
+		     	   SELECT ITRi
+		     	   VIND = SYS(3)+'.IDX'
+		     	   INDEX ON PERiODO+NumMes+NumRi TO (VIND)
+				   SELECT Ri
+		     	   SET FILTER TO codctc=vcta AND BETWEEN(fecRi,vfecini,vfecfin) AND ESTADO="99"
+				   SELECT ItRi
+	  		       SET RELATION TO PERiODO+NumMes+NumRi INTO Ri
+				   SELECT ITRi
+		     	   IF EOF()
+		     	      DO STANDBY WITH "Registros no existen"
+		     	      SELE Ri
+		     	      SET FILT TO
+		     	      GO BOTT
+		     	      RETURN
+		     	   ENDIF   
+		     ENDCASE	   
+             DO REPORTE WITH 2,"LisRiCt",' Reporte de R/I por Cuentas CorRientes ',1,.F.,.T.
+             vflag1=0
+             SELE ri
+             set filter to
+         CASE vLista=3
+       	      SELE ri
+              SET FILT TO  ri.codfte=ALLT(vfte) AND BETWEEN(Ri.fecRi,vfecini,vfecfin) AND Ri.ESTADO#'99' 
+              GO TOP
+		      IF EOF()
+		     	      DO STANDBY WITH "Registros no existen"
+		     	      SET FILT TO
+		     	      SET ORDER TO RECING1
+		     	      SELE Ri
+		     	      GO BOTT
+		     	      RETURN
+	     	   ENDIF   
+              DO REPORTE WITH 2,"LisRiFte",' Reporte de R/I por Fuente de Financiamiento ',1,.F.,.T.
+              SET FILT TO
+         CASE vLista=4
+		     	   SELECT DISTINCT I.*, R.TIPRi, R.CODCTC  ;
+		     	   FROM IteRi I, RECING R;
+		     	   WHERE !EMPTY(R.PERiODO+R.NumMes+R.NumRi) AND ;
+		     	    (R.PERiODO+R.NumMes+R.NumRi=I.PERiODO+I.NumMes+I.NumRi) ;
+		     	   	AND BETWEEN(R.fecRi,vfecini,vfecfin);
+		     	   ORDER BY I.numRi ;
+		     	   INTO CURSOR ITRi
+
+		     	   SELECT ITRi
+		     	   VIND = SYS(3)+'.IDX'
+		     	   INDEX ON PERiODO+NumMes+NumRi TO (VIND)
+				   SELECT Ri
+		     	   SET FILTER TO BETWEEN(fecRi,vfecini,vfecfin) 
+				   SELECT ItRi
+	  		       SET RELATION TO PERiODO+NumMes+NumRi INTO Ri
+				   SELECT ITRi
+		     	   IF EOF()
+		     	      DO STANDBY WITH "Registros no existen"
+		     	      SELE Ri
+		     	      SET FILT TO
+		     	      GO BOTT
+		     	      RETURN
+		     	   ENDIF   
+	              DO REPORTE WITH 2,"LisRifec",' Reporte de R/I por Fecha ',1,.F.,.T.
+         CASE vLista=5
+	     	   VIND = SYS(3)+'.IDX'
+              INDEX ON Ri.TipRi TO (vInd)  FOR  Ri.TIPRi = ALLTRiM(VTIPRi) AND BETWEEN(Ri.fecRi,vfecini,vfecfin) AND Ri.ESTADO<>'99' AND Ri.CODCTC=ALLTRiM(VCTA)
+		     	   IF EOF()
+		     	      DO STANDBY WITH "Registros no existen"
+		     	      SET INDEX TO
+		     	      SET ORDER TO RECING1
+		     	      SELE Ri
+		     	      GO BOTT
+		     	      RETURN
+		     	   ENDIF   
+              DO REPORTE WITH 2,"LisRiCON",' Reporte por Tipo de Recibo de Ingreso ',1,.F.,.T.
+              SELE ri
+              set filter to
+         CASE vLista=6
+	     	   VIND = SYS(3)+'.IDX'
+              INDEX ON Ri.Tipaux+Ri.codprv TO (vInd) FOR BETWEEN(Ri.fecRi,vfecini,vfecfin) AND Ri.ESTADO#'99' .AND. Ri.TIPAUX = ALLTRiM(VTIPAUX) AND Ri.CODPRV = ALLTRiM(VAUXILIAR) 
+         	   IF EOF()
+		     	      DO STANDBY WITH "Registros no existen"
+		     	      SET INDEX TO
+		     	      SET ORDER TO RECING1
+		     	      SELE Ri
+		     	      GO BOTT
+		     	      RETURN
+ 	     	   ENDIF   
+               DO REPORTE WITH 2,"LisRiAux",' Reporte por Tipo de AUXILIAR ',1,.F.,.T.
+               SET INDEX TO
+      ENDCASE
+      sele Ri
+      SET MEMOWIDTH TO 50
+ENDIF
+IF vTemp>0
+   GO vTemp
+ENDIF
+DO vista
+RETURN
+
+
+PROCEDURE ValRes
+*--------------
+ SELECT Ri
+ vTemp=recno()
+ IF EOF()
+    DO standby WITH Vmens08
+    RETURN
+ ENDIF
+ SEEK VPER+vMes+vCli
+ IF !FOUND()
+    SET ORDER TO RecIng1
+    HIDE MENU mMenu
+    ACTIVATE SCREEN
+    vTempo = '°°°°°°°°°°°Presione ®F10¯ para seleccionar  o  ®Esc¯ para cancelar°°°°°°°°°°°°'
+    DO Logos WITH Rotulo1,vTempo    
+    ON KEY LABEL F10 KEYBOARD CHR(23)    
+    BROWSE WINDOW Wind_0 NOEDIT NOAPPEND NODELETE NOMENU FIELDS ;
+    PERiODO,;
+    NumMes :H='Mes',;
+    NumRi  :H=' N§ Ri' ,;
+    FecRi  :H='Fecha' ,;
+    CanRi  :H='Total R/I',;
+    Observ :H='Observaci¢n',;
+    CodCtc :H='CtaCte'
+
+    vTempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+    DO Logos WITH Rotulo1,vTempo
+    IF LASTKEY()=27
+       GO Vtemp
+    ENDIF
+
+    SHOW MENU mMenu
+    ON KEY LABEL F10
+    SET RELATION TO
+    GO Vtemp
+ ENDIF
+ vMes=NumMes
+ vCli=NumRi
+ RETURN .t.
+
+
+PROCEDURE LISRi &&Programa Reporte usa repprg F.M.V.
+*--------------
+PARAMETERS XCOP
+PRiVATE FILA,VDEBPRE,VHABPRE,vfte
+DO CASE
+	CASE _DEST1=1
+		SET DEVICE TO FILE (P_FIL)
+	CASE _DEST1=2
+		SET DEVICE TO PRiNTER
+	CASE _DEST1=3
+		SET DEVICE TO FILE (P_FIL)
+ENDCASE	
+STORE 0 TO XVAL,TVAL
+VDEBPRE=SPACE(11)
+HABPRE=SPACE(11)
+SELE Ri
+SET MEMOWIDTH TO 50
+Vper=Ri.PERiODO
+vMES=alltRim(nummes)
+vcli=numRi
+VCTA=ALLTRiM(CODCTC)
+Vkey= Ri.PERiODO+ALLTRiM(Ri.NUMMES)+Ri.NUMRi
+vfte=ALLT(ri.codfte)
+@1,46  SAY CHR(15)
+@1,48  SAY "<< RECIBO DE INGRESOS N§ "+NUMRi+'.'+NUMMES+" >>"
+@1,104 SAY "PAG:"
+@1,112 SAY ALLTRiM(STR(_PAGENO,8))
+@2,19  SAY ALLTRiM(CIA)
+@2,86  SAY IIF(m.tipRi='50','R E F E R E N C I A L',IIF(Estado='99','A N U L A D O',' A T E N D I D O'))
+@3,19  SAY "LisRi"
+@3,51  SAY "Presupuestado A¤o 199"+RiGHT(DTOC(DATE()),1)
+@3,104 SAY "FECHA:"
+@3,112 SAY fecRi           
+fila=4
+@FILA,17 SAY "Ú"
+@FILA,19 SAY REPLICATE("Ä",103)
+@FILA,121 SAY "¿" 
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,21 SAY "CODIGO"
+@FILA,30 SAY "³"
+@FILA,53 SAY "C O N C E P T O"
+@FILA,82 SAY "³"
+@FILA,95 SAY "I M P O R T E"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,82 SAY "³"
+@FILA,88 SAY "PARCIAL"
+@FILA,107 SAY "TOTAL"
+@FILA,121 SAY "³"
+fila=fila+1
+@FILA,17 SAY "À"
+@FILA,18 SAY REPLICATE("Ä",103) 
+@FILA,121 SAY "Ù"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,31 SAY CHR(27)+'G'
+@FILA,33 SAY MLINE(Ri.Observ,1)
+@FILA,80 SAY CHR(27)+'H'
+@FILA,86 SAY "³"
+@FILA,105 SAY "³"
+@FILA,125 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,40 SAY MLINE(Ri.Observ,2)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,3)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,4)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,5)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,6)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,7)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,8)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,9)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,10)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,11)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,12)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,13)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,32 SAY MLINE(Ri.Observ,14)
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,31 SAY CHR(27)+'G'
+@FILA,33 SAY "Cta:"+m.codctc
+@FILA,54 SAY val_fun('Caja','codctc','LEFT(Descri,28)',m.codctc)
+@FILA,80 SAY CHR(27)+'H'
+@FILA,84 SAY "³"
+@FILA,103 SAY "³"
+@FILA,123 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,31 SAY CHR(27)+'G'
+@FILA,33 SAY "Contrat/Usuario: "+val_Auxi(ALLT(m.CodPrv),ALLT(m.TipAux),'D',37)
+@FILA,80 SAY CHR(27)+'H'
+@FILA,86 SAY "³"
+@FILA,105 SAY "³"
+@FILA,125 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,31 SAY CHR(27)+'G'
+@FILA,33 SAY factu(m.periodo,m.nummes,m.numri)
+@FILA,80 SAY CHR(27)+'H'
+@FILA,86 SAY "³"
+@FILA,105 SAY "³"
+@FILA,125 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,31 SAY CHR(27)+'G'
+figv=18
+IF m.tipri='02'
+	@FILA,33 SAY "L¡quido  :"
+	@FILA,44 SAY ROUND((m.canri*100)/(figv+100),2) PICTURE "999,999.99"
+ENDIF
+@FILA,80 SAY CHR(27)+'H'
+@FILA,86 SAY "³"
+@FILA,105 SAY "³"
+@FILA,125 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,31 SAY CHR(27)+'G'
+IF m.tipri='02'
+	@FILA,33 SAY "I.G.V.   :"
+	@FILA,44 SAY ROUND(((m.canri*100)/(figv+100))*(figv/100),2) PICTURE "999,999.99"
+ENDIF
+@FILA,80 SAY CHR(27)+'H'
+@FILA,86 SAY "³"
+@FILA,105 SAY "³"
+@FILA,125 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,82 SAY "³"
+@FILA,101 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+ @FILA,17 SAY "³"
+SELE IteRi
+SEEK VKEY 
+IF FOUND()
+	IF iteri.tipo='P'
+		IF VAL(iteri.nummes)<=3
+		   IF ALLT(vfte)='PRP'
+			   Vdebpre = '9120101000'
+			   vhabpre = '9020101000'
+		   ELSE   
+			   vdebpre = '9140101000'
+			   vhabpre = '9040101000'
+		   ENDIF
+		ELSE   
+		   vdebpre = IIF(ALLT(vfte)='PRP','9020101020','9020101040')
+		   vhabpre = IIF(ALLT(vfte)='PRP','9010101020','9010101040')
+		ENDIF   
+	ELSE
+    	STORE ' ' TO vdebpre,vhabpre
+	ENDIF    	
+	@FILA,19 SAY IteRi.CODPART
+	@FILA,30 SAY "³"
+	@FILA,32 SAY IIF(!EMPTY(IteRi.concep),LEFT(IteRi.ConCep,48),LEFT(IteRi.Glosa,48))
+ELSE
+	@FILA,30 SAY "³"
+ENDIF
+SELE Ri
+@FILA,82 SAY "³"
+@fila,83 say Ri.canRi picture '@z 999,999,999.99'
+@FILA,101 SAY  "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+ @FILA,17 SAY  "³"
+@FILA,30 SAY  "³"
+@FILA,82 SAY  "Ú"
+@FILA,83 SAY REPLICATE("Ä",38)
+@FILA,121 SAY "¿" 
+FILA=FILA+1
+ @FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,82 SAY "³"
+@FILA,88 SAY "TOTAL  --->"
+@FILA,103 SAY Ri.Canri picture '@z 999,999,999,999.99'
+@FILA,121 SAY "³"
+FILA=FILA+1
+ @FILA,17 SAY "³"
+@FILA,30 SAY "³"
+@FILA,82 SAY "À"
+@FILA,83 SAY REPLICATE("Ä",38) 
+@FILA,121 SAY "Ù"
+FILA=FILA+1
+@FILA,17 SAY "<<<<<< CODIGO DE LA CONTABILIDAD PRESUPUESTAL Y CLASIFICACION PROGRAMATICA DEL GASTO PUBLICO  >>>>>>>>>"
+FILA=FILA+4
+@FILA,17 SAY "Ú"
+@FILA,19 SAY REPLICATE("Ä",103)
+@FILA,121 SAY "¿" 
+FILA=FILA+1
+ @FILA,17 SAY "³"
+ @FILA,25 SAY "Cuenta Mayor"
+ @FILA,48 SAY "³"
+ @FILA,56 SAY "³"
+ @FILA,65 SAY "³"
+ @FILA,70 SAY "³"
+ @FILA,75 SAY "³"
+ @FILA,80 SAY "³"
+ @FILA,86 SAY "³"
+ @FILA,92 SAY "³"
+ @FILA,102 SAY "³"
+ @FILA,112 SAY "³"
+ @FILA,121 SAY "³"
+ FILA=FILA+1
+ @FILA,17 SAY "³"
+ @FILA,22 SAY "Debe"
+ @FILA,33 SAY "³"
+ @FILA,38 SAY "Haber"
+ @FILA,48 SAY "³"
+ @FILA,50 SAY "Sector"
+ @FILA,56 SAY "³"
+ @FILA,58 SAY "Pliego"
+ @FILA,65 SAY "³"
+ @FILA,67 SAY "Prg"
+ @FILA,70 SAY "³"
+ @FILA,72 SAY "Spg"
+ @FILA,75 SAY "³"
+ @FILA,77 SAY "Pry"
+ @FILA,80 SAY "³"
+ @FILA,82 SAY "Obra"
+ @FILA,86 SAY "³"
+ @FILA,88 SAY "Act"
+ @FILA,92 SAY "³"
+ @FILA,95 SAY "Tarea"
+ @FILA,102 SAY "³"
+ @FILA,103 SAY "Funcional"
+ @FILA,112 SAY "³"
+  @FILA,114 SAY "FteFto"
+ @FILA,121 SAY "³"
+ fila=fila+1
+ @FILA,17 SAY "³"
+ @FILA,18 say replicate("-",29)
+ @FILA,48 SAY "³"
+ @FILA,49 say replicate("-",6)
+ @FILA,56 SAY "³"
+ @FILA,57 say replicate("-",7)
+ @FILA,65 SAY "³"
+ @FILA,66 say replicate("-",3)
+ @FILA,70 SAY "³"
+ @FILA,71 say replicate("-",3)
+ @FILA,75 SAY "³"
+ @FILA,76 say replicate("-",3)
+ @FILA,80 SAY "³"
+ @FILA,81 say replicate("-",4)
+ @FILA,86 SAY "³"
+ @FILA,87 say replicate("-",4)
+ @FILA,92 SAY "³"
+ @FILA,93 say replicate("-",8)
+ @FILA,102 SAY "³"
+ @FILA,103 say replicate("-",8)
+ @FILA,112 SAY "³"
+ @FILA,113 say replicate("-",8)
+ @FILA,121 SAY "³"
+FILA=FILA+1
+ @FILA,17 SAY "³"
+ @FILA,19 SAY VDEBPRE
+ @FILA,33 SAY "³"
+ @FILA,35 SAY VHABPRE
+ @FILA,48 SAY "³"
+ @FILA,51 SAY "25"
+ @FILA,56 SAY "³"
+ @FILA,59 SAY "001"
+ @FILA,65 SAY "³"
+ @FILA,67 SAY SUBSTR(Ri.CodCal,8,2)
+ @FILA,70 SAY "³"
+ @FILA,72 SAY SUBSTR(Ri.CodCal,10,3)
+ @FILA,75 SAY "³"
+ @FILA,77 SAY SUBSTR(Ri.CodCal,13,3)
+ @FILA,80 SAY "³"
+ @FILA,82 SAY SUBSTR(Ri.CodCal,16,2)
+ @FILA,86 SAY "³"
+ @FILA,92 SAY "³"
+ @FILA,102 SAY "³"
+ @FILA,112 SAY "³"
+ @FILA,115 SAY SUBSTR(Ri.CodCal,5,3)
+ @FILA,121 SAY "³"
+ FILA=FILA+1
+@FILA,17 SAY "À"
+@FILA,18 SAY REPLICATE("Ä",103) 
+@FILA,121 SAY "Ù"
+fila=fila+1
+@FILA,17 SAY "Ú"
+@FILA,18 SAY REPLICATE("Ä",64)
+@FILA,82 SAY "¿" 
+@FILA,84 SAY "Ú"
+@FILA,85 SAY REPLICATE("Ä",36)
+@FILA,121 SAY "¿" 
+fila=fila+1
+ @FILA,17 SAY "³"
+ @FILA,18   SAY "C O N T A B I L I D A D   P A T R I M O N I A L"
+ @FILA,82 SAY "³"
+ @FILA,84 SAY "³"
+ @FILA,121 SAY "³"
+ FILA=FILA+1
+ @FILA,17 SAY "³"
+ @FILA,24 SAY "C O D I G O                           I M P O R T E"
+ @FILA,82 SAY "³"
+ @FILA,84 SAY "³"
+ @FILA,121 SAY "³"
+ FILA=FILA+1
+ @FILA,17 SAY "³"
+ @FILA,18 SAY REPLICATE('-',64)
+ @FILA,82 SAY "³"
+ @FILA,84 SAY "³"
+ @FILA,121 SAY "³"
+ FILA=FILA+1
+ @FILA,17 SAY "³"
+ @FILA,18 SAY "CUENTA"
+ @FILA,24 SAY "³"
+ @FILA,29 SAY "SUB-CTAS"
+ @FILA,42 SAY "³"
+ @FILA,52 SAY "DEBE"
+ @FILA,62 SAY "³"
+ @FILA,72 SAY "HABER"
+ @FILA,82 SAY "³"
+ @FILA,84 SAY "³"
+ @FILA,85 SAY "1.----------------------------------"
+ @FILA,121 SAY "³"
+ FILA=FILA+1
+ @FILA,17 SAY "³"
+ @FILA,18 SAY "MAYOR"
+ @FILA,24 SAY "³"
+ @FILA,42 SAY "³"
+ @FILA,62 SAY "³"
+ @FILA,82 SAY "³"
+ @FILA,84 SAY "³"
+ @FILA,85 SAY "       Director de tesorer¡a        "
+ @FILA,121 SAY "³"
+ fila=fila+1
+@FILA,17 SAY "À"
+@FILA,18 SAY REPLICATE("Ä",64) 
+@FILA,82 SAY "Ù"
+@FILA,84 SAY "À"
+@FILA,85 SAY REPLICATE("Ä",36) 
+@FILA,121 SAY "Ù"
+ fila=fila+1
+@FILA,17 SAY "Ú"
+@FILA,18 SAY REPLICATE("Ä",64)
+@FILA,82 SAY "¿" 
+@FILA,84 SAY "Ú"
+@FILA,85 SAY REPLICATE("Ä",36)
+@FILA,121 SAY "¿" 
+XKEY=Ri.PERiODO+ALLTRiM(Ri.NUMMES)+Ri.NUMRi+ALLTRiM(Ri.CODCTC)
+SELE ASTPAT
+SEEK XKEY
+FILA=FILA+1
+SCAN WHILE PERiODO=VPER AND NUMMES=ALLTRiM(VMES) AND NUMREF=VCLI AND CODCTC=ALLTRiM(VCTA)
+     @FILA,17 SAY "³"
+     IF TIPCTA="D"
+     	  @FILA,18 SAY SUBSTR(ASTPAT.CODCTA,1,2)
+		  @FILA,24 SAY "³"
+     	  @FILA,25 SAY SUBSTR(ASTPAT.CODCTA,1,3)
+		  @FILA,32 SAY "³"
+		  @FILA,42 SAY "³"
+          @FILA,43 SAY ASTPAT.MTODEB  PICTURE "@z 999,999,999,999.99"             
+     ELSE     
+     	  @FILA,21 SAY SUBSTR(ASTPAT.CODCTA,1,2)
+		  @FILA,24 SAY "³"
+		  @FILA,33 SAY "³"
+     	  @FILA,34 SAY SUBSTR(ASTPAT.CODCTA,1,3)
+		  @FILA,42 SAY "³"
+          @FILA,63 SAY ASTPAT.MTOHAB  PICTURE "@z 999,999,999,999.99"             
+     ENDIF     
+     @FILA,82 SAY "³"
+     @FILA,84 SAY "³"
+     @FILA,121 SAY "³"
+     FILA=FILA+1
+ENDSCAN
+SELE Ri
+@FILA,17 SAY "À"
+@FILA,18 SAY REPLICATE("Ä",64) 
+@FILA,82 SAY "Ù"
+@FILA,84 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "Ú"
+@FILA,18 SAY REPLICATE("Ä",44)
+@FILA,62 SAY "¿" 
+@FILA,84 SAY "³"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "³"
+@FILA,19 SAY "VoBo"
+@FILA,62 SAY "³"
+@FILA,84 SAY "³"
+@FILA,85 SAY "2.----------------------------------"
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,17 SAY "À"
+@FILA,19 SAY REPLICATE("Ä",44) 
+@FILA,62 SAY "Ù"
+@FILA,84 SAY "³"
+@FILA,85 SAY "    Recepcionista del Dep¢sito      "
+@FILA,121 SAY "³"
+FILA=FILA+1
+@FILA,84 SAY "À"
+@FILA,85 SAY REPLICATE("Ä",36) 
+@FILA,121 SAY "Ù"
+IF _DEST1=2
+   	EJECT
+ENDIF
+*ENDFOR
+SET DEVICE TO SCREEN 
+RETURN
+
+
+FUNCTION Observa
+*---------------
+vAlias = ALIAS()
+SELECT Ri
+SET MEMOWIDTH TO 50
+ON KEY LABEL F10 KEYBOARD CHR(23)
+IF !WEXIST("Observa")
+   DEFINE WINDOW Observa FROM 03,14 TO 20,66 FLOAT NOCLOSE SHADOW DOUBLE TITLE '± Observaciones ±' FOOTER ' ° ®F10¯ Graba ° ' COLOR SCHEME 1
+ENDIF
+IF WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa SAME
+ELSE
+   ACTIVATE WINDOW Observa NOSHOW
+ENDIF
+IF ingreso
+   IF m.tipri='02'
+	  REPLACE observ WITH SPACE(12)+Val_Para(m.TipRi,"TIPRI ","V",22,30)+SPACE(2)+dConcurso
+   ELSE	 
+	  REPLACE observ WITH SPACE(12)+Val_Para(m.TipRi,"TIPRI ","V",22,30)
+   ENDIF	  
+ENDIF	
+MODIFY MEMO OBSERV WINDOW OBSERVA
+IF !WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa
+ENDIF
+RELEASE WINDOW Observa
+IF LASTKEY()=27
+   DO STANDBY WITH 'Proceso cancelado. No graba la Observaci¢n '
+ENDIF
+SELECT (vAlias)
+RETURN .T.
+
+
+FUNCTION concepto
+*---------------
+vAlias = ALIAS()
+SELECT Rever
+SET MEMOWIDTH TO 50
+ON KEY LABEL F10 KEYBOARD CHR(23)
+IF !WEXIST("Concepto")
+   DEFINE WINDOW Concepto FROM 03,14 TO 20,66 FLOAT NOCLOSE SHADOW DOUBLE TITLE '± Observaciones ±' FOOTER ' ° ®F10¯ Graba ° ' COLOR SCHEME 1
+ENDIF
+IF WVISIBLE("Concepto")
+   ACTIVATE WINDOW concepto SAME
+ELSE
+   ACTIVATE WINDOW concepto NOSHOW
+ENDIF
+MODIFY MEMO concepto WINDOW concepto
+IF !WVISIBLE("Concepto")
+   ACTIVATE WINDOW concepto
+ENDIF
+RELEASE WINDOW concepto
+IF LASTKEY()=27
+   DO STANDBY WITH 'Proceso cancelado. No graba la Observaci¢n '
+ENDIF
+SELECT (vAlias)
+RETURN .T.
+
+
+FUNCTION VisObs
+*--------------
+vAlias = ALIAS()
+SELECT Ri
+IF !WEXIST("Observa")
+   DEFINE WINDOW Observa FROM 03,14 TO 20,66 FLOAT NOCLOSE SHADOW DOUBLE TITLE '± Observaciones ±' FOOTER ' ° ®Esc¯ Sale ° ' COLOR SCHEME 1
+ENDIF
+
+IF WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa SAME
+ELSE
+   ACTIVATE WINDOW Observa NOSHOW
+ENDIF
+
+MODIFY MEMO OBSERV NOEDIT WINDOW OBSERVA
+
+IF !WVISIBLE("Observa")
+   ACTIVATE WINDOW Observa
+ENDIF
+RELEASE WINDOW Observa
+RETURN .T.
+
+
+FUNCTION VALFECHA
+*----------------
+an=Right(str(year(date()),4),2)
+vMe = val(m.Nummes)+1
+me = padl(alltRim(str(vMe,2)),2,'0')
+vFec = '01/&ME/&AN'
+m.FecRi = ctod(vFec) - 1
+return .t.
+
+
+FUNCTION Valida && Suma el ingreso de todos los Items ingresados.
+*--------------
+PRiVATE VACUM
+vAcum=0
+SELE IteRi
+SEEK m.Periodo+ALLTRiM(M.NUMMES)+M.NUMRi
+SCAN WHILE PERiODO=m.Periodo AND ALLTRiM(M.NUMMES)=IteRi.NUMMES AND M.NUMRi=IteRi.NUMRi
+     vAcum = vAcum + IteRi.impparc
+ENDSCAN
+SELE Ri
+IF vAcum > Ri.CANRi
+   DO StandBy WITH 'ERROR! El importe excede el monto depositado. CORREGIR'
+ENDIF
+IF vAcum < Ri.CANRi
+   DO StandBy WITH 'ERROR! El importe es menor al monto depositado. CORREGIR'
+ENDIF
+RETURN
+
+
+PROCEDURE ingap   && Ingresa asientos patRimoniales
+*--------------
+ACTIVATE SCREEN
+HIDE MENU mMenu
+vTempo = '°°°°°°°°F5->Agregar°°°°°°°°°°°°°°F8->Eliminar°°°°°°°°°°°°°°F10->Terminar°°°°°°°°'
+DO Logos WITH Rotulo1,vTempo
+ON KEY LABEL F5 DO AgRite
+ON KEY LABEL F8 DO EliIte
+ON KEY LABEL F10 KEYBOARD CHR(23)
+SELECT astpat
+SEEK m.Periodo+ALLTRiM(m.nummes)+m.numRi+m.CodCtc
+IF !FOUND()
+	DO agRiaut
+ENDIF
+BROWSE FIELDS ;
+	codcta :H='Cuenta':v=val_fun('Cuenta','Cuenta',"Cuenta+' '+DescRi",codcta,2):F ,;
+	tipcta :H='D/H' :P='@M D,H',;
+	mtodeb :H='Monto Debe'  :W=tipcta='D' :P='999,999,999.99',;
+	mtohab :H='Monto Haber' :W=tipcta='H' :P='999,999,999.99';
+	WINDOW wind_2 KEY m.Periodo+ALLTRiM(m.NumMes)+m.NumRi+m.CodCtc
+STORE 0 TO vdebe, vhaber ,vRet
+SEEK m.Periodo+ALLTRiM(m.nummes)+m.numRi+m.CodCtc
+SCAN WHILE PERiODO=m.Periodo AND ALLTRiM(m.nummes)=nummes AND m.numRi=numRi AND m.CodCtc=codctc 
+    IF IIF(TipCta='D',MtoDeb,MtoHab)=0
+    	dele next 1
+    else
+		vdebe = vdebe  + IIF(tipcta='D',mtodeb,0)
+		vhaber= vhaber + IIF(tipcta='H',mtohab,0)
+    ENDIF		
+ENDSCAN
+IF vdebe#vhaber
+   DO standby WITH 'Ojo: No cuadra debe con haber'
+ENDIF
+ON KEY
+SELECT Ri
+ON KEY LABEL F10
+ON KEY LABEL F8
+ON KEY LABEL F5
+UNLOCK
+ACTIVATE SCREEN
+vTempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+DO Logos WITH Rotulo1,vTempo
+SHOW MENU mMenu
+RETURN
+
+
+PROCEDURE agRite
+*---------------
+SELECT astpat
+IF f_appd()
+	REPLACE peRiodo WITH m.Periodo,;
+	     	nummes WITH m.nummes,;
+	        numref WITH m.numRi,;
+	        tipdoc WITH 'R/I',;
+	        codctc WITH m.CodCtc,;
+	        fecha  WITH m.FecRi,;
+	        TIPCTC WITH w_TipCtc
+ENDIF
+RETURN
+
+PROCEDURE agRiaut
+*---------------
+SELECT astpat
+IF f_appd()
+	REPLACE peRiodo WITH m.Periodo,;
+	     	nummes WITH m.nummes,;
+	        numref WITH m.numRi,;
+	        tipdoc WITH 'R/I',;
+	        codctc WITH m.CodCtc,;
+	        fecha  WITH m.FecRi,;
+	        tipctc WITH w_TipCtc,;
+	        tipcta  WITH 'D',;
+	        Codcta  WITH w_ctad,;
+	        mtodeb  WITH m.canri
+ENDIF
+IF f_appd()
+	REPLACE peRiodo WITH m.Periodo,;
+	     	nummes WITH m.nummes,;
+	        numref WITH m.numRi,;
+	        tipdoc WITH 'R/I',;
+	        codctc WITH m.CodCtc,;
+	        fecha  WITH m.FecRi,;
+	        tipctc WITH w_TipCtc,;
+	        tipcta  WITH 'H',;
+	        Codcta  WITH w_ctaH,;
+	        mtoHAB  WITH m.canri
+ENDIF
+RETURN
+
+
+PROCEDURE eliite
+*---------------
+SELECT astpat
+IF RLOCK()
+	DELETE NEXT 1
+ENDIF
+RETURN
+
+FUNCTION SEPARA  &&Para el reporte
+*--------------
+AS=ALIAS()
+VKEY = PERiODO+NUMMES+NUMRi
+SELECT ASTPAT
+vInd = SYS(3) + '.Idx'
+INDEX ON PERiODO+NumMes+NumREF+CodCtc+TipCta to (vInd) for PERiODO+NUMMES+NUMREF = VKEY .AND. TipDoc = 'R/I'
+SELECT (AS)
+RETURN ' '
+
+
+FUNCTION CUENTA  &&Para el reporte
+*--------------
+PARAMETER TIPO
+AS=ALIAS()
+VKEY = PERiODO+NUMMES+NUMRi
+SELECT ASTPAT
+VCTA=IIF(TIPO='D',ASTPAT.CODCTA,ASTPAT.CODCTA)
+VALO=IIF(TIPO='D',ASTPAT.MTODEB,ASTPAT.MTOHAB)
+IF !EOF()
+   SKIP
+ENDIF
+SELECT (AS)
+RETURN ' '
+
+
+FUNCTION TotalRi && Suma todos los Items ingresados.
+*---------------
+PUBLIC vTot1
+vAli=ALIAS()
+vOrd=ORDER()
+SELECT IteRi
+vRec=RECNO()
+vNumRi=Ri.NumRi
+vNumMes=Ri.NumMes
+VPER=Ri.PERiODO
+vTot1=0
+SEEK VPER+ALLTRiM(VNUMRi+VNUMMES)
+*SET FILTER TO ALLTRiM(Ri.NumMes)=vNumMes .AND. ALLTRiM(Ri.NumRi)=vNumRi
+*GO TOP
+SUM IteRi.IMPPARC TO VTOT1 FOR vNumMes=ALLTRiM(IteRi.NumMes) .AND. vnumRi=ALLTRiM(IteRi.NumRi)
+*SET FILTER TO
+SELECT (vAli)
+SET ORDER TO vOrd
+RETURN vTot1
+
+
+*- 5 Codigo auxiliar
+FUNCTION v_aux
+*-------------
+ _ALI_ = ALIAS()
+ resx  = .F.
+ IF m.TipAux='05' OR m.TipAux='25' OR m.TipAux='20'
+    vAli=ALIAS()
+    vOrd=ORDER()
+    SELECT AUXIL
+    SET ORDE TO AUXIL1
+    vReturn = Val_fun('AUXIL','Codigo',"Codigo+' '+DescRi",CodPrv,1,7,20,'SUBSTR(descRi,1,22)')
+    SELECT (vAli)
+    SET ORDE TO vOrd
+    RETURN vReturn
+ ELSE
+    IF EMPTY(m.CodPrv)
+       xaux = SPACE(30)  && Temporalmente guarda la descRipci¢n
+       SELECT Auxil
+       vidx = SYS(3) + '.idx'
+       INDEX ON DescRi TO &vidx FOR m.Tipaux = Tipo
+       resx = val_fun('Auxil','DescRi','descRi',xaux,1)       
+        SELECT Auxil
+       SEEK xAux
+       xaux = Auxil.Codigo
+       SET INDEX TO
+       SET ORDER TO TAG AUXIL1
+       ERASE (vidx)
+       SELECT Ri
+       IF resx
+          REPLACE CodPrv WITH xaux
+       ENDIF
+    ELSE
+       SELECT Auxil
+       IF !SEEK(m.tipaux + Ri.CodPrv)
+          IF yesno("Auxiliar no existe. ¨Crea nuevo?")
+             IF ap_aux(m.Registro)
+                resx = .T.
+             ENDIF
+          ENDIF
+       ELSE
+          resx = .T.
+       ENDIF
+    ENDIF
+ ENDIF
+
+ SELECT Auxil
+ SEEK m.tipaux + SUBSTR(Ri.CodPrv,1,6)
+ @ 4,68 SAY SUBSTR(Auxil.descRi,1,18)
+
+ SELECT (_ali_)
+
+RETURN resx
+
+
+* 13.- Apertura de Auxiliares
+FUNCTION ap_aux
+*--------------
+PARAMETER xxcta
+*- apertura de auxiliares en l¡nea
+ DEFINE WINDOW ap_aux FROM 3,5 TO 20,75 TITLE " APERTURA DE AUXILIARES " COLOR SCHEME 10
+ ACTIVATE WINDOW ap_aux
+ CLEAR
+
+ PRiVATE m.Tipo,     m.DescRi,  m.Direccion, m.Codigo
+ PRiVATE m.Telefono, m.Ruc      m.Observ
+
+ *- Aqu¡ coloca valores por omisi¢n (default)
+
+ SELECT Auxil
+ SCATTER MEMVAR BLANK
+ m.Tipo   = Ri.TipAux
+ m.Codigo = Ri.CodPrv
+ xxalias = ALIAS()
+
+ vreg = IIF(!EOF(),RECNO(),0)
+
+ @  3, 2 SAY "            C¢digo:" + m.Codigo
+ @  5, 2 SAY "       DescRipci¢n:" GET m.DescRi
+ @  7, 2 SAY "         Direcci¢n:" GET m.Direccion
+ @  9, 2 SAY "          Tel‚fono:" GET m.Telefono
+ @ 11, 2 SAY "             R.U.C:" GET m.Ruc
+ @ 13, 2 SAY "     Observaciones:" GET m.Observ
+
+ READ
+
+ IF vreg # 0 .AND. vreg <= RECCOUNT()
+    GO vreg
+ ENDIF
+
+ IF LASTKEY() <> 27 .AND. yesno("Confirme el ingreso")
+    IF f_appd()
+       GATHER MEMVAR
+    ENDIF
+    UNLOCK
+ ELSE
+    RELEASE WINDOW ap_aux
+    SELECT Ri
+    RETURN .F.
+ ENDIF
+
+ RELEASE WINDOW ap_aux
+ SELECT Ri
+
+RETURN .T.
+
+
+FUNCTION IGUAL
+*-------------
+vAli=ALIAS()
+vOrd=ORDER()
+SELE Ri
+SEEK m.Periodo+ALLTRiM(m.NumMes)+ALLTRiM(m.NumRi)
+IF FOUND()
+   DO StandBy WITH "El Documento YA EXISTE"
+   SELECT (vAli)
+   SET ORDER TO vOrd
+   RETURN .F.
+ENDIF
+SELECT (vAli)
+SET ORDER TO vOrd
+RETURN
+
+
+PROCEDURE Termi
+*--------------
+  vEn_accion = .F.
+  ON KEY LABEL F2    
+  ON KEY LABEL f4 
+  ON KEY LABEL f9 
+  DEACTIVATE MENU
+  RETURN
+
+
+PROCEDURE Fin_opcion
+*-------------------
+  CLOSE DATA
+  ON KEY LABEL F2    
+  ON KEY
+  RELEASE    WINDOW wind_0
+  RELEASE    WINDOW wind_1
+  RELEASE    WINDOW wind_c1
+  RELEASE    MENU   mMenu
+  RESTORE SCREEN FROM PRiNCIPAL
+  RETURN
+
+
+FUNCTION val_resp
+*----------------
+parameter vcampo
+IF empty(vcampo)
+   DO StandBy WITH "Ingrese 05 ¢ 20 ¢ 25 para ver Prove/Cont. y 03 Trabajador"
+   _Curobj=objnum(vcampo)
+else
+ IF VCAMPO#'05'
+ 	 IF VCAMPO#'20'
+  	 	IF VCAMPO#'25'
+ 			IF VCAMPO#'03' 	 	
+  	 			DO StandBy WITH "Ingrese 05 ¢ 20 ¢ 25 para ver Prove/Cont. y 03 Trabajador"
+  	 			_Curobj=objnum(vcampo)
+  	 		endif	
+  	 	endif
+  	 endif
+  endif 	
+endif  
+RETURN
+
+FUNCTION Val_IngE
+*---------------
+  PARAMETERS mValor, Filtro, mVaRiable, mCol, mLong
+  PRiVATE mAlias
+  DO CASE
+    CASE PARAMETERS() = 2
+      mCol = 0
+      mVaRiable = ' '
+      mLong = 40
+    CASE PARAMETERS() = 3
+      mCol = 0
+      mLong = 40
+    CASE PARAMETERS() = 4
+      mLong = 40               && Longitud campo DESCRi
+  ENDCASE
+  mAlias  = ALIAS()
+  SELECT IngR
+  SEEK Filtro+mValor
+
+  IF !FOUND() AND !mVaRiable $'VZ'
+      _OldWnd = WOUTPUT()
+      ACTIVATE SCREEN
+      IF !EMPTY(FILTRO)
+         SET FILTER TO CodIng >= Filtro
+      ENDIF
+      GO TOP
+      IF EOF() 
+         DO STANDBY WITH 'No existen partidas definidas'
+         SET FILTER TO
+         sele (malias)
+         return &&.f.
+      endif
+      DEFINE POPUP parametro FROM 03,40 PROMPT FIELD ALLTRiM(CODING)+'.'+ALLTRiM(SUBING)+' '+SUBSTR(DESING,1,40)
+      ON SELECTION POPUP parametro DEACTIVATE POPUP
+      ACTIVATE POPUP parametro
+      IF !EMPTY( _OldWnd)
+         ACTIVATE WINDOW &_OldWnd
+      ENDIF
+
+      RELEASE POPUP parametro
+      SET FILTER TO
+ ENDIF
+ mValor = IngR.CodIng 
+ mDescr = SUBSTR( IngR.DesIng, 1, mLong )
+ SET ORDE TO 1
+  IF !EMPTY( mAlias )
+    SELECT (mAlias)
+  ENDIF
+  DO CASE
+    CASE mVaRiable=' '   && En edici¢n
+      @ ROW(),mCol   SAY mValor
+      @ ROW(),mCol+7 SAY mDescr
+      RETURN .T.
+    CASE mVaRiable='A'   && En edici¢n SOLO DESCRiPCION
+      @ ROW(),mCol SAY mDescr
+      RETURN
+    CASE mVaRiable='V'   && En vista
+      @ ROW(),COL()  SAY mValor
+      RETURN mDescr
+    CASE mVaRiable='D'   && En vista
+      RETURN mDescr
+    CASE mVaRiable='Z'   && En vista SIN PINTAR
+      RETURN mDescr
+    CASE mVaRiable='C'   && Solo codigo
+      RETURN .T.
+    CASE mVaRiable='T'
+      &mVaRiable = mValor
+      @ ROW(),mCol+7 SAY mDescr
+      RETURN  mValor
+    OTHERWISE            && En browse de edici¢n
+      REPLACE &mVaRiable WITH mValor
+      wCodPart=MVALOR
+      RETURN .T.
+  ENDCASE
+
+PROCEDURE COMPRE
+*---------------
+AS=ALIAS()
+IF VAL(m.nummes)<=3
+   IF m.Codfte='PRP'
+	   vCtaDeb = '9120101000'
+	   vCtaHab = '9020101000'
+   ELSE   
+	   vCtaDeb = '9140101000'
+	   vCtaHab = '9040101000'
+   ENDIF
+ELSE   
+   vCtaDeb = IIF(m.Codfte='PRP','9020101020','9020101040')
+   vCtaHab = IIF(m.Codfte='PRP','9010101020','9010101040')
+ENDIF   
+USE astpre97   IN  9  ORDER TAG astpre6  ALIAS astpre
+SELECT astpre
+	
+SEEK 'D'+m.Periodo+ALLTRiM(m.nummes)+ALLTRiM(m.numRi)+ALLTRiM(vctadeb)+ALLTRiM(m.CodCtc)
+IF !FOUND()
+	IF f_appd()
+		REPLACE Periodo WITH m.Periodo,;
+		        nummes  WITH m.nummes,;
+				tipdoc  WITH 'R/I',;
+				numref  WITH m.numRi ,;
+				cuenta  WITH vctadeb,;
+				tipo    WITH 'D',;
+				fecref  WITH m.fecRi,;
+				CodCtc  WITH ALLTRiM(m.CodCtc),;
+				CodCal  WITH m.CodCal,;
+				codpart WITH wCodPart,;
+				ctadeb WITH vctadeb ,;
+			    ctahab WITH SPACE(10),;
+			    valdeb WITH m.canri ,;
+			    valhab WITH 0
+	ENDIF
+	UNLOCK
+ELSE
+	IF RLOCK()
+		REPLACE Periodo WITH m.Periodo,;
+		        nummes  WITH m.nummes,;
+				tipdoc  WITH 'R/I',;
+				numref  WITH m.numRi ,;
+				cuenta  WITH vctadeb,;
+				tipo    WITH 'D',;
+				fecref  WITH m.fecRi,;
+				CodCtc  WITH ALLTRiM(m.CodCtc),;
+				CodCal  WITH m.CodCal,;
+				codpart WITH wCodPart,;
+				ctadeb WITH vctadeb ,;
+			    ctahab WITH SPACE(10),;
+			    valdeb WITH m.canri ,;
+			    valhab WITH 0
+	ENDIF
+    UNLOCK
+ENDIF    
+
+SEEK 'H'+m.Periodo+ALLTRiM(m.nummes)+ALLTRiM(m.numRi)+ALLTRiM(vctahab)+ALLTRiM(m.CodCtc)
+IF !FOUND()
+	IF f_appd()
+		REPLACE Periodo WITH m.Periodo,;
+				nummes WITH m.nummes,;
+				tipdoc WITH 'R/I',;
+				numref WITH m.numRi ,;
+				cuenta WITH vctahab,;
+				tipo WITH 'H',;
+				fecRef WITH m.fecRi,;
+				CodCtc WITH ALLTRiM(m.CodCtc),;
+				CodCal WITH m.CodCal,;
+				codpart WITH wCodPart,;
+		        ctadeb WITH SPACE(10),;
+				ctahab WITH vctahab ,;
+				valdeb WITH 0 ,;
+				valhab WITH m.canri
+	ENDIF
+	UNLOCK
+ELSE
+	IF RLOCK()
+		REPLACE Periodo WITH m.Periodo,;
+				nummes WITH m.nummes,;
+				tipdoc WITH 'R/I',;
+				numref WITH m.numRi ,;
+				cuenta WITH vctahab,;
+				tipo WITH 'H',;
+				fecRef WITH m.fecRi,;
+				CodCtc WITH ALLTRiM(m.CodCtc),;
+				CodCal WITH m.CodCal,;
+				codpart WITH wCodPart,;
+		        ctadeb WITH SPACE(10),;
+				ctahab WITH vctahab ,;
+				valdeb WITH 0 ,;
+				valhab WITH m.canri
+	ENDIF
+	UNLOCK
+ENDIF	
+USE IN 9
+SELE (AS)
+ACTIVATE WINDOW wind_6
+	@ 00,08  SAY 'Cuentas '
+	@ 00,18  SAY 'Debe '
+	@ 00,34  SAY 'Haber '
+	@ 01,04  SAY vctadeb PICTURE '!!!!!!!!!!' 
+	@ 01,18  SAY m.canri  PICTURE '999,999,999.99' 
+	@ 02,12  SAY vctahab PICTURE '!!!!!!!!!!' 
+	@ 02,34  SAY m.canri  PICTURE '999,999,999.99' 
+	WAIT ' '
+	DEACTIVATE WINDOW wind_6
+	vValdeb = m.canri  
+	vValhab = m.canri 
+RETURN
+
+FUNCTION dismem
+*---------------
+SET MEMOWIDTH TO 100
+RETURN
+
+FUNCTION GLOSA
+PUBLIC _q
+SET MEMOWIDTH TO 60
+_Q=UPPER(ALLTRiM(MLINE(Ri.Observ,3)))
+RETURN _q
+
+
+PROCEDURE imp_Ri
+*---------------
+PUBLIC NUM_C
+NUM_C=1
+SET ESCAPE ON
+ON ESCAPE STORE .F. TO PRiNTING
+_DEST = 'Impresora'
+P_FIL = SPACE(8)
+_Dest1 = 2
+P_FIL = sys(3)+".LST"
+IMPRE = (_DEST='Impresora')
+PRiNTING = .T.
+DEFINE WINDOW Numcop FROM 20,50 TO 22,79 DOUBLE
+ACTIVATE WINDOW Numcop
+@ 0,3 SAY "N§ de Copias : " GET NUM_C PICTURE "99" VALID NUM_C>0 AND NUM_C<99
+READ
+RELEASE WINDOW Numcop
+IF LASTKEY()=27
+   RETUR
+ENDIF 
+IF IMPRE
+   IF !EMPTY(LEFT(SYS(0),15))
+     IF !YESNO("¨ImpRime en impresora local?  <NO = IMPRESORA DE RED>")
+       **-- Impresora de red.
+       SET PRiNTER TO \\IBM_PC\PRiNTQ_0=LPT1
+       SET PRiNTER TO \\SPOOLER\NB
+     ENDIF
+   ENDIF
+   IF !READY2PR()
+       PRiNTING = .F.
+   ENDIF
+ENDIF   
+IF PRiNTING
+  IF IMPRE
+   	 SET DEVICE TO PRiNT
+     SET PRiNTER TO &p_fil
+     DO LISRi WITH NUM_C
+     SET PRiNTER TO
+     IF READY2PR() 
+     	FOR I=1 TO NUM_C
+        	!TYPE &P_FIL >PRN
+	    ENDFOR	
+     ENDIF
+     ERASE &p_fil
+   ENDIF
+ ELSE
+   DO STANDBY WITH 'EL REPORTE HA SIDO CANCELADO.'
+ ENDIF
+ SET DEVICE TO SCREEN
+ SELE Ri
+RETURN
+
+
+FUNCTION PidApBd
+*---------------
+ DEFINE WINDOW Wind_7 FROM 10,20 TO 15,60  DOUBLE ;
+ TITLE " Asientos para B/D " COLOR SCHEME 10
+ ACTIVATE WINDOW Wind_7
+ alia  = ALIAS()
+ SELECT ITERI
+ SEEK ALLTRIM(m.periodo)+ALLTRiM(m.nummes)+m.numRi
+ IF FOUND()
+ 	vnroref = Iteri.DocRef &&Nro de la Boleta de Dep¢sito
+ 	SELECT ASTPAT
+    Vord = ORDER()
+    SET ORDER TO AstPat7
+    SEEK ALLTRIM(m.nummes)+VnroRef+ALLT(m.CodCtc)
+    IF FOUND()
+       Vdeb=CodCta
+       SKIP
+       Vhab=CodCta
+    ENDIF
+    SELECT ASTPAT
+    SET ORDER TO (Vord)   
+ ENDIF   
+ @ 1, 10 SAY "Debe"
+ @ 1, 25 SAY "Haber"
+ @ 2, 10 GET vdeb VALID val_fun('Cuenta','Cuenta',"Cuenta+' '+DescRi",vdeb,1)
+ @ 2, 25 GET vhab VALID val_fun('Cuenta','Cuenta',"Cuenta+' '+DescRi",vhab,1)
+ READ VALID Val_read()
+ DEACTIVATE WINDOW Wind_7
+ SELECT (alia)
+ RETURN vdeb+vhab
+
+
+PROCEDURE ingap1   && Ingresa asientos patRimoniales para boletas de dep¢sito
+*-------------------
+PARAMETERS vasiento
+ACTIVATE SCREEN
+HIDE MENU mMenu
+vTempo = '°°°°°°°°F5->Agregar°°°°°°°°°°°°°°F8->Eliminar°°°°°°°°°°°°°°F10->Terminar°°°°°°°°'
+DO Logos WITH Rotulo1,vTempo
+ON KEY LABEL F5 DO AgRite
+ON KEY LABEL F8 DO EliIte
+ON KEY LABEL F10 KEYBOARD CHR(23)
+
+SELE ASTPAT
+xord = ORDER()
+SET ORDER TO ASTPAT7
+
+SELECT IteRi
+SEEK m.Periodo+ALLTRiM(m.NumMes) + ALLTRiM(m.NumRi)
+vpeRiodo = m.Periodo
+vnummes  = m.nummes
+vnumRi   = m.numRi
+SCAN WHILE vPERiODO+ALLTRiM(vNumMes) + ALLTRiM(vNumRi) =PERiODO+ALLTRiM(NumMes) + ALLTRiM(NumRi)
+	SELECT Movbco
+	SEEK ALLT(IteRi.nummes)+IteRi.docRef
+	IF !FOUND()
+		APPEND BLANK
+		REPLACE PeRiodo 	WITH vpeRiodo ,;
+				Nummes  	WITH vnummes ,;
+				NummesC 	WITH vnummes ,;
+				numero  	WITH Iteri.docRef ,;
+				Transa  	WITH 'ABO' ,;
+				Fecha   	WITH Iteri.fecdep,;
+				FechaC  	WITH iteri.fecdep,;
+				Tipdoc  	WITH 'B/D' ,;
+				Numref  	WITH IteRi.boldep ,;
+				codfte  	WITH m.codfte ,;
+				codctc  	WITH m.CodCtc ,;
+				nombre  	WITH 'DEPOSITO AUTOMATICO R/I '+m.numRi+'.'+m.nummes ,;
+				forma   	WITH 'EF' ,;
+				Monto   	WITH IteRi.impparc ,;
+				tipfun  	WITH m.tipfun ,;
+				codcal  	WITH m.codcal ,;
+				perRi   	WITH IteRi.peRiodo,;
+				nummesRi    WITH IteRi.nummes ,;
+				numRi   	WITH IteRi.numRi ,;
+				estado      WITH '00' ,;
+				motivo      WITH '19',;				
+				codban   	WITH wbanco,;
+				usuario     WITH wuser_id
+				
+	ELSE
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				Fecha   WITH iteri.fecdep ,;
+				FechaC  WITH iteri.fecdep,;
+				Numref  WITH IteRi.boldep ,;
+				codfte  WITH m.codfte ,;
+				codctc  WITH m.CodCtc ,;
+				nombre  WITH 'DEPOSITO AUTOMATICO R/I '+m.numRi+'.'+m.nummes ,;
+				Monto   WITH IteRi.impparc ,;
+				tipfun  WITH m.tipfun ,;
+				codcal  WITH m.codcal,;
+				perRi   	WITH IteRi.peRiodo,;
+				nummesRi    WITH IteRi.nummes ,;
+				numRi   	WITH IteRi.numRi ,;
+				estado      WITH '00' ,;
+				motivo      WITH '19',;				
+				Codban      WITH wbanco,;
+				usuario     WITH wuser_id
+	ENDIF		
+	SELECT Astpat
+	SEEK ALLT(IteRi.Nummes)+Iteri.DocRef+m.CodCtc
+	IF !FOUND()
+		APPEND BLANK
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'B/D' ,; 
+				fecha   WITH iteri.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH IteRi.DocRef;
+				tipcta  WITH 'D',;
+				codctc  WITH m.CodCtc ,;
+				codcta  WITH LEFT(vasiento,10),;
+				Mtodeb  WITH IteRi.impparc ,;
+				tipctc  WITH w_tipctc
+		APPEND BLANK
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'B/D' ,; 
+				fecha   WITH iteri.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH IteRi.DocRef ,;
+				tipcta  WITH 'H',;
+				codctc  WITH m.CodCtc ,;
+				codcta  WITH RiGHT(vasiento,10),;
+				Mtohab  WITH IteRi.impparc ,;
+				tipctc  WITH w_tipctc
+	ELSE
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'B/D' ,; 
+				fecha   WITH iteri.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH IteRi.DocRef,;
+				tipcta  WITH 'D',;
+				codctc  WITH m.CodCtc ,;
+				codcta  WITH LEFT(vasiento,10),;
+				Mtodeb  WITH IteRi.impparc ,;
+				tipctc  WITH w_tipctc
+		SKIP
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'B/D' ,; 
+				fecha   WITH iteri.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH IteRi.DocRef,;
+				tipcta  WITH 'H',;
+				codctc  WITH m.CodCtc ,;
+				codcta  WITH RiGHT(vasiento,10),;
+				Mtohab  WITH IteRi.impparc ,;
+				tipctc  WITH w_tipctc
+	ENDIF
+	SELECT IteRi
+ENDSCAN	
+SELECT Astpat
+SET ORDER TO (xord)
+SELE RI
+RETURN
+
+FUNCTION PidApRev
+*---------------
+ DEFINE WINDOW Wind_7 FROM 10,10 TO 18,70  DOUBLE ;
+ TITLE " Asientos para Reversiones " COLOR SCHEME 10
+ vdeb = SPACE(10)
+ vhab = SPACE(10)
+ vscta= SPACE(8)
+ vofig= SPACE(02)
+ vctc = SPACE(14)
+ ACTIVATE WINDOW Wind_7
+ alia  = ALIAS()
+ SELECT ITERI
+ SEEK ALLTRIM(m.periodo)+ALLTRiM(m.nummes)+m.numRi
+ IF FOUND()
+ 	vnroref = Iteri.DocRef &&Nro de la Boleta de Dep¢sito
+ 	SELECT ASTPAT
+    Vord = ORDER()
+    SET ORDER TO AstPat15
+    SEEK m.nummes+ALLT(VnroRef)+m.codctc
+    IF FOUND()
+       Vdeb  =  CodCta
+       Vscta =  ALLTRIM(numdoc)
+       Vofig =  ALLTRIM(doc)
+       Vctc  =  ALLTRIM(codctc)
+       SKIP
+       Vhab=CodCta
+    ENDIF
+    vdeb=IIF(ALLT(m.tipri)='04','3070101000',IIF(m.tipfun='F','7510101000','3070101000'))
+    SELECT ASTPAT
+    SET ORDER TO (Vord)   
+ ENDIF 	
+ @ 1, 05 SAY "Debe            :" GET vdeb  VALID val_fun('Cuenta','Cuenta',"Cuenta+' '+DescRi",vdeb,1)
+ @ 2, 05 SAY "Haber           :" GET vhab  VALID val_fun('Cuenta','Cuenta',"Cuenta+' '+DescRi",vhab,1)
+ @ 4, 05 SAY "Cuenta Corriente:" GET Vctc  VALID Val_Fun("Caja","Codctc","Codctc+' '+Descri",Vctc,1) 
+ @ 5, 05 SAY "SubCuenta       :" GET vscta VALID Val_Fun("SubCta","Subcta","Subcta+' '+Descri",Vscta,1) 
+ @ 6, 05 SAY "Oficina Giradora:" GET Vofig VALID Val_Para(vofig,'OFIGIR',' ',20,10)
+ READ VALID Val_read()
+ DEACTIVATE WINDOW Wind_7
+ SELECT (alia)
+ RETURN vdeb+vhab
+
+
+PROCEDURE ingap2   && Ingresa asientos patRimoniales para Reversiones
+*-------------------
+PARAMETERS vasiento
+ACTIVATE SCREEN
+HIDE MENU mMenu
+vTempo = '°°°°°°°°F5->Agregar°°°°°°°°°°°°°°F8->Eliminar°°°°°°°°°°°°°°F10->Terminar°°°°°°°°'
+DO Logos WITH Rotulo1,vTempo
+ON KEY LABEL F5 DO AgRite
+ON KEY LABEL F8 DO EliIte
+ON KEY LABEL F10 KEYBOARD CHR(23)
+
+SELECT Astpat
+xord = ORDER()
+SET ORDER TO Astpat15
+
+SELECT IteRi
+SEEK m.Periodo+ALLTRiM(m.NumMes) + ALLTRiM(m.NumRi)
+vpeRiodo = m.Periodo
+vnummes  = m.nummes
+vnumRi   = m.numRi
+SCAN WHILE vPERiODO+ALLTRiM(vNumMes) + ALLTRiM(vNumRi) =PERiODO+ALLTRiM(NumMes) + ALLTRiM(NumRi)
+	SELECT Rever
+	SEEK ALLT(IteRi.nummes)+Allt(Iteri.Docref)
+	IF !FOUND()
+		APPEND BLANK
+		REPLACE PeRiodo 	WITH vpeRiodo ,;
+				Nummes  	WITH vnummes ,;
+				numRev  	WITH allt(Iteri.DocRef) ,;
+				Fecha   	WITH IteRi.fecdep ,;
+				Tipo    	WITH 'M' ,;
+				TipRev  	WITH wtiprev ,;
+				Glosa   	WITH 'DEPOSITO R/I '+m.numRi ,;
+				ctates  	WITH m.CodCtc ,;
+				Monto   	WITH IteRi.impparc ,;
+				Tipdoc  	WITH 'R/I',;
+				perdoc  	WITH IteRi.peRiodo,;
+				mesdoc      WITH IteRi.nummes ,;
+				numdoc  	WITH IteRi.numRi ,;
+				estado      WITH '00' ,;
+				Codctc      WITH vctc,;
+				Codscta     WITH vscta,;
+				concepto    WITH '   RUBRO A: REVERSIONES POR MENORES GASTOS.-             '+Ri.observ,;
+				flag        WITH 'I',;
+				codofg      WITH vofig,;
+				usuario     WITH wuser_id
+	ELSE
+		REPLACE PeRiodo 	WITH vpeRiodo ,;
+				Fecha   	WITH IteRi.fecdep ,;
+				Tipo    	WITH 'M' ,;
+				TipRev  	WITH wtiprev ,;
+				Glosa   	WITH 'DEPOSITO R/I '+m.numRi ,;
+				ctates  	WITH m.CodCtc ,;
+				Monto   	WITH IteRi.impparc ,;
+				Tipdoc  	WITH 'R/I',;
+				perdoc  	WITH IteRi.peRiodo,;
+				mesdoc      WITH IteRi.nummes ,;
+				numdoc  	WITH IteRi.numRi ,;
+				estado      WITH '00' ,;
+				codscta     WITH vscta,;
+				Codctc      WITH vctc,;
+				concepto    WITH '   RUBRO A: REVERSIONES POR MENORES GASTOS.-             '+Ri.observ,;
+				flag        WITH 'I',;
+				codofg      WITH vofig,;
+				usuario     WITH wuser_id
+	ENDIF		
+	=concepto()
+	SELECT Astpat
+	SEEK ALLT(IteRi.Nummes)+Iteri.DocRef+vctc
+	IF !FOUND()
+		APPEND BLANK
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'REV' ,; 
+				fecha   WITH IteRi.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH Iteri.Docref ,;
+				tipcta  WITH 'D',;
+				codctc  WITH vctc ,;
+				codcta  WITH LEFT(vasiento,10),;
+				Mtodeb  WITH IteRi.impparc ,;
+				tipctc  WITH w_tipctc,;
+				numdoc  WITH vscta,;
+				doc     WITH vofig
+		APPEND BLANK
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'REV' ,; 
+				fecha   WITH IteRi.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH Iteri.DocRef ,;
+				tipcta  WITH 'H',;
+				codctc  WITH vctc ,;
+				codcta  WITH RiGHT(vasiento,10),;
+				Mtohab  WITH IteRi.impparc ,;
+				tipctc  WITH w_tipctc,;
+				numdoc  WITH vscta,;
+				doc     WITH vofig
+	ELSE
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'REV' ,; 
+				fecha   WITH IteRi.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH Iteri.Docref ,;
+				tipcta  WITH 'D',;
+				codctc  WITH vctc ,;
+				codcta  WITH LEFT(vasiento,10),;
+				Mtodeb  WITH IteRi.impparc ,;
+				tipctc  WITH w_tipctc,;
+				numdoc  WITH vscta,;
+				doc     WITH vofig
+		SKIP
+		REPLACE PeRiodo WITH IteRi.peRiodo ,;
+				tipdoc  WITH 'REV' ,; 
+				fecha   WITH IteRi.fecdep ,;
+				Nummes  WITH IteRi.Nummes ,;
+				Numref  WITH Iteri.DocRef ,;
+				tipcta  WITH 'H',;
+				codctc  WITH vctc ,;
+				codcta  WITH RiGHT(vasiento,10),;
+				Mtohab  WITH IteRi.impparc,;
+				tipctc  WITH w_tipctc,;
+				numdoc  WITH vscta,;
+				doc     WITH vofig
+	ENDIF
+	SELECT IteRi
+ENDSCAN	
+SELECT Astpat
+SET ORDER TO (xord)
+SELE RI
+RETURN
+
+PROCEDURE Tra_Hijo
+*---------------------
+ ACTIVATE SCREEN
+ HIDE MENU mMenu
+ vTempo = '°°°°°°°°F5->Agregar°°°°°°°°°°°°°°F8->Eliminar°°°°°°°°°°°°°°F10->Terminar°°°°°°°°'
+ DO Logos WITH Rotulo1,vTempo
+ ON KEY LABEL F5  DO Agreg1
+ ON KEY LABEL F8  DO Elimi_Item
+ ON KEY LABEL F10 KEYBOARD CHR(23)
+ SELE IteRi
+ SEEK ALLTRiM(m.Periodo)+ALLTRiM(m.NumMes)+ALLTRiM(m.NumRi)
+ IF !FOUND()
+    DO Agreg1
+ ENDIF
+   BROWSE NOAPPEND NODELETE NOMENU NOREFRESH NOOPTIMIZE WINDOW Wind_2;
+   KEY m.Periodo+ALLTRiM(m.NumMes) + ALLTRiM(m.NumRi) FIELD ;
+   Tipo       :H= 'T':P='@M O,P',;
+   CodPart    :H= 'Partida':V=VAL_INGE(SUBSTR(CodPart,10,2),LEFT(CodPart,8),'codpart'):F:W=Tipo='P',;
+   aa = IIF(!EMPTY(CODPART),mdescr,' ') :H='DescRipci¢n' :40 :W=!EMPTY(CodPart),;
+   DocRef     :H= 'N§ Reversi¢n'  :R :F,;
+   FecDep     :H= 'FechaRev.',;
+   Glosa      :H= 'Ingreso en': P='@!',;
+   ImpParc    :H='Monto' : P='999,999,999,999.99'
+ SELECT IteRi
+ ON KEY LABEL F10
+ ON KEY LABEL F8
+ ON KEY LABEL F5
+ UNLOCK ALL
+ SELECT Ri
+ ACTIVATE SCREEN
+ vTempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+ DO Logos WITH Rotulo1,vTempo
+ SHOW MENU mMenu
+ RETURN
+
+
+PROCEDURE Agreg1
+*-------------------
+SELECT Parma
+SEEK "CORREL"+"REVERS"
+vNUMERO=PADL(NUMENT+1,4,'0')
+SELECT IteRi
+IF F_Appd()
+   REPLACE PERiODO WITH m.Periodo,;
+           NumRi   WITH m.NumRi ,;
+           NumMes  WITH m.NumMes,;
+           ImpParc WITH 0,;
+           Estado  WITH m.Estado,;
+           Fecdep  WITH m.fecRi,;
+           docref  WITH vnumero,;
+		   tipo    WITH IIF(EMPTY(w_clas),'O','P'),;
+		   codpart WITH w_clas,;
+		   impparc WITH m.canri
+   SELECT Parma
+   SEEK "CORREL"+"REVERS"
+   REPLACE NUMENT WITH NUMENT+1
+   SELE ITERI
+ENDIF
+RETURN
+
+
+FUNCTION wdbco  &&Descripci¢n de Banco para el Repo
+*-------------
+PRIVATE wdbc,wcbc
+SELE CAJA
+SEEK RI.codctc
+IF FOUND()
+   wcbc=caja.banco
+   wdbc=Val_Para(wcbc,"BANCOS","D",22,25)   
+ELSE
+   wdbc=SPACE(10)
+ENDIF
+RETURN wdbc      
+  
+FUNCTION wigv
+*------------
+PARAMETERS a
+PRIVATE xigv,zigv,wigv,uigv
+STORE 0 TO xigv,zigv,wigv,uigv
+PRIVATE wdoc,wcod
+SELE RI
+GO TOP
+IF (ALLT(RI.CodCtc)='720168731' AND allt(RI.tipri)='02') .OR.  ( ALLT(RI.CodCtc)='410123000' AND allt(RI.tipri)='20') OR (ALLT(RI.CodCtc)='720234807' AND allt(RI.tipri)='02') 
+	SCAN WHILE !EOF()
+	     yigv=ROUND((RI.CanRi)*(18/118),2)
+	     uigv=ROUND((RI.CanRi)*(100/118),2)
+	     zigv=zigv+yigv
+	     wigv=wigv+uigv
+	ENDSCAN
+ELSE
+	SCAN WHILE !EOF()
+	    uigv=RI.CanRi
+    	wigv=wigv+uigv
+	ENDSCAN
+ENDIF   
+DO CASE
+   CASE a=1
+	   RETURN zigv
+   CASE a=2
+   		RETURN wigv
+ENDCASE   
+
+
+PROCEDURE cor_as  &&Corrige Asientos Patrimoniales
+*---------------
+SELE CAJA
+SEEK ALLTRiM(m.CodCtc)
+IF FOUND()
+   w_TipCtc=CAJA.TIPO
+ENDIF
+SELE Ri
+ACTIVATE SCREEN
+HIDE MENU mMenu
+vTempo = '°°°°°°°°F5->Agregar°°°°°°°°°°°°°°F8->Eliminar°°°°°°°°°°°°°°F10->Terminar°°°°°°°°'
+DO Logos WITH Rotulo1,vTempo
+ON KEY LABEL F5 DO AgRite
+ON KEY LABEL F8 DO EliIte
+ON KEY LABEL F10 KEYBOARD CHR(23)
+SELECT astpat
+SEEK m.Periodo+ALLTRiM(m.nummes)+m.numRi+m.CodCtc
+IF !FOUND()
+	DO agRite
+ENDIF
+BROWSE FIELDS ;
+	codcta :H='Cuenta':v=val_fun('Cuenta','Cuenta',"Cuenta+' '+DescRi",codcta,2):F ,;
+	tipcta :H='D/H' :P='@M D,H',;
+	mtodeb :H='Monto Debe'  :W=tipcta='D' :P='999,999,999.99',;
+	mtohab :H='Monto Haber' :W=tipcta='H' :P='999,999,999.99';
+	WINDOW wind_2 KEY m.Periodo+ALLTRiM(m.NumMes)+m.NumRi+m.CodCtc
+STORE 0 TO vdebe, vhaber ,vRet
+SEEK m.Periodo+ALLTRiM(m.nummes)+m.numRi+m.CodCtc
+SCAN WHILE PERiODO=m.Periodo AND ALLTRiM(m.nummes)=nummes AND m.numRi=numRi AND m.CodCtc=codctc 
+    IF IIF(TipCta='D',MtoDeb,MtoHab)=0
+    	dele next 1
+    else
+		vdebe = vdebe  + IIF(tipcta='D',mtodeb,0)
+		vhaber= vhaber + IIF(tipcta='H',mtohab,0)
+    ENDIF		
+ENDSCAN
+IF vdebe#vhaber
+   DO standby WITH 'Ojo: No cuadra debe con haber'
+ENDIF
+ON KEY
+ON KEY LABEL f4 DO imp_Ri
+SELECT Ri
+ON KEY LABEL F10
+ON KEY LABEL F8
+ON KEY LABEL F5
+UNLOCK
+ACTIVATE SCREEN
+vTempo = '°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
+DO Logos WITH Rotulo1,vTempo
+SHOW MENU mMenu
+SELE Ri
+DO vista
+RETURN
+
+
+FUNCTION vctc
+*------------
+SELE caja
+SEEK vcta
+IF FOUND()
+   vflag1=IIF(caja.clase='T',1,0)
+ENDIF
+RETURN   
+
+
+PROCEDURE factura
+*----------------
+PARAMETERS fconcepto,ftipo
+STORE SPACE(8) TO fruc
+IF ftipo='1'
+   &&agregar factura, capturar datos
+   SELE Parma
+   SEEK 'PARFAC'+'SERIE'
+   fserie= PADL(Nument,3,'0')
+   SEEK 'PARFAC'+'IGV'
+   figv  = Nument
+   SEEK 'CORREL'+'FACTUR'
+   fNumero = PADL(NumEnt+1,7,'0')
+   SELE Auxil
+   IF SEEK (ALLT(m.tipaux)+ALLT(m.codprv)) 
+      fdescri= Auxil.descri
+      fdirecc= Auxil.direccion
+      Fruc   = LEFT(ALLT(Auxil.ruc),8)
+   ENDIF
+   SET MEMOWIDTH TO 120
+   fconcepto=MLINE(RI.observ,2)+MLINE(RI.observ,3)
+   SELE Fact
+   IF f_appd()
+      REPLACE periodo   WITH m.periodo ,;
+              nummes    WITH m.nummes ,;
+              serie     WITH fserie,;
+              numero    WITH fnumero,;
+              fecFac     WITH m.fecri,;
+              tipaux    WITH m.tipaux,;
+              codprv    WITH m.codprv,;
+              ruc       WITH fruc,;
+              cantidad  WITH 1,;
+              unimed    WITH 'Unidad',;
+              concepto  WITH fconcepto,;
+              preuni    WITH ROUND((m.canri*100)/(figv+100),2),;
+              importe   WITH ROUND((m.canri*100)/(figv+100),2),;
+			  subtot    WITH ROUND((m.canri*100)/(figv+100),2),;
+			  igv       WITH ROUND(((m.canri*100)/(figv+100))*(figv/100),2),;
+			  Total     WITH m.canri,;
+			  codcal    WITH m.codcal,;          				 			
+              tipfun    WITH m.tipfun,;
+              codfte    WITH m.codfte,;
+              usuario   WITH wuser_id,;
+              fecreg    WITH DATE(),;
+			  estado    WITH '00',;
+			  perri     WITH m.periodo,;
+			  nummesri  WITH m.nummes,;              
+			  numri     WITH m.numri,;
+			  nombre    WITH fdescri,;
+			  direcc    WITH fdirecc
+	ENDIF
+	UNLOCK
+	SELE parma
+    SEEK 'CORREL'+'FACTUR'
+    REPLACE NumEnt WITH NumEnt + 1       
+    SELE fact
+    DO edita_fac WITH fserie,fnumero
+ELSE
+   SELE Auxil
+   IF SEEK (ALLT(m.tipaux)+ALLT(m.codprv)) AND RLOCK()
+      fdescri= Auxil.descri
+      fdirecc= Auxil.direccion
+      Fruc   = LEFT(ALLT(Auxil.ruc),8)
+   ENDIF
+   UNLOCK
+    SELE fact
+    SET ORDER TO factura2
+    IF SEEK (m.periodo+ALLT(m.nummes)+m.numri)     
+       fserie  = fact.serie
+       fnumero = fact.numero 
+       SET ORDER TO factura1
+       DO edita_fac WITH fserie,fnumero
+	ELSE    
+	    SET ORDER TO factura1
+	ENDIF    
+ENDIF    
+ACTIVATE SCREEN
+RETURN
+
+PROCEDURE edita_fac
+*------------------
+   PARAMETERS wserie,wnumero
+   EDIT NOAPPEND NODELETE NOMENU NOOPTIMIZE WINDOW Wind_4;
+   KEY wserie+wNumero FIELD ;
+   serie       :R,;
+   numero      :R,;
+   nombre      :H= 'Se¤or (es) ' :P='@!' ,;
+   direcc      :H= 'Direcci¢n '  :P='@!' ,;
+   Ruc         :H='R.U.C. N§' :8 :P='@!' ,;
+   Fecfac      :H= 'Fecha',;
+   Cantidad    :H= 'Cantidad': P='@!' :5,;
+   Unimed      :H= 'Unidad de Medida': P='@!' :R,;
+   Concepto    :H='Descripci¢n' : P='@S60' ,;
+   Preuni      :H='Precio Unitario' : P='999,999,999,999.99' :R,;
+   Importe     :H='Importe' : P='999,999,999,999.99' :R,; 
+   Subtot      :H='Subtotal' : P='999,999,999,999.99' :R,;
+   Igv         :H='I.G.V.' : P='999,999,999,999.99' :R,;
+   total       :H='Total' : P='999,999,999,999.99' :R
+   IF YESNO( '¨ Imprime la Factura ?' )
+      SET FILT TO serie=wserie AND numero=wnumero
+      DO REPORTE WITH 2,"RepFac",' Reporte de Factura'
+      SET FILT TO
+   ENDIF   
+   SELE Ri
+RETURN
+
+
+FUNCTION dmes
+*------------
+PARAMETER fmes
+DO CASE
+   CASE fmes=1
+        v_d='Enero'
+   CASE fmes=2
+        v_d='Febrero'
+   CASE fmes=3
+        v_d='Marzo'
+   CASE fmes=4
+        v_d='Abril'
+   CASE fmes=5
+        v_d='Mayo' 
+   CASE fmes=6
+        v_d='Junio'
+   CASE fmes=7
+        v_d='Julio'
+   CASE fmes=8
+        v_d='Agosto'
+   CASE fmes=9
+        v_d='Setiembre'  
+   CASE fmes=10
+        v_d='Octubre' 
+   CASE fmes=11
+        v_d='Noviembre'
+   CASE fmes=12
+        v_d='Diciembre'        
+ENDCASE
+RETURN v_d        
+
+FUNCTION factu  &&Displaya N§ de Factura
+*------------- 
+PARAMETERS vp,vm,vn
+vali=ALIAS()
+vord=ORDER()
+SELE Fact
+SET ORDER TO Factura2
+PRIVATE vz
+STORE SPACE(50) TO vz
+IF SEEK(vp+ALLT(vm)+vn)
+   vz="Factura :  "+Fact.serie+'.'+Fact.numero+'   '+DTOC(Fact.Fecfac)
+ENDIF
+SET ORDER TO Factura1
+SELE (vali)
+SET ORDER TO (vord)
+RETURN vz
+
+FUNCTION Concurso
+*----------------
+ vconcurso = SPACE(04)
+ ACTIVATE WINDOW Wind_8
+ alia  = ALIAS()
+ SELE Fact
+ SET ORDER TO Factura2
+ SEEK ALLTRIM(m.periodo)+ALLTRiM(m.nummes)+m.numRi
+ IF FOUND()
+ 	vconcurso = Fact.ConLic
+ ENDIF 	
+ SET ORDER TO Factura1
+ USE ConLic IN 0 ORDER ConLic1 ALIAS ConL
+ SELECT ConL
+ @ 1, 05 SAY "Concurso        :" GET vconcurso  VALID val_fun('ConL','ConLic',"ConLic+' '+Deslic",vconcurso,1)
+ READ VALID Val_read()
+ DEACTIVATE WINDOW Wind_8
+ SELE conL
+ IF SEEK(vconcurso)
+    dconcurso=ConL.Deslic
+ ENDIF   
+ USE
+ SELECT (alia)
+ RETURN vconcurso
